@@ -312,3 +312,31 @@
 [2023-04-23 00:25:23] INFO root fetch - main [MainThread]: End processing [vocode]: success
 [2023-04-23 00:25:24] INFO root fetch - main [MainThread]: End processing [zuspec-parser]: success
 [2023-04-23 00:25:24] INFO root fetch - main [MainThread]: Store serial: [17817678]
+[2023-04-23 00:30:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17817678]
+[2023-04-23 00:30:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-23 00:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vocode
+[2023-04-23 00:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: printnanny-api-client
+[2023-04-23 00:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alice-skills-manager
+[2023-04-23 00:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: arraymap
+[2023-04-23 00:30:32] INFO root fetch - processPackages [alice-skills-manager]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-23 00:30:32] INFO root fetch - processPackages [vocode]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-23 00:30:32] INFO root fetch - processPackages [printnanny-api-client]: New version: [0.99.9] Old Version: [0.99.8]
+[2023-04-23 00:30:32] INFO root fetch - processPackages [alice-skills-manager]: Downloading https://files.pythonhosted.org/packages/cc/30/918c00a82dc8db8e93c33d55da138657f7f7ef17ccdeca3e6329c86e9e98/alice-skills-manager-0.0.4.tar.gz
+[2023-04-23 00:30:32] INFO root fetch - processPackages [vocode]: executing diffoscope
+[2023-04-23 00:30:32] INFO root fetch - processPackages [vocode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vocode-0.1.98.tar.gz tmp/vocode-0.1.99.tar.gz --markdown 20230423/v/vocode/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-23 00:30:32] INFO root fetch - processPackages [arraymap]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-23 00:30:32] INFO root fetch - processPackages [printnanny-api-client]: Downloading https://files.pythonhosted.org/packages/80/a8/8e5ce11213e01df0c6d1880d7e11b606e55310521d4713aa419652a8b190/printnanny-api-client-0.99.8.tar.gz
+[2023-04-23 00:30:32] INFO root fetch - processPackages [alice-skills-manager]: Downloading https://files.pythonhosted.org/packages/17/8e/bb85f0f9fbd207cf4896e10fb3db567ce27c9c09ffcbdf9e818791057fc4/alice-skills-manager-0.0.5.tar.gz
+[2023-04-23 00:30:32] INFO root fetch - processPackages [arraymap]: Downloading https://files.pythonhosted.org/packages/f5/96/ea7385d9107661f4b2531e43fc503451768f6c280334f4e69aa42ea0c17a/arraymap-0.1.5-cp311-cp311-macosx_10_9_universal2.whl
+[2023-04-23 00:30:32] INFO root fetch - processPackages [printnanny-api-client]: Downloading https://files.pythonhosted.org/packages/dc/09/9471b93d2f7870a699fe979e08df9b17bcd4a570221b2b7fc3f585cbe647/printnanny-api-client-0.99.9.tar.gz
+[2023-04-23 00:30:32] INFO root fetch - processPackages [alice-skills-manager]: executing diffoscope
+[2023-04-23 00:30:32] INFO root fetch - processPackages [alice-skills-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alice-skills-manager-0.0.4.tar.gz tmp/alice-skills-manager-0.0.5.tar.gz --markdown 20230423/a/alice-skills-manager/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 00:30:33] INFO root fetch - processPackages [printnanny-api-client]: executing diffoscope
+[2023-04-23 00:30:33] INFO root fetch - processPackages [printnanny-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/printnanny-api-client-0.99.8.tar.gz tmp/printnanny-api-client-0.99.9.tar.gz --markdown 20230423/p/printnanny-api-client/0.99.8-0.99.9/diff.md --exclude *.pyd
+[2023-04-23 00:30:33] INFO root fetch - processPackages [arraymap]: executing diffoscope
+[2023-04-23 00:30:33] INFO root fetch - processPackages [arraymap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arraymap-0.1.4.tar.gz tmp/arraymap-0.1.5-cp311-cp311-macosx_10_9_universal2.whl.zip --markdown 20230423/a/arraymap/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-23 00:30:33] INFO root fetch - main [MainThread]: End processing [alice-skills-manager]: success
+[2023-04-23 00:30:34] INFO root fetch - main [MainThread]: End processing [vocode]: success
+[2023-04-23 00:30:39] INFO root fetch - main [MainThread]: End processing [printnanny-api-client]: success
+[2023-04-23 00:30:48] INFO root fetch - main [MainThread]: End processing [arraymap]: success
+[2023-04-23 00:30:48] INFO root fetch - main [MainThread]: Store serial: [17817699]
