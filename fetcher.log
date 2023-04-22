@@ -720,3 +720,23 @@
 [2023-04-23 01:26:50] INFO root fetch - main [MainThread]: End processing [t-python-markdown]: success
 [2023-04-23 01:27:30] INFO root fetch - main [MainThread]: End processing [alacorder]: success
 [2023-04-23 01:27:30] INFO root fetch - main [MainThread]: Store serial: [17818026]
+[2023-04-23 01:32:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818026]
+[2023-04-23 01:32:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-23 01:32:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: np-queuey
+[2023-04-23 01:32:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psd-export
+[2023-04-23 01:32:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: camply
+[2023-04-23 01:32:39] INFO root fetch - processPackages [camply]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-23 01:32:40] INFO root fetch - processPackages [np-queuey]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 01:32:40] INFO root fetch - processPackages [psd-export]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-23 01:32:40] INFO root fetch - processPackages [camply]: executing diffoscope
+[2023-04-23 01:32:40] INFO root fetch - processPackages [camply]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camply-0.9.2.tar.gz tmp/camply-0.9.3.tar.gz --markdown 20230423/c/camply/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-23 01:32:40] INFO root fetch - processPackages [psd-export]: Downloading https://files.pythonhosted.org/packages/79/be/bd79e2e66ae9642a3ef983c0b7d12c72224c279c11c0c4a0f441f2c4914c/psd_export-1.0.8.tar.gz
+[2023-04-23 01:32:40] INFO root fetch - processPackages [np-queuey]: Downloading https://files.pythonhosted.org/packages/63/79/1a1b816046eeeba9eee27999da6d853010b6601a02a4e6f110967a3b748f/np_queuey-0.1.9.tar.gz
+[2023-04-23 01:32:40] INFO root fetch - processPackages [psd-export]: executing diffoscope
+[2023-04-23 01:32:40] INFO root fetch - processPackages [psd-export]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psd_export-1.0.7.tar.gz tmp/psd_export-1.0.8.tar.gz --markdown 20230423/p/psd-export/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-23 01:32:40] INFO root fetch - processPackages [np-queuey]: executing diffoscope
+[2023-04-23 01:32:40] INFO root fetch - processPackages [np-queuey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_queuey-0.1.8.tar.gz tmp/np_queuey-0.1.9.tar.gz --markdown 20230423/n/np-queuey/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 01:32:41] INFO root fetch - main [MainThread]: End processing [camply]: success
+[2023-04-23 01:32:41] INFO root fetch - main [MainThread]: End processing [psd-export]: success
+[2023-04-23 01:32:41] INFO root fetch - main [MainThread]: End processing [np-queuey]: success
+[2023-04-23 01:32:41] INFO root fetch - main [MainThread]: Store serial: [17818035]
