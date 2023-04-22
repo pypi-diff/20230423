@@ -182,3 +182,45 @@
 [2023-04-23 00:09:10] INFO root fetch - main [MainThread]: End processing [openwakeword]: success
 [2023-04-23 00:09:19] INFO root fetch - main [MainThread]: End processing [cirq-core]: success
 [2023-04-23 00:09:19] INFO root fetch - main [MainThread]: Store serial: [17817580]
+[2023-04-23 00:14:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17817580]
+[2023-04-23 00:14:29] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 00:14:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: embedin
+[2023-04-23 00:14:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cpggen
+[2023-04-23 00:14:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: auto-screener
+[2023-04-23 00:14:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zuspec-parser
+[2023-04-23 00:14:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nparse
+[2023-04-23 00:14:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tagstr
+[2023-04-23 00:14:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: alice-skills-maneger
+[2023-04-23 00:14:29] INFO root fetch - processPackages [embedin]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 00:14:29] INFO root fetch - processPackages [nparse]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 00:14:29] INFO root fetch - processPackages [auto-screener]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 00:14:29] INFO root fetch - processPackages [zuspec-parser]: New version: [0.0.1.4774865719] Old Version: [0.0.1.4774362466]
+[2023-04-23 00:14:29] INFO root fetch - processPackages [alice-skills-maneger]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 00:14:29] INFO root fetch - processPackages [embedin]: executing diffoscope
+[2023-04-23 00:14:29] INFO root fetch - processPackages [embedin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedin-0.1.0.tar.gz tmp/embedin-0.1.1.tar.gz --markdown 20230423/e/embedin/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 00:14:29] INFO root fetch - processPackages [tagstr]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-04-23 00:14:29] INFO root fetch - processPackages [auto-screener]: executing diffoscope
+[2023-04-23 00:14:29] INFO root fetch - processPackages [auto-screener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto-screener-0.0.5.tar.gz tmp/auto-screener-0.0.6.tar.gz --markdown 20230423/a/auto-screener/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 00:14:29] INFO root fetch - processPackages [cpggen]: New version: [1.0.0] Old Version: [0.9.6]
+[2023-04-23 00:14:29] INFO root fetch - processPackages [nparse]: executing diffoscope
+[2023-04-23 00:14:29] INFO root fetch - processPackages [nparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nparse-0.0.1.tar.gz tmp/nparse-0.0.2.tar.gz --markdown 20230423/n/nparse/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 00:14:29] INFO root fetch - processPackages [alice-skills-maneger]: executing diffoscope
+[2023-04-23 00:14:29] INFO root fetch - processPackages [alice-skills-maneger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alice_skills_maneger-0.0.1.tar.gz tmp/alice-skills-maneger-0.0.2.tar.gz --markdown 20230423/a/alice-skills-maneger/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 00:14:29] INFO root fetch - processPackages [zuspec-parser]: Downloading https://files.pythonhosted.org/packages/42/ae/0654dfdf3a980a28d245bab53b32d276befd5e772a28014130323d85506a/zuspec_parser-0.0.1.4774865719-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-23 00:14:29] INFO root fetch - processPackages [zuspec-parser]: executing diffoscope
+[2023-04-23 00:14:29] INFO root fetch - processPackages [zuspec-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_parser-0.0.1.4774362466-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_parser-0.0.1.4774865719-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230423/z/zuspec-parser/0.0.1.4774362466-0.0.1.4774865719/diff.md --exclude *.pyd
+[2023-04-23 00:14:29] INFO root fetch - processPackages [tagstr]: Downloading https://files.pythonhosted.org/packages/34/2a/4cb2459e8f647616f61c2e6c998ef082e5fb28d3b109757e814c362e6a2a/tagstr-0.0.1.tar.gz
+[2023-04-23 00:14:29] INFO root fetch - processPackages [cpggen]: Downloading https://files.pythonhosted.org/packages/6d/52/7282a8c395ca573954ef1bc7df075104d3d33b19f0620b643f0adf57f82f/cpggen-1.0.0.tar.gz
+[2023-04-23 00:14:29] INFO root fetch - processPackages [tagstr]: Downloading https://files.pythonhosted.org/packages/58/b7/b4db6224945483789aa92fd1f85e64febc8209dff8e251f86f8c6b75d947/tagstr-0.1.0.tar.gz
+[2023-04-23 00:14:29] INFO root fetch - processPackages [cpggen]: executing diffoscope
+[2023-04-23 00:14:29] INFO root fetch - processPackages [cpggen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpggen-0.9.6.tar.gz tmp/cpggen-1.0.0.tar.gz --markdown 20230423/c/cpggen/0.9.6-1.0.0/diff.md --exclude *.pyd
+[2023-04-23 00:14:29] INFO root fetch - processPackages [tagstr]: executing diffoscope
+[2023-04-23 00:14:29] INFO root fetch - processPackages [tagstr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tagstr-0.0.1.tar.gz tmp/tagstr-0.1.0.tar.gz --markdown 20230423/t/tagstr/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-04-23 00:14:30] INFO root fetch - main [MainThread]: End processing [nparse]: success
+[2023-04-23 00:14:30] INFO root fetch - main [MainThread]: End processing [auto-screener]: success
+[2023-04-23 00:14:30] INFO root fetch - main [MainThread]: End processing [alice-skills-maneger]: success
+[2023-04-23 00:14:31] INFO root fetch - main [MainThread]: End processing [embedin]: success
+[2023-04-23 00:14:31] INFO root fetch - main [MainThread]: End processing [tagstr]: success
+[2023-04-23 00:14:31] INFO root fetch - main [MainThread]: End processing [cpggen]: success
+[2023-04-23 00:14:32] INFO root fetch - main [MainThread]: End processing [zuspec-parser]: success
+[2023-04-23 00:14:32] INFO root fetch - main [MainThread]: Store serial: [17817601]
