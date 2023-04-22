@@ -668,3 +668,18 @@
 [2023-04-23 01:10:22] INFO root fetch - main [MainThread]: End processing [virt-lightning]: success
 [2023-04-23 01:11:03] INFO root fetch - main [MainThread]: End processing [alacorder]: success
 [2023-04-23 01:11:03] INFO root fetch - main [MainThread]: Store serial: [17818007]
+[2023-04-23 01:16:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818007]
+[2023-04-23 01:16:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-23 01:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlpath
+[2023-04-23 01:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Loterias
+[2023-04-23 01:16:12] INFO root fetch - processPackages [mlpath]: New version: [1.0.32] Old Version: [1.0.31]
+[2023-04-23 01:16:12] INFO root fetch - processPackages [Loterias]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-23 01:16:12] INFO root fetch - processPackages [Loterias]: Downloading https://files.pythonhosted.org/packages/c6/0c/e39e5b28fb0ef417589c01afc9bb9e931e57d8e7a6f282d06cdf0b3ebb06/Loterias-0.0.5.tar.gz
+[2023-04-23 01:16:12] INFO root fetch - processPackages [mlpath]: Downloading https://files.pythonhosted.org/packages/23/9d/fe18e0c9599e5e38e409834a53178f6e0ded30c10993b6e71c7d3b1a362a/mlpath-1.0.32.tar.gz
+[2023-04-23 01:16:12] INFO root fetch - processPackages [Loterias]: executing diffoscope
+[2023-04-23 01:16:12] INFO root fetch - processPackages [Loterias]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Loterias-0.0.4.tar.gz tmp/Loterias-0.0.5.tar.gz --markdown 20230423/L/Loterias/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 01:16:13] INFO root fetch - processPackages [mlpath]: executing diffoscope
+[2023-04-23 01:16:13] INFO root fetch - processPackages [mlpath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlpath-1.0.31.tar.gz tmp/mlpath-1.0.32.tar.gz --markdown 20230423/m/mlpath/1.0.31-1.0.32/diff.md --exclude *.pyd
+[2023-04-23 01:16:14] INFO root fetch - main [MainThread]: End processing [mlpath]: success
+[2023-04-23 01:16:29] INFO root fetch - main [MainThread]: End processing [Loterias]: success
+[2023-04-23 01:16:29] INFO root fetch - main [MainThread]: Store serial: [17818012]
