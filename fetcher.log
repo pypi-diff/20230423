@@ -1,0 +1,74 @@
+[2023-04-23 00:00:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17817447]
+[2023-04-23 00:00:52] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-23 00:00:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: skipole
+[2023-04-23 00:00:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypotlib
+[2023-04-23 00:00:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: infrabed
+[2023-04-23 00:00:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: napari-zulip
+[2023-04-23 00:00:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: turbo-docs
+[2023-04-23 00:00:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: biobear
+[2023-04-23 00:00:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: web3-ethereum-defi
+[2023-04-23 00:00:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: networkx-robustness
+[2023-04-23 00:00:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: Conanmail
+[2023-04-23 00:00:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: skilift
+[2023-04-23 00:00:53] INFO root fetch - processPackages [infrabed]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 00:00:53] INFO root fetch - processPackages [turbo-docs]: New version: [0.7.0] Old Version: [0.6.5]
+[2023-04-23 00:00:53] INFO root fetch - processPackages [biobear]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-23 00:00:53] INFO root fetch - processPackages [networkx-robustness]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-23 00:00:53] INFO root fetch - processPackages [Conanmail]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-23 00:00:53] INFO root fetch - processPackages [infrabed]: executing diffoscope
+[2023-04-23 00:00:53] INFO root fetch - processPackages [infrabed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infrabed-0.0.1.tar.gz tmp/infrabed-0.0.2.tar.gz --markdown 20230423/i/infrabed/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 00:00:53] WARNING root fetch - processPackages [napari-zulip]: Skipping, unable to determine old version
+[2023-04-23 00:00:53] INFO root fetch - processPackages [napari-zulip]: Start processing: audio-extract
+[2023-04-23 00:00:53] INFO root fetch - main [MainThread]: End processing [napari-zulip] error
+[2023-04-23 00:00:53] INFO root fetch - processPackages [pypotlib]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 00:00:53] INFO root fetch - processPackages [skilift]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-23 00:00:53] INFO root fetch - processPackages [web3-ethereum-defi]: New version: [0.9] Old Version: [0.8]
+[2023-04-23 00:00:53] INFO root fetch - processPackages [skipole]: New version: [5.6.1] Old Version: [5.6.0]
+[2023-04-23 00:00:53] INFO root fetch - processPackages [biobear]: executing diffoscope
+[2023-04-23 00:00:53] INFO root fetch - processPackages [biobear]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biobear-0.1.1.tar.gz tmp/biobear-0.1.2.tar.gz --markdown 20230423/b/biobear/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-23 00:00:53] WARNING root fetch - processPackages [audio-extract]: Skipping, unable to determine old version
+[2023-04-23 00:00:53] INFO root fetch - processPackages [turbo-docs]: executing diffoscope
+[2023-04-23 00:00:53] INFO root fetch - processPackages [audio-extract]: Start processing: reqif
+[2023-04-23 00:00:53] INFO root fetch - main [MainThread]: End processing [audio-extract] error
+[2023-04-23 00:00:53] INFO root fetch - processPackages [turbo-docs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turbo_docs-0.6.5.tar.gz tmp/turbo_docs-0.7.0.tar.gz --markdown 20230423/t/turbo-docs/0.6.5-0.7.0/diff.md --exclude *.pyd
+[2023-04-23 00:00:53] INFO root fetch - processPackages [networkx-robustness]: executing diffoscope
+[2023-04-23 00:00:53] INFO root fetch - processPackages [networkx-robustness]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networkx_robustness-0.0.4.tar.gz tmp/networkx_robustness-0.0.5.tar.gz --markdown 20230423/n/networkx-robustness/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 00:00:53] INFO root fetch - processPackages [Conanmail]: Downloading https://files.pythonhosted.org/packages/23/d5/3e01f45c5a880bfec859601479e46996f7d374fa617dd8a9c468733dc820/Conanmail-1.0.5.tar.gz
+[2023-04-23 00:00:53] INFO root fetch - processPackages [reqif]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 00:00:53] INFO root fetch - processPackages [skilift]: Downloading https://files.pythonhosted.org/packages/81/70/865d4d96f0e3cbf9c8abe5af244e9041adfeddf394c66cdb90b003044bc7/skilift-0.1.3.tar.gz
+[2023-04-23 00:00:53] INFO root fetch - processPackages [skipole]: Downloading https://files.pythonhosted.org/packages/6a/97/94d0ff26dd5e90ab28b57b9956d65b7b9a7c3a020de78af62a2fd0d1590c/skipole-5.6.0.tar.gz
+[2023-04-23 00:00:53] INFO root fetch - processPackages [web3-ethereum-defi]: Downloading https://files.pythonhosted.org/packages/f7/34/bc567b2d884ed84729cca7ee7fa158347e0f72fc19d964b3721fd4ad740b/web3-ethereum-defi-0.8.tar.gz
+[2023-04-23 00:00:53] INFO root fetch - processPackages [reqif]: Downloading https://files.pythonhosted.org/packages/97/c5/1ab90ed22955eab3434858c7c0e711c1c344c65d4991702858f370e5857c/reqif-0.0.8.tar.gz
+[2023-04-23 00:00:53] INFO root fetch - processPackages [pypotlib]: Downloading https://files.pythonhosted.org/packages/5a/d6/c277d1b05f890cf96f486addf5a3d3250654ccda8e0682467ceb55c2dab5/pypotlib-0.0.6.tar.gz
+[2023-04-23 00:00:53] INFO root fetch - processPackages [Conanmail]: Downloading https://files.pythonhosted.org/packages/e1/c0/87142dbc02f72722d5501cde1d1d388b1bea6f062e0092b9b51377412fc2/Conanmail-1.0.6-py3-none-any.whl
+[2023-04-23 00:00:53] INFO root fetch - processPackages [skilift]: Downloading https://files.pythonhosted.org/packages/2b/46/8c1e72a02b7549abca40b855655ed87033fc375fe810c1d606b7af83dd4f/skilift-0.1.4.tar.gz
+[2023-04-23 00:00:53] INFO root fetch - processPackages [pypotlib]: executing diffoscope
+[2023-04-23 00:00:53] INFO root fetch - processPackages [pypotlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypotlib-0.0.5.tar.gz tmp/pypotlib-0.0.6.tar.gz --markdown 20230423/p/pypotlib/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 00:00:53] INFO root fetch - processPackages [skipole]: Downloading https://files.pythonhosted.org/packages/ef/14/433b7650db5251e8a0720e0a72b57a70dba20e84b68723a3b5f7257778e0/skipole-5.6.1.tar.gz
+[2023-04-23 00:00:53] INFO root fetch - processPackages [Conanmail]: executing diffoscope
+[2023-04-23 00:00:53] INFO root fetch - processPackages [Conanmail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Conanmail-1.0.5.tar.gz tmp/Conanmail-1.0.6-py3-none-any.whl.zip --markdown 20230423/C/Conanmail/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-23 00:00:53] INFO root fetch - processPackages [web3-ethereum-defi]: Downloading https://files.pythonhosted.org/packages/02/9e/0b69309d6f37b54cc726ee3588483bd2d6bd07282539b30d2a04e48b82cd/web3-ethereum-defi-0.9.tar.gz
+[2023-04-23 00:00:53] INFO root fetch - processPackages [skilift]: executing diffoscope
+[2023-04-23 00:00:53] INFO root fetch - processPackages [skilift]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skilift-0.1.3.tar.gz tmp/skilift-0.1.4.tar.gz --markdown 20230423/s/skilift/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-23 00:00:53] INFO root fetch - processPackages [reqif]: Downloading https://files.pythonhosted.org/packages/96/38/1b48adb104222d62ca3e62128ad49a7c20d13e24d244df98563da19d4126/reqif-0.0.9.tar.gz
+[2023-04-23 00:00:53] INFO root fetch - processPackages [skipole]: executing diffoscope
+[2023-04-23 00:00:53] INFO root fetch - processPackages [skipole]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skipole-5.6.0.tar.gz tmp/skipole-5.6.1.tar.gz --markdown 20230423/s/skipole/5.6.0-5.6.1/diff.md --exclude *.pyd
+[2023-04-23 00:00:54] INFO root fetch - processPackages [web3-ethereum-defi]: executing diffoscope
+[2023-04-23 00:00:54] INFO root fetch - processPackages [web3-ethereum-defi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web3-ethereum-defi-0.8.tar.gz tmp/web3-ethereum-defi-0.9.tar.gz --markdown 20230423/w/web3-ethereum-defi/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-23 00:00:54] INFO root fetch - processPackages [reqif]: executing diffoscope
+[2023-04-23 00:00:54] INFO root fetch - processPackages [reqif]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reqif-0.0.8.tar.gz tmp/reqif-0.0.9.tar.gz --markdown 20230423/r/reqif/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 00:00:54] INFO root fetch - processPackages [infrabed]: Start processing: panderequests
+[2023-04-23 00:00:54] INFO root fetch - main [MainThread]: End processing [infrabed]: success
+[2023-04-23 00:00:54] INFO root fetch - main [MainThread]: End processing [turbo-docs]: success
+[2023-04-23 00:00:54] INFO root fetch - main [MainThread]: End processing [biobear]: success
+[2023-04-23 00:00:54] WARNING root fetch - processPackages [panderequests]: Skipping, unable to determine old version
+[2023-04-23 00:00:54] INFO root fetch - main [MainThread]: End processing [panderequests] error
+[2023-04-23 00:00:54] INFO root fetch - main [MainThread]: End processing [networkx-robustness]: success
+[2023-04-23 00:00:54] INFO root fetch - main [MainThread]: End processing [Conanmail]: success
+[2023-04-23 00:00:55] INFO root fetch - main [MainThread]: End processing [pypotlib]: success
+[2023-04-23 00:00:56] INFO root fetch - main [MainThread]: End processing [reqif]: success
+[2023-04-23 00:00:56] INFO root fetch - main [MainThread]: End processing [web3-ethereum-defi]: success
+[2023-04-23 00:00:57] INFO root fetch - main [MainThread]: End processing [skipole]: success
+[2023-04-23 00:03:53] ERROR root fetch - processPackages [skilift]: Timeout during execution of pkgdiff
+[2023-04-23 00:03:53] INFO root fetch - main [MainThread]: End processing [skilift] error
+[2023-04-23 00:03:53] INFO root fetch - main [MainThread]: Store serial: [17817524]
