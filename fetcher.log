@@ -275,3 +275,40 @@
 [2023-04-23 00:19:50] INFO root fetch - main [MainThread]: End processing [hordelib]: success
 [2023-04-23 00:20:12] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2023-04-23 00:20:12] INFO root fetch - main [MainThread]: Store serial: [17817638]
+[2023-04-23 00:25:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17817638]
+[2023-04-23 00:25:21] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 00:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ndx-photometry
+[2023-04-23 00:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: monadic
+[2023-04-23 00:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rs-chardet
+[2023-04-23 00:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zuspec-parser
+[2023-04-23 00:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vocode
+[2023-04-23 00:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: alice-skills-manager
+[2023-04-23 00:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: audio-extract
+[2023-04-23 00:25:21] WARNING root fetch - processPackages [monadic]: Skipping, unable to determine old version
+[2023-04-23 00:25:21] INFO root fetch - processPackages [ndx-photometry]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-23 00:25:21] INFO root fetch - main [MainThread]: End processing [monadic] error
+[2023-04-23 00:25:21] INFO root fetch - processPackages [zuspec-parser]: New version: [0.0.1.4774975395] Old Version: [0.0.1.4774916523]
+[2023-04-23 00:25:21] ERROR root fetch - processPackages [alice-skills-manager]: Unable to get metadata: No such project 'alice-skills-manager'
+[2023-04-23 00:25:21] INFO root fetch - main [MainThread]: End processing [alice-skills-manager] error
+[2023-04-23 00:25:21] WARNING root fetch - processPackages [rs-chardet]: Skipping, unable to determine old version
+[2023-04-23 00:25:21] INFO root fetch - main [MainThread]: End processing [rs-chardet] error
+[2023-04-23 00:25:21] INFO root fetch - processPackages [audio-extract]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-23 00:25:21] INFO root fetch - processPackages [vocode]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-23 00:25:21] INFO root fetch - processPackages [zuspec-parser]: Downloading https://files.pythonhosted.org/packages/3b/19/d5f8b352f0e71c64b161a66a3d926d1b3409f81823d715575809bba8af27/zuspec_parser-0.0.1.4774916523-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-23 00:25:21] INFO root fetch - processPackages [vocode]: executing diffoscope
+[2023-04-23 00:25:21] INFO root fetch - processPackages [vocode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vocode-0.1.98.tar.gz tmp/vocode-0.1.99.tar.gz --markdown 20230423/v/vocode/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-23 00:25:21] INFO root fetch - processPackages [ndx-photometry]: Downloading https://files.pythonhosted.org/packages/f1/8c/be421d3e104610651d01d8093c67d102dbdec2929365587c11521d8e7eac/ndx-photometry-0.1.0.tar.gz
+[2023-04-23 00:25:21] INFO root fetch - processPackages [audio-extract]: Downloading https://files.pythonhosted.org/packages/db/94/e7a1956f1e23f14cb7c9e84cefcbf9073210f986e142bf82f9cdf811e455/audio_extract-0.3.1.tar.gz
+[2023-04-23 00:25:22] INFO root fetch - processPackages [audio-extract]: executing diffoscope
+[2023-04-23 00:25:22] INFO root fetch - processPackages [audio-extract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audio_extract-0.3.0.tar.gz tmp/audio_extract-0.3.1.tar.gz --markdown 20230423/a/audio-extract/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-23 00:25:22] INFO root fetch - processPackages [ndx-photometry]: Downloading https://files.pythonhosted.org/packages/3a/19/73b46a7447c8345372c5c6790a29641cf31309214eeb8a02295b61ae981e/ndx_photometry-0.2.0-py2.py3-none-any.whl
+[2023-04-23 00:25:22] INFO root fetch - processPackages [ndx-photometry]: executing diffoscope
+[2023-04-23 00:25:22] INFO root fetch - processPackages [ndx-photometry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ndx-photometry-0.1.0.tar.gz tmp/ndx_photometry-0.2.0-py2.py3-none-any.whl.zip --markdown 20230423/n/ndx-photometry/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-23 00:25:22] INFO root fetch - processPackages [zuspec-parser]: Downloading https://files.pythonhosted.org/packages/af/9c/285ec2e9e5a535ad38c7bda2f15e28f686d18a589130bcfc8c1bd1a6f9b1/zuspec_parser-0.0.1.4774975395-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-23 00:25:22] INFO root fetch - processPackages [zuspec-parser]: executing diffoscope
+[2023-04-23 00:25:22] INFO root fetch - processPackages [zuspec-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_parser-0.0.1.4774916523-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_parser-0.0.1.4774975395-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230423/z/zuspec-parser/0.0.1.4774916523-0.0.1.4774975395/diff.md --exclude *.pyd
+[2023-04-23 00:25:23] INFO root fetch - main [MainThread]: End processing [ndx-photometry]: success
+[2023-04-23 00:25:23] INFO root fetch - main [MainThread]: End processing [audio-extract]: success
+[2023-04-23 00:25:23] INFO root fetch - main [MainThread]: End processing [vocode]: success
+[2023-04-23 00:25:24] INFO root fetch - main [MainThread]: End processing [zuspec-parser]: success
+[2023-04-23 00:25:24] INFO root fetch - main [MainThread]: Store serial: [17817678]
