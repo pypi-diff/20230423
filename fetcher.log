@@ -526,3 +526,45 @@
 [2023-04-23 00:54:47] ERROR root fetch - processPackages [ogcore]: Timeout during execution of pkgdiff
 [2023-04-23 00:54:47] INFO root fetch - main [MainThread]: End processing [ogcore] error
 [2023-04-23 00:54:47] INFO root fetch - main [MainThread]: Store serial: [17817862]
+[2023-04-23 00:59:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17817862]
+[2023-04-23 00:59:56] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-23 00:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: biobear
+[2023-04-23 00:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zuspec-parser
+[2023-04-23 00:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pipcolouringslibV1
+[2023-04-23 00:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ubuntu-termux
+[2023-04-23 00:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyseto
+[2023-04-23 00:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: turbo-docs
+[2023-04-23 00:59:56] INFO root fetch - processPackages [pyseto]: New version: [1.7.2] Old Version: [1.7.1]
+[2023-04-23 00:59:56] INFO root fetch - processPackages [ubuntu-termux]: New version: [0.0.4.1] Old Version: [0.0.4]
+[2023-04-23 00:59:56] INFO root fetch - processPackages [turbo-docs]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-04-23 00:59:56] INFO root fetch - processPackages [zuspec-parser]: New version: [0.0.1.4775095816] Old Version: [0.0.1.4774975395]
+[2023-04-23 00:59:56] INFO root fetch - processPackages [pipcolouringslibV1]: New version: [1.5.1] Old Version: [1.0.0]
+[2023-04-23 00:59:56] INFO root fetch - processPackages [biobear]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-23 00:59:56] INFO root fetch - processPackages [pyseto]: Downloading https://files.pythonhosted.org/packages/e3/8e/19482a76ac466af8679844669075237d04b5181300065e9fda357681eb83/pyseto-1.7.1.tar.gz
+[2023-04-23 00:59:56] INFO root fetch - processPackages [turbo-docs]: Downloading https://files.pythonhosted.org/packages/80/02/c72ca86a017005a8601f35de3ccae6bb6755b3931090a42ff198f6dc0bd1/turbo_docs-0.7.3.tar.gz
+[2023-04-23 00:59:56] INFO root fetch - processPackages [biobear]: Downloading https://files.pythonhosted.org/packages/04/fd/c5e8266b72e0970ae1285e61b0055fb3269d6e6e6f4b49647dc98079a388/biobear-0.1.4.tar.gz
+[2023-04-23 00:59:56] INFO root fetch - processPackages [ubuntu-termux]: Downloading https://files.pythonhosted.org/packages/ae/a3/f994dd48d7701297a7ad7c807925419bdf76b359076e043b0794d6e68078/ubuntu_termux-0.0.4.1-py3-none-any.whl
+[2023-04-23 00:59:56] INFO root fetch - processPackages [pipcolouringslibV1]: Downloading https://files.pythonhosted.org/packages/2e/ff/6f3792f76e905b02b2fbde340ecdd03b9ff2977f42cd6077780a30bb27aa/pipcolouringslibV1-1.0.0.tar.gz
+[2023-04-23 00:59:56] INFO root fetch - processPackages [turbo-docs]: executing diffoscope
+[2023-04-23 00:59:56] INFO root fetch - processPackages [turbo-docs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turbo_docs-0.7.2.tar.gz tmp/turbo_docs-0.7.3.tar.gz --markdown 20230423/t/turbo-docs/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-04-23 00:59:56] INFO root fetch - processPackages [ubuntu-termux]: executing diffoscope
+[2023-04-23 00:59:56] INFO root fetch - processPackages [ubuntu-termux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ubuntu_termux-0.0.4-py3-none-any.whl.zip tmp/ubuntu_termux-0.0.4.1-py3-none-any.whl.zip --markdown 20230423/u/ubuntu-termux/0.0.4-0.0.4.1/diff.md --exclude *.pyd
+[2023-04-23 00:59:56] INFO root fetch - processPackages [zuspec-parser]: Downloading https://files.pythonhosted.org/packages/14/12/5c8743750ae2dad033b35d604819bd69fc5dcdf6f0cb6546b32560badaaa/zuspec_parser-0.0.1.4775095816-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-23 00:59:56] INFO root fetch - processPackages [biobear]: Downloading https://files.pythonhosted.org/packages/7d/78/b4da1ab6e07a6c48101ad5aedb1458751314e7e979b669d4b400832b79fc/biobear-0.1.5.tar.gz
+[2023-04-23 00:59:56] INFO root fetch - processPackages [pyseto]: Downloading https://files.pythonhosted.org/packages/37/b4/abb49bf0815b26870ceedf6dd4e557b87f58fabc43806e8c41d1412c2aa7/pyseto-1.7.2.tar.gz
+[2023-04-23 00:59:56] INFO root fetch - processPackages [pyseto]: executing diffoscope
+[2023-04-23 00:59:56] INFO root fetch - processPackages [pyseto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyseto-1.7.1.tar.gz tmp/pyseto-1.7.2.tar.gz --markdown 20230423/p/pyseto/1.7.1-1.7.2/diff.md --exclude *.pyd
+[2023-04-23 00:59:56] INFO root fetch - processPackages [pipcolouringslibV1]: Downloading https://files.pythonhosted.org/packages/82/83/1b5a9fcf35b083f11f4407f21fdb28e09ba54e88badad305108087724b06/pipcolouringslibV1-1.5.1.tar.gz
+[2023-04-23 00:59:56] INFO root fetch - processPackages [biobear]: executing diffoscope
+[2023-04-23 00:59:56] INFO root fetch - processPackages [biobear]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biobear-0.1.4.tar.gz tmp/biobear-0.1.5.tar.gz --markdown 20230423/b/biobear/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-23 00:59:56] INFO root fetch - processPackages [pipcolouringslibV1]: executing diffoscope
+[2023-04-23 00:59:56] INFO root fetch - processPackages [pipcolouringslibV1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipcolouringslibV1-1.0.0.tar.gz tmp/pipcolouringslibV1-1.5.1.tar.gz --markdown 20230423/p/pipcolouringslibV1/1.0.0-1.5.1/diff.md --exclude *.pyd
+[2023-04-23 00:59:57] INFO root fetch - processPackages [zuspec-parser]: executing diffoscope
+[2023-04-23 00:59:57] INFO root fetch - processPackages [zuspec-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_parser-0.0.1.4774975395-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_parser-0.0.1.4775095816-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230423/z/zuspec-parser/0.0.1.4774975395-0.0.1.4775095816/diff.md --exclude *.pyd
+[2023-04-23 00:59:57] INFO root fetch - main [MainThread]: End processing [ubuntu-termux]: success
+[2023-04-23 00:59:57] INFO root fetch - main [MainThread]: End processing [turbo-docs]: success
+[2023-04-23 00:59:57] INFO root fetch - main [MainThread]: End processing [pipcolouringslibV1]: success
+[2023-04-23 00:59:58] INFO root fetch - main [MainThread]: End processing [zuspec-parser]: success
+[2023-04-23 00:59:58] INFO root fetch - main [MainThread]: End processing [pyseto]: success
+[2023-04-23 00:59:58] INFO root fetch - main [MainThread]: End processing [biobear]: success
+[2023-04-23 00:59:58] INFO root fetch - main [MainThread]: Store serial: [17817929]
