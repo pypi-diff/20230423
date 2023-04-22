@@ -807,3 +807,57 @@
 [2023-04-23 01:43:04] INFO root fetch - main [MainThread]: End processing [gpt-gateway]: success
 [2023-04-23 01:43:34] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2023-04-23 01:43:34] INFO root fetch - main [MainThread]: Store serial: [17818078]
+[2023-04-23 01:48:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818078]
+[2023-04-23 01:48:42] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-23 01:48:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: InteractionsChatExporter
+[2023-04-23 01:48:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stdlibby-py
+[2023-04-23 01:48:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flexmod
+[2023-04-23 01:48:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dragonfly-core
+[2023-04-23 01:48:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: piknik
+[2023-04-23 01:48:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gpt-gateway
+[2023-04-23 01:48:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: circuitpython-mag-cal
+[2023-04-23 01:48:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: circuitpython-mag-cal
+[2023-04-23 01:48:42] INFO root fetch - processPackages [InteractionsChatExporter]: New version: [2.5.4] Old Version: [2.5.3]
+[2023-04-23 01:48:42] INFO root fetch - processPackages [piknik]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-23 01:48:42] INFO root fetch - processPackages [stdlibby-py]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-23 01:48:42] INFO root fetch - processPackages [gpt-gateway]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-23 01:48:42] INFO root fetch - processPackages [circuitpython-mag-cal]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-23 01:48:42] INFO root fetch - processPackages [flexmod]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-23 01:48:42] INFO root fetch - processPackages [circuitpython-mag-cal]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-23 01:48:42] INFO root fetch - processPackages [dragonfly-core]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-04-23 01:48:42] INFO root fetch - processPackages [piknik]: executing diffoscope
+[2023-04-23 01:48:42] INFO root fetch - processPackages [piknik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piknik-0.3.8.tar.gz tmp/piknik-0.3.9.tar.gz --markdown 20230423/p/piknik/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-23 01:48:42] INFO root fetch - processPackages [circuitpython-mag-cal]: Downloading https://files.pythonhosted.org/packages/22/26/eb694b948f7812dd35d3ea59144ad89aae4edf449d90ed719684e291b341/circuitpython-mag-cal-1.0.1.tar.gz
+[2023-04-23 01:48:42] INFO root fetch - processPackages [circuitpython-mag-cal]: Downloading https://files.pythonhosted.org/packages/22/26/eb694b948f7812dd35d3ea59144ad89aae4edf449d90ed719684e291b341/circuitpython-mag-cal-1.0.1.tar.gz
+[2023-04-23 01:48:42] INFO root fetch - processPackages [flexmod]: Downloading https://files.pythonhosted.org/packages/48/6b/6583d4e982dbaacba595392c6c0902f9fdb7d6783b22e3e7610f48924cef/flexmod-0.1.1.tar.gz
+[2023-04-23 01:48:42] INFO root fetch - processPackages [InteractionsChatExporter]: Downloading https://files.pythonhosted.org/packages/c6/42/161dedbed309be4795fc8ebcb3fc6f6fdd64585d35db74b1c3eae98f7611/InteractionsChatExporter-2.5.3.tar.gz
+[2023-04-23 01:48:43] INFO root fetch - processPackages [gpt-gateway]: Downloading https://files.pythonhosted.org/packages/a6/3b/34efe8866dc84bd2f93d0491c446243e79c5714627c5e50c41b4ed96bff4/gpt_gateway-0.0.8.tar.gz
+[2023-04-23 01:48:43] INFO root fetch - processPackages [stdlibby-py]: Downloading https://files.pythonhosted.org/packages/7c/3e/7a0e653f2723520a68fefa66c88bf701ac7327aff4b9a3f7d2f37c9a4331/stdlibby_py-0.5.8.tar.gz
+[2023-04-23 01:48:43] INFO root fetch - processPackages [gpt-gateway]: executing diffoscope
+[2023-04-23 01:48:43] INFO root fetch - processPackages [gpt-gateway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_gateway-0.0.7.tar.gz tmp/gpt_gateway-0.0.8.tar.gz --markdown 20230423/g/gpt-gateway/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-23 01:48:43] INFO root fetch - processPackages [circuitpython-mag-cal]: Downloading https://files.pythonhosted.org/packages/1f/80/a9450f6931e9999d6a044e04401b8355ab92ada12bde3977ef79e790cb89/circuitpython-mag-cal-1.0.2.tar.gz
+[2023-04-23 01:48:43] INFO root fetch - processPackages [circuitpython-mag-cal]: Downloading https://files.pythonhosted.org/packages/1f/80/a9450f6931e9999d6a044e04401b8355ab92ada12bde3977ef79e790cb89/circuitpython-mag-cal-1.0.2.tar.gz
+[2023-04-23 01:48:43] INFO root fetch - processPackages [InteractionsChatExporter]: Downloading https://files.pythonhosted.org/packages/ad/d7/5abb0dca6ed97440bfc060f668aa8eefb76d0e6bd621a713285fc59707c9/InteractionsChatExporter-2.5.4.tar.gz
+[2023-04-23 01:48:43] INFO root fetch - processPackages [dragonfly-core]: executing diffoscope
+[2023-04-23 01:48:43] INFO root fetch - processPackages [dragonfly-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-core-1.8.1.tar.gz tmp/dragonfly-core-1.9.0.tar.gz --markdown 20230423/d/dragonfly-core/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-04-23 01:48:43] INFO root fetch - processPackages [flexmod]: Downloading https://files.pythonhosted.org/packages/32/dc/117351bd8965911cd5e0d8c0e5242f1b304994682e6d9b7ba24de2a80e3c/flexmod-0.1.2.tar.gz
+[2023-04-23 01:48:43] INFO root fetch - processPackages [circuitpython-mag-cal]: executing diffoscope
+[2023-04-23 01:48:43] INFO root fetch - processPackages [circuitpython-mag-cal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circuitpython-mag-cal-1.0.1.tar.gz tmp/circuitpython-mag-cal-1.0.2.tar.gz --markdown 20230423/c/circuitpython-mag-cal/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-23 01:48:43] INFO root fetch - processPackages [circuitpython-mag-cal]: executing diffoscope
+[2023-04-23 01:48:43] INFO root fetch - processPackages [circuitpython-mag-cal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circuitpython-mag-cal-1.0.1.tar.gz tmp/circuitpython-mag-cal-1.0.2.tar.gz --markdown 20230423/c/circuitpython-mag-cal/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-23 01:48:43] INFO root fetch - processPackages [InteractionsChatExporter]: executing diffoscope
+[2023-04-23 01:48:43] INFO root fetch - processPackages [InteractionsChatExporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/InteractionsChatExporter-2.5.3.tar.gz tmp/InteractionsChatExporter-2.5.4.tar.gz --markdown 20230423/I/InteractionsChatExporter/2.5.3-2.5.4/diff.md --exclude *.pyd
+[2023-04-23 01:48:43] INFO root fetch - processPackages [stdlibby-py]: Downloading https://files.pythonhosted.org/packages/52/fc/b97bd27c13e0c73a236ca3dcee905adec36e37cdce714c1b5ff4eabdbcf4/stdlibby_py-0.5.9.tar.gz
+[2023-04-23 01:48:43] INFO root fetch - processPackages [stdlibby-py]: executing diffoscope
+[2023-04-23 01:48:43] INFO root fetch - processPackages [stdlibby-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stdlibby_py-0.5.8.tar.gz tmp/stdlibby_py-0.5.9.tar.gz --markdown 20230423/s/stdlibby-py/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-23 01:48:43] INFO root fetch - processPackages [flexmod]: executing diffoscope
+[2023-04-23 01:48:43] INFO root fetch - processPackages [flexmod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flexmod-0.1.1.tar.gz tmp/flexmod-0.1.2.tar.gz --markdown 20230423/f/flexmod/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-23 01:48:44] INFO root fetch - main [MainThread]: End processing [gpt-gateway]: success
+[2023-04-23 01:48:44] INFO root fetch - main [MainThread]: End processing [dragonfly-core]: success
+[2023-04-23 01:48:44] INFO root fetch - main [MainThread]: End processing [stdlibby-py]: success
+[2023-04-23 01:48:44] INFO root fetch - main [MainThread]: End processing [circuitpython-mag-cal]: success
+[2023-04-23 01:48:44] INFO root fetch - main [MainThread]: End processing [flexmod]: success
+[2023-04-23 01:48:44] INFO root fetch - main [MainThread]: End processing [InteractionsChatExporter]: success
+[2023-04-23 01:48:45] INFO root fetch - main [MainThread]: End processing [piknik]: success
+[2023-04-23 01:48:45] INFO root fetch - main [MainThread]: End processing [circuitpython-mag-cal]: success
+[2023-04-23 01:48:45] INFO root fetch - main [MainThread]: Store serial: [17818101]
