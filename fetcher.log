@@ -340,3 +340,42 @@
 [2023-04-23 00:30:39] INFO root fetch - main [MainThread]: End processing [printnanny-api-client]: success
 [2023-04-23 00:30:48] INFO root fetch - main [MainThread]: End processing [arraymap]: success
 [2023-04-23 00:30:48] INFO root fetch - main [MainThread]: Store serial: [17817699]
+[2023-04-23 00:35:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17817699]
+[2023-04-23 00:35:56] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-23 00:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sigstore
+[2023-04-23 00:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastLLaMa-python
+[2023-04-23 00:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: browserpilot
+[2023-04-23 00:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ubuntu-termux
+[2023-04-23 00:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dinov2
+[2023-04-23 00:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyMissingAHP
+[2023-04-23 00:35:57] INFO root fetch - processPackages [dinov2]: New version: [0.0.1.dev1] Old Version: [0.0.1.dev0]
+[2023-04-23 00:35:57] INFO root fetch - processPackages [sigstore]: New version: [1.1.2rc1] Old Version: [1.1.2]
+[2023-04-23 00:35:57] INFO root fetch - processPackages [ubuntu-termux]: New version: [0.0.4] Old Version: [0.0.3.1]
+[2023-04-23 00:35:57] WARNING root fetch - processPackages [fastLLaMa-python]: Skipping, unable to determine old version
+[2023-04-23 00:35:57] INFO root fetch - main [MainThread]: End processing [fastLLaMa-python] error
+[2023-04-23 00:35:57] INFO root fetch - processPackages [browserpilot]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-23 00:35:57] INFO root fetch - processPackages [pyMissingAHP]: New version: [1.1.4] Old Version: [1.1.2]
+[2023-04-23 00:35:57] INFO root fetch - processPackages [dinov2]: Downloading https://files.pythonhosted.org/packages/e0/f4/ae3f123a635beb87799cf440fa24ecda303655f00e90e204bc28c8e7c217/dinov2-0.0.1.dev0-py3-none-any.whl
+[2023-04-23 00:35:57] INFO root fetch - processPackages [sigstore]: Downloading https://files.pythonhosted.org/packages/b1/95/5148399b84b4629daa9c35873bc7c8f244493d1e8ea0094de59fccecfa06/sigstore-1.1.2.tar.gz
+[2023-04-23 00:35:57] INFO root fetch - processPackages [browserpilot]: executing diffoscope
+[2023-04-23 00:35:57] INFO root fetch - processPackages [browserpilot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/browserpilot-0.2.8.tar.gz tmp/browserpilot-0.2.9.tar.gz --markdown 20230423/b/browserpilot/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-23 00:35:57] INFO root fetch - processPackages [ubuntu-termux]: Downloading https://files.pythonhosted.org/packages/31/ef/db369f6c4973fb72f7e9a4b4dc7e257b0aac5bc9159992f1bb58b9b94a0d/ubuntu_termux-0.0.3.1-py3-none-any.whl
+[2023-04-23 00:35:57] INFO root fetch - processPackages [pyMissingAHP]: Downloading https://files.pythonhosted.org/packages/aa/d7/e8411cb73cf92b3edefa6ab328a04d244f84047b620586bc0c215ce5b41f/pyMissingAHP-1.1.2.tar.gz
+[2023-04-23 00:35:57] INFO root fetch - processPackages [dinov2]: Downloading https://files.pythonhosted.org/packages/9e/90/6274860c8e007aaa0feabf28ba6b0739deead45056d577573fc068f8b04c/dinov2-0.0.1.dev1-py3-none-any.whl
+[2023-04-23 00:35:57] INFO root fetch - processPackages [sigstore]: Downloading https://files.pythonhosted.org/packages/71/01/54fe1d6ad76418837abbe10b2f5b039db597445fdd2669cfef685c531280/sigstore-1.1.2rc1.tar.gz
+[2023-04-23 00:35:57] INFO root fetch - processPackages [ubuntu-termux]: Downloading https://files.pythonhosted.org/packages/fe/89/9532bdb6fd2539e56d72fab2c49a34f8a9602e395a091b848dd96edb11ac/ubuntu_termux-0.0.4-py3-none-any.whl
+[2023-04-23 00:35:57] INFO root fetch - processPackages [ubuntu-termux]: executing diffoscope
+[2023-04-23 00:35:57] INFO root fetch - processPackages [ubuntu-termux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ubuntu_termux-0.0.3.1-py3-none-any.whl.zip tmp/ubuntu_termux-0.0.4-py3-none-any.whl.zip --markdown 20230423/u/ubuntu-termux/0.0.3.1-0.0.4/diff.md --exclude *.pyd
+[2023-04-23 00:35:57] INFO root fetch - processPackages [pyMissingAHP]: Downloading https://files.pythonhosted.org/packages/8b/f9/c24208561ee930d740aa73fb172a9bcef81789c1114599df30dd7f290482/pyMissingAHP-1.1.4.tar.gz
+[2023-04-23 00:35:57] INFO root fetch - processPackages [dinov2]: executing diffoscope
+[2023-04-23 00:35:57] INFO root fetch - processPackages [dinov2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dinov2-0.0.1.dev0-py3-none-any.whl.zip tmp/dinov2-0.0.1.dev1-py3-none-any.whl.zip --markdown 20230423/d/dinov2/0.0.1.dev0-0.0.1.dev1/diff.md --exclude *.pyd
+[2023-04-23 00:35:57] INFO root fetch - processPackages [sigstore]: executing diffoscope
+[2023-04-23 00:35:57] INFO root fetch - processPackages [sigstore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sigstore-1.1.2.tar.gz tmp/sigstore-1.1.2rc1.tar.gz --markdown 20230423/s/sigstore/1.1.2-1.1.2rc1/diff.md --exclude *.pyd
+[2023-04-23 00:35:57] INFO root fetch - processPackages [pyMissingAHP]: executing diffoscope
+[2023-04-23 00:35:57] INFO root fetch - processPackages [pyMissingAHP]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyMissingAHP-1.1.2.tar.gz tmp/pyMissingAHP-1.1.4.tar.gz --markdown 20230423/p/pyMissingAHP/1.1.2-1.1.4/diff.md --exclude *.pyd
+[2023-04-23 00:35:58] INFO root fetch - main [MainThread]: End processing [browserpilot]: success
+[2023-04-23 00:35:58] INFO root fetch - main [MainThread]: End processing [ubuntu-termux]: success
+[2023-04-23 00:35:58] INFO root fetch - main [MainThread]: End processing [sigstore]: success
+[2023-04-23 00:35:59] INFO root fetch - main [MainThread]: End processing [pyMissingAHP]: success
+[2023-04-23 00:36:14] INFO root fetch - main [MainThread]: End processing [dinov2]: success
+[2023-04-23 00:36:14] INFO root fetch - main [MainThread]: Store serial: [17817754]
