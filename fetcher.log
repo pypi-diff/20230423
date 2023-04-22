@@ -861,3 +861,40 @@
 [2023-04-23 01:48:45] INFO root fetch - main [MainThread]: End processing [piknik]: success
 [2023-04-23 01:48:45] INFO root fetch - main [MainThread]: End processing [circuitpython-mag-cal]: success
 [2023-04-23 01:48:45] INFO root fetch - main [MainThread]: Store serial: [17818101]
+[2023-04-23 01:53:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818101]
+[2023-04-23 01:53:54] INFO root fetch - main [MainThread]: No changed packages found
+[2023-04-23 01:58:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818101]
+[2023-04-23 01:59:00] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-23 01:59:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: np-queuey
+[2023-04-23 01:59:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dragonfly-radiance
+[2023-04-23 01:59:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: panderequests
+[2023-04-23 01:59:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dragonfly-energy
+[2023-04-23 01:59:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lbt-dragonfly
+[2023-04-23 01:59:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dragonfly-uwg
+[2023-04-23 01:59:00] INFO root fetch - processPackages [panderequests]: New version: [0.2] Old Version: [0.1]
+[2023-04-23 01:59:00] INFO root fetch - processPackages [dragonfly-radiance]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-23 01:59:00] INFO root fetch - processPackages [np-queuey]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 01:59:00] INFO root fetch - processPackages [dragonfly-uwg]: New version: [0.5.99] Old Version: [0.5.98]
+[2023-04-23 01:59:00] INFO root fetch - processPackages [dragonfly-energy]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-23 01:59:00] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2023-04-23 01:59:00] INFO root fetch - processPackages [dragonfly-energy]: executing diffoscope
+[2023-04-23 01:59:00] INFO root fetch - processPackages [dragonfly-energy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-energy-1.9.8.tar.gz tmp/dragonfly-energy-1.9.9.tar.gz --markdown 20230423/d/dragonfly-energy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-23 01:59:00] INFO root fetch - processPackages [dragonfly-radiance]: executing diffoscope
+[2023-04-23 01:59:00] INFO root fetch - processPackages [dragonfly-radiance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-radiance-0.2.8.tar.gz tmp/dragonfly-radiance-0.2.9.tar.gz --markdown 20230423/d/dragonfly-radiance/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-23 01:59:01] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2023-04-23 01:59:01] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20230423/l/lbt-dragonfly/0.9.98-0.9.99/diff.md --exclude *.pyd
+[2023-04-23 01:59:01] INFO root fetch - processPackages [np-queuey]: executing diffoscope
+[2023-04-23 01:59:01] INFO root fetch - processPackages [np-queuey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_queuey-0.1.8.tar.gz tmp/np_queuey-0.1.9.tar.gz --markdown 20230423/n/np-queuey/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 01:59:01] INFO root fetch - processPackages [dragonfly-uwg]: executing diffoscope
+[2023-04-23 01:59:01] INFO root fetch - processPackages [dragonfly-uwg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-uwg-0.5.98.tar.gz tmp/dragonfly-uwg-0.5.99.tar.gz --markdown 20230423/d/dragonfly-uwg/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2023-04-23 01:59:01] INFO root fetch - processPackages [panderequests]: Downloading https://files.pythonhosted.org/packages/5b/05/e175e5176fd370d804208014492884beed1bb5ac380043b1ce7c8c459263/panderequests-0.1.tar.gz
+[2023-04-23 01:59:02] INFO root fetch - main [MainThread]: End processing [dragonfly-radiance]: success
+[2023-04-23 01:59:02] INFO root fetch - processPackages [panderequests]: Downloading https://files.pythonhosted.org/packages/28/39/3e6e0a589f9a968036f6b9508f1922f2601dda71f7b88c58f78f0f92d553/panderequests-0.2.tar.gz
+[2023-04-23 01:59:02] INFO root fetch - main [MainThread]: End processing [dragonfly-energy]: success
+[2023-04-23 01:59:02] INFO root fetch - processPackages [panderequests]: executing diffoscope
+[2023-04-23 01:59:02] INFO root fetch - processPackages [panderequests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panderequests-0.1.tar.gz tmp/panderequests-0.2.tar.gz --markdown 20230423/p/panderequests/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-23 01:59:02] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2023-04-23 01:59:02] INFO root fetch - main [MainThread]: End processing [np-queuey]: success
+[2023-04-23 01:59:03] INFO root fetch - main [MainThread]: End processing [dragonfly-uwg]: success
+[2023-04-23 01:59:03] INFO root fetch - main [MainThread]: End processing [panderequests]: success
+[2023-04-23 01:59:03] INFO root fetch - main [MainThread]: Store serial: [17818118]
