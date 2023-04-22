@@ -435,3 +435,40 @@
 [2023-04-23 00:41:24] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
 [2023-04-23 00:41:26] INFO root fetch - main [MainThread]: End processing [zigzag-dse]: success
 [2023-04-23 00:41:26] INFO root fetch - main [MainThread]: Store serial: [17817790]
+[2023-04-23 00:46:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17817790]
+[2023-04-23 00:46:35] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 00:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pythonscrapertool
+[2023-04-23 00:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ebi-eva-common-pyutils
+[2023-04-23 00:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ox-script
+[2023-04-23 00:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: featurizerai
+[2023-04-23 00:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ZaidPP
+[2023-04-23 00:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: supadef
+[2023-04-23 00:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dlrepo
+[2023-04-23 00:46:35] WARNING root fetch - processPackages [ZaidPP]: Skipping, unable to determine old version
+[2023-04-23 00:46:35] INFO root fetch - main [MainThread]: End processing [ZaidPP] error
+[2023-04-23 00:46:35] WARNING root fetch - processPackages [pythonscrapertool]: Skipping, unable to determine old version
+[2023-04-23 00:46:35] INFO root fetch - main [MainThread]: End processing [pythonscrapertool] error
+[2023-04-23 00:46:35] INFO root fetch - processPackages [supadef]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 00:46:35] INFO root fetch - processPackages [ebi-eva-common-pyutils]: New version: [0.5.3.dev2] Old Version: [0.5.3.dev1]
+[2023-04-23 00:46:35] WARNING root fetch - processPackages [ox-script]: Skipping, unable to determine old version
+[2023-04-23 00:46:35] INFO root fetch - main [MainThread]: End processing [ox-script] error
+[2023-04-23 00:46:35] INFO root fetch - processPackages [featurizerai]: New version: [1.4.3] Old Version: [1.4.0]
+[2023-04-23 00:46:35] INFO root fetch - processPackages [dlrepo]: New version: [0.8] Old Version: [0.5]
+[2023-04-23 00:46:35] INFO root fetch - processPackages [ebi-eva-common-pyutils]: Downloading https://files.pythonhosted.org/packages/36/75/e0341717e8e49d02e38ae6fc9f95b433d717365b10407f440efbfa9cd2ac/ebi_eva_common_pyutils-0.5.3.dev1.tar.gz
+[2023-04-23 00:46:35] INFO root fetch - processPackages [supadef]: Downloading https://files.pythonhosted.org/packages/e9/ed/03d17f0b315396c71c3e549f58018aa7fb73983977c87bc48b4746582463/supadef-0.0.8.tar.gz
+[2023-04-23 00:46:35] INFO root fetch - processPackages [featurizerai]: Downloading https://files.pythonhosted.org/packages/62/59/3b823db979c7f8b4d7cda76df577f30db1c968ba9ecd283a63dce40c47a5/featurizerai-1.4.3.tar.gz
+[2023-04-23 00:46:36] INFO root fetch - processPackages [featurizerai]: executing diffoscope
+[2023-04-23 00:46:36] INFO root fetch - processPackages [featurizerai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featurizerai-1.4.0.tar.gz tmp/featurizerai-1.4.3.tar.gz --markdown 20230423/f/featurizerai/1.4.0-1.4.3/diff.md --exclude *.pyd
+[2023-04-23 00:46:36] INFO root fetch - processPackages [dlrepo]: executing diffoscope
+[2023-04-23 00:46:36] INFO root fetch - processPackages [dlrepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dlrepo-0.5.tar.gz tmp/dlrepo-0.8.tar.gz --markdown 20230423/d/dlrepo/0.5-0.8/diff.md --exclude *.pyd
+[2023-04-23 00:46:36] INFO root fetch - processPackages [supadef]: Downloading https://files.pythonhosted.org/packages/77/b2/f8a7f034f03aa94cc404c5c66887a86068ea82d5b6cd6179cb9b656d8e3b/supadef-0.0.9.tar.gz
+[2023-04-23 00:46:36] INFO root fetch - processPackages [ebi-eva-common-pyutils]: Downloading https://files.pythonhosted.org/packages/af/7e/b44b0afa14575bc13b03694a07c0e56ef43574f59ca9f24f0f1483e7f350/ebi_eva_common_pyutils-0.5.3.dev2.tar.gz
+[2023-04-23 00:46:36] INFO root fetch - processPackages [supadef]: executing diffoscope
+[2023-04-23 00:46:36] INFO root fetch - processPackages [supadef]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supadef-0.0.8.tar.gz tmp/supadef-0.0.9.tar.gz --markdown 20230423/s/supadef/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 00:46:36] INFO root fetch - processPackages [ebi-eva-common-pyutils]: executing diffoscope
+[2023-04-23 00:46:36] INFO root fetch - processPackages [ebi-eva-common-pyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ebi_eva_common_pyutils-0.5.3.dev1.tar.gz tmp/ebi_eva_common_pyutils-0.5.3.dev2.tar.gz --markdown 20230423/e/ebi-eva-common-pyutils/0.5.3.dev1-0.5.3.dev2/diff.md --exclude *.pyd
+[2023-04-23 00:46:37] INFO root fetch - main [MainThread]: End processing [featurizerai]: success
+[2023-04-23 00:46:37] INFO root fetch - main [MainThread]: End processing [supadef]: success
+[2023-04-23 00:46:37] INFO root fetch - main [MainThread]: End processing [ebi-eva-common-pyutils]: success
+[2023-04-23 00:46:37] INFO root fetch - main [MainThread]: End processing [dlrepo]: success
+[2023-04-23 00:46:37] INFO root fetch - main [MainThread]: Store serial: [17817815]
