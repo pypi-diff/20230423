@@ -740,3 +740,31 @@
 [2023-04-23 01:32:41] INFO root fetch - main [MainThread]: End processing [psd-export]: success
 [2023-04-23 01:32:41] INFO root fetch - main [MainThread]: End processing [np-queuey]: success
 [2023-04-23 01:32:41] INFO root fetch - main [MainThread]: Store serial: [17818035]
+[2023-04-23 01:37:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818035]
+[2023-04-23 01:37:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-23 01:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-ww-plugin-openwakeword
+[2023-04-23 01:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-dinkum-listener
+[2023-04-23 01:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ovos-workshop
+[2023-04-23 01:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: trill
+[2023-04-23 01:37:50] INFO root fetch - processPackages [trill]: New version: [0.0.8] Old Version: [0.0.6]
+[2023-04-23 01:37:50] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: New version: [0.2.0a1] Old Version: [0.1.0a2]
+[2023-04-23 01:37:50] INFO root fetch - processPackages [ovos-dinkum-listener]: New version: [0.0.2a5] Old Version: [0.0.2a4]
+[2023-04-23 01:37:50] INFO root fetch - processPackages [ovos-workshop]: New version: [0.0.9a1] Old Version: [0.0.9]
+[2023-04-23 01:37:50] INFO root fetch - processPackages [ovos-workshop]: executing diffoscope
+[2023-04-23 01:37:50] INFO root fetch - processPackages [ovos-workshop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_workshop-0.0.9-py3-none-any.whl.zip tmp/ovos_workshop-0.0.9a1-py3-none-any.whl.zip --markdown 20230423/o/ovos-workshop/0.0.9-0.0.9a1/diff.md --exclude *.pyd
+[2023-04-23 01:37:50] INFO root fetch - processPackages [trill]: Downloading https://files.pythonhosted.org/packages/ba/c0/c0a3e9070dcee40ed3ee67a0e9bb8b0e353288539e4a250a15d22ab740a7/trill-0.0.6.tar.gz
+[2023-04-23 01:37:50] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: Downloading https://files.pythonhosted.org/packages/67/b8/ca6cc08763463435230cf5c168ac6c980409e15d8e450c09001acdfd8799/ovos_ww_plugin_openwakeword-0.1.0a2-py3-none-any.whl
+[2023-04-23 01:37:50] INFO root fetch - processPackages [ovos-dinkum-listener]: Downloading https://files.pythonhosted.org/packages/4c/a6/a91c78a5a33daa4dc60ccb80a607ca4a99181c496e07c426f440d5c4e7a1/ovos_dinkum_listener-0.0.2a5-py3-none-any.whl
+[2023-04-23 01:37:50] INFO root fetch - processPackages [ovos-dinkum-listener]: executing diffoscope
+[2023-04-23 01:37:50] INFO root fetch - processPackages [ovos-dinkum-listener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_dinkum_listener-0.0.2a4-py3-none-any.whl.zip tmp/ovos_dinkum_listener-0.0.2a5-py3-none-any.whl.zip --markdown 20230423/o/ovos-dinkum-listener/0.0.2a4-0.0.2a5/diff.md --exclude *.pyd
+[2023-04-23 01:37:50] INFO root fetch - processPackages [trill]: Downloading https://files.pythonhosted.org/packages/37/34/7d306bb0f0f3f6bf491427159ed4d9bf0a48142ceee79e7c2be6ed7f571c/trill-0.0.8.tar.gz
+[2023-04-23 01:37:50] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: Downloading https://files.pythonhosted.org/packages/15/b9/2e00bbf868ffc472d960a92771e9ab109d0b4c843346133d4e35b6fee243/ovos_ww_plugin_openwakeword-0.2.0a1-py3-none-any.whl
+[2023-04-23 01:37:50] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: executing diffoscope
+[2023-04-23 01:37:50] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_ww_plugin_openwakeword-0.1.0a2-py3-none-any.whl.zip tmp/ovos_ww_plugin_openwakeword-0.2.0a1-py3-none-any.whl.zip --markdown 20230423/o/ovos-ww-plugin-openwakeword/0.1.0a2-0.2.0a1/diff.md --exclude *.pyd
+[2023-04-23 01:37:50] INFO root fetch - processPackages [trill]: executing diffoscope
+[2023-04-23 01:37:50] INFO root fetch - processPackages [trill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trill-0.0.6.tar.gz tmp/trill-0.0.8.tar.gz --markdown 20230423/t/trill/0.0.6-0.0.8/diff.md --exclude *.pyd
+[2023-04-23 01:37:51] INFO root fetch - main [MainThread]: End processing [ovos-workshop]: success
+[2023-04-23 01:37:51] INFO root fetch - main [MainThread]: End processing [ovos-dinkum-listener]: success
+[2023-04-23 01:37:51] INFO root fetch - main [MainThread]: End processing [ovos-ww-plugin-openwakeword]: success
+[2023-04-23 01:37:51] INFO root fetch - main [MainThread]: End processing [trill]: success
+[2023-04-23 01:37:51] INFO root fetch - main [MainThread]: Store serial: [17818045]
