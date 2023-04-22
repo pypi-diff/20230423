@@ -683,3 +683,18 @@
 [2023-04-23 01:16:14] INFO root fetch - main [MainThread]: End processing [mlpath]: success
 [2023-04-23 01:16:29] INFO root fetch - main [MainThread]: End processing [Loterias]: success
 [2023-04-23 01:16:29] INFO root fetch - main [MainThread]: Store serial: [17818012]
+[2023-04-23 01:21:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818012]
+[2023-04-23 01:21:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-23 01:21:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jupylite-duckdb
+[2023-04-23 01:21:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dinov2
+[2023-04-23 01:21:39] INFO root fetch - processPackages [jupylite-duckdb]: New version: [0.0.18a1] Old Version: [0.0.17]
+[2023-04-23 01:21:39] INFO root fetch - processPackages [dinov2]: New version: [0.0.1.dev2] Old Version: [0.0.1.dev1]
+[2023-04-23 01:21:39] INFO root fetch - processPackages [jupylite-duckdb]: Downloading https://files.pythonhosted.org/packages/75/6b/31575e88ca822c0f28dd6b748e5a7a4e367713dd423968ef37e42e24cdbf/jupylite_duckdb-0.0.18a1-py3-none-any.whl
+[2023-04-23 01:21:39] INFO root fetch - processPackages [dinov2]: Downloading https://files.pythonhosted.org/packages/57/ca/ab3b80cd296e3646553b744dcf8904edbd04e18c61a3b9102a02fd39d521/dinov2-0.0.1.dev2-py3-none-any.whl
+[2023-04-23 01:21:39] INFO root fetch - processPackages [jupylite-duckdb]: executing diffoscope
+[2023-04-23 01:21:39] INFO root fetch - processPackages [jupylite-duckdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupylite_duckdb-0.0.17-py3-none-any.whl.zip tmp/jupylite_duckdb-0.0.18a1-py3-none-any.whl.zip --markdown 20230423/j/jupylite-duckdb/0.0.17-0.0.18a1/diff.md --exclude *.pyd
+[2023-04-23 01:21:39] INFO root fetch - processPackages [dinov2]: executing diffoscope
+[2023-04-23 01:21:39] INFO root fetch - processPackages [dinov2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dinov2-0.0.1.dev1-py3-none-any.whl.zip tmp/dinov2-0.0.1.dev2-py3-none-any.whl.zip --markdown 20230423/d/dinov2/0.0.1.dev1-0.0.1.dev2/diff.md --exclude *.pyd
+[2023-04-23 01:21:40] INFO root fetch - main [MainThread]: End processing [jupylite-duckdb]: success
+[2023-04-23 01:21:40] INFO root fetch - main [MainThread]: End processing [dinov2]: success
+[2023-04-23 01:21:40] INFO root fetch - main [MainThread]: Store serial: [17818016]
