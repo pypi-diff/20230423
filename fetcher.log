@@ -768,3 +768,42 @@
 [2023-04-23 01:37:51] INFO root fetch - main [MainThread]: End processing [ovos-ww-plugin-openwakeword]: success
 [2023-04-23 01:37:51] INFO root fetch - main [MainThread]: End processing [trill]: success
 [2023-04-23 01:37:51] INFO root fetch - main [MainThread]: Store serial: [17818045]
+[2023-04-23 01:42:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818045]
+[2023-04-23 01:43:02] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 01:43:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: klayout
+[2023-04-23 01:43:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-ww-plugin-openwakeword
+[2023-04-23 01:43:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: triade
+[2023-04-23 01:43:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gpt-gateway
+[2023-04-23 01:43:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ringneck
+[2023-04-23 01:43:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: moto
+[2023-04-23 01:43:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: geostack
+[2023-04-23 01:43:02] INFO root fetch - processPackages [gpt-gateway]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-23 01:43:02] INFO root fetch - processPackages [klayout]: New version: [0.28.post1] Old Version: [0.28.7]
+[2023-04-23 01:43:02] WARNING root fetch - processPackages [geostack]: Skipping, unable to determine old version
+[2023-04-23 01:43:02] INFO root fetch - main [MainThread]: End processing [geostack] error
+[2023-04-23 01:43:02] INFO root fetch - processPackages [ringneck]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 01:43:02] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: New version: [0.2.0a1] Old Version: [0.2.0]
+[2023-04-23 01:43:02] WARNING root fetch - processPackages [triade]: Skipping, unable to determine old version
+[2023-04-23 01:43:02] INFO root fetch - main [MainThread]: End processing [triade] error
+[2023-04-23 01:43:02] INFO root fetch - processPackages [moto]: New version: [4.1.8.dev9] Old Version: [4.1.8.dev8]
+[2023-04-23 01:43:02] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-04-23 01:43:02] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.8.dev8.tar.gz tmp/moto-4.1.8.dev9.tar.gz --markdown 20230423/m/moto/4.1.8.dev8-4.1.8.dev9/diff.md --exclude *.pyd
+[2023-04-23 01:43:02] INFO root fetch - processPackages [klayout]: Downloading https://files.pythonhosted.org/packages/c4/c4/30d2a34d911ef719780c07af06afa1bd00ece40583eae870189816e91d49/klayout-0.28.7-cp39-cp39-win_amd64.whl
+[2023-04-23 01:43:02] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: Downloading https://files.pythonhosted.org/packages/df/bb/b688f98db9b071fdcfaf287959b02adf94adb5501805f16baca14b289a84/ovos_ww_plugin_openwakeword-0.2.0-py3-none-any.whl
+[2023-04-23 01:43:02] WARNING root fetch - processPackages [klayout]: Skipping package: exceeds size limit 11716869>=10485760
+[2023-04-23 01:43:02] INFO root fetch - main [MainThread]: End processing [klayout] error
+[2023-04-23 01:43:02] INFO root fetch - processPackages [ringneck]: Downloading https://files.pythonhosted.org/packages/90/bc/eee55bde8574ec63f437170984c382cbd3159a7316e0b5e23b5d4f4061e7/ringneck-0.0.1.tar.gz
+[2023-04-23 01:43:03] INFO root fetch - processPackages [gpt-gateway]: Downloading https://files.pythonhosted.org/packages/fa/1b/98e470395fe21a95d4e49bd9e4f7f22d68605de74f17a502446436ae5587/gpt_gateway-0.0.6.tar.gz
+[2023-04-23 01:43:03] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: executing diffoscope
+[2023-04-23 01:43:03] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_ww_plugin_openwakeword-0.2.0-py3-none-any.whl.zip tmp/ovos_ww_plugin_openwakeword-0.2.0a1-py3-none-any.whl.zip --markdown 20230423/o/ovos-ww-plugin-openwakeword/0.2.0-0.2.0a1/diff.md --exclude *.pyd
+[2023-04-23 01:43:03] INFO root fetch - processPackages [ringneck]: Downloading https://files.pythonhosted.org/packages/2c/d8/86675ad7b65c473c04db9639be133ae444384675479004e3a280559ea86d/ringneck-0.0.2.tar.gz
+[2023-04-23 01:43:03] INFO root fetch - processPackages [gpt-gateway]: Downloading https://files.pythonhosted.org/packages/e1/65/ec5cf008a02c3e30cb05fda7435cbe2c32a7b6d73c0c723a913a6749b1a1/gpt_gateway-0.0.7.tar.gz
+[2023-04-23 01:43:03] INFO root fetch - processPackages [ringneck]: executing diffoscope
+[2023-04-23 01:43:03] INFO root fetch - processPackages [ringneck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ringneck-0.0.1.tar.gz tmp/ringneck-0.0.2.tar.gz --markdown 20230423/r/ringneck/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 01:43:03] INFO root fetch - processPackages [gpt-gateway]: executing diffoscope
+[2023-04-23 01:43:03] INFO root fetch - processPackages [gpt-gateway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_gateway-0.0.6.tar.gz tmp/gpt_gateway-0.0.7.tar.gz --markdown 20230423/g/gpt-gateway/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-23 01:43:04] INFO root fetch - main [MainThread]: End processing [ovos-ww-plugin-openwakeword]: success
+[2023-04-23 01:43:04] INFO root fetch - main [MainThread]: End processing [ringneck]: success
+[2023-04-23 01:43:04] INFO root fetch - main [MainThread]: End processing [gpt-gateway]: success
+[2023-04-23 01:43:34] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2023-04-23 01:43:34] INFO root fetch - main [MainThread]: Store serial: [17818078]
