@@ -379,3 +379,59 @@
 [2023-04-23 00:35:59] INFO root fetch - main [MainThread]: End processing [pyMissingAHP]: success
 [2023-04-23 00:36:14] INFO root fetch - main [MainThread]: End processing [dinov2]: success
 [2023-04-23 00:36:14] INFO root fetch - main [MainThread]: Store serial: [17817754]
+[2023-04-23 00:41:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17817754]
+[2023-04-23 00:41:22] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-23 00:41:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: piknik
+[2023-04-23 00:41:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unwanted-content-detector
+[2023-04-23 00:41:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: coconut-develop
+[2023-04-23 00:41:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zigzag-dse
+[2023-04-23 00:41:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ox-script
+[2023-04-23 00:41:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ovos-dinkum-listener
+[2023-04-23 00:41:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: yatracker-gitlab-linker
+[2023-04-23 00:41:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vollseg
+[2023-04-23 00:41:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: discord-ext-pager
+[2023-04-23 00:41:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: fastllama-python-test
+[2023-04-23 00:41:22] INFO root fetch - processPackages [unwanted-content-detector]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-23 00:41:22] INFO root fetch - processPackages [piknik]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-23 00:41:22] INFO root fetch - processPackages [ovos-dinkum-listener]: New version: [0.0.2a4] Old Version: [0.0.2a3]
+[2023-04-23 00:41:22] WARNING root fetch - processPackages [yatracker-gitlab-linker]: Skipping, unable to determine old version
+[2023-04-23 00:41:22] INFO root fetch - processPackages [zigzag-dse]: New version: [2.3.5] Old Version: [2.3.4]
+[2023-04-23 00:41:22] INFO root fetch - main [MainThread]: End processing [yatracker-gitlab-linker] error
+[2023-04-23 00:41:22] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-23 00:41:22] INFO root fetch - processPackages [discord-ext-pager]: New version: [1.0.1] Old Version: [1.0.0.post1]
+[2023-04-23 00:41:22] INFO root fetch - processPackages [ox-script]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-23 00:41:22] INFO root fetch - processPackages [coconut-develop]: New version: [3.0.0a0.dev9] Old Version: [3.0.0a0.dev8]
+[2023-04-23 00:41:22] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-23 00:41:22] WARNING root fetch - processPackages [fastllama-python-test]: Skipping, unable to determine old version
+[2023-04-23 00:41:22] INFO root fetch - main [MainThread]: End processing [fastllama-python-test] error
+[2023-04-23 00:41:22] INFO root fetch - processPackages [zigzag-dse]: Downloading https://files.pythonhosted.org/packages/8b/af/c8b51d38245bae67a4b2960ade565597eb6cba64623f16cfb0302b9a45ec/zigzag-dse-2.3.4.tar.gz
+[2023-04-23 00:41:22] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-23 00:41:22] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-23 00:41:22] INFO root fetch - processPackages [ox-script]: Downloading https://files.pythonhosted.org/packages/88/0e/298a725ceceb10491dbc03bb0f08a3ec0ddadbf4d24ede932527a5ea8c62/ox_script-0.3.3.tar.gz
+[2023-04-23 00:41:22] INFO root fetch - processPackages [coconut-develop]: executing diffoscope
+[2023-04-23 00:41:22] INFO root fetch - processPackages [coconut-develop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coconut-develop-3.0.0a0.dev8.tar.gz tmp/coconut-develop-3.0.0a0.dev9.tar.gz --markdown 20230423/c/coconut-develop/3.0.0a0.dev8-3.0.0a0.dev9/diff.md --exclude *.pyd
+[2023-04-23 00:41:22] INFO root fetch - processPackages [ovos-dinkum-listener]: Downloading https://files.pythonhosted.org/packages/91/d6/102ddb55480f8a7b325aa65b62d4b6206cfe212fa654d4ad635cf888e1ad/ovos_dinkum_listener-0.0.2a4-py3-none-any.whl
+[2023-04-23 00:41:23] INFO root fetch - processPackages [discord-ext-pager]: Downloading https://files.pythonhosted.org/packages/d4/ec/7c49467d6e8439ee856d324cc19470d9b59c61013cc0f3f912e9b2a2b888/discord-ext-pager-1.0.1.tar.gz
+[2023-04-23 00:41:23] INFO root fetch - processPackages [piknik]: executing diffoscope
+[2023-04-23 00:41:23] INFO root fetch - processPackages [piknik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piknik-0.3.8.tar.gz tmp/piknik-0.3.9.tar.gz --markdown 20230423/p/piknik/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-23 00:41:23] INFO root fetch - processPackages [ox-script]: executing diffoscope
+[2023-04-23 00:41:23] INFO root fetch - processPackages [ox-script]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ox_script-0.3.2.tar.gz tmp/ox_script-0.3.3.tar.gz --markdown 20230423/o/ox-script/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-23 00:41:23] INFO root fetch - processPackages [zigzag-dse]: Downloading https://files.pythonhosted.org/packages/00/e7/45832251998be3ee049c80e401f9dbc5468a077ba8705b1fdb1bd1faf190/zigzag-dse-2.3.5.tar.gz
+[2023-04-23 00:41:23] INFO root fetch - processPackages [ovos-dinkum-listener]: executing diffoscope
+[2023-04-23 00:41:23] INFO root fetch - processPackages [ovos-dinkum-listener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_dinkum_listener-0.0.2a3-py3-none-any.whl.zip tmp/ovos_dinkum_listener-0.0.2a4-py3-none-any.whl.zip --markdown 20230423/o/ovos-dinkum-listener/0.0.2a3-0.0.2a4/diff.md --exclude *.pyd
+[2023-04-23 00:41:23] INFO root fetch - processPackages [discord-ext-pager]: executing diffoscope
+[2023-04-23 00:41:23] INFO root fetch - processPackages [discord-ext-pager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discord-ext-pager-1.0.0.post1.tar.gz tmp/discord-ext-pager-1.0.1.tar.gz --markdown 20230423/d/discord-ext-pager/1.0.0.post1-1.0.1/diff.md --exclude *.pyd
+[2023-04-23 00:41:23] INFO root fetch - processPackages [unwanted-content-detector]: Downloading https://files.pythonhosted.org/packages/a1/21/a65f4eb5f4dce8f574dd3f35217c614281d8d8ffd88bf9e17dc2f5b924b2/unwanted_content_detector-0.1.6.tar.gz
+[2023-04-23 00:41:23] INFO root fetch - processPackages [unwanted-content-detector]: Downloading https://files.pythonhosted.org/packages/42/02/7559df4ca9750abbef71e514c0cb48d2c3bb5cf6898c9ae487dcb5896ab4/unwanted_content_detector-0.1.7.tar.gz
+[2023-04-23 00:41:23] INFO root fetch - processPackages [unwanted-content-detector]: executing diffoscope
+[2023-04-23 00:41:23] INFO root fetch - processPackages [unwanted-content-detector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unwanted_content_detector-0.1.6.tar.gz tmp/unwanted_content_detector-0.1.7.tar.gz --markdown 20230423/u/unwanted-content-detector/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-23 00:41:23] INFO root fetch - processPackages [zigzag-dse]: executing diffoscope
+[2023-04-23 00:41:23] INFO root fetch - processPackages [zigzag-dse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zigzag-dse-2.3.4.tar.gz tmp/zigzag-dse-2.3.5.tar.gz --markdown 20230423/z/zigzag-dse/2.3.4-2.3.5/diff.md --exclude *.pyd
+[2023-04-23 00:41:24] INFO root fetch - main [MainThread]: End processing [ox-script]: success
+[2023-04-23 00:41:24] INFO root fetch - main [MainThread]: End processing [ovos-dinkum-listener]: success
+[2023-04-23 00:41:24] INFO root fetch - main [MainThread]: End processing [discord-ext-pager]: success
+[2023-04-23 00:41:24] INFO root fetch - main [MainThread]: End processing [piknik]: success
+[2023-04-23 00:41:24] INFO root fetch - main [MainThread]: End processing [unwanted-content-detector]: success
+[2023-04-23 00:41:24] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
+[2023-04-23 00:41:26] INFO root fetch - main [MainThread]: End processing [zigzag-dse]: success
+[2023-04-23 00:41:26] INFO root fetch - main [MainThread]: Store serial: [17817790]
