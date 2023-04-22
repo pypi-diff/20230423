@@ -72,3 +72,113 @@
 [2023-04-23 00:03:53] ERROR root fetch - processPackages [skilift]: Timeout during execution of pkgdiff
 [2023-04-23 00:03:53] INFO root fetch - main [MainThread]: End processing [skilift] error
 [2023-04-23 00:03:53] INFO root fetch - main [MainThread]: Store serial: [17817524]
+[2023-04-23 00:08:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17817524]
+[2023-04-23 00:09:02] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-23 00:09:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cirq-pasqal
+[2023-04-23 00:09:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cirq-aqt
+[2023-04-23 00:09:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cirq-web
+[2023-04-23 00:09:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cirq-google
+[2023-04-23 00:09:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cirq-rigetti
+[2023-04-23 00:09:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cirq-ionq
+[2023-04-23 00:09:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cirq-core
+[2023-04-23 00:09:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-fast-ratelimit
+[2023-04-23 00:09:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cirq
+[2023-04-23 00:09:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: audio-extract
+[2023-04-23 00:09:02] INFO root fetch - processPackages [cirq-aqt]: New version: [1.2.0.dev20230422220059] Old Version: [1.2.0.dev20230421171826]
+[2023-04-23 00:09:02] INFO root fetch - processPackages [audio-extract]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-23 00:09:02] INFO root fetch - processPackages [django-fast-ratelimit]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-23 00:09:02] INFO root fetch - processPackages [cirq-rigetti]: New version: [1.2.0.dev20230422220059] Old Version: [1.2.0.dev20230421171826]
+[2023-04-23 00:09:02] INFO root fetch - processPackages [cirq-pasqal]: New version: [1.2.0.dev20230422220059] Old Version: [1.2.0.dev20230421171826]
+[2023-04-23 00:09:02] INFO root fetch - processPackages [cirq-ionq]: New version: [1.2.0.dev20230422220059] Old Version: [1.2.0.dev20230421171826]
+[2023-04-23 00:09:02] INFO root fetch - processPackages [cirq-web]: New version: [1.2.0.dev20230422220059] Old Version: [1.2.0.dev20230421171826]
+[2023-04-23 00:09:02] INFO root fetch - processPackages [cirq-google]: New version: [1.2.0.dev20230422220059] Old Version: [1.2.0.dev20230421171826]
+[2023-04-23 00:09:02] INFO root fetch - processPackages [cirq-core]: New version: [1.2.0.dev20230422220059] Old Version: [1.2.0.dev20230421171826]
+[2023-04-23 00:09:02] INFO root fetch - processPackages [cirq]: New version: [1.2.0.dev20230422220059] Old Version: [1.2.0.dev20230421171826]
+[2023-04-23 00:09:02] INFO root fetch - processPackages [audio-extract]: Downloading https://files.pythonhosted.org/packages/f5/34/aabaefba9754473b2ed717f009b5cbb347e7c3010113252d3590f2486c61/audio_extract-0.2.0.tar.gz
+[2023-04-23 00:09:02] INFO root fetch - processPackages [django-fast-ratelimit]: Downloading https://files.pythonhosted.org/packages/89/c0/ca8c7a97b5297642a219dfa34a13c51c44c02fadbad50cb8514f6fa937b0/django_fast_ratelimit-0.9.0.tar.gz
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq-aqt]: Downloading https://files.pythonhosted.org/packages/00/92/7d3c1ed25b86823b651ea0487982bcb6cf545d7080500efb3b70af7c9b41/cirq_aqt-1.2.0.dev20230422220059-py3-none-any.whl
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq-pasqal]: Downloading https://files.pythonhosted.org/packages/15/10/e7cef60e88fdf14345214222fc9a51c0faccdd61c85961376317b3057f24/cirq_pasqal-1.2.0.dev20230422220059-py3-none-any.whl
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq-web]: Downloading https://files.pythonhosted.org/packages/5b/48/ceb270462591453008320495c4b83443fe0a9b7b34fa77bcf703ac9d216b/cirq_web-1.2.0.dev20230422220059-py3-none-any.whl
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq-ionq]: Downloading https://files.pythonhosted.org/packages/42/fd/19a7330ad5f459f0f03997e099524e812b710fc957b5de3b1be979ad2b77/cirq_ionq-1.2.0.dev20230422220059-py3-none-any.whl
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq-rigetti]: Downloading https://files.pythonhosted.org/packages/2e/fd/dcaad752591f4e3f8957b887abe1eebbaaf5486aa4563cdd773d26e2aece/cirq_rigetti-1.2.0.dev20230422220059-py3-none-any.whl
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq-core]: Downloading https://files.pythonhosted.org/packages/b1/fc/2529cac7b8e85988701b9f54331ae94b39fea0fdbc313d443274604e27bc/cirq_core-1.2.0.dev20230422220059-py3-none-any.whl
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq-google]: Downloading https://files.pythonhosted.org/packages/b0/47/70ef1b8d0819470d3dc83e1b9c1b8709be39b39d82e59b437f8bed90e6e1/cirq_google-1.2.0.dev20230422220059-py3-none-any.whl
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq]: Downloading https://files.pythonhosted.org/packages/f2/b9/d04f6fd343efe0f9d510f0b539c6d978b1897e9e5ea95f8ddc82c40a2c89/cirq-1.2.0.dev20230422220059-py3-none-any.whl
+[2023-04-23 00:09:03] INFO root fetch - processPackages [audio-extract]: Downloading https://files.pythonhosted.org/packages/e9/df/9ed53470921987d92d2a4b064920591856649d264e03b1a18f565201047a/audio_extract-0.3.0.tar.gz
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq-aqt]: executing diffoscope
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq-aqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_aqt-1.2.0.dev20230421171826-py3-none-any.whl.zip tmp/cirq_aqt-1.2.0.dev20230422220059-py3-none-any.whl.zip --markdown 20230423/c/cirq-aqt/1.2.0.dev20230421171826-1.2.0.dev20230422220059/diff.md --exclude *.pyd
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq-pasqal]: executing diffoscope
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq-pasqal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_pasqal-1.2.0.dev20230421171826-py3-none-any.whl.zip tmp/cirq_pasqal-1.2.0.dev20230422220059-py3-none-any.whl.zip --markdown 20230423/c/cirq-pasqal/1.2.0.dev20230421171826-1.2.0.dev20230422220059/diff.md --exclude *.pyd
+[2023-04-23 00:09:03] INFO root fetch - processPackages [django-fast-ratelimit]: Downloading https://files.pythonhosted.org/packages/72/81/dacd92e83eab32f7180733b1b529426b97c957397865672ca74eceab7ddb/django_fast_ratelimit-0.9.1.tar.gz
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq]: executing diffoscope
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq-1.2.0.dev20230421171826-py3-none-any.whl.zip tmp/cirq-1.2.0.dev20230422220059-py3-none-any.whl.zip --markdown 20230423/c/cirq/1.2.0.dev20230421171826-1.2.0.dev20230422220059/diff.md --exclude *.pyd
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq-rigetti]: executing diffoscope
+[2023-04-23 00:09:03] INFO root fetch - processPackages [audio-extract]: executing diffoscope
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq-rigetti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_rigetti-1.2.0.dev20230421171826-py3-none-any.whl.zip tmp/cirq_rigetti-1.2.0.dev20230422220059-py3-none-any.whl.zip --markdown 20230423/c/cirq-rigetti/1.2.0.dev20230421171826-1.2.0.dev20230422220059/diff.md --exclude *.pyd
+[2023-04-23 00:09:03] INFO root fetch - processPackages [audio-extract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audio_extract-0.2.0.tar.gz tmp/audio_extract-0.3.0.tar.gz --markdown 20230423/a/audio-extract/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq-ionq]: executing diffoscope
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq-ionq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_ionq-1.2.0.dev20230421171826-py3-none-any.whl.zip tmp/cirq_ionq-1.2.0.dev20230422220059-py3-none-any.whl.zip --markdown 20230423/c/cirq-ionq/1.2.0.dev20230421171826-1.2.0.dev20230422220059/diff.md --exclude *.pyd
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq-google]: executing diffoscope
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq-google]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_google-1.2.0.dev20230421171826-py3-none-any.whl.zip tmp/cirq_google-1.2.0.dev20230422220059-py3-none-any.whl.zip --markdown 20230423/c/cirq-google/1.2.0.dev20230421171826-1.2.0.dev20230422220059/diff.md --exclude *.pyd
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq-web]: executing diffoscope
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_web-1.2.0.dev20230421171826-py3-none-any.whl.zip tmp/cirq_web-1.2.0.dev20230422220059-py3-none-any.whl.zip --markdown 20230423/c/cirq-web/1.2.0.dev20230421171826-1.2.0.dev20230422220059/diff.md --exclude *.pyd
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq-core]: executing diffoscope
+[2023-04-23 00:09:03] INFO root fetch - processPackages [cirq-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_core-1.2.0.dev20230421171826-py3-none-any.whl.zip tmp/cirq_core-1.2.0.dev20230422220059-py3-none-any.whl.zip --markdown 20230423/c/cirq-core/1.2.0.dev20230421171826-1.2.0.dev20230422220059/diff.md --exclude *.pyd
+[2023-04-23 00:09:03] INFO root fetch - processPackages [django-fast-ratelimit]: executing diffoscope
+[2023-04-23 00:09:03] INFO root fetch - processPackages [django-fast-ratelimit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_fast_ratelimit-0.9.0.tar.gz tmp/django_fast_ratelimit-0.9.1.tar.gz --markdown 20230423/d/django-fast-ratelimit/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-23 00:09:05] INFO root fetch - processPackages [audio-extract]: Start processing: oking
+[2023-04-23 00:09:05] INFO root fetch - main [MainThread]: End processing [audio-extract]: success
+[2023-04-23 00:09:05] INFO root fetch - processPackages [oking]: New version: [4.1.99] Old Version: [4.1.98]
+[2023-04-23 00:09:05] INFO root fetch - processPackages [cirq-aqt]: Start processing: Conanmail
+[2023-04-23 00:09:05] INFO root fetch - main [MainThread]: End processing [cirq-aqt]: success
+[2023-04-23 00:09:05] INFO root fetch - processPackages [Conanmail]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-23 00:09:05] INFO root fetch - processPackages [cirq-pasqal]: Start processing: turbo-docs
+[2023-04-23 00:09:05] INFO root fetch - main [MainThread]: End processing [cirq-pasqal]: success
+[2023-04-23 00:09:05] INFO root fetch - processPackages [turbo-docs]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-04-23 00:09:05] INFO root fetch - processPackages [Conanmail]: Downloading https://files.pythonhosted.org/packages/a8/8b/6b817ef68e4b59aa2080b3a8b4a6c403221f65147a52d8ed1216df996197/Conanmail-1.0.7-py3-none-any.whl
+[2023-04-23 00:09:05] INFO root fetch - processPackages [oking]: Downloading https://files.pythonhosted.org/packages/10/e0/bc03eb0f51c985363e25571936de0258a0f3e5e43f8525986b708e4f2e81/oking-4.1.98.tar.gz
+[2023-04-23 00:09:05] WARNING root fetch - processPackages [oking]: Skipping package: exceeds size limit 82479280>=10485760
+[2023-04-23 00:09:05] INFO root fetch - processPackages [oking]: Start processing: psychonaut
+[2023-04-23 00:09:05] INFO root fetch - main [MainThread]: End processing [oking] error
+[2023-04-23 00:09:05] INFO root fetch - processPackages [psychonaut]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-23 00:09:05] INFO root fetch - processPackages [cirq]: Start processing: openwakeword
+[2023-04-23 00:09:05] INFO root fetch - main [MainThread]: End processing [cirq]: success
+[2023-04-23 00:09:05] INFO root fetch - processPackages [cirq-web]: Start processing: ZaidPy
+[2023-04-23 00:09:05] INFO root fetch - main [MainThread]: End processing [cirq-web]: success
+[2023-04-23 00:09:05] INFO root fetch - processPackages [ZaidPy]: New version: [0.3.1] Old Version: [0.2.1]
+[2023-04-23 00:09:05] INFO root fetch - processPackages [cirq-rigetti]: Start processing: Solarflare
+[2023-04-23 00:09:05] INFO root fetch - main [MainThread]: End processing [cirq-rigetti]: success
+[2023-04-23 00:09:05] INFO root fetch - processPackages [turbo-docs]: Downloading https://files.pythonhosted.org/packages/30/58/c7b7d599b106fd5ae6eac0e199bc03635c77676d3e7f2835c008e3b69a73/turbo_docs-0.7.1.tar.gz
+[2023-04-23 00:09:05] INFO root fetch - processPackages [cirq-ionq]: Start processing: mutyper
+[2023-04-23 00:09:05] INFO root fetch - main [MainThread]: End processing [cirq-ionq]: success
+[2023-04-23 00:09:05] INFO root fetch - processPackages [mutyper]: New version: [1.0.0] Old Version: [0.7.1]
+[2023-04-23 00:09:05] INFO root fetch - processPackages [openwakeword]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-04-23 00:09:05] INFO root fetch - processPackages [ZaidPy]: executing diffoscope
+[2023-04-23 00:09:05] INFO root fetch - processPackages [ZaidPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ZaidPy-0.2.1.tar.gz tmp/ZaidPy-0.3.1.tar.gz --markdown 20230423/Z/ZaidPy/0.2.1-0.3.1/diff.md --exclude *.pyd
+[2023-04-23 00:09:05] WARNING root fetch - processPackages [Solarflare]: Skipping, unable to determine old version
+[2023-04-23 00:09:05] INFO root fetch - main [MainThread]: End processing [Solarflare] error
+[2023-04-23 00:09:05] INFO root fetch - processPackages [mutyper]: executing diffoscope
+[2023-04-23 00:09:05] INFO root fetch - processPackages [mutyper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mutyper-0.7.1.tar.gz tmp/mutyper-1.0.0.tar.gz --markdown 20230423/m/mutyper/0.7.1-1.0.0/diff.md --exclude *.pyd
+[2023-04-23 00:09:05] INFO root fetch - main [MainThread]: End processing [django-fast-ratelimit]: success
+[2023-04-23 00:09:05] INFO root fetch - processPackages [Conanmail]: Downloading https://files.pythonhosted.org/packages/59/17/ef342d0f023516bb9e951966cc04322f940eca2168f1f2b634adbca5f433/Conanmail-1.0.8-py3-none-any.whl
+[2023-04-23 00:09:05] INFO root fetch - processPackages [openwakeword]: Downloading https://files.pythonhosted.org/packages/09/b0/1314c72bdb4f3130908486d8ece99f2b2eb9c1aff447a27e8f9c4edfea02/openwakeword-0.3.1.tar.gz
+[2023-04-23 00:09:05] INFO root fetch - processPackages [turbo-docs]: Downloading https://files.pythonhosted.org/packages/90/b0/24279ae24b3df5c13818d649f723df1d229fb2196de4ea1cf6deeb9b4df2/turbo_docs-0.7.2.tar.gz
+[2023-04-23 00:09:05] INFO root fetch - processPackages [Conanmail]: executing diffoscope
+[2023-04-23 00:09:05] INFO root fetch - processPackages [Conanmail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Conanmail-1.0.7-py3-none-any.whl.zip tmp/Conanmail-1.0.8-py3-none-any.whl.zip --markdown 20230423/C/Conanmail/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-23 00:09:05] INFO root fetch - processPackages [psychonaut]: Downloading https://files.pythonhosted.org/packages/b4/28/67d65cd1723271b6e8803ab53b76a220be75a48d9f6efa28cc1e86aa5366/psychonaut-0.0.3.tar.gz
+[2023-04-23 00:09:05] INFO root fetch - processPackages [turbo-docs]: executing diffoscope
+[2023-04-23 00:09:05] INFO root fetch - processPackages [turbo-docs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turbo_docs-0.7.1.tar.gz tmp/turbo_docs-0.7.2.tar.gz --markdown 20230423/t/turbo-docs/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-04-23 00:09:06] INFO root fetch - processPackages [psychonaut]: executing diffoscope
+[2023-04-23 00:09:06] INFO root fetch - processPackages [psychonaut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psychonaut-0.0.2.tar.gz tmp/psychonaut-0.0.3.tar.gz --markdown 20230423/p/psychonaut/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 00:09:06] INFO root fetch - main [MainThread]: End processing [ZaidPy]: success
+[2023-04-23 00:09:06] INFO root fetch - main [MainThread]: End processing [mutyper]: success
+[2023-04-23 00:09:06] INFO root fetch - main [MainThread]: End processing [Conanmail]: success
+[2023-04-23 00:09:07] INFO root fetch - processPackages [openwakeword]: Downloading https://files.pythonhosted.org/packages/16/40/2afdab3146f08fa51ca74eba6f44ce4f26bd2bd88e255f34b42b0f495ef0/openwakeword-0.4.0.tar.gz
+[2023-04-23 00:09:07] INFO root fetch - main [MainThread]: End processing [turbo-docs]: success
+[2023-04-23 00:09:08] INFO root fetch - main [MainThread]: End processing [cirq-google]: success
+[2023-04-23 00:09:08] INFO root fetch - processPackages [openwakeword]: executing diffoscope
+[2023-04-23 00:09:08] INFO root fetch - processPackages [openwakeword]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openwakeword-0.3.1.tar.gz tmp/openwakeword-0.4.0.tar.gz --markdown 20230423/o/openwakeword/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-04-23 00:09:08] INFO root fetch - main [MainThread]: End processing [psychonaut]: success
+[2023-04-23 00:09:10] INFO root fetch - main [MainThread]: End processing [openwakeword]: success
+[2023-04-23 00:09:19] INFO root fetch - main [MainThread]: End processing [cirq-core]: success
+[2023-04-23 00:09:19] INFO root fetch - main [MainThread]: Store serial: [17817580]
