@@ -5177,3 +5177,28 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 10:24:36] INFO root fetch - main [MainThread]: End processing [tastytrade-api]: success
 [2023-04-23 10:24:36] INFO root fetch - main [MainThread]: End processing [scribber]: success
 [2023-04-23 10:24:36] INFO root fetch - main [MainThread]: Store serial: [17820599]
+[2023-04-23 10:29:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820599]
+[2023-04-23 10:29:44] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-23 10:29:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xj-thread
+[2023-04-23 10:29:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-perf-rec
+[2023-04-23 10:29:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: FastTranslator
+[2023-04-23 10:29:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: infrabed
+[2023-04-23 10:29:44] INFO root fetch - processPackages [xj-thread]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-04-23 10:29:44] INFO root fetch - processPackages [infrabed]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-23 10:29:44] WARNING root fetch - processPackages [FastTranslator]: Skipping, unable to determine old version
+[2023-04-23 10:29:44] INFO root fetch - main [MainThread]: End processing [FastTranslator] error
+[2023-04-23 10:29:44] INFO root fetch - processPackages [django-perf-rec]: New version: [4.9.0] Old Version: [4.8.0]
+[2023-04-23 10:29:44] INFO root fetch - processPackages [infrabed]: Downloading https://files.pythonhosted.org/packages/01/27/481dbb81d02c9a2354eddc3538dc4ab78b180b67c0b5125a845f46c3f81b/infrabed-0.0.3.tar.gz
+[2023-04-23 10:29:44] INFO root fetch - processPackages [django-perf-rec]: Downloading https://files.pythonhosted.org/packages/fd/6e/3fc1523113625295f671e889daa37eb31493dfec29c69bdf97149546815f/django-perf-rec-4.8.0.tar.gz
+[2023-04-23 10:29:45] INFO root fetch - processPackages [django-perf-rec]: Downloading https://files.pythonhosted.org/packages/97/0a/8b185a724d02898368856c4b4f33da9575f27ad32a9a1d78fe4df25eaaf6/django-perf-rec-4.9.0.tar.gz
+[2023-04-23 10:29:45] INFO root fetch - processPackages [xj-thread]: executing diffoscope
+[2023-04-23 10:29:45] INFO root fetch - processPackages [xj-thread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_thread-1.2.98.tar.gz tmp/xj_thread-1.2.99.tar.gz --markdown 20230423/x/xj-thread/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-04-23 10:29:45] INFO root fetch - processPackages [infrabed]: Downloading https://files.pythonhosted.org/packages/d1/89/ff2583944794c42e13cc7760db5ca242e3b191a86f38f60c844e581a1242/infrabed-0.0.4.tar.gz
+[2023-04-23 10:29:45] INFO root fetch - processPackages [django-perf-rec]: executing diffoscope
+[2023-04-23 10:29:45] INFO root fetch - processPackages [django-perf-rec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-perf-rec-4.8.0.tar.gz tmp/django-perf-rec-4.9.0.tar.gz --markdown 20230423/d/django-perf-rec/4.8.0-4.9.0/diff.md --exclude *.pyd
+[2023-04-23 10:29:45] INFO root fetch - processPackages [infrabed]: executing diffoscope
+[2023-04-23 10:29:45] INFO root fetch - processPackages [infrabed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infrabed-0.0.3.tar.gz tmp/infrabed-0.0.4.tar.gz --markdown 20230423/i/infrabed/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-23 10:29:46] INFO root fetch - main [MainThread]: End processing [infrabed]: success
+[2023-04-23 10:29:46] INFO root fetch - main [MainThread]: End processing [xj-thread]: success
+[2023-04-23 10:29:47] INFO root fetch - main [MainThread]: End processing [django-perf-rec]: success
+[2023-04-23 10:29:47] INFO root fetch - main [MainThread]: Store serial: [17820618]
