@@ -3823,3 +3823,77 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 08:15:56] INFO root fetch - main [MainThread]: End processing [alaric]: success
 [2023-04-23 08:15:56] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
 [2023-04-23 08:15:56] INFO root fetch - main [MainThread]: Store serial: [17819833]
+[2023-04-23 08:21:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819833]
+[2023-04-23 08:21:05] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-23 08:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scSAMP
+[2023-04-23 08:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tkinter-form
+[2023-04-23 08:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: webarchiver
+[2023-04-23 08:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: truegrad
+[2023-04-23 08:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Aciembler-preter
+[2023-04-23 08:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: alaric
+[2023-04-23 08:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ossfs
+[2023-04-23 08:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pretext
+[2023-04-23 08:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: MGD-Outliers
+[2023-04-23 08:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dfa-mutate
+[2023-04-23 08:21:05] INFO root fetch - processPackages [webarchiver]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-23 08:21:05] INFO root fetch - processPackages [Aciembler-preter]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-23 08:21:05] INFO root fetch - processPackages [ossfs]: New version: [2023.4.0] Old Version: [2023.3.0]
+[2023-04-23 08:21:05] INFO root fetch - processPackages [tkinter-form]: New version: [0.1.5.0] Old Version: [0.1.4.1]
+[2023-04-23 08:21:05] INFO root fetch - processPackages [dfa-mutate]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 08:21:05] INFO root fetch - processPackages [scSAMP]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-23 08:21:05] INFO root fetch - processPackages [alaric]: New version: [1.3.3] Old Version: [1.3.2]
+[2023-04-23 08:21:05] INFO root fetch - processPackages [MGD-Outliers]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-23 08:21:05] INFO root fetch - processPackages [truegrad]: New version: [4.0.2] Old Version: [4.0.1]
+[2023-04-23 08:21:05] INFO root fetch - processPackages [pretext]: New version: [1.5.3.dev20230423] Old Version: [1.5.3.dev20230422]
+[2023-04-23 08:21:05] INFO root fetch - processPackages [scSAMP]: Downloading https://files.pythonhosted.org/packages/9a/3a/6fad0c6c8c936ca48003324a8e65979a2d6cd6ea3f420948e2fb2df58dec/scSAMP-0.1.4.tar.gz
+[2023-04-23 08:21:05] INFO root fetch - processPackages [webarchiver]: Downloading https://files.pythonhosted.org/packages/4d/18/d61823bb35498ed6ef62a78d2e0f5c75cbe3c3c36c63d417def12d394870/webarchiver-0.9.0-py2.py3-none-any.whl
+[2023-04-23 08:21:05] INFO root fetch - processPackages [ossfs]: Downloading https://files.pythonhosted.org/packages/00/ba/121d32c70d584e1531e8b2dc8bc58380e975f24b86d63eaf6f86180ab900/ossfs-2023.3.0.tar.gz
+[2023-04-23 08:21:05] INFO root fetch - processPackages [truegrad]: Downloading https://files.pythonhosted.org/packages/70/f7/0801c0e586ed83d590b8601090586fe6a2830cab0902b4cedba30b853a65/truegrad-4.0.1.tar.gz
+[2023-04-23 08:21:05] INFO root fetch - processPackages [alaric]: Downloading https://files.pythonhosted.org/packages/92/24/bbcf74387abae0a8fb0b528e822ed95fb6566534f740f0b968fef9b24a58/alaric-1.3.3.tar.gz
+[2023-04-23 08:21:05] INFO root fetch - processPackages [MGD-Outliers]: Downloading https://files.pythonhosted.org/packages/fc/3f/134003890d20262ce1ae15dad6f89171a101f9028521ad865112d3ce505d/MGD_Outliers-0.1.4.tar.gz
+[2023-04-23 08:21:05] INFO root fetch - processPackages [Aciembler-preter]: Downloading https://files.pythonhosted.org/packages/af/23/e1046a415db47a7d9509a13a39513a7ca8a8da94f8a5e9100cf0637fe36b/Aciembler_preter-1.0.0-py2.py3-none-any.whl
+[2023-04-23 08:21:06] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/95/8b/1a41d09cb124252bbcaf5785340f01d3083bae34fbfe8d6b6eeb44ff43a3/pretext-1.5.3.dev20230422.tar.gz
+[2023-04-23 08:21:06] INFO root fetch - processPackages [dfa-mutate]: Downloading https://files.pythonhosted.org/packages/bc/fc/ffaf0b6d8487264783f4d3bb831abfb87b17865460cdae5f91b8f5f377cb/dfa_mutate-0.1.0.tar.gz
+[2023-04-23 08:21:06] INFO root fetch - processPackages [tkinter-form]: Downloading https://files.pythonhosted.org/packages/79/4a/80c826ddacb2841bf7f6355fb653a5e8a1024995e04eb63ef5e542718ffd/tkinter_form-0.1.5.0.tar.gz
+[2023-04-23 08:21:06] INFO root fetch - processPackages [alaric]: executing diffoscope
+[2023-04-23 08:21:06] INFO root fetch - processPackages [alaric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alaric-1.3.2.tar.gz tmp/alaric-1.3.3.tar.gz --markdown 20230423/a/alaric/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2023-04-23 08:21:06] INFO root fetch - processPackages [MGD-Outliers]: executing diffoscope
+[2023-04-23 08:21:06] INFO root fetch - processPackages [MGD-Outliers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MGD_Outliers-0.1.3.tar.gz tmp/MGD_Outliers-0.1.4.tar.gz --markdown 20230423/M/MGD-Outliers/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-23 08:21:06] INFO root fetch - processPackages [ossfs]: Downloading https://files.pythonhosted.org/packages/8e/a4/08a1c328d05b2819be7e2847782cc37f7031e188adcbfec15eee39679ad4/ossfs-2023.4.0.tar.gz
+[2023-04-23 08:21:06] INFO root fetch - processPackages [truegrad]: Downloading https://files.pythonhosted.org/packages/f3/fb/5bfcd5a86f2d12a4e52dc55cd84e131308f441733eac808efd7f87615886/truegrad-4.0.2.tar.gz
+[2023-04-23 08:21:06] INFO root fetch - processPackages [tkinter-form]: executing diffoscope
+[2023-04-23 08:21:06] INFO root fetch - processPackages [tkinter-form]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkinter_form-0.1.4.1.tar.gz tmp/tkinter_form-0.1.5.0.tar.gz --markdown 20230423/t/tkinter-form/0.1.4.1-0.1.5.0/diff.md --exclude *.pyd
+[2023-04-23 08:21:06] INFO root fetch - processPackages [scSAMP]: Downloading https://files.pythonhosted.org/packages/59/80/e337884beb97a8d55d1aa6695c2e25ae36db3b6bb636feefb8eab2462b70/scSAMP-0.1.5.tar.gz
+[2023-04-23 08:21:06] INFO root fetch - processPackages [Aciembler-preter]: Downloading https://files.pythonhosted.org/packages/d3/4e/d4be2c550d447a5fe0a8990930e10ee1ec6f635d8aa0e12aaad5ce715806/Aciembler_preter-1.0.1-py2.py3-none-any.whl
+[2023-04-23 08:21:06] INFO root fetch - processPackages [dfa-mutate]: Downloading https://files.pythonhosted.org/packages/80/2f/f77ee94fb8797b46a5639e4ea39ce9be22b78aa7c7c90079c29e7a012a86/dfa_mutate-0.1.1.tar.gz
+[2023-04-23 08:21:06] INFO root fetch - processPackages [ossfs]: executing diffoscope
+[2023-04-23 08:21:06] INFO root fetch - processPackages [ossfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ossfs-2023.3.0.tar.gz tmp/ossfs-2023.4.0.tar.gz --markdown 20230423/o/ossfs/2023.3.0-2023.4.0/diff.md --exclude *.pyd
+[2023-04-23 08:21:06] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/59/ae/bac12dc6a9038ff8d73a8bf6adfcb48163b5e45f743862efdf794ea32a0b/pretext-1.5.3.dev20230423.tar.gz
+[2023-04-23 08:21:06] INFO root fetch - processPackages [truegrad]: executing diffoscope
+[2023-04-23 08:21:06] INFO root fetch - processPackages [truegrad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/truegrad-4.0.1.tar.gz tmp/truegrad-4.0.2.tar.gz --markdown 20230423/t/truegrad/4.0.1-4.0.2/diff.md --exclude *.pyd
+[2023-04-23 08:21:06] INFO root fetch - processPackages [scSAMP]: executing diffoscope
+[2023-04-23 08:21:06] INFO root fetch - processPackages [scSAMP]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scSAMP-0.1.4.tar.gz tmp/scSAMP-0.1.5.tar.gz --markdown 20230423/s/scSAMP/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-23 08:21:06] INFO root fetch - processPackages [dfa-mutate]: executing diffoscope
+[2023-04-23 08:21:06] INFO root fetch - processPackages [Aciembler-preter]: executing diffoscope
+[2023-04-23 08:21:06] INFO root fetch - processPackages [dfa-mutate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfa_mutate-0.1.0.tar.gz tmp/dfa_mutate-0.1.1.tar.gz --markdown 20230423/d/dfa-mutate/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 08:21:06] INFO root fetch - processPackages [Aciembler-preter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Aciembler_preter-1.0.0-py2.py3-none-any.whl.zip tmp/Aciembler_preter-1.0.1-py2.py3-none-any.whl.zip --markdown 20230423/A/Aciembler-preter/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-23 08:21:06] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2023-04-23 08:21:06] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-1.5.3.dev20230422.tar.gz tmp/pretext-1.5.3.dev20230423.tar.gz --markdown 20230423/p/pretext/1.5.3.dev20230422-1.5.3.dev20230423/diff.md --exclude *.pyd
+[2023-04-23 08:21:06] INFO root fetch - processPackages [webarchiver]: executing diffoscope
+[2023-04-23 08:21:06] INFO root fetch - processPackages [webarchiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webarchiver-0.8.0-py2.py3-none-any.whl.zip tmp/webarchiver-0.9.0-py2.py3-none-any.whl.zip --markdown 20230423/w/webarchiver/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-23 08:21:07] INFO root fetch - processPackages [MGD-Outliers]: Start processing: brownian-stock
+[2023-04-23 08:21:07] INFO root fetch - main [MainThread]: End processing [MGD-Outliers]: success
+[2023-04-23 08:21:07] INFO root fetch - processPackages [brownian-stock]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 08:21:07] INFO root fetch - main [MainThread]: End processing [tkinter-form]: success
+[2023-04-23 08:21:07] INFO root fetch - processPackages [brownian-stock]: executing diffoscope
+[2023-04-23 08:21:07] INFO root fetch - processPackages [brownian-stock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brownian-stock-0.0.8.tar.gz tmp/brownian-stock-0.0.9.tar.gz --markdown 20230423/b/brownian-stock/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 08:21:07] INFO root fetch - main [MainThread]: End processing [Aciembler-preter]: success
+[2023-04-23 08:21:08] INFO root fetch - main [MainThread]: End processing [dfa-mutate]: success
+[2023-04-23 08:21:08] INFO root fetch - main [MainThread]: End processing [alaric]: success
+[2023-04-23 08:21:08] INFO root fetch - main [MainThread]: End processing [ossfs]: success
+[2023-04-23 08:21:08] INFO root fetch - main [MainThread]: End processing [truegrad]: success
+[2023-04-23 08:21:08] INFO root fetch - main [MainThread]: End processing [scSAMP]: success
+[2023-04-23 08:21:09] INFO root fetch - main [MainThread]: End processing [brownian-stock]: success
+[2023-04-23 08:21:09] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
+[2023-04-23 08:21:14] INFO root fetch - main [MainThread]: End processing [pretext]: success
+[2023-04-23 08:21:14] INFO root fetch - main [MainThread]: Store serial: [17819866]
