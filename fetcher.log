@@ -4493,3 +4493,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 09:09:47] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-autoreply]: success
 [2023-04-23 09:10:03] INFO root fetch - main [MainThread]: End processing [yolink-api]: success
 [2023-04-23 09:10:03] INFO root fetch - main [MainThread]: Store serial: [17820202]
+[2023-04-23 09:15:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820202]
+[2023-04-23 09:15:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-23 09:15:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: easy-patents
+[2023-04-23 09:15:11] INFO root fetch - processPackages [easy-patents]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-23 09:15:12] INFO root fetch - processPackages [easy-patents]: Downloading https://files.pythonhosted.org/packages/f7/b7/28d0cc10dc2e8165563a57da623f648347b4e227ac4ca3bba2aa8d00095c/easy_patents-1.0.5.tar.gz
+[2023-04-23 09:15:12] INFO root fetch - processPackages [easy-patents]: executing diffoscope
+[2023-04-23 09:15:12] INFO root fetch - processPackages [easy-patents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_patents-1.0.4.tar.gz tmp/easy_patents-1.0.5.tar.gz --markdown 20230423/e/easy-patents/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-23 09:15:13] INFO root fetch - main [MainThread]: End processing [easy-patents]: success
+[2023-04-23 09:15:13] INFO root fetch - main [MainThread]: Store serial: [17820206]
