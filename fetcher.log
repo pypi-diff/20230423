@@ -9304,3 +9304,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 16:40:50] INFO root fetch - main [MainThread]: End processing [npyx]: success
 [2023-04-23 16:40:50] INFO root fetch - main [MainThread]: End processing [tap-shiftbase]: success
 [2023-04-23 16:40:50] INFO root fetch - main [MainThread]: Store serial: [17823062]
+[2023-04-23 16:45:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823062]
+[2023-04-23 16:45:59] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-23 16:45:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymap-admin
+[2023-04-23 16:45:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: resector
+[2023-04-23 16:45:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tarina
+[2023-04-23 16:45:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: foursight-core
+[2023-04-23 16:45:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tradeX
+[2023-04-23 16:45:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: affine-transform
+[2023-04-23 16:45:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: CheckEmails
+[2023-04-23 16:45:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: khl
+[2023-04-23 16:45:59] INFO root fetch - processPackages [pymap-admin]: New version: [0.9.1] Old Version: [0.9.0rc1]
+[2023-04-23 16:45:59] WARNING root fetch - processPackages [CheckEmails]: Skipping, unable to determine old version
+[2023-04-23 16:45:59] INFO root fetch - main [MainThread]: End processing [CheckEmails] error
+[2023-04-23 16:45:59] WARNING root fetch - processPackages [tradeX]: Skipping, unable to determine old version
+[2023-04-23 16:45:59] INFO root fetch - processPackages [affine-transform]: New version: [0.3.0] Old Version: [0.2.9]
+[2023-04-23 16:45:59] INFO root fetch - main [MainThread]: End processing [tradeX] error
+[2023-04-23 16:45:59] INFO root fetch - processPackages [resector]: New version: [0.2.9] Old Version: [0.2.6]
+[2023-04-23 16:45:59] INFO root fetch - processPackages [tarina]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-23 16:45:59] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.5b17] Old Version: [4.0.0]
+[2023-04-23 16:45:59] INFO root fetch - processPackages [khl]: New version: [2.0.0] Old Version: [1.0.7]
+[2023-04-23 16:45:59] INFO root fetch - processPackages [pymap-admin]: Downloading https://files.pythonhosted.org/packages/51/5c/527cf320a738ea9df9fc489861a8ee5d46142b22f3431310781bd4e00973/pymap-admin-0.9.0rc1.tar.gz
+[2023-04-23 16:45:59] INFO root fetch - processPackages [resector]: Downloading https://files.pythonhosted.org/packages/7b/b0/0af0a0fa8698f08c9b3bbb1b82c16d54799179e118299d7c63bd88637e54/resector-0.2.6.tar.gz
+[2023-04-23 16:45:59] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/95/73/aa9d2beb8c404f610a6755b3fc76c9d048a5150abcb1eca1680dd8c74d1d/foursight_core-4.1.0.5b17.tar.gz
+[2023-04-23 16:46:00] INFO root fetch - processPackages [affine-transform]: Downloading https://files.pythonhosted.org/packages/40/14/05f42a7351cf8e18a21dbea6503d6648a08f82f9e4e447e597f1bbfd39af/affine_transform-0.3.0.tar.gz
+[2023-04-23 16:46:00] INFO root fetch - processPackages [tarina]: Downloading https://files.pythonhosted.org/packages/21/cb/2d822e759580b082471df86abc8a394be19ecb94a72bd0e9bb63dfd53822/tarina-0.3.1.tar.gz
+[2023-04-23 16:46:00] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-23 16:46:00] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.0.0.tar.gz tmp/foursight_core-4.1.0.5b17.tar.gz --markdown 20230423/f/foursight-core/4.0.0-4.1.0.5b17/diff.md --exclude *.pyd
+[2023-04-23 16:46:00] INFO root fetch - processPackages [pymap-admin]: Downloading https://files.pythonhosted.org/packages/2a/6a/3f4b8c2e3b9977dd9a8d9c0d38e4e0a6208976b8d8cb40893f45ff4a06ac/pymap_admin-0.9.1.tar.gz
+[2023-04-23 16:46:00] INFO root fetch - processPackages [khl]: Downloading https://files.pythonhosted.org/packages/41/e4/8e7872a173860c2c4b3bdfa016b33af65868cd66268a2c51fd9c01c06783/khl-2.0.0-py3-none-any.whl
+[2023-04-23 16:46:00] INFO root fetch - processPackages [tarina]: executing diffoscope
+[2023-04-23 16:46:00] INFO root fetch - processPackages [tarina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tarina-0.3.0.tar.gz tmp/tarina-0.3.1.tar.gz --markdown 20230423/t/tarina/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-23 16:46:00] INFO root fetch - processPackages [affine-transform]: executing diffoscope
+[2023-04-23 16:46:00] INFO root fetch - processPackages [affine-transform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/affine_transform-0.2.9.tar.gz tmp/affine_transform-0.3.0.tar.gz --markdown 20230423/a/affine-transform/0.2.9-0.3.0/diff.md --exclude *.pyd
+[2023-04-23 16:46:00] INFO root fetch - processPackages [pymap-admin]: executing diffoscope
+[2023-04-23 16:46:00] INFO root fetch - processPackages [pymap-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymap-admin-0.9.0rc1.tar.gz tmp/pymap_admin-0.9.1.tar.gz --markdown 20230423/p/pymap-admin/0.9.0rc1-0.9.1/diff.md --exclude *.pyd
+[2023-04-23 16:46:00] INFO root fetch - processPackages [khl]: executing diffoscope
+[2023-04-23 16:46:00] INFO root fetch - processPackages [khl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khl-1.0.7.tar.gz tmp/khl-2.0.0-py3-none-any.whl.zip --markdown 20230423/k/khl/1.0.7-2.0.0/diff.md --exclude *.pyd
+[2023-04-23 16:46:01] INFO root fetch - processPackages [resector]: Downloading https://files.pythonhosted.org/packages/4e/93/d0c09f87f88315af7c5e73612b53cff22fc278da53bb8c53c511e7566a59/resector-0.2.9.tar.gz
+[2023-04-23 16:46:01] INFO root fetch - main [MainThread]: End processing [khl]: success
+[2023-04-23 16:46:01] INFO root fetch - main [MainThread]: End processing [tarina]: success
+[2023-04-23 16:46:01] INFO root fetch - main [MainThread]: End processing [pymap-admin]: success
+[2023-04-23 16:46:02] INFO root fetch - processPackages [resector]: executing diffoscope
+[2023-04-23 16:46:02] INFO root fetch - processPackages [resector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resector-0.2.6.tar.gz tmp/resector-0.2.9.tar.gz --markdown 20230423/r/resector/0.2.6-0.2.9/diff.md --exclude *.pyd
+[2023-04-23 16:46:04] INFO root fetch - main [MainThread]: End processing [resector]: success
+[2023-04-23 16:46:08] INFO root fetch - main [MainThread]: End processing [affine-transform]: success
+[2023-04-23 16:46:15] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-23 16:46:15] INFO root fetch - main [MainThread]: Store serial: [17823122]
