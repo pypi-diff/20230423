@@ -11174,3 +11174,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 19:31:02] INFO root fetch - main [MainThread]: End processing [pytest-hot-reloading]: success
 [2023-04-23 19:31:03] INFO root fetch - main [MainThread]: End processing [embykeeper]: success
 [2023-04-23 19:31:03] INFO root fetch - main [MainThread]: Store serial: [17824258]
+[2023-04-23 19:36:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17824258]
+[2023-04-23 19:36:12] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-23 19:36:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: text-box-wrapper
+[2023-04-23 19:36:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cosmopower-jax
+[2023-04-23 19:36:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyhOn
+[2023-04-23 19:36:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sphinx-embeddings
+[2023-04-23 19:36:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastapi-all-out
+[2023-04-23 19:36:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: excel-sql-engine
+[2023-04-23 19:36:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: VdeoWiki-Bigbluebutton
+[2023-04-23 19:36:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: audiconnectpy
+[2023-04-23 19:36:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyobsplot
+[2023-04-23 19:36:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: foodbook-discount
+[2023-04-23 19:36:12] INFO root fetch - processPackages [sphinx-embeddings]: New version: [0.3] Old Version: [0.2]
+[2023-04-23 19:36:12] INFO root fetch - processPackages [fastapi-all-out]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-23 19:36:12] WARNING root fetch - processPackages [cosmopower-jax]: Skipping, unable to determine old version
+[2023-04-23 19:36:12] INFO root fetch - main [MainThread]: End processing [cosmopower-jax] error
+[2023-04-23 19:36:12] WARNING root fetch - processPackages [text-box-wrapper]: Skipping, unable to determine old version
+[2023-04-23 19:36:12] INFO root fetch - main [MainThread]: End processing [text-box-wrapper] error
+[2023-04-23 19:36:12] INFO root fetch - processPackages [pyhOn]: New version: [0.8.5] Old Version: [0.8.4]
+[2023-04-23 19:36:12] INFO root fetch - processPackages [excel-sql-engine]: New version: [1.6.1] Old Version: [1.6]
+[2023-04-23 19:36:12] INFO root fetch - processPackages [pyobsplot]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-23 19:36:12] INFO root fetch - processPackages [audiconnectpy]: New version: [1.2.6] Old Version: [1.2.5]
+[2023-04-23 19:36:12] INFO root fetch - processPackages [foodbook-discount]: New version: [0.0.3] Old Version: [0.0.1]
+[2023-04-23 19:36:12] WARNING root fetch - processPackages [VdeoWiki-Bigbluebutton]: Skipping, unable to determine old version
+[2023-04-23 19:36:12] INFO root fetch - main [MainThread]: End processing [VdeoWiki-Bigbluebutton] error
+[2023-04-23 19:36:12] INFO root fetch - processPackages [sphinx-embeddings]: Downloading https://files.pythonhosted.org/packages/46/af/7679fab74b894d17f19885459ecb908f2f25afd910031397cbf2a42a77d5/sphinx-embeddings-0.3.tar.gz
+[2023-04-23 19:36:12] INFO root fetch - processPackages [foodbook-discount]: Downloading https://files.pythonhosted.org/packages/aa/95/1a0c4d906a51d20800637365516069fc72c6b6f19295677ee9016d6359fb/foodbook_discount-0.0.1.tar.gz
+[2023-04-23 19:36:12] INFO root fetch - processPackages [fastapi-all-out]: Downloading https://files.pythonhosted.org/packages/92/ac/4bc295babed0f591b7ee6958271ace66419f9ce88f47e70b823e3e63516c/fastapi_all_out-0.2.5.tar.gz
+[2023-04-23 19:36:12] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/0d/a2/a8531dc44493cfc1e73e43c7b91721ebee3bcc3e5edb056c57aa5b4cb20b/audiconnectpy-1.2.6.tar.gz
+[2023-04-23 19:36:12] INFO root fetch - processPackages [pyhOn]: Downloading https://files.pythonhosted.org/packages/28/c7/c0ae1ed5c146f829976fb8374b35e7ed7a04dba4e0a658c50a179abf87b0/pyhOn-0.8.4.tar.gz
+[2023-04-23 19:36:12] INFO root fetch - processPackages [pyobsplot]: Downloading https://files.pythonhosted.org/packages/20/ec/110a7d7acc0dda485aa322bc25ba1948b986fd793c6e553916097b017819/pyobsplot-0.3.2.tar.gz
+[2023-04-23 19:36:12] INFO root fetch - processPackages [fastapi-all-out]: executing diffoscope
+[2023-04-23 19:36:12] INFO root fetch - processPackages [fastapi-all-out]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_all_out-0.2.4.tar.gz tmp/fastapi_all_out-0.2.5.tar.gz --markdown 20230423/f/fastapi-all-out/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-23 19:36:12] INFO root fetch - processPackages [excel-sql-engine]: Downloading https://files.pythonhosted.org/packages/80/2b/01dd27ef25193babdd43c30bcc584c3efc70b0ec51349fd553284b77aed7/excel-sql-engine-1.6.1.tar.gz
+[2023-04-23 19:36:12] INFO root fetch - processPackages [sphinx-embeddings]: executing diffoscope
+[2023-04-23 19:36:12] INFO root fetch - processPackages [sphinx-embeddings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx-embeddings-0.2.tar.gz tmp/sphinx-embeddings-0.3.tar.gz --markdown 20230423/s/sphinx-embeddings/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-23 19:36:12] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2023-04-23 19:36:12] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-1.2.5.tar.gz tmp/audiconnectpy-1.2.6.tar.gz --markdown 20230423/a/audiconnectpy/1.2.5-1.2.6/diff.md --exclude *.pyd
+[2023-04-23 19:36:12] INFO root fetch - processPackages [foodbook-discount]: Downloading https://files.pythonhosted.org/packages/e6/52/436e95077102c7b2f164ae96888cbcb911712928870d6d810e94a1774b94/foodbook_discount-0.0.3.tar.gz
+[2023-04-23 19:36:12] INFO root fetch - processPackages [excel-sql-engine]: executing diffoscope
+[2023-04-23 19:36:12] INFO root fetch - processPackages [excel-sql-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/excel-sql-engine-1.6.tar.gz tmp/excel-sql-engine-1.6.1.tar.gz --markdown 20230423/e/excel-sql-engine/1.6-1.6.1/diff.md --exclude *.pyd
+[2023-04-23 19:36:12] INFO root fetch - processPackages [pyhOn]: Downloading https://files.pythonhosted.org/packages/cd/a7/3bc0a6e43b7a72109daf96c4575b06dd68131c99a9029ca474d3aec9becb/pyhOn-0.8.5.tar.gz
+[2023-04-23 19:36:12] INFO root fetch - processPackages [pyobsplot]: Downloading https://files.pythonhosted.org/packages/cc/f0/fde4790568c465f054dc59e52951adcdd3fedf41d3d23437f34eabb7f219/pyobsplot-0.3.3.tar.gz
+[2023-04-23 19:36:12] INFO root fetch - processPackages [foodbook-discount]: executing diffoscope
+[2023-04-23 19:36:12] INFO root fetch - processPackages [foodbook-discount]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foodbook_discount-0.0.1.tar.gz tmp/foodbook_discount-0.0.3.tar.gz --markdown 20230423/f/foodbook-discount/0.0.1-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 19:36:12] INFO root fetch - processPackages [pyhOn]: executing diffoscope
+[2023-04-23 19:36:12] INFO root fetch - processPackages [pyhOn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhOn-0.8.4.tar.gz tmp/pyhOn-0.8.5.tar.gz --markdown 20230423/p/pyhOn/0.8.4-0.8.5/diff.md --exclude *.pyd
+[2023-04-23 19:36:13] INFO root fetch - processPackages [pyobsplot]: executing diffoscope
+[2023-04-23 19:36:13] INFO root fetch - processPackages [pyobsplot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyobsplot-0.3.2.tar.gz tmp/pyobsplot-0.3.3.tar.gz --markdown 20230423/p/pyobsplot/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-23 19:36:13] INFO root fetch - main [MainThread]: End processing [sphinx-embeddings]: success
+[2023-04-23 19:36:13] INFO root fetch - main [MainThread]: End processing [fastapi-all-out]: success
+[2023-04-23 19:36:14] INFO root fetch - main [MainThread]: End processing [excel-sql-engine]: success
+[2023-04-23 19:36:14] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2023-04-23 19:36:14] INFO root fetch - main [MainThread]: End processing [foodbook-discount]: success
+[2023-04-23 19:36:14] INFO root fetch - main [MainThread]: End processing [pyhOn]: success
+[2023-04-23 19:36:26] INFO root fetch - main [MainThread]: End processing [pyobsplot]: success
+[2023-04-23 19:36:26] INFO root fetch - main [MainThread]: Store serial: [17824294]
