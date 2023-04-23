@@ -10427,3 +10427,67 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 18:23:01] INFO root fetch - main [MainThread]: End processing [inverter-connect]: success
 [2023-04-23 18:23:03] INFO root fetch - main [MainThread]: End processing [fastapi-template]: success
 [2023-04-23 18:23:03] INFO root fetch - main [MainThread]: Store serial: [17823729]
+[2023-04-23 18:28:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823729]
+[2023-04-23 18:28:13] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-23 18:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigtest-automator
+[2023-04-23 18:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AegosCoding
+[2023-04-23 18:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anyioc
+[2023-04-23 18:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: telegram-util
+[2023-04-23 18:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: passwordtools-yt
+[2023-04-23 18:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: feathub-nightly
+[2023-04-23 18:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: morastrja
+[2023-04-23 18:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: diambra-engine
+[2023-04-23 18:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: naturalspeech2-pytorch
+[2023-04-23 18:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: fondat-salesforce
+[2023-04-23 18:28:13] WARNING root fetch - processPackages [passwordtools-yt]: Skipping, unable to determine old version
+[2023-04-23 18:28:13] INFO root fetch - processPackages [passwordtools-yt]: Start processing: naturalspeech2-pytorch
+[2023-04-23 18:28:13] INFO root fetch - main [MainThread]: End processing [passwordtools-yt] error
+[2023-04-23 18:28:13] INFO root fetch - processPackages [diambra-engine]: New version: [2.1.0rc9] Old Version: [2.1.0rc8]
+[2023-04-23 18:28:13] WARNING root fetch - processPackages [AegosCoding]: Skipping, unable to determine old version
+[2023-04-23 18:28:13] INFO root fetch - main [MainThread]: End processing [AegosCoding] error
+[2023-04-23 18:28:13] INFO root fetch - processPackages [morastrja]: New version: [0.8.7] Old Version: [0.8.6]
+[2023-04-23 18:28:13] INFO root fetch - processPackages [bigtest-automator]: New version: [0.4] Old Version: [0.3]
+[2023-04-23 18:28:13] INFO root fetch - processPackages [naturalspeech2-pytorch]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-23 18:28:13] INFO root fetch - processPackages [feathub-nightly]: New version: [0.1.dev20230422] Old Version: [0.1.dev20230421]
+[2023-04-23 18:28:13] INFO root fetch - processPackages [anyioc]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-23 18:28:13] INFO root fetch - processPackages [telegram-util]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 18:28:13] INFO root fetch - processPackages [naturalspeech2-pytorch]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-23 18:28:13] INFO root fetch - processPackages [naturalspeech2-pytorch]: executing diffoscope
+[2023-04-23 18:28:13] INFO root fetch - processPackages [naturalspeech2-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naturalspeech2-pytorch-0.0.4.tar.gz tmp/naturalspeech2-pytorch-0.0.5.tar.gz --markdown 20230423/n/naturalspeech2-pytorch/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 18:28:13] INFO root fetch - processPackages [fondat-salesforce]: New version: [4.1.0] Old Version: [4.0b3]
+[2023-04-23 18:28:13] INFO root fetch - processPackages [naturalspeech2-pytorch]: executing diffoscope
+[2023-04-23 18:28:13] INFO root fetch - processPackages [naturalspeech2-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naturalspeech2-pytorch-0.0.4.tar.gz tmp/naturalspeech2-pytorch-0.0.5.tar.gz --markdown 20230423/n/naturalspeech2-pytorch/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 18:28:13] INFO root fetch - processPackages [morastrja]: Downloading https://files.pythonhosted.org/packages/9a/01/fcd3f4cec9e15863bdab27555bdd34a5966cf632af681ae27b19c3d9a7ae/morastrja-0.8.6.tar.gz
+[2023-04-23 18:28:13] ERROR root fetch - processPackages [bigtest-automator]: Unable to fetch info: No such project/version 'bigtest-automator' 0.3
+[2023-04-23 18:28:13] INFO root fetch - main [MainThread]: End processing [bigtest-automator] error
+[2023-04-23 18:28:13] INFO root fetch - processPackages [diambra-engine]: Downloading https://files.pythonhosted.org/packages/bb/ba/b5ae2a99b8d1db307aec499c56c95eb4cfa5f76a7340cdbd49ed655d5fb2/diambra-engine-2.1.0rc8.tar.gz
+[2023-04-23 18:28:13] INFO root fetch - processPackages [telegram-util]: Downloading https://files.pythonhosted.org/packages/86/3a/79c1857e1ffef8f07c666a641fe9f7a9485cbd7fec82160e80cea6daf9ba/telegram_util-0.0.98.tar.gz
+[2023-04-23 18:28:13] INFO root fetch - processPackages [feathub-nightly]: Downloading https://files.pythonhosted.org/packages/14/e2/b04a96703a2e2cbe6eb46e080bd6816e9e496e371bc473f5b03b639be9e6/feathub_nightly-0.1.dev20230422-py3-none-any.whl
+[2023-04-23 18:28:13] INFO root fetch - processPackages [fondat-salesforce]: Downloading https://files.pythonhosted.org/packages/e5/6d/8c47a7db8b26f275106f22c7b10e2017f3d64576c9e1a29ba53f703c9cfe/fondat-salesforce-4.0b3.tar.gz
+[2023-04-23 18:28:13] INFO root fetch - processPackages [anyioc]: Downloading https://files.pythonhosted.org/packages/93/2a/72a90dd2cfc96eac61fbd1d949ef5818d3578189db5c79ab174a473d5b61/anyioc-0.9.0.tar.gz
+[2023-04-23 18:28:13] INFO root fetch - processPackages [morastrja]: Downloading https://files.pythonhosted.org/packages/69/c0/435869cbfaceba09cdb3f3a747ff66c6ade3cbb738516d03746af04ab783/morastrja-0.8.7.tar.gz
+[2023-04-23 18:28:13] INFO root fetch - processPackages [morastrja]: executing diffoscope
+[2023-04-23 18:28:13] INFO root fetch - processPackages [morastrja]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morastrja-0.8.6.tar.gz tmp/morastrja-0.8.7.tar.gz --markdown 20230423/m/morastrja/0.8.6-0.8.7/diff.md --exclude *.pyd
+[2023-04-23 18:28:13] INFO root fetch - processPackages [fondat-salesforce]: Downloading https://files.pythonhosted.org/packages/45/ce/81f7198f12d2ebb7362c496436652efcfbbfa94627693ad2fb3acef96450/fondat_salesforce-4.1.0.tar.gz
+[2023-04-23 18:28:13] INFO root fetch - processPackages [telegram-util]: Downloading https://files.pythonhosted.org/packages/8d/9a/26431fee68d5e5a388b624025cdfa8d173f89f5ac6aa8f2f4f8ac8c3495f/telegram_util-0.0.99.tar.gz
+[2023-04-23 18:28:13] INFO root fetch - processPackages [anyioc]: Downloading https://files.pythonhosted.org/packages/d1/40/d5e315bb4ce96765c51d1eb6609d7b26b95d226b0ac564248665caa96018/anyioc-0.9.1.tar.gz
+[2023-04-23 18:28:13] INFO root fetch - processPackages [fondat-salesforce]: executing diffoscope
+[2023-04-23 18:28:13] INFO root fetch - processPackages [fondat-salesforce]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fondat-salesforce-4.0b3.tar.gz tmp/fondat_salesforce-4.1.0.tar.gz --markdown 20230423/f/fondat-salesforce/4.0b3-4.1.0/diff.md --exclude *.pyd
+[2023-04-23 18:28:13] INFO root fetch - processPackages [telegram-util]: executing diffoscope
+[2023-04-23 18:28:13] INFO root fetch - processPackages [telegram-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegram_util-0.0.98.tar.gz tmp/telegram_util-0.0.99.tar.gz --markdown 20230423/t/telegram-util/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 18:28:13] INFO root fetch - processPackages [anyioc]: executing diffoscope
+[2023-04-23 18:28:13] INFO root fetch - processPackages [anyioc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyioc-0.9.0.tar.gz tmp/anyioc-0.9.1.tar.gz --markdown 20230423/a/anyioc/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-23 18:28:14] INFO root fetch - main [MainThread]: End processing [naturalspeech2-pytorch]: success
+[2023-04-23 18:28:14] INFO root fetch - main [MainThread]: End processing [naturalspeech2-pytorch]: success
+[2023-04-23 18:28:14] INFO root fetch - processPackages [feathub-nightly]: executing diffoscope
+[2023-04-23 18:28:14] INFO root fetch - processPackages [feathub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feathub_nightly-0.1.dev20230421-py3-none-any.whl.zip tmp/feathub_nightly-0.1.dev20230422-py3-none-any.whl.zip --markdown 20230423/f/feathub-nightly/0.1.dev20230421-0.1.dev20230422/diff.md --exclude *.pyd
+[2023-04-23 18:28:14] INFO root fetch - main [MainThread]: End processing [fondat-salesforce]: success
+[2023-04-23 18:28:15] INFO root fetch - main [MainThread]: End processing [telegram-util]: success
+[2023-04-23 18:28:15] INFO root fetch - main [MainThread]: End processing [anyioc]: success
+[2023-04-23 18:28:15] INFO root fetch - main [MainThread]: End processing [morastrja]: success
+[2023-04-23 18:28:18] INFO root fetch - main [MainThread]: End processing [feathub-nightly]: success
+[2023-04-23 18:28:21] INFO root fetch - processPackages [diambra-engine]: Downloading https://files.pythonhosted.org/packages/4b/33/1da34d2f2a44dd6ec8d777d9129a3744af4ae787eb69b9a118a82a7e3aea/diambra-engine-2.1.0rc9.tar.gz
+[2023-04-23 18:28:21] INFO root fetch - processPackages [diambra-engine]: executing diffoscope
+[2023-04-23 18:28:21] INFO root fetch - processPackages [diambra-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diambra-engine-2.1.0rc8.tar.gz tmp/diambra-engine-2.1.0rc9.tar.gz --markdown 20230423/d/diambra-engine/2.1.0rc8-2.1.0rc9/diff.md --exclude *.pyd
+[2023-04-23 18:28:22] INFO root fetch - main [MainThread]: End processing [diambra-engine]: success
+[2023-04-23 18:28:22] INFO root fetch - main [MainThread]: Store serial: [17823769]
