@@ -12952,3 +12952,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 21:28:13] INFO root fetch - main [MainThread]: End processing [mash-shell]: success
 [2023-04-23 21:28:14] INFO root fetch - main [MainThread]: End processing [llama-index]: success
 [2023-04-23 21:28:14] INFO root fetch - main [MainThread]: Store serial: [17825266]
+[2023-04-23 21:33:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825266]
+[2023-04-23 21:33:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-23 21:33:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: demoparser2
+[2023-04-23 21:33:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nlpie
+[2023-04-23 21:33:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: uiuc-490-sp23
+[2023-04-23 21:33:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aesara-nightly
+[2023-04-23 21:33:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spccpkg
+[2023-04-23 21:33:23] INFO root fetch - processPackages [nlpie]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-23 21:33:23] INFO root fetch - processPackages [spccpkg]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-23 21:33:23] INFO root fetch - processPackages [uiuc-490-sp23]: New version: [0.1.3] Old Version: [0.1.1]
+[2023-04-23 21:33:23] INFO root fetch - processPackages [demoparser2]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 21:33:23] INFO root fetch - processPackages [aesara-nightly]: New version: [2.8.9.post118] Old Version: [2.8.9.post117]
+[2023-04-23 21:33:23] INFO root fetch - processPackages [aesara-nightly]: executing diffoscope
+[2023-04-23 21:33:23] INFO root fetch - processPackages [aesara-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aesara-nightly-2.8.9.post117.tar.gz tmp/aesara-nightly-2.8.9.post118.tar.gz --markdown 20230423/a/aesara-nightly/2.8.9.post117-2.8.9.post118/diff.md --exclude *.pyd
+[2023-04-23 21:33:23] INFO root fetch - processPackages [spccpkg]: Downloading https://files.pythonhosted.org/packages/11/9a/1e5b080d1dd496ca544e22b047c5ed1780a94a660f09cb9189b478918068/spccpkg-0.0.7.tar.gz
+[2023-04-23 21:33:23] INFO root fetch - processPackages [nlpie]: Downloading https://files.pythonhosted.org/packages/63/cc/90a83dd83f29e55d548f95ec34b1497beb934bc89320387bf592bde58587/nlpie-0.3.2.tar.gz
+[2023-04-23 21:33:23] INFO root fetch - processPackages [uiuc-490-sp23]: Downloading https://files.pythonhosted.org/packages/36/3f/cfea441f69acf817e2fabe6ee2b9c19bc73bb26de796b1cde2a7cfefc710/uiuc_490_sp23-0.1.1.tar.gz
+[2023-04-23 21:33:23] INFO root fetch - processPackages [demoparser2]: Downloading https://files.pythonhosted.org/packages/38/c1/0327edf391e3304ef6deb4374e2554ba99d8381da8f8ed60c2adaad33c12/demoparser2-0.0.5-cp39-none-win_amd64.whl
+[2023-04-23 21:33:23] INFO root fetch - processPackages [spccpkg]: executing diffoscope
+[2023-04-23 21:33:23] INFO root fetch - processPackages [spccpkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spccpkg-0.0.6.tar.gz tmp/spccpkg-0.0.7.tar.gz --markdown 20230423/s/spccpkg/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-23 21:33:23] INFO root fetch - processPackages [nlpie]: executing diffoscope
+[2023-04-23 21:33:23] INFO root fetch - processPackages [nlpie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlpie-0.3.1.tar.gz tmp/nlpie-0.3.2.tar.gz --markdown 20230423/n/nlpie/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-23 21:33:24] INFO root fetch - processPackages [uiuc-490-sp23]: Downloading https://files.pythonhosted.org/packages/67/40/b355f55e38c9e011a649234beac1d204ba151863590a77403ab079e54f34/uiuc_490_sp23-0.1.3.tar.gz
+[2023-04-23 21:33:24] INFO root fetch - processPackages [uiuc-490-sp23]: executing diffoscope
+[2023-04-23 21:33:24] INFO root fetch - processPackages [uiuc-490-sp23]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uiuc_490_sp23-0.1.1.tar.gz tmp/uiuc_490_sp23-0.1.3.tar.gz --markdown 20230423/u/uiuc-490-sp23/0.1.1-0.1.3/diff.md --exclude *.pyd
+[2023-04-23 21:33:24] INFO root fetch - main [MainThread]: End processing [spccpkg]: success
+[2023-04-23 21:33:24] INFO root fetch - processPackages [demoparser2]: Downloading https://files.pythonhosted.org/packages/1d/41/f046c5a30d332ea90147f4041a31303d713990a3119e8e98a35484d4595c/demoparser2-0.0.6-cp39-none-win_amd64.whl
+[2023-04-23 21:33:24] INFO root fetch - processPackages [demoparser2]: executing diffoscope
+[2023-04-23 21:33:24] INFO root fetch - processPackages [demoparser2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/demoparser2-0.0.5-cp39-none-win_amd64.whl.zip tmp/demoparser2-0.0.6-cp39-none-win_amd64.whl.zip --markdown 20230423/d/demoparser2/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 21:33:24] INFO root fetch - main [MainThread]: End processing [nlpie]: success
+[2023-04-23 21:33:25] INFO root fetch - main [MainThread]: End processing [uiuc-490-sp23]: success
+[2023-04-23 21:33:25] INFO root fetch - main [MainThread]: End processing [demoparser2]: success
+[2023-04-23 21:33:28] INFO root fetch - main [MainThread]: End processing [aesara-nightly]: success
+[2023-04-23 21:33:28] INFO root fetch - main [MainThread]: Store serial: [17825298]
