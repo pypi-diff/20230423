@@ -4777,3 +4777,81 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 09:42:13] INFO root fetch - main [MainThread]: End processing [qcloud-python-sts]: success
 [2023-04-23 09:42:16] INFO root fetch - main [MainThread]: End processing [pyocs]: success
 [2023-04-23 09:42:16] INFO root fetch - main [MainThread]: Store serial: [17820392]
+[2023-04-23 09:47:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820392]
+[2023-04-23 09:47:25] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-23 09:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wi1-bot
+[2023-04-23 09:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: common-test
+[2023-04-23 09:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lets-debug-helper
+[2023-04-23 09:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: textquisite-parsers
+[2023-04-23 09:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: latex2sympy2
+[2023-04-23 09:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xia-engine-terraform
+[2023-04-23 09:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: e2eAIOK-ModelAdapter
+[2023-04-23 09:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Aciembler
+[2023-04-23 09:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: letsbuilda-pypi
+[2023-04-23 09:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: apkutils
+[2023-04-23 09:47:25] INFO root fetch - processPackages [wi1-bot]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-04-23 09:47:25] INFO root fetch - processPackages [xia-engine-terraform]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-04-23 09:47:25] INFO root fetch - processPackages [common-test]: New version: [29.9.20.1] Old Version: [29.9.20]
+[2023-04-23 09:47:25] INFO root fetch - processPackages [textquisite-parsers]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 09:47:25] INFO root fetch - processPackages [letsbuilda-pypi]: New version: [3.1.0] Old Version: [3.0.0]
+[2023-04-23 09:47:25] INFO root fetch - processPackages [e2eAIOK-ModelAdapter]: New version: [1.0.1b2023042307] Old Version: [1.0.1b2023033115]
+[2023-04-23 09:47:25] INFO root fetch - processPackages [Aciembler]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-23 09:47:25] INFO root fetch - processPackages [lets-debug-helper]: New version: [1.5.4] Old Version: [1.5.3]
+[2023-04-23 09:47:25] INFO root fetch - processPackages [latex2sympy2]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-23 09:47:25] INFO root fetch - processPackages [apkutils]: New version: [1.5.0] Old Version: [1.4.0]
+[2023-04-23 09:47:25] INFO root fetch - processPackages [xia-engine-terraform]: executing diffoscope
+[2023-04-23 09:47:25] INFO root fetch - processPackages [xia-engine-terraform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_engine_terraform-0.0.7-cp39-none-win_amd64.whl.zip tmp/xia_engine_terraform-0.0.9-cp39-none-win_amd64.whl.zip --markdown 20230423/x/xia-engine-terraform/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 09:47:25] INFO root fetch - processPackages [textquisite-parsers]: Downloading https://files.pythonhosted.org/packages/42/87/14a6834ba79d22a69c174205b166525ae260f8d5ef3c9d4cec8ce5347c58/textquisite_parsers-0.0.1.tar.gz
+[2023-04-23 09:47:25] INFO root fetch - processPackages [lets-debug-helper]: Downloading https://files.pythonhosted.org/packages/bb/41/8c5779d99f713bd281bdb5d0d685884077a4b38171bc3d59cb7e9a2fde3b/lets_debug_helper-1.5.3.tar.gz
+[2023-04-23 09:47:25] INFO root fetch - processPackages [wi1-bot]: Downloading https://files.pythonhosted.org/packages/59/d3/e1bde67f7e5cdb2ccec7a1125ff922b91bcbfeb1257a17679e21dc56f246/wi1-bot-1.3.1.tar.gz
+[2023-04-23 09:47:25] INFO root fetch - processPackages [letsbuilda-pypi]: Downloading https://files.pythonhosted.org/packages/d0/15/a62438b074fa5b13a2de54fc474dfcfe23cb65b1f7959d45f4ea794ae134/letsbuilda-pypi-3.1.0.tar.gz
+[2023-04-23 09:47:25] INFO root fetch - processPackages [Aciembler]: Downloading https://files.pythonhosted.org/packages/92/a9/c493388ee04f7ca85fc2de05a940da4b1a81cae45d0b0da027eb379de666/Aciembler-1.0.7-py2.py3-none-any.whl
+[2023-04-23 09:47:25] INFO root fetch - processPackages [common-test]: Downloading https://files.pythonhosted.org/packages/f6/f3/f21db7e9a473606cb991206542593991c70357ee996d066153c482a9def5/common-test-29.9.20.tar.gz
+[2023-04-23 09:47:25] INFO root fetch - processPackages [e2eAIOK-ModelAdapter]: Downloading https://files.pythonhosted.org/packages/81/1d/f17987f53d7c325d12132c0ddf669da46be0bafe3bb8eda8fb8d30ccfaaa/e2eAIOK_ModelAdapter-1.0.1b2023033115-py3-none-any.whl
+[2023-04-23 09:47:26] INFO root fetch - processPackages [apkutils]: Downloading https://files.pythonhosted.org/packages/19/08/e8ac89d939ee8d086d09e4f97320916b3fcec82003f109a6376dd94f2901/apkutils-1.5.0-py3-none-any.whl
+[2023-04-23 09:47:26] INFO root fetch - processPackages [latex2sympy2]: Downloading https://files.pythonhosted.org/packages/0c/9e/4520682ab29a9219f1845643fdc75f1453bebf4b602c6e4421579de1f05d/latex2sympy2-1.9.1-py3-none-any.whl
+[2023-04-23 09:47:26] INFO root fetch - processPackages [letsbuilda-pypi]: executing diffoscope
+[2023-04-23 09:47:26] INFO root fetch - processPackages [letsbuilda-pypi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/letsbuilda-pypi-3.0.0.tar.gz tmp/letsbuilda-pypi-3.1.0.tar.gz --markdown 20230423/l/letsbuilda-pypi/3.0.0-3.1.0/diff.md --exclude *.pyd
+[2023-04-23 09:47:26] INFO root fetch - processPackages [Aciembler]: executing diffoscope
+[2023-04-23 09:47:26] INFO root fetch - processPackages [Aciembler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Aciembler-1.0.6-py2.py3-none-any.whl.zip tmp/Aciembler-1.0.7-py2.py3-none-any.whl.zip --markdown 20230423/A/Aciembler/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-23 09:47:26] INFO root fetch - processPackages [wi1-bot]: Downloading https://files.pythonhosted.org/packages/63/36/2c3f831854bd0ef2459832d047e398e5194a4905a017a8b7a6d3a8b7f18a/wi1-bot-1.3.2.tar.gz
+[2023-04-23 09:47:26] INFO root fetch - processPackages [lets-debug-helper]: Downloading https://files.pythonhosted.org/packages/06/5a/81f4351f20d9eeacf29f2c1c9c14d8e408d41b63a7daaee9027667821299/lets_debug_helper-1.5.4.tar.gz
+[2023-04-23 09:47:26] INFO root fetch - processPackages [common-test]: Downloading https://files.pythonhosted.org/packages/47/83/90efb2f1766c0fba98ab769e134abd7bd79c5dafefae705e96f3c1e0e566/common-test-29.9.20.1.tar.gz
+[2023-04-23 09:47:26] INFO root fetch - processPackages [textquisite-parsers]: Downloading https://files.pythonhosted.org/packages/9e/06/e97e27cf942895dc8d4030762853fd8ac3e7eacf8ed921f212280a1905aa/textquisite_parsers-0.0.2.tar.gz
+[2023-04-23 09:47:26] INFO root fetch - processPackages [latex2sympy2]: executing diffoscope
+[2023-04-23 09:47:26] INFO root fetch - processPackages [latex2sympy2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latex2sympy2-1.9.0-py3-none-any.whl.zip tmp/latex2sympy2-1.9.1-py3-none-any.whl.zip --markdown 20230423/l/latex2sympy2/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-23 09:47:26] INFO root fetch - processPackages [e2eAIOK-ModelAdapter]: Downloading https://files.pythonhosted.org/packages/a5/4a/324628068bb7ac5b5efef377b5d0e08f100a28acb95a3cb3aba7efb9329e/e2eAIOK-ModelAdapter-1.0.1b2023042307.tar.gz
+[2023-04-23 09:47:26] INFO root fetch - processPackages [apkutils]: executing diffoscope
+[2023-04-23 09:47:26] INFO root fetch - processPackages [apkutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apkutils-1.4.0.tar.gz tmp/apkutils-1.5.0-py3-none-any.whl.zip --markdown 20230423/a/apkutils/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2023-04-23 09:47:26] INFO root fetch - processPackages [wi1-bot]: executing diffoscope
+[2023-04-23 09:47:26] INFO root fetch - processPackages [wi1-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wi1-bot-1.3.1.tar.gz tmp/wi1-bot-1.3.2.tar.gz --markdown 20230423/w/wi1-bot/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-04-23 09:47:26] INFO root fetch - processPackages [lets-debug-helper]: executing diffoscope
+[2023-04-23 09:47:26] INFO root fetch - processPackages [lets-debug-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lets_debug_helper-1.5.3.tar.gz tmp/lets_debug_helper-1.5.4.tar.gz --markdown 20230423/l/lets-debug-helper/1.5.3-1.5.4/diff.md --exclude *.pyd
+[2023-04-23 09:47:26] INFO root fetch - processPackages [common-test]: executing diffoscope
+[2023-04-23 09:47:26] INFO root fetch - processPackages [common-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/common-test-29.9.20.tar.gz tmp/common-test-29.9.20.1.tar.gz --markdown 20230423/c/common-test/29.9.20-29.9.20.1/diff.md --exclude *.pyd
+[2023-04-23 09:47:26] INFO root fetch - processPackages [textquisite-parsers]: executing diffoscope
+[2023-04-23 09:47:26] INFO root fetch - processPackages [textquisite-parsers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textquisite_parsers-0.0.1.tar.gz tmp/textquisite_parsers-0.0.2.tar.gz --markdown 20230423/t/textquisite-parsers/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 09:47:26] INFO root fetch - processPackages [e2eAIOK-ModelAdapter]: executing diffoscope
+[2023-04-23 09:47:26] INFO root fetch - processPackages [e2eAIOK-ModelAdapter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/e2eAIOK_ModelAdapter-1.0.1b2023033115-py3-none-any.whl.zip tmp/e2eAIOK-ModelAdapter-1.0.1b2023042307.tar.gz --markdown 20230423/e/e2eAIOK-ModelAdapter/1.0.1b2023033115-1.0.1b2023042307/diff.md --exclude *.pyd
+[2023-04-23 09:47:27] INFO root fetch - processPackages [xia-engine-terraform]: Start processing: keras-nightly
+[2023-04-23 09:47:27] INFO root fetch - main [MainThread]: End processing [xia-engine-terraform]: success
+[2023-04-23 09:47:27] INFO root fetch - processPackages [keras-nightly]: New version: [2.9.0.dev2022033107] Old Version: [2.9.0.dev2022033007]
+[2023-04-23 09:47:27] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2023-04-23 09:47:27] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-2.9.0.dev2022033007-py2.py3-none-any.whl.zip tmp/keras_nightly-2.9.0.dev2022033107-py2.py3-none-any.whl.zip --markdown 20230423/k/keras-nightly/2.9.0.dev2022033007-2.9.0.dev2022033107/diff.md --exclude *.pyd
+[2023-04-23 09:47:27] INFO root fetch - processPackages [letsbuilda-pypi]: Start processing: graphql-http-server
+[2023-04-23 09:47:27] INFO root fetch - main [MainThread]: End processing [letsbuilda-pypi]: success
+[2023-04-23 09:47:27] INFO root fetch - processPackages [graphql-http-server]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-04-23 09:47:27] INFO root fetch - main [MainThread]: End processing [Aciembler]: success
+[2023-04-23 09:47:27] INFO root fetch - processPackages [graphql-http-server]: Downloading https://files.pythonhosted.org/packages/71/b8/9f22b42dbda28d5df290031f945be860c8fd4ffa1b56da311cf12aa89389/graphql_http_server-1.4.2.tar.gz
+[2023-04-23 09:47:27] INFO root fetch - processPackages [graphql-http-server]: executing diffoscope
+[2023-04-23 09:47:27] INFO root fetch - processPackages [graphql-http-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphql_http_server-1.4.1.tar.gz tmp/graphql_http_server-1.4.2.tar.gz --markdown 20230423/g/graphql-http-server/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-04-23 09:47:27] INFO root fetch - main [MainThread]: End processing [apkutils]: success
+[2023-04-23 09:47:28] INFO root fetch - main [MainThread]: End processing [lets-debug-helper]: success
+[2023-04-23 09:47:28] INFO root fetch - main [MainThread]: End processing [textquisite-parsers]: success
+[2023-04-23 09:47:28] INFO root fetch - main [MainThread]: End processing [e2eAIOK-ModelAdapter]: success
+[2023-04-23 09:47:28] INFO root fetch - main [MainThread]: End processing [wi1-bot]: success
+[2023-04-23 09:47:28] INFO root fetch - main [MainThread]: End processing [latex2sympy2]: success
+[2023-04-23 09:47:28] INFO root fetch - main [MainThread]: End processing [common-test]: success
+[2023-04-23 09:47:29] INFO root fetch - main [MainThread]: End processing [graphql-http-server]: success
+[2023-04-23 09:47:37] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2023-04-23 09:47:37] INFO root fetch - main [MainThread]: Store serial: [17820424]
