@@ -2616,3 +2616,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 05:15:54] INFO root fetch - main [MainThread]: End processing [nox]: success
 [2023-04-23 05:15:54] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
 [2023-04-23 05:15:54] INFO root fetch - main [MainThread]: Store serial: [17819178]
+[2023-04-23 05:20:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819178]
+[2023-04-23 05:21:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-23 05:21:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cleopatra
+[2023-04-23 05:21:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: toollib
+[2023-04-23 05:21:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdktf-cdktf-provider-gitlab
+[2023-04-23 05:21:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-common-task-system
+[2023-04-23 05:21:03] INFO root fetch - processPackages [cleopatra]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-23 05:21:03] INFO root fetch - processPackages [toollib]: New version: [1.3.4] Old Version: [1.3.3]
+[2023-04-23 05:21:03] INFO root fetch - processPackages [cdktf-cdktf-provider-gitlab]: New version: [7.0.1] Old Version: [7.0.0]
+[2023-04-23 05:21:03] INFO root fetch - processPackages [django-common-task-system]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-04-23 05:21:03] INFO root fetch - processPackages [django-common-task-system]: Downloading https://files.pythonhosted.org/packages/93/bb/01f3b633eac3bb20c68a7410d33070202c7e5c8c1a6bc121a02e0b3fa6d9/django-common-task-system-1.2.2.tar.gz
+[2023-04-23 05:21:03] INFO root fetch - processPackages [cleopatra]: Downloading https://files.pythonhosted.org/packages/6f/36/dc7fe97f5b407a1cb9a6dbeb90510674bc9793523121983fdb228d76feea/cleopatra-0.3.2.tar.gz
+[2023-04-23 05:21:03] INFO root fetch - processPackages [cdktf-cdktf-provider-gitlab]: Downloading https://files.pythonhosted.org/packages/20/14/3a6424fbd85b719e8054367bc1db89ed22927142f21c714dab948e508428/cdktf-cdktf-provider-gitlab-7.0.1.tar.gz
+[2023-04-23 05:21:03] INFO root fetch - processPackages [toollib]: Downloading https://files.pythonhosted.org/packages/f0/16/50dcd86c0666c800bda6614864529c2fd5fd23f55d9ddde312103cb591c6/toollib-1.3.4-py3-none-any.whl
+[2023-04-23 05:21:03] INFO root fetch - processPackages [toollib]: executing diffoscope
+[2023-04-23 05:21:03] INFO root fetch - processPackages [toollib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toollib-1.3.3-py3-none-any.whl.zip tmp/toollib-1.3.4-py3-none-any.whl.zip --markdown 20230423/t/toollib/1.3.3-1.3.4/diff.md --exclude *.pyd
+[2023-04-23 05:21:03] INFO root fetch - processPackages [django-common-task-system]: Downloading https://files.pythonhosted.org/packages/ae/5c/7ffec16d6aa58a357ee955a42363c83bb73327016c3ca410dd3a68164a61/django-common-task-system-1.2.3.tar.gz
+[2023-04-23 05:21:03] INFO root fetch - processPackages [cleopatra]: executing diffoscope
+[2023-04-23 05:21:03] INFO root fetch - processPackages [cleopatra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cleopatra-0.3.1.tar.gz tmp/cleopatra-0.3.2.tar.gz --markdown 20230423/c/cleopatra/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-23 05:21:03] INFO root fetch - processPackages [django-common-task-system]: executing diffoscope
+[2023-04-23 05:21:03] INFO root fetch - processPackages [django-common-task-system]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-common-task-system-1.2.2.tar.gz tmp/django-common-task-system-1.2.3.tar.gz --markdown 20230423/d/django-common-task-system/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-04-23 05:21:03] INFO root fetch - processPackages [cdktf-cdktf-provider-gitlab]: executing diffoscope
+[2023-04-23 05:21:03] INFO root fetch - processPackages [cdktf-cdktf-provider-gitlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-gitlab-7.0.0.tar.gz tmp/cdktf-cdktf-provider-gitlab-7.0.1.tar.gz --markdown 20230423/c/cdktf-cdktf-provider-gitlab/7.0.0-7.0.1/diff.md --exclude *.pyd
+[2023-04-23 05:21:04] INFO root fetch - main [MainThread]: End processing [cleopatra]: success
+[2023-04-23 05:21:05] INFO root fetch - main [MainThread]: End processing [django-common-task-system]: success
+[2023-04-23 05:21:05] INFO root fetch - main [MainThread]: End processing [toollib]: success
+[2023-04-23 05:21:10] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-gitlab]: success
+[2023-04-23 05:21:10] INFO root fetch - main [MainThread]: Store serial: [17819188]
