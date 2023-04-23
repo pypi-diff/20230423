@@ -10491,3 +10491,64 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 18:28:21] INFO root fetch - processPackages [diambra-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diambra-engine-2.1.0rc8.tar.gz tmp/diambra-engine-2.1.0rc9.tar.gz --markdown 20230423/d/diambra-engine/2.1.0rc8-2.1.0rc9/diff.md --exclude *.pyd
 [2023-04-23 18:28:22] INFO root fetch - main [MainThread]: End processing [diambra-engine]: success
 [2023-04-23 18:28:22] INFO root fetch - main [MainThread]: Store serial: [17823769]
+[2023-04-23 18:33:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823769]
+[2023-04-23 18:33:31] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-23 18:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: frequency-analysis
+[2023-04-23 18:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ml-botting-core
+[2023-04-23 18:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigtest-automator
+[2023-04-23 18:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tsdownsample
+[2023-04-23 18:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: anyioc
+[2023-04-23 18:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gptroles
+[2023-04-23 18:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: typed-boto3
+[2023-04-23 18:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: thesr
+[2023-04-23 18:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bigtest-automator
+[2023-04-23 18:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: findmyorder
+[2023-04-23 18:33:31] INFO root fetch - processPackages [gptroles]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-23 18:33:31] INFO root fetch - processPackages [anyioc]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-23 18:33:31] INFO root fetch - processPackages [frequency-analysis]: New version: [0.1.4.5] Old Version: [0.1.4.4]
+[2023-04-23 18:33:31] WARNING root fetch - processPackages [bigtest-automator]: Skipping, unable to determine old version
+[2023-04-23 18:33:31] INFO root fetch - processPackages [bigtest-automator]: Start processing: FFmpyg-DavidRodriguezSoaresCUI
+[2023-04-23 18:33:31] INFO root fetch - main [MainThread]: End processing [bigtest-automator] error
+[2023-04-23 18:33:31] WARNING root fetch - processPackages [bigtest-automator]: Skipping, unable to determine old version
+[2023-04-23 18:33:31] WARNING root fetch - processPackages [typed-boto3]: Skipping, unable to determine old version
+[2023-04-23 18:33:31] INFO root fetch - processPackages [findmyorder]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 18:33:31] INFO root fetch - main [MainThread]: End processing [bigtest-automator] error
+[2023-04-23 18:33:31] INFO root fetch - processPackages [ml-botting-core]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-23 18:33:31] INFO root fetch - main [MainThread]: End processing [typed-boto3] error
+[2023-04-23 18:33:31] INFO root fetch - processPackages [tsdownsample]: New version: [0.1.2a1] Old Version: [0.1.2a0]
+[2023-04-23 18:33:31] INFO root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-23 18:33:31] INFO root fetch - processPackages [thesr]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-23 18:33:32] INFO root fetch - processPackages [frequency-analysis]: Downloading https://files.pythonhosted.org/packages/f0/32/b292baaa6f08f3acad72c4a7cbf9ad9b6ca01d3b3f46cd834e4f10645e68/frequency_analysis-0.1.4.4.tar.gz
+[2023-04-23 18:33:32] INFO root fetch - processPackages [anyioc]: executing diffoscope
+[2023-04-23 18:33:32] INFO root fetch - processPackages [anyioc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyioc-0.9.0.tar.gz tmp/anyioc-0.9.1.tar.gz --markdown 20230423/a/anyioc/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-23 18:33:32] INFO root fetch - processPackages [findmyorder]: executing diffoscope
+[2023-04-23 18:33:32] INFO root fetch - processPackages [findmyorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findmyorder-0.0.8.tar.gz tmp/findmyorder-0.0.9.tar.gz --markdown 20230423/f/findmyorder/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 18:33:32] INFO root fetch - processPackages [ml-botting-core]: Downloading https://files.pythonhosted.org/packages/be/de/a5916e1e2e800866442814a6353e085a6c6b94b168f22c119364943f6935/ml_botting_core-1.0.5.tar.gz
+[2023-04-23 18:33:32] INFO root fetch - processPackages [tsdownsample]: Downloading https://files.pythonhosted.org/packages/1f/4a/610c92e934518807780483f24e8cf2b9b354b3b7b6e594c0a63bd618b335/tsdownsample-0.1.2a0.tar.gz
+[2023-04-23 18:33:32] INFO root fetch - processPackages [gptroles]: Downloading https://files.pythonhosted.org/packages/1f/ec/e98eaf9147ea11a27474f65297bd56d4f930359d6133e54d5ff9d90d5a67/gptroles-0.1.5.tar.gz
+[2023-04-23 18:33:32] INFO root fetch - processPackages [thesr]: Downloading https://files.pythonhosted.org/packages/db/43/56caa68bbbd775ff48bf4128cc366abf7b7cde0ca9a8a1ac6c5b909fb096/thesr-0.0.3.tar.gz
+[2023-04-23 18:33:32] INFO root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: Downloading https://files.pythonhosted.org/packages/40/41/550bf4fc2e413890396f5783843388adb76a457a6ff2491b97d1f6038f41/FFmpyg_DavidRodriguezSoaresCUI-0.0.5.tar.gz
+[2023-04-23 18:33:32] INFO root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: executing diffoscope
+[2023-04-23 18:33:32] INFO root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FFmpyg_DavidRodriguezSoaresCUI-0.0.4.tar.gz tmp/FFmpyg_DavidRodriguezSoaresCUI-0.0.5.tar.gz --markdown 20230423/F/FFmpyg-DavidRodriguezSoaresCUI/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 18:33:32] INFO root fetch - processPackages [ml-botting-core]: Downloading https://files.pythonhosted.org/packages/88/46/49a5ecb1e782737d4436afeb2e6a587cb1fa0cd95cd0a10212afa41736ff/ml_botting_core-1.0.6.tar.gz
+[2023-04-23 18:33:32] INFO root fetch - processPackages [frequency-analysis]: Downloading https://files.pythonhosted.org/packages/13/7a/ef00c65da64094bd85f56de8c17502e8d422ad5bbf38f9a1f714ee65c906/frequency_analysis-0.1.4.5.tar.gz
+[2023-04-23 18:33:32] INFO root fetch - processPackages [gptroles]: executing diffoscope
+[2023-04-23 18:33:32] INFO root fetch - processPackages [gptroles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptroles-0.1.4.tar.gz tmp/gptroles-0.1.5.tar.gz --markdown 20230423/g/gptroles/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-23 18:33:32] INFO root fetch - processPackages [ml-botting-core]: executing diffoscope
+[2023-04-23 18:33:32] INFO root fetch - processPackages [ml-botting-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_botting_core-1.0.5.tar.gz tmp/ml_botting_core-1.0.6.tar.gz --markdown 20230423/m/ml-botting-core/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-23 18:33:32] INFO root fetch - processPackages [tsdownsample]: executing diffoscope
+[2023-04-23 18:33:32] INFO root fetch - processPackages [tsdownsample]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsdownsample-0.1.2a0.tar.gz tmp/tsdownsample-0.1.2a1.tar.gz --markdown 20230423/t/tsdownsample/0.1.2a0-0.1.2a1/diff.md --exclude *.pyd
+[2023-04-23 18:33:32] INFO root fetch - processPackages [thesr]: Downloading https://files.pythonhosted.org/packages/ca/bf/719a9ddf373811750b5310a9a132748f688d5bb78848c8018fd91ad2dc2c/thesr-0.0.4.tar.gz
+[2023-04-23 18:33:32] INFO root fetch - processPackages [frequency-analysis]: executing diffoscope
+[2023-04-23 18:33:32] INFO root fetch - processPackages [frequency-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frequency_analysis-0.1.4.4.tar.gz tmp/frequency_analysis-0.1.4.5.tar.gz --markdown 20230423/f/frequency-analysis/0.1.4.4-0.1.4.5/diff.md --exclude *.pyd
+[2023-04-23 18:33:32] INFO root fetch - processPackages [thesr]: executing diffoscope
+[2023-04-23 18:33:32] INFO root fetch - processPackages [thesr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thesr-0.0.3.tar.gz tmp/thesr-0.0.4.tar.gz --markdown 20230423/t/thesr/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-23 18:33:33] INFO root fetch - main [MainThread]: End processing [findmyorder]: success
+[2023-04-23 18:33:33] INFO root fetch - main [MainThread]: End processing [anyioc]: success
+[2023-04-23 18:33:33] INFO root fetch - main [MainThread]: End processing [FFmpyg-DavidRodriguezSoaresCUI]: success
+[2023-04-23 18:33:33] INFO root fetch - main [MainThread]: End processing [frequency-analysis]: success
+[2023-04-23 18:33:34] INFO root fetch - main [MainThread]: End processing [ml-botting-core]: success
+[2023-04-23 18:33:34] INFO root fetch - main [MainThread]: End processing [thesr]: success
+[2023-04-23 18:33:34] INFO root fetch - main [MainThread]: End processing [gptroles]: success
+[2023-04-23 18:33:34] INFO root fetch - main [MainThread]: End processing [tsdownsample]: success
+[2023-04-23 18:33:34] INFO root fetch - main [MainThread]: Store serial: [17823860]
