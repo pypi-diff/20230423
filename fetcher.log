@@ -12831,3 +12831,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 21:17:47] INFO root fetch - main [MainThread]: End processing [accurating]: success
 [2023-04-23 21:17:47] INFO root fetch - main [MainThread]: End processing [use-case-registry]: success
 [2023-04-23 21:17:47] INFO root fetch - main [MainThread]: Store serial: [17825211]
+[2023-04-23 21:22:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825211]
+[2023-04-23 21:22:56] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 21:22:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mobspy
+[2023-04-23 21:22:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cnd-vault
+[2023-04-23 21:22:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: landsat9-lc
+[2023-04-23 21:22:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lg-april-permissions
+[2023-04-23 21:22:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bizlogic
+[2023-04-23 21:22:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tradchat
+[2023-04-23 21:22:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vollseg
+[2023-04-23 21:22:56] INFO root fetch - processPackages [mobspy]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-04-23 21:22:56] WARNING root fetch - processPackages [cnd-vault]: Skipping, unable to determine old version
+[2023-04-23 21:22:56] INFO root fetch - main [MainThread]: End processing [cnd-vault] error
+[2023-04-23 21:22:56] INFO root fetch - processPackages [landsat9-lc]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-23 21:22:56] INFO root fetch - processPackages [bizlogic]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 21:22:56] INFO root fetch - processPackages [lg-april-permissions]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 21:22:56] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-23 21:22:56] INFO root fetch - processPackages [tradchat]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 21:22:56] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-23 21:22:56] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-23 21:22:56] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-23 21:22:56] INFO root fetch - processPackages [bizlogic]: Downloading https://files.pythonhosted.org/packages/f4/6e/9b89b3363c5e45d1a2822e7570cd7263bf94296e972b2a00f361db04036f/bizlogic-0.0.8.tar.gz
+[2023-04-23 21:22:56] INFO root fetch - processPackages [landsat9-lc]: Downloading https://files.pythonhosted.org/packages/1a/84/dc6fd59b527a23eca2ea8af7c4047bd636c2423908bfeba432fa960038c3/landsat9_lc-0.0.2.tar.gz
+[2023-04-23 21:22:57] INFO root fetch - processPackages [lg-april-permissions]: Downloading https://files.pythonhosted.org/packages/12/f4/aff8a613d3ea9214c0d0da72045c81cb625ca6c2d08bda976fce2e802975/lg_april_permissions-0.1.9.tar.gz
+[2023-04-23 21:22:57] INFO root fetch - processPackages [tradchat]: Downloading https://files.pythonhosted.org/packages/b8/21/0484f3d3d4a32676ccf4f4fd22071bc44ad0a0bf65736c420dc4975990f2/tradchat-0.0.1.tar.gz
+[2023-04-23 21:22:57] INFO root fetch - processPackages [mobspy]: Downloading https://files.pythonhosted.org/packages/4f/19/ae2b85153a6f91cbd12f4b8ed6b0962cfc4d839f3e46f79197163d85140c/mobspy-2.0.3.tar.gz
+[2023-04-23 21:22:57] INFO root fetch - processPackages [lg-april-permissions]: executing diffoscope
+[2023-04-23 21:22:57] INFO root fetch - processPackages [lg-april-permissions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lg_april_permissions-0.1.8.tar.gz tmp/lg_april_permissions-0.1.9.tar.gz --markdown 20230423/l/lg-april-permissions/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 21:22:57] INFO root fetch - processPackages [mobspy]: executing diffoscope
+[2023-04-23 21:22:57] INFO root fetch - processPackages [mobspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mobspy-2.0.2.tar.gz tmp/mobspy-2.0.3.tar.gz --markdown 20230423/m/mobspy/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-04-23 21:22:57] INFO root fetch - processPackages [bizlogic]: Downloading https://files.pythonhosted.org/packages/1e/06/121f2d57737088949b3f8291c442f93cc8c45a2740bebfe9d3dffcc4eba8/bizlogic-0.0.9.tar.gz
+[2023-04-23 21:22:57] INFO root fetch - processPackages [landsat9-lc]: Downloading https://files.pythonhosted.org/packages/49/0e/aaa95fd5cc8bdd04160040d1206b6c7a28bcf9d27bb426579f0b8a841d78/landsat9_lc-0.0.3-py3-none-any.whl
+[2023-04-23 21:22:57] INFO root fetch - processPackages [bizlogic]: executing diffoscope
+[2023-04-23 21:22:57] INFO root fetch - processPackages [bizlogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bizlogic-0.0.8.tar.gz tmp/bizlogic-0.0.9.tar.gz --markdown 20230423/b/bizlogic/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 21:22:58] INFO root fetch - processPackages [landsat9-lc]: executing diffoscope
+[2023-04-23 21:22:58] INFO root fetch - processPackages [landsat9-lc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/landsat9_lc-0.0.2.tar.gz tmp/landsat9_lc-0.0.3-py3-none-any.whl.zip --markdown 20230423/l/landsat9-lc/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 21:22:58] INFO root fetch - main [MainThread]: End processing [lg-april-permissions]: success
+[2023-04-23 21:22:58] INFO root fetch - processPackages [tradchat]: Downloading https://files.pythonhosted.org/packages/39/72/a7367ea2e4ee3e40a479b898965484617a1e4945e39d200ea43d99c62c15/tradchat-0.0.2.tar.gz
+[2023-04-23 21:22:58] INFO root fetch - main [MainThread]: End processing [bizlogic]: success
+[2023-04-23 21:22:58] INFO root fetch - main [MainThread]: End processing [mobspy]: success
+[2023-04-23 21:22:59] INFO root fetch - main [MainThread]: End processing [landsat9-lc]: success
+[2023-04-23 21:22:59] INFO root fetch - processPackages [tradchat]: executing diffoscope
+[2023-04-23 21:22:59] INFO root fetch - processPackages [tradchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradchat-0.0.1.tar.gz tmp/tradchat-0.0.2.tar.gz --markdown 20230423/t/tradchat/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 21:23:00] INFO root fetch - main [MainThread]: End processing [tradchat]: success
+[2023-04-23 21:23:00] INFO root fetch - main [MainThread]: Store serial: [17825228]
