@@ -2844,3 +2844,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 05:59:07] INFO root fetch - main [MainThread]: End processing [twitter-api-client]: success
 [2023-04-23 05:59:07] INFO root fetch - main [MainThread]: End processing [triade]: success
 [2023-04-23 05:59:07] INFO root fetch - main [MainThread]: Store serial: [17819318]
+[2023-04-23 06:04:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819318]
+[2023-04-23 06:04:15] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-23 06:04:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-salted-api-tokens
+[2023-04-23 06:04:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: transaction-accounts
+[2023-04-23 06:04:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyQt-Fluent-Widgets
+[2023-04-23 06:04:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: slideflow
+[2023-04-23 06:04:15] INFO root fetch - processPackages [django-salted-api-tokens]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-23 06:04:15] INFO root fetch - processPackages [slideflow]: New version: [2.0.3.post1] Old Version: [2.0.3]
+[2023-04-23 06:04:15] INFO root fetch - processPackages [transaction-accounts]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-23 06:04:15] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: New version: [0.7.4] Old Version: [0.7.2]
+[2023-04-23 06:04:15] INFO root fetch - processPackages [django-salted-api-tokens]: Downloading https://files.pythonhosted.org/packages/b1/cc/26a79db691922857fa24fd677b9e4dac544f88c45f7ed5f1f22d3902db1d/django_salted_api_tokens-1.0.2.tar.gz
+[2023-04-23 06:04:16] INFO root fetch - processPackages [transaction-accounts]: Downloading https://files.pythonhosted.org/packages/d8/55/ececa86e5cef198a5abf7b274cb1a931c0ab481ab260787b11e651c039b7/transaction-accounts-0.0.5.tar.gz
+[2023-04-23 06:04:16] INFO root fetch - processPackages [transaction-accounts]: executing diffoscope
+[2023-04-23 06:04:16] INFO root fetch - processPackages [transaction-accounts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transaction-accounts-0.0.4.tar.gz tmp/transaction-accounts-0.0.5.tar.gz --markdown 20230423/t/transaction-accounts/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 06:04:16] INFO root fetch - processPackages [slideflow]: Downloading https://files.pythonhosted.org/packages/f5/ad/32645eac8b53eef59d7c1c7d3a610a6e8cd1af12eb04e0b2676727bdddc4/slideflow-2.0.3.post1-py3-none-any.whl
+[2023-04-23 06:04:16] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/95/e0/1122bec7a7034bc5b0a207d4d88e2a06319ccc51d33cf4406de33c49f256/PyQt-Fluent-Widgets-0.7.4.tar.gz
+[2023-04-23 06:04:16] INFO root fetch - processPackages [django-salted-api-tokens]: Downloading https://files.pythonhosted.org/packages/37/05/262d346edcb267156f198eb295ae2beaee934b22d76ce056bd9a68b1e7f2/django_salted_api_tokens-1.0.3.tar.gz
+[2023-04-23 06:04:16] INFO root fetch - processPackages [django-salted-api-tokens]: executing diffoscope
+[2023-04-23 06:04:16] INFO root fetch - processPackages [django-salted-api-tokens]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_salted_api_tokens-1.0.2.tar.gz tmp/django_salted_api_tokens-1.0.3.tar.gz --markdown 20230423/d/django-salted-api-tokens/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-23 06:04:16] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: executing diffoscope
+[2023-04-23 06:04:16] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt-Fluent-Widgets-0.7.2.tar.gz tmp/PyQt-Fluent-Widgets-0.7.4.tar.gz --markdown 20230423/P/PyQt-Fluent-Widgets/0.7.2-0.7.4/diff.md --exclude *.pyd
+[2023-04-23 06:04:16] INFO root fetch - processPackages [slideflow]: executing diffoscope
+[2023-04-23 06:04:16] INFO root fetch - processPackages [slideflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slideflow-2.0.3-py3-none-any.whl.zip tmp/slideflow-2.0.3.post1-py3-none-any.whl.zip --markdown 20230423/s/slideflow/2.0.3-2.0.3.post1/diff.md --exclude *.pyd
+[2023-04-23 06:04:17] INFO root fetch - main [MainThread]: End processing [transaction-accounts]: success
+[2023-04-23 06:04:17] INFO root fetch - main [MainThread]: End processing [django-salted-api-tokens]: success
+[2023-04-23 06:04:19] INFO root fetch - main [MainThread]: End processing [PyQt-Fluent-Widgets]: success
+[2023-04-23 06:04:20] INFO root fetch - main [MainThread]: End processing [slideflow]: success
+[2023-04-23 06:04:20] INFO root fetch - main [MainThread]: Store serial: [17819328]
