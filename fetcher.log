@@ -7376,3 +7376,91 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 13:52:21] ERROR root fetch - processPackages [sage-conf]: Timeout during execution of pkgdiff
 [2023-04-23 13:52:21] INFO root fetch - main [MainThread]: End processing [sage-conf] error
 [2023-04-23 13:52:21] INFO root fetch - main [MainThread]: Store serial: [17821868]
+[2023-04-23 13:57:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17821868]
+[2023-04-23 13:57:29] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-23 13:57:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xia-compiler-jsoneditor
+[2023-04-23 13:57:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-poe-chat
+[2023-04-23 13:57:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xia-compiler-openapi
+[2023-04-23 13:57:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: andtate
+[2023-04-23 13:57:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: drf-nested-browsable
+[2023-04-23 13:57:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: FFmpyg-DavidRodriguezSoaresCUI
+[2023-04-23 13:57:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cppProjectpackage
+[2023-04-23 13:57:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: p-template-generator
+[2023-04-23 13:57:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: iso-4217-currency-codes
+[2023-04-23 13:57:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: p-template-res
+[2023-04-23 13:57:29] INFO root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 13:57:29] INFO root fetch - processPackages [xia-compiler-jsoneditor]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 13:57:29] INFO root fetch - processPackages [nonebot-poe-chat]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-23 13:57:29] INFO root fetch - processPackages [p-template-generator]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 13:57:29] WARNING root fetch - processPackages [cppProjectpackage]: Skipping, unable to determine old version
+[2023-04-23 13:57:29] INFO root fetch - processPackages [cppProjectpackage]: Start processing: vollseg
+[2023-04-23 13:57:29] INFO root fetch - main [MainThread]: End processing [cppProjectpackage] error
+[2023-04-23 13:57:29] INFO root fetch - processPackages [andtate]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-23 13:57:29] INFO root fetch - processPackages [xia-compiler-openapi]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-23 13:57:29] INFO root fetch - processPackages [p-template-res]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 13:57:29] INFO root fetch - processPackages [drf-nested-browsable]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 13:57:29] WARNING root fetch - processPackages [iso-4217-currency-codes]: Skipping, unable to determine old version
+[2023-04-23 13:57:29] INFO root fetch - processPackages [iso-4217-currency-codes]: Start processing: openmeeg
+[2023-04-23 13:57:29] INFO root fetch - main [MainThread]: End processing [iso-4217-currency-codes] error
+[2023-04-23 13:57:29] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-23 13:57:29] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-23 13:57:29] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-23 13:57:29] INFO root fetch - processPackages [vollseg]: Start processing: maxilearn
+[2023-04-23 13:57:29] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-23 13:57:29] INFO root fetch - processPackages [maxilearn]: New version: [4.4.6] Old Version: [4.4.5]
+[2023-04-23 13:57:29] INFO root fetch - processPackages [xia-compiler-openapi]: Downloading https://files.pythonhosted.org/packages/a6/f7/325141a7df575bb9172348a9303fb0f3d21a554f33268b33fb36468e73cf/xia_compiler_openapi-0.1.1-cp39-none-win_amd64.whl
+[2023-04-23 13:57:29] INFO root fetch - processPackages [openmeeg]: New version: [2.5.6] Old Version: [2.5.5]
+[2023-04-23 13:57:29] INFO root fetch - processPackages [xia-compiler-jsoneditor]: Downloading https://files.pythonhosted.org/packages/e8/90/16ce4f13abe99bb46ee04f7f3ab1868877bdbc7c4a2897c9bd6190464004/xia_compiler_jsoneditor-0.0.8-cp39-none-win_amd64.whl
+[2023-04-23 13:57:29] INFO root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: Downloading https://files.pythonhosted.org/packages/63/27/3bb00eecee9c2f361db4db9d1281d0a3bfe41b64b1f9a111c7c28163b0e7/FFmpyg_DavidRodriguezSoaresCUI-0.0.1.tar.gz
+[2023-04-23 13:57:29] INFO root fetch - processPackages [nonebot-poe-chat]: Downloading https://files.pythonhosted.org/packages/4d/5d/3d6706a7744ad674e825a2e0992139f7a2b7dff593108c5ea292af19b366/nonebot_poe_chat-1.0.4.tar.gz
+[2023-04-23 13:57:29] INFO root fetch - processPackages [drf-nested-browsable]: Downloading https://files.pythonhosted.org/packages/0a/13/ba5ba57d62efcf0b5139c868797c13b087e725648e1653f584386745f41a/drf_nested_browsable-0.1.0.tar.gz
+[2023-04-23 13:57:29] WARNING root fetch - processPackages [nonebot-poe-chat]: Skipping package: exceeds size limit 13490699>=10485760
+[2023-04-23 13:57:29] INFO root fetch - processPackages [nonebot-poe-chat]: Start processing: maxilearn
+[2023-04-23 13:57:29] INFO root fetch - main [MainThread]: End processing [nonebot-poe-chat] error
+[2023-04-23 13:57:29] INFO root fetch - processPackages [maxilearn]: New version: [4.5.0] Old Version: [4.4.9]
+[2023-04-23 13:57:29] INFO root fetch - processPackages [andtate]: Downloading https://files.pythonhosted.org/packages/1d/56/da51072f6ccb1e609289db92241e1ae74ee4809bdd48374b278b73d8b0af/andtate-0.0.4.tar.gz
+[2023-04-23 13:57:30] INFO root fetch - processPackages [andtate]: executing diffoscope
+[2023-04-23 13:57:30] INFO root fetch - processPackages [andtate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/andtate-0.0.3.tar.gz tmp/andtate-0.0.4.tar.gz --markdown 20230423/a/andtate/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-23 13:57:30] INFO root fetch - processPackages [p-template-generator]: executing diffoscope
+[2023-04-23 13:57:30] INFO root fetch - processPackages [p-template-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-generator-0.1.8.tar.gz tmp/p-template-generator-0.1.9.tar.gz --markdown 20230423/p/p-template-generator/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 13:57:30] INFO root fetch - processPackages [openmeeg]: Downloading https://files.pythonhosted.org/packages/0e/0a/0c8964865724692c1f773ea956eb52f15c2f1f172199b89bf2eaa9625418/openmeeg-2.5.5-pp38-pypy38_pp73-manylinux_2_28_x86_64.whl
+[2023-04-23 13:57:30] INFO root fetch - processPackages [maxilearn]: Downloading https://files.pythonhosted.org/packages/25/c8/27f602a4585be1cca1df5c4e9d0e36e98eeea8a9e51d21606218d280691d/maxilearn-4.4.6.tar.gz
+[2023-04-23 13:57:30] INFO root fetch - processPackages [p-template-res]: executing diffoscope
+[2023-04-23 13:57:30] INFO root fetch - processPackages [p-template-res]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-res-0.1.8.tar.gz tmp/p-template-res-0.1.9.tar.gz --markdown 20230423/p/p-template-res/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 13:57:30] INFO root fetch - processPackages [drf-nested-browsable]: Downloading https://files.pythonhosted.org/packages/d5/97/a2165ab75c8ffd420f3af45439aa20a2c3906147277fa37e898ae433f881/drf_nested_browsable-0.1.1.tar.gz
+[2023-04-23 13:57:30] INFO root fetch - processPackages [maxilearn]: Downloading https://files.pythonhosted.org/packages/e0/4f/252306cdc010e919e8cf70303c3a3cb49502e47f2e13d35ad2e7da00265e/maxilearn-4.4.9.tar.gz
+[2023-04-23 13:57:30] INFO root fetch - processPackages [maxilearn]: executing diffoscope
+[2023-04-23 13:57:30] INFO root fetch - processPackages [maxilearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maxilearn-4.4.5.tar.gz tmp/maxilearn-4.4.6.tar.gz --markdown 20230423/m/maxilearn/4.4.5-4.4.6/diff.md --exclude *.pyd
+[2023-04-23 13:57:30] INFO root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: Downloading https://files.pythonhosted.org/packages/8b/66/08edb05b9c4043ffb7c3cc9a91a04be2d9f96dd9aa83b4d117ee6205fe34/FFmpyg_DavidRodriguezSoaresCUI-0.0.2.tar.gz
+[2023-04-23 13:57:30] INFO root fetch - processPackages [drf-nested-browsable]: executing diffoscope
+[2023-04-23 13:57:30] INFO root fetch - processPackages [drf-nested-browsable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_nested_browsable-0.1.0.tar.gz tmp/drf_nested_browsable-0.1.1.tar.gz --markdown 20230423/d/drf-nested-browsable/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 13:57:30] INFO root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: executing diffoscope
+[2023-04-23 13:57:30] INFO root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FFmpyg_DavidRodriguezSoaresCUI-0.0.1.tar.gz tmp/FFmpyg_DavidRodriguezSoaresCUI-0.0.2.tar.gz --markdown 20230423/F/FFmpyg-DavidRodriguezSoaresCUI/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 13:57:30] INFO root fetch - processPackages [xia-compiler-openapi]: Downloading https://files.pythonhosted.org/packages/37/51/2152a80633f4c8e2ec910d623a222db8bfde39c9e73598812395bfca8238/xia_compiler_openapi-0.1.2-cp39-none-win_amd64.whl
+[2023-04-23 13:57:30] INFO root fetch - processPackages [xia-compiler-jsoneditor]: Downloading https://files.pythonhosted.org/packages/e9/eb/a90b68829178d34fbe8c2b984e4537a78ada01045f4b1a9afd2feb5f515d/xia_compiler_jsoneditor-0.0.9-cp39-none-win_amd64.whl
+[2023-04-23 13:57:30] INFO root fetch - processPackages [maxilearn]: Downloading https://files.pythonhosted.org/packages/3b/3f/50e05d84c16980cce44086da9070cc102142cbb62d70028c9a70eb141ec8/maxilearn-4.5.0.tar.gz
+[2023-04-23 13:57:30] INFO root fetch - processPackages [xia-compiler-jsoneditor]: executing diffoscope
+[2023-04-23 13:57:30] INFO root fetch - processPackages [xia-compiler-jsoneditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_compiler_jsoneditor-0.0.8-cp39-none-win_amd64.whl.zip tmp/xia_compiler_jsoneditor-0.0.9-cp39-none-win_amd64.whl.zip --markdown 20230423/x/xia-compiler-jsoneditor/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 13:57:30] WARNING root fetch - processPackages [openmeeg]: Skipping package: exceeds size limit 18763690>=10485760
+[2023-04-23 13:57:30] INFO root fetch - processPackages [openmeeg]: Start processing: domain-park
+[2023-04-23 13:57:30] INFO root fetch - main [MainThread]: End processing [openmeeg] error
+[2023-04-23 13:57:30] INFO root fetch - processPackages [xia-compiler-openapi]: executing diffoscope
+[2023-04-23 13:57:30] INFO root fetch - processPackages [xia-compiler-openapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_compiler_openapi-0.1.1-cp39-none-win_amd64.whl.zip tmp/xia_compiler_openapi-0.1.2-cp39-none-win_amd64.whl.zip --markdown 20230423/x/xia-compiler-openapi/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-23 13:57:30] INFO root fetch - processPackages [maxilearn]: executing diffoscope
+[2023-04-23 13:57:30] INFO root fetch - processPackages [maxilearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maxilearn-4.4.9.tar.gz tmp/maxilearn-4.5.0.tar.gz --markdown 20230423/m/maxilearn/4.4.9-4.5.0/diff.md --exclude *.pyd
+[2023-04-23 13:57:30] INFO root fetch - processPackages [domain-park]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-23 13:57:30] INFO root fetch - processPackages [domain-park]: Downloading https://files.pythonhosted.org/packages/f1/9b/4807dc2b3fae6fe1131a5ba7359d7f01176e31bb4e50e3c33e0105a57115/domain-park-0.3.1.tar.gz
+[2023-04-23 13:57:31] INFO root fetch - processPackages [domain-park]: Downloading https://files.pythonhosted.org/packages/1f/8c/ce637af5661b341c81b31a27171393208a2c2a5aca1aef007c101a62df2d/domain_park-0.3.2-py3-none-any.whl
+[2023-04-23 13:57:31] INFO root fetch - processPackages [domain-park]: executing diffoscope
+[2023-04-23 13:57:31] INFO root fetch - processPackages [domain-park]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domain-park-0.3.1.tar.gz tmp/domain_park-0.3.2-py3-none-any.whl.zip --markdown 20230423/d/domain-park/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-23 13:57:31] INFO root fetch - main [MainThread]: End processing [p-template-res]: success
+[2023-04-23 13:57:31] INFO root fetch - main [MainThread]: End processing [maxilearn]: success
+[2023-04-23 13:57:31] INFO root fetch - main [MainThread]: End processing [p-template-generator]: success
+[2023-04-23 13:57:31] INFO root fetch - main [MainThread]: End processing [drf-nested-browsable]: success
+[2023-04-23 13:57:31] INFO root fetch - main [MainThread]: End processing [andtate]: success
+[2023-04-23 13:57:32] INFO root fetch - main [MainThread]: End processing [xia-compiler-openapi]: success
+[2023-04-23 13:57:32] INFO root fetch - main [MainThread]: End processing [xia-compiler-jsoneditor]: success
+[2023-04-23 13:57:32] INFO root fetch - main [MainThread]: End processing [maxilearn]: success
+[2023-04-23 13:57:32] INFO root fetch - main [MainThread]: End processing [FFmpyg-DavidRodriguezSoaresCUI]: success
+[2023-04-23 13:57:32] INFO root fetch - main [MainThread]: End processing [domain-park]: success
+[2023-04-23 13:57:32] INFO root fetch - main [MainThread]: Store serial: [17821936]
