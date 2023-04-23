@@ -6540,3 +6540,64 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 12:41:10] INFO root fetch - main [MainThread]: End processing [scribber]: success
 [2023-04-23 12:41:10] INFO root fetch - main [MainThread]: End processing [openshift-python-wrapper]: success
 [2023-04-23 12:41:10] INFO root fetch - main [MainThread]: Store serial: [17821418]
+[2023-04-23 12:46:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17821418]
+[2023-04-23 12:46:18] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-23 12:46:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: authz-analyzer
+[2023-04-23 12:46:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: porkbun-ddns
+[2023-04-23 12:46:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pepperize.cdk-organizations
+[2023-04-23 12:46:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pepperize.cdk-autoscaling-gitlab-runner
+[2023-04-23 12:46:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: porkbun-ddns
+[2023-04-23 12:46:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spagrn
+[2023-04-23 12:46:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bagbag
+[2023-04-23 12:46:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: czech-workdays-holidays
+[2023-04-23 12:46:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: Aciembler
+[2023-04-23 12:46:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: porkbun-ddns
+[2023-04-23 12:46:18] INFO root fetch - processPackages [authz-analyzer]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 12:46:18] INFO root fetch - processPackages [porkbun-ddns]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-23 12:46:18] INFO root fetch - processPackages [Aciembler]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-23 12:46:18] INFO root fetch - processPackages [porkbun-ddns]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-23 12:46:18] INFO root fetch - processPackages [porkbun-ddns]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-23 12:46:18] INFO root fetch - processPackages [czech-workdays-holidays]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 12:46:18] INFO root fetch - processPackages [pepperize.cdk-autoscaling-gitlab-runner]: New version: [0.2.99] Old Version: [0.2.98]
+[2023-04-23 12:46:18] INFO root fetch - processPackages [spagrn]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-23 12:46:18] INFO root fetch - processPackages [bagbag]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-04-23 12:46:18] INFO root fetch - processPackages [pepperize.cdk-organizations]: New version: [0.7.99] Old Version: [0.7.98]
+[2023-04-23 12:46:18] INFO root fetch - processPackages [porkbun-ddns]: Downloading https://files.pythonhosted.org/packages/b2/7d/fe2459abeef27389f0f81364bb8939e1677df734a7a5d0898448589efb9d/porkbun_ddns-0.0.2-py3.11.egg
+[2023-04-23 12:46:18] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2023-04-23 12:46:18] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.9.5.tar.gz tmp/bagbag-0.9.6.tar.gz --markdown 20230423/b/bagbag/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-04-23 12:46:18] INFO root fetch - processPackages [porkbun-ddns]: Downloading https://files.pythonhosted.org/packages/b2/7d/fe2459abeef27389f0f81364bb8939e1677df734a7a5d0898448589efb9d/porkbun_ddns-0.0.2-py3.11.egg
+[2023-04-23 12:46:18] INFO root fetch - processPackages [porkbun-ddns]: Downloading https://files.pythonhosted.org/packages/b2/7d/fe2459abeef27389f0f81364bb8939e1677df734a7a5d0898448589efb9d/porkbun_ddns-0.0.2-py3.11.egg
+[2023-04-23 12:46:18] INFO root fetch - processPackages [pepperize.cdk-autoscaling-gitlab-runner]: executing diffoscope
+[2023-04-23 12:46:18] INFO root fetch - processPackages [pepperize.cdk-autoscaling-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-autoscaling-gitlab-runner-0.2.98.tar.gz tmp/pepperize.cdk-autoscaling-gitlab-runner-0.2.99.tar.gz --markdown 20230423/p/pepperize.cdk-autoscaling-gitlab-runner/0.2.98-0.2.99/diff.md --exclude *.pyd
+[2023-04-23 12:46:18] INFO root fetch - processPackages [Aciembler]: executing diffoscope
+[2023-04-23 12:46:18] INFO root fetch - processPackages [Aciembler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Aciembler-1.0.8-py2.py3-none-any.whl.zip tmp/Aciembler-1.0.9-py2.py3-none-any.whl.zip --markdown 20230423/A/Aciembler/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-23 12:46:18] INFO root fetch - processPackages [pepperize.cdk-organizations]: executing diffoscope
+[2023-04-23 12:46:18] INFO root fetch - processPackages [pepperize.cdk-organizations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-organizations-0.7.98.tar.gz tmp/pepperize.cdk-organizations-0.7.99.tar.gz --markdown 20230423/p/pepperize.cdk-organizations/0.7.98-0.7.99/diff.md --exclude *.pyd
+[2023-04-23 12:46:18] INFO root fetch - processPackages [spagrn]: Downloading https://files.pythonhosted.org/packages/e0/6e/d05db261dcb2586691f2b3124e7aa0be9f5c6ab50b7ae0653ef70c6bd880/spagrn-1.0.3.tar.gz
+[2023-04-23 12:46:18] INFO root fetch - processPackages [czech-workdays-holidays]: Downloading https://files.pythonhosted.org/packages/7d/5d/e419c576cae1a19ae22826afa4bce945996f1b18d7b482d3ba51384f454c/czech_workdays_holidays-0.1.9.tar.gz
+[2023-04-23 12:46:18] INFO root fetch - processPackages [spagrn]: executing diffoscope
+[2023-04-23 12:46:18] INFO root fetch - processPackages [spagrn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spagrn-1.0.2.tar.gz tmp/spagrn-1.0.3.tar.gz --markdown 20230423/s/spagrn/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-23 12:46:18] INFO root fetch - processPackages [authz-analyzer]: executing diffoscope
+[2023-04-23 12:46:18] INFO root fetch - processPackages [authz-analyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/authz_analyzer-0.1.8.tar.gz tmp/authz_analyzer-0.1.9.tar.gz --markdown 20230423/a/authz-analyzer/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 12:46:18] INFO root fetch - processPackages [czech-workdays-holidays]: executing diffoscope
+[2023-04-23 12:46:18] INFO root fetch - processPackages [czech-workdays-holidays]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czech_workdays_holidays-0.1.8.tar.gz tmp/czech_workdays_holidays-0.1.9.tar.gz --markdown 20230423/c/czech-workdays-holidays/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 12:46:18] INFO root fetch - processPackages [porkbun-ddns]: Downloading https://files.pythonhosted.org/packages/2a/e0/67159ab60edc24e1c215f884db96f952317f17fe4f3d3c79f085810d33ae/porkbun_ddns-0.0.3-py3.11.egg
+[2023-04-23 12:46:18] INFO root fetch - processPackages [porkbun-ddns]: Downloading https://files.pythonhosted.org/packages/2a/e0/67159ab60edc24e1c215f884db96f952317f17fe4f3d3c79f085810d33ae/porkbun_ddns-0.0.3-py3.11.egg
+[2023-04-23 12:46:18] INFO root fetch - processPackages [porkbun-ddns]: Downloading https://files.pythonhosted.org/packages/2a/e0/67159ab60edc24e1c215f884db96f952317f17fe4f3d3c79f085810d33ae/porkbun_ddns-0.0.3-py3.11.egg
+[2023-04-23 12:46:19] INFO root fetch - processPackages [porkbun-ddns]: executing diffoscope
+[2023-04-23 12:46:19] INFO root fetch - processPackages [porkbun-ddns]: executing diffoscope
+[2023-04-23 12:46:19] INFO root fetch - processPackages [porkbun-ddns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/porkbun_ddns-0.0.2-py3.11.egg tmp/porkbun_ddns-0.0.3-py3.11.egg --markdown 20230423/p/porkbun-ddns/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 12:46:19] INFO root fetch - processPackages [porkbun-ddns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/porkbun_ddns-0.0.2-py3.11.egg tmp/porkbun_ddns-0.0.3-py3.11.egg --markdown 20230423/p/porkbun-ddns/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 12:46:19] INFO root fetch - processPackages [porkbun-ddns]: executing diffoscope
+[2023-04-23 12:46:19] INFO root fetch - processPackages [porkbun-ddns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/porkbun_ddns-0.0.2-py3.11.egg tmp/porkbun_ddns-0.0.3-py3.11.egg --markdown 20230423/p/porkbun-ddns/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 12:46:20] INFO root fetch - main [MainThread]: End processing [bagbag]: success
+[2023-04-23 12:46:20] INFO root fetch - main [MainThread]: End processing [Aciembler]: success
+[2023-04-23 12:46:20] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-autoscaling-gitlab-runner]: success
+[2023-04-23 12:46:20] INFO root fetch - main [MainThread]: End processing [spagrn]: success
+[2023-04-23 12:46:20] INFO root fetch - main [MainThread]: End processing [czech-workdays-holidays]: success
+[2023-04-23 12:46:20] INFO root fetch - main [MainThread]: End processing [porkbun-ddns]: success
+[2023-04-23 12:46:20] INFO root fetch - main [MainThread]: End processing [porkbun-ddns]: success
+[2023-04-23 12:46:20] INFO root fetch - main [MainThread]: End processing [porkbun-ddns]: success
+[2023-04-23 12:46:21] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-organizations]: success
+[2023-04-23 12:46:23] INFO root fetch - main [MainThread]: End processing [authz-analyzer]: success
+[2023-04-23 12:46:23] INFO root fetch - main [MainThread]: Store serial: [17821451]
