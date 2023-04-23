@@ -12986,3 +12986,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 21:33:25] INFO root fetch - main [MainThread]: End processing [demoparser2]: success
 [2023-04-23 21:33:28] INFO root fetch - main [MainThread]: End processing [aesara-nightly]: success
 [2023-04-23 21:33:28] INFO root fetch - main [MainThread]: Store serial: [17825298]
+[2023-04-23 21:38:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825298]
+[2023-04-23 21:38:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-23 21:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ws-cli-chat
+[2023-04-23 21:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cluster-colors
+[2023-04-23 21:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hyperfast-python-template
+[2023-04-23 21:38:36] INFO root fetch - processPackages [ws-cli-chat]: New version: [0.3.0] Old Version: [0.1.1]
+[2023-04-23 21:38:36] INFO root fetch - processPackages [cluster-colors]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-23 21:38:36] INFO root fetch - processPackages [hyperfast-python-template]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-23 21:38:37] INFO root fetch - processPackages [hyperfast-python-template]: executing diffoscope
+[2023-04-23 21:38:37] INFO root fetch - processPackages [hyperfast-python-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperfast_python_template-0.2.8.tar.gz tmp/hyperfast_python_template-0.2.9.tar.gz --markdown 20230423/h/hyperfast-python-template/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-23 21:38:37] INFO root fetch - processPackages [cluster-colors]: Downloading https://files.pythonhosted.org/packages/46/fe/2e6953ec0189f4219de06abfc2f741c6a576f5f6e44c5737ae8d4ebbbf10/cluster_colors-0.9.1.tar.gz
+[2023-04-23 21:38:37] INFO root fetch - processPackages [ws-cli-chat]: Downloading https://files.pythonhosted.org/packages/98/d9/7b8c760bce97f51ae3fc8938f0920ccf58ab2d4a893fa1c8c34ac0d8e61b/ws_cli_chat-0.3.0.tar.gz
+[2023-04-23 21:38:37] INFO root fetch - processPackages [ws-cli-chat]: executing diffoscope
+[2023-04-23 21:38:37] INFO root fetch - processPackages [ws-cli-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ws_cli_chat-0.1.1.tar.gz tmp/ws_cli_chat-0.3.0.tar.gz --markdown 20230423/w/ws-cli-chat/0.1.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-23 21:38:37] INFO root fetch - processPackages [cluster-colors]: Downloading https://files.pythonhosted.org/packages/1c/de/bbe5181e6acd248f8ff079545c1e3aa071ac11248eea0e8f09416a57f8da/cluster_colors-0.9.2.tar.gz
+[2023-04-23 21:38:37] INFO root fetch - processPackages [cluster-colors]: executing diffoscope
+[2023-04-23 21:38:37] INFO root fetch - processPackages [cluster-colors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cluster_colors-0.9.1.tar.gz tmp/cluster_colors-0.9.2.tar.gz --markdown 20230423/c/cluster-colors/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-23 21:38:38] INFO root fetch - main [MainThread]: End processing [hyperfast-python-template]: success
+[2023-04-23 21:38:38] INFO root fetch - main [MainThread]: End processing [ws-cli-chat]: success
+[2023-04-23 21:38:38] INFO root fetch - main [MainThread]: End processing [cluster-colors]: success
+[2023-04-23 21:38:38] INFO root fetch - main [MainThread]: Store serial: [17825317]
