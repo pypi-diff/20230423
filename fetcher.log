@@ -5293,3 +5293,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 10:40:09] INFO root fetch - main [MainThread]: End processing [nocode-utils]: success
 [2023-04-23 10:40:09] INFO root fetch - main [MainThread]: End processing [xia-engine-firestore]: success
 [2023-04-23 10:40:09] INFO root fetch - main [MainThread]: Store serial: [17820670]
+[2023-04-23 10:45:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820670]
+[2023-04-23 10:45:17] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-23 10:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: graphql-service-framework
+[2023-04-23 10:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tff-nightly
+[2023-04-23 10:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyocs
+[2023-04-23 10:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vsgrlir
+[2023-04-23 10:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tf-estimator-nightly
+[2023-04-23 10:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tfp-nightly
+[2023-04-23 10:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ok-dmrlib
+[2023-04-23 10:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: xia-engine
+[2023-04-23 10:45:18] INFO root fetch - processPackages [vsgrlir]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-23 10:45:18] INFO root fetch - processPackages [pyocs]: New version: [4.4.2] Old Version: [4.4.1]
+[2023-04-23 10:45:18] INFO root fetch - processPackages [graphql-service-framework]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-23 10:45:18] INFO root fetch - processPackages [tff-nightly]: New version: [0.0.1.dev20230422] Old Version: [0.0.1.dev20230421]
+[2023-04-23 10:45:18] INFO root fetch - processPackages [tf-estimator-nightly]: New version: [2.9.0.dev2022033108] Old Version: [2.9.0.dev2022033008]
+[2023-04-23 10:45:18] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2023-04-23 10:45:18] INFO root fetch - processPackages [ok-dmrlib]: New version: [0.8.0] Old Version: [0.7]
+[2023-04-23 10:45:18] INFO root fetch - processPackages [graphql-service-framework]: executing diffoscope
+[2023-04-23 10:45:18] INFO root fetch - processPackages [graphql-service-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphql_service_framework-1.0.8.tar.gz tmp/graphql_service_framework-1.0.9.tar.gz --markdown 20230423/g/graphql-service-framework/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-23 10:45:18] INFO root fetch - processPackages [xia-engine]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-23 10:45:18] INFO root fetch - processPackages [vsgrlir]: Downloading https://files.pythonhosted.org/packages/7b/5a/7e8ea8079759c6d7f6e7d0b6044ce721e73fd60e39ec95d697bc4c81a203/vsgrlir-1.0.0-py3-none-any.whl
+[2023-04-23 10:45:18] INFO root fetch - processPackages [tf-estimator-nightly]: executing diffoscope
+[2023-04-23 10:45:18] INFO root fetch - processPackages [tf-estimator-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_estimator_nightly-2.9.0.dev2022033008-py2.py3-none-any.whl.zip tmp/tf_estimator_nightly-2.9.0.dev2022033108-py2.py3-none-any.whl.zip --markdown 20230423/t/tf-estimator-nightly/2.9.0.dev2022033008-2.9.0.dev2022033108/diff.md --exclude *.pyd
+[2023-04-23 10:45:18] INFO root fetch - processPackages [tff-nightly]: Downloading https://files.pythonhosted.org/packages/f4/3e/3674e74952199c2d88b63a6adebe3d6e0ef9c05eba70b6a0a6837352e788/tff_nightly-0.0.1.dev20230422-py2.py3-none-any.whl
+[2023-04-23 10:45:18] INFO root fetch - processPackages [pyocs]: Downloading https://files.pythonhosted.org/packages/a7/4a/fd0fcde45f9135475abd9bb00cfceaadf1ff9cfeaae8bca581b74f86ee79/pyocs-4.4.2-py2.py3-none-any.whl
+[2023-04-23 10:45:18] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2023-04-23 10:45:18] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20230423/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/diff.md --exclude *.pyd
+[2023-04-23 10:45:18] INFO root fetch - processPackages [ok-dmrlib]: Downloading https://files.pythonhosted.org/packages/8d/06/50e6cedd9a64fe9d4a58f5a0788238c93f7c64ed47ebd2cb8ae824d82bb8/ok-dmrlib-0.7.tar.gz
+[2023-04-23 10:45:18] INFO root fetch - processPackages [xia-engine]: Downloading https://files.pythonhosted.org/packages/a0/f6/3e2143beacecc6784cb4ca4dd12151371064994d7df224da223ff1eb18f7/xia_engine-0.7.0-cp39-none-win_amd64.whl
+[2023-04-23 10:45:18] INFO root fetch - processPackages [vsgrlir]: Downloading https://files.pythonhosted.org/packages/53/ca/c1f57915c7bf4efc065aa8672a232653db736a0f0e0b6d74f67c40658950/vsgrlir-1.1.0-py3-none-any.whl
+[2023-04-23 10:45:18] INFO root fetch - processPackages [tff-nightly]: executing diffoscope
+[2023-04-23 10:45:18] INFO root fetch - processPackages [tff-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tff_nightly-0.0.1.dev20230421-py2.py3-none-any.whl.zip tmp/tff_nightly-0.0.1.dev20230422-py2.py3-none-any.whl.zip --markdown 20230423/t/tff-nightly/0.0.1.dev20230421-0.0.1.dev20230422/diff.md --exclude *.pyd
+[2023-04-23 10:45:18] INFO root fetch - processPackages [pyocs]: executing diffoscope
+[2023-04-23 10:45:18] INFO root fetch - processPackages [pyocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyocs-4.4.1-py2.py3-none-any.whl.zip tmp/pyocs-4.4.2-py2.py3-none-any.whl.zip --markdown 20230423/p/pyocs/4.4.1-4.4.2/diff.md --exclude *.pyd
+[2023-04-23 10:45:18] INFO root fetch - processPackages [ok-dmrlib]: Downloading https://files.pythonhosted.org/packages/cc/c4/bc4e10c6607d5c8423ae3c7b63c328fd9f42f6968359e1e088f8f8f063db/ok_dmrlib-0.8.0.tar.gz
+[2023-04-23 10:45:18] INFO root fetch - processPackages [vsgrlir]: executing diffoscope
+[2023-04-23 10:45:18] INFO root fetch - processPackages [vsgrlir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vsgrlir-1.0.0-py3-none-any.whl.zip tmp/vsgrlir-1.1.0-py3-none-any.whl.zip --markdown 20230423/v/vsgrlir/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-23 10:45:18] INFO root fetch - processPackages [xia-engine]: Downloading https://files.pythonhosted.org/packages/2c/b5/9d9c02b27305cc50c7a8123613dc6f562a5583359e565dc7803940ed86e1/xia_engine-0.7.1-cp39-none-macosx_11_0_x86_64.whl
+[2023-04-23 10:45:18] INFO root fetch - processPackages [ok-dmrlib]: executing diffoscope
+[2023-04-23 10:45:18] INFO root fetch - processPackages [ok-dmrlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ok-dmrlib-0.7.tar.gz tmp/ok_dmrlib-0.8.0.tar.gz --markdown 20230423/o/ok-dmrlib/0.7-0.8.0/diff.md --exclude *.pyd
+[2023-04-23 10:45:19] INFO root fetch - processPackages [xia-engine]: executing diffoscope
+[2023-04-23 10:45:19] INFO root fetch - processPackages [xia-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_engine-0.7.0-cp39-none-win_amd64.whl.zip tmp/xia_engine-0.7.1-cp39-none-macosx_11_0_x86_64.whl.zip --markdown 20230423/x/xia-engine/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-23 10:45:19] INFO root fetch - main [MainThread]: End processing [graphql-service-framework]: success
+[2023-04-23 10:45:20] INFO root fetch - main [MainThread]: End processing [vsgrlir]: success
+[2023-04-23 10:45:20] INFO root fetch - main [MainThread]: End processing [tf-estimator-nightly]: success
+[2023-04-23 10:45:20] INFO root fetch - main [MainThread]: End processing [ok-dmrlib]: success
+[2023-04-23 10:45:21] INFO root fetch - main [MainThread]: End processing [xia-engine]: success
+[2023-04-23 10:45:21] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
+[2023-04-23 10:45:22] INFO root fetch - main [MainThread]: End processing [pyocs]: success
+[2023-04-23 10:45:32] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2023-04-23 10:45:32] INFO root fetch - main [MainThread]: Store serial: [17820694]
