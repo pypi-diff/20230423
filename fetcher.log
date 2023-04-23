@@ -12503,3 +12503,105 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 20:51:16] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-23 20:51:16] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-23 20:51:16] INFO root fetch - main [MainThread]: Store serial: [17825000]
+[2023-04-23 20:56:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825000]
+[2023-04-23 20:56:25] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-23 20:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: empiric-network
+[2023-04-23 20:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: agnmo
+[2023-04-23 20:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: discounts
+[2023-04-23 20:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: foursight-core
+[2023-04-23 20:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: marcel
+[2023-04-23 20:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: webarchiver
+[2023-04-23 20:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: agnm
+[2023-04-23 20:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: precession
+[2023-04-23 20:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: vnkdj5-utils
+[2023-04-23 20:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: circleci-stubs
+[2023-04-23 20:56:25] INFO root fetch - processPackages [empiric-network]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-04-23 20:56:25] WARNING root fetch - processPackages [agnmo]: Skipping, unable to determine old version
+[2023-04-23 20:56:25] INFO root fetch - processPackages [agnmo]: Start processing: cincoconfig
+[2023-04-23 20:56:25] INFO root fetch - main [MainThread]: End processing [agnmo] error
+[2023-04-23 20:56:25] INFO root fetch - processPackages [vnkdj5-utils]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-23 20:56:25] INFO root fetch - processPackages [webarchiver]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-23 20:56:25] INFO root fetch - processPackages [agnm]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-23 20:56:25] INFO root fetch - processPackages [circleci-stubs]: New version: [0.1.1] Old Version: [0.1]
+[2023-04-23 20:56:25] INFO root fetch - processPackages [discounts]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-23 20:56:25] INFO root fetch - processPackages [marcel]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-23 20:56:25] INFO root fetch - processPackages [precession]: New version: [2.0.1] Old Version: [2.0.0.dev0]
+[2023-04-23 20:56:25] INFO root fetch - processPackages [cincoconfig]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-23 20:56:25] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.5b26] Old Version: [4.0.0]
+[2023-04-23 20:56:25] INFO root fetch - processPackages [webarchiver]: executing diffoscope
+[2023-04-23 20:56:25] INFO root fetch - processPackages [webarchiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webarchiver-0.8.0-py2.py3-none-any.whl.zip tmp/webarchiver-0.9.0-py2.py3-none-any.whl.zip --markdown 20230423/w/webarchiver/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-23 20:56:25] INFO root fetch - processPackages [agnm]: Downloading https://files.pythonhosted.org/packages/3e/a1/daee1a1a7bf84e2cbb29ffcdd9f6281f19a02e3eb5cbda40ad9ff2833c11/agnm-1.0.0.tar.gz
+[2023-04-23 20:56:25] INFO root fetch - processPackages [circleci-stubs]: Downloading https://files.pythonhosted.org/packages/fc/1c/7b06f49271d8473776992595ee9ac32d19d9ab18fa748f255fb2038a5a16/circleci-stubs-0.1.tar.gz
+[2023-04-23 20:56:25] INFO root fetch - processPackages [precession]: Downloading https://files.pythonhosted.org/packages/7f/7f/66ea5067fc90477c2bb9b411636492dd416aee84eabc820c3488d67d12ee/precession-2.0.0.dev0.tar.gz
+[2023-04-23 20:56:25] INFO root fetch - processPackages [discounts]: Downloading https://files.pythonhosted.org/packages/5f/6f/d5942132e4c5a14ee73631afadce2fa1e9a428365097b721909b252645b4/discounts-0.0.7.tar.gz
+[2023-04-23 20:56:25] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/d7/40/001f422a8eac5c2ffadf8bc4a87f10610a9b56c5122bf2c21c179b0b7102/foursight_core-4.1.0.5b26.tar.gz
+[2023-04-23 20:56:25] INFO root fetch - processPackages [vnkdj5-utils]: Downloading https://files.pythonhosted.org/packages/c7/c9/5578e9e37f9244c33219086ed971381db476a92ffdb9b35f69b66c84ac7a/vnkdj5_utils-0.1.2-py3-none-any.whl
+[2023-04-23 20:56:25] INFO root fetch - processPackages [marcel]: Downloading https://files.pythonhosted.org/packages/3a/07/c626f18aa14df89e1f194e115cbffaa2d99bcfc736f7251795e2f889c0d6/marcel-0.9.8-py3-none-any.whl
+[2023-04-23 20:56:25] INFO root fetch - processPackages [cincoconfig]: Downloading https://files.pythonhosted.org/packages/82/cf/e0e63c67904b26be90a9cf97e6ff35d9fa0c5083f2c1d4820b778a099270/cincoconfig-0.8.0.tar.gz
+[2023-04-23 20:56:25] INFO root fetch - processPackages [empiric-network]: Downloading https://files.pythonhosted.org/packages/8f/19/a6818fab98120a9d5ef68772a5ce33a3f25efdc1c2d45037c065b2ede20b/empiric_network-1.5.2.tar.gz
+[2023-04-23 20:56:25] INFO root fetch - processPackages [discounts]: executing diffoscope
+[2023-04-23 20:56:25] INFO root fetch - processPackages [discounts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discounts-0.0.6.tar.gz tmp/discounts-0.0.7.tar.gz --markdown 20230423/d/discounts/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-23 20:56:25] INFO root fetch - processPackages [empiric-network]: executing diffoscope
+[2023-04-23 20:56:25] INFO root fetch - processPackages [empiric-network]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/empiric_network-1.5.1.tar.gz tmp/empiric_network-1.5.2.tar.gz --markdown 20230423/e/empiric-network/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-04-23 20:56:25] INFO root fetch - processPackages [vnkdj5-utils]: executing diffoscope
+[2023-04-23 20:56:25] INFO root fetch - processPackages [vnkdj5-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnkdj5_utils-0.1.1-py3-none-any.whl.zip tmp/vnkdj5_utils-0.1.2-py3-none-any.whl.zip --markdown 20230423/v/vnkdj5-utils/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-23 20:56:25] INFO root fetch - processPackages [agnm]: Downloading https://files.pythonhosted.org/packages/53/64/326939ccc09f7df2ea3a10bd84e58d438659be87cffeaf63e4eabded6418/agnm-1.0.1.tar.gz
+[2023-04-23 20:56:25] INFO root fetch - processPackages [circleci-stubs]: Downloading https://files.pythonhosted.org/packages/af/1b/979dd205a207ad845dcdf3ce9529ac48e8b18dcb5b0907fc54428467aab3/circleci-stubs-0.1.1.tar.gz
+[2023-04-23 20:56:25] INFO root fetch - processPackages [cincoconfig]: Downloading https://files.pythonhosted.org/packages/e5/6b/0ab42bde7abc69f0fe0948a43202e454e5d4a151554a16b4cf97785209ac/cincoconfig-0.9.0.tar.gz
+[2023-04-23 20:56:25] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-23 20:56:25] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.0.0.tar.gz tmp/foursight_core-4.1.0.5b26.tar.gz --markdown 20230423/f/foursight-core/4.0.0-4.1.0.5b26/diff.md --exclude *.pyd
+[2023-04-23 20:56:26] INFO root fetch - processPackages [precession]: Downloading https://files.pythonhosted.org/packages/17/3d/9fc5bc5c130d405ce5fa678bae6890ce27c3b99b790cb7f404421b16592a/precession-2.0.1.tar.gz
+[2023-04-23 20:56:26] INFO root fetch - processPackages [cincoconfig]: executing diffoscope
+[2023-04-23 20:56:26] INFO root fetch - processPackages [cincoconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cincoconfig-0.8.0.tar.gz tmp/cincoconfig-0.9.0.tar.gz --markdown 20230423/c/cincoconfig/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-23 20:56:26] INFO root fetch - processPackages [circleci-stubs]: executing diffoscope
+[2023-04-23 20:56:26] INFO root fetch - processPackages [circleci-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circleci-stubs-0.1.tar.gz tmp/circleci-stubs-0.1.1.tar.gz --markdown 20230423/c/circleci-stubs/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 20:56:26] INFO root fetch - processPackages [agnm]: executing diffoscope
+[2023-04-23 20:56:26] INFO root fetch - processPackages [agnm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agnm-1.0.0.tar.gz tmp/agnm-1.0.1.tar.gz --markdown 20230423/a/agnm/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-23 20:56:26] INFO root fetch - processPackages [marcel]: Downloading https://files.pythonhosted.org/packages/4b/3d/fd4bc1e7906ea7d19b4ad1010b8dce76e96202ac6886bcab6162db5f992f/marcel-0.9.9-py3-none-any.whl
+[2023-04-23 20:56:26] INFO root fetch - processPackages [precession]: executing diffoscope
+[2023-04-23 20:56:26] INFO root fetch - processPackages [precession]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/precession-2.0.0.dev0.tar.gz tmp/precession-2.0.1.tar.gz --markdown 20230423/p/precession/2.0.0.dev0-2.0.1/diff.md --exclude *.pyd
+[2023-04-23 20:56:26] INFO root fetch - processPackages [marcel]: executing diffoscope
+[2023-04-23 20:56:26] INFO root fetch - processPackages [marcel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marcel-0.9.8-py3-none-any.whl.zip tmp/marcel-0.9.9-py3-none-any.whl.zip --markdown 20230423/m/marcel/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-23 20:56:27] INFO root fetch - processPackages [webarchiver]: Start processing: ForgyPs
+[2023-04-23 20:56:27] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
+[2023-04-23 20:56:27] INFO root fetch - processPackages [ForgyPs]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-23 20:56:27] INFO root fetch - processPackages [discounts]: Start processing: tzconv
+[2023-04-23 20:56:27] INFO root fetch - main [MainThread]: End processing [discounts]: success
+[2023-04-23 20:56:27] INFO root fetch - processPackages [tzconv]: New version: [1.3] Old Version: [1.2]
+[2023-04-23 20:56:27] INFO root fetch - processPackages [vnkdj5-utils]: Start processing: graph-model-parser
+[2023-04-23 20:56:27] INFO root fetch - main [MainThread]: End processing [vnkdj5-utils]: success
+[2023-04-23 20:56:27] INFO root fetch - processPackages [graph-model-parser]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-23 20:56:27] INFO root fetch - processPackages [ForgyPs]: Downloading https://files.pythonhosted.org/packages/06/d1/3e7cfbce4e0707537cd0b5389b90f750136ec272a82ca6e67eedf641d86c/ForgyPs-1.0.3.tar.gz
+[2023-04-23 20:56:27] INFO root fetch - processPackages [tzconv]: Downloading https://files.pythonhosted.org/packages/81/ae/e1695410f066ece86800e3ab91a78c6b5a7aa6e596721b7a6672c2e64819/tzconv-1.2.tar.gz
+[2023-04-23 20:56:27] INFO root fetch - processPackages [circleci-stubs]: Start processing: agnm
+[2023-04-23 20:56:27] INFO root fetch - main [MainThread]: End processing [circleci-stubs]: success
+[2023-04-23 20:56:27] INFO root fetch - processPackages [graph-model-parser]: Downloading https://files.pythonhosted.org/packages/d8/6e/1035c637f23a4fd080c77138ce422ffcccb42100f0ced1d2a5df6027b749/graph-model-parser-0.1.1.tar.gz
+[2023-04-23 20:56:27] INFO root fetch - processPackages [agnm]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-23 20:56:27] INFO root fetch - processPackages [ForgyPs]: Downloading https://files.pythonhosted.org/packages/f3/68/4bb3fb63daa286300b422c5968dcfa133602f7a217b15248d8589d7f40b6/ForgyPs-1.0.4.tar.gz
+[2023-04-23 20:56:27] INFO root fetch - processPackages [agnm]: Start processing: vnkdj5-utils
+[2023-04-23 20:56:27] INFO root fetch - main [MainThread]: End processing [agnm]: success
+[2023-04-23 20:56:27] INFO root fetch - processPackages [agnm]: executing diffoscope
+[2023-04-23 20:56:27] INFO root fetch - processPackages [agnm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agnm-1.0.0.tar.gz tmp/agnm-1.0.1.tar.gz --markdown 20230423/a/agnm/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-23 20:56:27] INFO root fetch - processPackages [vnkdj5-utils]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-23 20:56:27] INFO root fetch - processPackages [tzconv]: Downloading https://files.pythonhosted.org/packages/6d/de/368c090a396136a81c395ebc81d630fb2a7c4aa128908ea26d61cee01bf1/tzconv-1.3.tar.gz
+[2023-04-23 20:56:27] INFO root fetch - processPackages [graph-model-parser]: Downloading https://files.pythonhosted.org/packages/73/f8/89dea7b7f769eb940330ebd19c286d7f8b1dd44161142d623c77ae3483c5/graph-model-parser-0.1.2.tar.gz
+[2023-04-23 20:56:27] INFO root fetch - processPackages [ForgyPs]: executing diffoscope
+[2023-04-23 20:56:27] INFO root fetch - processPackages [ForgyPs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ForgyPs-1.0.3.tar.gz tmp/ForgyPs-1.0.4.tar.gz --markdown 20230423/F/ForgyPs/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-23 20:56:27] INFO root fetch - processPackages [tzconv]: executing diffoscope
+[2023-04-23 20:56:27] INFO root fetch - processPackages [tzconv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tzconv-1.2.tar.gz tmp/tzconv-1.3.tar.gz --markdown 20230423/t/tzconv/1.2-1.3/diff.md --exclude *.pyd
+[2023-04-23 20:56:27] INFO root fetch - main [MainThread]: End processing [precession]: success
+[2023-04-23 20:56:27] INFO root fetch - processPackages [vnkdj5-utils]: Downloading https://files.pythonhosted.org/packages/3e/56/51cf2f7631954d7b89d1a4e0447d938f3e7868b43840b15943c9e437527c/vnkdj5_utils-0.1.3-py3-none-any.whl
+[2023-04-23 20:56:28] INFO root fetch - processPackages [graph-model-parser]: executing diffoscope
+[2023-04-23 20:56:28] INFO root fetch - processPackages [graph-model-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graph-model-parser-0.1.1.tar.gz tmp/graph-model-parser-0.1.2.tar.gz --markdown 20230423/g/graph-model-parser/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-23 20:56:28] INFO root fetch - processPackages [vnkdj5-utils]: executing diffoscope
+[2023-04-23 20:56:28] INFO root fetch - processPackages [vnkdj5-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnkdj5_utils-0.1.2-py3-none-any.whl.zip tmp/vnkdj5_utils-0.1.3-py3-none-any.whl.zip --markdown 20230423/v/vnkdj5-utils/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-23 20:56:28] INFO root fetch - main [MainThread]: End processing [cincoconfig]: success
+[2023-04-23 20:56:28] INFO root fetch - main [MainThread]: End processing [agnm]: success
+[2023-04-23 20:56:28] INFO root fetch - main [MainThread]: End processing [marcel]: success
+[2023-04-23 20:56:29] INFO root fetch - main [MainThread]: End processing [tzconv]: success
+[2023-04-23 20:56:29] INFO root fetch - main [MainThread]: End processing [ForgyPs]: success
+[2023-04-23 20:56:29] INFO root fetch - main [MainThread]: End processing [graph-model-parser]: success
+[2023-04-23 20:56:29] INFO root fetch - main [MainThread]: End processing [empiric-network]: success
+[2023-04-23 20:56:29] INFO root fetch - main [MainThread]: End processing [vnkdj5-utils]: success
+[2023-04-23 20:56:42] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-23 20:56:42] INFO root fetch - main [MainThread]: Store serial: [17825050]
