@@ -3208,3 +3208,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 06:54:10] INFO root fetch - main [MainThread]: End processing [shioajicaller]: success
 [2023-04-23 06:54:11] INFO root fetch - main [MainThread]: End processing [spectree]: success
 [2023-04-23 06:54:11] INFO root fetch - main [MainThread]: Store serial: [17819491]
+[2023-04-23 06:59:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819491]
+[2023-04-23 06:59:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-23 06:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netron
+[2023-04-23 06:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unmanic
+[2023-04-23 06:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CommonlyTools
+[2023-04-23 06:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyQt6-Fluent-Widgets
+[2023-04-23 06:59:20] INFO root fetch - processPackages [netron]: New version: [6.8.5] Old Version: [6.8.4]
+[2023-04-23 06:59:20] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: New version: [0.7.4] Old Version: [0.7.2]
+[2023-04-23 06:59:20] INFO root fetch - processPackages [CommonlyTools]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-23 06:59:20] INFO root fetch - processPackages [unmanic]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-23 06:59:20] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/23/67/7f53e76374ca40d29f0ce2e76cf989a8c9e1b024f4738cb885b972b79ace/netron-6.8.4-py3-none-any.whl
+[2023-04-23 06:59:20] INFO root fetch - processPackages [CommonlyTools]: Downloading https://files.pythonhosted.org/packages/e0/ce/202c186617f41493711d8148f141d2a6ea55f23e698f46858b21824835e8/CommonlyTools-1.0.5.tar.gz
+[2023-04-23 06:59:20] INFO root fetch - processPackages [unmanic]: Downloading https://files.pythonhosted.org/packages/2d/e9/3b66191cace9401e054366b1d6cf8d243ab91153122c7ba9bf9d8bb60ad5/unmanic-0.2.3.tar.gz
+[2023-04-23 06:59:20] INFO root fetch - processPackages [CommonlyTools]: executing diffoscope
+[2023-04-23 06:59:20] INFO root fetch - processPackages [CommonlyTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CommonlyTools-1.0.4.tar.gz tmp/CommonlyTools-1.0.5.tar.gz --markdown 20230423/C/CommonlyTools/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-23 06:59:20] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/d9/d5/d0f289544059bb604eec3627e01053e484bd9cdd2e2c1f29dd635411169e/PyQt6-Fluent-Widgets-0.7.4.tar.gz
+[2023-04-23 06:59:20] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/24/ee/d13ade37df0396dd4a1e277c42adc1f0fe6990809ba625ca043e126e9e27/netron-6.8.5-py3-none-any.whl
+[2023-04-23 06:59:21] INFO root fetch - processPackages [netron]: executing diffoscope
+[2023-04-23 06:59:21] INFO root fetch - processPackages [netron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netron-6.8.4-py3-none-any.whl.zip tmp/netron-6.8.5-py3-none-any.whl.zip --markdown 20230423/n/netron/6.8.4-6.8.5/diff.md --exclude *.pyd
+[2023-04-23 06:59:21] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: executing diffoscope
+[2023-04-23 06:59:21] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6-Fluent-Widgets-0.7.2.tar.gz tmp/PyQt6-Fluent-Widgets-0.7.4.tar.gz --markdown 20230423/P/PyQt6-Fluent-Widgets/0.7.2-0.7.4/diff.md --exclude *.pyd
+[2023-04-23 06:59:21] INFO root fetch - processPackages [unmanic]: Downloading https://files.pythonhosted.org/packages/e9/dc/6758eb8986fb33f0ae1a9f54fbfa5c728b3c6a6bab8287d499d4f9598284/unmanic-0.2.4.tar.gz
+[2023-04-23 06:59:21] INFO root fetch - processPackages [unmanic]: executing diffoscope
+[2023-04-23 06:59:21] INFO root fetch - processPackages [unmanic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unmanic-0.2.3.tar.gz tmp/unmanic-0.2.4.tar.gz --markdown 20230423/u/unmanic/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-23 06:59:21] INFO root fetch - main [MainThread]: End processing [CommonlyTools]: success
+[2023-04-23 06:59:24] INFO root fetch - main [MainThread]: End processing [PyQt6-Fluent-Widgets]: success
+[2023-04-23 06:59:24] INFO root fetch - main [MainThread]: End processing [netron]: success
+[2023-04-23 06:59:26] INFO root fetch - main [MainThread]: End processing [unmanic]: success
+[2023-04-23 06:59:26] INFO root fetch - main [MainThread]: Store serial: [17819502]
