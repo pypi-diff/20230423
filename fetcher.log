@@ -5141,3 +5141,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 10:19:24] INFO root fetch - main [MainThread]: End processing [wxgl]: success
 [2023-04-23 10:19:25] INFO root fetch - main [MainThread]: End processing [megfile]: success
 [2023-04-23 10:19:25] INFO root fetch - main [MainThread]: Store serial: [17820579]
+[2023-04-23 10:24:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820579]
+[2023-04-23 10:24:34] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-23 10:24:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: refunc-cli
+[2023-04-23 10:24:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scribber
+[2023-04-23 10:24:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aidoc-transit
+[2023-04-23 10:24:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tastytrade-api
+[2023-04-23 10:24:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: image-to-arduino
+[2023-04-23 10:24:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flet-material
+[2023-04-23 10:24:34] WARNING root fetch - processPackages [flet-material]: Skipping, unable to determine old version
+[2023-04-23 10:24:34] INFO root fetch - main [MainThread]: End processing [flet-material] error
+[2023-04-23 10:24:34] INFO root fetch - processPackages [scribber]: New version: [0.1.12] Old Version: [0.0.9]
+[2023-04-23 10:24:34] WARNING root fetch - processPackages [refunc-cli]: Skipping, unable to determine old version
+[2023-04-23 10:24:34] INFO root fetch - main [MainThread]: End processing [refunc-cli] error
+[2023-04-23 10:24:34] INFO root fetch - processPackages [image-to-arduino]: New version: [1.0.3.1] Old Version: [1.0.3]
+[2023-04-23 10:24:34] INFO root fetch - processPackages [tastytrade-api]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-04-23 10:24:34] INFO root fetch - processPackages [aidoc-transit]: New version: [5.2.8] Old Version: [5.2.7]
+[2023-04-23 10:24:34] WARNING root fetch - processPackages [aidoc-transit]: fallback to get urls: [5.2.7]
+[2023-04-23 10:24:34] INFO root fetch - processPackages [image-to-arduino]: Downloading https://files.pythonhosted.org/packages/a9/c2/af55b7a787e4074e97a1b5e4b9bb3dfa1f17f741ebb479f38de8297c3cfa/image_to_arduino-1.0.3.1.tar.gz
+[2023-04-23 10:24:34] WARNING root fetch - processPackages [aidoc-transit]: None
+[2023-04-23 10:24:34] INFO root fetch - processPackages [scribber]: Downloading https://files.pythonhosted.org/packages/82/82/f3a279cabc342e0da978f3730072cf12c0a7e54f814c71dd4d3ce4bdf64e/scribber-0.0.9.tar.gz
+[2023-04-23 10:24:34] WARNING root fetch - processPackages [aidoc-transit]: None
+[2023-04-23 10:24:34] INFO root fetch - processPackages [tastytrade-api]: Downloading https://files.pythonhosted.org/packages/01/80/3f549325b0ab6985702264e30f328f3348135e90191c876d94461390746f/tastytrade-api-0.8.0.tar.gz
+[2023-04-23 10:24:34] WARNING root fetch - processPackages [aidoc-transit]: unable to get url for both version [5.2.7]
+[2023-04-23 10:24:34] WARNING root fetch - processPackages [aidoc-transit]: None
+[2023-04-23 10:24:34] INFO root fetch - main [MainThread]: End processing [aidoc-transit] error
+[2023-04-23 10:24:35] INFO root fetch - processPackages [image-to-arduino]: executing diffoscope
+[2023-04-23 10:24:35] INFO root fetch - processPackages [image-to-arduino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image_to_arduino-1.0.3.tar.gz tmp/image_to_arduino-1.0.3.1.tar.gz --markdown 20230423/i/image-to-arduino/1.0.3-1.0.3.1/diff.md --exclude *.pyd
+[2023-04-23 10:24:35] INFO root fetch - processPackages [tastytrade-api]: executing diffoscope
+[2023-04-23 10:24:35] INFO root fetch - processPackages [tastytrade-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tastytrade-api-0.7.0.tar.gz tmp/tastytrade-api-0.8.0.tar.gz --markdown 20230423/t/tastytrade-api/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-04-23 10:24:35] INFO root fetch - processPackages [scribber]: Downloading https://files.pythonhosted.org/packages/dd/66/0d985a8911d10907499acd94e13f576514f3544934a82413dae8d4a6ebf7/scribber-0.1.12.tar.gz
+[2023-04-23 10:24:35] INFO root fetch - processPackages [scribber]: executing diffoscope
+[2023-04-23 10:24:35] INFO root fetch - processPackages [scribber]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scribber-0.0.9.tar.gz tmp/scribber-0.1.12.tar.gz --markdown 20230423/s/scribber/0.0.9-0.1.12/diff.md --exclude *.pyd
+[2023-04-23 10:24:35] INFO root fetch - main [MainThread]: End processing [image-to-arduino]: success
+[2023-04-23 10:24:36] INFO root fetch - main [MainThread]: End processing [tastytrade-api]: success
+[2023-04-23 10:24:36] INFO root fetch - main [MainThread]: End processing [scribber]: success
+[2023-04-23 10:24:36] INFO root fetch - main [MainThread]: Store serial: [17820599]
