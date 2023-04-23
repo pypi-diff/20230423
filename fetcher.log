@@ -2872,3 +2872,19 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 06:04:19] INFO root fetch - main [MainThread]: End processing [PyQt-Fluent-Widgets]: success
 [2023-04-23 06:04:20] INFO root fetch - main [MainThread]: End processing [slideflow]: success
 [2023-04-23 06:04:20] INFO root fetch - main [MainThread]: Store serial: [17819328]
+[2023-04-23 06:09:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819328]
+[2023-04-23 06:09:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-23 06:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-geoacumen
+[2023-04-23 06:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: synthea-rdf
+[2023-04-23 06:09:29] INFO root fetch - processPackages [synthea-rdf]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-23 06:09:29] INFO root fetch - processPackages [python-geoacumen]: New version: [2023.4.9] Old Version: [2023.4.23]
+[2023-04-23 06:09:30] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/2c/dc/b496ecb1afc177079f40fdee93661b8d2313b9771f5de31a8e64785fda94/python-geoacumen-2023.4.23.tar.gz
+[2023-04-23 06:09:30] INFO root fetch - processPackages [synthea-rdf]: Downloading https://files.pythonhosted.org/packages/bd/60/522e4c8ab08085154f32a61c0d36bd6e90b70dc1d9590d4de8047adc4d9e/synthea-rdf-0.1.3.tar.gz
+[2023-04-23 06:09:30] INFO root fetch - processPackages [python-geoacumen]: executing diffoscope
+[2023-04-23 06:09:30] INFO root fetch - processPackages [python-geoacumen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-geoacumen-2023.4.23.tar.gz tmp/python-geoacumen-2023.4.9.tar.gz --markdown 20230423/p/python-geoacumen/2023.4.23-2023.4.9/diff.md --exclude *.pyd
+[2023-04-23 06:09:30] INFO root fetch - processPackages [synthea-rdf]: Downloading https://files.pythonhosted.org/packages/6e/62/9e1a9c508f07a9108cfbfac747a90ddd9d046229cca4a184ee2f7ef4786e/synthea-rdf-0.1.4.tar.gz
+[2023-04-23 06:09:30] INFO root fetch - processPackages [synthea-rdf]: executing diffoscope
+[2023-04-23 06:09:30] INFO root fetch - processPackages [synthea-rdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synthea-rdf-0.1.3.tar.gz tmp/synthea-rdf-0.1.4.tar.gz --markdown 20230423/s/synthea-rdf/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-23 06:09:31] INFO root fetch - main [MainThread]: End processing [synthea-rdf]: success
+[2023-04-23 06:09:32] INFO root fetch - main [MainThread]: End processing [python-geoacumen]: success
+[2023-04-23 06:09:32] INFO root fetch - main [MainThread]: Store serial: [17819334]
