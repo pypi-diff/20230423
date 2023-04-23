@@ -5820,3 +5820,66 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 11:32:43] INFO root fetch - main [MainThread]: End processing [EVECelery]: success
 [2023-04-23 11:32:57] INFO root fetch - main [MainThread]: End processing [fedml]: success
 [2023-04-23 11:32:57] INFO root fetch - main [MainThread]: Store serial: [17820970]
+[2023-04-23 11:38:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820970]
+[2023-04-23 11:38:06] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-23 11:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aa-bulletin-board
+[2023-04-23 11:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyrew
+[2023-04-23 11:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dirigera
+[2023-04-23 11:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyGPUreg
+[2023-04-23 11:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: antchain-partner
+[2023-04-23 11:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flask-http-client
+[2023-04-23 11:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: coredis
+[2023-04-23 11:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: extr
+[2023-04-23 11:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nanoatp
+[2023-04-23 11:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: assisted-service-client
+[2023-04-23 11:38:06] INFO root fetch - processPackages [aa-bulletin-board]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-23 11:38:06] WARNING root fetch - processPackages [antchain-partner]: Skipping, unable to determine old version
+[2023-04-23 11:38:06] INFO root fetch - processPackages [antchain-partner]: Start processing: onnx2tf
+[2023-04-23 11:38:06] INFO root fetch - main [MainThread]: End processing [antchain-partner] error
+[2023-04-23 11:38:06] INFO root fetch - processPackages [pyrew]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-23 11:38:07] INFO root fetch - processPackages [dirigera]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-23 11:38:07] INFO root fetch - processPackages [extr]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 11:38:07] INFO root fetch - processPackages [nanoatp]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-23 11:38:07] INFO root fetch - processPackages [pyGPUreg]: New version: [0.1.5] Old Version: [0.1.3]
+[2023-04-23 11:38:07] INFO root fetch - processPackages [flask-http-client]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-23 11:38:07] INFO root fetch - processPackages [coredis]: New version: [4.9.0] Old Version: [4.8.3]
+[2023-04-23 11:38:07] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-23 11:38:07] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2023-04-23 11:38:07] INFO root fetch - processPackages [pyrew]: executing diffoscope
+[2023-04-23 11:38:07] INFO root fetch - processPackages [pyrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrew-0.9.2.tar.gz tmp/pyrew-0.9.3.tar.gz --markdown 20230423/p/pyrew/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-23 11:38:07] INFO root fetch - processPackages [coredis]: executing diffoscope
+[2023-04-23 11:38:07] INFO root fetch - processPackages [coredis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coredis-4.8.3.tar.gz tmp/coredis-4.9.0.tar.gz --markdown 20230423/c/coredis/4.8.3-4.9.0/diff.md --exclude *.pyd
+[2023-04-23 11:38:07] INFO root fetch - processPackages [nanoatp]: Downloading https://files.pythonhosted.org/packages/21/de/808687cfc396240bba8ed2a03b55bfc9da9f89fc948aa5a75eb353b12969/nanoatp-0.3.1.tar.gz
+[2023-04-23 11:38:07] INFO root fetch - processPackages [aa-bulletin-board]: Downloading https://files.pythonhosted.org/packages/ad/82/cf444b2475f13d2bf10671d36a9c2c7e6b7f75ced13d41ea92ea836e56ee/aa_bulletin_board-1.8.0.tar.gz
+[2023-04-23 11:38:07] INFO root fetch - processPackages [flask-http-client]: Downloading https://files.pythonhosted.org/packages/df/cc/af96c6a0c1c78b3837e0e4acb59ef45c2f4c65a12ca795a4d57976fcf9a5/flask-http-client-0.1.1.tar.gz
+[2023-04-23 11:38:07] INFO root fetch - processPackages [pyGPUreg]: Downloading https://files.pythonhosted.org/packages/49/89/e0bbb227c6f1fe86e4c2ce052ef50ea36001da5d4438b3a50b15ac54da8a/pyGPUreg-0.1.5.tar.gz
+[2023-04-23 11:38:07] INFO root fetch - processPackages [dirigera]: Downloading https://files.pythonhosted.org/packages/80/57/2aafabacbd337c8f4c33b3fea093975911348c0b29e8bcffee708e749c19/dirigera-0.1.3.tar.gz
+[2023-04-23 11:38:07] INFO root fetch - processPackages [extr]: executing diffoscope
+[2023-04-23 11:38:07] INFO root fetch - processPackages [extr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extr-0.0.8.tar.gz tmp/extr-0.0.9.tar.gz --markdown 20230423/e/extr/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 11:38:07] INFO root fetch - processPackages [pyGPUreg]: executing diffoscope
+[2023-04-23 11:38:07] INFO root fetch - processPackages [pyGPUreg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyGPUreg-0.1.3.tar.gz tmp/pyGPUreg-0.1.5.tar.gz --markdown 20230423/p/pyGPUreg/0.1.3-0.1.5/diff.md --exclude *.pyd
+[2023-04-23 11:38:07] INFO root fetch - processPackages [dirigera]: executing diffoscope
+[2023-04-23 11:38:07] INFO root fetch - processPackages [dirigera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dirigera-0.1.2.tar.gz tmp/dirigera-0.1.3.tar.gz --markdown 20230423/d/dirigera/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-23 11:38:07] INFO root fetch - processPackages [aa-bulletin-board]: executing diffoscope
+[2023-04-23 11:38:07] INFO root fetch - processPackages [aa-bulletin-board]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa_bulletin_board-1.8.0.tar.gz tmp/aa_bulletin_board-1.9.0.tar.gz --markdown 20230423/a/aa-bulletin-board/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-23 11:38:07] INFO root fetch - processPackages [nanoatp]: Downloading https://files.pythonhosted.org/packages/37/bf/7d86a6b27c9fa1f01db462dae5ee86e928ba6c13ddc2bc64c6c3887a5823/nanoatp-0.3.2.tar.gz
+[2023-04-23 11:38:07] INFO root fetch - processPackages [flask-http-client]: Downloading https://files.pythonhosted.org/packages/ec/e7/cc074b966061980216ef2ed2403fa972ec52672560fda120e60b93b98a53/flask_http_client-0.1.2.tar.gz
+[2023-04-23 11:38:07] INFO root fetch - processPackages [flask-http-client]: executing diffoscope
+[2023-04-23 11:38:07] INFO root fetch - processPackages [flask-http-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-http-client-0.1.1.tar.gz tmp/flask_http_client-0.1.2.tar.gz --markdown 20230423/f/flask-http-client/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-23 11:38:07] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2023-04-23 11:38:07] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20230423/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2023-04-23 11:38:07] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2023-04-23 11:38:07] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.8.tar.gz tmp/onnx2tf-1.9.9.tar.gz --markdown 20230423/o/onnx2tf/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-23 11:38:07] INFO root fetch - processPackages [nanoatp]: executing diffoscope
+[2023-04-23 11:38:07] INFO root fetch - processPackages [nanoatp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanoatp-0.3.1.tar.gz tmp/nanoatp-0.3.2.tar.gz --markdown 20230423/n/nanoatp/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-23 11:38:08] INFO root fetch - main [MainThread]: End processing [pyrew]: success
+[2023-04-23 11:38:08] INFO root fetch - main [MainThread]: End processing [dirigera]: success
+[2023-04-23 11:38:09] INFO root fetch - main [MainThread]: End processing [pyGPUreg]: success
+[2023-04-23 11:38:09] INFO root fetch - main [MainThread]: End processing [flask-http-client]: success
+[2023-04-23 11:38:09] INFO root fetch - main [MainThread]: End processing [nanoatp]: success
+[2023-04-23 11:38:09] INFO root fetch - main [MainThread]: End processing [extr]: success
+[2023-04-23 11:38:09] INFO root fetch - main [MainThread]: End processing [aa-bulletin-board]: success
+[2023-04-23 11:38:11] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2023-04-23 11:38:11] INFO root fetch - main [MainThread]: End processing [coredis]: success
+[2023-04-23 11:38:13] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2023-04-23 11:38:13] INFO root fetch - main [MainThread]: Store serial: [17821029]
