@@ -1011,3 +1011,44 @@
 [2023-04-23 02:09:28] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
 [2023-04-23 02:09:32] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2023-04-23 02:09:32] INFO root fetch - main [MainThread]: Store serial: [17818177]
+[2023-04-23 02:14:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818177]
+[2023-04-23 02:14:41] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 02:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-aws-discord-notifiers
+[2023-04-23 02:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: constructs
+[2023-04-23 02:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openbb-nightly
+[2023-04-23 02:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: featurizerai
+[2023-04-23 02:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdklabs.codepipeline-extensions
+[2023-04-23 02:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Loterias
+[2023-04-23 02:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-events-notify
+[2023-04-23 02:14:41] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 02:14:41] INFO root fetch - processPackages [featurizerai]: New version: [1.4.4] Old Version: [1.4.3]
+[2023-04-23 02:14:41] INFO root fetch - processPackages [Loterias]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 02:14:41] INFO root fetch - processPackages [cdklabs.codepipeline-extensions]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 02:14:41] INFO root fetch - processPackages [openbb-nightly]: New version: [3.0.0rc2.dev20230422] Old Version: [3.0.0rc2.dev20230421]
+[2023-04-23 02:14:41] INFO root fetch - processPackages [constructs]: New version: [3.4.99] Old Version: [3.4.98]
+[2023-04-23 02:14:41] INFO root fetch - processPackages [cdklabs.codepipeline-extensions]: Downloading https://files.pythonhosted.org/packages/df/6c/78f1bfa2ffc81709ec21b0077aff92b7460ad1f071d595e2d767653cedc0/cdklabs.codepipeline-extensions-0.0.98.tar.gz
+[2023-04-23 02:14:41] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-23 02:14:41] WARNING root fetch - processPackages [cdklabs.codepipeline-extensions]: Skipping package: exceeds size limit 12637726>=10485760
+[2023-04-23 02:14:41] INFO root fetch - main [MainThread]: End processing [cdklabs.codepipeline-extensions] error
+[2023-04-23 02:14:41] INFO root fetch - processPackages [constructs]: executing diffoscope
+[2023-04-23 02:14:41] INFO root fetch - processPackages [constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/constructs-3.4.98.tar.gz tmp/constructs-3.4.99.tar.gz --markdown 20230423/c/constructs/3.4.98-3.4.99/diff.md --exclude *.pyd
+[2023-04-23 02:14:41] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2023-04-23 02:14:41] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.0.98.tar.gz tmp/cdk-events-notify-2.0.99.tar.gz --markdown 20230423/c/cdk-events-notify/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-23 02:14:41] INFO root fetch - processPackages [featurizerai]: Downloading https://files.pythonhosted.org/packages/3c/88/6dc31d4c34186509a0f5bfeefc9d492f5249aade7675f8068fcb8fdb6b29/featurizerai-1.4.4.tar.gz
+[2023-04-23 02:14:41] INFO root fetch - processPackages [Loterias]: Downloading https://files.pythonhosted.org/packages/4f/e8/c2c1f269d0c11f23c9290c6a682c3180f4341d761871a4155b560e7c754f/Loterias-0.0.6.tar.gz
+[2023-04-23 02:14:41] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/e4/2c/c7050a06df599a8bc8ea855603dce45fba2d578fe727c38c3bcbb6fdaf23/openbb_nightly-3.0.0rc2.dev20230422.tar.gz
+[2023-04-23 02:14:41] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: executing diffoscope
+[2023-04-23 02:14:41] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aws-discord-notifiers-0.0.8.tar.gz tmp/cdk-aws-discord-notifiers-0.0.9.tar.gz --markdown 20230423/c/cdk-aws-discord-notifiers/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 02:14:41] INFO root fetch - processPackages [Loterias]: executing diffoscope
+[2023-04-23 02:14:41] INFO root fetch - processPackages [Loterias]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Loterias-0.0.5.tar.gz tmp/Loterias-0.0.6.tar.gz --markdown 20230423/L/Loterias/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 02:14:41] INFO root fetch - processPackages [featurizerai]: executing diffoscope
+[2023-04-23 02:14:41] INFO root fetch - processPackages [featurizerai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featurizerai-1.4.3.tar.gz tmp/featurizerai-1.4.4.tar.gz --markdown 20230423/f/featurizerai/1.4.3-1.4.4/diff.md --exclude *.pyd
+[2023-04-23 02:14:42] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2023-04-23 02:14:42] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-3.0.0rc2.dev20230421.tar.gz tmp/openbb_nightly-3.0.0rc2.dev20230422.tar.gz --markdown 20230423/o/openbb-nightly/3.0.0rc2.dev20230421-3.0.0rc2.dev20230422/diff.md --exclude *.pyd
+[2023-04-23 02:14:42] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2023-04-23 02:14:42] INFO root fetch - main [MainThread]: End processing [constructs]: success
+[2023-04-23 02:14:43] INFO root fetch - main [MainThread]: End processing [cdk-aws-discord-notifiers]: success
+[2023-04-23 02:14:43] INFO root fetch - main [MainThread]: End processing [Loterias]: success
+[2023-04-23 02:14:43] INFO root fetch - main [MainThread]: End processing [featurizerai]: success
+[2023-04-23 02:14:55] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
+[2023-04-23 02:14:55] INFO root fetch - main [MainThread]: Store serial: [17818197]
