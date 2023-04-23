@@ -3274,3 +3274,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 07:04:42] INFO root fetch - main [MainThread]: End processing [reliability]: success
 [2023-04-23 07:05:14] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2023-04-23 07:05:14] INFO root fetch - main [MainThread]: Store serial: [17819523]
+[2023-04-23 07:10:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819523]
+[2023-04-23 07:10:27] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-23 07:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rapid-pe
+[2023-04-23 07:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyHRM
+[2023-04-23 07:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: async-fm
+[2023-04-23 07:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: multi-model-server
+[2023-04-23 07:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyHRM
+[2023-04-23 07:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyHRM
+[2023-04-23 07:10:27] WARNING root fetch - processPackages [pyHRM]: Skipping, unable to determine old version
+[2023-04-23 07:10:27] INFO root fetch - main [MainThread]: End processing [pyHRM] error
+[2023-04-23 07:10:27] WARNING root fetch - processPackages [async-fm]: Skipping, unable to determine old version
+[2023-04-23 07:10:27] WARNING root fetch - processPackages [pyHRM]: Skipping, unable to determine old version
+[2023-04-23 07:10:27] INFO root fetch - main [MainThread]: End processing [async-fm] error
+[2023-04-23 07:10:27] WARNING root fetch - processPackages [pyHRM]: Skipping, unable to determine old version
+[2023-04-23 07:10:27] INFO root fetch - main [MainThread]: End processing [pyHRM] error
+[2023-04-23 07:10:27] INFO root fetch - main [MainThread]: End processing [pyHRM] error
+[2023-04-23 07:10:27] INFO root fetch - processPackages [multi-model-server]: New version: [1.1.8b20230423] Old Version: [1.1.8b20230422]
+[2023-04-23 07:10:27] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.1.dev20230423] Old Version: [0.1.1.dev20230422]
+[2023-04-23 07:10:27] INFO root fetch - processPackages [multi-model-server]: Downloading https://files.pythonhosted.org/packages/12/e9/1b796e27b79b89812f9e0b1c4d64cd7fe8828f000a4ed56720f5638189df/multi_model_server-1.1.8b20230422-py2.py3-none-any.whl
+[2023-04-23 07:10:27] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/95/1e/93d1b3a3da3572f3972295468e1a6786a9416d489e25bb2025c2af0cd3ac/rapid_pe-0.1.1.dev20230422.tar.gz
+[2023-04-23 07:10:27] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/bf/32/19e84b01c614ced5ba68fbf1e977b2582610b6a12854df68186ef1e3504a/rapid_pe-0.1.1.dev20230423.tar.gz
+[2023-04-23 07:10:28] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-04-23 07:10:28] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.1.dev20230422.tar.gz tmp/rapid_pe-0.1.1.dev20230423.tar.gz --markdown 20230423/r/rapid-pe/0.1.1.dev20230422-0.1.1.dev20230423/diff.md --exclude *.pyd
+[2023-04-23 07:10:28] INFO root fetch - processPackages [multi-model-server]: Downloading https://files.pythonhosted.org/packages/9f/29/f4b73179bc91d50543392456471f9b724650406319ca147a821f72e6753e/multi_model_server-1.1.8b20230423-py2.py3-none-any.whl
+[2023-04-23 07:10:29] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2023-04-23 07:10:29] INFO root fetch - processPackages [multi-model-server]: executing diffoscope
+[2023-04-23 07:10:29] INFO root fetch - processPackages [multi-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_model_server-1.1.8b20230422-py2.py3-none-any.whl.zip tmp/multi_model_server-1.1.8b20230423-py2.py3-none-any.whl.zip --markdown 20230423/m/multi-model-server/1.1.8b20230422-1.1.8b20230423/diff.md --exclude *.pyd
+[2023-04-23 07:13:17] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
+[2023-04-23 07:13:17] INFO root fetch - main [MainThread]: Store serial: [17819542]
