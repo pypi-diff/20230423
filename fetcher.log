@@ -8961,3 +8961,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 16:14:38] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-23 16:14:39] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-23 16:14:39] INFO root fetch - main [MainThread]: Store serial: [17822877]
+[2023-04-23 16:19:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17822877]
+[2023-04-23 16:19:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-23 16:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: terka
+[2023-04-23 16:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: empiric-network
+[2023-04-23 16:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: DRSlib-DavidRodriguezSoaresCUI
+[2023-04-23 16:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: foursight-core
+[2023-04-23 16:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ipython-gpt
+[2023-04-23 16:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hordelib
+[2023-04-23 16:19:48] INFO root fetch - processPackages [terka]: New version: [1.6.4.2] Old Version: [1.6.4.1]
+[2023-04-23 16:19:48] INFO root fetch - processPackages [ipython-gpt]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-23 16:19:48] INFO root fetch - processPackages [empiric-network]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-04-23 16:19:48] INFO root fetch - processPackages [DRSlib-DavidRodriguezSoaresCUI]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-04-23 16:19:48] INFO root fetch - processPackages [hordelib]: New version: [0.9.5] Old Version: [0.9.2]
+[2023-04-23 16:19:48] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.5b13] Old Version: [4.1.0.5b12]
+[2023-04-23 16:19:48] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-04-23 16:19:48] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-0.9.2.tar.gz tmp/hordelib-0.9.5.tar.gz --markdown 20230423/h/hordelib/0.9.2-0.9.5/diff.md --exclude *.pyd
+[2023-04-23 16:19:48] INFO root fetch - processPackages [terka]: Downloading https://files.pythonhosted.org/packages/44/bd/64f1294d0bffe5664af98fae0a2ed56dc1d26b20665c71440bb079ed77f8/terka-1.6.4.2.tar.gz
+[2023-04-23 16:19:48] INFO root fetch - processPackages [DRSlib-DavidRodriguezSoaresCUI]: Downloading https://files.pythonhosted.org/packages/b2/0a/601a1129c3df28196afb364dd925d2f324196fe928fb860cf093e09b9d0e/DRSlib-DavidRodriguezSoaresCUI-0.7.1.tar.gz
+[2023-04-23 16:19:48] INFO root fetch - processPackages [empiric-network]: Downloading https://files.pythonhosted.org/packages/98/88/bfe686c0a581e098cf2f70c3a56b3e8c8dec6b5d5578179d71a6a1a50fa3/empiric_network-1.5.1.tar.gz
+[2023-04-23 16:19:48] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/8d/44/826b5b83bf2312ca39180ed72f3b730eb30efe731d2f3c1a805c8fecfb1c/foursight_core-4.1.0.5b13.tar.gz
+[2023-04-23 16:19:48] INFO root fetch - processPackages [ipython-gpt]: Downloading https://files.pythonhosted.org/packages/52/59/754c21db1b005f13c2c6ff52c416f8ff7ccbbb994d8f022e3866d7fbdc59/ipython_gpt-0.0.5.tar.gz
+[2023-04-23 16:19:48] INFO root fetch - processPackages [empiric-network]: executing diffoscope
+[2023-04-23 16:19:48] INFO root fetch - processPackages [empiric-network]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/empiric_network-1.5.0.tar.gz tmp/empiric_network-1.5.1.tar.gz --markdown 20230423/e/empiric-network/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-04-23 16:19:48] INFO root fetch - processPackages [terka]: executing diffoscope
+[2023-04-23 16:19:48] INFO root fetch - processPackages [terka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terka-1.6.4.1.tar.gz tmp/terka-1.6.4.2.tar.gz --markdown 20230423/t/terka/1.6.4.1-1.6.4.2/diff.md --exclude *.pyd
+[2023-04-23 16:19:48] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-23 16:19:48] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.5b12.tar.gz tmp/foursight_core-4.1.0.5b13.tar.gz --markdown 20230423/f/foursight-core/4.1.0.5b12-4.1.0.5b13/diff.md --exclude *.pyd
+[2023-04-23 16:19:48] INFO root fetch - processPackages [ipython-gpt]: executing diffoscope
+[2023-04-23 16:19:48] INFO root fetch - processPackages [ipython-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipython-gpt-0.0.4.tar.gz tmp/ipython_gpt-0.0.5.tar.gz --markdown 20230423/i/ipython-gpt/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 16:19:48] INFO root fetch - processPackages [DRSlib-DavidRodriguezSoaresCUI]: Downloading https://files.pythonhosted.org/packages/77/8c/3207c809de7ea3f0195521550764576c8e7cff2a57edad11f78ebaef7373/DRSlib-DavidRodriguezSoaresCUI-0.7.2.tar.gz
+[2023-04-23 16:19:49] INFO root fetch - processPackages [DRSlib-DavidRodriguezSoaresCUI]: executing diffoscope
+[2023-04-23 16:19:49] INFO root fetch - processPackages [DRSlib-DavidRodriguezSoaresCUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DRSlib-DavidRodriguezSoaresCUI-0.7.1.tar.gz tmp/DRSlib-DavidRodriguezSoaresCUI-0.7.2.tar.gz --markdown 20230423/D/DRSlib-DavidRodriguezSoaresCUI/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-04-23 16:19:50] INFO root fetch - main [MainThread]: End processing [ipython-gpt]: success
+[2023-04-23 16:19:50] INFO root fetch - main [MainThread]: End processing [DRSlib-DavidRodriguezSoaresCUI]: success
+[2023-04-23 16:19:51] INFO root fetch - main [MainThread]: End processing [empiric-network]: success
+[2023-04-23 16:19:51] INFO root fetch - main [MainThread]: End processing [terka]: success
+[2023-04-23 16:19:52] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-23 16:19:56] INFO root fetch - main [MainThread]: End processing [hordelib]: success
+[2023-04-23 16:19:56] INFO root fetch - main [MainThread]: Store serial: [17822894]
