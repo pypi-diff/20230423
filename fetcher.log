@@ -7633,3 +7633,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 14:18:16] INFO root fetch - main [MainThread]: End processing [rubrical]: success
 [2023-04-23 14:18:46] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2023-04-23 14:18:46] INFO root fetch - main [MainThread]: Store serial: [17822046]
+[2023-04-23 14:23:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17822046]
+[2023-04-23 14:23:54] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-23 14:23:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: robocorp-tasks
+[2023-04-23 14:23:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tinysearch
+[2023-04-23 14:23:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: semantra
+[2023-04-23 14:23:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: enrRiceTrait
+[2023-04-23 14:23:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jal
+[2023-04-23 14:23:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: qwertyuiop
+[2023-04-23 14:23:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: evalAIRR
+[2023-04-23 14:23:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: DRSlib-DavidRodriguezSoaresCUI
+[2023-04-23 14:23:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: rayid
+[2023-04-23 14:23:54] INFO root fetch - processPackages [tinysearch]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-23 14:23:54] WARNING root fetch - processPackages [robocorp-tasks]: Skipping, unable to determine old version
+[2023-04-23 14:23:54] INFO root fetch - processPackages [semantra]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-23 14:23:54] INFO root fetch - main [MainThread]: End processing [robocorp-tasks] error
+[2023-04-23 14:23:54] WARNING root fetch - processPackages [qwertyuiop]: Skipping, unable to determine old version
+[2023-04-23 14:23:54] INFO root fetch - processPackages [jal]: New version: [2023.4.8] Old Version: [2023.4.7]
+[2023-04-23 14:23:54] INFO root fetch - processPackages [enrRiceTrait]: New version: [1.2.0] Old Version: [1.1.6]
+[2023-04-23 14:23:54] INFO root fetch - main [MainThread]: End processing [qwertyuiop] error
+[2023-04-23 14:23:54] INFO root fetch - processPackages [DRSlib-DavidRodriguezSoaresCUI]: New version: [0.7.0] Old Version: [0.6.dev1]
+[2023-04-23 14:23:54] INFO root fetch - processPackages [evalAIRR]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 14:23:54] INFO root fetch - processPackages [DRSlib-DavidRodriguezSoaresCUI]: executing diffoscope
+[2023-04-23 14:23:54] INFO root fetch - processPackages [DRSlib-DavidRodriguezSoaresCUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DRSlib-DavidRodriguezSoaresCUI-0.6.dev1.tar.gz tmp/DRSlib-DavidRodriguezSoaresCUI-0.7.0.tar.gz --markdown 20230423/D/DRSlib-DavidRodriguezSoaresCUI/0.6.dev1-0.7.0/diff.md --exclude *.pyd
+[2023-04-23 14:23:54] WARNING root fetch - processPackages [rayid]: Skipping, unable to determine old version
+[2023-04-23 14:23:54] INFO root fetch - main [MainThread]: End processing [rayid] error
+[2023-04-23 14:23:54] INFO root fetch - processPackages [semantra]: Downloading https://files.pythonhosted.org/packages/49/21/ce47e298cc7d771fd7b45dd1317f7b37a33809ab9550462b811396849ac5/semantra-0.0.7.tar.gz
+[2023-04-23 14:23:54] INFO root fetch - processPackages [tinysearch]: Downloading https://files.pythonhosted.org/packages/d5/6f/ea9c2fd5c4d8e48739252db1bf12f99a07e92cd38e13496d65860b741844/tinysearch-0.4.1.tar.gz
+[2023-04-23 14:23:55] INFO root fetch - processPackages [enrRiceTrait]: Downloading https://files.pythonhosted.org/packages/3e/39/724da922bb3b04cf5bf2c575e4a734cc07f8a942037c72c18f00ff4cf9fc/enrRiceTrait-1.1.6.tar.gz
+[2023-04-23 14:23:55] INFO root fetch - processPackages [jal]: Downloading https://files.pythonhosted.org/packages/10/44/d7f768da9a2624b42e4b9d08afae2b9d37803d974295ae306626707b8c19/jal-2023.4.8.tar.gz
+[2023-04-23 14:23:55] INFO root fetch - processPackages [tinysearch]: executing diffoscope
+[2023-04-23 14:23:55] INFO root fetch - processPackages [tinysearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinysearch-0.4.0.tar.gz tmp/tinysearch-0.4.1.tar.gz --markdown 20230423/t/tinysearch/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-23 14:23:55] INFO root fetch - processPackages [evalAIRR]: executing diffoscope
+[2023-04-23 14:23:55] INFO root fetch - processPackages [evalAIRR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evalAIRR-0.0.8.tar.gz tmp/evalAIRR-0.0.9.tar.gz --markdown 20230423/e/evalAIRR/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 14:23:55] INFO root fetch - processPackages [semantra]: Downloading https://files.pythonhosted.org/packages/c5/55/4f6469bbf60f3e376ef1ae274acfebb3f1e532088fa0465ac3bf56db4b7b/semantra-0.0.8.tar.gz
+[2023-04-23 14:23:55] INFO root fetch - processPackages [jal]: executing diffoscope
+[2023-04-23 14:23:55] INFO root fetch - processPackages [jal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jal-2023.4.7.tar.gz tmp/jal-2023.4.8.tar.gz --markdown 20230423/j/jal/2023.4.7-2023.4.8/diff.md --exclude *.pyd
+[2023-04-23 14:23:55] INFO root fetch - processPackages [enrRiceTrait]: Downloading https://files.pythonhosted.org/packages/5b/bc/9419cfdccb6b03d4752884238cf5130ce8dbab06f74ee820c3a59f6a62c9/enrRiceTrait-1.2.0.tar.gz
+[2023-04-23 14:23:55] INFO root fetch - processPackages [semantra]: executing diffoscope
+[2023-04-23 14:23:55] INFO root fetch - processPackages [semantra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantra-0.0.7.tar.gz tmp/semantra-0.0.8.tar.gz --markdown 20230423/s/semantra/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-23 14:23:55] INFO root fetch - processPackages [enrRiceTrait]: executing diffoscope
+[2023-04-23 14:23:55] INFO root fetch - processPackages [enrRiceTrait]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enrRiceTrait-1.1.6.tar.gz tmp/enrRiceTrait-1.2.0.tar.gz --markdown 20230423/e/enrRiceTrait/1.1.6-1.2.0/diff.md --exclude *.pyd
+[2023-04-23 14:23:56] INFO root fetch - main [MainThread]: End processing [tinysearch]: success
+[2023-04-23 14:23:56] INFO root fetch - main [MainThread]: End processing [evalAIRR]: success
+[2023-04-23 14:23:56] INFO root fetch - main [MainThread]: End processing [semantra]: success
+[2023-04-23 14:23:57] INFO root fetch - main [MainThread]: End processing [DRSlib-DavidRodriguezSoaresCUI]: success
+[2023-04-23 14:23:57] INFO root fetch - main [MainThread]: End processing [enrRiceTrait]: success
+[2023-04-23 14:23:57] INFO root fetch - main [MainThread]: End processing [jal]: success
+[2023-04-23 14:23:57] INFO root fetch - main [MainThread]: Store serial: [17822076]
