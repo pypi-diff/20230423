@@ -5981,3 +5981,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 11:48:34] INFO root fetch - main [MainThread]: End processing [python-sdk-bitable]: success
 [2023-04-23 11:48:34] INFO root fetch - main [MainThread]: End processing [payme-pkg]: success
 [2023-04-23 11:48:34] INFO root fetch - main [MainThread]: Store serial: [17821096]
+[2023-04-23 11:53:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17821096]
+[2023-04-23 11:53:43] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-23 11:53:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: topologicpy
+[2023-04-23 11:53:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: typerconf
+[2023-04-23 11:53:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jit-env
+[2023-04-23 11:53:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scrape-schema
+[2023-04-23 11:53:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: benimang
+[2023-04-23 11:53:43] INFO root fetch - processPackages [topologicpy]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-23 11:53:43] INFO root fetch - processPackages [typerconf]: New version: [1.5] Old Version: [1.4]
+[2023-04-23 11:53:43] INFO root fetch - processPackages [benimang]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-04-23 11:53:43] INFO root fetch - processPackages [scrape-schema]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 11:53:43] INFO root fetch - processPackages [jit-env]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-23 11:53:43] INFO root fetch - processPackages [topologicpy]: Downloading https://files.pythonhosted.org/packages/c5/85/1c4479b468dd8447a392da1fb4879881f139f70892e1015a6f377c4cea2b/topologicpy-0.4.9.tar.gz
+[2023-04-23 11:53:43] INFO root fetch - processPackages [benimang]: executing diffoscope
+[2023-04-23 11:53:43] INFO root fetch - processPackages [benimang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/benimang-0.1.9.tar.gz tmp/benimang-0.2.0.tar.gz --markdown 20230423/b/benimang/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-04-23 11:53:43] INFO root fetch - processPackages [scrape-schema]: Downloading https://files.pythonhosted.org/packages/c4/d5/62fc4cc15c072f35db62e8350120e922606d86778b2c9ba287d8033b64af/scrape_schema-0.0.5.tar.gz
+[2023-04-23 11:53:43] INFO root fetch - processPackages [jit-env]: Downloading https://files.pythonhosted.org/packages/a1/65/9fbedb91d1ad85995f604baf7ed1e5f68d44823338cb381d89192791ce51/jit_env-0.1.1.tar.gz
+[2023-04-23 11:53:43] WARNING root fetch - processPackages [topologicpy]: Skipping package: exceeds size limit 34020520>=10485760
+[2023-04-23 11:53:43] INFO root fetch - main [MainThread]: End processing [topologicpy] error
+[2023-04-23 11:53:43] INFO root fetch - processPackages [typerconf]: Downloading https://files.pythonhosted.org/packages/10/5d/2467982880f99e93b3abfc3fd1ddf25bef19a791b5aa8a85e0576f2f49f4/typerconf-1.5.tar.gz
+[2023-04-23 11:53:43] INFO root fetch - processPackages [jit-env]: Downloading https://files.pythonhosted.org/packages/e6/aa/41b0255493df6c50f2afd32ac7be1c4ef0a3edfe738ad0291601097518a9/jit_env-0.1.2.tar.gz
+[2023-04-23 11:53:43] INFO root fetch - processPackages [typerconf]: executing diffoscope
+[2023-04-23 11:53:43] INFO root fetch - processPackages [typerconf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typerconf-1.4.tar.gz tmp/typerconf-1.5.tar.gz --markdown 20230423/t/typerconf/1.4-1.5/diff.md --exclude *.pyd
+[2023-04-23 11:53:43] INFO root fetch - processPackages [scrape-schema]: Downloading https://files.pythonhosted.org/packages/a8/93/4b223ad96e49b28193bbd99fd35ad7ffbd6d9fb60c034d50bdc33f9947e6/scrape_schema-0.0.6.tar.gz
+[2023-04-23 11:53:44] INFO root fetch - processPackages [jit-env]: executing diffoscope
+[2023-04-23 11:53:44] INFO root fetch - processPackages [jit-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jit_env-0.1.1.tar.gz tmp/jit_env-0.1.2.tar.gz --markdown 20230423/j/jit-env/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-23 11:53:44] INFO root fetch - processPackages [scrape-schema]: executing diffoscope
+[2023-04-23 11:53:44] INFO root fetch - processPackages [scrape-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrape_schema-0.0.5.tar.gz tmp/scrape_schema-0.0.6.tar.gz --markdown 20230423/s/scrape-schema/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 11:53:44] INFO root fetch - main [MainThread]: End processing [benimang]: success
+[2023-04-23 11:53:44] INFO root fetch - main [MainThread]: End processing [typerconf]: success
+[2023-04-23 11:53:45] INFO root fetch - main [MainThread]: End processing [scrape-schema]: success
+[2023-04-23 11:53:45] INFO root fetch - main [MainThread]: End processing [jit-env]: success
+[2023-04-23 11:53:45] INFO root fetch - main [MainThread]: Store serial: [17821118]
