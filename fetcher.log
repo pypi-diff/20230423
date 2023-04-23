@@ -8278,3 +8278,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 15:23:30] INFO root fetch - main [MainThread]: End processing [bacteria]: success
 [2023-04-23 15:23:30] INFO root fetch - main [MainThread]: End processing [antsibull-docs-parser]: success
 [2023-04-23 15:23:30] INFO root fetch - main [MainThread]: Store serial: [17822489]
+[2023-04-23 15:28:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17822489]
+[2023-04-23 15:28:39] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 15:28:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: letterboxd-stats
+[2023-04-23 15:28:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: image-frequency-analysis
+[2023-04-23 15:28:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: QuNet
+[2023-04-23 15:28:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cloudlanguagetools
+[2023-04-23 15:28:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sitcom
+[2023-04-23 15:28:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: findmyorder
+[2023-04-23 15:28:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ospyata
+[2023-04-23 15:28:39] INFO root fetch - processPackages [letterboxd-stats]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 15:28:39] INFO root fetch - processPackages [cloudlanguagetools]: New version: [5.3] Old Version: [5.2]
+[2023-04-23 15:28:39] INFO root fetch - processPackages [image-frequency-analysis]: New version: [0.2.0] Old Version: [0.1]
+[2023-04-23 15:28:39] INFO root fetch - processPackages [sitcom]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-23 15:28:39] INFO root fetch - processPackages [QuNet]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 15:28:39] INFO root fetch - processPackages [findmyorder]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-23 15:28:39] INFO root fetch - processPackages [ospyata]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-04-23 15:28:39] INFO root fetch - processPackages [findmyorder]: executing diffoscope
+[2023-04-23 15:28:39] INFO root fetch - processPackages [findmyorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findmyorder-0.0.4.tar.gz tmp/findmyorder-0.0.5.tar.gz --markdown 20230423/f/findmyorder/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 15:28:39] INFO root fetch - processPackages [image-frequency-analysis]: Downloading https://files.pythonhosted.org/packages/dc/a9/a0c2cd9c872a5e5d040e548359d1b3f2d9ceda4401346cc8d4fdeb485718/image_frequency_analysis-0.1.tar.gz
+[2023-04-23 15:28:39] INFO root fetch - processPackages [QuNet]: executing diffoscope
+[2023-04-23 15:28:39] INFO root fetch - processPackages [QuNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuNet-0.0.8-py3-none-any.whl.zip tmp/QuNet-0.0.9-py3-none-any.whl.zip --markdown 20230423/Q/QuNet/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 15:28:39] INFO root fetch - processPackages [cloudlanguagetools]: Downloading https://files.pythonhosted.org/packages/8d/a9/cba9fdc09e12abbd754804dcf6bf5356c7c0adde80d6d607b1e9aa9228bf/cloudlanguagetools-5.2.tar.gz
+[2023-04-23 15:28:39] INFO root fetch - processPackages [sitcom]: Downloading https://files.pythonhosted.org/packages/91/27/0bcc31f469ec7c5046d65641e043a8595a969b828e289f2dcd2714061f21/sitcom-0.3.0.tar.gz
+[2023-04-23 15:28:39] INFO root fetch - processPackages [letterboxd-stats]: Downloading https://files.pythonhosted.org/packages/7d/c4/7e458386b28cce24839f51edf5be3247e2090f45569b24a28e18acfbbc06/letterboxd_stats-0.1.9.tar.gz
+[2023-04-23 15:28:39] INFO root fetch - processPackages [ospyata]: Downloading https://files.pythonhosted.org/packages/64/e8/d85acbe6677e199907d003b33fd1af7fe062b2d1f007df8738ca3312e99a/ospyata-3.1.1.tar.gz
+[2023-04-23 15:28:39] INFO root fetch - processPackages [sitcom]: executing diffoscope
+[2023-04-23 15:28:39] INFO root fetch - processPackages [sitcom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sitcom-0.2.0.tar.gz tmp/sitcom-0.3.0.tar.gz --markdown 20230423/s/sitcom/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-23 15:28:39] INFO root fetch - processPackages [cloudlanguagetools]: Downloading https://files.pythonhosted.org/packages/9e/91/309df2368eaf87c9510a48549aa2c4063d423ce95cf4b0bdf038b4e951d7/cloudlanguagetools-5.3.tar.gz
+[2023-04-23 15:28:39] INFO root fetch - processPackages [image-frequency-analysis]: Downloading https://files.pythonhosted.org/packages/1f/11/07b9431fe402587ab1f8e3ff34f85af52bdb169094dea0c455715985a9e7/image_frequency_analysis-0.2.0.tar.gz
+[2023-04-23 15:28:39] INFO root fetch - processPackages [letterboxd-stats]: executing diffoscope
+[2023-04-23 15:28:39] INFO root fetch - processPackages [letterboxd-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/letterboxd_stats-0.1.8.tar.gz tmp/letterboxd_stats-0.1.9.tar.gz --markdown 20230423/l/letterboxd-stats/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 15:28:40] INFO root fetch - processPackages [ospyata]: executing diffoscope
+[2023-04-23 15:28:40] INFO root fetch - processPackages [ospyata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ospyata-3.1.0.tar.gz tmp/ospyata-3.1.1.tar.gz --markdown 20230423/o/ospyata/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-04-23 15:28:40] INFO root fetch - processPackages [image-frequency-analysis]: executing diffoscope
+[2023-04-23 15:28:40] INFO root fetch - processPackages [image-frequency-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image_frequency_analysis-0.1.tar.gz tmp/image_frequency_analysis-0.2.0.tar.gz --markdown 20230423/i/image-frequency-analysis/0.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-23 15:28:40] INFO root fetch - processPackages [cloudlanguagetools]: executing diffoscope
+[2023-04-23 15:28:40] INFO root fetch - processPackages [cloudlanguagetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudlanguagetools-5.2.tar.gz tmp/cloudlanguagetools-5.3.tar.gz --markdown 20230423/c/cloudlanguagetools/5.2-5.3/diff.md --exclude *.pyd
+[2023-04-23 15:28:40] INFO root fetch - main [MainThread]: End processing [findmyorder]: success
+[2023-04-23 15:28:40] INFO root fetch - main [MainThread]: End processing [QuNet]: success
+[2023-04-23 15:28:41] INFO root fetch - main [MainThread]: End processing [letterboxd-stats]: success
+[2023-04-23 15:28:41] INFO root fetch - main [MainThread]: End processing [ospyata]: success
+[2023-04-23 15:28:41] INFO root fetch - main [MainThread]: End processing [image-frequency-analysis]: success
+[2023-04-23 15:28:42] INFO root fetch - main [MainThread]: End processing [cloudlanguagetools]: success
+[2023-04-23 15:28:42] INFO root fetch - main [MainThread]: End processing [sitcom]: success
+[2023-04-23 15:28:42] INFO root fetch - main [MainThread]: Store serial: [17822510]
