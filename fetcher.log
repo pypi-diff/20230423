@@ -10748,3 +10748,66 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 18:54:36] INFO root fetch - main [MainThread]: End processing [bmkg]: success
 [2023-04-23 18:54:36] INFO root fetch - main [MainThread]: End processing [cli-command-parser]: success
 [2023-04-23 18:54:36] INFO root fetch - main [MainThread]: Store serial: [17823981]
+[2023-04-23 18:59:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823981]
+[2023-04-23 18:59:45] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-23 18:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vector-quantize-pytorch
+[2023-04-23 18:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anylabeling
+[2023-04-23 18:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: passwordtools-yt
+[2023-04-23 18:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: AEEGGOOSS
+[2023-04-23 18:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastapi-analytics
+[2023-04-23 18:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: KDSprac
+[2023-04-23 18:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sql-test-kit
+[2023-04-23 18:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fancybbox
+[2023-04-23 18:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: api-analytics
+[2023-04-23 18:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: xia-engine
+[2023-04-23 18:59:45] INFO root fetch - processPackages [anylabeling]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-23 18:59:45] WARNING root fetch - processPackages [AEEGGOOSS]: Skipping, unable to determine old version
+[2023-04-23 18:59:45] INFO root fetch - processPackages [AEEGGOOSS]: Start processing: evalAIRR
+[2023-04-23 18:59:45] INFO root fetch - main [MainThread]: End processing [AEEGGOOSS] error
+[2023-04-23 18:59:45] INFO root fetch - processPackages [vector-quantize-pytorch]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-23 18:59:45] INFO root fetch - processPackages [KDSprac]: New version: [0.2] Old Version: [0.1]
+[2023-04-23 18:59:45] INFO root fetch - processPackages [passwordtools-yt]: New version: [0.1.1] Old Version: [0.1]
+[2023-04-23 18:59:45] INFO root fetch - processPackages [api-analytics]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-04-23 18:59:45] INFO root fetch - processPackages [fastapi-analytics]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-04-23 18:59:45] WARNING root fetch - processPackages [fancybbox]: Skipping, unable to determine old version
+[2023-04-23 18:59:45] INFO root fetch - main [MainThread]: End processing [fancybbox] error
+[2023-04-23 18:59:45] INFO root fetch - processPackages [sql-test-kit]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-23 18:59:45] INFO root fetch - processPackages [evalAIRR]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 18:59:45] INFO root fetch - processPackages [xia-engine]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-04-23 18:59:45] INFO root fetch - processPackages [anylabeling]: executing diffoscope
+[2023-04-23 18:59:45] INFO root fetch - processPackages [anylabeling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anylabeling-0.2.8.tar.gz tmp/anylabeling-0.2.9.tar.gz --markdown 20230423/a/anylabeling/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-23 18:59:45] INFO root fetch - processPackages [evalAIRR]: executing diffoscope
+[2023-04-23 18:59:45] INFO root fetch - processPackages [evalAIRR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evalAIRR-0.0.8.tar.gz tmp/evalAIRR-0.0.9.tar.gz --markdown 20230423/e/evalAIRR/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 18:59:45] INFO root fetch - processPackages [passwordtools-yt]: Downloading https://files.pythonhosted.org/packages/2a/af/48e230b9f21ba81dbf22ec0ec99ee01e87e6ff916498388925b98372ea17/passwordtools-yt-0.1.1.tar.gz
+[2023-04-23 18:59:45] INFO root fetch - processPackages [KDSprac]: Downloading https://files.pythonhosted.org/packages/31/0a/bd90f66f2c508e59cdda7e4f26a249c0bc4ce0d0d4def565f68c12b1b2e1/KDSprac-0.1-py3-none-any.whl
+[2023-04-23 18:59:45] INFO root fetch - processPackages [fastapi-analytics]: Downloading https://files.pythonhosted.org/packages/19/af/369289a6c8886bf47c4550ec1118ef75fd1b40e82c0f0685bec4eddfd756/fastapi-analytics-1.1.4.tar.gz
+[2023-04-23 18:59:45] INFO root fetch - processPackages [api-analytics]: Downloading https://files.pythonhosted.org/packages/a9/3b/75e407fd5d53a8e4dbb438514ce056ce27368a2e4c7801f86c02cdccc136/api-analytics-1.1.4.tar.gz
+[2023-04-23 18:59:45] INFO root fetch - processPackages [sql-test-kit]: Downloading https://files.pythonhosted.org/packages/81/b4/c244b4534ddd3bc757330db61ad4fdcf54c57bc7037915375798eb43097e/sql_test_kit-0.2.3.tar.gz
+[2023-04-23 18:59:45] INFO root fetch - processPackages [xia-engine]: Downloading https://files.pythonhosted.org/packages/07/8f/20a8cb0131b3080b08c16045f3233e865551e744729439a45520450dc9f6/xia_engine-0.7.3-cp39-none-win_amd64.whl
+[2023-04-23 18:59:45] INFO root fetch - processPackages [vector-quantize-pytorch]: Downloading https://files.pythonhosted.org/packages/cd/e9/a5c2236fe437484b1113676845740552524d20442589a54f88f9ad001383/vector_quantize_pytorch-1.2.2.tar.gz
+[2023-04-23 18:59:45] INFO root fetch - processPackages [passwordtools-yt]: executing diffoscope
+[2023-04-23 18:59:45] INFO root fetch - processPackages [passwordtools-yt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/passwordtools-yt-0.1.tar.gz tmp/passwordtools-yt-0.1.1.tar.gz --markdown 20230423/p/passwordtools-yt/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 18:59:45] INFO root fetch - processPackages [fastapi-analytics]: executing diffoscope
+[2023-04-23 18:59:45] INFO root fetch - processPackages [fastapi-analytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-analytics-1.1.3.tar.gz tmp/fastapi-analytics-1.1.4.tar.gz --markdown 20230423/f/fastapi-analytics/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-04-23 18:59:45] INFO root fetch - processPackages [sql-test-kit]: executing diffoscope
+[2023-04-23 18:59:45] INFO root fetch - processPackages [sql-test-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sql_test_kit-0.2.2.tar.gz tmp/sql_test_kit-0.2.3.tar.gz --markdown 20230423/s/sql-test-kit/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-23 18:59:45] INFO root fetch - processPackages [api-analytics]: executing diffoscope
+[2023-04-23 18:59:45] INFO root fetch - processPackages [api-analytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api-analytics-1.1.3.tar.gz tmp/api-analytics-1.1.4.tar.gz --markdown 20230423/a/api-analytics/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-04-23 18:59:46] INFO root fetch - processPackages [KDSprac]: Downloading https://files.pythonhosted.org/packages/a8/88/105c140ed48afeabc085849c2f8b0686015fa8e22c6d542566d2a0cd775d/KDSprac-0.2-py3-none-any.whl
+[2023-04-23 18:59:46] INFO root fetch - processPackages [vector-quantize-pytorch]: executing diffoscope
+[2023-04-23 18:59:46] INFO root fetch - processPackages [vector-quantize-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_quantize_pytorch-1.2.1.tar.gz tmp/vector_quantize_pytorch-1.2.2.tar.gz --markdown 20230423/v/vector-quantize-pytorch/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-23 18:59:46] INFO root fetch - processPackages [KDSprac]: executing diffoscope
+[2023-04-23 18:59:46] INFO root fetch - processPackages [KDSprac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/KDSprac-0.1-py3-none-any.whl.zip tmp/KDSprac-0.2-py3-none-any.whl.zip --markdown 20230423/K/KDSprac/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-23 18:59:46] INFO root fetch - processPackages [xia-engine]: Downloading https://files.pythonhosted.org/packages/5f/1c/96dff5c8e98cc1f6db7694f9b3a2b236ce065cd32fe111bafc034d2ecc7f/xia_engine-0.7.4-cp39-none-macosx_11_0_x86_64.whl
+[2023-04-23 18:59:46] INFO root fetch - processPackages [xia-engine]: executing diffoscope
+[2023-04-23 18:59:46] INFO root fetch - processPackages [xia-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_engine-0.7.3-cp39-none-win_amd64.whl.zip tmp/xia_engine-0.7.4-cp39-none-macosx_11_0_x86_64.whl.zip --markdown 20230423/x/xia-engine/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2023-04-23 18:59:47] INFO root fetch - main [MainThread]: End processing [evalAIRR]: success
+[2023-04-23 18:59:47] INFO root fetch - main [MainThread]: End processing [fastapi-analytics]: success
+[2023-04-23 18:59:47] INFO root fetch - main [MainThread]: End processing [passwordtools-yt]: success
+[2023-04-23 18:59:47] INFO root fetch - main [MainThread]: End processing [sql-test-kit]: success
+[2023-04-23 18:59:47] INFO root fetch - main [MainThread]: End processing [api-analytics]: success
+[2023-04-23 18:59:47] INFO root fetch - main [MainThread]: End processing [KDSprac]: success
+[2023-04-23 18:59:47] INFO root fetch - main [MainThread]: End processing [vector-quantize-pytorch]: success
+[2023-04-23 18:59:47] INFO root fetch - main [MainThread]: End processing [xia-engine]: success
+[2023-04-23 18:59:49] INFO root fetch - main [MainThread]: End processing [anylabeling]: success
+[2023-04-23 18:59:49] INFO root fetch - main [MainThread]: Store serial: [17824017]
