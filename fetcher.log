@@ -13149,3 +13149,58 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 22:04:32] INFO root fetch - main [MainThread]: End processing [wiver]: success
 [2023-04-23 22:04:33] INFO root fetch - main [MainThread]: End processing [prosemble]: success
 [2023-04-23 22:04:33] INFO root fetch - main [MainThread]: Store serial: [17825429]
+[2023-04-23 22:09:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825429]
+[2023-04-23 22:09:42] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-23 22:09:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zeroconf
+[2023-04-23 22:09:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cowch
+[2023-04-23 22:09:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: csoundengine
+[2023-04-23 22:09:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: httpdbg
+[2023-04-23 22:09:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: latex-ml-helper
+[2023-04-23 22:09:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yze
+[2023-04-23 22:09:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: crispr-library-prep
+[2023-04-23 22:09:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Sphinx
+[2023-04-23 22:09:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: twitter-api-client
+[2023-04-23 22:09:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: aim-ui
+[2023-04-23 22:09:42] INFO root fetch - processPackages [latex-ml-helper]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 22:09:42] INFO root fetch - processPackages [crispr-library-prep]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 22:09:42] WARNING root fetch - processPackages [cowch]: Skipping, unable to determine old version
+[2023-04-23 22:09:42] INFO root fetch - main [MainThread]: End processing [cowch] error
+[2023-04-23 22:09:42] WARNING root fetch - processPackages [yze]: Skipping, unable to determine old version
+[2023-04-23 22:09:42] INFO root fetch - processPackages [csoundengine]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-23 22:09:42] INFO root fetch - main [MainThread]: End processing [yze] error
+[2023-04-23 22:09:42] INFO root fetch - processPackages [aim-ui]: New version: [4.0.0.dev3] Old Version: [4.0.0.dev2]
+[2023-04-23 22:09:42] INFO root fetch - processPackages [twitter-api-client]: New version: [0.7.6] Old Version: [0.7.5]
+[2023-04-23 22:09:42] INFO root fetch - processPackages [httpdbg]: New version: [0.9.0] Old Version: [0.8.5]
+[2023-04-23 22:09:42] INFO root fetch - processPackages [Sphinx]: New version: [6.2.0] Old Version: [6.1.3]
+[2023-04-23 22:09:42] INFO root fetch - processPackages [zeroconf]: New version: [0.58.0] Old Version: [0.57.0]
+[2023-04-23 22:09:42] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/d6/c0/8412600d01de28dac29fc7f2821e1c045150709439ee3cb7a4fd3bce8312/aim-ui-4.0.0.dev2.tar.gz
+[2023-04-23 22:09:42] INFO root fetch - processPackages [csoundengine]: executing diffoscope
+[2023-04-23 22:09:42] INFO root fetch - processPackages [csoundengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csoundengine-1.9.0.tar.gz tmp/csoundengine-1.9.1.tar.gz --markdown 20230423/c/csoundengine/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-23 22:09:42] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 27060349>=10485760
+[2023-04-23 22:09:42] INFO root fetch - processPackages [latex-ml-helper]: Downloading https://files.pythonhosted.org/packages/a0/1c/9ec2e8e45866f5559d8b27c137edaa5c866b71028e32c977fbbbe804c3ed/latex_ml_helper-0.0.5.tar.gz
+[2023-04-23 22:09:42] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2023-04-23 22:09:42] INFO root fetch - processPackages [twitter-api-client]: Downloading https://files.pythonhosted.org/packages/50/07/53079b3c999c9dfce30681c96d52f3af099c83d20fc70d6e03b81015de94/twitter-api-client-0.7.6.tar.gz
+[2023-04-23 22:09:42] INFO root fetch - processPackages [twitter-api-client]: executing diffoscope
+[2023-04-23 22:09:42] INFO root fetch - processPackages [twitter-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter-api-client-0.7.5.tar.gz tmp/twitter-api-client-0.7.6.tar.gz --markdown 20230423/t/twitter-api-client/0.7.5-0.7.6/diff.md --exclude *.pyd
+[2023-04-23 22:09:42] INFO root fetch - processPackages [zeroconf]: Downloading https://files.pythonhosted.org/packages/45/e7/2d4ed8455f414f7e91341d0f921b379322a32baab3d91ec2d1b557e11eea/zeroconf-0.58.0.tar.gz
+[2023-04-23 22:09:42] INFO root fetch - processPackages [Sphinx]: Downloading https://files.pythonhosted.org/packages/db/0b/a0f60c4abd8a69bd5b0d20edde8a8d8d9d4ca825bbd920d328d248fd0290/Sphinx-6.1.3.tar.gz
+[2023-04-23 22:09:42] INFO root fetch - processPackages [httpdbg]: executing diffoscope
+[2023-04-23 22:09:42] INFO root fetch - processPackages [httpdbg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/httpdbg-0.8.5.tar.gz tmp/httpdbg-0.9.0.tar.gz --markdown 20230423/h/httpdbg/0.8.5-0.9.0/diff.md --exclude *.pyd
+[2023-04-23 22:09:42] INFO root fetch - processPackages [zeroconf]: executing diffoscope
+[2023-04-23 22:09:42] INFO root fetch - processPackages [zeroconf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zeroconf-0.57.0.tar.gz tmp/zeroconf-0.58.0.tar.gz --markdown 20230423/z/zeroconf/0.57.0-0.58.0/diff.md --exclude *.pyd
+[2023-04-23 22:09:42] INFO root fetch - processPackages [crispr-library-prep]: executing diffoscope
+[2023-04-23 22:09:42] INFO root fetch - processPackages [crispr-library-prep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crispr_library_prep-0.1.8.tar.gz tmp/crispr_library_prep-0.1.9.tar.gz --markdown 20230423/c/crispr-library-prep/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 22:09:42] INFO root fetch - processPackages [latex-ml-helper]: Downloading https://files.pythonhosted.org/packages/11/d8/50d8126a8da03c8835174265f2cbc506fa95640450eb6bb95ebd2529c189/latex_ml_helper-0.0.6.tar.gz
+[2023-04-23 22:09:42] INFO root fetch - processPackages [latex-ml-helper]: executing diffoscope
+[2023-04-23 22:09:42] INFO root fetch - processPackages [latex-ml-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latex_ml_helper-0.0.5.tar.gz tmp/latex_ml_helper-0.0.6.tar.gz --markdown 20230423/l/latex-ml-helper/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 22:09:42] INFO root fetch - processPackages [Sphinx]: Downloading https://files.pythonhosted.org/packages/c9/2d/e6d18507b2d23601746b96e8480f39440cb9a3e6730fe99574eba29a5f6b/Sphinx-6.2.0.tar.gz
+[2023-04-23 22:09:42] INFO root fetch - processPackages [Sphinx]: executing diffoscope
+[2023-04-23 22:09:42] INFO root fetch - processPackages [Sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Sphinx-6.1.3.tar.gz tmp/Sphinx-6.2.0.tar.gz --markdown 20230423/S/Sphinx/6.1.3-6.2.0/diff.md --exclude *.pyd
+[2023-04-23 22:09:43] INFO root fetch - main [MainThread]: End processing [twitter-api-client]: success
+[2023-04-23 22:09:43] INFO root fetch - main [MainThread]: End processing [crispr-library-prep]: success
+[2023-04-23 22:09:44] INFO root fetch - main [MainThread]: End processing [latex-ml-helper]: success
+[2023-04-23 22:09:44] INFO root fetch - main [MainThread]: End processing [zeroconf]: success
+[2023-04-23 22:09:44] INFO root fetch - main [MainThread]: End processing [httpdbg]: success
+[2023-04-23 22:09:45] INFO root fetch - main [MainThread]: End processing [csoundengine]: success
+[2023-04-23 22:10:32] INFO root fetch - main [MainThread]: End processing [Sphinx]: success
+[2023-04-23 22:10:32] INFO root fetch - main [MainThread]: Store serial: [17825459]
