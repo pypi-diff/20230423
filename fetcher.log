@@ -3714,3 +3714,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 08:00:15] INFO root fetch - main [MainThread]: End processing [django-ninja-extra]: success
 [2023-04-23 08:00:17] INFO root fetch - main [MainThread]: End processing [recentrifuge]: success
 [2023-04-23 08:00:17] INFO root fetch - main [MainThread]: Store serial: [17819769]
+[2023-04-23 08:05:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819769]
+[2023-04-23 08:05:26] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-23 08:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ats-case
+[2023-04-23 08:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: siat
+[2023-04-23 08:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yuanfen
+[2023-04-23 08:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: truegrad
+[2023-04-23 08:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: brownian-stock
+[2023-04-23 08:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tastytrade-api
+[2023-04-23 08:05:26] WARNING root fetch - processPackages [yuanfen]: Skipping, unable to determine old version
+[2023-04-23 08:05:26] INFO root fetch - main [MainThread]: End processing [yuanfen] error
+[2023-04-23 08:05:26] INFO root fetch - processPackages [siat]: New version: [1.9.7] Old Version: [1.9.6]
+[2023-04-23 08:05:26] INFO root fetch - processPackages [ats-case]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-04-23 08:05:26] INFO root fetch - processPackages [truegrad]: New version: [4.0.0] Old Version: [3.1.1]
+[2023-04-23 08:05:26] INFO root fetch - processPackages [brownian-stock]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 08:05:26] INFO root fetch - processPackages [tastytrade-api]: New version: [0.7.0] Old Version: [0.6.1]
+[2023-04-23 08:05:27] INFO root fetch - processPackages [brownian-stock]: executing diffoscope
+[2023-04-23 08:05:27] INFO root fetch - processPackages [brownian-stock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brownian-stock-0.0.8.tar.gz tmp/brownian-stock-0.0.9.tar.gz --markdown 20230423/b/brownian-stock/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 08:05:27] INFO root fetch - processPackages [siat]: Downloading https://files.pythonhosted.org/packages/8c/72/27aeacca456a9074158b534196c14eb7b561e358cd66f32aed2f59cd5411/siat-1.9.7-py3-none-any.whl
+[2023-04-23 08:05:27] INFO root fetch - processPackages [ats-case]: Downloading https://files.pythonhosted.org/packages/9a/1b/2e57cffab35aaa2566be0b022f52017aefec46d9f62194c09be6a1985ae3/ats_case-0.5.6.tar.gz
+[2023-04-23 08:05:27] INFO root fetch - processPackages [tastytrade-api]: Downloading https://files.pythonhosted.org/packages/aa/5f/ea316f5dad3d71c12b3f5f159c2bca58c3b1af49704fc2a2521218430025/tastytrade-api-0.7.0.tar.gz
+[2023-04-23 08:05:27] INFO root fetch - processPackages [truegrad]: Downloading https://files.pythonhosted.org/packages/4a/c7/ad08c0d2de07b117c3af890f6d90ad1474a80630072d47c729e00795333a/truegrad-3.1.1.tar.gz
+[2023-04-23 08:05:27] INFO root fetch - processPackages [ats-case]: executing diffoscope
+[2023-04-23 08:05:27] INFO root fetch - processPackages [ats-case]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ats_case-0.5.5.tar.gz tmp/ats_case-0.5.6.tar.gz --markdown 20230423/a/ats-case/0.5.5-0.5.6/diff.md --exclude *.pyd
+[2023-04-23 08:05:27] INFO root fetch - processPackages [tastytrade-api]: executing diffoscope
+[2023-04-23 08:05:27] INFO root fetch - processPackages [tastytrade-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tastytrade-api-0.6.1.tar.gz tmp/tastytrade-api-0.7.0.tar.gz --markdown 20230423/t/tastytrade-api/0.6.1-0.7.0/diff.md --exclude *.pyd
+[2023-04-23 08:05:27] INFO root fetch - processPackages [truegrad]: Downloading https://files.pythonhosted.org/packages/db/fa/a045d1f49744eb83a4a5f6aaffdc72ca945705a63cd990615eb0c9ac784f/truegrad-4.0.0.tar.gz
+[2023-04-23 08:05:27] INFO root fetch - processPackages [siat]: executing diffoscope
+[2023-04-23 08:05:27] INFO root fetch - processPackages [siat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/siat-1.9.6-py3-none-any.whl.zip tmp/siat-1.9.7-py3-none-any.whl.zip --markdown 20230423/s/siat/1.9.6-1.9.7/diff.md --exclude *.pyd
+[2023-04-23 08:05:27] INFO root fetch - processPackages [truegrad]: executing diffoscope
+[2023-04-23 08:05:27] INFO root fetch - processPackages [truegrad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/truegrad-3.1.1.tar.gz tmp/truegrad-4.0.0.tar.gz --markdown 20230423/t/truegrad/3.1.1-4.0.0/diff.md --exclude *.pyd
+[2023-04-23 08:05:28] INFO root fetch - main [MainThread]: End processing [ats-case]: success
+[2023-04-23 08:05:28] INFO root fetch - main [MainThread]: End processing [brownian-stock]: success
+[2023-04-23 08:05:28] INFO root fetch - main [MainThread]: End processing [tastytrade-api]: success
+[2023-04-23 08:05:28] INFO root fetch - main [MainThread]: End processing [truegrad]: success
+[2023-04-23 08:05:29] INFO root fetch - main [MainThread]: End processing [siat]: success
+[2023-04-23 08:05:29] INFO root fetch - main [MainThread]: Store serial: [17819797]
