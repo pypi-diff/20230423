@@ -4904,3 +4904,76 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 09:52:57] INFO root fetch - processPackages [mausy5043-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mausy5043_common-1.2.2.tar.gz tmp/mausy5043_common-1.2.3.tar.gz --markdown 20230423/m/mausy5043-common/1.2.2-1.2.3/diff.md --exclude *.pyd
 [2023-04-23 09:52:59] INFO root fetch - main [MainThread]: End processing [mausy5043-common]: success
 [2023-04-23 09:52:59] INFO root fetch - main [MainThread]: Store serial: [17820448]
+[2023-04-23 09:58:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820448]
+[2023-04-23 09:58:07] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-23 09:58:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bridgecrew
+[2023-04-23 09:58:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulsar-app
+[2023-04-23 09:58:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: biblebot
+[2023-04-23 09:58:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sentiment-stock-plot
+[2023-04-23 09:58:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yashpy
+[2023-04-23 09:58:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: antchain-ak-a1f82644937c486c81a62b0e5a6b4fbe
+[2023-04-23 09:58:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: qt-command-palette
+[2023-04-23 09:58:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pulsar-galaxy-lib
+[2023-04-23 09:58:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pywikibot
+[2023-04-23 09:58:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: stock-price-plot
+[2023-04-23 09:58:07] INFO root fetch - processPackages [sentiment-stock-plot]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 09:58:07] INFO root fetch - processPackages [qt-command-palette]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 09:58:07] WARNING root fetch - processPackages [stock-price-plot]: Skipping, unable to determine old version
+[2023-04-23 09:58:07] INFO root fetch - processPackages [stock-price-plot]: Start processing: onedice
+[2023-04-23 09:58:07] INFO root fetch - processPackages [biblebot]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-23 09:58:07] INFO root fetch - main [MainThread]: End processing [stock-price-plot] error
+[2023-04-23 09:58:07] INFO root fetch - processPackages [yashpy]: New version: [0.6] Old Version: [0.5]
+[2023-04-23 09:58:07] INFO root fetch - processPackages [antchain-ak-a1f82644937c486c81a62b0e5a6b4fbe]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-23 09:58:07] INFO root fetch - processPackages [pulsar-app]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-23 09:58:07] INFO root fetch - processPackages [pulsar-galaxy-lib]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-23 09:58:07] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-23 09:58:07] INFO root fetch - processPackages [pywikibot]: New version: [8.1.2] Old Version: [8.1.1]
+[2023-04-23 09:58:07] INFO root fetch - processPackages [onedice]: New version: [1.0.7] Old Version: [1.0.5]
+[2023-04-23 09:58:08] INFO root fetch - processPackages [sentiment-stock-plot]: Downloading https://files.pythonhosted.org/packages/de/b7/27f58e010429ca9f185234f269187585b8b8599fa19f9716d17a715d799d/sentiment_stock_plot-0.0.1.tar.gz
+[2023-04-23 09:58:08] INFO root fetch - processPackages [yashpy]: Downloading https://files.pythonhosted.org/packages/d1/ee/a74027fa7524386a6b44dfbbba976217fa4bb0fc269816e7c91769d300f4/yashpy-0.5.tar.gz
+[2023-04-23 09:58:08] INFO root fetch - processPackages [qt-command-palette]: Downloading https://files.pythonhosted.org/packages/15/51/68c78518bcde002e25a6ccd778329c68f5f2f818b86862423aa21bc3e3d9/qt_command_palette-0.0.5.tar.gz
+[2023-04-23 09:58:08] INFO root fetch - processPackages [biblebot]: Downloading https://files.pythonhosted.org/packages/36/9e/6b457714aa9fd5d02004daa4d82f9c0f1555588f63458aa81ec1e6b082f5/biblebot-0.4.1.tar.gz
+[2023-04-23 09:58:08] INFO root fetch - processPackages [antchain-ak-a1f82644937c486c81a62b0e5a6b4fbe]: Downloading https://files.pythonhosted.org/packages/c2/1d/935494cd8a396b347aa7cdd5b02ecee506e9ffa85f2c0a3f3954c9e0301d/antchain_ak_a1f82644937c486c81a62b0e5a6b4fbe-1.0.1.tar.gz
+[2023-04-23 09:58:08] INFO root fetch - processPackages [pulsar-app]: Downloading https://files.pythonhosted.org/packages/3f/0b/d9ebd62ff663a5a7368887d62e0c4c15e1b1aaf6a5a35cd7c8340978ee14/pulsar-app-0.9.0.tar.gz
+[2023-04-23 09:58:08] INFO root fetch - processPackages [pulsar-galaxy-lib]: Downloading https://files.pythonhosted.org/packages/b4/74/05d905b4a4ccc632caf0eb57f228bfedaa26f613945513cb38e18f74a6e1/pulsar-galaxy-lib-0.9.0.tar.gz
+[2023-04-23 09:58:08] INFO root fetch - processPackages [onedice]: Downloading https://files.pythonhosted.org/packages/23/45/2a22adea28540c7d924ae683cc7825b4c2143ee0b9cc3f62f37f337e4530/onedice-1.0.5.tar.gz
+[2023-04-23 09:58:08] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-04-23 09:58:08] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230423/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-23 09:58:08] INFO root fetch - processPackages [pywikibot]: Downloading https://files.pythonhosted.org/packages/9c/51/839a62d55f49dc4f6fdf1ff410d1165ed0119c59055e8b39229e79d04d1f/pywikibot-8.1.2.tar.gz
+[2023-04-23 09:58:08] INFO root fetch - processPackages [antchain-ak-a1f82644937c486c81a62b0e5a6b4fbe]: Downloading https://files.pythonhosted.org/packages/b9/76/c2c2cfb9d8ec18a29362b4d9ccfe5ffa829a50fc6cc83eeba3cd9555896a/antchain_ak_a1f82644937c486c81a62b0e5a6b4fbe-1.0.2.tar.gz
+[2023-04-23 09:58:08] INFO root fetch - processPackages [sentiment-stock-plot]: Downloading https://files.pythonhosted.org/packages/7e/b0/8f37016ad5c434cf259dd391965f107e3711edf378b6a13e437579f86d7d/sentiment_stock_plot-0.0.2.tar.gz
+[2023-04-23 09:58:08] INFO root fetch - processPackages [onedice]: Downloading https://files.pythonhosted.org/packages/13/1c/172a0892991ed04157823ebc5b4d32655c89e3593b5f6e70e1bf1f1a5726/onedice-1.0.7.tar.gz
+[2023-04-23 09:58:08] INFO root fetch - processPackages [biblebot]: Downloading https://files.pythonhosted.org/packages/ab/76/f564317e5472e7e1c18965e64bea873e7888d30ca861f3392bc48f1b193e/biblebot-0.4.2.tar.gz
+[2023-04-23 09:58:08] INFO root fetch - processPackages [yashpy]: Downloading https://files.pythonhosted.org/packages/98/ad/f693d70b3582e805823e91ef14725f5dbc51ca9cf5abc13e956c47258f3c/yashpy-0.6.tar.gz
+[2023-04-23 09:58:08] INFO root fetch - processPackages [antchain-ak-a1f82644937c486c81a62b0e5a6b4fbe]: executing diffoscope
+[2023-04-23 09:58:08] INFO root fetch - processPackages [antchain-ak-a1f82644937c486c81a62b0e5a6b4fbe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antchain_ak_a1f82644937c486c81a62b0e5a6b4fbe-1.0.1.tar.gz tmp/antchain_ak_a1f82644937c486c81a62b0e5a6b4fbe-1.0.2.tar.gz --markdown 20230423/a/antchain-ak-a1f82644937c486c81a62b0e5a6b4fbe/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-23 09:58:08] INFO root fetch - processPackages [sentiment-stock-plot]: executing diffoscope
+[2023-04-23 09:58:08] INFO root fetch - processPackages [sentiment-stock-plot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sentiment_stock_plot-0.0.1.tar.gz tmp/sentiment_stock_plot-0.0.2.tar.gz --markdown 20230423/s/sentiment-stock-plot/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 09:58:08] INFO root fetch - processPackages [pywikibot]: executing diffoscope
+[2023-04-23 09:58:08] INFO root fetch - processPackages [pywikibot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywikibot-8.1.1.tar.gz tmp/pywikibot-8.1.2.tar.gz --markdown 20230423/p/pywikibot/8.1.1-8.1.2/diff.md --exclude *.pyd
+[2023-04-23 09:58:08] INFO root fetch - processPackages [qt-command-palette]: Downloading https://files.pythonhosted.org/packages/64/a7/23ec8460269dd9caeb2b68c3e00fc95a6787af20cf604badf8daf4d3b310/qt_command_palette-0.0.6.tar.gz
+[2023-04-23 09:58:08] INFO root fetch - processPackages [onedice]: executing diffoscope
+[2023-04-23 09:58:08] INFO root fetch - processPackages [onedice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onedice-1.0.5.tar.gz tmp/onedice-1.0.7.tar.gz --markdown 20230423/o/onedice/1.0.5-1.0.7/diff.md --exclude *.pyd
+[2023-04-23 09:58:08] INFO root fetch - processPackages [biblebot]: executing diffoscope
+[2023-04-23 09:58:08] INFO root fetch - processPackages [biblebot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biblebot-0.4.1.tar.gz tmp/biblebot-0.4.2.tar.gz --markdown 20230423/b/biblebot/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-23 09:58:08] INFO root fetch - processPackages [pulsar-galaxy-lib]: Downloading https://files.pythonhosted.org/packages/eb/e9/4d05ac2cade0d6f3607ac31306dbe8592623a17eb67cb670e53eff2d032a/pulsar-galaxy-lib-0.9.1.tar.gz
+[2023-04-23 09:58:08] INFO root fetch - processPackages [yashpy]: executing diffoscope
+[2023-04-23 09:58:08] INFO root fetch - processPackages [yashpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yashpy-0.5.tar.gz tmp/yashpy-0.6.tar.gz --markdown 20230423/y/yashpy/0.5-0.6/diff.md --exclude *.pyd
+[2023-04-23 09:58:08] INFO root fetch - processPackages [pulsar-app]: Downloading https://files.pythonhosted.org/packages/be/85/35eeb28f6afd55063c5ffae34056a561121765776afbe5bd7271e1dd31b1/pulsar-app-0.9.1.tar.gz
+[2023-04-23 09:58:08] INFO root fetch - processPackages [qt-command-palette]: executing diffoscope
+[2023-04-23 09:58:08] INFO root fetch - processPackages [qt-command-palette]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qt_command_palette-0.0.5.tar.gz tmp/qt_command_palette-0.0.6.tar.gz --markdown 20230423/q/qt-command-palette/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 09:58:08] INFO root fetch - processPackages [pulsar-app]: executing diffoscope
+[2023-04-23 09:58:08] INFO root fetch - processPackages [pulsar-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulsar-app-0.9.0.tar.gz tmp/pulsar-app-0.9.1.tar.gz --markdown 20230423/p/pulsar-app/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-23 09:58:09] INFO root fetch - processPackages [pulsar-galaxy-lib]: executing diffoscope
+[2023-04-23 09:58:09] INFO root fetch - processPackages [pulsar-galaxy-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulsar-galaxy-lib-0.9.0.tar.gz tmp/pulsar-galaxy-lib-0.9.1.tar.gz --markdown 20230423/p/pulsar-galaxy-lib/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-23 09:58:09] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-04-23 09:58:09] INFO root fetch - main [MainThread]: End processing [antchain-ak-a1f82644937c486c81a62b0e5a6b4fbe]: success
+[2023-04-23 09:58:10] INFO root fetch - main [MainThread]: End processing [sentiment-stock-plot]: success
+[2023-04-23 09:58:10] INFO root fetch - main [MainThread]: End processing [yashpy]: success
+[2023-04-23 09:58:10] INFO root fetch - main [MainThread]: End processing [biblebot]: success
+[2023-04-23 09:58:10] INFO root fetch - main [MainThread]: End processing [onedice]: success
+[2023-04-23 09:58:11] INFO root fetch - main [MainThread]: End processing [pulsar-app]: success
+[2023-04-23 09:58:11] INFO root fetch - main [MainThread]: End processing [pulsar-galaxy-lib]: success
+[2023-04-23 09:58:11] INFO root fetch - main [MainThread]: End processing [qt-command-palette]: success
+[2023-04-23 09:58:13] INFO root fetch - main [MainThread]: End processing [pywikibot]: success
+[2023-04-23 09:58:13] INFO root fetch - main [MainThread]: Store serial: [17820480]
