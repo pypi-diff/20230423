@@ -10841,3 +10841,91 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 19:05:00] INFO root fetch - main [MainThread]: End processing [kerykeion]: success
 [2023-04-23 19:05:00] INFO root fetch - main [MainThread]: End processing [cfscanner]: success
 [2023-04-23 19:05:00] INFO root fetch - main [MainThread]: Store serial: [17824038]
+[2023-04-23 19:10:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17824038]
+[2023-04-23 19:10:09] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-23 19:10:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anyioc
+[2023-04-23 19:10:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openthaigpt
+[2023-04-23 19:10:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abacusai
+[2023-04-23 19:10:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-portfolio-tools
+[2023-04-23 19:10:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: giftmaster
+[2023-04-23 19:10:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gulistandb
+[2023-04-23 19:10:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ForgyP
+[2023-04-23 19:10:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Solarflare
+[2023-04-23 19:10:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: muCART
+[2023-04-23 19:10:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: monaco
+[2023-04-23 19:10:09] INFO root fetch - processPackages [openthaigpt]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-04-23 19:10:09] INFO root fetch - processPackages [abacusai]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-23 19:10:09] INFO root fetch - processPackages [giftmaster]: New version: [0.1.60] Old Version: [0.1.59]
+[2023-04-23 19:10:09] INFO root fetch - processPackages [anyioc]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-23 19:10:09] INFO root fetch - processPackages [Solarflare]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-23 19:10:09] WARNING root fetch - processPackages [gulistandb]: Skipping, unable to determine old version
+[2023-04-23 19:10:09] INFO root fetch - processPackages [gulistandb]: Start processing: jupyterlab-ui-profiler
+[2023-04-23 19:10:09] WARNING root fetch - processPackages [muCART]: Skipping, unable to determine old version
+[2023-04-23 19:10:09] WARNING root fetch - processPackages [ForgyP]: Skipping, unable to determine old version
+[2023-04-23 19:10:09] INFO root fetch - processPackages [py-portfolio-tools]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-23 19:10:09] INFO root fetch - main [MainThread]: End processing [gulistandb] error
+[2023-04-23 19:10:09] INFO root fetch - processPackages [muCART]: Start processing: discoger
+[2023-04-23 19:10:09] INFO root fetch - processPackages [ForgyP]: Start processing: flarespy
+[2023-04-23 19:10:09] INFO root fetch - main [MainThread]: End processing [muCART] error
+[2023-04-23 19:10:09] INFO root fetch - main [MainThread]: End processing [ForgyP] error
+[2023-04-23 19:10:09] INFO root fetch - processPackages [monaco]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-23 19:10:09] INFO root fetch - processPackages [discoger]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-23 19:10:10] INFO root fetch - processPackages [jupyterlab-ui-profiler]: New version: [0.2.0] Old Version: [0.1.8]
+[2023-04-23 19:10:10] INFO root fetch - processPackages [flarespy]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-23 19:10:10] INFO root fetch - processPackages [anyioc]: executing diffoscope
+[2023-04-23 19:10:10] INFO root fetch - processPackages [anyioc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyioc-0.9.0.tar.gz tmp/anyioc-0.9.1.tar.gz --markdown 20230423/a/anyioc/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-23 19:10:10] INFO root fetch - processPackages [openthaigpt]: Downloading https://files.pythonhosted.org/packages/0c/a6/86228002ee4ff1f2b8aea4c471200d037c9c98ee7a854f1f0398729f3de4/openthaigpt-0.0.9.tar.gz
+[2023-04-23 19:10:10] INFO root fetch - processPackages [Solarflare]: Downloading https://files.pythonhosted.org/packages/27/67/600352d7b5085f0142cde89310cd396c2baa0e3b9cd4f3a3f795bb4e4159/Solarflare-0.0.3.tar.gz
+[2023-04-23 19:10:10] INFO root fetch - processPackages [giftmaster]: Downloading https://files.pythonhosted.org/packages/d8/ee/ac5c8b6ab5486af4bd27c792a277ae665ec76293f2a31c6c9dc51a280f31/giftmaster-0.1.59.tar.gz
+[2023-04-23 19:10:10] INFO root fetch - processPackages [monaco]: Downloading https://files.pythonhosted.org/packages/8d/74/1f01203bde14d78c38deed0427c21a85aa1669c923bf83e0a905c9daad74/monaco-0.9.0.tar.gz
+[2023-04-23 19:10:10] INFO root fetch - processPackages [discoger]: Downloading https://files.pythonhosted.org/packages/41/6d/e7e40f914ca6be8f12c34c1c5d1315820e5b607b7bb457c2792be452d24b/discoger-1.0.2.tar.gz
+[2023-04-23 19:10:10] INFO root fetch - processPackages [jupyterlab-ui-profiler]: Downloading https://files.pythonhosted.org/packages/b6/e8/1832b74f3ba0d68875b371bed4e2a795c4bad94b6a135b718de19e37189c/jupyterlab_ui_profiler-0.1.8.tar.gz
+[2023-04-23 19:10:10] INFO root fetch - processPackages [flarespy]: Downloading https://files.pythonhosted.org/packages/e9/8a/8923203b3f96fcdccc7bc09d3d38bff5dd67a9dd6f4b75309b4122387662/flarespy-0.9.1.tar.gz
+[2023-04-23 19:10:10] INFO root fetch - processPackages [py-portfolio-tools]: Downloading https://files.pythonhosted.org/packages/25/40/6d31d71d53bb7c1c6135d618aeb88f3b16998dfdf2b19ce6e36bd9525166/py-portfolio-tools-0.0.3.tar.gz
+[2023-04-23 19:10:10] INFO root fetch - processPackages [abacusai]: executing diffoscope
+[2023-04-23 19:10:10] INFO root fetch - processPackages [abacusai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abacusai-0.9.1.tar.gz tmp/abacusai-0.9.2.tar.gz --markdown 20230423/a/abacusai/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-23 19:10:10] INFO root fetch - processPackages [Solarflare]: executing diffoscope
+[2023-04-23 19:10:10] INFO root fetch - processPackages [Solarflare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Solarflare-0.0.2.tar.gz tmp/Solarflare-0.0.3.tar.gz --markdown 20230423/S/Solarflare/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 19:10:10] INFO root fetch - processPackages [discoger]: executing diffoscope
+[2023-04-23 19:10:10] INFO root fetch - processPackages [discoger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discoger-1.0.1.tar.gz tmp/discoger-1.0.2.tar.gz --markdown 20230423/d/discoger/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-23 19:10:10] INFO root fetch - processPackages [openthaigpt]: Downloading https://files.pythonhosted.org/packages/44/41/648396c234be81e2578c3266d0ef690ff2372d1622b271e379a6719de1cc/openthaigpt-0.1.0.tar.gz
+[2023-04-23 19:10:10] INFO root fetch - processPackages [flarespy]: executing diffoscope
+[2023-04-23 19:10:10] INFO root fetch - processPackages [flarespy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flarespy-0.9.0.tar.gz tmp/flarespy-0.9.1.tar.gz --markdown 20230423/f/flarespy/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-23 19:10:10] INFO root fetch - processPackages [giftmaster]: Downloading https://files.pythonhosted.org/packages/67/34/986d125a02367158f390b24c9c9c4fb2cdb50ef754d39f911147663b838f/giftmaster-0.1.60.tar.gz
+[2023-04-23 19:10:10] INFO root fetch - processPackages [py-portfolio-tools]: executing diffoscope
+[2023-04-23 19:10:10] INFO root fetch - processPackages [py-portfolio-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-portfolio-tools-0.0.2.tar.gz tmp/py-portfolio-tools-0.0.3.tar.gz --markdown 20230423/p/py-portfolio-tools/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 19:10:10] INFO root fetch - processPackages [monaco]: Downloading https://files.pythonhosted.org/packages/86/73/5100a1879aec129900fe6096d8a96c734fc674866398a06954c1fd3a2303/monaco-0.9.1.tar.gz
+[2023-04-23 19:10:10] INFO root fetch - processPackages [openthaigpt]: executing diffoscope
+[2023-04-23 19:10:10] INFO root fetch - processPackages [openthaigpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openthaigpt-0.0.9.tar.gz tmp/openthaigpt-0.1.0.tar.gz --markdown 20230423/o/openthaigpt/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-04-23 19:10:10] INFO root fetch - processPackages [giftmaster]: executing diffoscope
+[2023-04-23 19:10:10] INFO root fetch - processPackages [giftmaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/giftmaster-0.1.59.tar.gz tmp/giftmaster-0.1.60.tar.gz --markdown 20230423/g/giftmaster/0.1.59-0.1.60/diff.md --exclude *.pyd
+[2023-04-23 19:10:10] INFO root fetch - processPackages [jupyterlab-ui-profiler]: Downloading https://files.pythonhosted.org/packages/ca/9a/18d27263d50d136a8abcf5b1119bf549158fe21d6f35c92fd8040bd5af81/jupyterlab_ui_profiler-0.2.0.tar.gz
+[2023-04-23 19:10:10] INFO root fetch - processPackages [monaco]: executing diffoscope
+[2023-04-23 19:10:10] INFO root fetch - processPackages [monaco]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monaco-0.9.0.tar.gz tmp/monaco-0.9.1.tar.gz --markdown 20230423/m/monaco/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-23 19:10:11] INFO root fetch - processPackages [jupyterlab-ui-profiler]: executing diffoscope
+[2023-04-23 19:10:11] INFO root fetch - processPackages [jupyterlab-ui-profiler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab_ui_profiler-0.1.8.tar.gz tmp/jupyterlab_ui_profiler-0.2.0.tar.gz --markdown 20230423/j/jupyterlab-ui-profiler/0.1.8-0.2.0/diff.md --exclude *.pyd
+[2023-04-23 19:10:11] INFO root fetch - processPackages [anyioc]: Start processing: psychonaut
+[2023-04-23 19:10:11] INFO root fetch - main [MainThread]: End processing [anyioc]: success
+[2023-04-23 19:10:11] INFO root fetch - processPackages [psychonaut]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-23 19:10:11] INFO root fetch - processPackages [psychonaut]: Downloading https://files.pythonhosted.org/packages/39/4a/c430dddec9d06089941416614be8f1a3f1e16040e22cfa304562acdee09d/psychonaut-0.0.4.tar.gz
+[2023-04-23 19:10:11] INFO root fetch - processPackages [Solarflare]: Start processing: saffier
+[2023-04-23 19:10:11] INFO root fetch - main [MainThread]: End processing [Solarflare]: success
+[2023-04-23 19:10:11] INFO root fetch - processPackages [saffier]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-04-23 19:10:12] INFO root fetch - main [MainThread]: End processing [abacusai]: success
+[2023-04-23 19:10:12] INFO root fetch - main [MainThread]: End processing [discoger]: success
+[2023-04-23 19:10:12] INFO root fetch - processPackages [saffier]: Downloading https://files.pythonhosted.org/packages/a9/a2/621217598b8004568d025e8fa7be563b4fedb260fc25eae31dd7bd027ad8/saffier-0.7.2.tar.gz
+[2023-04-23 19:10:12] INFO root fetch - main [MainThread]: End processing [flarespy]: success
+[2023-04-23 19:10:12] INFO root fetch - processPackages [psychonaut]: Downloading https://files.pythonhosted.org/packages/ed/23/d0c25832aa5ab372c7248803fa4d2deaddba058ad0942827ccdeb05018f9/psychonaut-0.0.5.tar.gz
+[2023-04-23 19:10:12] INFO root fetch - main [MainThread]: End processing [py-portfolio-tools]: success
+[2023-04-23 19:10:12] INFO root fetch - processPackages [psychonaut]: executing diffoscope
+[2023-04-23 19:10:12] INFO root fetch - processPackages [psychonaut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psychonaut-0.0.4.tar.gz tmp/psychonaut-0.0.5.tar.gz --markdown 20230423/p/psychonaut/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 19:10:12] INFO root fetch - main [MainThread]: End processing [openthaigpt]: success
+[2023-04-23 19:10:12] INFO root fetch - processPackages [saffier]: Downloading https://files.pythonhosted.org/packages/cb/b7/b0d03bfc8d6fd0802fa566c01c5bdcca3f0585c4fe8092bb27a159000510/saffier-0.7.3.tar.gz
+[2023-04-23 19:10:12] INFO root fetch - processPackages [saffier]: executing diffoscope
+[2023-04-23 19:10:12] INFO root fetch - processPackages [saffier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/saffier-0.7.2.tar.gz tmp/saffier-0.7.3.tar.gz --markdown 20230423/s/saffier/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-04-23 19:10:12] INFO root fetch - main [MainThread]: End processing [giftmaster]: success
+[2023-04-23 19:10:13] INFO root fetch - main [MainThread]: End processing [monaco]: success
+[2023-04-23 19:10:13] INFO root fetch - main [MainThread]: End processing [psychonaut]: success
+[2023-04-23 19:10:14] INFO root fetch - main [MainThread]: End processing [saffier]: success
+[2023-04-23 19:10:14] INFO root fetch - main [MainThread]: End processing [jupyterlab-ui-profiler]: success
+[2023-04-23 19:10:14] INFO root fetch - main [MainThread]: Store serial: [17824085]
