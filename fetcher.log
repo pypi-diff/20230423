@@ -898,3 +898,47 @@
 [2023-04-23 01:59:03] INFO root fetch - main [MainThread]: End processing [dragonfly-uwg]: success
 [2023-04-23 01:59:03] INFO root fetch - main [MainThread]: End processing [panderequests]: success
 [2023-04-23 01:59:03] INFO root fetch - main [MainThread]: Store serial: [17818118]
+[2023-04-23 02:04:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818118]
+[2023-04-23 02:04:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 02:04:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysr
+[2023-04-23 02:04:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oa
+[2023-04-23 02:04:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lbt-dragonfly
+[2023-04-23 02:04:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ShellcodeTester
+[2023-04-23 02:04:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: oa
+[2023-04-23 02:04:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: torchdatasets-nightly
+[2023-04-23 02:04:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dpy2-migration-helper
+[2023-04-23 02:04:12] INFO root fetch - processPackages [pysr]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-23 02:04:12] INFO root fetch - processPackages [ShellcodeTester]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-23 02:04:12] INFO root fetch - processPackages [oa]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-23 02:04:12] INFO root fetch - processPackages [oa]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-23 02:04:12] INFO root fetch - processPackages [torchdatasets-nightly]: New version: [1682121796] Old Version: [1682035401]
+[2023-04-23 02:04:12] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2023-04-23 02:04:12] ERROR root fetch - processPackages [dpy2-migration-helper]: Unable to get metadata: No such project 'dpy2-migration-helper'
+[2023-04-23 02:04:12] INFO root fetch - main [MainThread]: End processing [dpy2-migration-helper] error
+[2023-04-23 02:04:12] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2023-04-23 02:04:12] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20230423/l/lbt-dragonfly/0.9.98-0.9.99/diff.md --exclude *.pyd
+[2023-04-23 02:04:12] INFO root fetch - processPackages [oa]: Downloading https://files.pythonhosted.org/packages/08/57/290f71db413c08fa985f7af2c072a92cddaddde07b9fa29edd4840837253/oa-0.0.7.tar.gz
+[2023-04-23 02:04:12] INFO root fetch - processPackages [pysr]: Downloading https://files.pythonhosted.org/packages/73/ab/db4ac056fdd819802b0be21ffe3646ee022a42f6a5dc9284315b12b4a5a0/pysr-0.9.4.tar.gz
+[2023-04-23 02:04:12] INFO root fetch - processPackages [oa]: Downloading https://files.pythonhosted.org/packages/08/57/290f71db413c08fa985f7af2c072a92cddaddde07b9fa29edd4840837253/oa-0.0.7.tar.gz
+[2023-04-23 02:04:12] INFO root fetch - processPackages [torchdatasets-nightly]: Downloading https://files.pythonhosted.org/packages/3e/6a/8730310fb3f3e4822d1cfcaa25abc0056ddd0c6c829d6cc1152a371e123f/torchdatasets-nightly-1682121796.tar.gz
+[2023-04-23 02:04:12] INFO root fetch - processPackages [ShellcodeTester]: Downloading https://files.pythonhosted.org/packages/84/b8/fc6550e9e2455d5510e6436e757ff70d5d276f9e77abf5edc43597b3acd6/ShellcodeTester-0.2.7.tar.gz
+[2023-04-23 02:04:12] INFO root fetch - processPackages [torchdatasets-nightly]: executing diffoscope
+[2023-04-23 02:04:12] INFO root fetch - processPackages [torchdatasets-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchdatasets-nightly-1682035401.tar.gz tmp/torchdatasets-nightly-1682121796.tar.gz --markdown 20230423/t/torchdatasets-nightly/1682035401-1682121796/diff.md --exclude *.pyd
+[2023-04-23 02:04:12] INFO root fetch - processPackages [ShellcodeTester]: executing diffoscope
+[2023-04-23 02:04:12] INFO root fetch - processPackages [oa]: Downloading https://files.pythonhosted.org/packages/fa/d6/65419dbd2fd4c4276f175d3d2e246ec4ebd5c2a9a7001c6c08cba8cc457c/oa-0.0.8.tar.gz
+[2023-04-23 02:04:12] INFO root fetch - processPackages [oa]: Downloading https://files.pythonhosted.org/packages/fa/d6/65419dbd2fd4c4276f175d3d2e246ec4ebd5c2a9a7001c6c08cba8cc457c/oa-0.0.8.tar.gz
+[2023-04-23 02:04:12] INFO root fetch - processPackages [ShellcodeTester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ShellcodeTester-0.2.6.tar.gz tmp/ShellcodeTester-0.2.7.tar.gz --markdown 20230423/S/ShellcodeTester/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-23 02:04:12] INFO root fetch - processPackages [pysr]: Downloading https://files.pythonhosted.org/packages/94/ab/d3fde0e696012fdbfa1a72dbc577dac59abbdf676445377b79642490eea7/pysr-0.9.5.tar.gz
+[2023-04-23 02:04:12] INFO root fetch - processPackages [oa]: executing diffoscope
+[2023-04-23 02:04:12] INFO root fetch - processPackages [oa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oa-0.0.7.tar.gz tmp/oa-0.0.8.tar.gz --markdown 20230423/o/oa/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-23 02:04:12] INFO root fetch - processPackages [oa]: executing diffoscope
+[2023-04-23 02:04:12] INFO root fetch - processPackages [oa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oa-0.0.7.tar.gz tmp/oa-0.0.8.tar.gz --markdown 20230423/o/oa/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-23 02:04:13] INFO root fetch - processPackages [pysr]: executing diffoscope
+[2023-04-23 02:04:13] INFO root fetch - processPackages [pysr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysr-0.9.4.tar.gz tmp/pysr-0.9.5.tar.gz --markdown 20230423/p/pysr/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-23 02:04:13] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2023-04-23 02:04:13] INFO root fetch - main [MainThread]: End processing [torchdatasets-nightly]: success
+[2023-04-23 02:04:13] INFO root fetch - main [MainThread]: End processing [oa]: success
+[2023-04-23 02:04:14] INFO root fetch - main [MainThread]: End processing [oa]: success
+[2023-04-23 02:04:14] INFO root fetch - main [MainThread]: End processing [pysr]: success
+[2023-04-23 02:04:15] INFO root fetch - main [MainThread]: End processing [ShellcodeTester]: success
+[2023-04-23 02:04:15] INFO root fetch - main [MainThread]: Store serial: [17818140]
