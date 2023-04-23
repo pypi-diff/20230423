@@ -9810,3 +9810,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 17:23:00] INFO root fetch - main [MainThread]: End processing [zar]: success
 [2023-04-23 17:23:07] INFO root fetch - main [MainThread]: End processing [enrRiceTrait]: success
 [2023-04-23 17:23:07] INFO root fetch - main [MainThread]: Store serial: [17823350]
+[2023-04-23 17:28:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823350]
+[2023-04-23 17:28:22] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-23 17:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: transaction-accounts
+[2023-04-23 17:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psdelivery
+[2023-04-23 17:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cvxpygen
+[2023-04-23 17:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: quarter-lib
+[2023-04-23 17:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mymlcustomtools
+[2023-04-23 17:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: journai-lib
+[2023-04-23 17:28:23] INFO root fetch - processPackages [transaction-accounts]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 17:28:23] INFO root fetch - processPackages [quarter-lib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 17:28:23] INFO root fetch - processPackages [mymlcustomtools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 17:28:23] WARNING root fetch - processPackages [psdelivery]: Skipping, unable to determine old version
+[2023-04-23 17:28:23] INFO root fetch - main [MainThread]: End processing [psdelivery] error
+[2023-04-23 17:28:23] INFO root fetch - processPackages [cvxpygen]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-23 17:28:23] WARNING root fetch - processPackages [journai-lib]: Skipping, unable to determine old version
+[2023-04-23 17:28:23] INFO root fetch - main [MainThread]: End processing [journai-lib] error
+[2023-04-23 17:28:23] INFO root fetch - processPackages [mymlcustomtools]: executing diffoscope
+[2023-04-23 17:28:23] INFO root fetch - processPackages [mymlcustomtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mymlcustomtools-0.0.8.tar.gz tmp/mymlcustomtools-0.0.9.tar.gz --markdown 20230423/m/mymlcustomtools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 17:28:23] INFO root fetch - processPackages [cvxpygen]: Downloading https://files.pythonhosted.org/packages/27/d5/42ec712d2ce2d4c4e2e78d1e3b8949b9f1cefc7adb56b551ea3013749921/cvxpygen-0.2.2.tar.gz
+[2023-04-23 17:28:23] INFO root fetch - processPackages [transaction-accounts]: Downloading https://files.pythonhosted.org/packages/74/b1/a8df5902cbcad1f8baee8475762ebf01caae6bbad0e17fb29e208ad23f94/transaction-accounts-0.0.6.tar.gz
+[2023-04-23 17:28:23] INFO root fetch - processPackages [quarter-lib]: Downloading https://files.pythonhosted.org/packages/de/35/0aa9b114fe985dd877df8c9134b9ee9dff07682aa29d20ca67048428916c/quarter_lib-0.0.9.tar.gz
+[2023-04-23 17:28:23] INFO root fetch - processPackages [quarter-lib]: executing diffoscope
+[2023-04-23 17:28:23] INFO root fetch - processPackages [quarter-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quarter_lib-0.0.8.tar.gz tmp/quarter_lib-0.0.9.tar.gz --markdown 20230423/q/quarter-lib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 17:28:23] INFO root fetch - processPackages [transaction-accounts]: executing diffoscope
+[2023-04-23 17:28:23] INFO root fetch - processPackages [transaction-accounts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transaction-accounts-0.0.5.tar.gz tmp/transaction-accounts-0.0.6.tar.gz --markdown 20230423/t/transaction-accounts/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 17:28:23] INFO root fetch - processPackages [cvxpygen]: Downloading https://files.pythonhosted.org/packages/77/f0/4048fe5244c32d354f83ce8c6840b163e121ad495c8fabda79cefd68a205/cvxpygen-0.2.3.tar.gz
+[2023-04-23 17:28:23] INFO root fetch - processPackages [cvxpygen]: executing diffoscope
+[2023-04-23 17:28:23] INFO root fetch - processPackages [cvxpygen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cvxpygen-0.2.2.tar.gz tmp/cvxpygen-0.2.3.tar.gz --markdown 20230423/c/cvxpygen/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-23 17:28:24] INFO root fetch - main [MainThread]: End processing [mymlcustomtools]: success
+[2023-04-23 17:28:24] INFO root fetch - main [MainThread]: End processing [quarter-lib]: success
+[2023-04-23 17:28:24] INFO root fetch - main [MainThread]: End processing [transaction-accounts]: success
+[2023-04-23 17:28:25] INFO root fetch - main [MainThread]: End processing [cvxpygen]: success
+[2023-04-23 17:28:25] INFO root fetch - main [MainThread]: Store serial: [17823372]
