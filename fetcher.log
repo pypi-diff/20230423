@@ -10028,3 +10028,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 17:49:16] INFO root fetch - main [MainThread]: End processing [aug-tool]: success
 [2023-04-23 17:49:17] INFO root fetch - main [MainThread]: End processing [qwak-sdk]: success
 [2023-04-23 17:49:17] INFO root fetch - main [MainThread]: Store serial: [17823479]
+[2023-04-23 17:54:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823479]
+[2023-04-23 17:54:26] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-23 17:54:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovinc-client
+[2023-04-23 17:54:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ccinput
+[2023-04-23 17:54:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sphinxcontrib-exceltable
+[2023-04-23 17:54:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: embedbase
+[2023-04-23 17:54:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Conanmail
+[2023-04-23 17:54:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: srtranslator
+[2023-04-23 17:54:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: erscipcard
+[2023-04-23 17:54:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dataligo
+[2023-04-23 17:54:26] INFO root fetch - processPackages [ccinput]: New version: [1.8.0] Old Version: [1.7.2]
+[2023-04-23 17:54:26] INFO root fetch - processPackages [ovinc-client]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 17:54:26] INFO root fetch - processPackages [embedbase]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-23 17:54:26] INFO root fetch - processPackages [Conanmail]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-23 17:54:26] INFO root fetch - processPackages [erscipcard]: New version: [1.18.4] Old Version: [1.18.2]
+[2023-04-23 17:54:26] INFO root fetch - processPackages [sphinxcontrib-exceltable]: New version: [0.3.0.dev1] Old Version: [0.3.0.dev0]
+[2023-04-23 17:54:26] INFO root fetch - processPackages [dataligo]: New version: [0.7.0] Old Version: [0.6.1]
+[2023-04-23 17:54:26] INFO root fetch - processPackages [srtranslator]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-23 17:54:26] INFO root fetch - processPackages [Conanmail]: executing diffoscope
+[2023-04-23 17:54:26] INFO root fetch - processPackages [Conanmail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Conanmail-1.0.7-py3-none-any.whl.zip tmp/Conanmail-1.0.8-py3-none-any.whl.zip --markdown 20230423/C/Conanmail/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-23 17:54:26] INFO root fetch - processPackages [ccinput]: Downloading https://files.pythonhosted.org/packages/00/ce/fd444846ef7f5c23eff7aaad6e4cacb6d1b1f8a94cb103d179afda2b3c3b/ccinput-1.7.2.tar.gz
+[2023-04-23 17:54:26] INFO root fetch - processPackages [ovinc-client]: Downloading https://files.pythonhosted.org/packages/94/74/7a2c96457a3cd7ac3805bac0b5be100ebaf1e0f1bd30ad939d9570ec5aa7/ovinc_client-0.0.1.tar.gz
+[2023-04-23 17:54:26] INFO root fetch - processPackages [erscipcard]: Downloading https://files.pythonhosted.org/packages/c3/f6/33736222f7804459c2dcfb0adc4c2fe136dbd4f0c44c1a03993aebead4b8/erscipcard-1.18.4.tar.gz
+[2023-04-23 17:54:26] INFO root fetch - processPackages [srtranslator]: Downloading https://files.pythonhosted.org/packages/47/1f/719ef01a3fd797a9f3f98d7bc286b410e50c3cab4d6dc6230a7676520cd1/srtranslator-0.2.2.tar.gz
+[2023-04-23 17:54:26] INFO root fetch - processPackages [dataligo]: Downloading https://files.pythonhosted.org/packages/ae/8d/16c9c7f5aac42ce189b597f7be41f7e4ad4f4e9aa539f2b361a507b9ded4/dataligo-0.7.0.tar.gz
+[2023-04-23 17:54:26] INFO root fetch - processPackages [erscipcard]: executing diffoscope
+[2023-04-23 17:54:26] INFO root fetch - processPackages [erscipcard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/erscipcard-1.18.2.tar.gz tmp/erscipcard-1.18.4.tar.gz --markdown 20230423/e/erscipcard/1.18.2-1.18.4/diff.md --exclude *.pyd
+[2023-04-23 17:54:26] INFO root fetch - processPackages [sphinxcontrib-exceltable]: Downloading https://files.pythonhosted.org/packages/11/2a/cb2d2a47243015fd18a63c604e75d6329d33cc683be5f24ba71fbfd87440/sphinxcontrib-exceltable-0.3.0.dev1.tar.gz
+[2023-04-23 17:54:26] INFO root fetch - processPackages [embedbase]: Downloading https://files.pythonhosted.org/packages/3e/3b/d0528bb9c2edc4424399556e07dbf87214bc8c53705ae9db6c89fe00fbe7/embedbase-1.0.5.tar.gz
+[2023-04-23 17:54:26] INFO root fetch - processPackages [ccinput]: Downloading https://files.pythonhosted.org/packages/5f/a6/7b8db94f19dbd687f0c91063820f940ddd2b2c32943cdb27f3243f7ce962/ccinput-1.8.0.tar.gz
+[2023-04-23 17:54:26] INFO root fetch - processPackages [ovinc-client]: Downloading https://files.pythonhosted.org/packages/47/c6/3d8239f0b5900f04cee6d38373f2acd0a482982d62bb1577bf09fd5ec926/ovinc_client-0.0.2.tar.gz
+[2023-04-23 17:54:26] INFO root fetch - processPackages [dataligo]: executing diffoscope
+[2023-04-23 17:54:26] INFO root fetch - processPackages [dataligo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataligo-0.6.1.tar.gz tmp/dataligo-0.7.0.tar.gz --markdown 20230423/d/dataligo/0.6.1-0.7.0/diff.md --exclude *.pyd
+[2023-04-23 17:54:26] INFO root fetch - processPackages [embedbase]: executing diffoscope
+[2023-04-23 17:54:26] INFO root fetch - processPackages [embedbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedbase-1.0.4.tar.gz tmp/embedbase-1.0.5.tar.gz --markdown 20230423/e/embedbase/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-23 17:54:26] INFO root fetch - processPackages [sphinxcontrib-exceltable]: executing diffoscope
+[2023-04-23 17:54:26] INFO root fetch - processPackages [sphinxcontrib-exceltable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib-exceltable-0.3.0.dev0.tar.gz tmp/sphinxcontrib-exceltable-0.3.0.dev1.tar.gz --markdown 20230423/s/sphinxcontrib-exceltable/0.3.0.dev0-0.3.0.dev1/diff.md --exclude *.pyd
+[2023-04-23 17:54:26] INFO root fetch - processPackages [srtranslator]: Downloading https://files.pythonhosted.org/packages/17/5d/256e3a7609836ffeefdd4540dac4031a3fd075b0f6af0f4a7bf1d6bfc2e6/srtranslator-0.2.3.tar.gz
+[2023-04-23 17:54:27] INFO root fetch - processPackages [ovinc-client]: executing diffoscope
+[2023-04-23 17:54:27] INFO root fetch - processPackages [ovinc-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovinc_client-0.0.1.tar.gz tmp/ovinc_client-0.0.2.tar.gz --markdown 20230423/o/ovinc-client/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 17:54:27] INFO root fetch - processPackages [ccinput]: executing diffoscope
+[2023-04-23 17:54:27] INFO root fetch - processPackages [ccinput]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccinput-1.7.2.tar.gz tmp/ccinput-1.8.0.tar.gz --markdown 20230423/c/ccinput/1.7.2-1.8.0/diff.md --exclude *.pyd
+[2023-04-23 17:54:27] INFO root fetch - processPackages [srtranslator]: executing diffoscope
+[2023-04-23 17:54:27] INFO root fetch - processPackages [srtranslator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/srtranslator-0.2.2.tar.gz tmp/srtranslator-0.2.3.tar.gz --markdown 20230423/s/srtranslator/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-23 17:54:27] INFO root fetch - main [MainThread]: End processing [Conanmail]: success
+[2023-04-23 17:54:28] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-exceltable]: success
+[2023-04-23 17:54:28] INFO root fetch - main [MainThread]: End processing [dataligo]: success
+[2023-04-23 17:54:28] INFO root fetch - main [MainThread]: End processing [embedbase]: success
+[2023-04-23 17:54:28] INFO root fetch - main [MainThread]: End processing [erscipcard]: success
+[2023-04-23 17:54:28] INFO root fetch - main [MainThread]: End processing [ovinc-client]: success
+[2023-04-23 17:54:28] INFO root fetch - main [MainThread]: End processing [srtranslator]: success
+[2023-04-23 17:54:28] INFO root fetch - main [MainThread]: End processing [ccinput]: success
+[2023-04-23 17:54:28] INFO root fetch - main [MainThread]: Store serial: [17823512]
