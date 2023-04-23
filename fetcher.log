@@ -2794,3 +2794,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 05:42:03] INFO root fetch - main [MainThread]: End processing [gehomesdk]: success
 [2023-04-23 05:42:03] INFO root fetch - main [MainThread]: End processing [pgx]: success
 [2023-04-23 05:42:03] INFO root fetch - main [MainThread]: Store serial: [17819284]
+[2023-04-23 05:47:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819284]
+[2023-04-23 05:47:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-23 05:47:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dfa-mutate
+[2023-04-23 05:47:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-steam-game-status
+[2023-04-23 05:47:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: envd
+[2023-04-23 05:47:13] INFO root fetch - processPackages [nonebot-plugin-steam-game-status]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-23 05:47:13] WARNING root fetch - processPackages [dfa-mutate]: Skipping, unable to determine old version
+[2023-04-23 05:47:13] INFO root fetch - main [MainThread]: End processing [dfa-mutate] error
+[2023-04-23 05:47:13] INFO root fetch - processPackages [envd]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-23 05:47:14] INFO root fetch - processPackages [nonebot-plugin-steam-game-status]: Downloading https://files.pythonhosted.org/packages/83/4a/dbaafc8045444daae2757a5cc067e93415960402f34f8df78986392ab70c/nonebot_plugin_steam_game_status-0.0.7.tar.gz
+[2023-04-23 05:47:14] INFO root fetch - processPackages [nonebot-plugin-steam-game-status]: Downloading https://files.pythonhosted.org/packages/a4/e7/e1388c4d6eadd3d3b78a1b544cd3cc764b39430d1ef35b20b9a7523a26a7/nonebot_plugin_steam_game_status-0.0.8.tar.gz
+[2023-04-23 05:47:14] INFO root fetch - processPackages [envd]: executing diffoscope
+[2023-04-23 05:47:14] INFO root fetch - processPackages [envd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/envd-0.3.8.tar.gz tmp/envd-0.3.9.tar.gz --markdown 20230423/e/envd/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-23 05:47:14] INFO root fetch - processPackages [nonebot-plugin-steam-game-status]: executing diffoscope
+[2023-04-23 05:47:14] INFO root fetch - processPackages [nonebot-plugin-steam-game-status]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_steam_game_status-0.0.7.tar.gz tmp/nonebot_plugin_steam_game_status-0.0.8.tar.gz --markdown 20230423/n/nonebot-plugin-steam-game-status/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-23 05:47:15] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-steam-game-status]: success
+[2023-04-23 05:48:32] INFO root fetch - main [MainThread]: End processing [envd]: success
+[2023-04-23 05:48:32] INFO root fetch - main [MainThread]: Store serial: [17819298]
