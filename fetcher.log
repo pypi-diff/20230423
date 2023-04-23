@@ -10929,3 +10929,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 19:10:14] INFO root fetch - main [MainThread]: End processing [saffier]: success
 [2023-04-23 19:10:14] INFO root fetch - main [MainThread]: End processing [jupyterlab-ui-profiler]: success
 [2023-04-23 19:10:14] INFO root fetch - main [MainThread]: Store serial: [17824085]
+[2023-04-23 19:15:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17824085]
+[2023-04-23 19:15:23] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-23 19:15:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ddd-subplots
+[2023-04-23 19:15:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: InstructEmbedding
+[2023-04-23 19:15:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plugnplai
+[2023-04-23 19:15:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: AEEGGOOSS
+[2023-04-23 19:15:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: newtgw
+[2023-04-23 19:15:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ssb-altinn-python
+[2023-04-23 19:15:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ARC-Alkali-Rydberg-Calculator
+[2023-04-23 19:15:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: flet-material
+[2023-04-23 19:15:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: hoodat-vertex-components
+[2023-04-23 19:15:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: github3.py
+[2023-04-23 19:15:23] INFO root fetch - processPackages [ddd-subplots]: New version: [1.0.9] Old Version: [1.0.7]
+[2023-04-23 19:15:23] INFO root fetch - processPackages [AEEGGOOSS]: New version: [0.2] Old Version: [0.1]
+[2023-04-23 19:15:23] WARNING root fetch - processPackages [plugnplai]: Skipping, unable to determine old version
+[2023-04-23 19:15:23] WARNING root fetch - processPackages [InstructEmbedding]: Skipping, unable to determine old version
+[2023-04-23 19:15:23] INFO root fetch - main [MainThread]: End processing [plugnplai] error
+[2023-04-23 19:15:23] INFO root fetch - main [MainThread]: End processing [InstructEmbedding] error
+[2023-04-23 19:15:23] WARNING root fetch - processPackages [flet-material]: Skipping, unable to determine old version
+[2023-04-23 19:15:23] INFO root fetch - processPackages [ssb-altinn-python]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-23 19:15:23] INFO root fetch - main [MainThread]: End processing [flet-material] error
+[2023-04-23 19:15:23] INFO root fetch - processPackages [hoodat-vertex-components]: New version: [1.6.6] Old Version: [1.6.5]
+[2023-04-23 19:15:23] INFO root fetch - processPackages [ARC-Alkali-Rydberg-Calculator]: New version: [3.3.0] Old Version: [3.2.9]
+[2023-04-23 19:15:23] WARNING root fetch - processPackages [newtgw]: Skipping, unable to determine old version
+[2023-04-23 19:15:23] INFO root fetch - main [MainThread]: End processing [newtgw] error
+[2023-04-23 19:15:23] INFO root fetch - processPackages [github3.py]: New version: [4.0.0] Old Version: [3.2.0]
+[2023-04-23 19:15:23] INFO root fetch - processPackages [ddd-subplots]: Downloading https://files.pythonhosted.org/packages/de/12/7e1d6756e0efbd3035aa1ba7d7c892767810fdec9af3c455fc36e7208f3b/ddd_subplots-1.0.7.tar.gz
+[2023-04-23 19:15:23] INFO root fetch - processPackages [AEEGGOOSS]: Downloading https://files.pythonhosted.org/packages/b4/8c/bb11004341e38280c8a176f837263902e39ecffa2c1edbc8daaa3e762c03/AEEGGOOSS-0.1.tar.gz
+[2023-04-23 19:15:23] INFO root fetch - processPackages [hoodat-vertex-components]: Downloading https://files.pythonhosted.org/packages/71/fc/278b099231e7a4bbbb10fc9bbd26ec4f7869832989db6b274e47985eec78/hoodat_vertex_components-1.6.6.tar.gz
+[2023-04-23 19:15:23] INFO root fetch - processPackages [ARC-Alkali-Rydberg-Calculator]: Downloading https://files.pythonhosted.org/packages/32/85/a1756313bcdf83b31877ef0cffd6f5323dcc9cbbb3f7648b03a9feaa3b7b/ARC-Alkali-Rydberg-Calculator-3.2.9.tar.gz
+[2023-04-23 19:15:23] INFO root fetch - processPackages [ssb-altinn-python]: Downloading https://files.pythonhosted.org/packages/7e/ab/0a3e592a6b2a91c192ce96c95a8795ce3c4dedb8e01261a8a7373fa8e614/ssb_altinn_python-0.0.8.tar.gz
+[2023-04-23 19:15:23] INFO root fetch - processPackages [github3.py]: Downloading https://files.pythonhosted.org/packages/94/6d/76b2c72bad2de8f8966406dfdd26e05c951d6eec027fd3a383c2680a48bd/github3.py-3.2.0.tar.gz
+[2023-04-23 19:15:23] WARNING root fetch - processPackages [ARC-Alkali-Rydberg-Calculator]: Skipping package: exceeds size limit 26480807>=10485760
+[2023-04-23 19:15:23] INFO root fetch - main [MainThread]: End processing [ARC-Alkali-Rydberg-Calculator] error
+[2023-04-23 19:15:23] INFO root fetch - processPackages [ssb-altinn-python]: executing diffoscope
+[2023-04-23 19:15:23] INFO root fetch - processPackages [ssb-altinn-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssb_altinn_python-0.0.7.tar.gz tmp/ssb_altinn_python-0.0.8.tar.gz --markdown 20230423/s/ssb-altinn-python/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-23 19:15:23] WARNING root fetch - processPackages [github3.py]: Skipping package: exceeds size limit 35278666>=10485760
+[2023-04-23 19:15:23] INFO root fetch - main [MainThread]: End processing [github3.py] error
+[2023-04-23 19:15:23] INFO root fetch - processPackages [ddd-subplots]: Downloading https://files.pythonhosted.org/packages/63/f7/db4147016721344a25472ea8d30ffb64d7f90f468cf24a112e13bd30ef05/ddd_subplots-1.0.9.tar.gz
+[2023-04-23 19:15:23] INFO root fetch - processPackages [AEEGGOOSS]: Downloading https://files.pythonhosted.org/packages/f1/f3/9d0bc52a697beae2419d6f3b49da66d3a59120cf4c9c0d5910aa2e1d5125/AEEGGOOSS-0.2.tar.gz
+[2023-04-23 19:15:23] INFO root fetch - processPackages [ddd-subplots]: executing diffoscope
+[2023-04-23 19:15:23] INFO root fetch - processPackages [ddd-subplots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddd_subplots-1.0.7.tar.gz tmp/ddd_subplots-1.0.9.tar.gz --markdown 20230423/d/ddd-subplots/1.0.7-1.0.9/diff.md --exclude *.pyd
+[2023-04-23 19:15:23] INFO root fetch - processPackages [AEEGGOOSS]: executing diffoscope
+[2023-04-23 19:15:23] INFO root fetch - processPackages [AEEGGOOSS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AEEGGOOSS-0.1.tar.gz tmp/AEEGGOOSS-0.2.tar.gz --markdown 20230423/A/AEEGGOOSS/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-23 19:15:24] INFO root fetch - processPackages [hoodat-vertex-components]: executing diffoscope
+[2023-04-23 19:15:24] INFO root fetch - processPackages [hoodat-vertex-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hoodat_vertex_components-1.6.5.tar.gz tmp/hoodat_vertex_components-1.6.6.tar.gz --markdown 20230423/h/hoodat-vertex-components/1.6.5-1.6.6/diff.md --exclude *.pyd
+[2023-04-23 19:15:24] INFO root fetch - main [MainThread]: End processing [ssb-altinn-python]: success
+[2023-04-23 19:15:24] INFO root fetch - main [MainThread]: End processing [AEEGGOOSS]: success
+[2023-04-23 19:15:25] INFO root fetch - main [MainThread]: End processing [ddd-subplots]: success
+[2023-04-23 19:15:26] INFO root fetch - main [MainThread]: End processing [hoodat-vertex-components]: success
+[2023-04-23 19:15:26] INFO root fetch - main [MainThread]: Store serial: [17824124]
