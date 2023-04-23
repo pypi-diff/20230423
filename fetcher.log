@@ -2279,3 +2279,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 04:18:13] INFO root fetch - main [MainThread]: End processing [networkx-robustness]: success
 [2023-04-23 04:18:13] INFO root fetch - main [MainThread]: End processing [pyllamacpp]: success
 [2023-04-23 04:18:13] INFO root fetch - main [MainThread]: Store serial: [17818918]
+[2023-04-23 04:23:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818918]
+[2023-04-23 04:23:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-23 04:23:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rogue-tools
+[2023-04-23 04:23:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: usepy
+[2023-04-23 04:23:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Bgolearn
+[2023-04-23 04:23:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CommonlyTools
+[2023-04-23 04:23:23] INFO root fetch - processPackages [rogue-tools]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-23 04:23:23] INFO root fetch - processPackages [usepy]: New version: [0.1.45] Old Version: [0.1.44]
+[2023-04-23 04:23:23] WARNING root fetch - processPackages [CommonlyTools]: Skipping, unable to determine old version
+[2023-04-23 04:23:23] INFO root fetch - main [MainThread]: End processing [CommonlyTools] error
+[2023-04-23 04:23:23] INFO root fetch - processPackages [Bgolearn]: New version: [2.0.0] Old Version: [1.5.1]
+[2023-04-23 04:23:23] INFO root fetch - processPackages [rogue-tools]: Downloading https://files.pythonhosted.org/packages/37/88/160e6186cc66081c211dca0073ba15132e44d50e96e89e07d36f0921e8c0/rogue_tools-1.0.8.tar.gz
+[2023-04-23 04:23:23] INFO root fetch - processPackages [Bgolearn]: Downloading https://files.pythonhosted.org/packages/f4/c2/d4a6ec60ca472baaf4c85b13fa954638fba729ea8605aeef0406dea94058/Bgolearn-1.5.1.tar.gz
+[2023-04-23 04:23:23] INFO root fetch - processPackages [usepy]: Downloading https://files.pythonhosted.org/packages/f7/f8/b1f45c2783fb70c51d6d2fa836a5f7bae3c61fad72e7e53540fe34c09d94/usepy-0.1.44.tar.gz
+[2023-04-23 04:23:23] INFO root fetch - processPackages [rogue-tools]: executing diffoscope
+[2023-04-23 04:23:23] INFO root fetch - processPackages [rogue-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rogue_tools-1.0.7.tar.gz tmp/rogue_tools-1.0.8.tar.gz --markdown 20230423/r/rogue-tools/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-23 04:23:23] INFO root fetch - processPackages [Bgolearn]: Downloading https://files.pythonhosted.org/packages/4b/d8/94957f205c476e60d83583a96ffdd1df2c0d277011bceb5a123eedcac0ea/Bgolearn-2.0.0.tar.gz
+[2023-04-23 04:23:23] INFO root fetch - processPackages [usepy]: Downloading https://files.pythonhosted.org/packages/b0/01/7edbda743d5c354d1c65c442fb709b1cc70989a3386668ec1eb22c66bde2/usepy-0.1.45.tar.gz
+[2023-04-23 04:23:23] INFO root fetch - processPackages [Bgolearn]: executing diffoscope
+[2023-04-23 04:23:23] INFO root fetch - processPackages [Bgolearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bgolearn-1.5.1.tar.gz tmp/Bgolearn-2.0.0.tar.gz --markdown 20230423/B/Bgolearn/1.5.1-2.0.0/diff.md --exclude *.pyd
+[2023-04-23 04:23:23] INFO root fetch - processPackages [usepy]: executing diffoscope
+[2023-04-23 04:23:23] INFO root fetch - processPackages [usepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usepy-0.1.44.tar.gz tmp/usepy-0.1.45.tar.gz --markdown 20230423/u/usepy/0.1.44-0.1.45/diff.md --exclude *.pyd
+[2023-04-23 04:23:24] INFO root fetch - main [MainThread]: End processing [rogue-tools]: success
+[2023-04-23 04:23:24] INFO root fetch - main [MainThread]: End processing [Bgolearn]: success
+[2023-04-23 04:23:24] INFO root fetch - main [MainThread]: End processing [usepy]: success
+[2023-04-23 04:23:24] INFO root fetch - main [MainThread]: Store serial: [17818970]
