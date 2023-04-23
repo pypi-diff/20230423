@@ -5021,3 +5021,58 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 10:03:24] INFO root fetch - main [MainThread]: End processing [yashpy]: success
 [2023-04-23 10:03:50] INFO root fetch - main [MainThread]: End processing [labelu]: success
 [2023-04-23 10:03:50] INFO root fetch - main [MainThread]: Store serial: [17820516]
+[2023-04-23 10:08:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820516]
+[2023-04-23 10:08:59] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-23 10:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FastTtanslate
+[2023-04-23 10:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hallon
+[2023-04-23 10:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hey-mindsdb
+[2023-04-23 10:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyglove
+[2023-04-23 10:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hadloc
+[2023-04-23 10:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: common-test
+[2023-04-23 10:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: yashpy
+[2023-04-23 10:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mxdev
+[2023-04-23 10:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ez-toolkits
+[2023-04-23 10:08:59] INFO root fetch - processPackages [hadloc]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 10:08:59] WARNING root fetch - processPackages [hallon]: Skipping, unable to determine old version
+[2023-04-23 10:08:59] WARNING root fetch - processPackages [FastTtanslate]: Skipping, unable to determine old version
+[2023-04-23 10:08:59] INFO root fetch - main [MainThread]: End processing [hallon] error
+[2023-04-23 10:08:59] INFO root fetch - main [MainThread]: End processing [FastTtanslate] error
+[2023-04-23 10:08:59] INFO root fetch - processPackages [hey-mindsdb]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 10:08:59] INFO root fetch - processPackages [pyglove]: New version: [0.3.1.dev20230423] Old Version: [0.3.1.dev20230422]
+[2023-04-23 10:08:59] INFO root fetch - processPackages [hadloc]: Downloading https://files.pythonhosted.org/packages/6f/63/4818d4b36925ca84e37dda1e5b7a47a4d7dc27480273dc96281d594ac689/hadloc-0.1.0.tar.gz
+[2023-04-23 10:09:00] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/59/0d/4826770c3053623037c2714cddf78748f740d2b0853d7fd93b0ffd1f8688/pyglove-0.3.1.dev20230423.tar.gz
+[2023-04-23 10:09:00] INFO root fetch - processPackages [hadloc]: Downloading https://files.pythonhosted.org/packages/5c/a3/f28bd65278d181b7ad8fab16a0f0a10c844e8028aa9be1416c10912694fe/hadloc-0.1.1.tar.gz
+[2023-04-23 10:09:00] INFO root fetch - processPackages [hadloc]: executing diffoscope
+[2023-04-23 10:09:00] INFO root fetch - processPackages [hadloc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hadloc-0.1.0.tar.gz tmp/hadloc-0.1.1.tar.gz --markdown 20230423/h/hadloc/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 10:09:00] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2023-04-23 10:09:00] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.3.1.dev20230422.tar.gz tmp/pyglove-0.3.1.dev20230423.tar.gz --markdown 20230423/p/pyglove/0.3.1.dev20230422-0.3.1.dev20230423/diff.md --exclude *.pyd
+[2023-04-23 10:09:00] INFO root fetch - processPackages [yashpy]: New version: [0.9] Old Version: [0.8]
+[2023-04-23 10:09:00] INFO root fetch - processPackages [common-test]: New version: [29.9.21] Old Version: [29.9.20.1]
+[2023-04-23 10:09:00] INFO root fetch - processPackages [ez-toolkits]: New version: [2.9.7] Old Version: [2.9.6]
+[2023-04-23 10:09:00] INFO root fetch - processPackages [mxdev]: New version: [3.0.0b3] Old Version: [3.0.0b2]
+[2023-04-23 10:09:00] INFO root fetch - processPackages [common-test]: Downloading https://files.pythonhosted.org/packages/94/72/8a9fe04e8b27c554552bb17c24e2b2368bb8f78af107d7f0f36d57ca9672/common-test-29.9.21.tar.gz
+[2023-04-23 10:09:00] INFO root fetch - processPackages [common-test]: executing diffoscope
+[2023-04-23 10:09:00] INFO root fetch - processPackages [common-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/common-test-29.9.20.1.tar.gz tmp/common-test-29.9.21.tar.gz --markdown 20230423/c/common-test/29.9.20.1-29.9.21/diff.md --exclude *.pyd
+[2023-04-23 10:09:00] INFO root fetch - processPackages [ez-toolkits]: Downloading https://files.pythonhosted.org/packages/bc/18/52475c72c1487b0685563213ed4bbb963b09d281bd2572eab413f190dd18/ez-toolkits-2.9.6.tar.gz
+[2023-04-23 10:09:00] INFO root fetch - processPackages [mxdev]: Downloading https://files.pythonhosted.org/packages/7b/98/e661ed84624b7ebb9e798d98e94d48bd43754586b724a48ef197821fd31e/mxdev-3.0.0b2-py3-none-any.whl
+[2023-04-23 10:09:00] INFO root fetch - processPackages [yashpy]: Downloading https://files.pythonhosted.org/packages/e8/95/87ebab6d7114f4d3f4ae6d1cc97282d31181e5683b0f24d81f59dc8971ae/yashpy-0.9.tar.gz
+[2023-04-23 10:09:00] INFO root fetch - processPackages [hey-mindsdb]: Downloading https://files.pythonhosted.org/packages/96/b1/c5fc67bb324972845ac7b7a072f852fdb10e76ba32e7d6abc90802c3852a/hey-mindsdb-0.0.1.tar.gz
+[2023-04-23 10:09:00] INFO root fetch - processPackages [yashpy]: executing diffoscope
+[2023-04-23 10:09:00] INFO root fetch - processPackages [yashpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yashpy-0.8.tar.gz tmp/yashpy-0.9.tar.gz --markdown 20230423/y/yashpy/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-23 10:09:00] INFO root fetch - processPackages [mxdev]: Downloading https://files.pythonhosted.org/packages/c3/8d/8af925849216a6f31e8033f24b88a51566bbf1a17d276ee00c42959280ca/mxdev-3.0.0b3.tar.gz
+[2023-04-23 10:09:01] INFO root fetch - processPackages [hey-mindsdb]: Downloading https://files.pythonhosted.org/packages/17/6c/bac6a1687b75e7b4dead1cd940a9605a0e44e56e3fbd24992a45fc78dd5e/hey-mindsdb-0.0.2.tar.gz
+[2023-04-23 10:09:01] INFO root fetch - processPackages [mxdev]: executing diffoscope
+[2023-04-23 10:09:01] INFO root fetch - processPackages [mxdev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mxdev-3.0.0b2-py3-none-any.whl.zip tmp/mxdev-3.0.0b3.tar.gz --markdown 20230423/m/mxdev/3.0.0b2-3.0.0b3/diff.md --exclude *.pyd
+[2023-04-23 10:09:01] INFO root fetch - processPackages [ez-toolkits]: Downloading https://files.pythonhosted.org/packages/06/25/a6b481586f42041157f6e264a0af3ae1f76324e7948b6d903b4bef82e168/ez-toolkits-2.9.7.tar.gz
+[2023-04-23 10:09:01] INFO root fetch - processPackages [hey-mindsdb]: executing diffoscope
+[2023-04-23 10:09:01] INFO root fetch - processPackages [hey-mindsdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hey-mindsdb-0.0.1.tar.gz tmp/hey-mindsdb-0.0.2.tar.gz --markdown 20230423/h/hey-mindsdb/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 10:09:01] INFO root fetch - processPackages [ez-toolkits]: executing diffoscope
+[2023-04-23 10:09:01] INFO root fetch - processPackages [ez-toolkits]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ez-toolkits-2.9.6.tar.gz tmp/ez-toolkits-2.9.7.tar.gz --markdown 20230423/e/ez-toolkits/2.9.6-2.9.7/diff.md --exclude *.pyd
+[2023-04-23 10:09:01] INFO root fetch - main [MainThread]: End processing [hadloc]: success
+[2023-04-23 10:09:02] INFO root fetch - main [MainThread]: End processing [yashpy]: success
+[2023-04-23 10:09:02] INFO root fetch - main [MainThread]: End processing [mxdev]: success
+[2023-04-23 10:09:02] INFO root fetch - main [MainThread]: End processing [hey-mindsdb]: success
+[2023-04-23 10:09:02] INFO root fetch - main [MainThread]: End processing [common-test]: success
+[2023-04-23 10:09:02] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2023-04-23 10:09:03] INFO root fetch - main [MainThread]: End processing [ez-toolkits]: success
+[2023-04-23 10:09:03] INFO root fetch - main [MainThread]: Store serial: [17820548]
