@@ -10177,3 +10177,94 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 18:04:57] INFO root fetch - main [MainThread]: End processing [giftmaster]: success
 [2023-04-23 18:06:54] INFO root fetch - main [MainThread]: End processing [cfn-lint]: success
 [2023-04-23 18:06:54] INFO root fetch - main [MainThread]: Store serial: [17823565]
+[2023-04-23 18:11:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823565]
+[2023-04-23 18:12:03] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-23 18:12:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DRSlib-DavidRodriguezSoaresCUI
+[2023-04-23 18:12:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: neuralogic
+[2023-04-23 18:12:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: t-python-markdown
+[2023-04-23 18:12:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yourspackage
+[2023-04-23 18:12:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: notification-service-nightly
+[2023-04-23 18:12:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ai-flow-nightly
+[2023-04-23 18:12:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bigtest-automator
+[2023-04-23 18:12:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: osmrx
+[2023-04-23 18:12:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: xztrainer
+[2023-04-23 18:12:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: Conanmail
+[2023-04-23 18:12:03] INFO root fetch - processPackages [t-python-markdown]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-04-23 18:12:03] WARNING root fetch - processPackages [yourspackage]: Skipping, unable to determine old version
+[2023-04-23 18:12:03] INFO root fetch - processPackages [yourspackage]: Start processing: ocp-tessellate
+[2023-04-23 18:12:03] INFO root fetch - main [MainThread]: End processing [yourspackage] error
+[2023-04-23 18:12:03] INFO root fetch - processPackages [xztrainer]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-23 18:12:03] INFO root fetch - processPackages [DRSlib-DavidRodriguezSoaresCUI]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-04-23 18:12:03] INFO root fetch - processPackages [bigtest-automator]: New version: [0.2] Old Version: [0.1]
+[2023-04-23 18:12:03] INFO root fetch - processPackages [Conanmail]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-23 18:12:03] INFO root fetch - processPackages [neuralogic]: New version: [0.7.6] Old Version: [0.7.5]
+[2023-04-23 18:12:03] INFO root fetch - processPackages [osmrx]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 18:12:03] INFO root fetch - processPackages [ocp-tessellate]: New version: [1.0.1] Old Version: [1.0.0rc9]
+[2023-04-23 18:12:03] INFO root fetch - processPackages [Conanmail]: executing diffoscope
+[2023-04-23 18:12:03] INFO root fetch - processPackages [Conanmail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Conanmail-1.0.7-py3-none-any.whl.zip tmp/Conanmail-1.0.8-py3-none-any.whl.zip --markdown 20230423/C/Conanmail/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-23 18:12:03] INFO root fetch - processPackages [ai-flow-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-23 18:12:03] INFO root fetch - processPackages [notification-service-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-23 18:12:03] INFO root fetch - processPackages [bigtest-automator]: Downloading https://files.pythonhosted.org/packages/bf/a1/4ea16530d9dc8d017cf0daf2ef20a4fab1bbdc40ae809dae01b4966e3c54/bigtest_automator-0.1.tar.gz
+[2023-04-23 18:12:03] INFO root fetch - processPackages [ocp-tessellate]: Downloading https://files.pythonhosted.org/packages/6c/7b/84c24b8094665be27b9cf8dbff580c23160747a8038f19b298b99f33823b/ocp_tessellate-1.0.1.tar.gz
+[2023-04-23 18:12:03] INFO root fetch - processPackages [neuralogic]: Downloading https://files.pythonhosted.org/packages/e4/26/681138f906cc9bddb058d9fe7fabc398d9f323c2c300f3299d4b34504687/neuralogic-0.7.5.tar.gz
+[2023-04-23 18:12:03] INFO root fetch - processPackages [xztrainer]: Downloading https://files.pythonhosted.org/packages/8b/fd/09ecc193b6cd519a3c0ba428523c082db48c7659f7b191076588e4f92ea4/xztrainer-0.9.3.tar.gz
+[2023-04-23 18:12:03] INFO root fetch - processPackages [t-python-markdown]: Downloading https://files.pythonhosted.org/packages/18/0c/b237f9ca5a31b2f615d4f2f8bff0bb3ebb5dd2bbe11f39e989c9d4cd2975/t_python_markdown-1.3.1.tar.gz
+[2023-04-23 18:12:03] INFO root fetch - processPackages [DRSlib-DavidRodriguezSoaresCUI]: Downloading https://files.pythonhosted.org/packages/63/f8/67a934e24f62659666758359256261c54aed0d57bb01de7f4237c5e58e2c/DRSlib-DavidRodriguezSoaresCUI-0.7.3.tar.gz
+[2023-04-23 18:12:03] INFO root fetch - processPackages [osmrx]: Downloading https://files.pythonhosted.org/packages/32/dd/c27f40ec0f60a7dcc94af3213b7c993e705424117cd10b2545b360bbdefb/osmrx-0.1.1.tar.gz
+[2023-04-23 18:12:03] INFO root fetch - processPackages [ocp-tessellate]: executing diffoscope
+[2023-04-23 18:12:03] INFO root fetch - processPackages [ocp-tessellate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ocp_tessellate-1.0.0rc9.tar.gz tmp/ocp_tessellate-1.0.1.tar.gz --markdown 20230423/o/ocp-tessellate/1.0.0rc9-1.0.1/diff.md --exclude *.pyd
+[2023-04-23 18:12:03] INFO root fetch - processPackages [ai-flow-nightly]: executing diffoscope
+[2023-04-23 18:12:03] INFO root fetch - processPackages [ai-flow-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_flow_nightly-2023.4.8.tar.gz tmp/ai_flow_nightly-2023.4.9.tar.gz --markdown 20230423/a/ai-flow-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-23 18:12:03] INFO root fetch - processPackages [xztrainer]: Downloading https://files.pythonhosted.org/packages/c0/ef/571da903d7bcd27a4e396edfd8c772478cd0e92c227a8a3fa9e70853dbb8/xztrainer-0.9.4.tar.gz
+[2023-04-23 18:12:03] INFO root fetch - processPackages [bigtest-automator]: Downloading https://files.pythonhosted.org/packages/0f/a2/9a6da8597f1010da9348f63f48ba73a314936b58a53fe4202968eb58a2c4/bigtest_automator-0.2.tar.gz
+[2023-04-23 18:12:03] INFO root fetch - processPackages [t-python-markdown]: executing diffoscope
+[2023-04-23 18:12:03] INFO root fetch - processPackages [t-python-markdown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/t_python_markdown-1.3.0.tar.gz tmp/t_python_markdown-1.3.1.tar.gz --markdown 20230423/t/t-python-markdown/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-04-23 18:12:03] INFO root fetch - processPackages [osmrx]: executing diffoscope
+[2023-04-23 18:12:03] INFO root fetch - processPackages [osmrx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osmrx-0.1.0.tar.gz tmp/osmrx-0.1.1.tar.gz --markdown 20230423/o/osmrx/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 18:12:03] INFO root fetch - processPackages [DRSlib-DavidRodriguezSoaresCUI]: executing diffoscope
+[2023-04-23 18:12:03] INFO root fetch - processPackages [DRSlib-DavidRodriguezSoaresCUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DRSlib-DavidRodriguezSoaresCUI-0.7.2.tar.gz tmp/DRSlib-DavidRodriguezSoaresCUI-0.7.3.tar.gz --markdown 20230423/D/DRSlib-DavidRodriguezSoaresCUI/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-04-23 18:12:04] INFO root fetch - processPackages [bigtest-automator]: executing diffoscope
+[2023-04-23 18:12:04] INFO root fetch - processPackages [bigtest-automator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigtest_automator-0.1.tar.gz tmp/bigtest_automator-0.2.tar.gz --markdown 20230423/b/bigtest-automator/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-23 18:12:04] INFO root fetch - processPackages [xztrainer]: executing diffoscope
+[2023-04-23 18:12:04] INFO root fetch - processPackages [xztrainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xztrainer-0.9.3.tar.gz tmp/xztrainer-0.9.4.tar.gz --markdown 20230423/x/xztrainer/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-23 18:12:04] INFO root fetch - processPackages [neuralogic]: Downloading https://files.pythonhosted.org/packages/28/66/7cf1e545789ee0e370a550aaa707cc0ca1d58837aa9de8a96f5e66667347/neuralogic-0.7.6.tar.gz
+[2023-04-23 18:12:04] INFO root fetch - processPackages [notification-service-nightly]: executing diffoscope
+[2023-04-23 18:12:04] INFO root fetch - processPackages [notification-service-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notification_service_nightly-2023.4.8.tar.gz tmp/notification_service_nightly-2023.4.9.tar.gz --markdown 20230423/n/notification-service-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-23 18:12:04] INFO root fetch - processPackages [neuralogic]: executing diffoscope
+[2023-04-23 18:12:04] INFO root fetch - processPackages [neuralogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuralogic-0.7.5.tar.gz tmp/neuralogic-0.7.6.tar.gz --markdown 20230423/n/neuralogic/0.7.5-0.7.6/diff.md --exclude *.pyd
+[2023-04-23 18:12:04] INFO root fetch - processPackages [Conanmail]: Start processing: openshield
+[2023-04-23 18:12:04] INFO root fetch - main [MainThread]: End processing [Conanmail]: success
+[2023-04-23 18:12:04] WARNING root fetch - processPackages [openshield]: Skipping, unable to determine old version
+[2023-04-23 18:12:04] INFO root fetch - processPackages [openshield]: Start processing: asynctranslator
+[2023-04-23 18:12:04] INFO root fetch - main [MainThread]: End processing [openshield] error
+[2023-04-23 18:12:04] WARNING root fetch - processPackages [asynctranslator]: Skipping, unable to determine old version
+[2023-04-23 18:12:04] INFO root fetch - processPackages [asynctranslator]: Start processing: PyPDFForm
+[2023-04-23 18:12:04] INFO root fetch - main [MainThread]: End processing [asynctranslator] error
+[2023-04-23 18:12:04] INFO root fetch - processPackages [PyPDFForm]: New version: [1.2.8] Old Version: [1.2.7]
+[2023-04-23 18:12:05] INFO root fetch - processPackages [PyPDFForm]: Downloading https://files.pythonhosted.org/packages/82/41/e5be399283fca9ee99240dce166006689b93f38a89cd5128058776f4bc30/PyPDFForm-1.2.7.tar.gz
+[2023-04-23 18:12:05] INFO root fetch - processPackages [ocp-tessellate]: Start processing: teg-CCC
+[2023-04-23 18:12:05] INFO root fetch - main [MainThread]: End processing [ocp-tessellate]: success
+[2023-04-23 18:12:05] WARNING root fetch - processPackages [teg-CCC]: Skipping, unable to determine old version
+[2023-04-23 18:12:05] INFO root fetch - processPackages [teg-CCC]: Start processing: AegosV1
+[2023-04-23 18:12:05] INFO root fetch - main [MainThread]: End processing [teg-CCC] error
+[2023-04-23 18:12:05] WARNING root fetch - processPackages [AegosV1]: Skipping, unable to determine old version
+[2023-04-23 18:12:05] INFO root fetch - processPackages [AegosV1]: Start processing: naturalspeech2-pytorch
+[2023-04-23 18:12:05] INFO root fetch - main [MainThread]: End processing [AegosV1] error
+[2023-04-23 18:12:05] INFO root fetch - processPackages [naturalspeech2-pytorch]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-23 18:12:05] INFO root fetch - processPackages [PyPDFForm]: Downloading https://files.pythonhosted.org/packages/8a/83/a40a40c423f1dbf6dac7af6e6f2e3c8b6778a4e289a7a8f7a35c009b42be/PyPDFForm-1.2.8.tar.gz
+[2023-04-23 18:12:05] INFO root fetch - processPackages [PyPDFForm]: executing diffoscope
+[2023-04-23 18:12:05] INFO root fetch - processPackages [PyPDFForm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyPDFForm-1.2.7.tar.gz tmp/PyPDFForm-1.2.8.tar.gz --markdown 20230423/P/PyPDFForm/1.2.7-1.2.8/diff.md --exclude *.pyd
+[2023-04-23 18:12:05] INFO root fetch - processPackages [naturalspeech2-pytorch]: Downloading https://files.pythonhosted.org/packages/0b/39/88620acf0061ef3d945d087274ede2a25265330b4662c64dd6444d78051b/naturalspeech2-pytorch-0.0.4.tar.gz
+[2023-04-23 18:12:05] INFO root fetch - main [MainThread]: End processing [t-python-markdown]: success
+[2023-04-23 18:12:05] INFO root fetch - processPackages [naturalspeech2-pytorch]: executing diffoscope
+[2023-04-23 18:12:05] INFO root fetch - processPackages [naturalspeech2-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naturalspeech2-pytorch-0.0.3.tar.gz tmp/naturalspeech2-pytorch-0.0.4.tar.gz --markdown 20230423/n/naturalspeech2-pytorch/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-23 18:12:05] INFO root fetch - main [MainThread]: End processing [DRSlib-DavidRodriguezSoaresCUI]: success
+[2023-04-23 18:12:05] INFO root fetch - main [MainThread]: End processing [xztrainer]: success
+[2023-04-23 18:12:06] INFO root fetch - main [MainThread]: End processing [bigtest-automator]: success
+[2023-04-23 18:12:06] INFO root fetch - main [MainThread]: End processing [osmrx]: success
+[2023-04-23 18:12:06] INFO root fetch - main [MainThread]: End processing [PyPDFForm]: success
+[2023-04-23 18:12:06] INFO root fetch - main [MainThread]: End processing [notification-service-nightly]: success
+[2023-04-23 18:12:06] INFO root fetch - main [MainThread]: End processing [naturalspeech2-pytorch]: success
+[2023-04-23 18:12:08] INFO root fetch - main [MainThread]: End processing [neuralogic]: success
+[2023-04-23 18:12:09] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
+[2023-04-23 18:12:09] INFO root fetch - main [MainThread]: Store serial: [17823625]
