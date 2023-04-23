@@ -13774,3 +13774,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 23:08:28] INFO root fetch - main [MainThread]: End processing [clipped]: success
 [2023-04-23 23:08:29] INFO root fetch - main [MainThread]: End processing [python-taiga]: success
 [2023-04-23 23:08:29] INFO root fetch - main [MainThread]: Store serial: [17825888]
+[2023-04-23 23:13:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825888]
+[2023-04-23 23:13:38] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 23:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: daxpdf
+[2023-04-23 23:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tickerdax
+[2023-04-23 23:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jsonclass
+[2023-04-23 23:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: application-properties
+[2023-04-23 23:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: priceloop-api
+[2023-04-23 23:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: k8s-audit-filter
+[2023-04-23 23:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sneakpeek-py
+[2023-04-23 23:13:38] WARNING root fetch - processPackages [jsonclass]: Skipping, unable to determine old version
+[2023-04-23 23:13:38] INFO root fetch - main [MainThread]: End processing [jsonclass] error
+[2023-04-23 23:13:38] WARNING root fetch - processPackages [daxpdf]: Skipping, unable to determine old version
+[2023-04-23 23:13:38] INFO root fetch - main [MainThread]: End processing [daxpdf] error
+[2023-04-23 23:13:38] INFO root fetch - processPackages [priceloop-api]: New version: [0.97.0] Old Version: [0.95.0]
+[2023-04-23 23:13:38] INFO root fetch - processPackages [application-properties]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-23 23:13:38] INFO root fetch - processPackages [sneakpeek-py]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-23 23:13:38] WARNING root fetch - processPackages [k8s-audit-filter]: Skipping, unable to determine old version
+[2023-04-23 23:13:38] INFO root fetch - main [MainThread]: End processing [k8s-audit-filter] error
+[2023-04-23 23:13:38] INFO root fetch - processPackages [tickerdax]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 23:13:38] INFO root fetch - processPackages [application-properties]: Downloading https://files.pythonhosted.org/packages/14/1e/e66fe5b791f7e8c66ca5d7e4a297f3fb05131ad35c7134f1361e9fa95510/application_properties-0.6.0.tar.gz
+[2023-04-23 23:13:38] INFO root fetch - processPackages [sneakpeek-py]: Downloading https://files.pythonhosted.org/packages/84/9d/78e6b2617dc45b91d568595634e51d382c499fb455118648760f8e120caf/sneakpeek_py-0.1.4.tar.gz
+[2023-04-23 23:13:38] INFO root fetch - processPackages [tickerdax]: Downloading https://files.pythonhosted.org/packages/bf/a4/e93db1fd0e990844b7853507fdf1a37d5700e60e92b8272c402d4f1460df/tickerdax-0.0.8.tar.gz
+[2023-04-23 23:13:38] INFO root fetch - processPackages [priceloop-api]: Downloading https://files.pythonhosted.org/packages/9d/74/6ba416c056a1971adb4037077324b06748a266234c5ac4107c2ed821cadb/priceloop-api-0.97.0.tar.gz
+[2023-04-23 23:13:38] INFO root fetch - processPackages [application-properties]: Downloading https://files.pythonhosted.org/packages/97/53/cdff1152a8d0ee4bcd3e5e17cc612b30920d65881cfe6fd883b2ad873420/application_properties-0.7.0.tar.gz
+[2023-04-23 23:13:38] INFO root fetch - processPackages [priceloop-api]: executing diffoscope
+[2023-04-23 23:13:38] INFO root fetch - processPackages [priceloop-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/priceloop-api-0.95.0.tar.gz tmp/priceloop-api-0.97.0.tar.gz --markdown 20230423/p/priceloop-api/0.95.0-0.97.0/diff.md --exclude *.pyd
+[2023-04-23 23:13:38] INFO root fetch - processPackages [application-properties]: executing diffoscope
+[2023-04-23 23:13:38] INFO root fetch - processPackages [application-properties]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/application_properties-0.6.0.tar.gz tmp/application_properties-0.7.0.tar.gz --markdown 20230423/a/application-properties/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-23 23:13:38] INFO root fetch - processPackages [tickerdax]: Downloading https://files.pythonhosted.org/packages/b6/3e/5a2e3bdd965ef662360d9b0773087a609383929a671f7a7e65bd9345df79/tickerdax-0.0.9.tar.gz
+[2023-04-23 23:13:38] INFO root fetch - processPackages [sneakpeek-py]: Downloading https://files.pythonhosted.org/packages/a7/18/42cff5f0bc97df14469f02dd085edd1fd1b6b846bfffbfbae02201b5e798/sneakpeek_py-0.1.5.tar.gz
+[2023-04-23 23:13:39] INFO root fetch - processPackages [tickerdax]: executing diffoscope
+[2023-04-23 23:13:39] INFO root fetch - processPackages [tickerdax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tickerdax-0.0.8.tar.gz tmp/tickerdax-0.0.9.tar.gz --markdown 20230423/t/tickerdax/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 23:13:39] INFO root fetch - processPackages [sneakpeek-py]: executing diffoscope
+[2023-04-23 23:13:39] INFO root fetch - processPackages [sneakpeek-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sneakpeek_py-0.1.4.tar.gz tmp/sneakpeek_py-0.1.5.tar.gz --markdown 20230423/s/sneakpeek-py/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-23 23:13:40] INFO root fetch - main [MainThread]: End processing [application-properties]: success
+[2023-04-23 23:13:40] INFO root fetch - main [MainThread]: End processing [tickerdax]: success
+[2023-04-23 23:13:40] INFO root fetch - main [MainThread]: End processing [priceloop-api]: success
+[2023-04-23 23:13:41] INFO root fetch - main [MainThread]: End processing [sneakpeek-py]: success
+[2023-04-23 23:13:41] INFO root fetch - main [MainThread]: Store serial: [17825912]
