@@ -14177,3 +14177,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 23:51:07] INFO root fetch - main [MainThread]: End processing [golem-gpt]: success
 [2023-04-23 23:51:08] INFO root fetch - main [MainThread]: End processing [microkanren]: success
 [2023-04-23 23:51:08] INFO root fetch - main [MainThread]: Store serial: [17826120]
+[2023-04-23 23:56:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17826120]
+[2023-04-23 23:56:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-23 23:56:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: esphome
+[2023-04-23 23:56:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nitrado
+[2023-04-23 23:56:17] INFO root fetch - processPackages [esphome]: New version: [2023.4.1] Old Version: [2023.4.0b4]
+[2023-04-23 23:56:17] INFO root fetch - processPackages [nitrado]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-23 23:56:18] INFO root fetch - processPackages [nitrado]: Downloading https://files.pythonhosted.org/packages/f6/b0/4cf1f50d5c8e637d80dac078436faf6ba1e14ba95ad7e140959ed2925f7e/nitrado-1.0.8.tar.gz
+[2023-04-23 23:56:18] INFO root fetch - processPackages [esphome]: Downloading https://files.pythonhosted.org/packages/ac/c9/6539d2e988eb8aabc7714654ce02292c94d4f5d4f9aedc8a13cf9a2555a6/esphome-2023.4.1.tar.gz
+[2023-04-23 23:56:18] INFO root fetch - processPackages [nitrado]: executing diffoscope
+[2023-04-23 23:56:18] INFO root fetch - processPackages [nitrado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nitrado-1.0.7.tar.gz tmp/nitrado-1.0.8.tar.gz --markdown 20230423/n/nitrado/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-23 23:56:18] INFO root fetch - processPackages [esphome]: executing diffoscope
+[2023-04-23 23:56:18] INFO root fetch - processPackages [esphome]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esphome-2023.4.0b4.tar.gz tmp/esphome-2023.4.1.tar.gz --markdown 20230423/e/esphome/2023.4.0b4-2023.4.1/diff.md --exclude *.pyd
+[2023-04-23 23:56:19] INFO root fetch - main [MainThread]: End processing [nitrado]: success
+[2023-04-23 23:57:04] INFO root fetch - main [MainThread]: End processing [esphome]: success
+[2023-04-23 23:57:04] INFO root fetch - main [MainThread]: Store serial: [17826127]
