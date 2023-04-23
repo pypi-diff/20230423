@@ -13095,3 +13095,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 21:54:11] INFO root fetch - main [MainThread]: End processing [lg-april-permissions]: success
 [2023-04-23 21:54:12] INFO root fetch - main [MainThread]: End processing [pythoness]: success
 [2023-04-23 21:54:12] INFO root fetch - main [MainThread]: Store serial: [17825399]
+[2023-04-23 21:59:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825399]
+[2023-04-23 21:59:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-23 21:59:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libidrequest
+[2023-04-23 21:59:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drifting
+[2023-04-23 21:59:21] WARNING root fetch - processPackages [libidrequest]: Skipping, unable to determine old version
+[2023-04-23 21:59:21] INFO root fetch - main [MainThread]: End processing [libidrequest] error
+[2023-04-23 21:59:21] WARNING root fetch - processPackages [drifting]: Skipping, unable to determine old version
+[2023-04-23 21:59:21] INFO root fetch - main [MainThread]: End processing [drifting] error
+[2023-04-23 21:59:21] INFO root fetch - main [MainThread]: Store serial: [17825406]
