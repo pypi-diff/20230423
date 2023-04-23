@@ -3650,3 +3650,67 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 07:55:01] INFO root fetch - main [MainThread]: End processing [seven-top]: success
 [2023-04-23 07:55:02] INFO root fetch - main [MainThread]: End processing [axion]: success
 [2023-04-23 07:55:02] INFO root fetch - main [MainThread]: Store serial: [17819738]
+[2023-04-23 08:00:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819738]
+[2023-04-23 08:00:11] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-23 08:00:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: commitizen
+[2023-04-23 08:00:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: synthea-rdf
+[2023-04-23 08:00:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dknovautils
+[2023-04-23 08:00:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyviztest
+[2023-04-23 08:00:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-tailscale-native
+[2023-04-23 08:00:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mymoviebook
+[2023-04-23 08:00:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pymathematics
+[2023-04-23 08:00:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nonebot-plugin-bilichat
+[2023-04-23 08:00:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: django-ninja-extra
+[2023-04-23 08:00:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: recentrifuge
+[2023-04-23 08:00:12] INFO root fetch - processPackages [pymathematics]: New version: [2023.4.23] Old Version: [2023.4.22]
+[2023-04-23 08:00:12] INFO root fetch - processPackages [synthea-rdf]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-23 08:00:12] INFO root fetch - processPackages [pulumi-tailscale-native]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-04-23 08:00:12] INFO root fetch - processPackages [mymoviebook]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-23 08:00:12] WARNING root fetch - processPackages [pyviztest]: Skipping, unable to determine old version
+[2023-04-23 08:00:12] INFO root fetch - processPackages [dknovautils]: New version: [0.0.31] Old Version: [0.0.30]
+[2023-04-23 08:00:12] INFO root fetch - main [MainThread]: End processing [pyviztest] error
+[2023-04-23 08:00:12] INFO root fetch - processPackages [nonebot-plugin-bilichat]: New version: [1.6.0] Old Version: [1.5.0]
+[2023-04-23 08:00:12] INFO root fetch - processPackages [django-ninja-extra]: New version: [0.18.8] Old Version: [0.18.7]
+[2023-04-23 08:00:12] INFO root fetch - processPackages [commitizen]: New version: [3.0.0] Old Version: [2.9.0]
+[2023-04-23 08:00:12] INFO root fetch - processPackages [recentrifuge]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-23 08:00:12] INFO root fetch - processPackages [pulumi-tailscale-native]: executing diffoscope
+[2023-04-23 08:00:12] INFO root fetch - processPackages [pulumi-tailscale-native]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_tailscale_native-0.0.7.tar.gz tmp/pulumi_tailscale_native-0.0.9.tar.gz --markdown 20230423/p/pulumi-tailscale-native/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 08:00:12] INFO root fetch - processPackages [pymathematics]: Downloading https://files.pythonhosted.org/packages/4a/9b/4bbd965f2530dd67147b1edd14a6c0ab58606c0d47a29d15e4f633e5c3fe/pymathematics-2023.4.22.tar.gz
+[2023-04-23 08:00:12] INFO root fetch - processPackages [mymoviebook]: Downloading https://files.pythonhosted.org/packages/09/14/3ff6d77b6264e49c9e3163e610f02a5a815efebea781bc1ff2aea613e37e/mymoviebook-1.8.0.tar.gz
+[2023-04-23 08:00:12] INFO root fetch - processPackages [synthea-rdf]: Downloading https://files.pythonhosted.org/packages/35/78/59155c339e9f74ea633579edf0f653b781c631d3d084c0f2c8d069cf2d88/synthea-rdf-0.1.5.tar.gz
+[2023-04-23 08:00:12] INFO root fetch - processPackages [commitizen]: Downloading https://files.pythonhosted.org/packages/ea/33/4e6843b6f8b834a1c50969bff4bcd73d027b3037f7a49fbb5f0ea8ff4597/commitizen-2.9.0.tar.gz
+[2023-04-23 08:00:12] INFO root fetch - processPackages [django-ninja-extra]: Downloading https://files.pythonhosted.org/packages/5b/9e/cf5e5c8ef934b4e3bee43221679661207a10b41d5c0bf4a7d166937acf1d/django-ninja-extra-0.18.7.tar.gz
+[2023-04-23 08:00:12] INFO root fetch - processPackages [recentrifuge]: Downloading https://files.pythonhosted.org/packages/9c/61/718022277313a4fb45227c6b6331f6f0cd2220adb681fdbbe3ea506430e8/recentrifuge-1.9.0.tar.gz
+[2023-04-23 08:00:12] INFO root fetch - processPackages [synthea-rdf]: executing diffoscope
+[2023-04-23 08:00:12] INFO root fetch - processPackages [synthea-rdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synthea-rdf-0.1.4.tar.gz tmp/synthea-rdf-0.1.5.tar.gz --markdown 20230423/s/synthea-rdf/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-23 08:00:12] INFO root fetch - processPackages [dknovautils]: Downloading https://files.pythonhosted.org/packages/e6/28/7dc9badac2123a5be0e2c9c681b36956bcb6abbfe7c822f44227a91478f5/dknovautils-0.0.31.tar.gz
+[2023-04-23 08:00:12] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Downloading https://files.pythonhosted.org/packages/5d/a5/a79ea1837554512bad779dae5117a66ef764b965d30013dcb7327cd9ca19/nonebot_plugin_bilichat-1.6.0.tar.gz
+[2023-04-23 08:00:12] INFO root fetch - processPackages [pymathematics]: Downloading https://files.pythonhosted.org/packages/04/4c/2eba792505f820b944802b61b650cf10ee29a2845d738e62cb47e6ed7868/pymathematics-2023.4.23.tar.gz
+[2023-04-23 08:00:12] INFO root fetch - processPackages [dknovautils]: executing diffoscope
+[2023-04-23 08:00:12] INFO root fetch - processPackages [dknovautils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dknovautils-0.0.30.tar.gz tmp/dknovautils-0.0.31.tar.gz --markdown 20230423/d/dknovautils/0.0.30-0.0.31/diff.md --exclude *.pyd
+[2023-04-23 08:00:12] INFO root fetch - processPackages [nonebot-plugin-bilichat]: executing diffoscope
+[2023-04-23 08:00:12] INFO root fetch - processPackages [nonebot-plugin-bilichat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_bilichat-1.5.0.tar.gz tmp/nonebot_plugin_bilichat-1.6.0.tar.gz --markdown 20230423/n/nonebot-plugin-bilichat/1.5.0-1.6.0/diff.md --exclude *.pyd
+[2023-04-23 08:00:12] INFO root fetch - processPackages [commitizen]: Downloading https://files.pythonhosted.org/packages/fa/41/20cd2784ee05d0ab30ab54f57702a8d2947038764b2fa0b35495d806a31a/commitizen-3.0.0.tar.gz
+[2023-04-23 08:00:12] INFO root fetch - processPackages [pymathematics]: executing diffoscope
+[2023-04-23 08:00:12] INFO root fetch - processPackages [pymathematics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymathematics-2023.4.22.tar.gz tmp/pymathematics-2023.4.23.tar.gz --markdown 20230423/p/pymathematics/2023.4.22-2023.4.23/diff.md --exclude *.pyd
+[2023-04-23 08:00:12] INFO root fetch - processPackages [commitizen]: executing diffoscope
+[2023-04-23 08:00:12] INFO root fetch - processPackages [commitizen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/commitizen-2.9.0.tar.gz tmp/commitizen-3.0.0.tar.gz --markdown 20230423/c/commitizen/2.9.0-3.0.0/diff.md --exclude *.pyd
+[2023-04-23 08:00:12] INFO root fetch - processPackages [recentrifuge]: Downloading https://files.pythonhosted.org/packages/45/1b/0146a4dbd77c02320e3562b3b373ce63ba8ca7fb3e8a20914f6d323ae790/recentrifuge-1.9.1.tar.gz
+[2023-04-23 08:00:12] INFO root fetch - processPackages [recentrifuge]: executing diffoscope
+[2023-04-23 08:00:12] INFO root fetch - processPackages [recentrifuge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recentrifuge-1.9.0.tar.gz tmp/recentrifuge-1.9.1.tar.gz --markdown 20230423/r/recentrifuge/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-23 08:00:12] INFO root fetch - processPackages [mymoviebook]: Downloading https://files.pythonhosted.org/packages/03/c0/6dc7fda9a8b36bca8f60066fc4b37470a4b9555efc54280c54fcc4b4217e/mymoviebook-1.9.0.tar.gz
+[2023-04-23 08:00:13] INFO root fetch - processPackages [mymoviebook]: executing diffoscope
+[2023-04-23 08:00:13] INFO root fetch - processPackages [mymoviebook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mymoviebook-1.8.0.tar.gz tmp/mymoviebook-1.9.0.tar.gz --markdown 20230423/m/mymoviebook/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-23 08:00:13] INFO root fetch - processPackages [django-ninja-extra]: Downloading https://files.pythonhosted.org/packages/48/69/471f88be34c80dd909decaee2dbe8c2a74ea024954747c282bce8ed514f1/django-ninja-extra-0.18.8.tar.gz
+[2023-04-23 08:00:13] INFO root fetch - main [MainThread]: End processing [pulumi-tailscale-native]: success
+[2023-04-23 08:00:13] INFO root fetch - processPackages [django-ninja-extra]: executing diffoscope
+[2023-04-23 08:00:13] INFO root fetch - processPackages [django-ninja-extra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-ninja-extra-0.18.7.tar.gz tmp/django-ninja-extra-0.18.8.tar.gz --markdown 20230423/d/django-ninja-extra/0.18.7-0.18.8/diff.md --exclude *.pyd
+[2023-04-23 08:00:13] INFO root fetch - main [MainThread]: End processing [dknovautils]: success
+[2023-04-23 08:00:14] INFO root fetch - main [MainThread]: End processing [pymathematics]: success
+[2023-04-23 08:00:14] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilichat]: success
+[2023-04-23 08:00:14] INFO root fetch - main [MainThread]: End processing [mymoviebook]: success
+[2023-04-23 08:00:14] INFO root fetch - main [MainThread]: End processing [commitizen]: success
+[2023-04-23 08:00:15] INFO root fetch - main [MainThread]: End processing [synthea-rdf]: success
+[2023-04-23 08:00:15] INFO root fetch - main [MainThread]: End processing [django-ninja-extra]: success
+[2023-04-23 08:00:17] INFO root fetch - main [MainThread]: End processing [recentrifuge]: success
+[2023-04-23 08:00:17] INFO root fetch - main [MainThread]: Store serial: [17819769]
