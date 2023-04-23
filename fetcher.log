@@ -4665,3 +4665,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 09:31:09] INFO root fetch - main [MainThread]: End processing [bigdl-friesian-spark3]: success
 [2023-04-23 09:31:10] INFO root fetch - main [MainThread]: End processing [bigdl-chronos-spark3]: success
 [2023-04-23 09:31:10] INFO root fetch - main [MainThread]: Store serial: [17820324]
+[2023-04-23 09:36:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820324]
+[2023-04-23 09:36:18] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-23 09:36:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Aciembler
+[2023-04-23 09:36:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: audioflux
+[2023-04-23 09:36:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ChangeCoordinate-zl
+[2023-04-23 09:36:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-poe-chat
+[2023-04-23 09:36:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vollseg
+[2023-04-23 09:36:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: checkov
+[2023-04-23 09:36:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: zlogging
+[2023-04-23 09:36:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nonebot-poe-chat
+[2023-04-23 09:36:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sentiment-nltk
+[2023-04-23 09:36:18] WARNING root fetch - processPackages [ChangeCoordinate-zl]: Skipping, unable to determine old version
+[2023-04-23 09:36:18] INFO root fetch - main [MainThread]: End processing [ChangeCoordinate-zl] error
+[2023-04-23 09:36:18] INFO root fetch - processPackages [Aciembler]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-23 09:36:18] INFO root fetch - processPackages [nonebot-poe-chat]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-04-23 09:36:18] INFO root fetch - processPackages [audioflux]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-23 09:36:18] INFO root fetch - processPackages [nonebot-poe-chat]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-04-23 09:36:18] WARNING root fetch - processPackages [sentiment-nltk]: Skipping, unable to determine old version
+[2023-04-23 09:36:18] INFO root fetch - main [MainThread]: End processing [sentiment-nltk] error
+[2023-04-23 09:36:18] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-23 09:36:18] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-23 09:36:18] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-23 09:36:18] INFO root fetch - processPackages [zlogging]: New version: [0.1.2.post1] Old Version: [0.1.2]
+[2023-04-23 09:36:18] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-23 09:36:18] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-23 09:36:18] INFO root fetch - processPackages [Aciembler]: Downloading https://files.pythonhosted.org/packages/d3/e1/f9c1cdec0378b449dfd4763c3c6118ae9fcf604d8b539365f512f7dc76a5/Aciembler-1.0.5-py2.py3-none-any.whl
+[2023-04-23 09:36:18] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-04-23 09:36:18] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230423/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-23 09:36:18] INFO root fetch - processPackages [nonebot-poe-chat]: Downloading https://files.pythonhosted.org/packages/3a/0d/84dbf344a9ca1ac361a5bfe18101927f40b94717a85d6046a14eb9d68075/nonebot_poe_chat-1.0.0.tar.gz
+[2023-04-23 09:36:18] INFO root fetch - processPackages [audioflux]: Downloading https://files.pythonhosted.org/packages/1f/2a/83ce5f9fb73cdee4000e41342556354c5294e19e65a7f47d79ac32094329/audioflux-0.1.4-py3-none-any.whl
+[2023-04-23 09:36:18] INFO root fetch - processPackages [nonebot-poe-chat]: Downloading https://files.pythonhosted.org/packages/3a/0d/84dbf344a9ca1ac361a5bfe18101927f40b94717a85d6046a14eb9d68075/nonebot_poe_chat-1.0.0.tar.gz
+[2023-04-23 09:36:18] INFO root fetch - processPackages [zlogging]: Downloading https://files.pythonhosted.org/packages/52/7e/7fe0acb3ac8958f6f4d85e416f0738056bf309277abf4d467825327f351b/zlogging-0.1.2.tar.gz
+[2023-04-23 09:36:19] INFO root fetch - processPackages [nonebot-poe-chat]: executing diffoscope
+[2023-04-23 09:36:19] INFO root fetch - processPackages [nonebot-poe-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_poe_chat-0.1.0.tar.gz tmp/nonebot_poe_chat-1.0.0.tar.gz --markdown 20230423/n/nonebot-poe-chat/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-23 09:36:19] INFO root fetch - processPackages [nonebot-poe-chat]: executing diffoscope
+[2023-04-23 09:36:19] INFO root fetch - processPackages [nonebot-poe-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_poe_chat-0.1.0.tar.gz tmp/nonebot_poe_chat-1.0.0.tar.gz --markdown 20230423/n/nonebot-poe-chat/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-23 09:36:19] INFO root fetch - processPackages [Aciembler]: Downloading https://files.pythonhosted.org/packages/40/94/b59ea68316bf9f53272104d754c6cc165d4f458fb93c49830bf364818aa3/Aciembler-1.0.6-py2.py3-none-any.whl
+[2023-04-23 09:36:19] INFO root fetch - processPackages [zlogging]: Downloading https://files.pythonhosted.org/packages/0e/23/b87bd621ff2a9ed267e2a22720440769dca12d2eb7c6d3b521f641eedc89/zlogging-0.1.2.post1.tar.gz
+[2023-04-23 09:36:19] INFO root fetch - processPackages [Aciembler]: executing diffoscope
+[2023-04-23 09:36:19] INFO root fetch - processPackages [Aciembler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Aciembler-1.0.5-py2.py3-none-any.whl.zip tmp/Aciembler-1.0.6-py2.py3-none-any.whl.zip --markdown 20230423/A/Aciembler/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-23 09:36:19] INFO root fetch - processPackages [zlogging]: executing diffoscope
+[2023-04-23 09:36:19] INFO root fetch - processPackages [zlogging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zlogging-0.1.2.tar.gz tmp/zlogging-0.1.2.post1.tar.gz --markdown 20230423/z/zlogging/0.1.2-0.1.2.post1/diff.md --exclude *.pyd
+[2023-04-23 09:36:20] INFO root fetch - processPackages [audioflux]: Downloading https://files.pythonhosted.org/packages/cd/d0/73fd93c2636a8beea12a1dfaedb95ff26f10f6e54859d113e492c2fd7118/audioflux-0.1.5-py3-none-any.whl
+[2023-04-23 09:36:20] INFO root fetch - main [MainThread]: End processing [nonebot-poe-chat]: success
+[2023-04-23 09:36:20] WARNING root fetch - processPackages [audioflux]: Skipping package: exceeds size limit 70612615>=10485760
+[2023-04-23 09:36:20] INFO root fetch - main [MainThread]: End processing [audioflux] error
+[2023-04-23 09:36:20] INFO root fetch - main [MainThread]: End processing [nonebot-poe-chat]: success
+[2023-04-23 09:36:20] INFO root fetch - main [MainThread]: End processing [zlogging]: success
+[2023-04-23 09:36:34] INFO root fetch - main [MainThread]: End processing [Aciembler]: success
+[2023-04-23 09:37:02] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-04-23 09:37:02] INFO root fetch - main [MainThread]: Store serial: [17820347]
