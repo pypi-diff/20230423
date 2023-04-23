@@ -2585,3 +2585,34 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 05:10:41] INFO root fetch - main [MainThread]: End processing [ilds]: success
 [2023-04-23 05:10:42] INFO root fetch - main [MainThread]: End processing [yyxx-game-pkg]: success
 [2023-04-23 05:10:42] INFO root fetch - main [MainThread]: Store serial: [17819166]
+[2023-04-23 05:15:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819166]
+[2023-04-23 05:15:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-23 05:15:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cppython-vcpkg
+[2023-04-23 05:15:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nox
+[2023-04-23 05:15:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: GANDLF
+[2023-04-23 05:15:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cppython-cmake
+[2023-04-23 05:15:52] INFO root fetch - processPackages [nox]: New version: [2023.4.22] Old Version: [2022.8.7]
+[2023-04-23 05:15:52] INFO root fetch - processPackages [GANDLF]: New version: [0.0.16.dev20230423] Old Version: [0.0.16.dev20230422]
+[2023-04-23 05:15:52] INFO root fetch - processPackages [cppython-cmake]: New version: [0.1.1.dev16] Old Version: [0.1.1.dev15]
+[2023-04-23 05:15:52] INFO root fetch - processPackages [cppython-vcpkg]: New version: [0.4.1.dev9] Old Version: [0.4.1.dev8]
+[2023-04-23 05:15:52] INFO root fetch - processPackages [GANDLF]: Downloading https://files.pythonhosted.org/packages/ea/e6/e2e0c1b6e2587deed739625627d81ba9bd1fe31ab1013da777116a25227d/GANDLF-0.0.16.dev20230422.tar.gz
+[2023-04-23 05:15:52] INFO root fetch - processPackages [nox]: Downloading https://files.pythonhosted.org/packages/12/f1/a810cf1f56e47b990824ebbb19e789745e4d1ea80ac0f2b6494c50e3f6a5/nox-2022.8.7.tar.gz
+[2023-04-23 05:15:52] INFO root fetch - processPackages [cppython-vcpkg]: Downloading https://files.pythonhosted.org/packages/11/07/12d7220a7ab33f1488f8205c49bd128f20efaab818226991d333138d6fe2/cppython-vcpkg-0.4.1.dev8.tar.gz
+[2023-04-23 05:15:52] INFO root fetch - processPackages [cppython-cmake]: Downloading https://files.pythonhosted.org/packages/de/55/2b0e9c97b123ef415970087d3d886a00c70f4f80cb4f9d4af12c42ce4520/cppython-cmake-0.1.1.dev15.tar.gz
+[2023-04-23 05:15:52] INFO root fetch - processPackages [nox]: Downloading https://files.pythonhosted.org/packages/e7/3b/529fa8920b18b92085ed5923caee4aee112c65a7af99b34bd5a868b82e3e/nox-2023.4.22.tar.gz
+[2023-04-23 05:15:52] INFO root fetch - processPackages [GANDLF]: Downloading https://files.pythonhosted.org/packages/25/cc/cc572780c2128217ce50ebd95ee755eb83ffc3f988dff59c4cbde382f2e4/GANDLF-0.0.16.dev20230423.tar.gz
+[2023-04-23 05:15:52] INFO root fetch - processPackages [cppython-cmake]: Downloading https://files.pythonhosted.org/packages/22/61/a5f2fc8f27ebb9c826321254ac67b1459ec5091ebcbe75d2bdd1372fbe81/cppython-cmake-0.1.1.dev16.tar.gz
+[2023-04-23 05:15:52] INFO root fetch - processPackages [nox]: executing diffoscope
+[2023-04-23 05:15:52] INFO root fetch - processPackages [nox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nox-2022.8.7.tar.gz tmp/nox-2023.4.22.tar.gz --markdown 20230423/n/nox/2022.8.7-2023.4.22/diff.md --exclude *.pyd
+[2023-04-23 05:15:52] INFO root fetch - processPackages [cppython-vcpkg]: Downloading https://files.pythonhosted.org/packages/25/d6/d913ab9cbfee9995687933327b1d7b7520328f669eb77b1e8dd04571d86b/cppython-vcpkg-0.4.1.dev9.tar.gz
+[2023-04-23 05:15:52] INFO root fetch - processPackages [cppython-cmake]: executing diffoscope
+[2023-04-23 05:15:52] INFO root fetch - processPackages [cppython-cmake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cppython-cmake-0.1.1.dev15.tar.gz tmp/cppython-cmake-0.1.1.dev16.tar.gz --markdown 20230423/c/cppython-cmake/0.1.1.dev15-0.1.1.dev16/diff.md --exclude *.pyd
+[2023-04-23 05:15:52] INFO root fetch - processPackages [GANDLF]: executing diffoscope
+[2023-04-23 05:15:52] INFO root fetch - processPackages [GANDLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GANDLF-0.0.16.dev20230422.tar.gz tmp/GANDLF-0.0.16.dev20230423.tar.gz --markdown 20230423/G/GANDLF/0.0.16.dev20230422-0.0.16.dev20230423/diff.md --exclude *.pyd
+[2023-04-23 05:15:52] INFO root fetch - processPackages [cppython-vcpkg]: executing diffoscope
+[2023-04-23 05:15:52] INFO root fetch - processPackages [cppython-vcpkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cppython-vcpkg-0.4.1.dev8.tar.gz tmp/cppython-vcpkg-0.4.1.dev9.tar.gz --markdown 20230423/c/cppython-vcpkg/0.4.1.dev8-0.4.1.dev9/diff.md --exclude *.pyd
+[2023-04-23 05:15:53] INFO root fetch - main [MainThread]: End processing [cppython-cmake]: success
+[2023-04-23 05:15:53] INFO root fetch - main [MainThread]: End processing [cppython-vcpkg]: success
+[2023-04-23 05:15:54] INFO root fetch - main [MainThread]: End processing [nox]: success
+[2023-04-23 05:15:54] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
+[2023-04-23 05:15:54] INFO root fetch - main [MainThread]: Store serial: [17819178]
