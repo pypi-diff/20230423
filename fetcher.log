@@ -13382,3 +13382,25 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 22:26:35] INFO root fetch - main [MainThread]: End processing [leuci-pol]: success
 [2023-04-23 22:26:35] INFO root fetch - main [MainThread]: End processing [pylibacl]: success
 [2023-04-23 22:26:35] INFO root fetch - main [MainThread]: Store serial: [17825627]
+[2023-04-23 22:31:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825627]
+[2023-04-23 22:31:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-23 22:31:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stream-zip
+[2023-04-23 22:31:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: atlasapi
+[2023-04-23 22:31:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: linguee-api
+[2023-04-23 22:31:44] INFO root fetch - processPackages [linguee-api]: New version: [2.6.0] Old Version: [2.5.1]
+[2023-04-23 22:31:44] INFO root fetch - processPackages [stream-zip]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 22:31:44] INFO root fetch - processPackages [atlasapi]: New version: [3.0.1b6] Old Version: [3.0.1b5]
+[2023-04-23 22:31:44] INFO root fetch - processPackages [linguee-api]: Downloading https://files.pythonhosted.org/packages/45/b0/fd2f91e8ee9bc539812110dcba86cb51d0b5584f6893dd03fd321a3bf35e/linguee-api-2.5.1.tar.gz
+[2023-04-23 22:31:44] INFO root fetch - processPackages [atlasapi]: Downloading https://files.pythonhosted.org/packages/52/4b/081aa8381dd3bfb1b072b438309a3014f3abf68e51cc8c8f9353b5017f15/atlasapi-3.0.1b5.tar.gz
+[2023-04-23 22:31:45] INFO root fetch - processPackages [stream-zip]: executing diffoscope
+[2023-04-23 22:31:45] INFO root fetch - processPackages [stream-zip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stream-zip-0.0.8.tar.gz tmp/stream-zip-0.0.9.tar.gz --markdown 20230423/s/stream-zip/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 22:31:46] INFO root fetch - main [MainThread]: End processing [stream-zip]: success
+[2023-04-23 22:31:46] INFO root fetch - processPackages [linguee-api]: Downloading https://files.pythonhosted.org/packages/48/ad/81096f6768db574d8079bb9767f91582edd43aa7052ecbb5754e338471c7/linguee_api-2.6.0.tar.gz
+[2023-04-23 22:31:46] INFO root fetch - processPackages [atlasapi]: Downloading https://files.pythonhosted.org/packages/cf/80/203dd15c902a353259a2491f3102caa9380f599f7cc4b256e37de7d912a2/atlasapi-3.0.1b6.tar.gz
+[2023-04-23 22:31:46] INFO root fetch - processPackages [linguee-api]: executing diffoscope
+[2023-04-23 22:31:46] INFO root fetch - processPackages [linguee-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linguee-api-2.5.1.tar.gz tmp/linguee_api-2.6.0.tar.gz --markdown 20230423/l/linguee-api/2.5.1-2.6.0/diff.md --exclude *.pyd
+[2023-04-23 22:31:46] INFO root fetch - processPackages [atlasapi]: executing diffoscope
+[2023-04-23 22:31:46] INFO root fetch - processPackages [atlasapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atlasapi-3.0.1b5.tar.gz tmp/atlasapi-3.0.1b6.tar.gz --markdown 20230423/a/atlasapi/3.0.1b5-3.0.1b6/diff.md --exclude *.pyd
+[2023-04-23 22:31:47] INFO root fetch - main [MainThread]: End processing [linguee-api]: success
+[2023-04-23 22:31:48] INFO root fetch - main [MainThread]: End processing [atlasapi]: success
+[2023-04-23 22:31:48] INFO root fetch - main [MainThread]: Store serial: [17825652]
