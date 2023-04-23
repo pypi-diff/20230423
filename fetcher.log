@@ -6880,3 +6880,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 13:12:42] INFO root fetch - main [MainThread]: End processing [pheno-utils]: success
 [2023-04-23 13:12:43] INFO root fetch - main [MainThread]: End processing [MeUtils]: success
 [2023-04-23 13:12:43] INFO root fetch - main [MainThread]: Store serial: [17821605]
+[2023-04-23 13:17:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17821605]
+[2023-04-23 13:17:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-23 13:17:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hoodat-vertex-components
+[2023-04-23 13:17:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sde-simulator
+[2023-04-23 13:17:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mausy5043-common
+[2023-04-23 13:17:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zipy
+[2023-04-23 13:17:51] INFO root fetch - processPackages [hoodat-vertex-components]: New version: [1.6.5] Old Version: [1.6.4]
+[2023-04-23 13:17:51] INFO root fetch - processPackages [mausy5043-common]: New version: [1.4.1] Old Version: [1.2.3]
+[2023-04-23 13:17:51] INFO root fetch - processPackages [zipy]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-23 13:17:51] INFO root fetch - processPackages [sde-simulator]: New version: [0.1.82] Old Version: [0.1.81]
+[2023-04-23 13:17:52] INFO root fetch - processPackages [zipy]: Downloading https://files.pythonhosted.org/packages/12/6c/46e35aae26ee16b192eb90f85007fa4d7ed2bf7b1933f523213b9085765e/zipy-0.5.1.tar.gz
+[2023-04-23 13:17:52] INFO root fetch - processPackages [sde-simulator]: Downloading https://files.pythonhosted.org/packages/0a/74/5422bba90168ea0c83d413d6b38f9530d6570984a31ccd176c894491d038/sde_simulator-0.1.81.tar.gz
+[2023-04-23 13:17:52] INFO root fetch - processPackages [mausy5043-common]: Downloading https://files.pythonhosted.org/packages/d8/5b/ab18276d3af3c344ccffea4decd5870588f99e2887c53a0e767e38de01d6/mausy5043_common-1.4.1.tar.gz
+[2023-04-23 13:17:52] INFO root fetch - processPackages [hoodat-vertex-components]: Downloading https://files.pythonhosted.org/packages/f3/ab/4295ac81f9ed9fd9ecd1dd90a69f22657c2277d1446567c5213dc908d2c7/hoodat_vertex_components-1.6.5.tar.gz
+[2023-04-23 13:17:52] INFO root fetch - processPackages [mausy5043-common]: executing diffoscope
+[2023-04-23 13:17:52] INFO root fetch - processPackages [mausy5043-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mausy5043_common-1.2.3.tar.gz tmp/mausy5043_common-1.4.1.tar.gz --markdown 20230423/m/mausy5043-common/1.2.3-1.4.1/diff.md --exclude *.pyd
+[2023-04-23 13:17:52] INFO root fetch - processPackages [zipy]: Downloading https://files.pythonhosted.org/packages/5e/ed/22d566cf102796969967ac0100d86d75a186c6f38e57a7927a2e70ecebf7/zipy-0.5.2.tar.gz
+[2023-04-23 13:17:52] INFO root fetch - processPackages [sde-simulator]: Downloading https://files.pythonhosted.org/packages/79/96/2a69356c92673dc6d8491a49b1b02b7d52732ecd35f7fbdbbce6918387b0/sde_simulator-0.1.82.tar.gz
+[2023-04-23 13:17:52] INFO root fetch - processPackages [zipy]: executing diffoscope
+[2023-04-23 13:17:52] INFO root fetch - processPackages [zipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zipy-0.5.1.tar.gz tmp/zipy-0.5.2.tar.gz --markdown 20230423/z/zipy/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-23 13:17:52] INFO root fetch - processPackages [sde-simulator]: executing diffoscope
+[2023-04-23 13:17:52] INFO root fetch - processPackages [sde-simulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sde_simulator-0.1.81.tar.gz tmp/sde_simulator-0.1.82.tar.gz --markdown 20230423/s/sde-simulator/0.1.81-0.1.82/diff.md --exclude *.pyd
+[2023-04-23 13:17:52] INFO root fetch - processPackages [hoodat-vertex-components]: executing diffoscope
+[2023-04-23 13:17:52] INFO root fetch - processPackages [hoodat-vertex-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hoodat_vertex_components-1.6.4.tar.gz tmp/hoodat_vertex_components-1.6.5.tar.gz --markdown 20230423/h/hoodat-vertex-components/1.6.4-1.6.5/diff.md --exclude *.pyd
+[2023-04-23 13:17:53] INFO root fetch - main [MainThread]: End processing [mausy5043-common]: success
+[2023-04-23 13:17:53] INFO root fetch - main [MainThread]: End processing [zipy]: success
+[2023-04-23 13:17:53] INFO root fetch - main [MainThread]: End processing [sde-simulator]: success
+[2023-04-23 13:17:54] INFO root fetch - main [MainThread]: End processing [hoodat-vertex-components]: success
+[2023-04-23 13:17:54] INFO root fetch - main [MainThread]: Store serial: [17821619]
