@@ -5883,3 +5883,20 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 11:38:11] INFO root fetch - main [MainThread]: End processing [coredis]: success
 [2023-04-23 11:38:13] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
 [2023-04-23 11:38:13] INFO root fetch - main [MainThread]: Store serial: [17821029]
+[2023-04-23 11:43:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17821029]
+[2023-04-23 11:43:21] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-23 11:43:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: redis-work-queue
+[2023-04-23 11:43:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sui-brownie
+[2023-04-23 11:43:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alibabacloud-btripopen20220520-py2
+[2023-04-23 11:43:21] WARNING root fetch - processPackages [redis-work-queue]: Skipping, unable to determine old version
+[2023-04-23 11:43:21] INFO root fetch - main [MainThread]: End processing [redis-work-queue] error
+[2023-04-23 11:43:21] INFO root fetch - processPackages [sui-brownie]: New version: [0.31.4] Old Version: [0.31.3]
+[2023-04-23 11:43:22] INFO root fetch - processPackages [alibabacloud-btripopen20220520-py2]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-23 11:43:22] INFO root fetch - processPackages [sui-brownie]: Downloading https://files.pythonhosted.org/packages/45/a9/1e597ccd3e6304341f9bd55f415e577bdb55359da8d8140352eee47323ed/sui_brownie-0.31.4-py3-none-any.whl
+[2023-04-23 11:43:22] INFO root fetch - processPackages [sui-brownie]: executing diffoscope
+[2023-04-23 11:43:22] INFO root fetch - processPackages [sui-brownie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sui_brownie-0.31.3-py3-none-any.whl.zip tmp/sui_brownie-0.31.4-py3-none-any.whl.zip --markdown 20230423/s/sui-brownie/0.31.3-0.31.4/diff.md --exclude *.pyd
+[2023-04-23 11:43:22] INFO root fetch - processPackages [alibabacloud-btripopen20220520-py2]: executing diffoscope
+[2023-04-23 11:43:22] INFO root fetch - processPackages [alibabacloud-btripopen20220520-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_btripopen20220520_py2-1.0.8.tar.gz tmp/alibabacloud_btripopen20220520_py2-1.0.9.tar.gz --markdown 20230423/a/alibabacloud-btripopen20220520-py2/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-23 11:43:23] INFO root fetch - main [MainThread]: End processing [sui-brownie]: success
+[2023-04-23 11:43:23] INFO root fetch - main [MainThread]: End processing [alibabacloud-btripopen20220520-py2]: success
+[2023-04-23 11:43:23] INFO root fetch - main [MainThread]: Store serial: [17821041]
