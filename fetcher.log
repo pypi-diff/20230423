@@ -6601,3 +6601,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 12:46:21] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-organizations]: success
 [2023-04-23 12:46:23] INFO root fetch - main [MainThread]: End processing [authz-analyzer]: success
 [2023-04-23 12:46:23] INFO root fetch - main [MainThread]: Store serial: [17821451]
+[2023-04-23 12:51:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17821451]
+[2023-04-23 12:51:35] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-23 12:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysistentclass
+[2023-04-23 12:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pepperize.cdk-organizations
+[2023-04-23 12:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xia-engine-bigquery
+[2023-04-23 12:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yeref
+[2023-04-23 12:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: common-xmjz
+[2023-04-23 12:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: stockprice-cli
+[2023-04-23 12:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: smoothlog
+[2023-04-23 12:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: megadata
+[2023-04-23 12:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nshare-calc
+[2023-04-23 12:51:35] INFO root fetch - processPackages [pysistentclass]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 12:51:35] WARNING root fetch - processPackages [common-xmjz]: Skipping, unable to determine old version
+[2023-04-23 12:51:35] INFO root fetch - main [MainThread]: End processing [common-xmjz] error
+[2023-04-23 12:51:35] INFO root fetch - processPackages [xia-engine-bigquery]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-23 12:51:35] INFO root fetch - processPackages [megadata]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 12:51:35] INFO root fetch - processPackages [stockprice-cli]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-04-23 12:51:35] INFO root fetch - processPackages [yeref]: New version: [0.1.41] Old Version: [0.1.40]
+[2023-04-23 12:51:35] INFO root fetch - processPackages [nshare-calc]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-23 12:51:35] INFO root fetch - processPackages [pepperize.cdk-organizations]: New version: [0.7.99] Old Version: [0.7.98]
+[2023-04-23 12:51:35] WARNING root fetch - processPackages [smoothlog]: Skipping, unable to determine old version
+[2023-04-23 12:51:35] INFO root fetch - main [MainThread]: End processing [smoothlog] error
+[2023-04-23 12:51:35] INFO root fetch - processPackages [megadata]: executing diffoscope
+[2023-04-23 12:51:35] INFO root fetch - processPackages [megadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/megadata-0.0.8.tar.gz tmp/megadata-0.0.9.tar.gz --markdown 20230423/m/megadata/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 12:51:35] INFO root fetch - processPackages [pepperize.cdk-organizations]: executing diffoscope
+[2023-04-23 12:51:35] INFO root fetch - processPackages [pepperize.cdk-organizations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-organizations-0.7.98.tar.gz tmp/pepperize.cdk-organizations-0.7.99.tar.gz --markdown 20230423/p/pepperize.cdk-organizations/0.7.98-0.7.99/diff.md --exclude *.pyd
+[2023-04-23 12:51:35] INFO root fetch - processPackages [xia-engine-bigquery]: Downloading https://files.pythonhosted.org/packages/92/64/40aea8a9bcd77cc93ce1ee80eb9aac641945845bb343f8cab04fb166990d/xia_engine_bigquery-0.1.6-cp39-none-win_amd64.whl
+[2023-04-23 12:51:35] INFO root fetch - processPackages [pysistentclass]: Downloading https://files.pythonhosted.org/packages/4a/55/3c20efaf6d49beb012838c23d57c25d618a2a06993c25aa3eed725fe662c/pysistentclass-0.0.6.tar.gz
+[2023-04-23 12:51:35] INFO root fetch - processPackages [nshare-calc]: Downloading https://files.pythonhosted.org/packages/a1/b1/4502203f732b1dd2e66d606efe083ba9d87fc48e0228bc81be2bc0f000c4/nshare-calc-0.1.1.tar.gz
+[2023-04-23 12:51:35] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/64/6a/566e188ea3d81d5446f2890f2791f09161a4e198fefa75a1e39592d1e932/yeref-0.1.41.tar.gz
+[2023-04-23 12:51:35] INFO root fetch - processPackages [pysistentclass]: executing diffoscope
+[2023-04-23 12:51:35] INFO root fetch - processPackages [pysistentclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysistentclass-0.0.5.tar.gz tmp/pysistentclass-0.0.6.tar.gz --markdown 20230423/p/pysistentclass/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 12:51:35] INFO root fetch - processPackages [stockprice-cli]: Downloading https://files.pythonhosted.org/packages/67/16/f9c06dec084d3f5d9d60e5ba2007554d88a9666ebf8934812d1ee05ce38c/stockprice_cli-2.1.1-py3-none-any.whl
+[2023-04-23 12:51:35] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2023-04-23 12:51:35] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.1.40.tar.gz tmp/yeref-0.1.41.tar.gz --markdown 20230423/y/yeref/0.1.40-0.1.41/diff.md --exclude *.pyd
+[2023-04-23 12:51:35] INFO root fetch - processPackages [xia-engine-bigquery]: Downloading https://files.pythonhosted.org/packages/4c/5c/bf215300301d8e1bd1e7ee88338d54eed1cf6c26d6f0325d6b94c73315ec/xia_engine_bigquery-0.1.7-cp39-none-macosx_11_0_x86_64.whl
+[2023-04-23 12:51:35] INFO root fetch - processPackages [stockprice-cli]: executing diffoscope
+[2023-04-23 12:51:35] INFO root fetch - processPackages [stockprice-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stockprice_cli-2.1.0-py3-none-any.whl.zip tmp/stockprice_cli-2.1.1-py3-none-any.whl.zip --markdown 20230423/s/stockprice-cli/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-04-23 12:51:35] INFO root fetch - processPackages [xia-engine-bigquery]: executing diffoscope
+[2023-04-23 12:51:35] INFO root fetch - processPackages [xia-engine-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_engine_bigquery-0.1.6-cp39-none-win_amd64.whl.zip tmp/xia_engine_bigquery-0.1.7-cp39-none-macosx_11_0_x86_64.whl.zip --markdown 20230423/x/xia-engine-bigquery/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-23 12:51:36] INFO root fetch - main [MainThread]: End processing [megadata]: success
+[2023-04-23 12:51:36] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-organizations]: success
+[2023-04-23 12:51:36] INFO root fetch - processPackages [nshare-calc]: Downloading https://files.pythonhosted.org/packages/43/7f/824e03b34876f9eeab1a60276631ea7d19ca512d273180372f978792811d/nshare-calc-0.1.2.tar.gz
+[2023-04-23 12:51:36] INFO root fetch - main [MainThread]: End processing [pysistentclass]: success
+[2023-04-23 12:51:36] INFO root fetch - processPackages [nshare-calc]: executing diffoscope
+[2023-04-23 12:51:36] INFO root fetch - processPackages [nshare-calc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nshare-calc-0.1.1.tar.gz tmp/nshare-calc-0.1.2.tar.gz --markdown 20230423/n/nshare-calc/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-23 12:51:36] INFO root fetch - main [MainThread]: End processing [stockprice-cli]: success
+[2023-04-23 12:51:37] INFO root fetch - main [MainThread]: End processing [nshare-calc]: success
+[2023-04-23 12:51:38] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2023-04-23 12:51:52] INFO root fetch - main [MainThread]: End processing [xia-engine-bigquery]: success
+[2023-04-23 12:51:52] INFO root fetch - main [MainThread]: Store serial: [17821488]
