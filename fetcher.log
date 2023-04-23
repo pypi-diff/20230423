@@ -9991,3 +9991,40 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 17:44:01] INFO root fetch - processPackages [asari-metabolomics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asari-metabolomics-1.9.7.tar.gz tmp/asari-metabolomics-1.9.8.tar.gz --markdown 20230423/a/asari-metabolomics/1.9.7-1.9.8/diff.md --exclude *.pyd
 [2023-04-23 17:44:05] INFO root fetch - main [MainThread]: End processing [asari-metabolomics]: success
 [2023-04-23 17:44:05] INFO root fetch - main [MainThread]: Store serial: [17823458]
+[2023-04-23 17:49:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823458]
+[2023-04-23 17:49:14] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-23 17:49:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qwak-sdk
+[2023-04-23 17:49:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: longalpha-utils
+[2023-04-23 17:49:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigtest-automator
+[2023-04-23 17:49:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: AegosCode
+[2023-04-23 17:49:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Timeseries-Preprocess
+[2023-04-23 17:49:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aug-tool
+[2023-04-23 17:49:14] WARNING root fetch - processPackages [bigtest-automator]: Skipping, unable to determine old version
+[2023-04-23 17:49:14] INFO root fetch - main [MainThread]: End processing [bigtest-automator] error
+[2023-04-23 17:49:14] INFO root fetch - processPackages [longalpha-utils]: New version: [0.41] Old Version: [0.40]
+[2023-04-23 17:49:14] INFO root fetch - processPackages [qwak-sdk]: New version: [0.2.26rc0] Old Version: [0.2.25rc0]
+[2023-04-23 17:49:14] INFO root fetch - processPackages [Timeseries-Preprocess]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-04-23 17:49:14] WARNING root fetch - processPackages [AegosCode]: Skipping, unable to determine old version
+[2023-04-23 17:49:14] INFO root fetch - main [MainThread]: End processing [AegosCode] error
+[2023-04-23 17:49:14] INFO root fetch - processPackages [aug-tool]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 17:49:14] INFO root fetch - processPackages [Timeseries-Preprocess]: Downloading https://files.pythonhosted.org/packages/55/f8/ae967349f51c343fbdecdc22c00dcbdd13ec4114a2d5a3392266e765d10b/Timeseries-Preprocess-0.0.0.tar.gz
+[2023-04-23 17:49:14] INFO root fetch - processPackages [qwak-sdk]: Downloading https://files.pythonhosted.org/packages/ea/fa/402696b0b2fc4f23ce0a67b22f31c68edf4a3160f28d2dd12428117ca5af/qwak_sdk-0.2.25rc0.tar.gz
+[2023-04-23 17:49:14] INFO root fetch - processPackages [longalpha-utils]: Downloading https://files.pythonhosted.org/packages/a2/21/a5d664a0decaafe3653b331d6ebcbd02a188bd8497c8f36af26e0a298563/longalpha_utils-0.40.tar.gz
+[2023-04-23 17:49:14] INFO root fetch - processPackages [aug-tool]: Downloading https://files.pythonhosted.org/packages/d6/f5/e8f5db5dffc559603691a234f75d3203f10ac9b53aaabe98adae2070b7d5/aug-tool-0.0.1.tar.gz
+[2023-04-23 17:49:15] INFO root fetch - processPackages [Timeseries-Preprocess]: Downloading https://files.pythonhosted.org/packages/fb/d7/e9da3515a9f109315b05bbd6cc91cddc97b340fee69b081805a18ea1a5b5/Timeseries-Preprocess-0.0.1.tar.gz
+[2023-04-23 17:49:15] INFO root fetch - processPackages [qwak-sdk]: Downloading https://files.pythonhosted.org/packages/88/70/ac14e7c1daa2c4fdb667173154b41154791c64bab7263d15ebd2f75f6d93/qwak_sdk-0.2.26rc0.tar.gz
+[2023-04-23 17:49:15] INFO root fetch - processPackages [longalpha-utils]: Downloading https://files.pythonhosted.org/packages/bf/53/10f4575e6890e9e77afd7412fb4a313f4cb395160cfc9e7866c31ef43244/longalpha_utils-0.41.tar.gz
+[2023-04-23 17:49:15] INFO root fetch - processPackages [Timeseries-Preprocess]: executing diffoscope
+[2023-04-23 17:49:15] INFO root fetch - processPackages [Timeseries-Preprocess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Timeseries-Preprocess-0.0.0.tar.gz tmp/Timeseries-Preprocess-0.0.1.tar.gz --markdown 20230423/T/Timeseries-Preprocess/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-04-23 17:49:15] INFO root fetch - processPackages [qwak-sdk]: executing diffoscope
+[2023-04-23 17:49:15] INFO root fetch - processPackages [qwak-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_sdk-0.2.25rc0.tar.gz tmp/qwak_sdk-0.2.26rc0.tar.gz --markdown 20230423/q/qwak-sdk/0.2.25rc0-0.2.26rc0/diff.md --exclude *.pyd
+[2023-04-23 17:49:15] INFO root fetch - processPackages [longalpha-utils]: executing diffoscope
+[2023-04-23 17:49:15] INFO root fetch - processPackages [longalpha-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/longalpha_utils-0.40.tar.gz tmp/longalpha_utils-0.41.tar.gz --markdown 20230423/l/longalpha-utils/0.40-0.41/diff.md --exclude *.pyd
+[2023-04-23 17:49:15] INFO root fetch - processPackages [aug-tool]: Downloading https://files.pythonhosted.org/packages/4c/13/34f61b1948b656f6349f4102b78c39ed7f0491e2ba6d03c11e3200995668/aug-tool-0.0.2.tar.gz
+[2023-04-23 17:49:15] INFO root fetch - processPackages [aug-tool]: executing diffoscope
+[2023-04-23 17:49:15] INFO root fetch - processPackages [aug-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aug-tool-0.0.1.tar.gz tmp/aug-tool-0.0.2.tar.gz --markdown 20230423/a/aug-tool/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 17:49:16] INFO root fetch - main [MainThread]: End processing [Timeseries-Preprocess]: success
+[2023-04-23 17:49:16] INFO root fetch - main [MainThread]: End processing [longalpha-utils]: success
+[2023-04-23 17:49:16] INFO root fetch - main [MainThread]: End processing [aug-tool]: success
+[2023-04-23 17:49:17] INFO root fetch - main [MainThread]: End processing [qwak-sdk]: success
+[2023-04-23 17:49:17] INFO root fetch - main [MainThread]: Store serial: [17823479]
