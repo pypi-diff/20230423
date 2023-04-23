@@ -2087,3 +2087,58 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 03:46:53] INFO root fetch - main [MainThread]: End processing [selfcord.py]: success
 [2023-04-23 03:46:54] INFO root fetch - main [MainThread]: End processing [mecord-cli]: success
 [2023-04-23 03:46:54] INFO root fetch - main [MainThread]: Store serial: [17818768]
+[2023-04-23 03:51:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818768]
+[2023-04-23 03:52:04] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-23 03:52:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: juno-ai
+[2023-04-23 03:52:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: twitter-api-client
+[2023-04-23 03:52:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: histcite-python
+[2023-04-23 03:52:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Solarflare
+[2023-04-23 03:52:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-Ayra
+[2023-04-23 03:52:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: biobear
+[2023-04-23 03:52:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-lambda-layer-wget
+[2023-04-23 03:52:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: taichu-serve
+[2023-04-23 03:52:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: networth
+[2023-04-23 03:52:04] INFO root fetch - processPackages [histcite-python]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-23 03:52:04] WARNING root fetch - processPackages [juno-ai]: Skipping, unable to determine old version
+[2023-04-23 03:52:04] INFO root fetch - main [MainThread]: End processing [juno-ai] error
+[2023-04-23 03:52:04] INFO root fetch - processPackages [twitter-api-client]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-04-23 03:52:04] INFO root fetch - processPackages [Solarflare]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-04-23 03:52:04] INFO root fetch - processPackages [py-Ayra]: New version: [8.2.8] Old Version: [8.2.7]
+[2023-04-23 03:52:04] INFO root fetch - processPackages [taichu-serve]: New version: [2.0.9] Old Version: [2.0.18]
+[2023-04-23 03:52:04] INFO root fetch - processPackages [biobear]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-23 03:52:04] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-23 03:52:04] INFO root fetch - processPackages [networth]: New version: [1.2] Old Version: [1.1.0]
+[2023-04-23 03:52:04] INFO root fetch - processPackages [taichu-serve]: Downloading https://files.pythonhosted.org/packages/ec/97/08a1e584575a93374145a19b16057a87e7f8cf70b963e39a1a5a1a11d9ef/taichu-serve-2.0.18.tar.gz
+[2023-04-23 03:52:04] INFO root fetch - processPackages [Solarflare]: Downloading https://files.pythonhosted.org/packages/bb/01/690b2184dca0bf43aba8a65ebbd37c677032064929e6a5c6a299a3623510/Solarflare-0.0.0.tar.gz
+[2023-04-23 03:52:04] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-04-23 03:52:04] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230423/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-23 03:52:04] INFO root fetch - processPackages [py-Ayra]: Downloading https://files.pythonhosted.org/packages/a2/7a/91db4ba52e4eedeb9a9d0ebd29910af817be3fa78e10fb654c0a7986682f/py-Ayra-8.2.8.tar.gz
+[2023-04-23 03:52:04] INFO root fetch - processPackages [biobear]: Downloading https://files.pythonhosted.org/packages/a1/a2/a306eded91affa390e03f27f1698708926baabc7efc795973291bc92b27b/biobear-0.1.6.tar.gz
+[2023-04-23 03:52:04] INFO root fetch - processPackages [biobear]: executing diffoscope
+[2023-04-23 03:52:04] INFO root fetch - processPackages [biobear]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biobear-0.1.5.tar.gz tmp/biobear-0.1.6.tar.gz --markdown 20230423/b/biobear/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-23 03:52:04] INFO root fetch - processPackages [py-Ayra]: executing diffoscope
+[2023-04-23 03:52:04] INFO root fetch - processPackages [py-Ayra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-Ayra-8.2.7.tar.gz tmp/py-Ayra-8.2.8.tar.gz --markdown 20230423/p/py-Ayra/8.2.7-8.2.8/diff.md --exclude *.pyd
+[2023-04-23 03:52:04] INFO root fetch - processPackages [networth]: Downloading https://files.pythonhosted.org/packages/82/cb/b57411f9f9ab6816e830646b362b516cc0c2525392d4eca6102bf436c77f/networth-1.1.0.tar.gz
+[2023-04-23 03:52:04] INFO root fetch - processPackages [twitter-api-client]: Downloading https://files.pythonhosted.org/packages/43/e1/6faee14bddc9704f10b86ad67988e2c20e9b262d85a23295d9df79f0bd71/twitter-api-client-0.7.3.tar.gz
+[2023-04-23 03:52:04] INFO root fetch - processPackages [histcite-python]: Downloading https://files.pythonhosted.org/packages/27/22/f061c468d7f0c6440adfb80269c060e33ee67444f0cfe014513c06e6a598/histcite-python-0.1.2.tar.gz
+[2023-04-23 03:52:04] INFO root fetch - processPackages [twitter-api-client]: executing diffoscope
+[2023-04-23 03:52:04] INFO root fetch - processPackages [twitter-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter-api-client-0.7.2.tar.gz tmp/twitter-api-client-0.7.3.tar.gz --markdown 20230423/t/twitter-api-client/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-04-23 03:52:04] INFO root fetch - processPackages [histcite-python]: executing diffoscope
+[2023-04-23 03:52:04] INFO root fetch - processPackages [histcite-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/histcite-python-0.1.1.tar.gz tmp/histcite-python-0.1.2.tar.gz --markdown 20230423/h/histcite-python/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-23 03:52:04] INFO root fetch - processPackages [Solarflare]: Downloading https://files.pythonhosted.org/packages/ad/7b/7c82888036020367a6ae3446c6766cd70dbfa609373a04dd8490f9c2de55/Solarflare-0.0.1.tar.gz
+[2023-04-23 03:52:04] INFO root fetch - processPackages [taichu-serve]: executing diffoscope
+[2023-04-23 03:52:04] INFO root fetch - processPackages [taichu-serve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taichu-serve-2.0.18.tar.gz tmp/taichu-serve-2.0.9.tar.gz --markdown 20230423/t/taichu-serve/2.0.18-2.0.9/diff.md --exclude *.pyd
+[2023-04-23 03:52:04] INFO root fetch - processPackages [Solarflare]: executing diffoscope
+[2023-04-23 03:52:04] INFO root fetch - processPackages [Solarflare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Solarflare-0.0.0.tar.gz tmp/Solarflare-0.0.1.tar.gz --markdown 20230423/S/Solarflare/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-04-23 03:52:04] INFO root fetch - processPackages [networth]: Downloading https://files.pythonhosted.org/packages/4f/bd/95f723b16a1c1571c22552d3e33e992b2416a11111e697a5436aeae100ef/networth-1.2.tar.gz
+[2023-04-23 03:52:04] INFO root fetch - processPackages [networth]: executing diffoscope
+[2023-04-23 03:52:04] INFO root fetch - processPackages [networth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networth-1.1.0.tar.gz tmp/networth-1.2.tar.gz --markdown 20230423/n/networth/1.1.0-1.2/diff.md --exclude *.pyd
+[2023-04-23 03:52:05] INFO root fetch - main [MainThread]: End processing [biobear]: success
+[2023-04-23 03:52:06] INFO root fetch - main [MainThread]: End processing [py-Ayra]: success
+[2023-04-23 03:52:06] INFO root fetch - main [MainThread]: End processing [Solarflare]: success
+[2023-04-23 03:52:06] INFO root fetch - main [MainThread]: End processing [histcite-python]: success
+[2023-04-23 03:52:06] INFO root fetch - main [MainThread]: End processing [twitter-api-client]: success
+[2023-04-23 03:52:06] INFO root fetch - main [MainThread]: End processing [taichu-serve]: success
+[2023-04-23 03:52:06] INFO root fetch - main [MainThread]: End processing [networth]: success
+[2023-04-23 03:52:07] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-04-23 03:52:07] INFO root fetch - main [MainThread]: Store serial: [17818837]
