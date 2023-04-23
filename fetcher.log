@@ -13074,3 +13074,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 21:49:01] INFO root fetch - main [MainThread]: End processing [termcolor]: success
 [2023-04-23 21:49:01] INFO root fetch - main [MainThread]: End processing [batogram]: success
 [2023-04-23 21:49:01] INFO root fetch - main [MainThread]: Store serial: [17825385]
+[2023-04-23 21:54:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825385]
+[2023-04-23 21:54:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-23 21:54:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pythoness
+[2023-04-23 21:54:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lg-april-permissions
+[2023-04-23 21:54:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CodonU
+[2023-04-23 21:54:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: prepipy
+[2023-04-23 21:54:10] WARNING root fetch - processPackages [CodonU]: Skipping, unable to determine old version
+[2023-04-23 21:54:10] INFO root fetch - main [MainThread]: End processing [CodonU] error
+[2023-04-23 21:54:10] WARNING root fetch - processPackages [prepipy]: Skipping, unable to determine old version
+[2023-04-23 21:54:10] INFO root fetch - processPackages [pythoness]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-23 21:54:10] INFO root fetch - processPackages [lg-april-permissions]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 21:54:10] INFO root fetch - main [MainThread]: End processing [prepipy] error
+[2023-04-23 21:54:10] INFO root fetch - processPackages [lg-april-permissions]: executing diffoscope
+[2023-04-23 21:54:10] INFO root fetch - processPackages [lg-april-permissions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lg_april_permissions-0.1.8.tar.gz tmp/lg_april_permissions-0.1.9.tar.gz --markdown 20230423/l/lg-april-permissions/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 21:54:10] INFO root fetch - processPackages [pythoness]: Downloading https://files.pythonhosted.org/packages/6f/8d/60bfa74d9e4ca21637512f96861ffd23bd04134e7c87f906bcd8fb72de88/pythoness-0.0.4.tar.gz
+[2023-04-23 21:54:11] INFO root fetch - processPackages [pythoness]: Downloading https://files.pythonhosted.org/packages/f4/c1/d0e25100ab26904a143d8b68b8abb4c4d3787d1bea2981f7e9535ddd25f6/pythoness-0.0.5.tar.gz
+[2023-04-23 21:54:11] INFO root fetch - processPackages [pythoness]: executing diffoscope
+[2023-04-23 21:54:11] INFO root fetch - processPackages [pythoness]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythoness-0.0.4.tar.gz tmp/pythoness-0.0.5.tar.gz --markdown 20230423/p/pythoness/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 21:54:11] INFO root fetch - main [MainThread]: End processing [lg-april-permissions]: success
+[2023-04-23 21:54:12] INFO root fetch - main [MainThread]: End processing [pythoness]: success
+[2023-04-23 21:54:12] INFO root fetch - main [MainThread]: Store serial: [17825399]
