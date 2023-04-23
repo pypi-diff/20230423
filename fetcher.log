@@ -10352,3 +10352,78 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 18:17:26] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
 [2023-04-23 18:17:49] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2023-04-23 18:17:49] INFO root fetch - main [MainThread]: Store serial: [17823681]
+[2023-04-23 18:22:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823681]
+[2023-04-23 18:22:58] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-23 18:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: csoundengine
+[2023-04-23 18:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: asynctranslator
+[2023-04-23 18:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: premise
+[2023-04-23 18:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: image-frequency-analysis
+[2023-04-23 18:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rosgraph-msgs
+[2023-04-23 18:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ForgePys
+[2023-04-23 18:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mindsdb-text-to-sql
+[2023-04-23 18:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: teg-CCC
+[2023-04-23 18:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sarveshbmicalculator
+[2023-04-23 18:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: inverter-connect
+[2023-04-23 18:22:58] INFO root fetch - processPackages [csoundengine]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-23 18:22:58] INFO root fetch - processPackages [mindsdb-text-to-sql]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 18:22:58] INFO root fetch - processPackages [image-frequency-analysis]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-23 18:22:58] INFO root fetch - processPackages [premise]: New version: [1.5.0b2] Old Version: [1.5.0b1]
+[2023-04-23 18:22:58] INFO root fetch - processPackages [teg-CCC]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 18:22:58] WARNING root fetch - processPackages [ForgePys]: Skipping, unable to determine old version
+[2023-04-23 18:22:58] INFO root fetch - processPackages [inverter-connect]: New version: [0.0.1rc0] Old Version: [0.0.1]
+[2023-04-23 18:22:58] INFO root fetch - processPackages [ForgePys]: Start processing: gpt-gateway
+[2023-04-23 18:22:58] INFO root fetch - main [MainThread]: End processing [ForgePys] error
+[2023-04-23 18:22:58] WARNING root fetch - processPackages [rosgraph-msgs]: Skipping, unable to determine old version
+[2023-04-23 18:22:58] INFO root fetch - processPackages [rosgraph-msgs]: Start processing: bigtest-automator
+[2023-04-23 18:22:58] INFO root fetch - main [MainThread]: End processing [rosgraph-msgs] error
+[2023-04-23 18:22:58] WARNING root fetch - processPackages [sarveshbmicalculator]: Skipping, unable to determine old version
+[2023-04-23 18:22:58] INFO root fetch - processPackages [sarveshbmicalculator]: Start processing: fastapi-template
+[2023-04-23 18:22:58] INFO root fetch - main [MainThread]: End processing [sarveshbmicalculator] error
+[2023-04-23 18:22:58] INFO root fetch - processPackages [gpt-gateway]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 18:22:58] INFO root fetch - processPackages [bigtest-automator]: New version: [0.3] Old Version: [0.2]
+[2023-04-23 18:22:58] INFO root fetch - processPackages [fastapi-template]: New version: [4.1.2] Old Version: [4.1.1]
+[2023-04-23 18:22:58] WARNING root fetch - processPackages [asynctranslator]: Skipping, unable to determine old version
+[2023-04-23 18:22:58] INFO root fetch - processPackages [asynctranslator]: Start processing: httpstan
+[2023-04-23 18:22:58] INFO root fetch - main [MainThread]: End processing [asynctranslator] error
+[2023-04-23 18:22:58] INFO root fetch - processPackages [httpstan]: New version: [4.9.1] Old Version: [4.9.0]
+[2023-04-23 18:22:58] INFO root fetch - processPackages [teg-CCC]: Downloading https://files.pythonhosted.org/packages/e2/9e/064852f5f2ce3ee7d1073ee09458aea57f91965ab7a811edb848a5189ff4/teg_CCC-0.0.1.tar.gz
+[2023-04-23 18:22:58] INFO root fetch - processPackages [gpt-gateway]: executing diffoscope
+[2023-04-23 18:22:58] INFO root fetch - processPackages [gpt-gateway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_gateway-0.0.8.tar.gz tmp/gpt_gateway-0.0.9.tar.gz --markdown 20230423/g/gpt-gateway/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 18:22:58] INFO root fetch - processPackages [inverter-connect]: Downloading https://files.pythonhosted.org/packages/fe/e8/084a4a16c4f18f2bbc3ddd9d58480ee4aac1d5f266a9da82ea39db279b0f/inverter-connect-0.0.1.tar.gz
+[2023-04-23 18:22:58] INFO root fetch - processPackages [premise]: Downloading https://files.pythonhosted.org/packages/12/cd/beae9bb37e3e62b0400c4b04066c7d8202053e6291aef653a0cd9d9b8d31/premise-1.5.0b1.tar.gz
+[2023-04-23 18:22:58] INFO root fetch - processPackages [mindsdb-text-to-sql]: Downloading https://files.pythonhosted.org/packages/0f/c4/03f0c7c230972d8e56fe831e7d28c831dc9529df2af66f308b34d7ab4f4a/mindsdb_text_to_sql-0.1.0.tar.gz
+[2023-04-23 18:22:59] INFO root fetch - processPackages [fastapi-template]: Downloading https://files.pythonhosted.org/packages/23/f9/9c51e285b800a88e0f64d857f9f36141c0f2e27c4337f5ca5437bd59c314/fastapi_template-4.1.1.tar.gz
+[2023-04-23 18:22:59] INFO root fetch - processPackages [bigtest-automator]: Downloading https://files.pythonhosted.org/packages/9d/f2/2eecd048e797b3d0d99d47c020c3fe840b5c3680b4fde6e37ad6d08231a0/bigtest_automator-0.3.tar.gz
+[2023-04-23 18:22:59] INFO root fetch - processPackages [csoundengine]: executing diffoscope
+[2023-04-23 18:22:59] INFO root fetch - processPackages [csoundengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csoundengine-1.9.0.tar.gz tmp/csoundengine-1.9.1.tar.gz --markdown 20230423/c/csoundengine/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-23 18:22:59] INFO root fetch - processPackages [image-frequency-analysis]: Downloading https://files.pythonhosted.org/packages/d3/cf/c6141f3a87ea69eb2ff97e0c9df047866730bf310f6b771b1c1a8e49004a/image_frequency_analysis-0.2.1.tar.gz
+[2023-04-23 18:22:59] WARNING root fetch - processPackages [premise]: Skipping package: exceeds size limit 36712269>=10485760
+[2023-04-23 18:22:59] INFO root fetch - main [MainThread]: End processing [premise] error
+[2023-04-23 18:22:59] INFO root fetch - processPackages [httpstan]: Downloading https://files.pythonhosted.org/packages/8f/04/d20193e4ac3239425ae23d25b0d040f736be482a028c8899be0d0a92b1e5/httpstan-4.9.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-23 18:22:59] INFO root fetch - processPackages [bigtest-automator]: executing diffoscope
+[2023-04-23 18:22:59] INFO root fetch - processPackages [bigtest-automator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigtest_automator-0.2.tar.gz tmp/bigtest_automator-0.3.tar.gz --markdown 20230423/b/bigtest-automator/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-23 18:22:59] WARNING root fetch - processPackages [httpstan]: Skipping package: exceeds size limit 43408275>=10485760
+[2023-04-23 18:22:59] INFO root fetch - main [MainThread]: End processing [httpstan] error
+[2023-04-23 18:22:59] INFO root fetch - processPackages [image-frequency-analysis]: executing diffoscope
+[2023-04-23 18:22:59] INFO root fetch - processPackages [image-frequency-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image_frequency_analysis-0.2.0.tar.gz tmp/image_frequency_analysis-0.2.1.tar.gz --markdown 20230423/i/image-frequency-analysis/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-23 18:22:59] INFO root fetch - processPackages [teg-CCC]: Downloading https://files.pythonhosted.org/packages/30/0f/01fab3f3edc525ce63c878314f0e93cb99b941eb738986c41c0643eb414a/teg_CCC-0.0.2.tar.gz
+[2023-04-23 18:22:59] INFO root fetch - processPackages [mindsdb-text-to-sql]: Downloading https://files.pythonhosted.org/packages/52/f1/e0426030d6868ef2ca71dbab45b1863faa16403d3c270adbfd775c9b7604/mindsdb_text_to_sql-0.1.1.tar.gz
+[2023-04-23 18:22:59] INFO root fetch - processPackages [inverter-connect]: Downloading https://files.pythonhosted.org/packages/d8/b3/9e184feb5c5a9664da090363258973909c17a085086ee328ff21896133e5/inverter-connect-0.0.1rc0.tar.gz
+[2023-04-23 18:22:59] INFO root fetch - processPackages [fastapi-template]: Downloading https://files.pythonhosted.org/packages/48/05/84b2d6ad4099fd2258138b4af26836a04dd806e3c8d7bb14e66aec869918/fastapi_template-4.1.2.tar.gz
+[2023-04-23 18:22:59] INFO root fetch - processPackages [inverter-connect]: executing diffoscope
+[2023-04-23 18:22:59] INFO root fetch - processPackages [inverter-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inverter-connect-0.0.1.tar.gz tmp/inverter-connect-0.0.1rc0.tar.gz --markdown 20230423/i/inverter-connect/0.0.1-0.0.1rc0/diff.md --exclude *.pyd
+[2023-04-23 18:22:59] INFO root fetch - processPackages [teg-CCC]: executing diffoscope
+[2023-04-23 18:22:59] INFO root fetch - processPackages [teg-CCC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teg_CCC-0.0.1.tar.gz tmp/teg_CCC-0.0.2.tar.gz --markdown 20230423/t/teg-CCC/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 18:22:59] INFO root fetch - processPackages [mindsdb-text-to-sql]: executing diffoscope
+[2023-04-23 18:22:59] INFO root fetch - processPackages [mindsdb-text-to-sql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mindsdb_text_to_sql-0.1.0.tar.gz tmp/mindsdb_text_to_sql-0.1.1.tar.gz --markdown 20230423/m/mindsdb-text-to-sql/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 18:22:59] INFO root fetch - processPackages [fastapi-template]: executing diffoscope
+[2023-04-23 18:22:59] INFO root fetch - processPackages [fastapi-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_template-4.1.1.tar.gz tmp/fastapi_template-4.1.2.tar.gz --markdown 20230423/f/fastapi-template/4.1.1-4.1.2/diff.md --exclude *.pyd
+[2023-04-23 18:23:00] INFO root fetch - main [MainThread]: End processing [gpt-gateway]: success
+[2023-04-23 18:23:00] INFO root fetch - main [MainThread]: End processing [bigtest-automator]: success
+[2023-04-23 18:23:00] INFO root fetch - main [MainThread]: End processing [image-frequency-analysis]: success
+[2023-04-23 18:23:00] INFO root fetch - main [MainThread]: End processing [csoundengine]: success
+[2023-04-23 18:23:00] INFO root fetch - main [MainThread]: End processing [mindsdb-text-to-sql]: success
+[2023-04-23 18:23:01] INFO root fetch - main [MainThread]: End processing [teg-CCC]: success
+[2023-04-23 18:23:01] INFO root fetch - main [MainThread]: End processing [inverter-connect]: success
+[2023-04-23 18:23:03] INFO root fetch - main [MainThread]: End processing [fastapi-template]: success
+[2023-04-23 18:23:03] INFO root fetch - main [MainThread]: Store serial: [17823729]
