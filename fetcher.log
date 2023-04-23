@@ -9788,3 +9788,25 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 17:17:49] INFO root fetch - main [MainThread]: End processing [travis-emulator]: success
 [2023-04-23 17:17:49] INFO root fetch - main [MainThread]: End processing [clodoo]: success
 [2023-04-23 17:17:49] INFO root fetch - main [MainThread]: Store serial: [17823342]
+[2023-04-23 17:22:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823342]
+[2023-04-23 17:22:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-23 17:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zar
+[2023-04-23 17:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: enrRiceTrait
+[2023-04-23 17:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sql-test-kit
+[2023-04-23 17:22:58] INFO root fetch - processPackages [zar]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-23 17:22:58] INFO root fetch - processPackages [enrRiceTrait]: New version: [1.3.6] Old Version: [1.3.0]
+[2023-04-23 17:22:58] INFO root fetch - processPackages [sql-test-kit]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-23 17:22:59] INFO root fetch - processPackages [sql-test-kit]: Downloading https://files.pythonhosted.org/packages/33/92/8b8faa8aa805b4e04197f0a8f61167f5dd7f13cfcbfd2b674d3445304018/sql_test_kit-0.2.2.tar.gz
+[2023-04-23 17:22:59] INFO root fetch - processPackages [enrRiceTrait]: Downloading https://files.pythonhosted.org/packages/ae/59/2b33c3d1a3c28775522cd54ee0ae9cef08b6029eef2b7f42ac29ad0ecff1/enrRiceTrait-1.3.6-py3-none-any.whl
+[2023-04-23 17:22:59] INFO root fetch - processPackages [zar]: Downloading https://files.pythonhosted.org/packages/57/d2/514fbae04e916ac252498c996d3269b2269da21dd6ebbc0c192521fa7fea/zar-2.0.0.tar.gz
+[2023-04-23 17:22:59] INFO root fetch - processPackages [sql-test-kit]: executing diffoscope
+[2023-04-23 17:22:59] INFO root fetch - processPackages [sql-test-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sql_test_kit-0.2.1.tar.gz tmp/sql_test_kit-0.2.2.tar.gz --markdown 20230423/s/sql-test-kit/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-23 17:22:59] INFO root fetch - processPackages [zar]: Downloading https://files.pythonhosted.org/packages/84/18/62f7db55abc3c4e5f1c094226fd6adae79e6dcca42e67c4998ff22f56157/zar-2.0.1.tar.gz
+[2023-04-23 17:22:59] INFO root fetch - processPackages [enrRiceTrait]: executing diffoscope
+[2023-04-23 17:22:59] INFO root fetch - processPackages [enrRiceTrait]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enrRiceTrait-1.3.0.tar.gz tmp/enrRiceTrait-1.3.6-py3-none-any.whl.zip --markdown 20230423/e/enrRiceTrait/1.3.0-1.3.6/diff.md --exclude *.pyd
+[2023-04-23 17:22:59] INFO root fetch - processPackages [zar]: executing diffoscope
+[2023-04-23 17:22:59] INFO root fetch - processPackages [zar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zar-2.0.0.tar.gz tmp/zar-2.0.1.tar.gz --markdown 20230423/z/zar/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-23 17:23:00] INFO root fetch - main [MainThread]: End processing [sql-test-kit]: success
+[2023-04-23 17:23:00] INFO root fetch - main [MainThread]: End processing [zar]: success
+[2023-04-23 17:23:07] INFO root fetch - main [MainThread]: End processing [enrRiceTrait]: success
+[2023-04-23 17:23:07] INFO root fetch - main [MainThread]: Store serial: [17823350]
