@@ -5202,3 +5202,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 10:29:46] INFO root fetch - main [MainThread]: End processing [xj-thread]: success
 [2023-04-23 10:29:47] INFO root fetch - main [MainThread]: End processing [django-perf-rec]: success
 [2023-04-23 10:29:47] INFO root fetch - main [MainThread]: Store serial: [17820618]
+[2023-04-23 10:34:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820618]
+[2023-04-23 10:34:56] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 10:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yuanfen
+[2023-04-23 10:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: graphql-http-server
+[2023-04-23 10:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Aciembler
+[2023-04-23 10:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lamini
+[2023-04-23 10:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: qingxun-openapi-python-sdk
+[2023-04-23 10:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tastytrade-api
+[2023-04-23 10:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: netin
+[2023-04-23 10:34:56] WARNING root fetch - processPackages [qingxun-openapi-python-sdk]: Skipping, unable to determine old version
+[2023-04-23 10:34:56] INFO root fetch - main [MainThread]: End processing [qingxun-openapi-python-sdk] error
+[2023-04-23 10:34:56] WARNING root fetch - processPackages [lamini]: Skipping, unable to determine old version
+[2023-04-23 10:34:56] INFO root fetch - main [MainThread]: End processing [lamini] error
+[2023-04-23 10:34:56] INFO root fetch - processPackages [graphql-http-server]: New version: [1.4.3] Old Version: [1.4.2]
+[2023-04-23 10:34:56] INFO root fetch - processPackages [Aciembler]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-23 10:34:56] WARNING root fetch - processPackages [yuanfen]: Skipping, unable to determine old version
+[2023-04-23 10:34:56] INFO root fetch - main [MainThread]: End processing [yuanfen] error
+[2023-04-23 10:34:56] INFO root fetch - processPackages [tastytrade-api]: New version: [0.8.2] Old Version: [0.8.0]
+[2023-04-23 10:34:56] INFO root fetch - processPackages [netin]: New version: [1.0.5.6] Old Version: [1.0.5.5]
+[2023-04-23 10:34:56] INFO root fetch - processPackages [tastytrade-api]: Downloading https://files.pythonhosted.org/packages/20/61/66f4a8506d01af78f609ac96d58cd6b8816cc18132e383c0c550672526c6/tastytrade-api-0.8.2.tar.gz
+[2023-04-23 10:34:56] INFO root fetch - processPackages [Aciembler]: Downloading https://files.pythonhosted.org/packages/68/69/d77223546ed8f538360f7636217e17321589d270ebf62510476a3c589c68/Aciembler-1.0.9-py2.py3-none-any.whl
+[2023-04-23 10:34:56] INFO root fetch - processPackages [graphql-http-server]: Downloading https://files.pythonhosted.org/packages/c9/64/175f70a5f2012c25a954e0533e2404af4006386353082800d2349d2811e5/graphql_http_server-1.4.3.tar.gz
+[2023-04-23 10:34:56] INFO root fetch - processPackages [Aciembler]: executing diffoscope
+[2023-04-23 10:34:56] INFO root fetch - processPackages [Aciembler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Aciembler-1.0.8-py2.py3-none-any.whl.zip tmp/Aciembler-1.0.9-py2.py3-none-any.whl.zip --markdown 20230423/A/Aciembler/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-23 10:34:56] INFO root fetch - processPackages [graphql-http-server]: executing diffoscope
+[2023-04-23 10:34:56] INFO root fetch - processPackages [graphql-http-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphql_http_server-1.4.2.tar.gz tmp/graphql_http_server-1.4.3.tar.gz --markdown 20230423/g/graphql-http-server/1.4.2-1.4.3/diff.md --exclude *.pyd
+[2023-04-23 10:34:56] INFO root fetch - processPackages [tastytrade-api]: executing diffoscope
+[2023-04-23 10:34:56] INFO root fetch - processPackages [tastytrade-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tastytrade-api-0.8.0.tar.gz tmp/tastytrade-api-0.8.2.tar.gz --markdown 20230423/t/tastytrade-api/0.8.0-0.8.2/diff.md --exclude *.pyd
+[2023-04-23 10:34:56] INFO root fetch - processPackages [netin]: Downloading https://files.pythonhosted.org/packages/51/1c/670214778edbe828e2b7725792f6dba335408dfd0b18ee90da916b45b335/netin-1.0.5.6.tar.gz
+[2023-04-23 10:34:57] INFO root fetch - processPackages [netin]: executing diffoscope
+[2023-04-23 10:34:57] INFO root fetch - processPackages [netin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netin-1.0.5.5.tar.gz tmp/netin-1.0.5.6.tar.gz --markdown 20230423/n/netin/1.0.5.5-1.0.5.6/diff.md --exclude *.pyd
+[2023-04-23 10:34:57] INFO root fetch - main [MainThread]: End processing [tastytrade-api]: success
+[2023-04-23 10:34:57] INFO root fetch - main [MainThread]: End processing [graphql-http-server]: success
+[2023-04-23 10:34:57] INFO root fetch - main [MainThread]: End processing [Aciembler]: success
+[2023-04-23 10:34:58] INFO root fetch - main [MainThread]: End processing [netin]: success
+[2023-04-23 10:34:58] INFO root fetch - main [MainThread]: Store serial: [17820643]
