@@ -6390,3 +6390,68 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 12:30:23] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-route53-health-check]: success
 [2023-04-23 12:30:35] INFO root fetch - main [MainThread]: End processing [pytalentsolution]: success
 [2023-04-23 12:30:35] INFO root fetch - main [MainThread]: Store serial: [17821345]
+[2023-04-23 12:35:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17821345]
+[2023-04-23 12:35:44] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-23 12:35:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Poly-REaDDIT
+[2023-04-23 12:35:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-minio-storage
+[2023-04-23 12:35:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yuanfen
+[2023-04-23 12:35:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spccpkg
+[2023-04-23 12:35:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: NodeGraphQt
+[2023-04-23 12:35:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: czech-workdays-holidays
+[2023-04-23 12:35:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: apysc
+[2023-04-23 12:35:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: onnx2tf
+[2023-04-23 12:35:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: imesh
+[2023-04-23 12:35:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: czech-workdays-holidays
+[2023-04-23 12:35:45] INFO root fetch - processPackages [Poly-REaDDIT]: New version: [0.0.1.post1] Old Version: [0.0.1]
+[2023-04-23 12:35:45] INFO root fetch - processPackages [django-minio-storage]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-04-23 12:35:45] INFO root fetch - processPackages [yuanfen]: New version: [2023.4.23.5] Old Version: [2023.4.23.4]
+[2023-04-23 12:35:45] INFO root fetch - processPackages [spccpkg]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 12:35:45] INFO root fetch - processPackages [imesh]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 12:35:45] INFO root fetch - processPackages [czech-workdays-holidays]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-23 12:35:45] WARNING root fetch - processPackages [NodeGraphQt]: Skipping, unable to determine old version
+[2023-04-23 12:35:45] INFO root fetch - processPackages [NodeGraphQt]: Start processing: pepperize.cdk-organizations
+[2023-04-23 12:35:45] INFO root fetch - main [MainThread]: End processing [NodeGraphQt] error
+[2023-04-23 12:35:45] INFO root fetch - processPackages [czech-workdays-holidays]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-23 12:35:45] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-23 12:35:45] INFO root fetch - processPackages [pepperize.cdk-organizations]: New version: [0.7.99] Old Version: [0.7.98]
+[2023-04-23 12:35:45] INFO root fetch - processPackages [apysc]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-04-23 12:35:45] INFO root fetch - processPackages [imesh]: executing diffoscope
+[2023-04-23 12:35:45] INFO root fetch - processPackages [imesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imesh-0.0.8.tar.gz tmp/imesh-0.0.9.tar.gz --markdown 20230423/i/imesh/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 12:35:45] INFO root fetch - processPackages [spccpkg]: executing diffoscope
+[2023-04-23 12:35:45] INFO root fetch - processPackages [spccpkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spccpkg-0.0.1.tar.gz tmp/spccpkg-0.0.2.tar.gz --markdown 20230423/s/spccpkg/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 12:35:45] INFO root fetch - processPackages [Poly-REaDDIT]: Downloading https://files.pythonhosted.org/packages/ff/37/d153156dc86e36095aabad8feb7660e74f5ad9c1789e475d985aebf39551/Poly-REaDDIT-0.0.1.tar.gz
+[2023-04-23 12:35:45] INFO root fetch - processPackages [yuanfen]: executing diffoscope
+[2023-04-23 12:35:45] INFO root fetch - processPackages [yuanfen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yuanfen-2023.4.23.4.tar.gz tmp/yuanfen-2023.4.23.5.tar.gz --markdown 20230423/y/yuanfen/2023.4.23.4-2023.4.23.5/diff.md --exclude *.pyd
+[2023-04-23 12:35:45] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2023-04-23 12:35:45] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.8.tar.gz tmp/onnx2tf-1.9.9.tar.gz --markdown 20230423/o/onnx2tf/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-23 12:35:45] INFO root fetch - processPackages [pepperize.cdk-organizations]: executing diffoscope
+[2023-04-23 12:35:45] INFO root fetch - processPackages [pepperize.cdk-organizations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-organizations-0.7.98.tar.gz tmp/pepperize.cdk-organizations-0.7.99.tar.gz --markdown 20230423/p/pepperize.cdk-organizations/0.7.98-0.7.99/diff.md --exclude *.pyd
+[2023-04-23 12:35:45] INFO root fetch - processPackages [czech-workdays-holidays]: Downloading https://files.pythonhosted.org/packages/ab/4c/f6af102a754c3912d26c40efb1f7309bddb648e344c92e2153779f1cc4ab/czech_workdays_holidays-0.1.8.tar.gz
+[2023-04-23 12:35:45] INFO root fetch - processPackages [czech-workdays-holidays]: Downloading https://files.pythonhosted.org/packages/ab/4c/f6af102a754c3912d26c40efb1f7309bddb648e344c92e2153779f1cc4ab/czech_workdays_holidays-0.1.8.tar.gz
+[2023-04-23 12:35:45] INFO root fetch - processPackages [django-minio-storage]: executing diffoscope
+[2023-04-23 12:35:45] INFO root fetch - processPackages [django-minio-storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-minio-storage-0.3.7.tar.gz tmp/django-minio-storage-0.3.8.tar.gz --markdown 20230423/d/django-minio-storage/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-04-23 12:35:45] INFO root fetch - processPackages [czech-workdays-holidays]: executing diffoscope
+[2023-04-23 12:35:45] INFO root fetch - processPackages [czech-workdays-holidays]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czech_workdays_holidays-0.1.7.tar.gz tmp/czech_workdays_holidays-0.1.8.tar.gz --markdown 20230423/c/czech-workdays-holidays/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-23 12:35:45] INFO root fetch - processPackages [czech-workdays-holidays]: executing diffoscope
+[2023-04-23 12:35:45] INFO root fetch - processPackages [czech-workdays-holidays]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czech_workdays_holidays-0.1.7.tar.gz tmp/czech_workdays_holidays-0.1.8.tar.gz --markdown 20230423/c/czech-workdays-holidays/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-23 12:35:45] INFO root fetch - processPackages [Poly-REaDDIT]: Downloading https://files.pythonhosted.org/packages/09/3b/a9e921a07be0924c0d488c0ba4dd7fd4510bfc6e60ad6c966ab9446a13bb/Poly-REaDDIT-0.0.1.post1.tar.gz
+[2023-04-23 12:35:45] INFO root fetch - processPackages [apysc]: executing diffoscope
+[2023-04-23 12:35:45] INFO root fetch - processPackages [apysc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apysc-2.7.8.tar.gz tmp/apysc-2.7.9.tar.gz --markdown 20230423/a/apysc/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-04-23 12:35:45] INFO root fetch - processPackages [Poly-REaDDIT]: executing diffoscope
+[2023-04-23 12:35:45] INFO root fetch - processPackages [Poly-REaDDIT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Poly-REaDDIT-0.0.1.tar.gz tmp/Poly-REaDDIT-0.0.1.post1.tar.gz --markdown 20230423/P/Poly-REaDDIT/0.0.1-0.0.1.post1/diff.md --exclude *.pyd
+[2023-04-23 12:35:46] INFO root fetch - processPackages [spccpkg]: Start processing: gaia-oc-amd
+[2023-04-23 12:35:46] INFO root fetch - main [MainThread]: End processing [spccpkg]: success
+[2023-04-23 12:35:46] INFO root fetch - processPackages [gaia-oc-amd]: New version: [0.2] Old Version: [0.1]
+[2023-04-23 12:35:46] INFO root fetch - main [MainThread]: End processing [yuanfen]: success
+[2023-04-23 12:35:46] INFO root fetch - processPackages [gaia-oc-amd]: Downloading https://files.pythonhosted.org/packages/7d/64/c7a00c72d17ab12cf7bad2024b8c7726e9fb5ceff9fb28ef7f6dadb6dffc/gaia_oc_amd-0.1.tar.gz
+[2023-04-23 12:35:46] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-organizations]: success
+[2023-04-23 12:35:46] WARNING root fetch - processPackages [gaia-oc-amd]: Skipping package: exceeds size limit 11825788>=10485760
+[2023-04-23 12:35:46] INFO root fetch - main [MainThread]: End processing [gaia-oc-amd] error
+[2023-04-23 12:35:47] INFO root fetch - main [MainThread]: End processing [czech-workdays-holidays]: success
+[2023-04-23 12:35:47] INFO root fetch - main [MainThread]: End processing [Poly-REaDDIT]: success
+[2023-04-23 12:35:47] INFO root fetch - main [MainThread]: End processing [django-minio-storage]: success
+[2023-04-23 12:35:47] INFO root fetch - main [MainThread]: End processing [czech-workdays-holidays]: success
+[2023-04-23 12:35:48] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2023-04-23 12:35:49] INFO root fetch - main [MainThread]: End processing [imesh]: success
+[2023-04-23 12:35:57] INFO root fetch - main [MainThread]: End processing [apysc]: success
+[2023-04-23 12:35:57] INFO root fetch - main [MainThread]: Store serial: [17821380]
