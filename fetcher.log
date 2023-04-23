@@ -2252,3 +2252,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 04:13:02] INFO root fetch - main [MainThread]: End processing [rogue-tools]: success
 [2023-04-23 04:13:02] INFO root fetch - main [MainThread]: End processing [spatialmath-python]: success
 [2023-04-23 04:13:02] INFO root fetch - main [MainThread]: Store serial: [17818904]
+[2023-04-23 04:18:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818904]
+[2023-04-23 04:18:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-23 04:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: drf-remotejwt
+[2023-04-23 04:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: networkx-robustness
+[2023-04-23 04:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mlgpt
+[2023-04-23 04:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyllamacpp
+[2023-04-23 04:18:11] INFO root fetch - processPackages [drf-remotejwt]: New version: [0.1.0] Old Version: [0.0.5]
+[2023-04-23 04:18:11] INFO root fetch - processPackages [networkx-robustness]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-23 04:18:11] INFO root fetch - processPackages [pyllamacpp]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-23 04:18:11] WARNING root fetch - processPackages [mlgpt]: Skipping, unable to determine old version
+[2023-04-23 04:18:11] INFO root fetch - main [MainThread]: End processing [mlgpt] error
+[2023-04-23 04:18:11] INFO root fetch - processPackages [networkx-robustness]: Downloading https://files.pythonhosted.org/packages/a7/cb/a28eb50c93d1a0afedda9ca7a65006c575025614d72cbae4a21b2634af3b/networkx_robustness-0.0.6.tar.gz
+[2023-04-23 04:18:11] INFO root fetch - processPackages [drf-remotejwt]: Downloading https://files.pythonhosted.org/packages/16/a2/5bb48df6ab3af4439677819a349cb0e383d0f9cca40a263f12e19d23d85f/drf-remotejwt-0.0.5.tar.gz
+[2023-04-23 04:18:11] INFO root fetch - processPackages [pyllamacpp]: Downloading https://files.pythonhosted.org/packages/ff/f5/35b546a5701bc9ce4963183d089c3f268eb5e540de183c9206bf509079da/pyllamacpp-1.0.5.tar.gz
+[2023-04-23 04:18:11] INFO root fetch - processPackages [networkx-robustness]: Downloading https://files.pythonhosted.org/packages/99/fa/3b88ee526c742db133c6770886f0bff0e377085b4d6a3593b5fa64cbea16/networkx_robustness-0.0.7.tar.gz
+[2023-04-23 04:18:11] INFO root fetch - processPackages [drf-remotejwt]: Downloading https://files.pythonhosted.org/packages/6e/a7/a1070536084962bf935ecc5dff0cadc87aa2bf7d33fa39730e9b5f9d8ac3/drf-remotejwt-0.1.0.tar.gz
+[2023-04-23 04:18:11] INFO root fetch - processPackages [pyllamacpp]: Downloading https://files.pythonhosted.org/packages/80/e8/612685e57d03ea407ee01851675b8be9b6c1ef2fe86e4d33e905d2e738ea/pyllamacpp-1.0.6.tar.gz
+[2023-04-23 04:18:12] INFO root fetch - processPackages [pyllamacpp]: executing diffoscope
+[2023-04-23 04:18:12] INFO root fetch - processPackages [pyllamacpp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyllamacpp-1.0.5.tar.gz tmp/pyllamacpp-1.0.6.tar.gz --markdown 20230423/p/pyllamacpp/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-23 04:18:12] INFO root fetch - processPackages [drf-remotejwt]: executing diffoscope
+[2023-04-23 04:18:12] INFO root fetch - processPackages [drf-remotejwt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf-remotejwt-0.0.5.tar.gz tmp/drf-remotejwt-0.1.0.tar.gz --markdown 20230423/d/drf-remotejwt/0.0.5-0.1.0/diff.md --exclude *.pyd
+[2023-04-23 04:18:12] INFO root fetch - processPackages [networkx-robustness]: executing diffoscope
+[2023-04-23 04:18:12] INFO root fetch - processPackages [networkx-robustness]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networkx_robustness-0.0.6.tar.gz tmp/networkx_robustness-0.0.7.tar.gz --markdown 20230423/n/networkx-robustness/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-23 04:18:13] INFO root fetch - main [MainThread]: End processing [drf-remotejwt]: success
+[2023-04-23 04:18:13] INFO root fetch - main [MainThread]: End processing [networkx-robustness]: success
+[2023-04-23 04:18:13] INFO root fetch - main [MainThread]: End processing [pyllamacpp]: success
+[2023-04-23 04:18:13] INFO root fetch - main [MainThread]: Store serial: [17818918]
