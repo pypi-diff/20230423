@@ -12739,3 +12739,66 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 21:07:23] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-23 21:07:23] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-23 21:07:23] INFO root fetch - main [MainThread]: Store serial: [17825109]
+[2023-04-23 21:12:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825109]
+[2023-04-23 21:12:33] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-23 21:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ipfskvs
+[2023-04-23 21:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotube
+[2023-04-23 21:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hyperfast-python-template
+[2023-04-23 21:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flopsy
+[2023-04-23 21:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: foursight-cgap
+[2023-04-23 21:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: foursight
+[2023-04-23 21:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: graph-envs
+[2023-04-23 21:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: webarchiver
+[2023-04-23 21:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: circleci-stubs
+[2023-04-23 21:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nlpie
+[2023-04-23 21:12:33] INFO root fetch - processPackages [ipfskvs]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 21:12:33] WARNING root fetch - processPackages [flopsy]: Skipping, unable to determine old version
+[2023-04-23 21:12:33] INFO root fetch - processPackages [flopsy]: Start processing: pykefcontrol
+[2023-04-23 21:12:33] INFO root fetch - main [MainThread]: End processing [flopsy] error
+[2023-04-23 21:12:33] INFO root fetch - processPackages [webarchiver]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-23 21:12:33] INFO root fetch - processPackages [circleci-stubs]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-23 21:12:33] INFO root fetch - processPackages [hyperfast-python-template]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-23 21:12:33] INFO root fetch - processPackages [spotube]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-04-23 21:12:33] INFO root fetch - processPackages [foursight]: New version: [3.4.0.5b3] Old Version: [3.4.0.5b2]
+[2023-04-23 21:12:33] INFO root fetch - processPackages [foursight-cgap]: New version: [3.4.0.5b3] Old Version: [3.4.0.5b28]
+[2023-04-23 21:12:33] INFO root fetch - processPackages [graph-envs]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 21:12:33] INFO root fetch - processPackages [hyperfast-python-template]: executing diffoscope
+[2023-04-23 21:12:33] INFO root fetch - processPackages [hyperfast-python-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperfast_python_template-0.2.8.tar.gz tmp/hyperfast_python_template-0.2.9.tar.gz --markdown 20230423/h/hyperfast-python-template/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-23 21:12:33] INFO root fetch - processPackages [webarchiver]: executing diffoscope
+[2023-04-23 21:12:33] INFO root fetch - processPackages [circleci-stubs]: executing diffoscope
+[2023-04-23 21:12:33] INFO root fetch - processPackages [webarchiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webarchiver-0.8.0-py2.py3-none-any.whl.zip tmp/webarchiver-0.9.0-py2.py3-none-any.whl.zip --markdown 20230423/w/webarchiver/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-23 21:12:33] INFO root fetch - processPackages [circleci-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circleci-stubs-0.1.1.tar.gz tmp/circleci-stubs-0.1.2.tar.gz --markdown 20230423/c/circleci-stubs/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-23 21:12:33] INFO root fetch - processPackages [nlpie]: New version: [0.3.1] Old Version: [0.3]
+[2023-04-23 21:12:33] INFO root fetch - processPackages [foursight]: executing diffoscope
+[2023-04-23 21:12:33] INFO root fetch - processPackages [foursight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight-3.4.0.5b2.tar.gz tmp/foursight-3.4.0.5b3.tar.gz --markdown 20230423/f/foursight/3.4.0.5b2-3.4.0.5b3/diff.md --exclude *.pyd
+[2023-04-23 21:12:33] INFO root fetch - processPackages [foursight-cgap]: Downloading https://files.pythonhosted.org/packages/cd/32/a6a1ac81033cae447f71242eb7d41f723a85c9b2267acc87984ff0a562da/foursight_cgap-3.4.0.5b28.tar.gz
+[2023-04-23 21:12:33] INFO root fetch - processPackages [pykefcontrol]: New version: [0.7.0] Old Version: [0.6.2]
+[2023-04-23 21:12:33] INFO root fetch - processPackages [spotube]: Downloading https://files.pythonhosted.org/packages/5b/b6/bde86144edbf6158df4bdcbae6e4de1319d758ae50dc5b8610b6be4f259d/spotube-0.5.4.tar.gz
+[2023-04-23 21:12:33] INFO root fetch - processPackages [nlpie]: Downloading https://files.pythonhosted.org/packages/a3/fb/43957f76cbda287be54546e9576c705921826458793e9d2256e4445e56a5/nlpie-0.3.tar.gz
+[2023-04-23 21:12:33] INFO root fetch - processPackages [ipfskvs]: Downloading https://files.pythonhosted.org/packages/f2/62/2aa1c148da5b8b49319be06f26ac79f76e30cdbb8f61399d37f1be551739/ipfskvs-0.1.1.tar.gz
+[2023-04-23 21:12:33] INFO root fetch - processPackages [spotube]: executing diffoscope
+[2023-04-23 21:12:33] INFO root fetch - processPackages [spotube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotube-0.5.3.tar.gz tmp/spotube-0.5.4.tar.gz --markdown 20230423/s/spotube/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-04-23 21:12:33] INFO root fetch - processPackages [foursight-cgap]: executing diffoscope
+[2023-04-23 21:12:33] INFO root fetch - processPackages [foursight-cgap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_cgap-3.4.0.5b28.tar.gz tmp/foursight_cgap-3.4.0.5b3.tar.gz --markdown 20230423/f/foursight-cgap/3.4.0.5b28-3.4.0.5b3/diff.md --exclude *.pyd
+[2023-04-23 21:12:33] INFO root fetch - processPackages [pykefcontrol]: Downloading https://files.pythonhosted.org/packages/55/60/69bef5fa67c751c78b34b1c3ed7a4ad878ec6f76158ad12696690ce92d74/pykefcontrol-0.6.2.tar.gz
+[2023-04-23 21:12:33] INFO root fetch - processPackages [ipfskvs]: executing diffoscope
+[2023-04-23 21:12:33] INFO root fetch - processPackages [ipfskvs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipfskvs-0.1.0.tar.gz tmp/ipfskvs-0.1.1.tar.gz --markdown 20230423/i/ipfskvs/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 21:12:34] INFO root fetch - processPackages [graph-envs]: executing diffoscope
+[2023-04-23 21:12:34] INFO root fetch - processPackages [graph-envs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graph-envs-0.0.8.tar.gz tmp/graph-envs-0.0.9.tar.gz --markdown 20230423/g/graph-envs/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 21:12:34] INFO root fetch - processPackages [nlpie]: Downloading https://files.pythonhosted.org/packages/74/2f/1f5a746300303443b3368850cc9236497712bcf9c466acfa44f89fb5afb6/nlpie-0.3.1.tar.gz
+[2023-04-23 21:12:34] INFO root fetch - processPackages [nlpie]: executing diffoscope
+[2023-04-23 21:12:34] INFO root fetch - processPackages [nlpie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlpie-0.3.tar.gz tmp/nlpie-0.3.1.tar.gz --markdown 20230423/n/nlpie/0.3-0.3.1/diff.md --exclude *.pyd
+[2023-04-23 21:12:34] INFO root fetch - processPackages [pykefcontrol]: Downloading https://files.pythonhosted.org/packages/b9/f2/74801b8e3a920fe1db273eecb56aa2547a3062e209a25dedba44f7c33ea6/pykefcontrol-0.7.0-py3-none-any.whl
+[2023-04-23 21:12:34] INFO root fetch - processPackages [pykefcontrol]: executing diffoscope
+[2023-04-23 21:12:34] INFO root fetch - processPackages [pykefcontrol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pykefcontrol-0.6.2.tar.gz tmp/pykefcontrol-0.7.0-py3-none-any.whl.zip --markdown 20230423/p/pykefcontrol/0.6.2-0.7.0/diff.md --exclude *.pyd
+[2023-04-23 21:12:34] INFO root fetch - main [MainThread]: End processing [hyperfast-python-template]: success
+[2023-04-23 21:12:35] INFO root fetch - main [MainThread]: End processing [circleci-stubs]: success
+[2023-04-23 21:12:35] INFO root fetch - main [MainThread]: End processing [ipfskvs]: success
+[2023-04-23 21:12:35] INFO root fetch - main [MainThread]: End processing [foursight-cgap]: success
+[2023-04-23 21:12:35] INFO root fetch - main [MainThread]: End processing [spotube]: success
+[2023-04-23 21:12:35] INFO root fetch - main [MainThread]: End processing [graph-envs]: success
+[2023-04-23 21:12:35] INFO root fetch - main [MainThread]: End processing [nlpie]: success
+[2023-04-23 21:12:35] INFO root fetch - main [MainThread]: End processing [pykefcontrol]: success
+[2023-04-23 21:12:36] INFO root fetch - main [MainThread]: End processing [foursight]: success
+[2023-04-23 21:12:36] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
+[2023-04-23 21:12:36] INFO root fetch - main [MainThread]: Store serial: [17825191]
