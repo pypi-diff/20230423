@@ -6316,3 +6316,77 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 12:25:10] INFO root fetch - main [MainThread]: End processing [oceano-algos]: success
 [2023-04-23 12:25:10] INFO root fetch - main [MainThread]: End processing [gpiod]: success
 [2023-04-23 12:25:10] INFO root fetch - main [MainThread]: Store serial: [17821303]
+[2023-04-23 12:30:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17821303]
+[2023-04-23 12:30:19] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-23 12:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pynocaptcha
+[2023-04-23 12:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pepperize.cdk-route53-health-check
+[2023-04-23 12:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytalentsolution
+[2023-04-23 12:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lsptrain
+[2023-04-23 12:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spagrn
+[2023-04-23 12:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pepperize.cdk-organizations
+[2023-04-23 12:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: czech-workdays-holidays
+[2023-04-23 12:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyramids-gis
+[2023-04-23 12:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: neetbox
+[2023-04-23 12:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pepperize.cdk-security-group
+[2023-04-23 12:30:19] INFO root fetch - processPackages [pytalentsolution]: New version: [0.4.0] Old Version: [0.3.2]
+[2023-04-23 12:30:19] INFO root fetch - processPackages [lsptrain]: New version: [0.0.51] Old Version: [0.0.50]
+[2023-04-23 12:30:19] INFO root fetch - processPackages [pynocaptcha]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-04-23 12:30:19] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 12:30:19] INFO root fetch - processPackages [czech-workdays-holidays]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-23 12:30:19] INFO root fetch - processPackages [pepperize.cdk-organizations]: New version: [0.7.99] Old Version: [0.7.98]
+[2023-04-23 12:30:19] INFO root fetch - processPackages [spagrn]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-23 12:30:19] INFO root fetch - processPackages [pyramids-gis]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-23 12:30:19] INFO root fetch - processPackages [neetbox]: New version: [0.1.515] Old Version: [0.1.514]
+[2023-04-23 12:30:19] INFO root fetch - processPackages [pepperize.cdk-security-group]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 12:30:19] INFO root fetch - processPackages [pynocaptcha]: executing diffoscope
+[2023-04-23 12:30:19] INFO root fetch - processPackages [pynocaptcha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynocaptcha-1.4.1.tar.gz tmp/pynocaptcha-1.4.2.tar.gz --markdown 20230423/p/pynocaptcha/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-04-23 12:30:19] INFO root fetch - processPackages [czech-workdays-holidays]: executing diffoscope
+[2023-04-23 12:30:19] INFO root fetch - processPackages [czech-workdays-holidays]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czech_workdays_holidays-0.1.6.tar.gz tmp/czech_workdays_holidays-0.1.7.tar.gz --markdown 20230423/c/czech-workdays-holidays/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-23 12:30:19] INFO root fetch - processPackages [lsptrain]: Downloading https://files.pythonhosted.org/packages/15/89/51aa2f27180fe9e2d114f0bb2693e1e20c030ccee8a3ccb80a4b03c926e3/lsptrain-0.0.51.tar.gz
+[2023-04-23 12:30:19] INFO root fetch - processPackages [pepperize.cdk-organizations]: executing diffoscope
+[2023-04-23 12:30:19] INFO root fetch - processPackages [pepperize.cdk-organizations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-organizations-0.7.98.tar.gz tmp/pepperize.cdk-organizations-0.7.99.tar.gz --markdown 20230423/p/pepperize.cdk-organizations/0.7.98-0.7.99/diff.md --exclude *.pyd
+[2023-04-23 12:30:19] INFO root fetch - processPackages [pytalentsolution]: Downloading https://files.pythonhosted.org/packages/27/7b/1a73775fcc601694d6492bee4fb7178bc6b8d941053d3011e9299977abbc/pytalentsolution-0.3.2.tar.gz
+[2023-04-23 12:30:19] INFO root fetch - processPackages [spagrn]: Downloading https://files.pythonhosted.org/packages/c6/e5/ac11c77421e43de22d6623b744df151e776128167245ada24466cd7cfefd/spagrn-1.0.1.tar.gz
+[2023-04-23 12:30:19] INFO root fetch - processPackages [pyramids-gis]: Downloading https://files.pythonhosted.org/packages/66/52/cda585ea2e4c160551637b140986b73cffb9e6672f861dc0f1736cf00b14/pyramids-gis-0.4.0.tar.gz
+[2023-04-23 12:30:19] INFO root fetch - processPackages [lsptrain]: executing diffoscope
+[2023-04-23 12:30:19] INFO root fetch - processPackages [lsptrain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lsptrain-0.0.50.tar.gz tmp/lsptrain-0.0.51.tar.gz --markdown 20230423/l/lsptrain/0.0.50-0.0.51/diff.md --exclude *.pyd
+[2023-04-23 12:30:19] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: executing diffoscope
+[2023-04-23 12:30:19] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-route53-health-check-0.0.98.tar.gz tmp/pepperize.cdk-route53-health-check-0.0.99.tar.gz --markdown 20230423/p/pepperize.cdk-route53-health-check/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 12:30:19] INFO root fetch - processPackages [neetbox]: Downloading https://files.pythonhosted.org/packages/45/c9/cdc39d1f1b9f2d6f76e66458e49c322ba5269005a63700d5e12946530c81/neetbox-0.1.515.tar.gz
+[2023-04-23 12:30:19] INFO root fetch - processPackages [pepperize.cdk-security-group]: executing diffoscope
+[2023-04-23 12:30:19] INFO root fetch - processPackages [pepperize.cdk-security-group]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-security-group-0.0.98.tar.gz tmp/pepperize.cdk-security-group-0.0.99.tar.gz --markdown 20230423/p/pepperize.cdk-security-group/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 12:30:19] INFO root fetch - processPackages [pytalentsolution]: Downloading https://files.pythonhosted.org/packages/be/69/101d997832fad84e12c462071c26adf7e148e2aa86f3b1795448481150ce/pytalentsolution-0.4.0.tar.gz
+[2023-04-23 12:30:19] INFO root fetch - processPackages [spagrn]: Downloading https://files.pythonhosted.org/packages/0a/b1/2275b7a04370548001a28d8f9388e9b52c00edec0cb85cc063f1c46c7896/spagrn-1.0.2.tar.gz
+[2023-04-23 12:30:19] INFO root fetch - processPackages [pyramids-gis]: Downloading https://files.pythonhosted.org/packages/5f/bc/5a62d5fef47e96ebe6aebbc2559c879748ca5522d0ed06f4f26a5edbb605/pyramids-gis-0.4.1.tar.gz
+[2023-04-23 12:30:19] INFO root fetch - processPackages [neetbox]: executing diffoscope
+[2023-04-23 12:30:19] INFO root fetch - processPackages [neetbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neetbox-0.1.514.tar.gz tmp/neetbox-0.1.515.tar.gz --markdown 20230423/n/neetbox/0.1.514-0.1.515/diff.md --exclude *.pyd
+[2023-04-23 12:30:20] INFO root fetch - processPackages [pytalentsolution]: executing diffoscope
+[2023-04-23 12:30:20] INFO root fetch - processPackages [pytalentsolution]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytalentsolution-0.3.2.tar.gz tmp/pytalentsolution-0.4.0.tar.gz --markdown 20230423/p/pytalentsolution/0.3.2-0.4.0/diff.md --exclude *.pyd
+[2023-04-23 12:30:20] INFO root fetch - processPackages [pyramids-gis]: executing diffoscope
+[2023-04-23 12:30:20] INFO root fetch - processPackages [pyramids-gis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyramids-gis-0.4.0.tar.gz tmp/pyramids-gis-0.4.1.tar.gz --markdown 20230423/p/pyramids-gis/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-23 12:30:20] INFO root fetch - processPackages [spagrn]: executing diffoscope
+[2023-04-23 12:30:20] INFO root fetch - processPackages [spagrn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spagrn-1.0.1.tar.gz tmp/spagrn-1.0.2.tar.gz --markdown 20230423/s/spagrn/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-23 12:30:20] INFO root fetch - processPackages [pynocaptcha]: Start processing: lsptrain
+[2023-04-23 12:30:20] INFO root fetch - main [MainThread]: End processing [pynocaptcha]: success
+[2023-04-23 12:30:20] INFO root fetch - processPackages [lsptrain]: New version: [0.0.52] Old Version: [0.0.51]
+[2023-04-23 12:30:20] INFO root fetch - processPackages [czech-workdays-holidays]: Start processing: Utsuho
+[2023-04-23 12:30:20] INFO root fetch - main [MainThread]: End processing [czech-workdays-holidays]: success
+[2023-04-23 12:30:20] INFO root fetch - processPackages [lsptrain]: Downloading https://files.pythonhosted.org/packages/b6/3c/3dce2b86a3de2747c1d6e3f32133629018e692931c1feceea1f7e19b2f28/lsptrain-0.0.52.tar.gz
+[2023-04-23 12:30:21] INFO root fetch - processPackages [Utsuho]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-23 12:30:21] INFO root fetch - main [MainThread]: End processing [lsptrain]: success
+[2023-04-23 12:30:21] INFO root fetch - processPackages [lsptrain]: executing diffoscope
+[2023-04-23 12:30:21] INFO root fetch - processPackages [lsptrain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lsptrain-0.0.51.tar.gz tmp/lsptrain-0.0.52.tar.gz --markdown 20230423/l/lsptrain/0.0.51-0.0.52/diff.md --exclude *.pyd
+[2023-04-23 12:30:21] INFO root fetch - processPackages [Utsuho]: Downloading https://files.pythonhosted.org/packages/5c/9e/d4ee1699af2757b0cf7e6e9e68ccad5e762cb67f81de2f7a102caf20ef70/Utsuho-1.1.1.tar.gz
+[2023-04-23 12:30:21] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-security-group]: success
+[2023-04-23 12:30:21] INFO root fetch - processPackages [Utsuho]: Downloading https://files.pythonhosted.org/packages/b1/8a/49908a041a6bc7e2cd98bdeefc3d431b9f024576f6dbf6fca5182bae6add/Utsuho-1.1.2.tar.gz
+[2023-04-23 12:30:21] INFO root fetch - processPackages [Utsuho]: executing diffoscope
+[2023-04-23 12:30:21] INFO root fetch - processPackages [Utsuho]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Utsuho-1.1.1.tar.gz tmp/Utsuho-1.1.2.tar.gz --markdown 20230423/U/Utsuho/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-23 12:30:21] INFO root fetch - main [MainThread]: End processing [neetbox]: success
+[2023-04-23 12:30:21] INFO root fetch - main [MainThread]: End processing [spagrn]: success
+[2023-04-23 12:30:22] INFO root fetch - main [MainThread]: End processing [pyramids-gis]: success
+[2023-04-23 12:30:22] INFO root fetch - main [MainThread]: End processing [lsptrain]: success
+[2023-04-23 12:30:22] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-organizations]: success
+[2023-04-23 12:30:22] INFO root fetch - main [MainThread]: End processing [Utsuho]: success
+[2023-04-23 12:30:23] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-route53-health-check]: success
+[2023-04-23 12:30:35] INFO root fetch - main [MainThread]: End processing [pytalentsolution]: success
+[2023-04-23 12:30:35] INFO root fetch - main [MainThread]: Store serial: [17821345]
