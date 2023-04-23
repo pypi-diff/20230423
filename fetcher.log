@@ -11231,3 +11231,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 19:36:14] INFO root fetch - main [MainThread]: End processing [pyhOn]: success
 [2023-04-23 19:36:26] INFO root fetch - main [MainThread]: End processing [pyobsplot]: success
 [2023-04-23 19:36:26] INFO root fetch - main [MainThread]: Store serial: [17824294]
+[2023-04-23 19:41:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17824294]
+[2023-04-23 19:41:35] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-23 19:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deepqt
+[2023-04-23 19:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psychonaut
+[2023-04-23 19:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nebula-loss
+[2023-04-23 19:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bmkg
+[2023-04-23 19:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Solarflare
+[2023-04-23 19:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: moonshine
+[2023-04-23 19:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sphinx-embeddings
+[2023-04-23 19:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: devine
+[2023-04-23 19:41:35] INFO root fetch - processPackages [deepqt]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-04-23 19:41:35] INFO root fetch - processPackages [psychonaut]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 19:41:35] WARNING root fetch - processPackages [nebula-loss]: Skipping, unable to determine old version
+[2023-04-23 19:41:35] INFO root fetch - main [MainThread]: End processing [nebula-loss] error
+[2023-04-23 19:41:35] INFO root fetch - processPackages [bmkg]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-23 19:41:35] INFO root fetch - processPackages [sphinx-embeddings]: New version: [0.4] Old Version: [0.3]
+[2023-04-23 19:41:35] INFO root fetch - processPackages [Solarflare]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-23 19:41:35] INFO root fetch - processPackages [moonshine]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-23 19:41:35] INFO root fetch - processPackages [devine]: New version: [2.2.0] Old Version: [2.1.0]
+[2023-04-23 19:41:35] INFO root fetch - processPackages [devine]: Downloading https://files.pythonhosted.org/packages/e1/b1/66599928477bfa3359fdcfbf986a5664697be7e2a0e37fdea18a393aa306/devine-2.1.0-py3-none-any.whl
+[2023-04-23 19:41:35] INFO root fetch - processPackages [deepqt]: Downloading https://files.pythonhosted.org/packages/9e/78/9f946e80861a852ed84710018ce281f093019105bc4390910ddb814c77d4/deepqt-1.1.7.tar.gz
+[2023-04-23 19:41:35] INFO root fetch - processPackages [sphinx-embeddings]: Downloading https://files.pythonhosted.org/packages/13/26/0731d138424efd6c353f965d4369bab774d8b5357e7f60390877d3129534/sphinx-embeddings-0.4.tar.gz
+[2023-04-23 19:41:35] INFO root fetch - processPackages [Solarflare]: Downloading https://files.pythonhosted.org/packages/99/58/39abcc7b953491794d052766fa644060b402578c8ab32c855e41771477cc/Solarflare-0.0.4.tar.gz
+[2023-04-23 19:41:35] INFO root fetch - processPackages [bmkg]: Downloading https://files.pythonhosted.org/packages/0e/2f/028f83919362dc4b351f94f163faa8be4e1ca387c711170ff9cc1ef067de/bmkg-1.0.1.tar.gz
+[2023-04-23 19:41:36] INFO root fetch - processPackages [moonshine]: Downloading https://files.pythonhosted.org/packages/0b/37/c95738f1e8b129c2314a9b2715841255ae207c4eb51322c375b14db73ad9/moonshine-0.1.6.tar.gz
+[2023-04-23 19:41:36] INFO root fetch - processPackages [psychonaut]: Downloading https://files.pythonhosted.org/packages/c1/3d/65e8bc220d4fe23be467f06dc2c8069c11ebdadebca303220a41cdfb06ce/psychonaut-0.0.6.tar.gz
+[2023-04-23 19:41:36] INFO root fetch - processPackages [Solarflare]: executing diffoscope
+[2023-04-23 19:41:36] INFO root fetch - processPackages [Solarflare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Solarflare-0.0.3.tar.gz tmp/Solarflare-0.0.4.tar.gz --markdown 20230423/S/Solarflare/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-23 19:41:36] INFO root fetch - processPackages [deepqt]: executing diffoscope
+[2023-04-23 19:41:36] INFO root fetch - processPackages [deepqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepqt-1.1.6.tar.gz tmp/deepqt-1.1.7.tar.gz --markdown 20230423/d/deepqt/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-04-23 19:41:36] INFO root fetch - processPackages [sphinx-embeddings]: executing diffoscope
+[2023-04-23 19:41:36] INFO root fetch - processPackages [sphinx-embeddings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx-embeddings-0.3.tar.gz tmp/sphinx-embeddings-0.4.tar.gz --markdown 20230423/s/sphinx-embeddings/0.3-0.4/diff.md --exclude *.pyd
+[2023-04-23 19:41:36] INFO root fetch - processPackages [devine]: Downloading https://files.pythonhosted.org/packages/c9/c9/b49deefa659f3118a9dcd41445ea22755f4015a4bfcc9016cb429decabf6/devine-2.2.0-py3-none-any.whl
+[2023-04-23 19:41:36] INFO root fetch - processPackages [psychonaut]: executing diffoscope
+[2023-04-23 19:41:36] INFO root fetch - processPackages [psychonaut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psychonaut-0.0.5.tar.gz tmp/psychonaut-0.0.6.tar.gz --markdown 20230423/p/psychonaut/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 19:41:36] INFO root fetch - processPackages [bmkg]: Downloading https://files.pythonhosted.org/packages/e5/15/afa1648a0a7538cb87543be16fea0db8659ad6ebb3384481f1c8391b9c3e/bmkg-1.0.2.tar.gz
+[2023-04-23 19:41:36] INFO root fetch - processPackages [devine]: executing diffoscope
+[2023-04-23 19:41:36] INFO root fetch - processPackages [devine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devine-2.1.0-py3-none-any.whl.zip tmp/devine-2.2.0-py3-none-any.whl.zip --markdown 20230423/d/devine/2.1.0-2.2.0/diff.md --exclude *.pyd
+[2023-04-23 19:41:36] INFO root fetch - processPackages [bmkg]: executing diffoscope
+[2023-04-23 19:41:36] INFO root fetch - processPackages [bmkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmkg-1.0.1.tar.gz tmp/bmkg-1.0.2.tar.gz --markdown 20230423/b/bmkg/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-23 19:41:37] INFO root fetch - processPackages [moonshine]: Downloading https://files.pythonhosted.org/packages/0d/2d/f0c0c76f16e75bb1defc25c349b15eea6ecdc4bba725bdd012450d3ad78e/moonshine-0.1.7-py3-none-any.whl
+[2023-04-23 19:41:37] INFO root fetch - processPackages [moonshine]: executing diffoscope
+[2023-04-23 19:41:37] INFO root fetch - processPackages [moonshine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moonshine-0.1.6.tar.gz tmp/moonshine-0.1.7-py3-none-any.whl.zip --markdown 20230423/m/moonshine/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-23 19:41:37] INFO root fetch - main [MainThread]: End processing [Solarflare]: success
+[2023-04-23 19:41:37] INFO root fetch - main [MainThread]: End processing [sphinx-embeddings]: success
+[2023-04-23 19:41:37] INFO root fetch - main [MainThread]: End processing [deepqt]: success
+[2023-04-23 19:41:37] INFO root fetch - main [MainThread]: End processing [bmkg]: success
+[2023-04-23 19:41:38] INFO root fetch - main [MainThread]: End processing [psychonaut]: success
+[2023-04-23 19:41:38] INFO root fetch - main [MainThread]: End processing [devine]: success
+[2023-04-23 19:41:38] INFO root fetch - main [MainThread]: End processing [moonshine]: success
+[2023-04-23 19:41:38] INFO root fetch - main [MainThread]: Store serial: [17824317]
