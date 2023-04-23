@@ -5425,3 +5425,26 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 10:55:55] INFO root fetch - main [MainThread]: End processing [AISimuToolKit]: success
 [2023-04-23 10:55:56] INFO root fetch - main [MainThread]: End processing [ccpem-utils]: success
 [2023-04-23 10:55:56] INFO root fetch - main [MainThread]: Store serial: [17820743]
+[2023-04-23 11:00:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820743]
+[2023-04-23 11:01:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-23 11:01:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: WiFi-Access
+[2023-04-23 11:01:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xjm
+[2023-04-23 11:01:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AlgorithmLib
+[2023-04-23 11:01:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: easy-patents
+[2023-04-23 11:01:04] INFO root fetch - processPackages [xjm]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-23 11:01:04] INFO root fetch - processPackages [AlgorithmLib]: New version: [3.9.9] Old Version: [3.9.8]
+[2023-04-23 11:01:04] WARNING root fetch - processPackages [WiFi-Access]: Skipping, unable to determine old version
+[2023-04-23 11:01:04] INFO root fetch - main [MainThread]: End processing [WiFi-Access] error
+[2023-04-23 11:01:04] INFO root fetch - processPackages [easy-patents]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-23 11:01:05] INFO root fetch - processPackages [xjm]: Downloading https://files.pythonhosted.org/packages/7d/05/2e560f48433432d354290415ddaf89b568213cb44a08927206315db477ee/xjm-0.0.5.linux-x86_64.tar.gz
+[2023-04-23 11:01:05] INFO root fetch - processPackages [AlgorithmLib]: Downloading https://files.pythonhosted.org/packages/78/f1/2fbac4aa9ef115eda50059c81431330d595bbf744e9ac898466afc3a85ee/AlgorithmLib-3.9.8.tar.gz
+[2023-04-23 11:01:05] INFO root fetch - processPackages [easy-patents]: Downloading https://files.pythonhosted.org/packages/68/51/f15eb96619e6aa2a1faf5729f66720accf879f13cfb61c1709f5f82fdb1c/easy_patents-1.0.7.tar.gz
+[2023-04-23 11:01:05] WARNING root fetch - processPackages [AlgorithmLib]: Skipping package: exceeds size limit 14952675>=10485760
+[2023-04-23 11:01:05] INFO root fetch - main [MainThread]: End processing [AlgorithmLib] error
+[2023-04-23 11:01:05] INFO root fetch - processPackages [easy-patents]: executing diffoscope
+[2023-04-23 11:01:05] INFO root fetch - processPackages [easy-patents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_patents-1.0.6.tar.gz tmp/easy_patents-1.0.7.tar.gz --markdown 20230423/e/easy-patents/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-23 11:01:05] INFO root fetch - processPackages [xjm]: executing diffoscope
+[2023-04-23 11:01:05] INFO root fetch - processPackages [xjm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xjm-0.0.4.tar.gz tmp/xjm-0.0.5.linux-x86_64.tar.gz --markdown 20230423/x/xjm/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 11:01:06] INFO root fetch - main [MainThread]: End processing [easy-patents]: success
+[2023-04-23 11:01:06] INFO root fetch - main [MainThread]: End processing [xjm]: success
+[2023-04-23 11:01:06] INFO root fetch - main [MainThread]: Store serial: [17820771]
