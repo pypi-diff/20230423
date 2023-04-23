@@ -10811,3 +10811,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 18:59:47] INFO root fetch - main [MainThread]: End processing [xia-engine]: success
 [2023-04-23 18:59:49] INFO root fetch - main [MainThread]: End processing [anylabeling]: success
 [2023-04-23 18:59:49] INFO root fetch - main [MainThread]: Store serial: [17824017]
+[2023-04-23 19:04:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17824017]
+[2023-04-23 19:04:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-23 19:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cfscanner
+[2023-04-23 19:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: commondatamodel-objectmodel-cdmstandards
+[2023-04-23 19:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: audiconnectpy
+[2023-04-23 19:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: foodbook-discount
+[2023-04-23 19:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kerykeion
+[2023-04-23 19:04:58] INFO root fetch - processPackages [kerykeion]: New version: [4.0a5] Old Version: [4.0a4]
+[2023-04-23 19:04:58] WARNING root fetch - processPackages [foodbook-discount]: Skipping, unable to determine old version
+[2023-04-23 19:04:58] INFO root fetch - main [MainThread]: End processing [foodbook-discount] error
+[2023-04-23 19:04:58] INFO root fetch - processPackages [cfscanner]: New version: [1.3.14] Old Version: [1.3.13]
+[2023-04-23 19:04:58] WARNING root fetch - processPackages [commondatamodel-objectmodel-cdmstandards]: Skipping, unable to determine old version
+[2023-04-23 19:04:58] INFO root fetch - main [MainThread]: End processing [commondatamodel-objectmodel-cdmstandards] error
+[2023-04-23 19:04:58] INFO root fetch - processPackages [audiconnectpy]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-04-23 19:04:58] INFO root fetch - processPackages [kerykeion]: Downloading https://files.pythonhosted.org/packages/a5/e0/e6aa3a8ca36719e63ad835deee4367ec388ecbb564b9ce7dd03efbe87655/kerykeion-4.0a4.tar.gz
+[2023-04-23 19:04:58] INFO root fetch - processPackages [cfscanner]: Downloading https://files.pythonhosted.org/packages/e0/25/0da748d79380036fae30330afa816e784bb9826dfe04545974a55128f140/cfscanner-1.3.13.tar.gz
+[2023-04-23 19:04:58] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/d4/4b/1d56cbbbe6de98463e0fb623fdf4d22565ed622667f21979b12428f17027/audiconnectpy-1.2.4.tar.gz
+[2023-04-23 19:04:58] INFO root fetch - processPackages [cfscanner]: Downloading https://files.pythonhosted.org/packages/98/eb/85354e753d7440cbae2df3dbc4fb34eda3b7fefc4182431cf7f72c3b97e6/cfscanner-1.3.14.tar.gz
+[2023-04-23 19:04:58] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/21/d1/87c79cbe328014d0dbfa32f618cfa448b64c745f638d248181ac6a9bca76/audiconnectpy-1.2.5.tar.gz
+[2023-04-23 19:04:58] INFO root fetch - processPackages [kerykeion]: Downloading https://files.pythonhosted.org/packages/6f/f1/656b79d8f51f02efebff8222dd0d15d7870f167d7ebabf0fc61103090ec0/kerykeion-4.0a5.tar.gz
+[2023-04-23 19:04:58] INFO root fetch - processPackages [cfscanner]: executing diffoscope
+[2023-04-23 19:04:58] INFO root fetch - processPackages [cfscanner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cfscanner-1.3.13.tar.gz tmp/cfscanner-1.3.14.tar.gz --markdown 20230423/c/cfscanner/1.3.13-1.3.14/diff.md --exclude *.pyd
+[2023-04-23 19:04:59] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2023-04-23 19:04:59] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-1.2.4.tar.gz tmp/audiconnectpy-1.2.5.tar.gz --markdown 20230423/a/audiconnectpy/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-04-23 19:04:59] INFO root fetch - processPackages [kerykeion]: executing diffoscope
+[2023-04-23 19:04:59] INFO root fetch - processPackages [kerykeion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kerykeion-4.0a4.tar.gz tmp/kerykeion-4.0a5.tar.gz --markdown 20230423/k/kerykeion/4.0a4-4.0a5/diff.md --exclude *.pyd
+[2023-04-23 19:05:00] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2023-04-23 19:05:00] INFO root fetch - main [MainThread]: End processing [kerykeion]: success
+[2023-04-23 19:05:00] INFO root fetch - main [MainThread]: End processing [cfscanner]: success
+[2023-04-23 19:05:00] INFO root fetch - main [MainThread]: Store serial: [17824038]
