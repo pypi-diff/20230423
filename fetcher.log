@@ -1746,3 +1746,40 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 03:14:17] INFO root fetch - main [MainThread]: End processing [vnpy-tqsdk]: success
 [2023-04-23 03:14:18] INFO root fetch - main [MainThread]: End processing [zuspec-parser]: success
 [2023-04-23 03:14:18] INFO root fetch - main [MainThread]: Store serial: [17818553]
+[2023-04-23 03:19:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818553]
+[2023-04-23 03:19:26] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-23 03:19:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dramkit
+[2023-04-23 03:19:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oak9-tython
+[2023-04-23 03:19:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vnpy-dolphindb
+[2023-04-23 03:19:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-sops-secrets
+[2023-04-23 03:19:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: alacorder
+[2023-04-23 03:19:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: deep-training
+[2023-04-23 03:19:26] INFO root fetch - processPackages [dramkit]: New version: [0.5.34] Old Version: [0.5.33]
+[2023-04-23 03:19:26] INFO root fetch - processPackages [oak9-tython]: New version: [1.0.6b2] Old Version: [1.0.6b1]
+[2023-04-23 03:19:26] INFO root fetch - processPackages [vnpy-dolphindb]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-23 03:19:26] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-23 03:19:26] INFO root fetch - processPackages [alacorder]: New version: [79.6.7] Old Version: [79.6.6]
+[2023-04-23 03:19:26] INFO root fetch - processPackages [deep-training]: New version: [0.1.3rc0] Old Version: [0.1.2.post2]
+[2023-04-23 03:19:26] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2023-04-23 03:19:26] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.2.8.tar.gz tmp/cdk-sops-secrets-1.2.9.tar.gz --markdown 20230423/c/cdk-sops-secrets/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-23 03:19:26] ERROR root fetch - processPackages [dramkit]: Unable to fetch info: No such project/version 'dramkit' 0.5.33
+[2023-04-23 03:19:26] INFO root fetch - main [MainThread]: End processing [dramkit] error
+[2023-04-23 03:19:26] INFO root fetch - processPackages [vnpy-dolphindb]: Downloading https://files.pythonhosted.org/packages/74/14/2abee08f50b64734caa7c74cb17120c1059e0ab8b733ca28428153dbac28/vnpy_dolphindb-1.0.7.tar.gz
+[2023-04-23 03:19:26] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/2e/88/d34c60d0f5ec6720adaeb90187d12bb740dc0133812dc4ab9fc930bd36c7/alacorder-79.6.7.tar.gz
+[2023-04-23 03:19:26] INFO root fetch - processPackages [oak9-tython]: Downloading https://files.pythonhosted.org/packages/d6/e9/0e10bb8929414cd40f221c3f374bf71ede399ccb1e3384d75225c6205482/oak9_tython-1.0.6b2.tar.gz
+[2023-04-23 03:19:26] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-04-23 03:19:26] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-79.6.6.tar.gz tmp/alacorder-79.6.7.tar.gz --markdown 20230423/a/alacorder/79.6.6-79.6.7/diff.md --exclude *.pyd
+[2023-04-23 03:19:26] INFO root fetch - processPackages [deep-training]: Downloading https://files.pythonhosted.org/packages/66/44/dc1a01a40d5f739ff9d2885cb03b2fea7bdd2921fa5c6d19b1e7bda91f7d/deep_training-0.1.3rc0-py3-none-any.whl
+[2023-04-23 03:19:26] INFO root fetch - processPackages [vnpy-dolphindb]: Downloading https://files.pythonhosted.org/packages/2f/e1/e24bb781715187d76740e5d321d27ddff14eefd57f32b699a091c3db3089/vnpy_dolphindb-1.0.8.tar.gz
+[2023-04-23 03:19:26] INFO root fetch - processPackages [vnpy-dolphindb]: executing diffoscope
+[2023-04-23 03:19:26] INFO root fetch - processPackages [vnpy-dolphindb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnpy_dolphindb-1.0.7.tar.gz tmp/vnpy_dolphindb-1.0.8.tar.gz --markdown 20230423/v/vnpy-dolphindb/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-23 03:19:26] INFO root fetch - processPackages [deep-training]: executing diffoscope
+[2023-04-23 03:19:26] INFO root fetch - processPackages [deep-training]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_training-0.1.2.post2-py3-none-any.whl.zip tmp/deep_training-0.1.3rc0-py3-none-any.whl.zip --markdown 20230423/d/deep-training/0.1.2.post2-0.1.3rc0/diff.md --exclude *.pyd
+[2023-04-23 03:19:26] INFO root fetch - processPackages [oak9-tython]: executing diffoscope
+[2023-04-23 03:19:26] INFO root fetch - processPackages [oak9-tython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oak9_tython-1.0.6b1.tar.gz tmp/oak9_tython-1.0.6b2.tar.gz --markdown 20230423/o/oak9-tython/1.0.6b1-1.0.6b2/diff.md --exclude *.pyd
+[2023-04-23 03:19:28] INFO root fetch - main [MainThread]: End processing [vnpy-dolphindb]: success
+[2023-04-23 03:19:28] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
+[2023-04-23 03:19:29] INFO root fetch - main [MainThread]: End processing [deep-training]: success
+[2023-04-23 03:19:36] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-04-23 03:19:41] INFO root fetch - main [MainThread]: End processing [oak9-tython]: success
+[2023-04-23 03:19:41] INFO root fetch - main [MainThread]: Store serial: [17818574]
