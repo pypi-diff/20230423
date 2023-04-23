@@ -12061,3 +12061,52 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 20:18:48] INFO root fetch - main [MainThread]: End processing [vunit-hdl]: success
 [2023-04-23 20:18:49] INFO root fetch - main [MainThread]: End processing [gpt4all-j]: success
 [2023-04-23 20:18:49] INFO root fetch - main [MainThread]: Store serial: [17824743]
+[2023-04-23 20:23:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17824743]
+[2023-04-23 20:24:00] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-23 20:24:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lcr-api-2
+[2023-04-23 20:24:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gWeaver
+[2023-04-23 20:24:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: np-queuey
+[2023-04-23 20:24:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spccpkg
+[2023-04-23 20:24:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: numbers-c2pa
+[2023-04-23 20:24:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: graph-model-parser
+[2023-04-23 20:24:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lib-dzne-tsv
+[2023-04-23 20:24:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: py-Ayra
+[2023-04-23 20:24:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: foursight-core
+[2023-04-23 20:24:00] INFO root fetch - processPackages [lcr-api-2]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-04-23 20:24:00] WARNING root fetch - processPackages [graph-model-parser]: Skipping, unable to determine old version
+[2023-04-23 20:24:00] INFO root fetch - main [MainThread]: End processing [graph-model-parser] error
+[2023-04-23 20:24:00] INFO root fetch - processPackages [numbers-c2pa]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-23 20:24:00] INFO root fetch - processPackages [np-queuey]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 20:24:00] INFO root fetch - processPackages [spccpkg]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 20:24:00] WARNING root fetch - processPackages [gWeaver]: Skipping, unable to determine old version
+[2023-04-23 20:24:00] INFO root fetch - processPackages [py-Ayra]: New version: [8.6.0] Old Version: [8.2.8]
+[2023-04-23 20:24:00] INFO root fetch - main [MainThread]: End processing [gWeaver] error
+[2023-04-23 20:24:00] INFO root fetch - processPackages [foursight-core]: New version: [4.0.0] Old Version: [3.3.2.2b1]
+[2023-04-23 20:24:00] INFO root fetch - processPackages [lib-dzne-tsv]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-23 20:24:00] INFO root fetch - processPackages [py-Ayra]: executing diffoscope
+[2023-04-23 20:24:00] INFO root fetch - processPackages [py-Ayra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-Ayra-8.2.8.tar.gz tmp/py-Ayra-8.6.0.tar.gz --markdown 20230423/p/py-Ayra/8.2.8-8.6.0/diff.md --exclude *.pyd
+[2023-04-23 20:24:00] INFO root fetch - processPackages [np-queuey]: executing diffoscope
+[2023-04-23 20:24:00] INFO root fetch - processPackages [np-queuey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_queuey-0.1.8.tar.gz tmp/np_queuey-0.1.9.tar.gz --markdown 20230423/n/np-queuey/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 20:24:00] INFO root fetch - processPackages [lcr-api-2]: Downloading https://files.pythonhosted.org/packages/b0/b5/6e1cad32b8324caae0ca0efdf8ec7412dfc4a9c5f4a46d5d6845aaf3d014/lcr-api-2-0.5.5.tar.gz
+[2023-04-23 20:24:00] INFO root fetch - processPackages [spccpkg]: Downloading https://files.pythonhosted.org/packages/ed/e8/b6e13a694063801dca149488a0ed2308d288eceed10623d3de6ee9522a3b/spccpkg-0.0.6.tar.gz
+[2023-04-23 20:24:00] INFO root fetch - processPackages [spccpkg]: executing diffoscope
+[2023-04-23 20:24:00] INFO root fetch - processPackages [spccpkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spccpkg-0.0.5.tar.gz tmp/spccpkg-0.0.6.tar.gz --markdown 20230423/s/spccpkg/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 20:24:00] INFO root fetch - processPackages [numbers-c2pa]: Downloading https://files.pythonhosted.org/packages/3a/37/a0f2205fbdbef61c826ed9c4d8355278f734141a535357a51e2c472a7877/numbers-c2pa-0.0.3.tar.gz
+[2023-04-23 20:24:00] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-23 20:24:00] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-3.3.2.2b1.tar.gz tmp/foursight_core-4.0.0.tar.gz --markdown 20230423/f/foursight-core/3.3.2.2b1-4.0.0/diff.md --exclude *.pyd
+[2023-04-23 20:24:00] INFO root fetch - processPackages [lib-dzne-tsv]: Downloading https://files.pythonhosted.org/packages/66/45/d932517376242e068f4d78689757eb8f8b5e2c05047147588f33cbc5be2b/lib-dzne-tsv-0.1.6.tar.gz
+[2023-04-23 20:24:01] INFO root fetch - processPackages [numbers-c2pa]: executing diffoscope
+[2023-04-23 20:24:01] INFO root fetch - processPackages [numbers-c2pa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numbers-c2pa-0.0.2.tar.gz tmp/numbers-c2pa-0.0.3.tar.gz --markdown 20230423/n/numbers-c2pa/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 20:24:01] INFO root fetch - processPackages [lcr-api-2]: Downloading https://files.pythonhosted.org/packages/ab/af/b906fb45592caa786440479256ca763f3f2016d780bdbaba76700b954f89/lcr-api-2-0.5.6.tar.gz
+[2023-04-23 20:24:01] INFO root fetch - processPackages [lib-dzne-tsv]: executing diffoscope
+[2023-04-23 20:24:01] INFO root fetch - processPackages [lib-dzne-tsv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-dzne-tsv-0.1.5.tar.gz tmp/lib-dzne-tsv-0.1.6.tar.gz --markdown 20230423/l/lib-dzne-tsv/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-23 20:24:01] INFO root fetch - processPackages [lcr-api-2]: executing diffoscope
+[2023-04-23 20:24:01] INFO root fetch - processPackages [lcr-api-2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lcr-api-2-0.5.5.tar.gz tmp/lcr-api-2-0.5.6.tar.gz --markdown 20230423/l/lcr-api-2/0.5.5-0.5.6/diff.md --exclude *.pyd
+[2023-04-23 20:24:01] INFO root fetch - main [MainThread]: End processing [np-queuey]: success
+[2023-04-23 20:24:02] INFO root fetch - main [MainThread]: End processing [spccpkg]: success
+[2023-04-23 20:24:02] INFO root fetch - main [MainThread]: End processing [lib-dzne-tsv]: success
+[2023-04-23 20:24:02] INFO root fetch - main [MainThread]: End processing [numbers-c2pa]: success
+[2023-04-23 20:24:02] INFO root fetch - main [MainThread]: End processing [lcr-api-2]: success
+[2023-04-23 20:24:03] INFO root fetch - main [MainThread]: End processing [py-Ayra]: success
+[2023-04-23 20:24:16] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-23 20:24:16] INFO root fetch - main [MainThread]: Store serial: [17824772]
