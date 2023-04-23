@@ -12110,3 +12110,111 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 20:24:03] INFO root fetch - main [MainThread]: End processing [py-Ayra]: success
 [2023-04-23 20:24:16] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-23 20:24:16] INFO root fetch - main [MainThread]: Store serial: [17824772]
+[2023-04-23 20:29:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17824772]
+[2023-04-23 20:29:25] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-04-23 20:29:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: superannotate
+[2023-04-23 20:29:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quinten-cli
+[2023-04-23 20:29:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: XMLCit
+[2023-04-23 20:29:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ReverseBox
+[2023-04-23 20:29:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sosia
+[2023-04-23 20:29:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: doubt
+[2023-04-23 20:29:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: np-queuey
+[2023-04-23 20:29:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Aegos
+[2023-04-23 20:29:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dewloosh.core
+[2023-04-23 20:29:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: py-sls-lambda-toolkit
+[2023-04-23 20:29:25] INFO root fetch - processPackages [XMLCit]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-23 20:29:25] WARNING root fetch - processPackages [Aegos]: Skipping, unable to determine old version
+[2023-04-23 20:29:25] INFO root fetch - processPackages [Aegos]: Start processing: py-sls-lambda-toolkit
+[2023-04-23 20:29:25] INFO root fetch - main [MainThread]: End processing [Aegos] error
+[2023-04-23 20:29:25] INFO root fetch - processPackages [quinten-cli]: New version: [1.1.0] Old Version: [1.0.4]
+[2023-04-23 20:29:25] INFO root fetch - processPackages [ReverseBox]: New version: [0.5.0] Old Version: [0.4.9]
+[2023-04-23 20:29:25] INFO root fetch - processPackages [dewloosh.core]: New version: [1.0.9] Old Version: [1.0.6]
+[2023-04-23 20:29:25] INFO root fetch - processPackages [sosia]: New version: [0.6] Old Version: [0.5.0]
+[2023-04-23 20:29:25] INFO root fetch - processPackages [superannotate]: New version: [4.4.9b1] Old Version: [4.4.9.dev5]
+[2023-04-23 20:29:25] INFO root fetch - processPackages [np-queuey]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 20:29:25] INFO root fetch - processPackages [doubt]: New version: [4.4.0] Old Version: [4.3.1]
+[2023-04-23 20:29:25] INFO root fetch - processPackages [py-sls-lambda-toolkit]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-23 20:29:25] INFO root fetch - processPackages [py-sls-lambda-toolkit]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-23 20:29:25] INFO root fetch - processPackages [np-queuey]: executing diffoscope
+[2023-04-23 20:29:25] INFO root fetch - processPackages [np-queuey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_queuey-0.1.8.tar.gz tmp/np_queuey-0.1.9.tar.gz --markdown 20230423/n/np-queuey/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 20:29:25] INFO root fetch - processPackages [XMLCit]: Downloading https://files.pythonhosted.org/packages/8f/20/d5fe476cf4c39f1fcc064766e490ad60e470e4b75ba062d9687666562694/XMLCit-0.0.7.tar.gz
+[2023-04-23 20:29:25] INFO root fetch - processPackages [sosia]: Downloading https://files.pythonhosted.org/packages/c5/22/54ae702e1dca27ef965f9b6a9c77c14bf43f1ffa1fcadaed9bc57fae7ac5/sosia-0.5.0.tar.gz
+[2023-04-23 20:29:25] INFO root fetch - processPackages [dewloosh.core]: Downloading https://files.pythonhosted.org/packages/86/79/4f9a2551ce5a65ec53bcf2d5c4fd6bd793d454b8f545f9a1b71b47fa2a88/dewloosh.core-1.0.6.tar.gz
+[2023-04-23 20:29:25] INFO root fetch - processPackages [doubt]: Downloading https://files.pythonhosted.org/packages/df/dd/cd1c37ecb4348030fde27dba39d2c96d0bc0e87bbd7deb6aa7dc0f1adee1/doubt-4.3.1.tar.gz
+[2023-04-23 20:29:25] INFO root fetch - processPackages [py-sls-lambda-toolkit]: Downloading https://files.pythonhosted.org/packages/a3/e3/8eddf654aa420e6e495e5d489eec07cde541ce498cf8ab20afe7e0d33b1c/py-sls-lambda-toolkit-0.0.2.tar.gz
+[2023-04-23 20:29:25] INFO root fetch - processPackages [quinten-cli]: Downloading https://files.pythonhosted.org/packages/16/6a/1f65925404010a242a0649f6acd38c715be081e9204ae50e5b60f8d42eb9/quinten-cli-1.0.4.tar.gz
+[2023-04-23 20:29:25] INFO root fetch - processPackages [py-sls-lambda-toolkit]: Downloading https://files.pythonhosted.org/packages/a3/e3/8eddf654aa420e6e495e5d489eec07cde541ce498cf8ab20afe7e0d33b1c/py-sls-lambda-toolkit-0.0.2.tar.gz
+[2023-04-23 20:29:26] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/94/d8/b9e8b50195052258cdf8b9d33fcfd4f03d322d6b19c9b80facd5b18a3762/ReverseBox-0.5.0.tar.gz
+[2023-04-23 20:29:26] INFO root fetch - processPackages [XMLCit]: Downloading https://files.pythonhosted.org/packages/e4/a3/e91afb72fa9402819574164bdda952311694eddb0d320d1276bbd213496a/XMLCit-0.0.8.tar.gz
+[2023-04-23 20:29:26] INFO root fetch - processPackages [superannotate]: executing diffoscope
+[2023-04-23 20:29:26] INFO root fetch - processPackages [sosia]: Downloading https://files.pythonhosted.org/packages/5c/9d/b04a7c0c7aff436e022a61a823ab3486ee0b67e3e3eb35c3461705cc7d78/sosia-0.6.tar.gz
+[2023-04-23 20:29:26] INFO root fetch - processPackages [superannotate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superannotate-4.4.9.dev5.tar.gz tmp/superannotate-4.4.9b1.tar.gz --markdown 20230423/s/superannotate/4.4.9.dev5-4.4.9b1/diff.md --exclude *.pyd
+[2023-04-23 20:29:26] INFO root fetch - processPackages [doubt]: Downloading https://files.pythonhosted.org/packages/0f/18/512d3c71ace956ec03422a17e51ca0ed547ff14eab5585e20ae452f8459a/doubt-4.4.0.tar.gz
+[2023-04-23 20:29:26] INFO root fetch - processPackages [quinten-cli]: Downloading https://files.pythonhosted.org/packages/67/b6/b5f060c61efca7932056579f778337c76fe844121d6d9c92a0ebcb822af6/quinten-cli-1.1.0.tar.gz
+[2023-04-23 20:29:26] INFO root fetch - processPackages [ReverseBox]: executing diffoscope
+[2023-04-23 20:29:26] INFO root fetch - processPackages [ReverseBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseBox-0.4.9.tar.gz tmp/ReverseBox-0.5.0.tar.gz --markdown 20230423/R/ReverseBox/0.4.9-0.5.0/diff.md --exclude *.pyd
+[2023-04-23 20:29:26] INFO root fetch - processPackages [py-sls-lambda-toolkit]: Downloading https://files.pythonhosted.org/packages/1c/72/c61ebf5f4b4418261f3c6502f5541f59d24176cd4a34bb5c706f30f3b5b6/py-sls-lambda-toolkit-0.0.3.tar.gz
+[2023-04-23 20:29:26] INFO root fetch - processPackages [py-sls-lambda-toolkit]: Downloading https://files.pythonhosted.org/packages/1c/72/c61ebf5f4b4418261f3c6502f5541f59d24176cd4a34bb5c706f30f3b5b6/py-sls-lambda-toolkit-0.0.3.tar.gz
+[2023-04-23 20:29:26] INFO root fetch - processPackages [dewloosh.core]: Downloading https://files.pythonhosted.org/packages/d1/22/f141cf08a5f85604277a26c9f99391d02c320319622b2093d2247c2ed9ab/dewloosh.core-1.0.9.tar.gz
+[2023-04-23 20:29:26] INFO root fetch - processPackages [XMLCit]: executing diffoscope
+[2023-04-23 20:29:26] INFO root fetch - processPackages [XMLCit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/XMLCit-0.0.7.tar.gz tmp/XMLCit-0.0.8.tar.gz --markdown 20230423/X/XMLCit/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-23 20:29:26] INFO root fetch - processPackages [sosia]: executing diffoscope
+[2023-04-23 20:29:26] INFO root fetch - processPackages [sosia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sosia-0.5.0.tar.gz tmp/sosia-0.6.tar.gz --markdown 20230423/s/sosia/0.5.0-0.6/diff.md --exclude *.pyd
+[2023-04-23 20:29:26] INFO root fetch - processPackages [quinten-cli]: executing diffoscope
+[2023-04-23 20:29:26] INFO root fetch - processPackages [quinten-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quinten-cli-1.0.4.tar.gz tmp/quinten-cli-1.1.0.tar.gz --markdown 20230423/q/quinten-cli/1.0.4-1.1.0/diff.md --exclude *.pyd
+[2023-04-23 20:29:26] INFO root fetch - processPackages [doubt]: executing diffoscope
+[2023-04-23 20:29:26] INFO root fetch - processPackages [doubt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doubt-4.3.1.tar.gz tmp/doubt-4.4.0.tar.gz --markdown 20230423/d/doubt/4.3.1-4.4.0/diff.md --exclude *.pyd
+[2023-04-23 20:29:26] INFO root fetch - processPackages [py-sls-lambda-toolkit]: executing diffoscope
+[2023-04-23 20:29:26] INFO root fetch - processPackages [py-sls-lambda-toolkit]: executing diffoscope
+[2023-04-23 20:29:26] INFO root fetch - processPackages [py-sls-lambda-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-sls-lambda-toolkit-0.0.2.tar.gz tmp/py-sls-lambda-toolkit-0.0.3.tar.gz --markdown 20230423/p/py-sls-lambda-toolkit/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 20:29:26] INFO root fetch - processPackages [py-sls-lambda-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-sls-lambda-toolkit-0.0.2.tar.gz tmp/py-sls-lambda-toolkit-0.0.3.tar.gz --markdown 20230423/p/py-sls-lambda-toolkit/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 20:29:26] INFO root fetch - processPackages [dewloosh.core]: executing diffoscope
+[2023-04-23 20:29:26] INFO root fetch - processPackages [dewloosh.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dewloosh.core-1.0.6.tar.gz tmp/dewloosh.core-1.0.9.tar.gz --markdown 20230423/d/dewloosh.core/1.0.6-1.0.9/diff.md --exclude *.pyd
+[2023-04-23 20:29:26] INFO root fetch - processPackages [np-queuey]: Start processing: anyioc
+[2023-04-23 20:29:26] INFO root fetch - main [MainThread]: End processing [np-queuey]: success
+[2023-04-23 20:29:27] INFO root fetch - processPackages [anyioc]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-23 20:29:27] INFO root fetch - processPackages [anyioc]: executing diffoscope
+[2023-04-23 20:29:27] INFO root fetch - processPackages [anyioc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyioc-0.9.0.tar.gz tmp/anyioc-0.9.1.tar.gz --markdown 20230423/a/anyioc/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-23 20:29:27] INFO root fetch - processPackages [XMLCit]: Start processing: chesscomwrapper
+[2023-04-23 20:29:27] INFO root fetch - main [MainThread]: End processing [XMLCit]: success
+[2023-04-23 20:29:27] INFO root fetch - processPackages [chesscomwrapper]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 20:29:28] INFO root fetch - processPackages [py-sls-lambda-toolkit]: Start processing: cpppackageAnuja
+[2023-04-23 20:29:28] INFO root fetch - main [MainThread]: End processing [py-sls-lambda-toolkit]: success
+[2023-04-23 20:29:28] WARNING root fetch - processPackages [cpppackageAnuja]: Skipping, unable to determine old version
+[2023-04-23 20:29:28] INFO root fetch - processPackages [cpppackageAnuja]: Start processing: musicli
+[2023-04-23 20:29:28] INFO root fetch - main [MainThread]: End processing [cpppackageAnuja] error
+[2023-04-23 20:29:28] INFO root fetch - processPackages [chesscomwrapper]: Downloading https://files.pythonhosted.org/packages/7a/e3/f29044717f5310bbd7581942e4261ed003f3eba0f14da5b3a3ec6d811043/chesscomwrapper-0.0.9.tar.gz
+[2023-04-23 20:29:28] INFO root fetch - processPackages [musicli]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 20:29:28] INFO root fetch - processPackages [quinten-cli]: Start processing: vnkdj5-utils
+[2023-04-23 20:29:28] INFO root fetch - main [MainThread]: End processing [quinten-cli]: success
+[2023-04-23 20:29:28] WARNING root fetch - processPackages [vnkdj5-utils]: Skipping, unable to determine old version
+[2023-04-23 20:29:28] INFO root fetch - processPackages [vnkdj5-utils]: Start processing: gWeaver
+[2023-04-23 20:29:28] INFO root fetch - main [MainThread]: End processing [vnkdj5-utils] error
+[2023-04-23 20:29:28] INFO root fetch - processPackages [gWeaver]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-23 20:29:28] INFO root fetch - processPackages [chesscomwrapper]: executing diffoscope
+[2023-04-23 20:29:28] INFO root fetch - processPackages [chesscomwrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chesscomwrapper-0.0.8.tar.gz tmp/chesscomwrapper-0.0.9.tar.gz --markdown 20230423/c/chesscomwrapper/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 20:29:28] INFO root fetch - processPackages [doubt]: Start processing: always-updates
+[2023-04-23 20:29:28] INFO root fetch - main [MainThread]: End processing [doubt]: success
+[2023-04-23 20:29:28] INFO root fetch - processPackages [musicli]: executing diffoscope
+[2023-04-23 20:29:28] INFO root fetch - processPackages [musicli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musicli-0.0.8.tar.gz tmp/musicli-0.0.9.tar.gz --markdown 20230423/m/musicli/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 20:29:28] INFO root fetch - processPackages [gWeaver]: Downloading https://files.pythonhosted.org/packages/79/ee/af19b3d667931d4fdc242c76e25a2f7e95b8a70797e6522eb390648b81f5/gWeaver-1.0.1.tar.gz
+[2023-04-23 20:29:28] INFO root fetch - processPackages [sosia]: Start processing: htlll-runner
+[2023-04-23 20:29:28] INFO root fetch - main [MainThread]: End processing [sosia]: success
+[2023-04-23 20:29:28] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
+[2023-04-23 20:29:28] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-04-23 20:29:28] INFO root fetch - main [MainThread]: End processing [dewloosh.core]: success
+[2023-04-23 20:29:28] INFO root fetch - main [MainThread]: End processing [py-sls-lambda-toolkit]: success
+[2023-04-23 20:29:28] WARNING root fetch - processPackages [htlll-runner]: Skipping, unable to determine old version
+[2023-04-23 20:29:28] INFO root fetch - main [MainThread]: End processing [htlll-runner] error
+[2023-04-23 20:29:28] INFO root fetch - main [MainThread]: End processing [anyioc]: success
+[2023-04-23 20:29:28] INFO root fetch - processPackages [gWeaver]: Downloading https://files.pythonhosted.org/packages/e3/9c/a1a446bc4d5c9b72d19f9465124ffcb2f2020e58d2b2b59457f28e42bcf4/gWeaver-1.0.2.tar.gz
+[2023-04-23 20:29:28] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-04-23 20:29:28] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230423/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-04-23 20:29:28] INFO root fetch - processPackages [gWeaver]: executing diffoscope
+[2023-04-23 20:29:28] INFO root fetch - processPackages [gWeaver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gWeaver-1.0.1.tar.gz tmp/gWeaver-1.0.2.tar.gz --markdown 20230423/g/gWeaver/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-23 20:29:29] INFO root fetch - main [MainThread]: End processing [musicli]: success
+[2023-04-23 20:29:29] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-04-23 20:29:29] INFO root fetch - main [MainThread]: End processing [gWeaver]: success
+[2023-04-23 20:29:30] INFO root fetch - main [MainThread]: End processing [chesscomwrapper]: success
+[2023-04-23 20:29:30] INFO root fetch - main [MainThread]: End processing [superannotate]: success
+[2023-04-23 20:29:30] INFO root fetch - main [MainThread]: Store serial: [17824840]
