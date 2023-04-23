@@ -9880,3 +9880,73 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 17:33:36] INFO root fetch - main [MainThread]: End processing [syncedlyrics]: success
 [2023-04-23 17:33:36] INFO root fetch - main [MainThread]: End processing [pythonsdk]: success
 [2023-04-23 17:33:36] INFO root fetch - main [MainThread]: Store serial: [17823391]
+[2023-04-23 17:38:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823391]
+[2023-04-23 17:38:45] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-23 17:38:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: linkedin-jobs-scraper
+[2023-04-23 17:38:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cadence-detector
+[2023-04-23 17:38:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Aegos-Check
+[2023-04-23 17:38:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jupyterlab-judge
+[2023-04-23 17:38:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: giftmaster
+[2023-04-23 17:38:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: FFmpyg-DavidRodriguezSoaresCUI
+[2023-04-23 17:38:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: quantplay
+[2023-04-23 17:38:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Timeseries-Preprocess
+[2023-04-23 17:38:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: quarter-lib
+[2023-04-23 17:38:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: yashpy
+[2023-04-23 17:38:45] WARNING root fetch - processPackages [Aegos-Check]: Skipping, unable to determine old version
+[2023-04-23 17:38:45] INFO root fetch - processPackages [Aegos-Check]: Start processing: porkbun-ddns
+[2023-04-23 17:38:45] WARNING root fetch - processPackages [cadence-detector]: Skipping, unable to determine old version
+[2023-04-23 17:38:45] INFO root fetch - main [MainThread]: End processing [Aegos-Check] error
+[2023-04-23 17:38:45] INFO root fetch - processPackages [cadence-detector]: Start processing: gpt-term
+[2023-04-23 17:38:45] INFO root fetch - main [MainThread]: End processing [cadence-detector] error
+[2023-04-23 17:38:45] INFO root fetch - processPackages [jupyterlab-judge]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-23 17:38:45] WARNING root fetch - processPackages [Timeseries-Preprocess]: Skipping, unable to determine old version
+[2023-04-23 17:38:45] INFO root fetch - processPackages [Timeseries-Preprocess]: Start processing: anylabeling
+[2023-04-23 17:38:45] INFO root fetch - main [MainThread]: End processing [Timeseries-Preprocess] error
+[2023-04-23 17:38:45] INFO root fetch - processPackages [linkedin-jobs-scraper]: New version: [2.1.0] Old Version: [2.0.7]
+[2023-04-23 17:38:45] INFO root fetch - processPackages [giftmaster]: New version: [0.1.55] Old Version: [0.1.54]
+[2023-04-23 17:38:45] INFO root fetch - processPackages [yashpy]: New version: [1.0] Old Version: [0.9]
+[2023-04-23 17:38:45] INFO root fetch - processPackages [quarter-lib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 17:38:45] INFO root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-23 17:38:45] INFO root fetch - processPackages [porkbun-ddns]: New version: [0.1.0] Old Version: [0.0.5]
+[2023-04-23 17:38:45] INFO root fetch - processPackages [anylabeling]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-23 17:38:45] INFO root fetch - processPackages [gpt-term]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-23 17:38:45] INFO root fetch - processPackages [quantplay]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-23 17:38:45] INFO root fetch - processPackages [quantplay]: executing diffoscope
+[2023-04-23 17:38:45] INFO root fetch - processPackages [quantplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantplay-1.2.8.tar.gz tmp/quantplay-1.2.9.tar.gz --markdown 20230423/q/quantplay/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-23 17:38:45] INFO root fetch - processPackages [porkbun-ddns]: executing diffoscope
+[2023-04-23 17:38:45] INFO root fetch - processPackages [porkbun-ddns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/porkbun-ddns-0.0.5.tar.gz tmp/porkbun-ddns-0.1.0.tar.gz --markdown 20230423/p/porkbun-ddns/0.0.5-0.1.0/diff.md --exclude *.pyd
+[2023-04-23 17:38:45] INFO root fetch - processPackages [quarter-lib]: executing diffoscope
+[2023-04-23 17:38:45] INFO root fetch - processPackages [quarter-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quarter_lib-0.0.8.tar.gz tmp/quarter_lib-0.0.9.tar.gz --markdown 20230423/q/quarter-lib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 17:38:45] INFO root fetch - processPackages [linkedin-jobs-scraper]: Downloading https://files.pythonhosted.org/packages/80/2b/b9128ee3dc8cff3a8c2eb12d0a2e178dc6a1e54026d02744122f5fc8c158/linkedin-jobs-scraper-2.0.7.tar.gz
+[2023-04-23 17:38:45] INFO root fetch - processPackages [giftmaster]: Downloading https://files.pythonhosted.org/packages/10/1d/6e6e4a2824d67d0eb264d893c6e9712e3de3d24dbf5b208f830ac687d75e/giftmaster-0.1.55.tar.gz
+[2023-04-23 17:38:45] INFO root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: Downloading https://files.pythonhosted.org/packages/99/3b/ee9b818a496f4fd1ee84c541945ac97e3efb79a234d5b3909c64a1ae0c3f/FFmpyg_DavidRodriguezSoaresCUI-0.0.3.tar.gz
+[2023-04-23 17:38:45] INFO root fetch - processPackages [yashpy]: Downloading https://files.pythonhosted.org/packages/1f/17/85ae1c9f8529122c233ce46d384199e8b463d6a9a00224ed9e7d23779c35/yashpy-1.0.tar.gz
+[2023-04-23 17:38:45] INFO root fetch - processPackages [gpt-term]: Downloading https://files.pythonhosted.org/packages/eb/e3/8c94f35960435b79f7fa1713b82bd29f325bc97e993b36607825eb9a0999/gpt-term-0.9.1.tar.gz
+[2023-04-23 17:38:45] INFO root fetch - processPackages [anylabeling]: executing diffoscope
+[2023-04-23 17:38:45] INFO root fetch - processPackages [anylabeling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anylabeling-0.2.8.tar.gz tmp/anylabeling-0.2.9.tar.gz --markdown 20230423/a/anylabeling/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-23 17:38:45] INFO root fetch - processPackages [yashpy]: executing diffoscope
+[2023-04-23 17:38:45] INFO root fetch - processPackages [yashpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yashpy-0.9.tar.gz tmp/yashpy-1.0.tar.gz --markdown 20230423/y/yashpy/0.9-1.0/diff.md --exclude *.pyd
+[2023-04-23 17:38:45] INFO root fetch - processPackages [giftmaster]: executing diffoscope
+[2023-04-23 17:38:45] INFO root fetch - processPackages [giftmaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/giftmaster-0.1.54.tar.gz tmp/giftmaster-0.1.55.tar.gz --markdown 20230423/g/giftmaster/0.1.54-0.1.55/diff.md --exclude *.pyd
+[2023-04-23 17:38:45] INFO root fetch - processPackages [jupyterlab-judge]: executing diffoscope
+[2023-04-23 17:38:45] INFO root fetch - processPackages [jupyterlab-judge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab_judge-0.9.1.tar.gz tmp/jupyterlab_judge-0.9.2.tar.gz --markdown 20230423/j/jupyterlab-judge/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-23 17:38:46] INFO root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: Downloading https://files.pythonhosted.org/packages/6d/3f/d7281a249f7c22ee822605600652daa8e1ae92c7e56e4201d08bbca1631e/FFmpyg_DavidRodriguezSoaresCUI-0.0.4.tar.gz
+[2023-04-23 17:38:46] INFO root fetch - processPackages [gpt-term]: Downloading https://files.pythonhosted.org/packages/91/b0/2d27cb04d43780709840897f212d943609604cf5654e56e526d347195fb3/gpt-term-0.9.2.tar.gz
+[2023-04-23 17:38:46] INFO root fetch - processPackages [linkedin-jobs-scraper]: Downloading https://files.pythonhosted.org/packages/a0/85/fab0f6f025368350a7cc40f7c5a6005c046b070bf76b9e2349fe920558b6/linkedin-jobs-scraper-2.1.0.tar.gz
+[2023-04-23 17:38:46] INFO root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: executing diffoscope
+[2023-04-23 17:38:46] INFO root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FFmpyg_DavidRodriguezSoaresCUI-0.0.3.tar.gz tmp/FFmpyg_DavidRodriguezSoaresCUI-0.0.4.tar.gz --markdown 20230423/F/FFmpyg-DavidRodriguezSoaresCUI/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-23 17:38:46] INFO root fetch - processPackages [gpt-term]: executing diffoscope
+[2023-04-23 17:38:46] INFO root fetch - processPackages [gpt-term]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt-term-0.9.1.tar.gz tmp/gpt-term-0.9.2.tar.gz --markdown 20230423/g/gpt-term/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-23 17:38:46] INFO root fetch - processPackages [linkedin-jobs-scraper]: executing diffoscope
+[2023-04-23 17:38:46] INFO root fetch - processPackages [linkedin-jobs-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linkedin-jobs-scraper-2.0.7.tar.gz tmp/linkedin-jobs-scraper-2.1.0.tar.gz --markdown 20230423/l/linkedin-jobs-scraper/2.0.7-2.1.0/diff.md --exclude *.pyd
+[2023-04-23 17:38:47] INFO root fetch - main [MainThread]: End processing [porkbun-ddns]: success
+[2023-04-23 17:38:47] INFO root fetch - main [MainThread]: End processing [quarter-lib]: success
+[2023-04-23 17:38:47] INFO root fetch - main [MainThread]: End processing [yashpy]: success
+[2023-04-23 17:38:47] INFO root fetch - main [MainThread]: End processing [giftmaster]: success
+[2023-04-23 17:38:47] INFO root fetch - main [MainThread]: End processing [FFmpyg-DavidRodriguezSoaresCUI]: success
+[2023-04-23 17:38:48] INFO root fetch - main [MainThread]: End processing [linkedin-jobs-scraper]: success
+[2023-04-23 17:38:48] INFO root fetch - main [MainThread]: End processing [anylabeling]: success
+[2023-04-23 17:38:48] INFO root fetch - main [MainThread]: End processing [quantplay]: success
+[2023-04-23 17:38:48] INFO root fetch - main [MainThread]: End processing [gpt-term]: success
+[2023-04-23 17:38:48] INFO root fetch - main [MainThread]: End processing [jupyterlab-judge]: success
+[2023-04-23 17:38:48] INFO root fetch - main [MainThread]: Store serial: [17823438]
