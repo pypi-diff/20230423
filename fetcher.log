@@ -2644,3 +2644,25 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 05:21:05] INFO root fetch - main [MainThread]: End processing [toollib]: success
 [2023-04-23 05:21:10] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-gitlab]: success
 [2023-04-23 05:21:10] INFO root fetch - main [MainThread]: Store serial: [17819188]
+[2023-04-23 05:26:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819188]
+[2023-04-23 05:26:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-23 05:26:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PrSpiders
+[2023-04-23 05:26:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PrSpiders
+[2023-04-23 05:26:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gpt-gateway
+[2023-04-23 05:26:19] INFO root fetch - processPackages [PrSpiders]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-23 05:26:19] INFO root fetch - processPackages [PrSpiders]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-23 05:26:19] INFO root fetch - processPackages [gpt-gateway]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 05:26:19] INFO root fetch - processPackages [gpt-gateway]: executing diffoscope
+[2023-04-23 05:26:19] INFO root fetch - processPackages [gpt-gateway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_gateway-0.0.8.tar.gz tmp/gpt_gateway-0.0.9.tar.gz --markdown 20230423/g/gpt-gateway/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 05:26:19] INFO root fetch - processPackages [PrSpiders]: Downloading https://files.pythonhosted.org/packages/f4/4d/b2954581cebd0dd011b2826811894b16eb7fc841fc364c1f2a2ca070f557/PrSpiders-0.4.3.tar.gz
+[2023-04-23 05:26:19] INFO root fetch - processPackages [PrSpiders]: Downloading https://files.pythonhosted.org/packages/f4/4d/b2954581cebd0dd011b2826811894b16eb7fc841fc364c1f2a2ca070f557/PrSpiders-0.4.3.tar.gz
+[2023-04-23 05:26:19] INFO root fetch - processPackages [PrSpiders]: Downloading https://files.pythonhosted.org/packages/16/c9/e1777a7dcaa659d10b7b659d8c5064dd87c60d24dd91c4c6acd7052fc02f/PrSpiders-0.4.4.tar.gz
+[2023-04-23 05:26:19] INFO root fetch - processPackages [PrSpiders]: Downloading https://files.pythonhosted.org/packages/16/c9/e1777a7dcaa659d10b7b659d8c5064dd87c60d24dd91c4c6acd7052fc02f/PrSpiders-0.4.4.tar.gz
+[2023-04-23 05:26:20] INFO root fetch - processPackages [PrSpiders]: executing diffoscope
+[2023-04-23 05:26:20] INFO root fetch - processPackages [PrSpiders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PrSpiders-0.4.3.tar.gz tmp/PrSpiders-0.4.4.tar.gz --markdown 20230423/P/PrSpiders/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-04-23 05:26:20] INFO root fetch - processPackages [PrSpiders]: executing diffoscope
+[2023-04-23 05:26:20] INFO root fetch - processPackages [PrSpiders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PrSpiders-0.4.3.tar.gz tmp/PrSpiders-0.4.4.tar.gz --markdown 20230423/P/PrSpiders/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-04-23 05:26:20] INFO root fetch - main [MainThread]: End processing [gpt-gateway]: success
+[2023-04-23 05:26:21] INFO root fetch - main [MainThread]: End processing [PrSpiders]: success
+[2023-04-23 05:26:21] INFO root fetch - main [MainThread]: End processing [PrSpiders]: success
+[2023-04-23 05:26:21] INFO root fetch - main [MainThread]: Store serial: [17819197]
