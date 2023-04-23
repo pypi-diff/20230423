@@ -3133,3 +3133,28 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 06:41:02] INFO root fetch - main [MainThread]: End processing [vnpy-spreadtrading]: success
 [2023-04-23 06:43:44] INFO root fetch - main [MainThread]: End processing [starwhale]: success
 [2023-04-23 06:43:44] INFO root fetch - main [MainThread]: Store serial: [17819453]
+[2023-04-23 06:48:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819453]
+[2023-04-23 06:48:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-23 06:48:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: semantra
+[2023-04-23 06:48:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hak
+[2023-04-23 06:48:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: html2notion
+[2023-04-23 06:48:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: napari-tracing
+[2023-04-23 06:48:56] WARNING root fetch - processPackages [napari-tracing]: Skipping, unable to determine old version
+[2023-04-23 06:48:56] INFO root fetch - main [MainThread]: End processing [napari-tracing] error
+[2023-04-23 06:48:56] INFO root fetch - processPackages [semantra]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 06:48:56] INFO root fetch - processPackages [html2notion]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-23 06:48:56] INFO root fetch - processPackages [hak]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 06:48:56] INFO root fetch - processPackages [semantra]: Downloading https://files.pythonhosted.org/packages/27/45/f5c4ed9e54c0f9fec95d4b15d0d3a2478520b129c1f0f6098db73c3e47a4/semantra-0.0.5.tar.gz
+[2023-04-23 06:48:56] INFO root fetch - processPackages [html2notion]: Downloading https://files.pythonhosted.org/packages/1e/f9/88592f4133391ef285f9c86232001f726d24f4db402bcd5ed1c1953d0d55/html2notion-0.1.2.tar.gz
+[2023-04-23 06:48:56] INFO root fetch - processPackages [semantra]: Downloading https://files.pythonhosted.org/packages/47/60/1ad135f589dfe53f8d97063245b55eb0a12f4b67ac253d45091d2db408d1/semantra-0.0.6.tar.gz
+[2023-04-23 06:48:56] INFO root fetch - processPackages [hak]: executing diffoscope
+[2023-04-23 06:48:56] INFO root fetch - processPackages [hak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hak-0.0.8.tar.gz tmp/hak-0.0.9.tar.gz --markdown 20230423/h/hak/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 06:48:56] INFO root fetch - processPackages [semantra]: executing diffoscope
+[2023-04-23 06:48:56] INFO root fetch - processPackages [semantra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantra-0.0.5.tar.gz tmp/semantra-0.0.6.tar.gz --markdown 20230423/s/semantra/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 06:48:56] INFO root fetch - processPackages [html2notion]: Downloading https://files.pythonhosted.org/packages/62/86/40c04a8f59dc0bc849e679bb1e233367692a6b8143f77ce60241b626e6fd/html2notion-0.1.3.tar.gz
+[2023-04-23 06:48:56] INFO root fetch - processPackages [html2notion]: executing diffoscope
+[2023-04-23 06:48:56] INFO root fetch - processPackages [html2notion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/html2notion-0.1.2.tar.gz tmp/html2notion-0.1.3.tar.gz --markdown 20230423/h/html2notion/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-23 06:48:57] INFO root fetch - main [MainThread]: End processing [semantra]: success
+[2023-04-23 06:48:58] INFO root fetch - main [MainThread]: End processing [html2notion]: success
+[2023-04-23 06:48:58] INFO root fetch - main [MainThread]: End processing [hak]: success
+[2023-04-23 06:48:58] INFO root fetch - main [MainThread]: Store serial: [17819466]
