@@ -5399,3 +5399,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 10:50:44] INFO root fetch - main [MainThread]: End processing [zytlib]: success
 [2023-04-23 10:50:45] INFO root fetch - main [MainThread]: End processing [Pandora-ChatGPT]: success
 [2023-04-23 10:50:45] INFO root fetch - main [MainThread]: Store serial: [17820724]
+[2023-04-23 10:55:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820724]
+[2023-04-23 10:55:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-23 10:55:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ccpem-utils
+[2023-04-23 10:55:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AISimuToolKit
+[2023-04-23 10:55:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: graphql-service-framework
+[2023-04-23 10:55:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vollseg
+[2023-04-23 10:55:53] INFO root fetch - processPackages [graphql-service-framework]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-23 10:55:53] INFO root fetch - processPackages [ccpem-utils]: New version: [0.0.1.dev9] Old Version: [0.0.1.dev8]
+[2023-04-23 10:55:53] INFO root fetch - processPackages [AISimuToolKit]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-23 10:55:53] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-23 10:55:54] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-23 10:55:54] INFO root fetch - processPackages [graphql-service-framework]: executing diffoscope
+[2023-04-23 10:55:54] INFO root fetch - processPackages [graphql-service-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphql_service_framework-1.0.8.tar.gz tmp/graphql_service_framework-1.0.9.tar.gz --markdown 20230423/g/graphql-service-framework/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-23 10:55:54] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-23 10:55:54] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-23 10:55:54] INFO root fetch - processPackages [ccpem-utils]: Downloading https://files.pythonhosted.org/packages/28/ef/2fadc871f695378f40d8a5af23a883fce8f7b1eea3c54116bbd51e708bfd/ccpem_utils-0.0.1.dev8.tar.gz
+[2023-04-23 10:55:54] INFO root fetch - processPackages [AISimuToolKit]: Downloading https://files.pythonhosted.org/packages/db/10/3f44247ddbaa276e3017e3be5555337a63de9f8480149cf42491e9768043/AISimuToolKit-0.0.4.tar.gz
+[2023-04-23 10:55:54] INFO root fetch - processPackages [AISimuToolKit]: executing diffoscope
+[2023-04-23 10:55:54] INFO root fetch - processPackages [AISimuToolKit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AISimuToolKit-0.0.3.tar.gz tmp/AISimuToolKit-0.0.4.tar.gz --markdown 20230423/A/AISimuToolKit/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-23 10:55:54] INFO root fetch - processPackages [ccpem-utils]: Downloading https://files.pythonhosted.org/packages/4e/6d/3501aaba0ccbd3a2387ee204c009b9dffd42e3701b620715388af67f3cf5/ccpem_utils-0.0.1.dev9.tar.gz
+[2023-04-23 10:55:54] INFO root fetch - processPackages [ccpem-utils]: executing diffoscope
+[2023-04-23 10:55:54] INFO root fetch - processPackages [ccpem-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccpem_utils-0.0.1.dev8.tar.gz tmp/ccpem_utils-0.0.1.dev9.tar.gz --markdown 20230423/c/ccpem-utils/0.0.1.dev8-0.0.1.dev9/diff.md --exclude *.pyd
+[2023-04-23 10:55:55] INFO root fetch - main [MainThread]: End processing [graphql-service-framework]: success
+[2023-04-23 10:55:55] INFO root fetch - main [MainThread]: End processing [AISimuToolKit]: success
+[2023-04-23 10:55:56] INFO root fetch - main [MainThread]: End processing [ccpem-utils]: success
+[2023-04-23 10:55:56] INFO root fetch - main [MainThread]: Store serial: [17820743]
