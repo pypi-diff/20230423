@@ -2740,3 +2740,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 05:36:51] INFO root fetch - main [MainThread]: End processing [sj-tool]: success
 [2023-04-23 05:36:51] INFO root fetch - main [MainThread]: End processing [legion-cli]: success
 [2023-04-23 05:36:51] INFO root fetch - main [MainThread]: Store serial: [17819229]
+[2023-04-23 05:41:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819229]
+[2023-04-23 05:42:00] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-23 05:42:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bgmi
+[2023-04-23 05:42:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-brainfuck
+[2023-04-23 05:42:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vnpy-ctastrategy
+[2023-04-23 05:42:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zhy-tools
+[2023-04-23 05:42:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gehomesdk
+[2023-04-23 05:42:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dg-itest
+[2023-04-23 05:42:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: coredis
+[2023-04-23 05:42:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pgx
+[2023-04-23 05:42:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyllms
+[2023-04-23 05:42:00] INFO root fetch - processPackages [gehomesdk]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-23 05:42:00] INFO root fetch - processPackages [dg-itest]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-23 05:42:00] WARNING root fetch - processPackages [zhy-tools]: Skipping, unable to determine old version
+[2023-04-23 05:42:00] INFO root fetch - main [MainThread]: End processing [zhy-tools] error
+[2023-04-23 05:42:00] INFO root fetch - processPackages [bgmi]: New version: [5.0.0a3] Old Version: [5.0.0a2]
+[2023-04-23 05:42:00] WARNING root fetch - processPackages [nonebot-plugin-brainfuck]: Skipping, unable to determine old version
+[2023-04-23 05:42:00] INFO root fetch - processPackages [vnpy-ctastrategy]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-04-23 05:42:00] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-brainfuck] error
+[2023-04-23 05:42:00] INFO root fetch - processPackages [coredis]: New version: [4.9.0] Old Version: [4.8.3]
+[2023-04-23 05:42:00] INFO root fetch - processPackages [pgx]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-23 05:42:00] INFO root fetch - processPackages [pyllms]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 05:42:00] INFO root fetch - processPackages [coredis]: executing diffoscope
+[2023-04-23 05:42:00] INFO root fetch - processPackages [coredis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coredis-4.8.3.tar.gz tmp/coredis-4.9.0.tar.gz --markdown 20230423/c/coredis/4.8.3-4.9.0/diff.md --exclude *.pyd
+[2023-04-23 05:42:00] INFO root fetch - processPackages [dg-itest]: Downloading https://files.pythonhosted.org/packages/c3/bc/67359d3a583eaae52d3b6acfa02f600d9982aa97155110fa0caffc4922be/dg-itest-0.0.8.tar.gz
+[2023-04-23 05:42:00] INFO root fetch - processPackages [gehomesdk]: Downloading https://files.pythonhosted.org/packages/78/e5/65dceafdeed2a83f4b797c95f5b80947cac4ec3190896167f2cd247dc1a0/gehomesdk-0.5.8.tar.gz
+[2023-04-23 05:42:00] INFO root fetch - processPackages [bgmi]: Downloading https://files.pythonhosted.org/packages/58/01/28533631eafc16923633c9832f25086fd3f3efc6e88bbeaf79457948c7d4/bgmi-5.0.0a2.tar.gz
+[2023-04-23 05:42:00] INFO root fetch - processPackages [vnpy-ctastrategy]: Downloading https://files.pythonhosted.org/packages/c9/6b/a06c366620bad9fb9e3e53cf7035b1ae53af5910e29d46176cb3012c9ffc/vnpy_ctastrategy-1.1.3.tar.gz
+[2023-04-23 05:42:00] INFO root fetch - processPackages [pgx]: Downloading https://files.pythonhosted.org/packages/90/2d/bdefb93894d9b6099234a518ec5ccc9f84dc313db44b9acb18aff3640d8f/pgx-0.5.0.tar.gz
+[2023-04-23 05:42:00] INFO root fetch - processPackages [dg-itest]: executing diffoscope
+[2023-04-23 05:42:00] INFO root fetch - processPackages [dg-itest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dg-itest-0.0.7.tar.gz tmp/dg-itest-0.0.8.tar.gz --markdown 20230423/d/dg-itest/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-23 05:42:00] INFO root fetch - processPackages [vnpy-ctastrategy]: Downloading https://files.pythonhosted.org/packages/ec/bc/4ef52a33ceea69bbf6d6ff18d8954f48aa6889baf467582574ee9d24fbb4/vnpy_ctastrategy-1.1.4.tar.gz
+[2023-04-23 05:42:00] INFO root fetch - processPackages [pyllms]: Downloading https://files.pythonhosted.org/packages/11/fc/555d08c2427244635f6323fa249b5190aedc1539b434ee7d3e0d5a55bf98/pyllms-0.1.9.tar.gz
+[2023-04-23 05:42:00] INFO root fetch - processPackages [gehomesdk]: Downloading https://files.pythonhosted.org/packages/5d/14/ca1060e76076aab267e2a6e7dccae7575d443a3075ccc7203d8704e52b3a/gehomesdk-0.5.9.tar.gz
+[2023-04-23 05:42:00] INFO root fetch - processPackages [bgmi]: Downloading https://files.pythonhosted.org/packages/d1/4a/c3af3c0fbeda6f4db50b75b31030a1ab818b6ff09a51ecd45d933117e975/bgmi-5.0.0a3.tar.gz
+[2023-04-23 05:42:00] INFO root fetch - processPackages [pyllms]: executing diffoscope
+[2023-04-23 05:42:00] INFO root fetch - processPackages [pyllms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyllms-0.1.8.tar.gz tmp/pyllms-0.1.9.tar.gz --markdown 20230423/p/pyllms/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 05:42:00] INFO root fetch - processPackages [vnpy-ctastrategy]: executing diffoscope
+[2023-04-23 05:42:00] INFO root fetch - processPackages [vnpy-ctastrategy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnpy_ctastrategy-1.1.3.tar.gz tmp/vnpy_ctastrategy-1.1.4.tar.gz --markdown 20230423/v/vnpy-ctastrategy/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-04-23 05:42:01] INFO root fetch - processPackages [bgmi]: executing diffoscope
+[2023-04-23 05:42:01] INFO root fetch - processPackages [bgmi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bgmi-5.0.0a2.tar.gz tmp/bgmi-5.0.0a3.tar.gz --markdown 20230423/b/bgmi/5.0.0a2-5.0.0a3/diff.md --exclude *.pyd
+[2023-04-23 05:42:01] INFO root fetch - processPackages [pgx]: Downloading https://files.pythonhosted.org/packages/18/79/4048d3476148853b4797d37a86ee4964943e2997c5aaebe9c1ecc9c0ab71/pgx-0.5.1.tar.gz
+[2023-04-23 05:42:01] INFO root fetch - processPackages [pgx]: executing diffoscope
+[2023-04-23 05:42:01] INFO root fetch - processPackages [pgx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pgx-0.5.0.tar.gz tmp/pgx-0.5.1.tar.gz --markdown 20230423/p/pgx/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-23 05:42:01] INFO root fetch - processPackages [gehomesdk]: executing diffoscope
+[2023-04-23 05:42:01] INFO root fetch - processPackages [gehomesdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gehomesdk-0.5.8.tar.gz tmp/gehomesdk-0.5.9.tar.gz --markdown 20230423/g/gehomesdk/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-23 05:42:02] INFO root fetch - main [MainThread]: End processing [dg-itest]: success
+[2023-04-23 05:42:02] INFO root fetch - main [MainThread]: End processing [vnpy-ctastrategy]: success
+[2023-04-23 05:42:02] INFO root fetch - main [MainThread]: End processing [pyllms]: success
+[2023-04-23 05:42:02] INFO root fetch - main [MainThread]: End processing [coredis]: success
+[2023-04-23 05:42:02] INFO root fetch - main [MainThread]: End processing [bgmi]: success
+[2023-04-23 05:42:03] INFO root fetch - main [MainThread]: End processing [gehomesdk]: success
+[2023-04-23 05:42:03] INFO root fetch - main [MainThread]: End processing [pgx]: success
+[2023-04-23 05:42:03] INFO root fetch - main [MainThread]: Store serial: [17819284]
