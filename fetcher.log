@@ -7732,3 +7732,78 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 14:29:08] INFO root fetch - main [MainThread]: End processing [Shyna-speaks]: success
 [2023-04-23 14:29:08] INFO root fetch - main [MainThread]: End processing [qwertyuiop]: success
 [2023-04-23 14:29:08] INFO root fetch - main [MainThread]: Store serial: [17822100]
+[2023-04-23 14:34:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17822100]
+[2023-04-23 14:34:17] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-23 14:34:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: QuNet
+[2023-04-23 14:34:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hypertune
+[2023-04-23 14:34:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: polyaxon
+[2023-04-23 14:34:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: polyaxon-sdk
+[2023-04-23 14:34:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: traceml
+[2023-04-23 14:34:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: haupt
+[2023-04-23 14:34:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lightning-habana
+[2023-04-23 14:34:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: auth-lib-profcomff
+[2023-04-23 14:34:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aplr
+[2023-04-23 14:34:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pandarequest
+[2023-04-23 14:34:17] INFO root fetch - processPackages [QuNet]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 14:34:17] INFO root fetch - processPackages [hypertune]: New version: [1.1.0rc9] Old Version: [1.1.0rc8]
+[2023-04-23 14:34:17] INFO root fetch - processPackages [polyaxon-sdk]: New version: [2.0.0rc9] Old Version: [2.0.0rc8]
+[2023-04-23 14:34:17] INFO root fetch - processPackages [traceml]: New version: [1.1.0rc9] Old Version: [1.1.0rc8]
+[2023-04-23 14:34:17] INFO root fetch - processPackages [auth-lib-profcomff]: New version: [2023.4.23] Old Version: [2023.4.19]
+[2023-04-23 14:34:17] WARNING root fetch - processPackages [pandarequest]: Skipping, unable to determine old version
+[2023-04-23 14:34:17] INFO root fetch - processPackages [pandarequest]: Start processing: gpush
+[2023-04-23 14:34:17] INFO root fetch - main [MainThread]: End processing [pandarequest] error
+[2023-04-23 14:34:17] INFO root fetch - processPackages [lightning-habana]: New version: [0.2.0.dev0] Old Version: [0.1.0rc0]
+[2023-04-23 14:34:17] INFO root fetch - processPackages [haupt]: New version: [2.0.0rc9] Old Version: [2.0.0rc8]
+[2023-04-23 14:34:17] INFO root fetch - processPackages [polyaxon]: New version: [2.0.0rc9] Old Version: [2.0.0rc8]
+[2023-04-23 14:34:17] INFO root fetch - processPackages [gpush]: New version: [3.1.0] Old Version: [3.0.1]
+[2023-04-23 14:34:17] INFO root fetch - processPackages [aplr]: New version: [2.4.0] Old Version: [2.3.0]
+[2023-04-23 14:34:17] INFO root fetch - processPackages [QuNet]: executing diffoscope
+[2023-04-23 14:34:17] INFO root fetch - processPackages [QuNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuNet-0.0.8-py3-none-any.whl.zip tmp/QuNet-0.0.9-py3-none-any.whl.zip --markdown 20230423/Q/QuNet/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 14:34:17] INFO root fetch - processPackages [traceml]: executing diffoscope
+[2023-04-23 14:34:17] INFO root fetch - processPackages [traceml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traceml-1.1.0rc8.tar.gz tmp/traceml-1.1.0rc9.tar.gz --markdown 20230423/t/traceml/1.1.0rc8-1.1.0rc9/diff.md --exclude *.pyd
+[2023-04-23 14:34:17] INFO root fetch - processPackages [gpush]: executing diffoscope
+[2023-04-23 14:34:17] INFO root fetch - processPackages [gpush]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpush-3.0.1.tar.gz tmp/gpush-3.1.0.tar.gz --markdown 20230423/g/gpush/3.0.1-3.1.0/diff.md --exclude *.pyd
+[2023-04-23 14:34:17] INFO root fetch - processPackages [hypertune]: executing diffoscope
+[2023-04-23 14:34:17] INFO root fetch - processPackages [hypertune]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypertune-1.1.0rc8.tar.gz tmp/hypertune-1.1.0rc9.tar.gz --markdown 20230423/h/hypertune/1.1.0rc8-1.1.0rc9/diff.md --exclude *.pyd
+[2023-04-23 14:34:17] INFO root fetch - processPackages [polyaxon]: executing diffoscope
+[2023-04-23 14:34:17] INFO root fetch - processPackages [polyaxon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polyaxon-2.0.0rc8.tar.gz tmp/polyaxon-2.0.0rc9.tar.gz --markdown 20230423/p/polyaxon/2.0.0rc8-2.0.0rc9/diff.md --exclude *.pyd
+[2023-04-23 14:34:17] INFO root fetch - processPackages [polyaxon-sdk]: executing diffoscope
+[2023-04-23 14:34:17] INFO root fetch - processPackages [polyaxon-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polyaxon-sdk-2.0.0rc8.tar.gz tmp/polyaxon-sdk-2.0.0rc9.tar.gz --markdown 20230423/p/polyaxon-sdk/2.0.0rc8-2.0.0rc9/diff.md --exclude *.pyd
+[2023-04-23 14:34:17] INFO root fetch - processPackages [haupt]: executing diffoscope
+[2023-04-23 14:34:17] INFO root fetch - processPackages [haupt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haupt-2.0.0rc8.tar.gz tmp/haupt-2.0.0rc9.tar.gz --markdown 20230423/h/haupt/2.0.0rc8-2.0.0rc9/diff.md --exclude *.pyd
+[2023-04-23 14:34:17] INFO root fetch - processPackages [lightning-habana]: Downloading https://files.pythonhosted.org/packages/ca/89/a9c223d5c734832b905aefdc7ce2347c5849e79a6c819a86b1135442afca/lightning-habana-0.1.0rc0.tar.gz
+[2023-04-23 14:34:17] INFO root fetch - processPackages [auth-lib-profcomff]: Downloading https://files.pythonhosted.org/packages/18/6f/cc81f9d4d50d253ef0d1aa92d51c7aec3a6df7bb84861390530b9cfe1a68/auth_lib_profcomff-2023.4.23.tar.gz
+[2023-04-23 14:34:17] INFO root fetch - processPackages [aplr]: Downloading https://files.pythonhosted.org/packages/26/18/6876e42acc4d0b788c16883fddb8ee75dfaccb32aeaf5e9b5b230a03faa3/aplr-2.4.0-pp39-pypy39_pp73-win_amd64.whl
+[2023-04-23 14:34:17] INFO root fetch - processPackages [auth-lib-profcomff]: executing diffoscope
+[2023-04-23 14:34:17] INFO root fetch - processPackages [auth-lib-profcomff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auth_lib_profcomff-2023.4.19.tar.gz tmp/auth_lib_profcomff-2023.4.23.tar.gz --markdown 20230423/a/auth-lib-profcomff/2023.4.19-2023.4.23/diff.md --exclude *.pyd
+[2023-04-23 14:34:17] INFO root fetch - processPackages [lightning-habana]: Downloading https://files.pythonhosted.org/packages/c5/ae/73a15dc8fc8944f06526911941c9c19c23d3cc025ee0526ceed2686cefcc/lightning-habana-0.2.0.dev0.tar.gz
+[2023-04-23 14:34:17] INFO root fetch - processPackages [aplr]: executing diffoscope
+[2023-04-23 14:34:17] INFO root fetch - processPackages [aplr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aplr-2.3.0-pp39-pypy39_pp73-win_amd64.whl.zip tmp/aplr-2.4.0-pp39-pypy39_pp73-win_amd64.whl.zip --markdown 20230423/a/aplr/2.3.0-2.4.0/diff.md --exclude *.pyd
+[2023-04-23 14:34:17] INFO root fetch - processPackages [lightning-habana]: executing diffoscope
+[2023-04-23 14:34:17] INFO root fetch - processPackages [lightning-habana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning-habana-0.1.0rc0.tar.gz tmp/lightning-habana-0.2.0.dev0.tar.gz --markdown 20230423/l/lightning-habana/0.1.0rc0-0.2.0.dev0/diff.md --exclude *.pyd
+[2023-04-23 14:34:18] INFO root fetch - processPackages [QuNet]: Start processing: sphere-base
+[2023-04-23 14:34:18] INFO root fetch - main [MainThread]: End processing [QuNet]: success
+[2023-04-23 14:34:18] INFO root fetch - processPackages [sphere-base]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-23 14:34:18] INFO root fetch - processPackages [sphere-base]: executing diffoscope
+[2023-04-23 14:34:18] INFO root fetch - processPackages [sphere-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphere_base-0.1.5.tar.gz tmp/sphere_base-0.1.6.tar.gz --markdown 20230423/s/sphere-base/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-23 14:34:19] INFO root fetch - processPackages [gpush]: Start processing: qwertyuiop
+[2023-04-23 14:34:19] INFO root fetch - main [MainThread]: End processing [gpush]: success
+[2023-04-23 14:34:19] INFO root fetch - processPackages [qwertyuiop]: New version: [1.0.0] Old Version: [0.0.0]
+[2023-04-23 14:34:19] INFO root fetch - processPackages [qwertyuiop]: executing diffoscope
+[2023-04-23 14:34:19] INFO root fetch - processPackages [qwertyuiop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwertyuiop-0.0.0.tar.gz tmp/qwertyuiop-1.0.0.tar.gz --markdown 20230423/q/qwertyuiop/0.0.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-23 14:34:19] INFO root fetch - processPackages [aplr]: Start processing: coiled
+[2023-04-23 14:34:19] INFO root fetch - main [MainThread]: End processing [aplr]: success
+[2023-04-23 14:34:19] INFO root fetch - main [MainThread]: End processing [hypertune]: success
+[2023-04-23 14:34:19] INFO root fetch - main [MainThread]: End processing [auth-lib-profcomff]: success
+[2023-04-23 14:34:19] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-23 14:34:19] INFO root fetch - main [MainThread]: End processing [lightning-habana]: success
+[2023-04-23 14:34:19] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-23 14:34:19] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230423/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-23 14:34:20] INFO root fetch - main [MainThread]: End processing [traceml]: success
+[2023-04-23 14:34:20] INFO root fetch - main [MainThread]: End processing [qwertyuiop]: success
+[2023-04-23 14:34:20] INFO root fetch - main [MainThread]: End processing [sphere-base]: success
+[2023-04-23 14:34:23] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-04-23 14:34:24] INFO root fetch - main [MainThread]: End processing [polyaxon]: success
+[2023-04-23 14:34:24] INFO root fetch - main [MainThread]: End processing [haupt]: success
+[2023-04-23 14:34:26] INFO root fetch - main [MainThread]: End processing [polyaxon-sdk]: success
+[2023-04-23 14:34:26] INFO root fetch - main [MainThread]: Store serial: [17822158]
