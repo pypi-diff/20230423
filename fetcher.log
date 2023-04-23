@@ -2812,3 +2812,19 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 05:47:15] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-steam-game-status]: success
 [2023-04-23 05:48:32] INFO root fetch - main [MainThread]: End processing [envd]: success
 [2023-04-23 05:48:32] INFO root fetch - main [MainThread]: Store serial: [17819298]
+[2023-04-23 05:53:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819298]
+[2023-04-23 05:53:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-23 05:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zhy-tools
+[2023-04-23 05:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datasette-parquet
+[2023-04-23 05:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: one-sat-env
+[2023-04-23 05:53:55] INFO root fetch - processPackages [datasette-parquet]: New version: [0.6] Old Version: [0.5]
+[2023-04-23 05:53:55] WARNING root fetch - processPackages [zhy-tools]: Skipping, unable to determine old version
+[2023-04-23 05:53:55] INFO root fetch - main [MainThread]: End processing [zhy-tools] error
+[2023-04-23 05:53:55] WARNING root fetch - processPackages [one-sat-env]: Skipping, unable to determine old version
+[2023-04-23 05:53:55] INFO root fetch - main [MainThread]: End processing [one-sat-env] error
+[2023-04-23 05:53:55] INFO root fetch - processPackages [datasette-parquet]: Downloading https://files.pythonhosted.org/packages/66/08/4631af1d466a127684bae40e930cd07a53cb6532eef42198160d1c543229/datasette-parquet-0.5.tar.gz
+[2023-04-23 05:53:55] INFO root fetch - processPackages [datasette-parquet]: Downloading https://files.pythonhosted.org/packages/81/2e/742e2edcbd9cbd510044b6229d901a7daaed7ce90d5d6c0b481e21d2ff70/datasette-parquet-0.6.tar.gz
+[2023-04-23 05:53:56] INFO root fetch - processPackages [datasette-parquet]: executing diffoscope
+[2023-04-23 05:53:56] INFO root fetch - processPackages [datasette-parquet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette-parquet-0.5.tar.gz tmp/datasette-parquet-0.6.tar.gz --markdown 20230423/d/datasette-parquet/0.5-0.6/diff.md --exclude *.pyd
+[2023-04-23 05:53:57] INFO root fetch - main [MainThread]: End processing [datasette-parquet]: success
+[2023-04-23 05:53:57] INFO root fetch - main [MainThread]: Store serial: [17819312]
