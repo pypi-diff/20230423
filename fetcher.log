@@ -13937,3 +13937,68 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 23:24:18] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-04-23 23:24:19] INFO root fetch - main [MainThread]: End processing [alacorder]: success
 [2023-04-23 23:24:19] INFO root fetch - main [MainThread]: Store serial: [17825979]
+[2023-04-23 23:29:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825979]
+[2023-04-23 23:29:28] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-23 23:29:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kcli
+[2023-04-23 23:29:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: reg-tables
+[2023-04-23 23:29:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pydantic-yaml
+[2023-04-23 23:29:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hatchling
+[2023-04-23 23:29:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pydmt
+[2023-04-23 23:29:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: k8s-audit-filter
+[2023-04-23 23:29:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pvmodule
+[2023-04-23 23:29:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PyFlyt
+[2023-04-23 23:29:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: jsonclass
+[2023-04-23 23:29:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: wifitool
+[2023-04-23 23:29:28] INFO root fetch - processPackages [hatchling]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-04-23 23:29:28] INFO root fetch - processPackages [reg-tables]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 23:29:28] INFO root fetch - processPackages [pydantic-yaml]: New version: [1.0.0a1] Old Version: [0.9.0]
+[2023-04-23 23:29:28] INFO root fetch - processPackages [k8s-audit-filter]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-23 23:29:28] INFO root fetch - processPackages [jsonclass]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-23 23:29:28] INFO root fetch - processPackages [PyFlyt]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-23 23:29:28] WARNING root fetch - processPackages [wifitool]: Skipping, unable to determine old version
+[2023-04-23 23:29:28] INFO root fetch - processPackages [pydmt]: New version: [0.1.80] Old Version: [0.1.79]
+[2023-04-23 23:29:28] INFO root fetch - processPackages [wifitool]: Start processing: skylab
+[2023-04-23 23:29:28] INFO root fetch - main [MainThread]: End processing [wifitool] error
+[2023-04-23 23:29:28] INFO root fetch - processPackages [pvmodule]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 23:29:28] INFO root fetch - processPackages [kcli]: New version: [99.0.202304232124] Old Version: [99.0.202304232122]
+[2023-04-23 23:29:28] WARNING root fetch - processPackages [skylab]: Skipping, unable to determine old version
+[2023-04-23 23:29:28] INFO root fetch - main [MainThread]: End processing [skylab] error
+[2023-04-23 23:29:28] INFO root fetch - processPackages [reg-tables]: executing diffoscope
+[2023-04-23 23:29:28] INFO root fetch - processPackages [reg-tables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reg_tables-0.1.8.tar.gz tmp/reg_tables-0.1.9.tar.gz --markdown 20230423/r/reg-tables/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 23:29:28] INFO root fetch - processPackages [hatchling]: Downloading https://files.pythonhosted.org/packages/a1/e0/e22e343e7e5853b1d10c5f6fb5072ca3d38aa05e51c9920bb373d393e40c/hatchling-1.8.1.tar.gz
+[2023-04-23 23:29:28] INFO root fetch - processPackages [jsonclass]: Downloading https://files.pythonhosted.org/packages/a4/d8/106ef8e28d069e8a7f3e6de4531ae57529467a782807ace425a3486c6a71/jsonclass-0.0.2.tar.gz
+[2023-04-23 23:29:28] INFO root fetch - processPackages [PyFlyt]: Downloading https://files.pythonhosted.org/packages/fa/08/ba2673e65e237f9fc5536a76d76da057472bf8296302ea5acb36cc41a83a/PyFlyt-0.6.0.tar.gz
+[2023-04-23 23:29:28] INFO root fetch - processPackages [pydantic-yaml]: Downloading https://files.pythonhosted.org/packages/ba/16/c58e4435877eaf1ea670885e2bf06ffddce23bd7f7f3ab371159d0449ee0/pydantic_yaml-0.9.0.tar.gz
+[2023-04-23 23:29:28] INFO root fetch - processPackages [k8s-audit-filter]: Downloading https://files.pythonhosted.org/packages/97/74/b27823be3877b84706714e2881a846a1fbe5bf77ddbe0c67951765290098/k8s_audit_filter-0.0.4-py3-none-any.whl
+[2023-04-23 23:29:28] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/a5/51/646251addaf301c217e21b90485d44f23ca9bc296be967daa3e089a98cb6/kcli-99.0.202304232124-py3-none-any.whl
+[2023-04-23 23:29:28] INFO root fetch - processPackages [pydmt]: Downloading https://files.pythonhosted.org/packages/0d/da/c3274b7b111549504d66591fb0bdf33945152037c160b833e6a1418e1cdf/pydmt-0.1.80.tar.gz
+[2023-04-23 23:29:28] INFO root fetch - processPackages [k8s-audit-filter]: executing diffoscope
+[2023-04-23 23:29:28] INFO root fetch - processPackages [k8s-audit-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/k8s_audit_filter-0.0.3-py3-none-any.whl.zip tmp/k8s_audit_filter-0.0.4-py3-none-any.whl.zip --markdown 20230423/k/k8s-audit-filter/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-23 23:29:28] INFO root fetch - processPackages [pvmodule]: executing diffoscope
+[2023-04-23 23:29:28] INFO root fetch - processPackages [pvmodule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pvmodule-0.0.98.tar.gz tmp/pvmodule-0.0.99.tar.gz --markdown 20230423/p/pvmodule/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 23:29:28] INFO root fetch - processPackages [jsonclass]: Downloading https://files.pythonhosted.org/packages/c2/4a/81a05d08b29823a009300e99f5ae4673f6cdf4de509203b1e1916ec1d5c7/jsonclass-0.0.3.tar.gz
+[2023-04-23 23:29:28] INFO root fetch - processPackages [pydmt]: executing diffoscope
+[2023-04-23 23:29:28] INFO root fetch - processPackages [pydmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydmt-0.1.79.tar.gz tmp/pydmt-0.1.80.tar.gz --markdown 20230423/p/pydmt/0.1.79-0.1.80/diff.md --exclude *.pyd
+[2023-04-23 23:29:28] INFO root fetch - processPackages [hatchling]: Downloading https://files.pythonhosted.org/packages/0e/7a/bc6679c4c8814b8f09957d255825e75a09220660c272f95719c512538811/hatchling-1.9.0.tar.gz
+[2023-04-23 23:29:28] INFO root fetch - processPackages [pydantic-yaml]: Downloading https://files.pythonhosted.org/packages/b2/ed/41c7e70fb7a7ac326de8eae4a13b623f9a45180f80f984afd2ac71e5ae9c/pydantic_yaml-1.0.0a1.tar.gz
+[2023-04-23 23:29:29] INFO root fetch - processPackages [PyFlyt]: Downloading https://files.pythonhosted.org/packages/ce/ae/bc82b840b473d1ca6993b6a6bfed35b5bea44a62e187714ac7e0567dcc5e/PyFlyt-0.6.1.tar.gz
+[2023-04-23 23:29:29] INFO root fetch - processPackages [hatchling]: executing diffoscope
+[2023-04-23 23:29:29] INFO root fetch - processPackages [hatchling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hatchling-1.8.1.tar.gz tmp/hatchling-1.9.0.tar.gz --markdown 20230423/h/hatchling/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-04-23 23:29:29] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-23 23:29:29] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304232122-py3-none-any.whl.zip tmp/kcli-99.0.202304232124-py3-none-any.whl.zip --markdown 20230423/k/kcli/99.0.202304232122-99.0.202304232124/diff.md --exclude *.pyd
+[2023-04-23 23:29:29] INFO root fetch - processPackages [jsonclass]: executing diffoscope
+[2023-04-23 23:29:29] INFO root fetch - processPackages [jsonclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonclass-0.0.2.tar.gz tmp/jsonclass-0.0.3.tar.gz --markdown 20230423/j/jsonclass/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 23:29:29] INFO root fetch - processPackages [pydantic-yaml]: executing diffoscope
+[2023-04-23 23:29:29] INFO root fetch - processPackages [pydantic-yaml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_yaml-0.9.0.tar.gz tmp/pydantic_yaml-1.0.0a1.tar.gz --markdown 20230423/p/pydantic-yaml/0.9.0-1.0.0a1/diff.md --exclude *.pyd
+[2023-04-23 23:29:29] INFO root fetch - processPackages [PyFlyt]: executing diffoscope
+[2023-04-23 23:29:29] INFO root fetch - processPackages [PyFlyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyFlyt-0.6.0.tar.gz tmp/PyFlyt-0.6.1.tar.gz --markdown 20230423/P/PyFlyt/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-23 23:29:29] INFO root fetch - main [MainThread]: End processing [reg-tables]: success
+[2023-04-23 23:29:30] INFO root fetch - main [MainThread]: End processing [k8s-audit-filter]: success
+[2023-04-23 23:29:30] INFO root fetch - main [MainThread]: End processing [pvmodule]: success
+[2023-04-23 23:29:30] INFO root fetch - main [MainThread]: End processing [pydmt]: success
+[2023-04-23 23:29:30] INFO root fetch - main [MainThread]: End processing [pydantic-yaml]: success
+[2023-04-23 23:29:30] INFO root fetch - main [MainThread]: End processing [jsonclass]: success
+[2023-04-23 23:29:30] INFO root fetch - main [MainThread]: End processing [hatchling]: success
+[2023-04-23 23:29:31] INFO root fetch - main [MainThread]: End processing [PyFlyt]: success
+[2023-04-23 23:29:39] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-23 23:29:39] INFO root fetch - main [MainThread]: Store serial: [17826013]
