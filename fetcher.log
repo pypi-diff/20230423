@@ -2558,3 +2558,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 05:05:30] INFO root fetch - main [MainThread]: End processing [Anilist]: success
 [2023-04-23 05:05:31] INFO root fetch - main [MainThread]: End processing [sohuprompt]: success
 [2023-04-23 05:05:31] INFO root fetch - main [MainThread]: Store serial: [17819154]
+[2023-04-23 05:10:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819154]
+[2023-04-23 05:10:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-23 05:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ilds
+[2023-04-23 05:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yyxx-game-pkg
+[2023-04-23 05:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ats-case
+[2023-04-23 05:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: letsbuilda-pypi
+[2023-04-23 05:10:39] INFO root fetch - processPackages [letsbuilda-pypi]: New version: [3.0.0] Old Version: [2.0.0]
+[2023-04-23 05:10:39] INFO root fetch - processPackages [ilds]: New version: [2023.4.3] Old Version: [2023.4.23]
+[2023-04-23 05:10:39] INFO root fetch - processPackages [yyxx-game-pkg]: New version: [2023.4.7.1] Old Version: [2023.4.4.1]
+[2023-04-23 05:10:39] INFO root fetch - processPackages [ats-case]: New version: [0.5.5] Old Version: [0.5.4]
+[2023-04-23 05:10:39] INFO root fetch - processPackages [ilds]: Downloading https://files.pythonhosted.org/packages/78/59/81a28c0f9809c2c6f29720faeb7e16641ec355ecf5b99269a9a231290ade/ilds-2023.4.23.tar.gz
+[2023-04-23 05:10:40] INFO root fetch - processPackages [ats-case]: Downloading https://files.pythonhosted.org/packages/f6/40/9f66322e36be4463045cf186bb4fc499e680058c7188fc820b3ffea7d2b1/ats_case-0.5.5.tar.gz
+[2023-04-23 05:10:40] INFO root fetch - processPackages [letsbuilda-pypi]: Downloading https://files.pythonhosted.org/packages/ac/fa/20a07ba32ad22d690cde2a227fa65cdfcabfd7503d257dd76bd86b8c1bb7/letsbuilda-pypi-3.0.0.tar.gz
+[2023-04-23 05:10:40] INFO root fetch - processPackages [yyxx-game-pkg]: executing diffoscope
+[2023-04-23 05:10:40] INFO root fetch - processPackages [yyxx-game-pkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yyxx_game_pkg-2023.4.4.1.tar.gz tmp/yyxx_game_pkg-2023.4.7.1.tar.gz --markdown 20230423/y/yyxx-game-pkg/2023.4.4.1-2023.4.7.1/diff.md --exclude *.pyd
+[2023-04-23 05:10:40] INFO root fetch - processPackages [ats-case]: executing diffoscope
+[2023-04-23 05:10:40] INFO root fetch - processPackages [ats-case]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ats_case-0.5.4.tar.gz tmp/ats_case-0.5.5.tar.gz --markdown 20230423/a/ats-case/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2023-04-23 05:10:40] INFO root fetch - processPackages [letsbuilda-pypi]: executing diffoscope
+[2023-04-23 05:10:40] INFO root fetch - processPackages [letsbuilda-pypi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/letsbuilda-pypi-2.0.0.tar.gz tmp/letsbuilda-pypi-3.0.0.tar.gz --markdown 20230423/l/letsbuilda-pypi/2.0.0-3.0.0/diff.md --exclude *.pyd
+[2023-04-23 05:10:40] INFO root fetch - processPackages [ilds]: Downloading https://files.pythonhosted.org/packages/09/f9/92ade0b0f7c746f90622a7f51dd074a650fa374c15eb922ae695277e9fed/ilds-2023.4.3.tar.gz
+[2023-04-23 05:10:40] INFO root fetch - processPackages [ilds]: executing diffoscope
+[2023-04-23 05:10:40] INFO root fetch - processPackages [ilds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ilds-2023.4.23.tar.gz tmp/ilds-2023.4.3.tar.gz --markdown 20230423/i/ilds/2023.4.23-2023.4.3/diff.md --exclude *.pyd
+[2023-04-23 05:10:41] INFO root fetch - main [MainThread]: End processing [letsbuilda-pypi]: success
+[2023-04-23 05:10:41] INFO root fetch - main [MainThread]: End processing [ats-case]: success
+[2023-04-23 05:10:41] INFO root fetch - main [MainThread]: End processing [ilds]: success
+[2023-04-23 05:10:42] INFO root fetch - main [MainThread]: End processing [yyxx-game-pkg]: success
+[2023-04-23 05:10:42] INFO root fetch - main [MainThread]: Store serial: [17819166]
