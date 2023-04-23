@@ -2330,3 +2330,75 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 04:28:35] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
 [2023-04-23 04:28:50] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
 [2023-04-23 04:28:50] INFO root fetch - main [MainThread]: Store serial: [17818991]
+[2023-04-23 04:33:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818991]
+[2023-04-23 04:33:59] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-23 04:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zcbot-celery-sdk
+[2023-04-23 04:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CommonlyTools
+[2023-04-23 04:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pystacker
+[2023-04-23 04:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pystacker
+[2023-04-23 04:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pystacker
+[2023-04-23 04:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: np-queuey
+[2023-04-23 04:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dg-itest
+[2023-04-23 04:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: thinkgpt
+[2023-04-23 04:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cdk8s-plus-24
+[2023-04-23 04:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: monailabel-weekly
+[2023-04-23 04:33:59] INFO root fetch - processPackages [zcbot-celery-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 04:33:59] INFO root fetch - processPackages [CommonlyTools]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-23 04:33:59] INFO root fetch - processPackages [pystacker]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-23 04:33:59] INFO root fetch - processPackages [pystacker]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-23 04:33:59] INFO root fetch - processPackages [np-queuey]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 04:33:59] INFO root fetch - processPackages [dg-itest]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-23 04:33:59] INFO root fetch - processPackages [thinkgpt]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-23 04:33:59] INFO root fetch - processPackages [pystacker]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-23 04:33:59] INFO root fetch - processPackages [monailabel-weekly]: New version: [0.5.dev2317] Old Version: [0.5.dev2316]
+[2023-04-23 04:33:59] INFO root fetch - processPackages [cdk8s-plus-24]: New version: [2.7.6] Old Version: [2.7.5]
+[2023-04-23 04:33:59] INFO root fetch - processPackages [np-queuey]: executing diffoscope
+[2023-04-23 04:33:59] INFO root fetch - processPackages [np-queuey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_queuey-0.1.8.tar.gz tmp/np_queuey-0.1.9.tar.gz --markdown 20230423/n/np-queuey/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 04:33:59] INFO root fetch - processPackages [pystacker]: Downloading https://files.pythonhosted.org/packages/55/94/682c6faa43e4bc3db8b712d594020fc6d9d318b33146952d794c4cf753bf/pystacker-1.2.1-py3.10.egg
+[2023-04-23 04:33:59] INFO root fetch - processPackages [pystacker]: Downloading https://files.pythonhosted.org/packages/55/94/682c6faa43e4bc3db8b712d594020fc6d9d318b33146952d794c4cf753bf/pystacker-1.2.1-py3.10.egg
+[2023-04-23 04:33:59] INFO root fetch - processPackages [CommonlyTools]: Downloading https://files.pythonhosted.org/packages/4b/ff/064da829317c30f9345d3221ad249ab5079485bb24c3a8b8e0a55018f172/CommonlyTools-1.0.0.tar.gz
+[2023-04-23 04:33:59] INFO root fetch - processPackages [pystacker]: Downloading https://files.pythonhosted.org/packages/55/94/682c6faa43e4bc3db8b712d594020fc6d9d318b33146952d794c4cf753bf/pystacker-1.2.1-py3.10.egg
+[2023-04-23 04:33:59] INFO root fetch - processPackages [cdk8s-plus-24]: Downloading https://files.pythonhosted.org/packages/8f/59/84dbf2979adb63967643505fa04136b2c7e0baab82ec13aaea3a6d4ccc78/cdk8s-plus-24-2.7.5.tar.gz
+[2023-04-23 04:33:59] INFO root fetch - processPackages [dg-itest]: Downloading https://files.pythonhosted.org/packages/ae/80/d4863e49c06cb94055f4febc8e6d4198861a962594b511547664addddc01/dg-itest-0.0.5.tar.gz
+[2023-04-23 04:33:59] INFO root fetch - processPackages [thinkgpt]: Downloading https://files.pythonhosted.org/packages/ed/0d/12679bbe1ceadb96bb2acdad4c01f2b2c0b21ed6c1338053a80bec5a8150/thinkgpt-0.0.3.tar.gz
+[2023-04-23 04:33:59] INFO root fetch - processPackages [zcbot-celery-sdk]: executing diffoscope
+[2023-04-23 04:33:59] INFO root fetch - processPackages [zcbot-celery-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zcbot-celery-sdk-0.0.8.tar.gz tmp/zcbot-celery-sdk-0.0.9.tar.gz --markdown 20230423/z/zcbot-celery-sdk/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 04:33:59] INFO root fetch - processPackages [monailabel-weekly]: Downloading https://files.pythonhosted.org/packages/85/54/0647002ef8e02272f29eb7182b55be410b4c4a25e08a7332862efb3367ba/monailabel_weekly-0.5.dev2317-py3-none-any.whl
+[2023-04-23 04:33:59] INFO root fetch - processPackages [dg-itest]: executing diffoscope
+[2023-04-23 04:33:59] INFO root fetch - processPackages [dg-itest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dg-itest-0.0.4.tar.gz tmp/dg-itest-0.0.5.tar.gz --markdown 20230423/d/dg-itest/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 04:33:59] INFO root fetch - processPackages [CommonlyTools]: Downloading https://files.pythonhosted.org/packages/27/a1/ffb9e411286346afab50820b5803c21a46d0821ba439f4b3f92545ffd994/CommonlyTools-1.0.1.tar.gz
+[2023-04-23 04:33:59] INFO root fetch - processPackages [pystacker]: Downloading https://files.pythonhosted.org/packages/59/9f/5991306ac02f0c3d5450b39c510ef30c59bafff511655ae51aa12aa2ead4/pystacker-1.2.2.tar.gz
+[2023-04-23 04:33:59] INFO root fetch - processPackages [pystacker]: Downloading https://files.pythonhosted.org/packages/59/9f/5991306ac02f0c3d5450b39c510ef30c59bafff511655ae51aa12aa2ead4/pystacker-1.2.2.tar.gz
+[2023-04-23 04:33:59] INFO root fetch - processPackages [pystacker]: Downloading https://files.pythonhosted.org/packages/59/9f/5991306ac02f0c3d5450b39c510ef30c59bafff511655ae51aa12aa2ead4/pystacker-1.2.2.tar.gz
+[2023-04-23 04:33:59] INFO root fetch - processPackages [thinkgpt]: executing diffoscope
+[2023-04-23 04:33:59] INFO root fetch - processPackages [thinkgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thinkgpt-0.0.2.tar.gz tmp/thinkgpt-0.0.3.tar.gz --markdown 20230423/t/thinkgpt/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 04:34:00] INFO root fetch - processPackages [cdk8s-plus-24]: Downloading https://files.pythonhosted.org/packages/e9/71/14083d3ac3253a8cf293460b8e640c458b1e75beb3f8de902d71104498b3/cdk8s-plus-24-2.7.6.tar.gz
+[2023-04-23 04:34:00] INFO root fetch - processPackages [CommonlyTools]: executing diffoscope
+[2023-04-23 04:34:00] INFO root fetch - processPackages [CommonlyTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CommonlyTools-1.0.0.tar.gz tmp/CommonlyTools-1.0.1.tar.gz --markdown 20230423/C/CommonlyTools/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-23 04:34:00] INFO root fetch - processPackages [pystacker]: executing diffoscope
+[2023-04-23 04:34:00] INFO root fetch - processPackages [pystacker]: executing diffoscope
+[2023-04-23 04:34:00] INFO root fetch - processPackages [pystacker]: executing diffoscope
+[2023-04-23 04:34:00] INFO root fetch - processPackages [pystacker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystacker-1.2.1-py3.10.egg tmp/pystacker-1.2.2.tar.gz --markdown 20230423/p/pystacker/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-23 04:34:00] INFO root fetch - processPackages [pystacker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystacker-1.2.1-py3.10.egg tmp/pystacker-1.2.2.tar.gz --markdown 20230423/p/pystacker/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-23 04:34:00] INFO root fetch - processPackages [pystacker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystacker-1.2.1-py3.10.egg tmp/pystacker-1.2.2.tar.gz --markdown 20230423/p/pystacker/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-23 04:34:00] INFO root fetch - processPackages [cdk8s-plus-24]: executing diffoscope
+[2023-04-23 04:34:00] INFO root fetch - processPackages [cdk8s-plus-24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-24-2.7.5.tar.gz tmp/cdk8s-plus-24-2.7.6.tar.gz --markdown 20230423/c/cdk8s-plus-24/2.7.5-2.7.6/diff.md --exclude *.pyd
+[2023-04-23 04:34:00] INFO root fetch - processPackages [monailabel-weekly]: executing diffoscope
+[2023-04-23 04:34:00] INFO root fetch - processPackages [monailabel-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monailabel_weekly-0.5.dev2316-py3-none-any.whl.zip tmp/monailabel_weekly-0.5.dev2317-py3-none-any.whl.zip --markdown 20230423/m/monailabel-weekly/0.5.dev2316-0.5.dev2317/diff.md --exclude *.pyd
+[2023-04-23 04:34:01] INFO root fetch - processPackages [zcbot-celery-sdk]: Start processing: cdk8s-plus-26
+[2023-04-23 04:34:01] INFO root fetch - main [MainThread]: End processing [zcbot-celery-sdk]: success
+[2023-04-23 04:34:01] INFO root fetch - processPackages [cdk8s-plus-26]: New version: [2.3.5] Old Version: [2.3.4]
+[2023-04-23 04:34:01] INFO root fetch - main [MainThread]: End processing [np-queuey]: success
+[2023-04-23 04:34:01] INFO root fetch - processPackages [cdk8s-plus-26]: Downloading https://files.pythonhosted.org/packages/62/49/eb2e273f594f3fd63b7371e5039b545c2a09e6ddfaa49ed61fd917b27578/cdk8s-plus-26-2.3.5.tar.gz
+[2023-04-23 04:34:01] INFO root fetch - main [MainThread]: End processing [thinkgpt]: success
+[2023-04-23 04:34:01] INFO root fetch - main [MainThread]: End processing [CommonlyTools]: success
+[2023-04-23 04:34:01] INFO root fetch - processPackages [cdk8s-plus-26]: executing diffoscope
+[2023-04-23 04:34:01] INFO root fetch - processPackages [cdk8s-plus-26]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-26-2.3.4.tar.gz tmp/cdk8s-plus-26-2.3.5.tar.gz --markdown 20230423/c/cdk8s-plus-26/2.3.4-2.3.5/diff.md --exclude *.pyd
+[2023-04-23 04:34:01] INFO root fetch - main [MainThread]: End processing [pystacker]: success
+[2023-04-23 04:34:01] INFO root fetch - main [MainThread]: End processing [dg-itest]: success
+[2023-04-23 04:34:01] INFO root fetch - main [MainThread]: End processing [pystacker]: success
+[2023-04-23 04:34:01] INFO root fetch - main [MainThread]: End processing [pystacker]: success
+[2023-04-23 04:34:03] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-24]: success
+[2023-04-23 04:34:03] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-26]: success
+[2023-04-23 04:34:08] INFO root fetch - main [MainThread]: End processing [monailabel-weekly]: success
+[2023-04-23 04:34:08] INFO root fetch - main [MainThread]: Store serial: [17819026]
