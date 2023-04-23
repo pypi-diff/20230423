@@ -10129,3 +10129,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 17:59:40] INFO root fetch - main [MainThread]: End processing [shellextools]: success
 [2023-04-23 17:59:46] INFO root fetch - main [MainThread]: End processing [snaptrade-python-sdk]: success
 [2023-04-23 17:59:46] INFO root fetch - main [MainThread]: Store serial: [17823539]
+[2023-04-23 18:04:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823539]
+[2023-04-23 18:04:55] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-23 18:04:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: KDSprac
+[2023-04-23 18:04:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cfn-lint
+[2023-04-23 18:04:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: morastrja
+[2023-04-23 18:04:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Conanmail
+[2023-04-23 18:04:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: secapi-tl
+[2023-04-23 18:04:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: giftmaster
+[2023-04-23 18:04:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo13-addon-product-gtin
+[2023-04-23 18:04:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo13-addon-stock-barcodes-picking-batch
+[2023-04-23 18:04:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: giftmaster
+[2023-04-23 18:04:55] INFO root fetch - processPackages [cfn-lint]: New version: [1.0.0a3] Old Version: [1.0.0a2]
+[2023-04-23 18:04:55] WARNING root fetch - processPackages [KDSprac]: Skipping, unable to determine old version
+[2023-04-23 18:04:55] INFO root fetch - main [MainThread]: End processing [KDSprac] error
+[2023-04-23 18:04:55] INFO root fetch - processPackages [odoo13-addon-product-gtin]: New version: [13.0.1.0.1.dev3] Old Version: [13.0.1.0.1.dev2]
+[2023-04-23 18:04:55] WARNING root fetch - processPackages [odoo13-addon-stock-barcodes-picking-batch]: Skipping, unable to determine old version
+[2023-04-23 18:04:55] INFO root fetch - main [MainThread]: End processing [odoo13-addon-stock-barcodes-picking-batch] error
+[2023-04-23 18:04:55] INFO root fetch - processPackages [Conanmail]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-23 18:04:55] INFO root fetch - processPackages [secapi-tl]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-04-23 18:04:55] INFO root fetch - processPackages [giftmaster]: New version: [0.1.56] Old Version: [0.1.55]
+[2023-04-23 18:04:55] INFO root fetch - processPackages [giftmaster]: New version: [0.1.56] Old Version: [0.1.55]
+[2023-04-23 18:04:55] WARNING root fetch - processPackages [morastrja]: Skipping, unable to determine old version
+[2023-04-23 18:04:55] INFO root fetch - main [MainThread]: End processing [morastrja] error
+[2023-04-23 18:04:55] INFO root fetch - processPackages [Conanmail]: executing diffoscope
+[2023-04-23 18:04:55] INFO root fetch - processPackages [Conanmail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Conanmail-1.0.7-py3-none-any.whl.zip tmp/Conanmail-1.0.8-py3-none-any.whl.zip --markdown 20230423/C/Conanmail/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-23 18:04:55] INFO root fetch - processPackages [giftmaster]: Downloading https://files.pythonhosted.org/packages/ca/0a/6aca4eb063c69617e3f5ee37b5fae496c5eb649630f50ee76898f2f47513/giftmaster-0.1.56.tar.gz
+[2023-04-23 18:04:55] INFO root fetch - processPackages [odoo13-addon-product-gtin]: Downloading https://files.pythonhosted.org/packages/68/a8/0f912f77bc5184c59fff20dd0dcaa759f447ebc863451fa1370368051547/odoo13_addon_product_gtin-13.0.1.0.1.dev2-py3-none-any.whl
+[2023-04-23 18:04:55] INFO root fetch - processPackages [giftmaster]: Downloading https://files.pythonhosted.org/packages/ca/0a/6aca4eb063c69617e3f5ee37b5fae496c5eb649630f50ee76898f2f47513/giftmaster-0.1.56.tar.gz
+[2023-04-23 18:04:55] INFO root fetch - processPackages [giftmaster]: executing diffoscope
+[2023-04-23 18:04:55] INFO root fetch - processPackages [giftmaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/giftmaster-0.1.55.tar.gz tmp/giftmaster-0.1.56.tar.gz --markdown 20230423/g/giftmaster/0.1.55-0.1.56/diff.md --exclude *.pyd
+[2023-04-23 18:04:55] INFO root fetch - processPackages [giftmaster]: executing diffoscope
+[2023-04-23 18:04:55] INFO root fetch - processPackages [giftmaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/giftmaster-0.1.55.tar.gz tmp/giftmaster-0.1.56.tar.gz --markdown 20230423/g/giftmaster/0.1.55-0.1.56/diff.md --exclude *.pyd
+[2023-04-23 18:04:55] INFO root fetch - processPackages [cfn-lint]: Downloading https://files.pythonhosted.org/packages/82/82/43b973068e466f2cb7548330d21b8b2db579bdb2854a4855a567c348c7ff/cfn-lint-1.0.0a3.tar.gz
+[2023-04-23 18:04:55] INFO root fetch - processPackages [secapi-tl]: Downloading https://files.pythonhosted.org/packages/11/4c/080cdec5905ff24c542b3052faa1783d354c4578295c78acd5b22161c3c7/secapi-tl-1.1.7.tar.gz
+[2023-04-23 18:04:55] INFO root fetch - processPackages [secapi-tl]: executing diffoscope
+[2023-04-23 18:04:55] INFO root fetch - processPackages [secapi-tl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secapi-tl-1.1.6.tar.gz tmp/secapi-tl-1.1.7.tar.gz --markdown 20230423/s/secapi-tl/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-04-23 18:04:56] INFO root fetch - processPackages [cfn-lint]: executing diffoscope
+[2023-04-23 18:04:56] INFO root fetch - processPackages [cfn-lint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cfn-lint-1.0.0a2.tar.gz tmp/cfn-lint-1.0.0a3.tar.gz --markdown 20230423/c/cfn-lint/1.0.0a2-1.0.0a3/diff.md --exclude *.pyd
+[2023-04-23 18:04:56] INFO root fetch - processPackages [odoo13-addon-product-gtin]: Downloading https://files.pythonhosted.org/packages/9d/80/3cc61e6c8b06644aacde486b0948a68dd4a82749c6529e378b9df723166d/odoo13_addon_product_gtin-13.0.1.0.1.dev3-py3-none-any.whl
+[2023-04-23 18:04:56] INFO root fetch - processPackages [odoo13-addon-product-gtin]: executing diffoscope
+[2023-04-23 18:04:56] INFO root fetch - processPackages [odoo13-addon-product-gtin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_product_gtin-13.0.1.0.1.dev2-py3-none-any.whl.zip tmp/odoo13_addon_product_gtin-13.0.1.0.1.dev3-py3-none-any.whl.zip --markdown 20230423/o/odoo13-addon-product-gtin/13.0.1.0.1.dev2-13.0.1.0.1.dev3/diff.md --exclude *.pyd
+[2023-04-23 18:04:56] INFO root fetch - main [MainThread]: End processing [Conanmail]: success
+[2023-04-23 18:04:56] INFO root fetch - main [MainThread]: End processing [giftmaster]: success
+[2023-04-23 18:04:56] INFO root fetch - main [MainThread]: End processing [secapi-tl]: success
+[2023-04-23 18:04:57] INFO root fetch - main [MainThread]: End processing [odoo13-addon-product-gtin]: success
+[2023-04-23 18:04:57] INFO root fetch - main [MainThread]: End processing [giftmaster]: success
+[2023-04-23 18:06:54] INFO root fetch - main [MainThread]: End processing [cfn-lint]: success
+[2023-04-23 18:06:54] INFO root fetch - main [MainThread]: Store serial: [17823565]
