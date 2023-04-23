@@ -1330,3 +1330,62 @@
 [2023-04-23 02:31:08] INFO root fetch - main [MainThread]: End processing [vise]: success
 [2023-04-23 02:31:08] INFO root fetch - main [MainThread]: End processing [cdktf-github-actions]: success
 [2023-04-23 02:31:08] INFO root fetch - main [MainThread]: Store serial: [17818382]
+[2023-04-23 02:36:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818382]
+[2023-04-23 02:36:18] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-23 02:36:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-gitlab-runner
+[2023-04-23 02:36:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk8s-operator
+[2023-04-23 02:36:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cwsearch-utils
+[2023-04-23 02:36:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Loterias
+[2023-04-23 02:36:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: everdrop-aws-cdk-constructs
+[2023-04-23 02:36:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aeppl-nightly
+[2023-04-23 02:36:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdklabs.cdk-enterprise-iac
+[2023-04-23 02:36:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nemreader
+[2023-04-23 02:36:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bitmex-websocket
+[2023-04-23 02:36:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: Loterias
+[2023-04-23 02:36:18] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 02:36:18] INFO root fetch - processPackages [Loterias]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 02:36:18] INFO root fetch - processPackages [Loterias]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 02:36:18] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.3.dev20230422] Old Version: [0.1.3.dev20230421]
+[2023-04-23 02:36:18] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 02:36:18] INFO root fetch - processPackages [cdk8s-operator]: New version: [0.1.91] Old Version: [0.1.90]
+[2023-04-23 02:36:18] INFO root fetch - processPackages [nemreader]: New version: [0.8.4] Old Version: [0.8.3]
+[2023-04-23 02:36:18] INFO root fetch - processPackages [cwsearch-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 02:36:18] INFO root fetch - processPackages [Loterias]: executing diffoscope
+[2023-04-23 02:36:18] INFO root fetch - processPackages [Loterias]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Loterias-0.0.5.tar.gz tmp/Loterias-0.0.6.tar.gz --markdown 20230423/L/Loterias/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 02:36:18] INFO root fetch - processPackages [bitmex-websocket]: New version: [0.3.5] Old Version: [0.3.2]
+[2023-04-23 02:36:18] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: executing diffoscope
+[2023-04-23 02:36:18] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/everdrop-aws-cdk-constructs-0.0.8.tar.gz tmp/everdrop-aws-cdk-constructs-0.0.9.tar.gz --markdown 20230423/e/everdrop-aws-cdk-constructs/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 02:36:18] INFO root fetch - processPackages [cdk-gitlab-runner]: New version: [2.1.99] Old Version: [2.1.98]
+[2023-04-23 02:36:18] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2023-04-23 02:36:18] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20230423/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 02:36:18] INFO root fetch - processPackages [Loterias]: executing diffoscope
+[2023-04-23 02:36:18] INFO root fetch - processPackages [Loterias]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Loterias-0.0.5.tar.gz tmp/Loterias-0.0.6.tar.gz --markdown 20230423/L/Loterias/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 02:36:18] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/18/5b/caa4d911b2678de20aa07d46a69a2940149e83f7ecf91450431aa26e3875/aeppl-nightly-0.1.3.dev20230422.tar.gz
+[2023-04-23 02:36:18] INFO root fetch - processPackages [cdk8s-operator]: Downloading https://files.pythonhosted.org/packages/83/0c/c2cd44b2f2064bffdfd94ae470ad3513b59fd457fac7dd1cd89027737636/cdk8s-operator-0.1.90.tar.gz
+[2023-04-23 02:36:18] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2023-04-23 02:36:18] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl-nightly-0.1.3.dev20230421.tar.gz tmp/aeppl-nightly-0.1.3.dev20230422.tar.gz --markdown 20230423/a/aeppl-nightly/0.1.3.dev20230421-0.1.3.dev20230422/diff.md --exclude *.pyd
+[2023-04-23 02:36:18] INFO root fetch - processPackages [bitmex-websocket]: Downloading https://files.pythonhosted.org/packages/1b/9f/2c014455b5231389e8451eb0b6abcc4f19dcff82cec7030a6ae61d464856/bitmex_websocket-0.3.2.tar.gz
+[2023-04-23 02:36:18] INFO root fetch - processPackages [nemreader]: Downloading https://files.pythonhosted.org/packages/77/59/2457f74a17e577e6063dbf87813b0bdc1bcd92f62edf349a353070a957e4/nemreader-0.8.4.tar.gz
+[2023-04-23 02:36:18] INFO root fetch - processPackages [cwsearch-utils]: executing diffoscope
+[2023-04-23 02:36:18] INFO root fetch - processPackages [cwsearch-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cwsearch_utils-0.1.8-py3-none-any.whl.zip tmp/cwsearch_utils-0.1.9-py3-none-any.whl.zip --markdown 20230423/c/cwsearch-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 02:36:18] INFO root fetch - processPackages [cdk-gitlab-runner]: executing diffoscope
+[2023-04-23 02:36:18] INFO root fetch - processPackages [cdk-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-gitlab-runner-2.1.98.tar.gz tmp/cdk-gitlab-runner-2.1.99.tar.gz --markdown 20230423/c/cdk-gitlab-runner/2.1.98-2.1.99/diff.md --exclude *.pyd
+[2023-04-23 02:36:18] INFO root fetch - processPackages [cdk8s-operator]: Downloading https://files.pythonhosted.org/packages/b6/24/ed10dddd62ad6cf563c7c1f512dda386ca4d2a3e7d99474eba9230a3b824/cdk8s-operator-0.1.91.tar.gz
+[2023-04-23 02:36:18] INFO root fetch - processPackages [nemreader]: executing diffoscope
+[2023-04-23 02:36:18] INFO root fetch - processPackages [nemreader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nemreader-0.8.3.tar.gz tmp/nemreader-0.8.4.tar.gz --markdown 20230423/n/nemreader/0.8.3-0.8.4/diff.md --exclude *.pyd
+[2023-04-23 02:36:18] INFO root fetch - processPackages [bitmex-websocket]: Downloading https://files.pythonhosted.org/packages/f4/10/1eada56be1082328a82908d930f65ea147ed053b7334162b561b0dc005e8/bitmex_websocket-0.3.5.tar.gz
+[2023-04-23 02:36:18] INFO root fetch - processPackages [cdk8s-operator]: executing diffoscope
+[2023-04-23 02:36:18] INFO root fetch - processPackages [cdk8s-operator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-operator-0.1.90.tar.gz tmp/cdk8s-operator-0.1.91.tar.gz --markdown 20230423/c/cdk8s-operator/0.1.90-0.1.91/diff.md --exclude *.pyd
+[2023-04-23 02:36:18] INFO root fetch - processPackages [bitmex-websocket]: executing diffoscope
+[2023-04-23 02:36:18] INFO root fetch - processPackages [bitmex-websocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitmex_websocket-0.3.2.tar.gz tmp/bitmex_websocket-0.3.5.tar.gz --markdown 20230423/b/bitmex-websocket/0.3.2-0.3.5/diff.md --exclude *.pyd
+[2023-04-23 02:36:19] INFO root fetch - main [MainThread]: End processing [Loterias]: success
+[2023-04-23 02:36:20] INFO root fetch - main [MainThread]: End processing [everdrop-aws-cdk-constructs]: success
+[2023-04-23 02:36:20] INFO root fetch - main [MainThread]: End processing [Loterias]: success
+[2023-04-23 02:36:20] INFO root fetch - main [MainThread]: End processing [cwsearch-utils]: success
+[2023-04-23 02:36:20] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2023-04-23 02:36:20] INFO root fetch - main [MainThread]: End processing [cdk8s-operator]: success
+[2023-04-23 02:36:20] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2023-04-23 02:36:20] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
+[2023-04-23 02:36:20] INFO root fetch - main [MainThread]: End processing [bitmex-websocket]: success
+[2023-04-23 02:36:21] INFO root fetch - main [MainThread]: End processing [nemreader]: success
+[2023-04-23 02:36:21] INFO root fetch - main [MainThread]: Store serial: [17818408]
