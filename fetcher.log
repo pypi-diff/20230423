@@ -1875,3 +1875,62 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 03:30:09] INFO root fetch - main [MainThread]: End processing [aesara-nightly]: success
 [2023-04-23 03:31:12] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
 [2023-04-23 03:31:12] INFO root fetch - main [MainThread]: Store serial: [17818648]
+[2023-04-23 03:36:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818648]
+[2023-04-23 03:36:24] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-23 03:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sweetrpg-web-core
+[2023-04-23 03:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: foursight
+[2023-04-23 03:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sweetrpg-api-core
+[2023-04-23 03:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bizlogic
+[2023-04-23 03:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ultralytics
+[2023-04-23 03:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbdev-stdlib
+[2023-04-23 03:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sweetrpg-model-core
+[2023-04-23 03:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hydra-zen
+[2023-04-23 03:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nbdev-numpy
+[2023-04-23 03:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: bizlogic
+[2023-04-23 03:36:24] INFO root fetch - processPackages [sweetrpg-api-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 03:36:24] INFO root fetch - processPackages [bizlogic]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-23 03:36:24] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 03:36:24] INFO root fetch - processPackages [bizlogic]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-23 03:36:24] INFO root fetch - processPackages [ultralytics]: New version: [8.0.9] Old Version: [8.0.85]
+[2023-04-23 03:36:24] INFO root fetch - processPackages [hydra-zen]: New version: [0.9.1] Old Version: [0.9.0rc5]
+[2023-04-23 03:36:24] INFO root fetch - processPackages [sweetrpg-model-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 03:36:24] INFO root fetch - processPackages [foursight]: New version: [3.4.0.5b3] Old Version: [3.4.0.5b2]
+[2023-04-23 03:36:24] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 03:36:24] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 03:36:24] INFO root fetch - processPackages [bizlogic]: Downloading https://files.pythonhosted.org/packages/91/f2/ca0ba79ba099981af3bc93d4b14f4c623b433c6731b50e253877d7559540/bizlogic-0.0.4.tar.gz
+[2023-04-23 03:36:24] INFO root fetch - processPackages [bizlogic]: Downloading https://files.pythonhosted.org/packages/91/f2/ca0ba79ba099981af3bc93d4b14f4c623b433c6731b50e253877d7559540/bizlogic-0.0.4.tar.gz
+[2023-04-23 03:36:24] INFO root fetch - processPackages [ultralytics]: Downloading https://files.pythonhosted.org/packages/bf/4f/b090f0b2816f992436f6653996bd6c905986be05c4b3387a49933652f07b/ultralytics-8.0.85.tar.gz
+[2023-04-23 03:36:24] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-04-23 03:36:24] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230423/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 03:36:24] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-04-23 03:36:24] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230423/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 03:36:24] INFO root fetch - processPackages [sweetrpg-api-core]: executing diffoscope
+[2023-04-23 03:36:24] INFO root fetch - processPackages [sweetrpg-api-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-api-core-0.0.98.tar.gz tmp/sweetrpg-api-core-0.0.99.tar.gz --markdown 20230423/s/sweetrpg-api-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 03:36:24] INFO root fetch - processPackages [foursight]: Downloading https://files.pythonhosted.org/packages/2d/8b/9c56b311f946220c3fa87cbdcc3dba450001acc7321c74462e56683fa0d3/foursight-3.4.0.5b3.tar.gz
+[2023-04-23 03:36:24] INFO root fetch - processPackages [hydra-zen]: executing diffoscope
+[2023-04-23 03:36:24] INFO root fetch - processPackages [hydra-zen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydra_zen-0.9.0rc5.tar.gz tmp/hydra_zen-0.9.1.tar.gz --markdown 20230423/h/hydra-zen/0.9.0rc5-0.9.1/diff.md --exclude *.pyd
+[2023-04-23 03:36:24] INFO root fetch - processPackages [sweetrpg-model-core]: executing diffoscope
+[2023-04-23 03:36:24] INFO root fetch - processPackages [sweetrpg-model-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-model-core-0.0.98.tar.gz tmp/sweetrpg-model-core-0.0.99.tar.gz --markdown 20230423/s/sweetrpg-model-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 03:36:24] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2023-04-23 03:36:24] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20230423/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 03:36:24] INFO root fetch - processPackages [bizlogic]: Downloading https://files.pythonhosted.org/packages/b6/4f/2593556bd754da537310ae8a3d98f253c61904e98ce8d4c54727bb1fd346/bizlogic-0.0.5.tar.gz
+[2023-04-23 03:36:24] INFO root fetch - processPackages [bizlogic]: Downloading https://files.pythonhosted.org/packages/b6/4f/2593556bd754da537310ae8a3d98f253c61904e98ce8d4c54727bb1fd346/bizlogic-0.0.5.tar.gz
+[2023-04-23 03:36:24] INFO root fetch - processPackages [foursight]: executing diffoscope
+[2023-04-23 03:36:24] INFO root fetch - processPackages [foursight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight-3.4.0.5b2.tar.gz tmp/foursight-3.4.0.5b3.tar.gz --markdown 20230423/f/foursight/3.4.0.5b2-3.4.0.5b3/diff.md --exclude *.pyd
+[2023-04-23 03:36:24] INFO root fetch - processPackages [ultralytics]: executing diffoscope
+[2023-04-23 03:36:24] INFO root fetch - processPackages [ultralytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultralytics-8.0.85.tar.gz tmp/ultralytics-8.0.9.tar.gz --markdown 20230423/u/ultralytics/8.0.85-8.0.9/diff.md --exclude *.pyd
+[2023-04-23 03:36:24] INFO root fetch - processPackages [bizlogic]: executing diffoscope
+[2023-04-23 03:36:24] INFO root fetch - processPackages [bizlogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bizlogic-0.0.4.tar.gz tmp/bizlogic-0.0.5.tar.gz --markdown 20230423/b/bizlogic/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 03:36:24] INFO root fetch - processPackages [bizlogic]: executing diffoscope
+[2023-04-23 03:36:24] INFO root fetch - processPackages [bizlogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bizlogic-0.0.4.tar.gz tmp/bizlogic-0.0.5.tar.gz --markdown 20230423/b/bizlogic/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 03:36:25] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-04-23 03:36:26] INFO root fetch - main [MainThread]: End processing [sweetrpg-model-core]: success
+[2023-04-23 03:36:26] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2023-04-23 03:36:26] INFO root fetch - main [MainThread]: End processing [sweetrpg-api-core]: success
+[2023-04-23 03:36:26] INFO root fetch - main [MainThread]: End processing [bizlogic]: success
+[2023-04-23 03:36:26] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-04-23 03:36:26] INFO root fetch - main [MainThread]: End processing [bizlogic]: success
+[2023-04-23 03:36:27] INFO root fetch - main [MainThread]: End processing [ultralytics]: success
+[2023-04-23 03:36:28] INFO root fetch - main [MainThread]: End processing [foursight]: success
+[2023-04-23 03:36:29] INFO root fetch - main [MainThread]: End processing [hydra-zen]: success
+[2023-04-23 03:36:29] INFO root fetch - main [MainThread]: Store serial: [17818678]
