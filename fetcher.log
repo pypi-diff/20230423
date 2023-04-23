@@ -4502,3 +4502,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 09:15:12] INFO root fetch - processPackages [easy-patents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_patents-1.0.4.tar.gz tmp/easy_patents-1.0.5.tar.gz --markdown 20230423/e/easy-patents/1.0.4-1.0.5/diff.md --exclude *.pyd
 [2023-04-23 09:15:13] INFO root fetch - main [MainThread]: End processing [easy-patents]: success
 [2023-04-23 09:15:13] INFO root fetch - main [MainThread]: Store serial: [17820206]
+[2023-04-23 09:20:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820206]
+[2023-04-23 09:20:23] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-23 09:20:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torch-book
+[2023-04-23 09:20:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-hub-nightly
+[2023-04-23 09:20:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: codewithgpu-test
+[2023-04-23 09:20:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-animus
+[2023-04-23 09:20:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tfq-nightly
+[2023-04-23 09:20:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: torch-book
+[2023-04-23 09:20:23] INFO root fetch - processPackages [torch-book]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-23 09:20:23] INFO root fetch - processPackages [py-animus]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-23 09:20:23] WARNING root fetch - processPackages [codewithgpu-test]: Skipping, unable to determine old version
+[2023-04-23 09:20:23] INFO root fetch - main [MainThread]: End processing [codewithgpu-test] error
+[2023-04-23 09:20:23] INFO root fetch - processPackages [tfq-nightly]: New version: [0.7.3.dev20230422] Old Version: [0.7.3.dev20230421]
+[2023-04-23 09:20:23] INFO root fetch - processPackages [torch-book]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-23 09:20:23] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2023-04-23 09:20:23] INFO root fetch - processPackages [torch-book]: Downloading https://files.pythonhosted.org/packages/90/7f/ba7fbc1a342c2d485ab0b4a5a85674690a3fa2f205618095a6f63587e52c/torch_book-0.0.6-py3-none-any.whl
+[2023-04-23 09:20:23] INFO root fetch - processPackages [torch-book]: Downloading https://files.pythonhosted.org/packages/90/7f/ba7fbc1a342c2d485ab0b4a5a85674690a3fa2f205618095a6f63587e52c/torch_book-0.0.6-py3-none-any.whl
+[2023-04-23 09:20:23] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2023-04-23 09:20:23] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20230423/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/diff.md --exclude *.pyd
+[2023-04-23 09:20:23] INFO root fetch - processPackages [tfq-nightly]: Downloading https://files.pythonhosted.org/packages/f7/4c/868c68bf76a1cc06a6241f7bebc4af464ce1a7c525db259df37b27dd6eb9/tfq_nightly-0.7.3.dev20230421-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-23 09:20:23] WARNING root fetch - processPackages [tfq-nightly]: Skipping package: exceeds size limit 10819848>=10485760
+[2023-04-23 09:20:23] INFO root fetch - main [MainThread]: End processing [tfq-nightly] error
+[2023-04-23 09:20:23] INFO root fetch - processPackages [py-animus]: executing diffoscope
+[2023-04-23 09:20:23] INFO root fetch - processPackages [py-animus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_animus-1.0.8.tar.gz tmp/py_animus-1.0.9.tar.gz --markdown 20230423/p/py-animus/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-23 09:20:23] INFO root fetch - processPackages [torch-book]: Downloading https://files.pythonhosted.org/packages/ea/bb/5b11bbd2e2eba97c7f88020961c32cb3e9b8414b9b84179715588fa9094f/torch_book-0.0.7-py3-none-any.whl
+[2023-04-23 09:20:23] INFO root fetch - processPackages [torch-book]: Downloading https://files.pythonhosted.org/packages/ea/bb/5b11bbd2e2eba97c7f88020961c32cb3e9b8414b9b84179715588fa9094f/torch_book-0.0.7-py3-none-any.whl
+[2023-04-23 09:20:23] INFO root fetch - processPackages [torch-book]: executing diffoscope
+[2023-04-23 09:20:23] INFO root fetch - processPackages [torch-book]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_book-0.0.6-py3-none-any.whl.zip tmp/torch_book-0.0.7-py3-none-any.whl.zip --markdown 20230423/t/torch-book/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-23 09:20:23] INFO root fetch - processPackages [torch-book]: executing diffoscope
+[2023-04-23 09:20:23] INFO root fetch - processPackages [torch-book]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_book-0.0.6-py3-none-any.whl.zip tmp/torch_book-0.0.7-py3-none-any.whl.zip --markdown 20230423/t/torch-book/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-23 09:20:24] INFO root fetch - main [MainThread]: End processing [py-animus]: success
+[2023-04-23 09:20:24] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2023-04-23 09:20:25] INFO root fetch - main [MainThread]: End processing [torch-book]: success
+[2023-04-23 09:20:25] INFO root fetch - main [MainThread]: End processing [torch-book]: success
+[2023-04-23 09:20:25] INFO root fetch - main [MainThread]: Store serial: [17820221]
