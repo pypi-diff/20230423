@@ -8704,3 +8704,96 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 15:55:26] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-23 15:55:56] INFO root fetch - main [MainThread]: End processing [alacorder]: success
 [2023-04-23 15:55:56] INFO root fetch - main [MainThread]: Store serial: [17822744]
+[2023-04-23 16:01:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17822744]
+[2023-04-23 16:01:05] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-23 16:01:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sitcom
+[2023-04-23 16:01:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ml-pckg
+[2023-04-23 16:01:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pydantic-dynamo
+[2023-04-23 16:01:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: face-crop-plus
+[2023-04-23 16:01:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ml-pckg
+[2023-04-23 16:01:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PyMCTranslate
+[2023-04-23 16:01:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bingImageSpiderCreatedByHanXu
+[2023-04-23 16:01:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: devchat
+[2023-04-23 16:01:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tap-shiftbase
+[2023-04-23 16:01:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ml-pckg
+[2023-04-23 16:01:05] INFO root fetch - processPackages [tap-shiftbase]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-23 16:01:05] INFO root fetch - processPackages [face-crop-plus]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-23 16:01:05] INFO root fetch - processPackages [devchat]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-23 16:01:05] INFO root fetch - processPackages [bingImageSpiderCreatedByHanXu]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 16:01:05] INFO root fetch - processPackages [ml-pckg]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-04-23 16:01:05] INFO root fetch - processPackages [PyMCTranslate]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-23 16:01:05] INFO root fetch - processPackages [ml-pckg]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-04-23 16:01:05] INFO root fetch - processPackages [ml-pckg]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-04-23 16:01:05] INFO root fetch - processPackages [sitcom]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-23 16:01:05] INFO root fetch - processPackages [pydantic-dynamo]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-23 16:01:05] INFO root fetch - processPackages [ml-pckg]: Downloading https://files.pythonhosted.org/packages/55/bf/91c5c649c651a8c0803e14fc2a8b7070530e9cdb47b1e3d09a922abe1a1b/ml_pckg-1.1.5.tar.gz
+[2023-04-23 16:01:05] INFO root fetch - processPackages [bingImageSpiderCreatedByHanXu]: Downloading https://files.pythonhosted.org/packages/c2/a2/4526b3245067be5d97e1997baaf73aeeba41be0528300bce71679e7c75e1/bingImageSpiderCreatedByHanXu-0.0.1.tar.gz
+[2023-04-23 16:01:05] INFO root fetch - processPackages [ml-pckg]: Downloading https://files.pythonhosted.org/packages/55/bf/91c5c649c651a8c0803e14fc2a8b7070530e9cdb47b1e3d09a922abe1a1b/ml_pckg-1.1.5.tar.gz
+[2023-04-23 16:01:05] INFO root fetch - processPackages [ml-pckg]: Downloading https://files.pythonhosted.org/packages/55/bf/91c5c649c651a8c0803e14fc2a8b7070530e9cdb47b1e3d09a922abe1a1b/ml_pckg-1.1.5.tar.gz
+[2023-04-23 16:01:05] INFO root fetch - processPackages [tap-shiftbase]: Downloading https://files.pythonhosted.org/packages/a2/f3/5b613305accf6585dbc609323d4a9cc36c7eeac374c9d457da863a53731a/tap_shiftbase-0.0.3.tar.gz
+[2023-04-23 16:01:06] INFO root fetch - processPackages [PyMCTranslate]: Downloading https://files.pythonhosted.org/packages/7d/40/6543e537185d054bd09f98ebe547d3b2c315951f80440dfdeb591366e597/PyMCTranslate-1.2.8.tar.gz
+[2023-04-23 16:01:06] INFO root fetch - processPackages [sitcom]: Downloading https://files.pythonhosted.org/packages/84/27/d3082b2cf775a89fec281185a972c9d44d8fb37a75f39c9daacda4e77572/sitcom-1.0.1.tar.gz
+[2023-04-23 16:01:06] INFO root fetch - processPackages [pydantic-dynamo]: Downloading https://files.pythonhosted.org/packages/4b/36/4ab1525209848f5b1f68a5abb04ea8fad5b743eaa5bca8ad1e8e75ba3e64/pydantic_dynamo-0.2.1.tar.gz
+[2023-04-23 16:01:06] INFO root fetch - processPackages [face-crop-plus]: Downloading https://files.pythonhosted.org/packages/87/38/cca6ffb9ced01bb035bd48eb9d272133e0942f7391a72625c4bda60895be/face-crop-plus-1.0.2.tar.gz
+[2023-04-23 16:01:06] INFO root fetch - processPackages [devchat]: Downloading https://files.pythonhosted.org/packages/9f/14/a4c376c3dc3f15d8716a72dde6430d66f04c09fbd149d4796c8ff9f30821/devchat-0.1.2.tar.gz
+[2023-04-23 16:01:06] INFO root fetch - processPackages [ml-pckg]: Downloading https://files.pythonhosted.org/packages/00/53/100c564a553b33a61fdba701ba1a3a2d2549a9a97fd8448c4feb4b5abbd6/ml_pckg-1.1.6.tar.gz
+[2023-04-23 16:01:06] INFO root fetch - processPackages [ml-pckg]: Downloading https://files.pythonhosted.org/packages/00/53/100c564a553b33a61fdba701ba1a3a2d2549a9a97fd8448c4feb4b5abbd6/ml_pckg-1.1.6.tar.gz
+[2023-04-23 16:01:06] INFO root fetch - processPackages [ml-pckg]: Downloading https://files.pythonhosted.org/packages/00/53/100c564a553b33a61fdba701ba1a3a2d2549a9a97fd8448c4feb4b5abbd6/ml_pckg-1.1.6.tar.gz
+[2023-04-23 16:01:06] INFO root fetch - processPackages [bingImageSpiderCreatedByHanXu]: Downloading https://files.pythonhosted.org/packages/a5/fc/115c1b8807449ab9a785b131c3fd40abc4f988864f0282ff0d7c00793311/bingImageSpiderCreatedByHanXu-0.0.2.tar.gz
+[2023-04-23 16:01:06] INFO root fetch - processPackages [tap-shiftbase]: Downloading https://files.pythonhosted.org/packages/8b/c7/c96a007bbbc19dd7555ac77eeeaa5f7fab324530cc8d1896a6a0db59d624/tap_shiftbase-0.0.4.tar.gz
+[2023-04-23 16:01:06] INFO root fetch - processPackages [sitcom]: executing diffoscope
+[2023-04-23 16:01:06] INFO root fetch - processPackages [sitcom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sitcom-1.0.0.tar.gz tmp/sitcom-1.0.1.tar.gz --markdown 20230423/s/sitcom/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-23 16:01:06] INFO root fetch - processPackages [pydantic-dynamo]: executing diffoscope
+[2023-04-23 16:01:06] INFO root fetch - processPackages [pydantic-dynamo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_dynamo-0.2.0.tar.gz tmp/pydantic_dynamo-0.2.1.tar.gz --markdown 20230423/p/pydantic-dynamo/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-23 16:01:06] INFO root fetch - processPackages [face-crop-plus]: executing diffoscope
+[2023-04-23 16:01:06] INFO root fetch - processPackages [face-crop-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/face-crop-plus-1.0.1.tar.gz tmp/face-crop-plus-1.0.2.tar.gz --markdown 20230423/f/face-crop-plus/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-23 16:01:06] INFO root fetch - processPackages [devchat]: executing diffoscope
+[2023-04-23 16:01:06] INFO root fetch - processPackages [devchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devchat-0.1.1.tar.gz tmp/devchat-0.1.2.tar.gz --markdown 20230423/d/devchat/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-23 16:01:06] INFO root fetch - processPackages [ml-pckg]: executing diffoscope
+[2023-04-23 16:01:06] INFO root fetch - processPackages [ml-pckg]: executing diffoscope
+[2023-04-23 16:01:06] INFO root fetch - processPackages [ml-pckg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_pckg-1.1.5.tar.gz tmp/ml_pckg-1.1.6.tar.gz --markdown 20230423/m/ml-pckg/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-04-23 16:01:06] INFO root fetch - processPackages [ml-pckg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_pckg-1.1.5.tar.gz tmp/ml_pckg-1.1.6.tar.gz --markdown 20230423/m/ml-pckg/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-04-23 16:01:06] INFO root fetch - processPackages [ml-pckg]: executing diffoscope
+[2023-04-23 16:01:06] INFO root fetch - processPackages [ml-pckg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_pckg-1.1.5.tar.gz tmp/ml_pckg-1.1.6.tar.gz --markdown 20230423/m/ml-pckg/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-04-23 16:01:06] INFO root fetch - processPackages [bingImageSpiderCreatedByHanXu]: executing diffoscope
+[2023-04-23 16:01:06] INFO root fetch - processPackages [bingImageSpiderCreatedByHanXu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bingImageSpiderCreatedByHanXu-0.0.1.tar.gz tmp/bingImageSpiderCreatedByHanXu-0.0.2.tar.gz --markdown 20230423/b/bingImageSpiderCreatedByHanXu/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 16:01:06] INFO root fetch - processPackages [tap-shiftbase]: executing diffoscope
+[2023-04-23 16:01:06] INFO root fetch - processPackages [tap-shiftbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap_shiftbase-0.0.3.tar.gz tmp/tap_shiftbase-0.0.4.tar.gz --markdown 20230423/t/tap-shiftbase/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-23 16:01:07] INFO root fetch - processPackages [PyMCTranslate]: Downloading https://files.pythonhosted.org/packages/f4/c4/6588459ff7f5052b11c7be4b0e56195f0ad0a3b908f078ada0f859ef6b31/PyMCTranslate-1.2.9.tar.gz
+[2023-04-23 16:01:07] INFO root fetch - processPackages [sitcom]: Start processing: ml-pckg
+[2023-04-23 16:01:07] INFO root fetch - main [MainThread]: End processing [sitcom]: success
+[2023-04-23 16:01:07] INFO root fetch - processPackages [ml-pckg]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-04-23 16:01:07] INFO root fetch - processPackages [PyMCTranslate]: executing diffoscope
+[2023-04-23 16:01:07] INFO root fetch - processPackages [PyMCTranslate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyMCTranslate-1.2.8.tar.gz tmp/PyMCTranslate-1.2.9.tar.gz --markdown 20230423/P/PyMCTranslate/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-23 16:01:08] INFO root fetch - processPackages [ml-pckg]: executing diffoscope
+[2023-04-23 16:01:08] INFO root fetch - processPackages [ml-pckg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_pckg-1.1.5.tar.gz tmp/ml_pckg-1.1.6.tar.gz --markdown 20230423/m/ml-pckg/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-04-23 16:01:08] INFO root fetch - processPackages [pydantic-dynamo]: Start processing: megadata
+[2023-04-23 16:01:08] INFO root fetch - main [MainThread]: End processing [pydantic-dynamo]: success
+[2023-04-23 16:01:08] INFO root fetch - processPackages [megadata]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 16:01:08] INFO root fetch - processPackages [ml-pckg]: Start processing: ml-pckg
+[2023-04-23 16:01:08] INFO root fetch - main [MainThread]: End processing [ml-pckg]: success
+[2023-04-23 16:01:08] INFO root fetch - processPackages [ml-pckg]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-04-23 16:01:08] INFO root fetch - processPackages [megadata]: executing diffoscope
+[2023-04-23 16:01:08] INFO root fetch - processPackages [megadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/megadata-0.0.8.tar.gz tmp/megadata-0.0.9.tar.gz --markdown 20230423/m/megadata/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 16:01:08] INFO root fetch - processPackages [devchat]: Start processing: hotsos
+[2023-04-23 16:01:08] INFO root fetch - main [MainThread]: End processing [devchat]: success
+[2023-04-23 16:01:08] INFO root fetch - processPackages [hotsos]: New version: [1.1.13.post9] Old Version: [1.1.13.post8]
+[2023-04-23 16:01:08] INFO root fetch - processPackages [ml-pckg]: executing diffoscope
+[2023-04-23 16:01:08] INFO root fetch - processPackages [ml-pckg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_pckg-1.1.5.tar.gz tmp/ml_pckg-1.1.6.tar.gz --markdown 20230423/m/ml-pckg/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-04-23 16:01:08] INFO root fetch - processPackages [ml-pckg]: Start processing: luhncheck
+[2023-04-23 16:01:08] INFO root fetch - main [MainThread]: End processing [ml-pckg]: success
+[2023-04-23 16:01:08] WARNING root fetch - processPackages [luhncheck]: Skipping, unable to determine old version
+[2023-04-23 16:01:08] INFO root fetch - main [MainThread]: End processing [luhncheck] error
+[2023-04-23 16:01:08] INFO root fetch - main [MainThread]: End processing [tap-shiftbase]: success
+[2023-04-23 16:01:08] INFO root fetch - main [MainThread]: End processing [bingImageSpiderCreatedByHanXu]: success
+[2023-04-23 16:01:08] INFO root fetch - main [MainThread]: End processing [ml-pckg]: success
+[2023-04-23 16:01:08] INFO root fetch - main [MainThread]: End processing [face-crop-plus]: success
+[2023-04-23 16:01:08] INFO root fetch - processPackages [hotsos]: executing diffoscope
+[2023-04-23 16:01:08] INFO root fetch - processPackages [hotsos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotsos-1.1.13.post8.tar.gz tmp/hotsos-1.1.13.post9.tar.gz --markdown 20230423/h/hotsos/1.1.13.post8-1.1.13.post9/diff.md --exclude *.pyd
+[2023-04-23 16:01:09] INFO root fetch - main [MainThread]: End processing [ml-pckg]: success
+[2023-04-23 16:01:09] INFO root fetch - main [MainThread]: End processing [ml-pckg]: success
+[2023-04-23 16:01:10] INFO root fetch - main [MainThread]: End processing [megadata]: success
+[2023-04-23 16:01:11] INFO root fetch - main [MainThread]: End processing [hotsos]: success
+[2023-04-23 16:04:08] ERROR root fetch - processPackages [PyMCTranslate]: Timeout during execution of pkgdiff
+[2023-04-23 16:04:08] INFO root fetch - main [MainThread]: End processing [PyMCTranslate] error
+[2023-04-23 16:04:08] INFO root fetch - main [MainThread]: Store serial: [17822787]
