@@ -2666,3 +2666,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 05:26:21] INFO root fetch - main [MainThread]: End processing [PrSpiders]: success
 [2023-04-23 05:26:21] INFO root fetch - main [MainThread]: End processing [PrSpiders]: success
 [2023-04-23 05:26:21] INFO root fetch - main [MainThread]: Store serial: [17819197]
+[2023-04-23 05:31:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819197]
+[2023-04-23 05:31:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-23 05:31:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hookee
+[2023-04-23 05:31:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gpt-gateway
+[2023-04-23 05:31:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smartchart
+[2023-04-23 05:31:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SAPsim
+[2023-04-23 05:31:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CommonlyTools
+[2023-04-23 05:31:29] INFO root fetch - processPackages [gpt-gateway]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 05:31:29] INFO root fetch - processPackages [hookee]: New version: [2.0.8] Old Version: [2.0.7]
+[2023-04-23 05:31:29] WARNING root fetch - processPackages [CommonlyTools]: Skipping, unable to determine old version
+[2023-04-23 05:31:29] INFO root fetch - main [MainThread]: End processing [CommonlyTools] error
+[2023-04-23 05:31:29] INFO root fetch - processPackages [smartchart]: New version: [6.5.2] Old Version: [6.5.1]
+[2023-04-23 05:31:29] INFO root fetch - processPackages [gpt-gateway]: executing diffoscope
+[2023-04-23 05:31:29] INFO root fetch - processPackages [gpt-gateway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_gateway-0.0.8.tar.gz tmp/gpt_gateway-0.0.9.tar.gz --markdown 20230423/g/gpt-gateway/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 05:31:29] INFO root fetch - processPackages [SAPsim]: New version: [1.0.0] Old Version: [0.0.2]
+[2023-04-23 05:31:30] INFO root fetch - processPackages [hookee]: Downloading https://files.pythonhosted.org/packages/54/13/336ead334f68c1efa16c062d450e5e110134a086db4e79ac6175069dcdba/hookee-2.0.7.tar.gz
+[2023-04-23 05:31:30] INFO root fetch - processPackages [smartchart]: Downloading https://files.pythonhosted.org/packages/9a/12/6a8717f5db22be11f8bbc7d40f8dc1c8d0e348a5ae204573d980f88dfc05/smartchart-6.5.2.tar.gz
+[2023-04-23 05:31:30] INFO root fetch - processPackages [SAPsim]: Downloading https://files.pythonhosted.org/packages/91/93/f503aabc576af72d8535b3c5a329a808bb8be484877c4bdecb5c970633e8/SAPsim-1.0.0.tar.gz
+[2023-04-23 05:31:30] INFO root fetch - processPackages [smartchart]: executing diffoscope
+[2023-04-23 05:31:30] INFO root fetch - processPackages [smartchart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartchart-6.5.1.tar.gz tmp/smartchart-6.5.2.tar.gz --markdown 20230423/s/smartchart/6.5.1-6.5.2/diff.md --exclude *.pyd
+[2023-04-23 05:31:30] INFO root fetch - processPackages [SAPsim]: executing diffoscope
+[2023-04-23 05:31:30] INFO root fetch - processPackages [SAPsim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SAPsim-0.0.2.tar.gz tmp/SAPsim-1.0.0.tar.gz --markdown 20230423/S/SAPsim/0.0.2-1.0.0/diff.md --exclude *.pyd
+[2023-04-23 05:31:30] INFO root fetch - processPackages [hookee]: Downloading https://files.pythonhosted.org/packages/e8/1d/02a031799775c03bb7a9c9eba64869c7a3cf7e681b0aa36f0891d2e2a196/hookee-2.0.8.tar.gz
+[2023-04-23 05:31:30] INFO root fetch - processPackages [hookee]: executing diffoscope
+[2023-04-23 05:31:30] INFO root fetch - processPackages [hookee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hookee-2.0.7.tar.gz tmp/hookee-2.0.8.tar.gz --markdown 20230423/h/hookee/2.0.7-2.0.8/diff.md --exclude *.pyd
+[2023-04-23 05:31:31] INFO root fetch - main [MainThread]: End processing [gpt-gateway]: success
+[2023-04-23 05:31:31] INFO root fetch - main [MainThread]: End processing [SAPsim]: success
+[2023-04-23 05:31:35] INFO root fetch - main [MainThread]: End processing [hookee]: success
+[2023-04-23 05:31:38] INFO root fetch - main [MainThread]: End processing [smartchart]: success
+[2023-04-23 05:31:38] INFO root fetch - main [MainThread]: Store serial: [17819207]
