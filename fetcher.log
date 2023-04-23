@@ -8229,3 +8229,52 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 15:18:06] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
 [2023-04-23 15:18:16] INFO root fetch - main [MainThread]: End processing [areixio]: success
 [2023-04-23 15:18:16] INFO root fetch - main [MainThread]: Store serial: [17822462]
+[2023-04-23 15:23:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17822462]
+[2023-04-23 15:23:28] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-23 15:23:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fbgemm-gpu-nightly
+[2023-04-23 15:23:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: utils-cv-baiyigali
+[2023-04-23 15:23:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdev-apl
+[2023-04-23 15:23:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bacteria
+[2023-04-23 15:23:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: revChatGPT
+[2023-04-23 15:23:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyrew
+[2023-04-23 15:23:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: antsibull-docs-parser
+[2023-04-23 15:23:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-project-panel
+[2023-04-23 15:23:28] INFO root fetch - processPackages [bacteria]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 15:23:28] INFO root fetch - processPackages [antsibull-docs-parser]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-23 15:23:28] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2023.4.22] Old Version: [2023.4.20]
+[2023-04-23 15:23:28] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.731] Old Version: [0.0.730]
+[2023-04-23 15:23:28] INFO root fetch - processPackages [utils-cv-baiyigali]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 15:23:28] INFO root fetch - processPackages [pyrew]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-23 15:23:28] INFO root fetch - processPackages [revChatGPT]: New version: [5.0.0] Old Version: [4.2.5]
+[2023-04-23 15:23:28] INFO root fetch - processPackages [django-project-panel]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-23 15:23:28] INFO root fetch - processPackages [pyrew]: executing diffoscope
+[2023-04-23 15:23:28] INFO root fetch - processPackages [pyrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrew-0.9.2.tar.gz tmp/pyrew-0.9.3.tar.gz --markdown 20230423/p/pyrew/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-23 15:23:28] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/1b/66/d29d2d682a031b71fb4283ff5365d2fdd32396ffccd0c55cb7464a47dab5/fbgemm_gpu_nightly-2023.4.20-cp39-cp39-manylinux1_x86_64.whl
+[2023-04-23 15:23:28] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/1b/b5/2fd03cfc60bcb442fbaa3a264031fecb2be031f3efb8920fc85c2e39bc40/nbdev-apl-0.0.731.tar.gz
+[2023-04-23 15:23:28] INFO root fetch - processPackages [bacteria]: Downloading https://files.pythonhosted.org/packages/ef/aa/df9446cec6eb85575c2c1aa0d73a1747d4421cf7a562313d61b2d8707c85/bacteria-0.1.0.tar.gz
+[2023-04-23 15:23:28] INFO root fetch - processPackages [django-project-panel]: Downloading https://files.pythonhosted.org/packages/0a/d8/d55e7e33bd179c41005d17c31da4dce10825112a0b0e7a7b6ff695b84ccf/django-project-panel-0.0.3.tar.gz
+[2023-04-23 15:23:28] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 245754252>=10485760
+[2023-04-23 15:23:28] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2023-04-23 15:23:28] INFO root fetch - processPackages [antsibull-docs-parser]: Downloading https://files.pythonhosted.org/packages/57/9c/a2b52caad19c0b58b7f76d2f56daa54c863a6037e0337fbd168b4598a05a/antsibull_docs_parser-0.4.0.tar.gz
+[2023-04-23 15:23:29] INFO root fetch - processPackages [revChatGPT]: Downloading https://files.pythonhosted.org/packages/db/e4/8024ed09b5f4438f1e900ecbd90972066efb8dc6c9c3428f587e85e3ea23/revChatGPT-5.0.0.tar.gz
+[2023-04-23 15:23:29] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-04-23 15:23:29] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.730.tar.gz tmp/nbdev-apl-0.0.731.tar.gz --markdown 20230423/n/nbdev-apl/0.0.730-0.0.731/diff.md --exclude *.pyd
+[2023-04-23 15:23:29] INFO root fetch - processPackages [utils-cv-baiyigali]: executing diffoscope
+[2023-04-23 15:23:29] INFO root fetch - processPackages [utils-cv-baiyigali]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utils_cv-baiyigali-0.0.8.tar.gz tmp/utils_cv-baiyigali-0.0.9.tar.gz --markdown 20230423/u/utils-cv-baiyigali/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 15:23:29] INFO root fetch - processPackages [django-project-panel]: executing diffoscope
+[2023-04-23 15:23:29] INFO root fetch - processPackages [django-project-panel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-project-panel-0.0.2.tar.gz tmp/django-project-panel-0.0.3.tar.gz --markdown 20230423/d/django-project-panel/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 15:23:29] INFO root fetch - processPackages [bacteria]: Downloading https://files.pythonhosted.org/packages/2c/17/61479280b6951857250505ee2872e7115218f5e02cfc04c7437aa6799b89/bacteria-0.1.1.tar.gz
+[2023-04-23 15:23:29] INFO root fetch - processPackages [revChatGPT]: executing diffoscope
+[2023-04-23 15:23:29] INFO root fetch - processPackages [revChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revChatGPT-4.2.5.tar.gz tmp/revChatGPT-5.0.0.tar.gz --markdown 20230423/r/revChatGPT/4.2.5-5.0.0/diff.md --exclude *.pyd
+[2023-04-23 15:23:29] INFO root fetch - processPackages [antsibull-docs-parser]: executing diffoscope
+[2023-04-23 15:23:29] INFO root fetch - processPackages [antsibull-docs-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antsibull_docs_parser-0.3.0.tar.gz tmp/antsibull_docs_parser-0.4.0.tar.gz --markdown 20230423/a/antsibull-docs-parser/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-23 15:23:29] INFO root fetch - processPackages [bacteria]: executing diffoscope
+[2023-04-23 15:23:29] INFO root fetch - processPackages [bacteria]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bacteria-0.1.0.tar.gz tmp/bacteria-0.1.1.tar.gz --markdown 20230423/b/bacteria/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 15:23:29] INFO root fetch - main [MainThread]: End processing [pyrew]: success
+[2023-04-23 15:23:30] INFO root fetch - main [MainThread]: End processing [django-project-panel]: success
+[2023-04-23 15:23:30] INFO root fetch - main [MainThread]: End processing [utils-cv-baiyigali]: success
+[2023-04-23 15:23:30] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-04-23 15:23:30] INFO root fetch - main [MainThread]: End processing [revChatGPT]: success
+[2023-04-23 15:23:30] INFO root fetch - main [MainThread]: End processing [bacteria]: success
+[2023-04-23 15:23:30] INFO root fetch - main [MainThread]: End processing [antsibull-docs-parser]: success
+[2023-04-23 15:23:30] INFO root fetch - main [MainThread]: Store serial: [17822489]
