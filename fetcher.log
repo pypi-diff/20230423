@@ -13204,3 +13204,72 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 22:09:45] INFO root fetch - main [MainThread]: End processing [csoundengine]: success
 [2023-04-23 22:10:32] INFO root fetch - main [MainThread]: End processing [Sphinx]: success
 [2023-04-23 22:10:32] INFO root fetch - main [MainThread]: Store serial: [17825459]
+[2023-04-23 22:15:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825459]
+[2023-04-23 22:15:43] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-23 22:15:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aim-ui
+[2023-04-23 22:15:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yyets
+[2023-04-23 22:15:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dragonfly-schema
+[2023-04-23 22:15:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aim
+[2023-04-23 22:15:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: oreo4
+[2023-04-23 22:15:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: leuci-pol
+[2023-04-23 22:15:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: FastGeodis
+[2023-04-23 22:15:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: printf-log-formatter
+[2023-04-23 22:15:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bizlogic
+[2023-04-23 22:15:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: read-rapidpe
+[2023-04-23 22:15:43] INFO root fetch - processPackages [FastGeodis]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-23 22:15:43] INFO root fetch - processPackages [printf-log-formatter]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-04-23 22:15:43] INFO root fetch - processPackages [aim-ui]: New version: [4.0.0.dev3] Old Version: [4.0.0.dev2]
+[2023-04-23 22:15:43] INFO root fetch - processPackages [leuci-pol]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 22:15:43] INFO root fetch - processPackages [yyets]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-23 22:15:43] WARNING root fetch - processPackages [oreo4]: Skipping, unable to determine old version
+[2023-04-23 22:15:43] INFO root fetch - processPackages [oreo4]: Start processing: latex-ml-helper
+[2023-04-23 22:15:43] INFO root fetch - main [MainThread]: End processing [oreo4] error
+[2023-04-23 22:15:43] INFO root fetch - processPackages [bizlogic]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 22:15:43] INFO root fetch - processPackages [read-rapidpe]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-23 22:15:43] INFO root fetch - processPackages [dragonfly-schema]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-23 22:15:43] INFO root fetch - processPackages [aim]: New version: [4.0.0.dev3] Old Version: [4.0.0.dev2]
+[2023-04-23 22:15:43] INFO root fetch - processPackages [latex-ml-helper]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-23 22:15:43] INFO root fetch - processPackages [bizlogic]: executing diffoscope
+[2023-04-23 22:15:43] INFO root fetch - processPackages [bizlogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bizlogic-0.0.8.tar.gz tmp/bizlogic-0.0.9.tar.gz --markdown 20230423/b/bizlogic/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 22:15:43] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/d6/c0/8412600d01de28dac29fc7f2821e1c045150709439ee3cb7a4fd3bce8312/aim-ui-4.0.0.dev2.tar.gz
+[2023-04-23 22:15:43] INFO root fetch - processPackages [FastGeodis]: Downloading https://files.pythonhosted.org/packages/07/26/e7ae7c72511454da57e022248e3787f3aafeb3282444d55063f7f6a31a93/FastGeodis-1.0.2.tar.gz
+[2023-04-23 22:15:43] INFO root fetch - processPackages [read-rapidpe]: Downloading https://files.pythonhosted.org/packages/2a/0f/62238f0d0195a6729cbf0b8c91cd6896e41a1c0eff1db2633a5818b6c970/read_rapidpe-0.1.2.tar.gz
+[2023-04-23 22:15:43] INFO root fetch - processPackages [dragonfly-schema]: Downloading https://files.pythonhosted.org/packages/49/ba/7db13fa5de8ed939cfaa18c025907d28aa5c6e59d901007607c67b86c5c4/dragonfly-schema-1.9.0.tar.gz
+[2023-04-23 22:15:43] INFO root fetch - processPackages [yyets]: Downloading https://files.pythonhosted.org/packages/e9/78/5e70b528dc56b9846ddf10090e86f68b653c850459612dabf8e612f37006/yyets-1.0.0.tar.gz
+[2023-04-23 22:15:43] INFO root fetch - processPackages [latex-ml-helper]: Downloading https://files.pythonhosted.org/packages/31/84/05401f2be4d0965b157773591a0728ad65ec7abb3381565d26740e9d652b/latex_ml_helper-0.0.7.tar.gz
+[2023-04-23 22:15:43] INFO root fetch - processPackages [printf-log-formatter]: Downloading https://files.pythonhosted.org/packages/f3/5f/22d83a59f2aa7201179d73eacc26ab10846d1e47933d75480e123b1bcf83/printf_log_formatter-0.3.0-py3-none-win_amd64.whl
+[2023-04-23 22:15:43] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 27060349>=10485760
+[2023-04-23 22:15:43] INFO root fetch - processPackages [aim-ui]: Start processing: k8s-audit-filter
+[2023-04-23 22:15:43] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2023-04-23 22:15:43] INFO root fetch - processPackages [leuci-pol]: executing diffoscope
+[2023-04-23 22:15:43] INFO root fetch - processPackages [leuci-pol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leuci-pol-0.0.8.tar.gz tmp/leuci-pol-0.0.9.tar.gz --markdown 20230423/l/leuci-pol/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 22:15:43] INFO root fetch - processPackages [aim]: executing diffoscope
+[2023-04-23 22:15:43] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.0.dev2.tar.gz tmp/aim-4.0.0.dev3.tar.gz --markdown 20230423/a/aim/4.0.0.dev2-4.0.0.dev3/diff.md --exclude *.pyd
+[2023-04-23 22:15:43] INFO root fetch - processPackages [latex-ml-helper]: executing diffoscope
+[2023-04-23 22:15:43] INFO root fetch - processPackages [latex-ml-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latex_ml_helper-0.0.6.tar.gz tmp/latex_ml_helper-0.0.7.tar.gz --markdown 20230423/l/latex-ml-helper/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-23 22:15:44] INFO root fetch - processPackages [read-rapidpe]: Downloading https://files.pythonhosted.org/packages/4e/d6/f354bed91d9859ab502eeb79b304f43a639ff01d41339776a7dc22e43274/read_rapidpe-0.1.3.tar.gz
+[2023-04-23 22:15:44] WARNING root fetch - processPackages [k8s-audit-filter]: Skipping, unable to determine old version
+[2023-04-23 22:15:44] INFO root fetch - main [MainThread]: End processing [k8s-audit-filter] error
+[2023-04-23 22:15:44] INFO root fetch - processPackages [printf-log-formatter]: executing diffoscope
+[2023-04-23 22:15:44] INFO root fetch - processPackages [printf-log-formatter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/printf_log_formatter-0.2.2-py3-none-win_amd64.whl.zip tmp/printf_log_formatter-0.3.0-py3-none-win_amd64.whl.zip --markdown 20230423/p/printf-log-formatter/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-04-23 22:15:44] INFO root fetch - processPackages [yyets]: Downloading https://files.pythonhosted.org/packages/62/3f/0882b921ee9c83b01314535da6481bd26f2925ee36287daa97f5c37ff838/yyets-1.0.1.tar.gz
+[2023-04-23 22:15:44] INFO root fetch - processPackages [FastGeodis]: Downloading https://files.pythonhosted.org/packages/b9/fb/3a4d3d00912b708d6729367f77366cccfc1c095021ff34c1835bc9d2dcde/FastGeodis-1.0.3.tar.gz
+[2023-04-23 22:15:44] INFO root fetch - processPackages [read-rapidpe]: executing diffoscope
+[2023-04-23 22:15:44] INFO root fetch - processPackages [read-rapidpe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/read_rapidpe-0.1.2.tar.gz tmp/read_rapidpe-0.1.3.tar.gz --markdown 20230423/r/read-rapidpe/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-23 22:15:44] INFO root fetch - processPackages [yyets]: executing diffoscope
+[2023-04-23 22:15:44] INFO root fetch - processPackages [yyets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yyets-1.0.0.tar.gz tmp/yyets-1.0.1.tar.gz --markdown 20230423/y/yyets/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-23 22:15:44] INFO root fetch - processPackages [dragonfly-schema]: Downloading https://files.pythonhosted.org/packages/b5/85/4c96552f4ae38ed687e4f82f54420e1489272996e978394519541170416c/dragonfly-schema-1.9.1.tar.gz
+[2023-04-23 22:15:44] INFO root fetch - processPackages [FastGeodis]: executing diffoscope
+[2023-04-23 22:15:44] INFO root fetch - processPackages [FastGeodis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FastGeodis-1.0.2.tar.gz tmp/FastGeodis-1.0.3.tar.gz --markdown 20230423/F/FastGeodis/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-23 22:15:44] INFO root fetch - processPackages [dragonfly-schema]: executing diffoscope
+[2023-04-23 22:15:44] INFO root fetch - processPackages [dragonfly-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-schema-1.9.0.tar.gz tmp/dragonfly-schema-1.9.1.tar.gz --markdown 20230423/d/dragonfly-schema/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-23 22:15:45] INFO root fetch - main [MainThread]: End processing [bizlogic]: success
+[2023-04-23 22:15:45] INFO root fetch - main [MainThread]: End processing [leuci-pol]: success
+[2023-04-23 22:15:45] INFO root fetch - main [MainThread]: End processing [latex-ml-helper]: success
+[2023-04-23 22:15:45] INFO root fetch - main [MainThread]: End processing [read-rapidpe]: success
+[2023-04-23 22:15:45] INFO root fetch - main [MainThread]: End processing [yyets]: success
+[2023-04-23 22:15:46] INFO root fetch - main [MainThread]: End processing [dragonfly-schema]: success
+[2023-04-23 22:15:46] INFO root fetch - main [MainThread]: End processing [FastGeodis]: success
+[2023-04-23 22:15:53] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2023-04-23 22:16:06] INFO root fetch - main [MainThread]: End processing [printf-log-formatter]: success
+[2023-04-23 22:16:06] INFO root fetch - main [MainThread]: Store serial: [17825508]
