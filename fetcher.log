@@ -13007,3 +13007,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 21:38:38] INFO root fetch - main [MainThread]: End processing [ws-cli-chat]: success
 [2023-04-23 21:38:38] INFO root fetch - main [MainThread]: End processing [cluster-colors]: success
 [2023-04-23 21:38:38] INFO root fetch - main [MainThread]: Store serial: [17825317]
+[2023-04-23 21:43:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825317]
+[2023-04-23 21:43:47] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-23 21:43:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: remotecall
+[2023-04-23 21:43:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ws-cli-chat
+[2023-04-23 21:43:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pystan
+[2023-04-23 21:43:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: charidotella
+[2023-04-23 21:43:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dotscanner
+[2023-04-23 21:43:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: swagroutes
+[2023-04-23 21:43:47] INFO root fetch - processPackages [ws-cli-chat]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-23 21:43:47] INFO root fetch - processPackages [remotecall]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 21:43:47] INFO root fetch - processPackages [swagroutes]: New version: [1.0.2] Old Version: [0.0.6]
+[2023-04-23 21:43:47] INFO root fetch - processPackages [pystan]: New version: [3.7.0] Old Version: [3.6.0]
+[2023-04-23 21:43:47] INFO root fetch - processPackages [dotscanner]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-23 21:43:47] INFO root fetch - processPackages [charidotella]: New version: [0.8] Old Version: [0.7]
+[2023-04-23 21:43:47] INFO root fetch - processPackages [ws-cli-chat]: Downloading https://files.pythonhosted.org/packages/77/c5/1f77ff34a05a5508464dfd3d7cd27dbc8f455533b8ab263e767c2f830bd2/ws_cli_chat-0.3.1.tar.gz
+[2023-04-23 21:43:47] INFO root fetch - processPackages [remotecall]: Downloading https://files.pythonhosted.org/packages/87/6b/766f8b5247beb3c230ddcab7c72527ea3a19b709fe3c1c6a9e61ba5ec867/remotecall-0.1.0.tar.gz
+[2023-04-23 21:43:47] INFO root fetch - processPackages [swagroutes]: Downloading https://files.pythonhosted.org/packages/cc/3a/673b757b7dc3da5fb73c1759a47015a331d0ba4b9b54e4123fcb2d01d2f6/swagroutes-0.0.6.tar.gz
+[2023-04-23 21:43:47] INFO root fetch - processPackages [pystan]: Downloading https://files.pythonhosted.org/packages/b4/34/c82f306600df2812996689d1d3fc5acb5fa1fd627ad895ede29cd3ee9605/pystan-3.6.0.tar.gz
+[2023-04-23 21:43:47] INFO root fetch - processPackages [charidotella]: Downloading https://files.pythonhosted.org/packages/d4/3a/a4699092970ce7175af40ec9540d464b245e8021693369558b82a6fc3d07/charidotella-0.7.tar.gz
+[2023-04-23 21:43:47] INFO root fetch - processPackages [ws-cli-chat]: executing diffoscope
+[2023-04-23 21:43:47] INFO root fetch - processPackages [ws-cli-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ws_cli_chat-0.3.0.tar.gz tmp/ws_cli_chat-0.3.1.tar.gz --markdown 20230423/w/ws-cli-chat/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-23 21:43:47] INFO root fetch - processPackages [remotecall]: Downloading https://files.pythonhosted.org/packages/46/21/30fd88503df6393c68b614acd5b0d421e43583adebd1d60a5a9779fb57d5/remotecall-0.1.1.tar.gz
+[2023-04-23 21:43:47] INFO root fetch - processPackages [dotscanner]: executing diffoscope
+[2023-04-23 21:43:47] INFO root fetch - processPackages [dotscanner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dotscanner-1.2.8.tar.gz tmp/dotscanner-1.2.9.tar.gz --markdown 20230423/d/dotscanner/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-23 21:43:48] INFO root fetch - processPackages [pystan]: Downloading https://files.pythonhosted.org/packages/54/25/73544436a27a25423de0f94bab5b6add7482c3fe537e9152a0ef779ba2b6/pystan-3.7.0.tar.gz
+[2023-04-23 21:43:48] INFO root fetch - processPackages [charidotella]: Downloading https://files.pythonhosted.org/packages/44/00/f993156ceee5e85f2bc08a076f848e35c7490e3f91b27ab40810114dd20b/charidotella-0.8.tar.gz
+[2023-04-23 21:43:48] INFO root fetch - processPackages [swagroutes]: Downloading https://files.pythonhosted.org/packages/94/43/2bb94019b9701c958bea01ff65828f4e728a2d22c584281605cc1d793058/swagroutes-1.0.2.tar.gz
+[2023-04-23 21:43:48] INFO root fetch - processPackages [remotecall]: executing diffoscope
+[2023-04-23 21:43:48] INFO root fetch - processPackages [remotecall]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remotecall-0.1.0.tar.gz tmp/remotecall-0.1.1.tar.gz --markdown 20230423/r/remotecall/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 21:43:48] INFO root fetch - processPackages [pystan]: executing diffoscope
+[2023-04-23 21:43:48] INFO root fetch - processPackages [pystan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystan-3.6.0.tar.gz tmp/pystan-3.7.0.tar.gz --markdown 20230423/p/pystan/3.6.0-3.7.0/diff.md --exclude *.pyd
+[2023-04-23 21:43:48] INFO root fetch - processPackages [swagroutes]: executing diffoscope
+[2023-04-23 21:43:48] INFO root fetch - processPackages [swagroutes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swagroutes-0.0.6.tar.gz tmp/swagroutes-1.0.2.tar.gz --markdown 20230423/s/swagroutes/0.0.6-1.0.2/diff.md --exclude *.pyd
+[2023-04-23 21:43:48] INFO root fetch - processPackages [charidotella]: executing diffoscope
+[2023-04-23 21:43:48] INFO root fetch - processPackages [charidotella]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/charidotella-0.7.tar.gz tmp/charidotella-0.8.tar.gz --markdown 20230423/c/charidotella/0.7-0.8/diff.md --exclude *.pyd
+[2023-04-23 21:43:49] INFO root fetch - main [MainThread]: End processing [ws-cli-chat]: success
+[2023-04-23 21:43:49] INFO root fetch - main [MainThread]: End processing [dotscanner]: success
+[2023-04-23 21:43:49] INFO root fetch - main [MainThread]: End processing [pystan]: success
+[2023-04-23 21:43:49] INFO root fetch - main [MainThread]: End processing [swagroutes]: success
+[2023-04-23 21:43:49] INFO root fetch - main [MainThread]: End processing [remotecall]: success
+[2023-04-23 21:43:49] INFO root fetch - main [MainThread]: End processing [charidotella]: success
+[2023-04-23 21:43:49] INFO root fetch - main [MainThread]: Store serial: [17825372]
