@@ -13696,3 +13696,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 22:57:58] INFO root fetch - main [MainThread]: End processing [landsat9-lc]: success
 [2023-04-23 22:57:59] INFO root fetch - main [MainThread]: End processing [corolab]: success
 [2023-04-23 22:57:59] INFO root fetch - main [MainThread]: Store serial: [17825835]
+[2023-04-23 23:03:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825835]
+[2023-04-23 23:03:07] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-23 23:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: landsat9-lc
+[2023-04-23 23:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-blive-danmaku
+[2023-04-23 23:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dasdsajdjsaasddsad
+[2023-04-23 23:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dasdsajdjsaasddsad
+[2023-04-23 23:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yandex-cme-infrastructure
+[2023-04-23 23:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yandex-kv-mapper
+[2023-04-23 23:03:07] INFO root fetch - processPackages [landsat9-lc]: New version: [0.0.4] Old Version: [0.0.31]
+[2023-04-23 23:03:07] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-23 23:03:07] INFO root fetch - processPackages [dasdsajdjsaasddsad]: New version: [4.0.0] Old Version: [3.0.0]
+[2023-04-23 23:03:07] INFO root fetch - processPackages [dasdsajdjsaasddsad]: New version: [4.0.0] Old Version: [3.0.0]
+[2023-04-23 23:03:07] WARNING root fetch - processPackages [yandex-cme-infrastructure]: Skipping, unable to determine old version
+[2023-04-23 23:03:07] INFO root fetch - main [MainThread]: End processing [yandex-cme-infrastructure] error
+[2023-04-23 23:03:07] WARNING root fetch - processPackages [yandex-kv-mapper]: Skipping, unable to determine old version
+[2023-04-23 23:03:07] INFO root fetch - main [MainThread]: End processing [yandex-kv-mapper] error
+[2023-04-23 23:03:08] INFO root fetch - processPackages [dasdsajdjsaasddsad]: Downloading https://files.pythonhosted.org/packages/1b/8b/7deeb96026e9b302f253e393bdc7c10879e1d6c514c35d66cb5334c3534f/dasdsajdjsaasddsad-3.0.0.tar.gz
+[2023-04-23 23:03:08] INFO root fetch - processPackages [dasdsajdjsaasddsad]: Downloading https://files.pythonhosted.org/packages/1b/8b/7deeb96026e9b302f253e393bdc7c10879e1d6c514c35d66cb5334c3534f/dasdsajdjsaasddsad-3.0.0.tar.gz
+[2023-04-23 23:03:08] INFO root fetch - processPackages [landsat9-lc]: Downloading https://files.pythonhosted.org/packages/6f/db/a21b20ee99f8b926682afadc486ee7f23727587aa5ec2332754d35145d6e/landsat9_lc-0.0.4.tar.gz
+[2023-04-23 23:03:08] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: Downloading https://files.pythonhosted.org/packages/98/31/84e9fb5b8429bd7457516cc98f5b4c03788d4ce0ed9fda7ea3408ef504d1/nonebot_plugin_blive_danmaku-0.2.5.tar.gz
+[2023-04-23 23:03:08] INFO root fetch - processPackages [landsat9-lc]: executing diffoscope
+[2023-04-23 23:03:08] INFO root fetch - processPackages [landsat9-lc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/landsat9_lc-0.0.31.tar.gz tmp/landsat9_lc-0.0.4.tar.gz --markdown 20230423/l/landsat9-lc/0.0.31-0.0.4/diff.md --exclude *.pyd
+[2023-04-23 23:03:08] INFO root fetch - processPackages [dasdsajdjsaasddsad]: Downloading https://files.pythonhosted.org/packages/9e/78/8c2c456126ced27fc37435b3b97d397a342fb055f5fd91077af6aab19d09/dasdsajdjsaasddsad-4.0.0.tar.gz
+[2023-04-23 23:03:08] INFO root fetch - processPackages [dasdsajdjsaasddsad]: Downloading https://files.pythonhosted.org/packages/9e/78/8c2c456126ced27fc37435b3b97d397a342fb055f5fd91077af6aab19d09/dasdsajdjsaasddsad-4.0.0.tar.gz
+[2023-04-23 23:03:08] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: executing diffoscope
+[2023-04-23 23:03:08] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_blive_danmaku-0.2.4.tar.gz tmp/nonebot_plugin_blive_danmaku-0.2.5.tar.gz --markdown 20230423/n/nonebot-plugin-blive-danmaku/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-23 23:03:08] INFO root fetch - processPackages [dasdsajdjsaasddsad]: executing diffoscope
+[2023-04-23 23:03:08] INFO root fetch - processPackages [dasdsajdjsaasddsad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dasdsajdjsaasddsad-3.0.0.tar.gz tmp/dasdsajdjsaasddsad-4.0.0.tar.gz --markdown 20230423/d/dasdsajdjsaasddsad/3.0.0-4.0.0/diff.md --exclude *.pyd
+[2023-04-23 23:03:08] INFO root fetch - processPackages [dasdsajdjsaasddsad]: executing diffoscope
+[2023-04-23 23:03:08] INFO root fetch - processPackages [dasdsajdjsaasddsad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dasdsajdjsaasddsad-3.0.0.tar.gz tmp/dasdsajdjsaasddsad-4.0.0.tar.gz --markdown 20230423/d/dasdsajdjsaasddsad/3.0.0-4.0.0/diff.md --exclude *.pyd
+[2023-04-23 23:03:09] INFO root fetch - main [MainThread]: End processing [dasdsajdjsaasddsad]: success
+[2023-04-23 23:03:09] INFO root fetch - main [MainThread]: End processing [dasdsajdjsaasddsad]: success
+[2023-04-23 23:03:09] INFO root fetch - main [MainThread]: End processing [landsat9-lc]: success
+[2023-04-23 23:03:17] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-blive-danmaku]: success
+[2023-04-23 23:03:17] INFO root fetch - main [MainThread]: Store serial: [17825866]
