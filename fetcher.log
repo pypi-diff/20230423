@@ -9137,3 +9137,97 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 16:25:11] INFO root fetch - main [MainThread]: End processing [ml-pckg]: success
 [2023-04-23 16:25:11] INFO root fetch - main [MainThread]: End processing [terka]: success
 [2023-04-23 16:25:11] INFO root fetch - main [MainThread]: Store serial: [17822971]
+[2023-04-23 16:30:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17822971]
+[2023-04-23 16:30:20] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-23 16:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: terka
+[2023-04-23 16:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ml-pckg
+[2023-04-23 16:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: golem-gpt
+[2023-04-23 16:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CommonlyTools
+[2023-04-23 16:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xia-engine
+[2023-04-23 16:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ml-pckg
+[2023-04-23 16:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: omfit-classes
+[2023-04-23 16:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ml-pckg
+[2023-04-23 16:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: terka
+[2023-04-23 16:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: skyfield-data
+[2023-04-23 16:30:20] INFO root fetch - processPackages [terka]: New version: [1.6.4.6] Old Version: [1.6.4.5]
+[2023-04-23 16:30:20] INFO root fetch - processPackages [skyfield-data]: New version: [5.0.0] Old Version: [4.0.0]
+[2023-04-23 16:30:20] INFO root fetch - processPackages [ml-pckg]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-04-23 16:30:20] WARNING root fetch - processPackages [golem-gpt]: Skipping, unable to determine old version
+[2023-04-23 16:30:20] INFO root fetch - processPackages [golem-gpt]: Start processing: porkbun-ddns
+[2023-04-23 16:30:20] INFO root fetch - main [MainThread]: End processing [golem-gpt] error
+[2023-04-23 16:30:20] INFO root fetch - processPackages [ml-pckg]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-04-23 16:30:20] INFO root fetch - processPackages [terka]: New version: [1.6.4.6] Old Version: [1.6.4.5]
+[2023-04-23 16:30:20] INFO root fetch - processPackages [omfit-classes]: New version: [3.2023.7.2] Old Version: [3.2023.5.2]
+[2023-04-23 16:30:20] INFO root fetch - processPackages [ml-pckg]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-04-23 16:30:20] INFO root fetch - processPackages [CommonlyTools]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-23 16:30:20] INFO root fetch - processPackages [porkbun-ddns]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-23 16:30:20] INFO root fetch - processPackages [xia-engine]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-04-23 16:30:20] INFO root fetch - processPackages [ml-pckg]: Downloading https://files.pythonhosted.org/packages/36/aa/d427dcd9164b4ba753214066629dd6d9c872c2d35c3d858bb313937d2081/ml_pckg-1.2.3.tar.gz
+[2023-04-23 16:30:20] INFO root fetch - processPackages [ml-pckg]: Downloading https://files.pythonhosted.org/packages/36/aa/d427dcd9164b4ba753214066629dd6d9c872c2d35c3d858bb313937d2081/ml_pckg-1.2.3.tar.gz
+[2023-04-23 16:30:20] INFO root fetch - processPackages [terka]: Downloading https://files.pythonhosted.org/packages/32/18/0a417e145f9c262bba25405712142cab10c9f47345d436b67b22e54da6bc/terka-1.6.4.6.tar.gz
+[2023-04-23 16:30:20] INFO root fetch - processPackages [ml-pckg]: Downloading https://files.pythonhosted.org/packages/36/aa/d427dcd9164b4ba753214066629dd6d9c872c2d35c3d858bb313937d2081/ml_pckg-1.2.3.tar.gz
+[2023-04-23 16:30:20] INFO root fetch - processPackages [porkbun-ddns]: Downloading https://files.pythonhosted.org/packages/b7/2e/a7f82ae9839ba853fb2528349bdf5ad23a9581bcdc5fcdedfecc47f1b919/porkbun-ddns-0.0.4.tar.gz
+[2023-04-23 16:30:20] INFO root fetch - processPackages [terka]: Downloading https://files.pythonhosted.org/packages/32/18/0a417e145f9c262bba25405712142cab10c9f47345d436b67b22e54da6bc/terka-1.6.4.6.tar.gz
+[2023-04-23 16:30:20] INFO root fetch - processPackages [CommonlyTools]: Downloading https://files.pythonhosted.org/packages/b9/e1/5aa65382da0bfb6ba853dc2c6429bf36d1c8a041ef147c1f1c73ef0482a2/CommonlyTools-2.0.1.tar.gz
+[2023-04-23 16:30:20] INFO root fetch - processPackages [xia-engine]: Downloading https://files.pythonhosted.org/packages/a9/64/b0abe5b6365ca2ac4b5b8546608a28b1cab27dcab9f06198d974ae0e8eaf/xia_engine-0.7.2-cp39-none-win_amd64.whl
+[2023-04-23 16:30:20] INFO root fetch - processPackages [skyfield-data]: Downloading https://files.pythonhosted.org/packages/be/a9/78f778d51e5de8583e4044543fb6223c857c723b4f6f1d5d21cc548d9f03/skyfield-data-4.0.0.tar.gz
+[2023-04-23 16:30:20] WARNING root fetch - processPackages [skyfield-data]: Skipping package: exceeds size limit 16917344>=10485760
+[2023-04-23 16:30:20] INFO root fetch - processPackages [skyfield-data]: Start processing: gptcache
+[2023-04-23 16:30:20] INFO root fetch - main [MainThread]: End processing [skyfield-data] error
+[2023-04-23 16:30:20] INFO root fetch - processPackages [omfit-classes]: executing diffoscope
+[2023-04-23 16:30:20] INFO root fetch - processPackages [CommonlyTools]: executing diffoscope
+[2023-04-23 16:30:20] INFO root fetch - processPackages [CommonlyTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CommonlyTools-2.0.0.tar.gz tmp/CommonlyTools-2.0.1.tar.gz --markdown 20230423/C/CommonlyTools/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-23 16:30:20] INFO root fetch - processPackages [terka]: executing diffoscope
+[2023-04-23 16:30:20] INFO root fetch - processPackages [terka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terka-1.6.4.5.tar.gz tmp/terka-1.6.4.6.tar.gz --markdown 20230423/t/terka/1.6.4.5-1.6.4.6/diff.md --exclude *.pyd
+[2023-04-23 16:30:20] INFO root fetch - processPackages [omfit-classes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omfit_classes-3.2023.5.2.tar.gz tmp/omfit_classes-3.2023.7.2.tar.gz --markdown 20230423/o/omfit-classes/3.2023.5.2-3.2023.7.2/diff.md --exclude *.pyd
+[2023-04-23 16:30:20] INFO root fetch - processPackages [terka]: executing diffoscope
+[2023-04-23 16:30:20] INFO root fetch - processPackages [terka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terka-1.6.4.5.tar.gz tmp/terka-1.6.4.6.tar.gz --markdown 20230423/t/terka/1.6.4.5-1.6.4.6/diff.md --exclude *.pyd
+[2023-04-23 16:30:20] INFO root fetch - processPackages [gptcache]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 16:30:20] INFO root fetch - processPackages [ml-pckg]: Downloading https://files.pythonhosted.org/packages/c5/31/e8d064212e6c3da369436e0d85a6e1c38770099f77bb810045635791d264/ml_pckg-1.2.4.tar.gz
+[2023-04-23 16:30:20] INFO root fetch - processPackages [ml-pckg]: Downloading https://files.pythonhosted.org/packages/c5/31/e8d064212e6c3da369436e0d85a6e1c38770099f77bb810045635791d264/ml_pckg-1.2.4.tar.gz
+[2023-04-23 16:30:21] INFO root fetch - processPackages [ml-pckg]: Downloading https://files.pythonhosted.org/packages/c5/31/e8d064212e6c3da369436e0d85a6e1c38770099f77bb810045635791d264/ml_pckg-1.2.4.tar.gz
+[2023-04-23 16:30:21] INFO root fetch - processPackages [porkbun-ddns]: Downloading https://files.pythonhosted.org/packages/69/dc/1b181d3125a5ec6bc30f041cb4762dbe710aceb4ba8e2c577a04b07ee05e/porkbun-ddns-0.0.5.tar.gz
+[2023-04-23 16:30:21] INFO root fetch - processPackages [xia-engine]: Downloading https://files.pythonhosted.org/packages/a3/48/1ca6c2b32ea5d39bf01cd620e94ad6d809d85eceb67e57de063d06b32618/xia_engine-0.7.3-cp39-none-macosx_11_0_x86_64.whl
+[2023-04-23 16:30:21] INFO root fetch - processPackages [ml-pckg]: executing diffoscope
+[2023-04-23 16:30:21] INFO root fetch - processPackages [ml-pckg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_pckg-1.2.3.tar.gz tmp/ml_pckg-1.2.4.tar.gz --markdown 20230423/m/ml-pckg/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-04-23 16:30:21] INFO root fetch - processPackages [ml-pckg]: executing diffoscope
+[2023-04-23 16:30:21] INFO root fetch - processPackages [ml-pckg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_pckg-1.2.3.tar.gz tmp/ml_pckg-1.2.4.tar.gz --markdown 20230423/m/ml-pckg/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-04-23 16:30:21] INFO root fetch - processPackages [porkbun-ddns]: executing diffoscope
+[2023-04-23 16:30:21] INFO root fetch - processPackages [porkbun-ddns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/porkbun-ddns-0.0.4.tar.gz tmp/porkbun-ddns-0.0.5.tar.gz --markdown 20230423/p/porkbun-ddns/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 16:30:21] INFO root fetch - processPackages [ml-pckg]: executing diffoscope
+[2023-04-23 16:30:21] INFO root fetch - processPackages [ml-pckg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_pckg-1.2.3.tar.gz tmp/ml_pckg-1.2.4.tar.gz --markdown 20230423/m/ml-pckg/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-04-23 16:30:21] INFO root fetch - processPackages [gptcache]: executing diffoscope
+[2023-04-23 16:30:21] INFO root fetch - processPackages [gptcache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptcache-0.1.8.tar.gz tmp/gptcache-0.1.9.tar.gz --markdown 20230423/g/gptcache/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 16:30:21] INFO root fetch - processPackages [xia-engine]: executing diffoscope
+[2023-04-23 16:30:21] INFO root fetch - processPackages [xia-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_engine-0.7.2-cp39-none-win_amd64.whl.zip tmp/xia_engine-0.7.3-cp39-none-macosx_11_0_x86_64.whl.zip --markdown 20230423/x/xia-engine/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-04-23 16:30:22] INFO root fetch - processPackages [terka]: Start processing: qwak-core
+[2023-04-23 16:30:22] INFO root fetch - main [MainThread]: End processing [terka]: success
+[2023-04-23 16:30:22] INFO root fetch - processPackages [CommonlyTools]: Start processing: ml-pckg
+[2023-04-23 16:30:22] INFO root fetch - main [MainThread]: End processing [CommonlyTools]: success
+[2023-04-23 16:30:22] INFO root fetch - processPackages [qwak-core]: New version: [0.0.28] Old Version: [0.0.27]
+[2023-04-23 16:30:22] INFO root fetch - processPackages [ml-pckg]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-04-23 16:30:22] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/10/23/a52ac6518bfff27255dfb71fbe0b8f7b9a83a0c9d9ead1e297cb11ac3914/qwak_core-0.0.28.tar.gz
+[2023-04-23 16:30:22] INFO root fetch - processPackages [ml-pckg]: Downloading https://files.pythonhosted.org/packages/9e/6e/9986a34a9a3dbd3b3f4a41aa637b174ad4b4e5f793c2a1960d21d44afd88/ml_pckg-1.2.5.tar.gz
+[2023-04-23 16:30:22] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2023-04-23 16:30:22] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.0.27.tar.gz tmp/qwak_core-0.0.28.tar.gz --markdown 20230423/q/qwak-core/0.0.27-0.0.28/diff.md --exclude *.pyd
+[2023-04-23 16:30:22] INFO root fetch - processPackages [ml-pckg]: executing diffoscope
+[2023-04-23 16:30:22] INFO root fetch - processPackages [ml-pckg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_pckg-1.2.4.tar.gz tmp/ml_pckg-1.2.5.tar.gz --markdown 20230423/m/ml-pckg/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-04-23 16:30:22] INFO root fetch - processPackages [ml-pckg]: Start processing: dcvideo
+[2023-04-23 16:30:22] INFO root fetch - main [MainThread]: End processing [ml-pckg]: success
+[2023-04-23 16:30:22] INFO root fetch - processPackages [dcvideo]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-23 16:30:22] INFO root fetch - processPackages [dcvideo]: executing diffoscope
+[2023-04-23 16:30:22] INFO root fetch - processPackages [dcvideo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcvideo-1.1.0.tar.gz tmp/dcvideo-1.1.1.tar.gz --markdown 20230423/d/dcvideo/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-23 16:30:23] INFO root fetch - processPackages [porkbun-ddns]: Start processing: gpt-term
+[2023-04-23 16:30:23] INFO root fetch - main [MainThread]: End processing [porkbun-ddns]: success
+[2023-04-23 16:30:23] WARNING root fetch - processPackages [gpt-term]: Skipping, unable to determine old version
+[2023-04-23 16:30:23] INFO root fetch - main [MainThread]: End processing [gpt-term] error
+[2023-04-23 16:30:23] INFO root fetch - main [MainThread]: End processing [ml-pckg]: success
+[2023-04-23 16:30:23] INFO root fetch - main [MainThread]: End processing [ml-pckg]: success
+[2023-04-23 16:30:23] INFO root fetch - main [MainThread]: End processing [terka]: success
+[2023-04-23 16:30:23] INFO root fetch - main [MainThread]: End processing [gptcache]: success
+[2023-04-23 16:30:24] INFO root fetch - main [MainThread]: End processing [ml-pckg]: success
+[2023-04-23 16:30:24] INFO root fetch - main [MainThread]: End processing [dcvideo]: success
+[2023-04-23 16:30:24] INFO root fetch - main [MainThread]: End processing [xia-engine]: success
+[2023-04-23 16:30:27] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2023-04-23 16:30:27] INFO root fetch - main [MainThread]: End processing [omfit-classes]: success
+[2023-04-23 16:30:27] INFO root fetch - main [MainThread]: Store serial: [17823015]
