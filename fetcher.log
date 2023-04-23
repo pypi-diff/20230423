@@ -12218,3 +12218,68 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 20:29:30] INFO root fetch - main [MainThread]: End processing [chesscomwrapper]: success
 [2023-04-23 20:29:30] INFO root fetch - main [MainThread]: End processing [superannotate]: success
 [2023-04-23 20:29:30] INFO root fetch - main [MainThread]: Store serial: [17824840]
+[2023-04-23 20:34:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17824840]
+[2023-04-23 20:34:39] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-23 20:34:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: foursight-core
+[2023-04-23 20:34:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quinten-cli
+[2023-04-23 20:34:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: thonny
+[2023-04-23 20:34:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-amazon-sp-api
+[2023-04-23 20:34:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: foursight-core
+[2023-04-23 20:34:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pycax-client
+[2023-04-23 20:34:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bagbag
+[2023-04-23 20:34:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: UC2-REST
+[2023-04-23 20:34:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dank-mids
+[2023-04-23 20:34:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mote-gtest-gui
+[2023-04-23 20:34:39] INFO root fetch - processPackages [python-amazon-sp-api]: New version: [0.9.4] Old Version: [0.9.2]
+[2023-04-23 20:34:39] INFO root fetch - processPackages [quinten-cli]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-23 20:34:39] INFO root fetch - processPackages [pycax-client]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-23 20:34:39] INFO root fetch - processPackages [UC2-REST]: New version: [2.1.0] Old Version: [0.2.0.9]
+[2023-04-23 20:34:39] INFO root fetch - processPackages [dank-mids]: New version: [4.20.9] Old Version: [4.20.8]
+[2023-04-23 20:34:39] INFO root fetch - processPackages [thonny]: New version: [4.1.0b1.dev0] Old Version: [4.1.0b1]
+[2023-04-23 20:34:39] INFO root fetch - processPackages [foursight-core]: New version: [4.0.0] Old Version: [3.3.2.2b1]
+[2023-04-23 20:34:39] INFO root fetch - processPackages [foursight-core]: New version: [4.0.0] Old Version: [3.3.2.2b1]
+[2023-04-23 20:34:39] WARNING root fetch - processPackages [mote-gtest-gui]: Skipping, unable to determine old version
+[2023-04-23 20:34:39] INFO root fetch - processPackages [bagbag]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-04-23 20:34:39] INFO root fetch - processPackages [mote-gtest-gui]: Start processing: NlpToolkit-DependencyParser
+[2023-04-23 20:34:39] INFO root fetch - main [MainThread]: End processing [mote-gtest-gui] error
+[2023-04-23 20:34:39] INFO root fetch - processPackages [thonny]: Downloading https://files.pythonhosted.org/packages/8f/d9/edae8997a560b4148cd9b5db8df8b049452606bb38b261cbede2ef8e38ab/thonny-4.1.0b1.tar.gz
+[2023-04-23 20:34:39] INFO root fetch - processPackages [UC2-REST]: Downloading https://files.pythonhosted.org/packages/e0/14/f33b50950796abde8462ca47a77e01b789e4c8fff7f2ab21521031f1a053/UC2%20REST-0.2.0.9.tar.gz
+[2023-04-23 20:34:39] INFO root fetch - processPackages [python-amazon-sp-api]: Downloading https://files.pythonhosted.org/packages/06/d7/90609b17ec59ed35fb664cfa53e94fd76ca0a61927f61dca7252b9f32999/python-amazon-sp-api-0.9.2.tar.gz
+[2023-04-23 20:34:39] INFO root fetch - processPackages [pycax-client]: Downloading https://files.pythonhosted.org/packages/33/88/9038aabe95d7a6285442c62e6693f303c21e31241c313ad2bb65fd49dd84/pycax-client-1.0.3.tar.gz
+[2023-04-23 20:34:39] INFO root fetch - processPackages [quinten-cli]: Downloading https://files.pythonhosted.org/packages/0b/eb/28809800436a4864fb61adc1708d36b310e7bc32b48b1a82fe3b450c0ca5/quinten-cli-1.1.1.tar.gz
+[2023-04-23 20:34:39] INFO root fetch - processPackages [NlpToolkit-DependencyParser]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-23 20:34:39] INFO root fetch - processPackages [quinten-cli]: executing diffoscope
+[2023-04-23 20:34:39] INFO root fetch - processPackages [quinten-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quinten-cli-1.1.0.tar.gz tmp/quinten-cli-1.1.1.tar.gz --markdown 20230423/q/quinten-cli/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-23 20:34:39] INFO root fetch - processPackages [pycax-client]: executing diffoscope
+[2023-04-23 20:34:39] INFO root fetch - processPackages [pycax-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycax-client-1.0.2.tar.gz tmp/pycax-client-1.0.3.tar.gz --markdown 20230423/p/pycax-client/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-23 20:34:39] INFO root fetch - processPackages [dank-mids]: executing diffoscope
+[2023-04-23 20:34:39] INFO root fetch - processPackages [dank-mids]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dank_mids-4.20.8.tar.gz tmp/dank_mids-4.20.9.tar.gz --markdown 20230423/d/dank-mids/4.20.8-4.20.9/diff.md --exclude *.pyd
+[2023-04-23 20:34:39] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-23 20:34:39] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-3.3.2.2b1.tar.gz tmp/foursight_core-4.0.0.tar.gz --markdown 20230423/f/foursight-core/3.3.2.2b1-4.0.0/diff.md --exclude *.pyd
+[2023-04-23 20:34:39] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-23 20:34:39] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-3.3.2.2b1.tar.gz tmp/foursight_core-4.0.0.tar.gz --markdown 20230423/f/foursight-core/3.3.2.2b1-4.0.0/diff.md --exclude *.pyd
+[2023-04-23 20:34:39] INFO root fetch - processPackages [NlpToolkit-DependencyParser]: Downloading https://files.pythonhosted.org/packages/d3/c1/368266aa7c2818f6889fbc31242dd959873236fb379fe3a5585207f10444/NlpToolkit-DependencyParser-1.0.8.tar.gz
+[2023-04-23 20:34:40] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2023-04-23 20:34:40] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.9.5.tar.gz tmp/bagbag-0.9.6.tar.gz --markdown 20230423/b/bagbag/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-04-23 20:34:40] INFO root fetch - processPackages [UC2-REST]: Downloading https://files.pythonhosted.org/packages/c1/f6/e9e0eb278734a224f3354c81fd7e293b3b6e505b372bbe266ae033934a32/UC2%20REST-2.1.0.tar.gz
+[2023-04-23 20:34:40] INFO root fetch - processPackages [python-amazon-sp-api]: Downloading https://files.pythonhosted.org/packages/ef/f1/fbff1bfaae672efd6f92bca848aba8026a1b6d2b8559272a523a0989320e/python-amazon-sp-api-0.9.4.tar.gz
+[2023-04-23 20:34:40] INFO root fetch - processPackages [UC2-REST]: executing diffoscope
+[2023-04-23 20:34:40] INFO root fetch - processPackages [UC2-REST]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UC2 REST-0.2.0.9.tar.gz tmp/UC2 REST-2.1.0.tar.gz --markdown 20230423/U/UC2-REST/0.2.0.9-2.1.0/diff.md --exclude *.pyd
+[2023-04-23 20:34:40] INFO root fetch - processPackages [thonny]: executing diffoscope
+[2023-04-23 20:34:40] INFO root fetch - processPackages [thonny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thonny-4.1.0b1.tar.gz tmp/thonny-4.1.0b1.dev0.tar.gz --markdown 20230423/t/thonny/4.1.0b1-4.1.0b1.dev0/diff.md --exclude *.pyd
+[2023-04-23 20:34:40] INFO root fetch - processPackages [python-amazon-sp-api]: executing diffoscope
+[2023-04-23 20:34:40] INFO root fetch - processPackages [python-amazon-sp-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-amazon-sp-api-0.9.2.tar.gz tmp/python-amazon-sp-api-0.9.4.tar.gz --markdown 20230423/p/python-amazon-sp-api/0.9.2-0.9.4/diff.md --exclude *.pyd
+[2023-04-23 20:34:40] INFO root fetch - processPackages [NlpToolkit-DependencyParser]: Downloading https://files.pythonhosted.org/packages/cf/03/a1cc004cd179c3042327a54ded14d1ea6a9ce64f7db59d7ae8e5a58a1b0d/NlpToolkit-DependencyParser-1.0.9.tar.gz
+[2023-04-23 20:34:40] INFO root fetch - processPackages [NlpToolkit-DependencyParser]: executing diffoscope
+[2023-04-23 20:34:40] INFO root fetch - processPackages [NlpToolkit-DependencyParser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NlpToolkit-DependencyParser-1.0.8.tar.gz tmp/NlpToolkit-DependencyParser-1.0.9.tar.gz --markdown 20230423/N/NlpToolkit-DependencyParser/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-23 20:34:41] INFO root fetch - main [MainThread]: End processing [quinten-cli]: success
+[2023-04-23 20:34:41] INFO root fetch - main [MainThread]: End processing [pycax-client]: success
+[2023-04-23 20:34:41] INFO root fetch - main [MainThread]: End processing [bagbag]: success
+[2023-04-23 20:34:41] INFO root fetch - main [MainThread]: End processing [dank-mids]: success
+[2023-04-23 20:34:41] INFO root fetch - main [MainThread]: End processing [UC2-REST]: success
+[2023-04-23 20:34:42] INFO root fetch - main [MainThread]: End processing [NlpToolkit-DependencyParser]: success
+[2023-04-23 20:34:42] INFO root fetch - main [MainThread]: End processing [python-amazon-sp-api]: success
+[2023-04-23 20:34:45] INFO root fetch - main [MainThread]: End processing [thonny]: success
+[2023-04-23 20:34:56] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-23 20:34:56] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-23 20:34:56] INFO root fetch - main [MainThread]: Store serial: [17824876]
