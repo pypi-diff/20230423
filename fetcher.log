@@ -6194,3 +6194,73 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 12:14:45] INFO root fetch - main [MainThread]: End processing [pysistentclass]: success
 [2023-04-23 12:14:47] INFO root fetch - main [MainThread]: End processing [esmerald]: success
 [2023-04-23 12:14:47] INFO root fetch - main [MainThread]: Store serial: [17821219]
+[2023-04-23 12:19:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17821219]
+[2023-04-23 12:19:55] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-23 12:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyfolio-performance
+[2023-04-23 12:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NodeGraphQt
+[2023-04-23 12:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dbxconfig
+[2023-04-23 12:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: trowser
+[2023-04-23 12:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flexypy
+[2023-04-23 12:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pepperize.cdk-organizations
+[2023-04-23 12:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xoscar
+[2023-04-23 12:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nendo-sf-segmenter
+[2023-04-23 12:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: app01
+[2023-04-23 12:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nendo
+[2023-04-23 12:19:55] INFO root fetch - processPackages [pyfolio-performance]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-23 12:19:55] WARNING root fetch - processPackages [NodeGraphQt]: Skipping, unable to determine old version
+[2023-04-23 12:19:55] INFO root fetch - processPackages [NodeGraphQt]: Start processing: raindancers-network.raindancers-cdk
+[2023-04-23 12:19:55] INFO root fetch - main [MainThread]: End processing [NodeGraphQt] error
+[2023-04-23 12:19:55] WARNING root fetch - processPackages [trowser]: Skipping, unable to determine old version
+[2023-04-23 12:19:55] INFO root fetch - processPackages [trowser]: Start processing: django-minio-storage
+[2023-04-23 12:19:55] INFO root fetch - main [MainThread]: End processing [trowser] error
+[2023-04-23 12:19:55] INFO root fetch - processPackages [flexypy]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-23 12:19:55] WARNING root fetch - processPackages [nendo-sf-segmenter]: Skipping, unable to determine old version
+[2023-04-23 12:19:55] INFO root fetch - processPackages [dbxconfig]: New version: [2.2.2] Old Version: [2.2.1]
+[2023-04-23 12:19:55] INFO root fetch - main [MainThread]: End processing [nendo-sf-segmenter] error
+[2023-04-23 12:19:55] INFO root fetch - processPackages [xoscar]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 12:19:55] INFO root fetch - processPackages [app01]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 12:19:55] INFO root fetch - processPackages [pepperize.cdk-organizations]: New version: [0.7.99] Old Version: [0.7.98]
+[2023-04-23 12:19:55] INFO root fetch - processPackages [nendo]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 12:19:55] INFO root fetch - processPackages [raindancers-network.raindancers-cdk]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-23 12:19:55] INFO root fetch - processPackages [pepperize.cdk-organizations]: executing diffoscope
+[2023-04-23 12:19:55] INFO root fetch - processPackages [pepperize.cdk-organizations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-organizations-0.7.98.tar.gz tmp/pepperize.cdk-organizations-0.7.99.tar.gz --markdown 20230423/p/pepperize.cdk-organizations/0.7.98-0.7.99/diff.md --exclude *.pyd
+[2023-04-23 12:19:55] INFO root fetch - processPackages [django-minio-storage]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-04-23 12:19:55] INFO root fetch - processPackages [pyfolio-performance]: Downloading https://files.pythonhosted.org/packages/1f/1e/7535db5f7f387fe4976fff6b479f2accaa20dfa64d6887260c9c45e814a2/pyfolio_performance-0.1.7-py3-none-any.whl
+[2023-04-23 12:19:55] INFO root fetch - processPackages [flexypy]: Downloading https://files.pythonhosted.org/packages/65/cb/a3d8300fd011fb7b7c368f48f8a1ee14cc20a907d1069e9c0325f7d00012/flexypy-0.0.6.tar.gz
+[2023-04-23 12:19:55] INFO root fetch - processPackages [xoscar]: Downloading https://files.pythonhosted.org/packages/88/e6/48f0c04efb7146f41542a5a1d95b5fd9c586e75b6925ad31dd36ad9ff9be/xoscar-0.0.5.tar.gz
+[2023-04-23 12:19:55] INFO root fetch - processPackages [dbxconfig]: Downloading https://files.pythonhosted.org/packages/4f/b0/87e3713b09f5846f83eece90c7bba0b3528fa65268e6df8ac7dd83354aae/dbxconfig-2.2.2.tar.gz
+[2023-04-23 12:19:55] INFO root fetch - processPackages [app01]: Downloading https://files.pythonhosted.org/packages/68/cf/eac3f5a514437ab32cdcf22d253508b709a6bfa37c1b6c3e3fc0e391239a/app01-0.1.0.tar.gz
+[2023-04-23 12:19:56] INFO root fetch - processPackages [nendo]: Downloading https://files.pythonhosted.org/packages/fe/b1/867f0e9f4c35de2d41976791be8df13c0e18e6174945ac5256a594f0496b/nendo-0.0.1.tar.gz
+[2023-04-23 12:19:56] INFO root fetch - processPackages [django-minio-storage]: Downloading https://files.pythonhosted.org/packages/ed/6a/d1eac6eb758702f92bf4477a0871668780dbb9cea7330ab8701a9f17acd8/django-minio-storage-0.3.7.tar.gz
+[2023-04-23 12:19:56] INFO root fetch - processPackages [dbxconfig]: executing diffoscope
+[2023-04-23 12:19:56] INFO root fetch - processPackages [dbxconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbxconfig-2.2.1.tar.gz tmp/dbxconfig-2.2.2.tar.gz --markdown 20230423/d/dbxconfig/2.2.1-2.2.2/diff.md --exclude *.pyd
+[2023-04-23 12:19:56] INFO root fetch - processPackages [xoscar]: Downloading https://files.pythonhosted.org/packages/8e/29/3ce418c046689689b81be2834fb1e1639859a2e342f5797b2b14c146a8d3/xoscar-0.0.6.tar.gz
+[2023-04-23 12:19:56] INFO root fetch - processPackages [pyfolio-performance]: Downloading https://files.pythonhosted.org/packages/e8/f3/4e1a2e102e4d5e74666743dbb4ed424cb3aac61ff99dd2c8d34b8ff5467d/pyfolio_performance-0.1.8-py3-none-any.whl
+[2023-04-23 12:19:56] INFO root fetch - processPackages [raindancers-network.raindancers-cdk]: executing diffoscope
+[2023-04-23 12:19:56] INFO root fetch - processPackages [raindancers-network.raindancers-cdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raindancers-network.raindancers-cdk-1.9.8.tar.gz tmp/raindancers-network.raindancers-cdk-1.9.9.tar.gz --markdown 20230423/r/raindancers-network.raindancers-cdk/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-23 12:19:56] INFO root fetch - processPackages [nendo]: Downloading https://files.pythonhosted.org/packages/1e/7d/8e4e942444a7252220e2666abc46d93b1030ec8da5f5e2db78027ea3a97e/nendo-0.0.2.tar.gz
+[2023-04-23 12:19:56] INFO root fetch - processPackages [flexypy]: Downloading https://files.pythonhosted.org/packages/20/92/2ba90c4afaa1824fba5b5d4b660c903b89c4664e1b1bf4b8d5730d10d010/flexypy-0.0.7.tar.gz
+[2023-04-23 12:19:56] INFO root fetch - processPackages [app01]: Downloading https://files.pythonhosted.org/packages/dd/99/b293c48cd8e3164a833ff6363f211e2b01ec5965e23621165a579cca853d/app01-0.1.1-py2.py3-none-any.whl
+[2023-04-23 12:19:56] INFO root fetch - processPackages [xoscar]: executing diffoscope
+[2023-04-23 12:19:56] INFO root fetch - processPackages [xoscar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xoscar-0.0.5.tar.gz tmp/xoscar-0.0.6.tar.gz --markdown 20230423/x/xoscar/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 12:19:56] INFO root fetch - processPackages [pyfolio-performance]: executing diffoscope
+[2023-04-23 12:19:56] INFO root fetch - processPackages [pyfolio-performance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfolio_performance-0.1.7-py3-none-any.whl.zip tmp/pyfolio_performance-0.1.8-py3-none-any.whl.zip --markdown 20230423/p/pyfolio-performance/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-23 12:19:56] INFO root fetch - processPackages [nendo]: executing diffoscope
+[2023-04-23 12:19:56] INFO root fetch - processPackages [nendo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nendo-0.0.1.tar.gz tmp/nendo-0.0.2.tar.gz --markdown 20230423/n/nendo/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 12:19:56] INFO root fetch - processPackages [flexypy]: executing diffoscope
+[2023-04-23 12:19:56] INFO root fetch - processPackages [flexypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flexypy-0.0.6.tar.gz tmp/flexypy-0.0.7.tar.gz --markdown 20230423/f/flexypy/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-23 12:19:56] INFO root fetch - processPackages [django-minio-storage]: Downloading https://files.pythonhosted.org/packages/8d/52/c3f8f0295344e092ee9acd46470b13170a3cca3f8aa4acee3df96810c7bb/django-minio-storage-0.3.8.tar.gz
+[2023-04-23 12:19:56] INFO root fetch - processPackages [app01]: executing diffoscope
+[2023-04-23 12:19:56] INFO root fetch - processPackages [app01]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/app01-0.1.0.tar.gz tmp/app01-0.1.1-py2.py3-none-any.whl.zip --markdown 20230423/a/app01/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 12:19:56] INFO root fetch - processPackages [django-minio-storage]: executing diffoscope
+[2023-04-23 12:19:56] INFO root fetch - processPackages [django-minio-storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-minio-storage-0.3.7.tar.gz tmp/django-minio-storage-0.3.8.tar.gz --markdown 20230423/d/django-minio-storage/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-04-23 12:19:57] INFO root fetch - main [MainThread]: End processing [dbxconfig]: success
+[2023-04-23 12:19:57] INFO root fetch - main [MainThread]: End processing [raindancers-network.raindancers-cdk]: success
+[2023-04-23 12:19:57] INFO root fetch - main [MainThread]: End processing [pyfolio-performance]: success
+[2023-04-23 12:19:57] INFO root fetch - main [MainThread]: End processing [nendo]: success
+[2023-04-23 12:19:57] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-organizations]: success
+[2023-04-23 12:19:58] INFO root fetch - main [MainThread]: End processing [app01]: success
+[2023-04-23 12:19:58] INFO root fetch - main [MainThread]: End processing [flexypy]: success
+[2023-04-23 12:19:59] INFO root fetch - main [MainThread]: End processing [django-minio-storage]: success
+[2023-04-23 12:19:59] INFO root fetch - main [MainThread]: End processing [xoscar]: success
+[2023-04-23 12:19:59] INFO root fetch - main [MainThread]: Store serial: [17821280]
