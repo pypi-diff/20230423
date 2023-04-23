@@ -1389,3 +1389,25 @@
 [2023-04-23 02:36:20] INFO root fetch - main [MainThread]: End processing [bitmex-websocket]: success
 [2023-04-23 02:36:21] INFO root fetch - main [MainThread]: End processing [nemreader]: success
 [2023-04-23 02:36:21] INFO root fetch - main [MainThread]: Store serial: [17818408]
+[2023-04-23 02:41:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818408]
+[2023-04-23 02:41:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-23 02:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Loterias
+[2023-04-23 02:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: state-machine-semaphore
+[2023-04-23 02:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: imbrium
+[2023-04-23 02:41:29] INFO root fetch - processPackages [state-machine-semaphore]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-23 02:41:29] INFO root fetch - processPackages [Loterias]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-23 02:41:29] INFO root fetch - processPackages [imbrium]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-04-23 02:41:29] INFO root fetch - processPackages [state-machine-semaphore]: executing diffoscope
+[2023-04-23 02:41:29] INFO root fetch - processPackages [state-machine-semaphore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state-machine-semaphore-0.1.98.tar.gz tmp/state-machine-semaphore-0.1.99.tar.gz --markdown 20230423/s/state-machine-semaphore/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-23 02:41:29] INFO root fetch - processPackages [Loterias]: Downloading https://files.pythonhosted.org/packages/0d/bd/1bdf5845c613188c863812d6eb8fa9c5b98870134e41086589ca5f04d079/Loterias-0.0.7.tar.gz
+[2023-04-23 02:41:29] INFO root fetch - processPackages [imbrium]: Downloading https://files.pythonhosted.org/packages/5a/00/1e62a9d09cb2da95f9fa80cef26d7503559788c8016f3dc2771cb490e288/imbrium-1.2.0.tar.gz
+[2023-04-23 02:41:29] INFO root fetch - processPackages [Loterias]: Downloading https://files.pythonhosted.org/packages/60/17/d3e7556bf81efc94bb2dbe852be38a2820e4a4fd9ee3657bb3fee7e2b7a3/Loterias-0.0.8.tar.gz
+[2023-04-23 02:41:29] INFO root fetch - processPackages [imbrium]: Downloading https://files.pythonhosted.org/packages/4d/47/8c7455076be59b1b958e62dc9ad8944dae906c1576f4cabe7a8f6b04a497/imbrium-1.3.0.tar.gz
+[2023-04-23 02:41:30] INFO root fetch - processPackages [Loterias]: executing diffoscope
+[2023-04-23 02:41:30] INFO root fetch - processPackages [Loterias]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Loterias-0.0.7.tar.gz tmp/Loterias-0.0.8.tar.gz --markdown 20230423/L/Loterias/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-23 02:41:30] INFO root fetch - processPackages [imbrium]: executing diffoscope
+[2023-04-23 02:41:30] INFO root fetch - processPackages [imbrium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imbrium-1.2.0.tar.gz tmp/imbrium-1.3.0.tar.gz --markdown 20230423/i/imbrium/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-04-23 02:41:30] INFO root fetch - main [MainThread]: End processing [Loterias]: success
+[2023-04-23 02:41:31] INFO root fetch - main [MainThread]: End processing [imbrium]: success
+[2023-04-23 02:41:31] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
+[2023-04-23 02:41:31] INFO root fetch - main [MainThread]: Store serial: [17818416]
