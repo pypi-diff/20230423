@@ -7980,3 +7980,55 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 14:50:17] WARNING root fetch - processPackages [guira]: Skipping, unable to determine old version
 [2023-04-23 14:50:17] INFO root fetch - main [MainThread]: End processing [guira] error
 [2023-04-23 14:50:17] INFO root fetch - main [MainThread]: Store serial: [17822314]
+[2023-04-23 14:55:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17822314]
+[2023-04-23 14:55:26] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-23 14:55:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: semantra
+[2023-04-23 14:55:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: twitter-api-py
+[2023-04-23 14:55:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: face-crop-plus
+[2023-04-23 14:55:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: face-crop-plus
+[2023-04-23 14:55:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: glority-tidevice
+[2023-04-23 14:55:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yeref
+[2023-04-23 14:55:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Simba-UW-tf-dev
+[2023-04-23 14:55:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: talos-install
+[2023-04-23 14:55:26] WARNING root fetch - processPackages [twitter-api-py]: Skipping, unable to determine old version
+[2023-04-23 14:55:26] INFO root fetch - main [MainThread]: End processing [twitter-api-py] error
+[2023-04-23 14:55:26] INFO root fetch - processPackages [glority-tidevice]: New version: [0.4.0] Old Version: [0.0.3]
+[2023-04-23 14:55:26] INFO root fetch - processPackages [semantra]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 14:55:26] INFO root fetch - processPackages [face-crop-plus]: New version: [1.0.1] Old Version: [0.0.0]
+[2023-04-23 14:55:26] INFO root fetch - processPackages [face-crop-plus]: New version: [1.0.1] Old Version: [0.0.0]
+[2023-04-23 14:55:26] INFO root fetch - processPackages [talos-install]: New version: [0.2.0.dev352] Old Version: [0.2.0.dev351]
+[2023-04-23 14:55:26] INFO root fetch - processPackages [yeref]: New version: [0.1.44] Old Version: [0.1.43]
+[2023-04-23 14:55:26] INFO root fetch - processPackages [Simba-UW-tf-dev]: New version: [1.57.5] Old Version: [1.57.4]
+[2023-04-23 14:55:26] INFO root fetch - processPackages [glority-tidevice]: Downloading https://files.pythonhosted.org/packages/65/c7/b34a36d22a2020dcabcf370a1411405e8151f37a843b6793bce83f6e7fd6/glority-tidevice-0.0.3.tar.gz
+[2023-04-23 14:55:26] INFO root fetch - processPackages [face-crop-plus]: Downloading https://files.pythonhosted.org/packages/44/ba/7334cc745e6f5d81a2680e5932299839e8316e42a59ad7b5d79742d01d8e/face_crop_plus-0.0.0-py3-none-any.whl
+[2023-04-23 14:55:26] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/0f/3d/eb64446f9455bc391ea8524c71bb47baa71788c51e8933f78837b08b04c3/yeref-0.1.43.tar.gz
+[2023-04-23 14:55:26] INFO root fetch - processPackages [face-crop-plus]: Downloading https://files.pythonhosted.org/packages/44/ba/7334cc745e6f5d81a2680e5932299839e8316e42a59ad7b5d79742d01d8e/face_crop_plus-0.0.0-py3-none-any.whl
+[2023-04-23 14:55:26] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/cb/be/80a30aa755bb751b2c0bf8ea411e86282cb580ad32abfb73e251f6d99882/Simba-UW-tf-dev-1.57.5.tar.gz
+[2023-04-23 14:55:26] INFO root fetch - processPackages [semantra]: Downloading https://files.pythonhosted.org/packages/df/a9/6d28150569320526fc373103d339805ecdd2066d98300bc6f44de749b1d5/semantra-0.0.9.tar.gz
+[2023-04-23 14:55:26] INFO root fetch - processPackages [talos-install]: Downloading https://files.pythonhosted.org/packages/f0/4d/2e80754b2070c36568f2181ae2ccc010812d0b6520a9d15911dfcf221876/talos_install-0.2.0.dev352.tar.gz
+[2023-04-23 14:55:26] INFO root fetch - processPackages [Simba-UW-tf-dev]: executing diffoscope
+[2023-04-23 14:55:26] INFO root fetch - processPackages [Simba-UW-tf-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simba-UW-tf-dev-1.57.4.tar.gz tmp/Simba-UW-tf-dev-1.57.5.tar.gz --markdown 20230423/S/Simba-UW-tf-dev/1.57.4-1.57.5/diff.md --exclude *.pyd
+[2023-04-23 14:55:26] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/15/1e/30970232c3142f60c04feff483e68cc62bdaa07c1111d62fb54e9d2fea98/yeref-0.1.44.tar.gz
+[2023-04-23 14:55:26] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2023-04-23 14:55:26] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.1.43.tar.gz tmp/yeref-0.1.44.tar.gz --markdown 20230423/y/yeref/0.1.43-0.1.44/diff.md --exclude *.pyd
+[2023-04-23 14:55:26] INFO root fetch - processPackages [face-crop-plus]: Downloading https://files.pythonhosted.org/packages/12/fb/98b2d9d9fccb9eae8210fe06106cc1fca406784aae0da05b16f1524e95c3/face-crop-plus-1.0.1.tar.gz
+[2023-04-23 14:55:26] INFO root fetch - processPackages [face-crop-plus]: Downloading https://files.pythonhosted.org/packages/12/fb/98b2d9d9fccb9eae8210fe06106cc1fca406784aae0da05b16f1524e95c3/face-crop-plus-1.0.1.tar.gz
+[2023-04-23 14:55:26] INFO root fetch - processPackages [talos-install]: executing diffoscope
+[2023-04-23 14:55:26] INFO root fetch - processPackages [talos-install]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talos_install-0.2.0.dev351.tar.gz tmp/talos_install-0.2.0.dev352.tar.gz --markdown 20230423/t/talos-install/0.2.0.dev351-0.2.0.dev352/diff.md --exclude *.pyd
+[2023-04-23 14:55:26] INFO root fetch - processPackages [glority-tidevice]: Downloading https://files.pythonhosted.org/packages/7f/47/6f38d1c2c765d82ac327ae46d1cd895b5342930a76c55819bbee8479f138/glority-tidevice-0.4.0.tar.gz
+[2023-04-23 14:55:26] INFO root fetch - processPackages [face-crop-plus]: executing diffoscope
+[2023-04-23 14:55:26] INFO root fetch - processPackages [face-crop-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/face_crop_plus-0.0.0-py3-none-any.whl.zip tmp/face-crop-plus-1.0.1.tar.gz --markdown 20230423/f/face-crop-plus/0.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-23 14:55:26] INFO root fetch - processPackages [face-crop-plus]: executing diffoscope
+[2023-04-23 14:55:26] INFO root fetch - processPackages [face-crop-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/face_crop_plus-0.0.0-py3-none-any.whl.zip tmp/face-crop-plus-1.0.1.tar.gz --markdown 20230423/f/face-crop-plus/0.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-23 14:55:26] INFO root fetch - processPackages [glority-tidevice]: executing diffoscope
+[2023-04-23 14:55:26] INFO root fetch - processPackages [glority-tidevice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glority-tidevice-0.0.3.tar.gz tmp/glority-tidevice-0.4.0.tar.gz --markdown 20230423/g/glority-tidevice/0.0.3-0.4.0/diff.md --exclude *.pyd
+[2023-04-23 14:55:26] INFO root fetch - processPackages [semantra]: executing diffoscope
+[2023-04-23 14:55:26] INFO root fetch - processPackages [semantra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantra-0.0.8.tar.gz tmp/semantra-0.0.9.tar.gz --markdown 20230423/s/semantra/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 14:55:28] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2023-04-23 14:55:28] INFO root fetch - main [MainThread]: End processing [face-crop-plus]: success
+[2023-04-23 14:55:28] INFO root fetch - main [MainThread]: End processing [face-crop-plus]: success
+[2023-04-23 14:55:28] INFO root fetch - main [MainThread]: End processing [glority-tidevice]: success
+[2023-04-23 14:55:28] INFO root fetch - main [MainThread]: End processing [semantra]: success
+[2023-04-23 14:55:28] INFO root fetch - main [MainThread]: End processing [talos-install]: success
+[2023-04-23 14:55:30] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
+[2023-04-23 14:55:30] INFO root fetch - main [MainThread]: Store serial: [17822343]
