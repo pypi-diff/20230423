@@ -6014,3 +6014,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 11:53:45] INFO root fetch - main [MainThread]: End processing [scrape-schema]: success
 [2023-04-23 11:53:45] INFO root fetch - main [MainThread]: End processing [jit-env]: success
 [2023-04-23 11:53:45] INFO root fetch - main [MainThread]: Store serial: [17821118]
+[2023-04-23 11:58:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17821118]
+[2023-04-23 11:58:53] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-23 11:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: carefree-drawboard
+[2023-04-23 11:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scatterd
+[2023-04-23 11:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zytlib
+[2023-04-23 11:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: akshare
+[2023-04-23 11:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CUQIpy
+[2023-04-23 11:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: request-supporter
+[2023-04-23 11:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bigdl-orca-spark3
+[2023-04-23 11:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bigdl-friesian-spark3
+[2023-04-23 11:58:53] INFO root fetch - processPackages [scatterd]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-04-23 11:58:54] INFO root fetch - processPackages [carefree-drawboard]: New version: [0.0.0a5] Old Version: [0.0.0a4]
+[2023-04-23 11:58:54] INFO root fetch - processPackages [CUQIpy]: New version: [0.3.0.post0.dev7] Old Version: [0.3.0.post0.dev5]
+[2023-04-23 11:58:54] INFO root fetch - processPackages [zytlib]: New version: [0.3.327] Old Version: [0.3.326]
+[2023-04-23 11:58:54] INFO root fetch - processPackages [bigdl-orca-spark3]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-23 11:58:54] INFO root fetch - processPackages [bigdl-friesian-spark3]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-23 11:58:54] INFO root fetch - processPackages [akshare]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-23 11:58:54] WARNING root fetch - processPackages [request-supporter]: Skipping, unable to determine old version
+[2023-04-23 11:58:54] INFO root fetch - main [MainThread]: End processing [request-supporter] error
+[2023-04-23 11:58:54] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2023-04-23 11:58:54] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.8.tar.gz tmp/akshare-1.9.9.tar.gz --markdown 20230423/a/akshare/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-23 11:58:54] INFO root fetch - processPackages [bigdl-orca-spark3]: Downloading https://files.pythonhosted.org/packages/29/d6/cea74f0f5ccb6248d9d97fae168d7039fbce7a54d40873114f3c34b656ad/bigdl_orca_spark3-2.4.0b20230421-py3-none-manylinux1_x86_64.whl
+[2023-04-23 11:58:54] INFO root fetch - processPackages [scatterd]: Downloading https://files.pythonhosted.org/packages/84/c4/404f016d4779cf3c813492d1ed4c9ec79c01c7aea05caa599aa3bef2a162/scatterd-1.3.1.tar.gz
+[2023-04-23 11:58:54] INFO root fetch - processPackages [zytlib]: Downloading https://files.pythonhosted.org/packages/d3/92/a0234a9939911116ed0622eba7590c4b59e184934f0be027d82f315920da/zytlib-0.3.327-py3-none-any.whl
+[2023-04-23 11:58:54] WARNING root fetch - processPackages [bigdl-orca-spark3]: Skipping package: exceeds size limit 20207386>=10485760
+[2023-04-23 11:58:54] INFO root fetch - main [MainThread]: End processing [bigdl-orca-spark3] error
+[2023-04-23 11:58:54] INFO root fetch - processPackages [carefree-drawboard]: Downloading https://files.pythonhosted.org/packages/c2/90/907d586f49d9e3dd7d4539182beaed94fb85987de56e7122e06d66b37b6f/carefree-drawboard-0.0.0a5.tar.gz
+[2023-04-23 11:58:54] INFO root fetch - processPackages [CUQIpy]: Downloading https://files.pythonhosted.org/packages/43/e5/a0ca19319f37a3f4a5ca4e028f3f37dbc0e13a85df1ca7fb1cfb4d50c4f2/CUQIpy-0.3.0.post0.dev7.tar.gz
+[2023-04-23 11:58:54] INFO root fetch - processPackages [scatterd]: executing diffoscope
+[2023-04-23 11:58:54] INFO root fetch - processPackages [scatterd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatterd-1.3.0.tar.gz tmp/scatterd-1.3.1.tar.gz --markdown 20230423/s/scatterd/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-04-23 11:58:54] INFO root fetch - processPackages [zytlib]: executing diffoscope
+[2023-04-23 11:58:54] INFO root fetch - processPackages [zytlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zytlib-0.3.326-py3-none-any.whl.zip tmp/zytlib-0.3.327-py3-none-any.whl.zip --markdown 20230423/z/zytlib/0.3.326-0.3.327/diff.md --exclude *.pyd
+[2023-04-23 11:58:54] INFO root fetch - processPackages [bigdl-friesian-spark3]: executing diffoscope
+[2023-04-23 11:58:54] INFO root fetch - processPackages [bigdl-friesian-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_friesian_spark3-2.4.0b20230421-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_friesian_spark3-2.4.0b20230422-py3-none-manylinux1_x86_64.whl.zip --markdown 20230423/b/bigdl-friesian-spark3/2.4.0b20230421-2.4.0b20230422/diff.md --exclude *.pyd
+[2023-04-23 11:58:54] INFO root fetch - processPackages [carefree-drawboard]: executing diffoscope
+[2023-04-23 11:58:54] INFO root fetch - processPackages [carefree-drawboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carefree-drawboard-0.0.0a4.tar.gz tmp/carefree-drawboard-0.0.0a5.tar.gz --markdown 20230423/c/carefree-drawboard/0.0.0a4-0.0.0a5/diff.md --exclude *.pyd
+[2023-04-23 11:58:54] INFO root fetch - processPackages [CUQIpy]: executing diffoscope
+[2023-04-23 11:58:54] INFO root fetch - processPackages [CUQIpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CUQIpy-0.3.0.post0.dev5.tar.gz tmp/CUQIpy-0.3.0.post0.dev7.tar.gz --markdown 20230423/C/CUQIpy/0.3.0.post0.dev5-0.3.0.post0.dev7/diff.md --exclude *.pyd
+[2023-04-23 11:58:55] INFO root fetch - main [MainThread]: End processing [zytlib]: success
+[2023-04-23 11:58:55] INFO root fetch - main [MainThread]: End processing [scatterd]: success
+[2023-04-23 11:58:56] INFO root fetch - main [MainThread]: End processing [bigdl-friesian-spark3]: success
+[2023-04-23 11:58:56] INFO root fetch - main [MainThread]: End processing [carefree-drawboard]: success
+[2023-04-23 11:58:57] INFO root fetch - main [MainThread]: End processing [CUQIpy]: success
+[2023-04-23 11:58:57] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2023-04-23 11:58:57] INFO root fetch - main [MainThread]: Store serial: [17821140]
