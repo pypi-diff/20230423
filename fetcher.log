@@ -9549,3 +9549,73 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 17:01:55] INFO root fetch - main [MainThread]: End processing [psyki]: success
 [2023-04-23 17:01:55] INFO root fetch - main [MainThread]: End processing [cascade-ml]: success
 [2023-04-23 17:01:55] INFO root fetch - main [MainThread]: Store serial: [17823228]
+[2023-04-23 17:07:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823228]
+[2023-04-23 17:07:04] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-23 17:07:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: enrRiceTrait
+[2023-04-23 17:07:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Pandora-ChatGPT
+[2023-04-23 17:07:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-object-safety
+[2023-04-23 17:07:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tap-shiftbase
+[2023-04-23 17:07:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hydrogibs
+[2023-04-23 17:07:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aiotubes
+[2023-04-23 17:07:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sql-test-kit
+[2023-04-23 17:07:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyram-mogus
+[2023-04-23 17:07:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: porkbun-ddns
+[2023-04-23 17:07:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tap-shiftbase
+[2023-04-23 17:07:04] INFO root fetch - processPackages [django-object-safety]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-23 17:07:04] INFO root fetch - processPackages [enrRiceTrait]: New version: [1.3.0] Old Version: [1.2.1]
+[2023-04-23 17:07:04] INFO root fetch - processPackages [Pandora-ChatGPT]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-23 17:07:04] WARNING root fetch - processPackages [pyram-mogus]: Skipping, unable to determine old version
+[2023-04-23 17:07:04] INFO root fetch - processPackages [pyram-mogus]: Start processing: lennoxs30api
+[2023-04-23 17:07:04] INFO root fetch - main [MainThread]: End processing [pyram-mogus] error
+[2023-04-23 17:07:04] INFO root fetch - processPackages [hydrogibs]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-23 17:07:04] INFO root fetch - processPackages [sql-test-kit]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-23 17:07:04] INFO root fetch - processPackages [aiotubes]: New version: [3.0] Old Version: [2.2]
+[2023-04-23 17:07:04] INFO root fetch - processPackages [tap-shiftbase]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 17:07:04] INFO root fetch - processPackages [porkbun-ddns]: New version: [0.1.0] Old Version: [0.0.5]
+[2023-04-23 17:07:04] INFO root fetch - processPackages [tap-shiftbase]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 17:07:04] INFO root fetch - processPackages [lennoxs30api]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-23 17:07:04] INFO root fetch - processPackages [tap-shiftbase]: Downloading https://files.pythonhosted.org/packages/67/ee/76b0c944b6d728c16c88a8364be4b2882684b6254ac4d36e7c75ba2499f7/tap_shiftbase-0.0.8.tar.gz
+[2023-04-23 17:07:04] INFO root fetch - processPackages [tap-shiftbase]: Downloading https://files.pythonhosted.org/packages/67/ee/76b0c944b6d728c16c88a8364be4b2882684b6254ac4d36e7c75ba2499f7/tap_shiftbase-0.0.8.tar.gz
+[2023-04-23 17:07:04] INFO root fetch - processPackages [django-object-safety]: Downloading https://files.pythonhosted.org/packages/a3/f9/7f65f622f334375c280a3d8a1b179d46ea96c18eb54c0b15ca45b260b457/django_object_safety-0.3.0.tar.gz
+[2023-04-23 17:07:04] INFO root fetch - processPackages [sql-test-kit]: Downloading https://files.pythonhosted.org/packages/d2/e4/c9a80b825847f2fdf7526d0630b4071de167fa3ef7466ff87022d891ea75/sql_test_kit-0.1.0.tar.gz
+[2023-04-23 17:07:04] INFO root fetch - processPackages [aiotubes]: Downloading https://files.pythonhosted.org/packages/47/4e/f866e407ab2d9caa543df2f3e3daa581931485b42b0256a88da9c2ea7175/aiotubes-2.2.tar.gz
+[2023-04-23 17:07:04] INFO root fetch - processPackages [hydrogibs]: Downloading https://files.pythonhosted.org/packages/85/d4/d57290a551110910249bf3037be2e1584cb7a4e681e8fd510f2a7c3f48f9/hydrogibs-0.0.4.tar.gz
+[2023-04-23 17:07:04] INFO root fetch - processPackages [porkbun-ddns]: Downloading https://files.pythonhosted.org/packages/3e/c8/345d9ce7cf90ad51bfcb532bcff84ed825b578c6e9f6c5a78f3237828b16/porkbun-ddns-0.1.0.tar.gz
+[2023-04-23 17:07:05] INFO root fetch - processPackages [enrRiceTrait]: Downloading https://files.pythonhosted.org/packages/d0/da/73a925951fb6b66f736a74521d6d42cfed266e5d88299e4d726510cd4841/enrRiceTrait-1.3.0.tar.gz
+[2023-04-23 17:07:05] INFO root fetch - processPackages [hydrogibs]: executing diffoscope
+[2023-04-23 17:07:05] INFO root fetch - processPackages [hydrogibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydrogibs-0.0.3.tar.gz tmp/hydrogibs-0.0.4.tar.gz --markdown 20230423/h/hydrogibs/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-23 17:07:05] INFO root fetch - processPackages [django-object-safety]: executing diffoscope
+[2023-04-23 17:07:05] INFO root fetch - processPackages [django-object-safety]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_object_safety-0.2.0.tar.gz tmp/django_object_safety-0.3.0.tar.gz --markdown 20230423/d/django-object-safety/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-23 17:07:05] INFO root fetch - processPackages [porkbun-ddns]: executing diffoscope
+[2023-04-23 17:07:05] INFO root fetch - processPackages [porkbun-ddns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/porkbun-ddns-0.0.5.tar.gz tmp/porkbun-ddns-0.1.0.tar.gz --markdown 20230423/p/porkbun-ddns/0.0.5-0.1.0/diff.md --exclude *.pyd
+[2023-04-23 17:07:05] INFO root fetch - processPackages [Pandora-ChatGPT]: Downloading https://files.pythonhosted.org/packages/ce/b0/9fe2299ba79573f2e1f106b698a621ed30bdca7de2584ba1fd03a1fc1671/Pandora-ChatGPT-1.0.6.tar.gz
+[2023-04-23 17:07:05] INFO root fetch - processPackages [lennoxs30api]: Downloading https://files.pythonhosted.org/packages/0e/b2/88fe328fd0c3d4f39a4ff599ad4c333bec772ce3ef0333e145b6926ace4c/lennoxs30api-0.2.3.tar.gz
+[2023-04-23 17:07:05] INFO root fetch - processPackages [enrRiceTrait]: executing diffoscope
+[2023-04-23 17:07:05] INFO root fetch - processPackages [enrRiceTrait]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enrRiceTrait-1.2.1.tar.gz tmp/enrRiceTrait-1.3.0.tar.gz --markdown 20230423/e/enrRiceTrait/1.2.1-1.3.0/diff.md --exclude *.pyd
+[2023-04-23 17:07:05] INFO root fetch - processPackages [tap-shiftbase]: Downloading https://files.pythonhosted.org/packages/24/49/c16a7f97bf1556348fbfda7aab46f0b1824776aea96a66ef22a4cf03b122/tap_shiftbase-0.0.9.tar.gz
+[2023-04-23 17:07:05] INFO root fetch - processPackages [tap-shiftbase]: Downloading https://files.pythonhosted.org/packages/24/49/c16a7f97bf1556348fbfda7aab46f0b1824776aea96a66ef22a4cf03b122/tap_shiftbase-0.0.9.tar.gz
+[2023-04-23 17:07:05] INFO root fetch - processPackages [sql-test-kit]: Downloading https://files.pythonhosted.org/packages/3a/8c/9d6f611366f946daba57422d49f7f5816152d35f661cb98e478a6517db58/sql_test_kit-0.2.0.tar.gz
+[2023-04-23 17:07:05] INFO root fetch - processPackages [aiotubes]: Downloading https://files.pythonhosted.org/packages/e5/ac/d00e0e97856bd3c8588272ab43b727ef042c44363489acad0bfedf4b3fce/aiotubes-3.0.tar.gz
+[2023-04-23 17:07:05] INFO root fetch - processPackages [lennoxs30api]: executing diffoscope
+[2023-04-23 17:07:05] INFO root fetch - processPackages [lennoxs30api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lennoxs30api-0.2.2.tar.gz tmp/lennoxs30api-0.2.3.tar.gz --markdown 20230423/l/lennoxs30api/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-23 17:07:05] INFO root fetch - processPackages [Pandora-ChatGPT]: executing diffoscope
+[2023-04-23 17:07:05] INFO root fetch - processPackages [Pandora-ChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pandora-ChatGPT-1.0.5.tar.gz tmp/Pandora-ChatGPT-1.0.6.tar.gz --markdown 20230423/P/Pandora-ChatGPT/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-23 17:07:05] INFO root fetch - processPackages [tap-shiftbase]: executing diffoscope
+[2023-04-23 17:07:05] INFO root fetch - processPackages [tap-shiftbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap_shiftbase-0.0.8.tar.gz tmp/tap_shiftbase-0.0.9.tar.gz --markdown 20230423/t/tap-shiftbase/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 17:07:05] INFO root fetch - processPackages [sql-test-kit]: executing diffoscope
+[2023-04-23 17:07:05] INFO root fetch - processPackages [sql-test-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sql_test_kit-0.1.0.tar.gz tmp/sql_test_kit-0.2.0.tar.gz --markdown 20230423/s/sql-test-kit/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-23 17:07:05] INFO root fetch - processPackages [tap-shiftbase]: executing diffoscope
+[2023-04-23 17:07:05] INFO root fetch - processPackages [tap-shiftbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap_shiftbase-0.0.8.tar.gz tmp/tap_shiftbase-0.0.9.tar.gz --markdown 20230423/t/tap-shiftbase/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 17:07:05] INFO root fetch - processPackages [aiotubes]: executing diffoscope
+[2023-04-23 17:07:05] INFO root fetch - processPackages [aiotubes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiotubes-2.2.tar.gz tmp/aiotubes-3.0.tar.gz --markdown 20230423/a/aiotubes/2.2-3.0/diff.md --exclude *.pyd
+[2023-04-23 17:07:06] INFO root fetch - main [MainThread]: End processing [hydrogibs]: success
+[2023-04-23 17:07:06] INFO root fetch - main [MainThread]: End processing [porkbun-ddns]: success
+[2023-04-23 17:07:06] INFO root fetch - main [MainThread]: End processing [django-object-safety]: success
+[2023-04-23 17:07:07] INFO root fetch - main [MainThread]: End processing [lennoxs30api]: success
+[2023-04-23 17:07:07] INFO root fetch - main [MainThread]: End processing [sql-test-kit]: success
+[2023-04-23 17:07:07] INFO root fetch - main [MainThread]: End processing [tap-shiftbase]: success
+[2023-04-23 17:07:07] INFO root fetch - main [MainThread]: End processing [tap-shiftbase]: success
+[2023-04-23 17:07:07] INFO root fetch - main [MainThread]: End processing [aiotubes]: success
+[2023-04-23 17:07:07] INFO root fetch - main [MainThread]: End processing [enrRiceTrait]: success
+[2023-04-23 17:07:07] INFO root fetch - main [MainThread]: End processing [Pandora-ChatGPT]: success
+[2023-04-23 17:07:07] INFO root fetch - main [MainThread]: Store serial: [17823263]
