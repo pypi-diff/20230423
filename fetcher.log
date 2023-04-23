@@ -6455,3 +6455,88 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 12:35:49] INFO root fetch - main [MainThread]: End processing [imesh]: success
 [2023-04-23 12:35:57] INFO root fetch - main [MainThread]: End processing [apysc]: success
 [2023-04-23 12:35:57] INFO root fetch - main [MainThread]: Store serial: [17821380]
+[2023-04-23 12:41:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17821380]
+[2023-04-23 12:41:06] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-23 12:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: myPyllant
+[2023-04-23 12:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clipped
+[2023-04-23 12:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pepperize.cdk-autoscaling-gitlab-runner
+[2023-04-23 12:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openshift-python-wrapper
+[2023-04-23 12:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nendo
+[2023-04-23 12:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: har2jicase
+[2023-04-23 12:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: deew
+[2023-04-23 12:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyporscheconnectapi
+[2023-04-23 12:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: buildington
+[2023-04-23 12:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: fortigate-exporter-discovery
+[2023-04-23 12:41:06] INFO root fetch - processPackages [clipped]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-23 12:41:06] INFO root fetch - processPackages [pyporscheconnectapi]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 12:41:06] INFO root fetch - processPackages [buildington]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-04-23 12:41:06] INFO root fetch - processPackages [nendo]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-23 12:41:06] INFO root fetch - processPackages [myPyllant]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-23 12:41:06] INFO root fetch - processPackages [fortigate-exporter-discovery]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-23 12:41:06] INFO root fetch - processPackages [deew]: New version: [3.0.1] Old Version: [3.0.0]
+[2023-04-23 12:41:06] INFO root fetch - processPackages [har2jicase]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-23 12:41:06] INFO root fetch - processPackages [openshift-python-wrapper]: New version: [4.9.9.12] Old Version: [4.9.7.12]
+[2023-04-23 12:41:06] INFO root fetch - processPackages [pepperize.cdk-autoscaling-gitlab-runner]: New version: [0.2.99] Old Version: [0.2.98]
+[2023-04-23 12:41:06] INFO root fetch - processPackages [har2jicase]: Downloading https://files.pythonhosted.org/packages/f7/ff/2dc0ba49969ef6f1bdb3556e3cbb8e2ea51c8ba2bc553722b81ddf220af2/har2jicase-0.1.7.tar.gz
+[2023-04-23 12:41:06] INFO root fetch - processPackages [buildington]: Downloading https://files.pythonhosted.org/packages/27/86/35e4d3c08efb40e6422845ade7f5d5d839e7d603160fb6ee782401c0b9c0/buildington-1.4.1.tar.gz
+[2023-04-23 12:41:06] INFO root fetch - processPackages [pyporscheconnectapi]: Downloading https://files.pythonhosted.org/packages/e6/1d/bb6678319a4a236bde5d05d7c52eb3bc69c52d82cfea1720c0cb11619967/pyporscheconnectapi-0.0.8.tar.gz
+[2023-04-23 12:41:06] INFO root fetch - processPackages [fortigate-exporter-discovery]: Downloading https://files.pythonhosted.org/packages/96/a4/6cc451e6ec94d57cdd6b701569cab5964a3e613450b7e5378e30b1e80bc8/fortigate-exporter-discovery-0.3.0.tar.gz
+[2023-04-23 12:41:06] INFO root fetch - processPackages [deew]: Downloading https://files.pythonhosted.org/packages/85/6e/731d00735b46776dd6dd27426fb6ab7eb654eaeb5f5a2c001c1fa33e10d9/deew-3.0.1.tar.gz
+[2023-04-23 12:41:06] INFO root fetch - processPackages [nendo]: Downloading https://files.pythonhosted.org/packages/0c/2d/41bfcc5eade512db19dee6a6acd648172dc73d7da2c0f4672357213080b9/nendo-0.0.3.tar.gz
+[2023-04-23 12:41:06] INFO root fetch - processPackages [openshift-python-wrapper]: Downloading https://files.pythonhosted.org/packages/9f/52/8943f0836c823ed0ab894348233d99a219025753e654fa494137828358f9/openshift-python-wrapper-4.9.7.12.tar.gz
+[2023-04-23 12:41:06] INFO root fetch - processPackages [clipped]: Downloading https://files.pythonhosted.org/packages/36/ff/7c4cc847349d19eb4f02e13b0345c6c60dfe7244b00bb87eee9326046369/clipped-0.2.0.tar.gz
+[2023-04-23 12:41:06] INFO root fetch - processPackages [clipped]: executing diffoscope
+[2023-04-23 12:41:06] INFO root fetch - processPackages [clipped]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clipped-0.1.1.tar.gz tmp/clipped-0.2.0.tar.gz --markdown 20230423/c/clipped/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-23 12:41:06] INFO root fetch - processPackages [har2jicase]: Downloading https://files.pythonhosted.org/packages/63/f2/ad4dda8337ef4935fd6a3bc0b491333972cf17756ce7fad8f93b2206e5a9/har2jicase-0.1.8.tar.gz
+[2023-04-23 12:41:06] INFO root fetch - processPackages [nendo]: executing diffoscope
+[2023-04-23 12:41:06] INFO root fetch - processPackages [deew]: executing diffoscope
+[2023-04-23 12:41:06] INFO root fetch - processPackages [myPyllant]: Downloading https://files.pythonhosted.org/packages/ec/38/07f8b6a364e46545d3eb40ac2b78ee2181abb2c53ba68b256f52abf5bc3e/mypyllant-0.2.3.tar.gz
+[2023-04-23 12:41:06] INFO root fetch - processPackages [nendo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nendo-0.0.2.tar.gz tmp/nendo-0.0.3.tar.gz --markdown 20230423/n/nendo/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 12:41:06] INFO root fetch - processPackages [deew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deew-3.0.0.tar.gz tmp/deew-3.0.1.tar.gz --markdown 20230423/d/deew/3.0.0-3.0.1/diff.md --exclude *.pyd
+[2023-04-23 12:41:06] INFO root fetch - processPackages [pepperize.cdk-autoscaling-gitlab-runner]: executing diffoscope
+[2023-04-23 12:41:06] INFO root fetch - processPackages [pepperize.cdk-autoscaling-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-autoscaling-gitlab-runner-0.2.98.tar.gz tmp/pepperize.cdk-autoscaling-gitlab-runner-0.2.99.tar.gz --markdown 20230423/p/pepperize.cdk-autoscaling-gitlab-runner/0.2.98-0.2.99/diff.md --exclude *.pyd
+[2023-04-23 12:41:06] INFO root fetch - processPackages [buildington]: Downloading https://files.pythonhosted.org/packages/1d/22/ffdce08ae33fda9a6707eb863709a6564cc4d0c482f13fce7276f14078bf/buildington-1.4.2.tar.gz
+[2023-04-23 12:41:06] INFO root fetch - processPackages [fortigate-exporter-discovery]: Downloading https://files.pythonhosted.org/packages/16/81/d72eac4c2ec86577db1ad436b52e62a9fd65c58540126f8f87f2489a05d4/fortigate-exporter-discovery-0.3.1.tar.gz
+[2023-04-23 12:41:06] INFO root fetch - processPackages [har2jicase]: executing diffoscope
+[2023-04-23 12:41:06] INFO root fetch - processPackages [har2jicase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/har2jicase-0.1.7.tar.gz tmp/har2jicase-0.1.8.tar.gz --markdown 20230423/h/har2jicase/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-23 12:41:06] INFO root fetch - processPackages [myPyllant]: executing diffoscope
+[2023-04-23 12:41:06] INFO root fetch - processPackages [myPyllant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypyllant-0.2.2.tar.gz tmp/mypyllant-0.2.3.tar.gz --markdown 20230423/m/myPyllant/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-23 12:41:06] INFO root fetch - processPackages [pyporscheconnectapi]: Downloading https://files.pythonhosted.org/packages/fd/19/57d59c265e3d7816e78b86e63de9aa5a690f7ba77c0e94d2c6a1e1504026/pyporscheconnectapi-0.0.9.tar.gz
+[2023-04-23 12:41:07] INFO root fetch - processPackages [openshift-python-wrapper]: Downloading https://files.pythonhosted.org/packages/e7/2c/25381b003b6e49919b5c98f68796af474a0b6fb3e28c46552a6949c6160a/openshift-python-wrapper-4.9.9.12.tar.gz
+[2023-04-23 12:41:07] INFO root fetch - processPackages [buildington]: executing diffoscope
+[2023-04-23 12:41:07] INFO root fetch - processPackages [buildington]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buildington-1.4.1.tar.gz tmp/buildington-1.4.2.tar.gz --markdown 20230423/b/buildington/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-04-23 12:41:07] INFO root fetch - processPackages [fortigate-exporter-discovery]: executing diffoscope
+[2023-04-23 12:41:07] INFO root fetch - processPackages [fortigate-exporter-discovery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fortigate-exporter-discovery-0.3.0.tar.gz tmp/fortigate-exporter-discovery-0.3.1.tar.gz --markdown 20230423/f/fortigate-exporter-discovery/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-23 12:41:07] INFO root fetch - processPackages [openshift-python-wrapper]: executing diffoscope
+[2023-04-23 12:41:07] INFO root fetch - processPackages [openshift-python-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openshift-python-wrapper-4.9.7.12.tar.gz tmp/openshift-python-wrapper-4.9.9.12.tar.gz --markdown 20230423/o/openshift-python-wrapper/4.9.7.12-4.9.9.12/diff.md --exclude *.pyd
+[2023-04-23 12:41:07] INFO root fetch - processPackages [pyporscheconnectapi]: executing diffoscope
+[2023-04-23 12:41:07] INFO root fetch - processPackages [pyporscheconnectapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyporscheconnectapi-0.0.8.tar.gz tmp/pyporscheconnectapi-0.0.9.tar.gz --markdown 20230423/p/pyporscheconnectapi/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 12:41:08] INFO root fetch - processPackages [deew]: Start processing: superbox-utils
+[2023-04-23 12:41:08] INFO root fetch - main [MainThread]: End processing [deew]: success
+[2023-04-23 12:41:08] INFO root fetch - processPackages [nendo]: Start processing: buildington
+[2023-04-23 12:41:08] INFO root fetch - main [MainThread]: End processing [nendo]: success
+[2023-04-23 12:41:08] INFO root fetch - processPackages [superbox-utils]: New version: [2023.6] Old Version: [2023.5]
+[2023-04-23 12:41:08] INFO root fetch - processPackages [buildington]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-04-23 12:41:08] INFO root fetch - processPackages [buildington]: executing diffoscope
+[2023-04-23 12:41:08] INFO root fetch - processPackages [buildington]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buildington-1.4.1.tar.gz tmp/buildington-1.4.2.tar.gz --markdown 20230423/b/buildington/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-04-23 12:41:08] INFO root fetch - processPackages [har2jicase]: Start processing: scribber
+[2023-04-23 12:41:08] INFO root fetch - main [MainThread]: End processing [har2jicase]: success
+[2023-04-23 12:41:08] INFO root fetch - processPackages [superbox-utils]: Downloading https://files.pythonhosted.org/packages/63/1d/fb5231b37c4bc414fbb5b7d5ba61205b65bbfc246bcff543961bf88ad9c6/superbox-utils-2023.5.tar.gz
+[2023-04-23 12:41:08] INFO root fetch - main [MainThread]: End processing [buildington]: success
+[2023-04-23 12:41:08] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-autoscaling-gitlab-runner]: success
+[2023-04-23 12:41:08] INFO root fetch - processPackages [scribber]: New version: [0.1.16] Old Version: [0.1.12]
+[2023-04-23 12:41:08] INFO root fetch - processPackages [superbox-utils]: Downloading https://files.pythonhosted.org/packages/05/c4/951b5f3c6f4951464a4f3357f8e8f99f9bed58106bd3f900a7f75d085a90/superbox-utils-2023.6.tar.gz
+[2023-04-23 12:41:08] INFO root fetch - processPackages [scribber]: Downloading https://files.pythonhosted.org/packages/34/4c/4aabaaa7e383b0e49f7dfab92356d6332062f31e79bcc40718d2ea249156/scribber-0.1.16.tar.gz
+[2023-04-23 12:41:08] INFO root fetch - main [MainThread]: End processing [clipped]: success
+[2023-04-23 12:41:08] INFO root fetch - processPackages [superbox-utils]: executing diffoscope
+[2023-04-23 12:41:08] INFO root fetch - processPackages [superbox-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superbox-utils-2023.5.tar.gz tmp/superbox-utils-2023.6.tar.gz --markdown 20230423/s/superbox-utils/2023.5-2023.6/diff.md --exclude *.pyd
+[2023-04-23 12:41:09] INFO root fetch - main [MainThread]: End processing [pyporscheconnectapi]: success
+[2023-04-23 12:41:09] INFO root fetch - processPackages [scribber]: executing diffoscope
+[2023-04-23 12:41:09] INFO root fetch - processPackages [scribber]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scribber-0.1.12.tar.gz tmp/scribber-0.1.16.tar.gz --markdown 20230423/s/scribber/0.1.12-0.1.16/diff.md --exclude *.pyd
+[2023-04-23 12:41:09] INFO root fetch - main [MainThread]: End processing [fortigate-exporter-discovery]: success
+[2023-04-23 12:41:09] INFO root fetch - main [MainThread]: End processing [myPyllant]: success
+[2023-04-23 12:41:09] INFO root fetch - main [MainThread]: End processing [buildington]: success
+[2023-04-23 12:41:10] INFO root fetch - main [MainThread]: End processing [superbox-utils]: success
+[2023-04-23 12:41:10] INFO root fetch - main [MainThread]: End processing [scribber]: success
+[2023-04-23 12:41:10] INFO root fetch - main [MainThread]: End processing [openshift-python-wrapper]: success
+[2023-04-23 12:41:10] INFO root fetch - main [MainThread]: Store serial: [17821418]
