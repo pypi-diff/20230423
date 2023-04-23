@@ -14123,3 +14123,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 23:45:56] INFO root fetch - main [MainThread]: End processing [pursuitlib]: success
 [2023-04-23 23:45:57] INFO root fetch - main [MainThread]: End processing [pymandel]: success
 [2023-04-23 23:45:57] INFO root fetch - main [MainThread]: Store serial: [17826089]
+[2023-04-23 23:51:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17826089]
+[2023-04-23 23:51:05] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-23 23:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jsonclass
+[2023-04-23 23:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wifitool
+[2023-04-23 23:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ascii-yt
+[2023-04-23 23:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: golem-gpt
+[2023-04-23 23:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: deep-vars
+[2023-04-23 23:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: microkanren
+[2023-04-23 23:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dank-mids
+[2023-04-23 23:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ablerConfig
+[2023-04-23 23:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: accurating
+[2023-04-23 23:51:05] INFO root fetch - processPackages [jsonclass]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-04-23 23:51:05] INFO root fetch - processPackages [ascii-yt]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-04-23 23:51:05] INFO root fetch - processPackages [microkanren]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-23 23:51:05] INFO root fetch - processPackages [wifitool]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-23 23:51:05] WARNING root fetch - processPackages [ablerConfig]: Skipping, unable to determine old version
+[2023-04-23 23:51:05] WARNING root fetch - processPackages [deep-vars]: Skipping, unable to determine old version
+[2023-04-23 23:51:05] INFO root fetch - processPackages [accurating]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-23 23:51:05] INFO root fetch - main [MainThread]: End processing [ablerConfig] error
+[2023-04-23 23:51:05] INFO root fetch - main [MainThread]: End processing [deep-vars] error
+[2023-04-23 23:51:05] INFO root fetch - processPackages [golem-gpt]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 23:51:05] INFO root fetch - processPackages [dank-mids]: New version: [4.20.9] Old Version: [4.20.8]
+[2023-04-23 23:51:05] INFO root fetch - processPackages [dank-mids]: executing diffoscope
+[2023-04-23 23:51:05] INFO root fetch - processPackages [dank-mids]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dank_mids-4.20.8.tar.gz tmp/dank_mids-4.20.9.tar.gz --markdown 20230423/d/dank-mids/4.20.8-4.20.9/diff.md --exclude *.pyd
+[2023-04-23 23:51:05] INFO root fetch - processPackages [ascii-yt]: Downloading https://files.pythonhosted.org/packages/9f/59/d2469c985f7d86f9e703eaa0bf0971b21898a0dee7e75c87d9f653f0a882/ascii-yt-2.1.0.tar.gz
+[2023-04-23 23:51:05] INFO root fetch - processPackages [golem-gpt]: Downloading https://files.pythonhosted.org/packages/6c/a7/0b566a7f884c1d80a6e4618adf0e782eadf42e59f04f20bb816d7cbb117f/golem-gpt-0.0.1.tar.gz
+[2023-04-23 23:51:05] INFO root fetch - processPackages [wifitool]: Downloading https://files.pythonhosted.org/packages/d0/c8/0b875551e53d08e8f79b5a3ac8fba12adc93631838653b929b32b5022273/wifitool-0.1.0.tar.gz
+[2023-04-23 23:51:05] INFO root fetch - processPackages [microkanren]: Downloading https://files.pythonhosted.org/packages/19/a8/b4b44479b6af2472fb4255e273b318ce51d9baa5ca657aac0d2cb0bdcd8e/microkanren-0.3.0.tar.gz
+[2023-04-23 23:51:05] INFO root fetch - processPackages [jsonclass]: Downloading https://files.pythonhosted.org/packages/10/e9/c3cedaa82557f9d0da0e45b12853d39d697e9b9239861670193861286443/jsonclass-0.0.5.tar.gz
+[2023-04-23 23:51:05] INFO root fetch - processPackages [accurating]: Downloading https://files.pythonhosted.org/packages/48/7d/eb78db789a339234a9d1d4a76aa60b879630cc4026f542ff937591cd264a/accurating-0.4.5.tar.gz
+[2023-04-23 23:51:05] INFO root fetch - processPackages [jsonclass]: executing diffoscope
+[2023-04-23 23:51:05] INFO root fetch - processPackages [jsonclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonclass-0.0.3.tar.gz tmp/jsonclass-0.0.5.tar.gz --markdown 20230423/j/jsonclass/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 23:51:05] INFO root fetch - processPackages [accurating]: executing diffoscope
+[2023-04-23 23:51:05] INFO root fetch - processPackages [accurating]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/accurating-0.4.4.tar.gz tmp/accurating-0.4.5.tar.gz --markdown 20230423/a/accurating/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-23 23:51:05] INFO root fetch - processPackages [wifitool]: Downloading https://files.pythonhosted.org/packages/c9/ab/4308dfe1ae7a0b91549cfc291843417bec539f3600611ada2536841d5e50/wifitool-0.2.0.tar.gz
+[2023-04-23 23:51:05] INFO root fetch - processPackages [ascii-yt]: Downloading https://files.pythonhosted.org/packages/44/be/7ce5a15ac1c7a92062a30c55e7b55da6fa96d4f15f4289be752c9661965d/ascii-yt-2.1.1.tar.gz
+[2023-04-23 23:51:05] INFO root fetch - processPackages [golem-gpt]: Downloading https://files.pythonhosted.org/packages/24/13/2aeb33a6af0c891c9335d4a4e0b7886b2ca8d2bfebf2b5e8b04e6e538833/golem-gpt-0.0.2.tar.gz
+[2023-04-23 23:51:05] INFO root fetch - processPackages [microkanren]: Downloading https://files.pythonhosted.org/packages/d9/29/cf9ff2a5a6932c85bc9fe3f54006b5d024065a89b76d3b96f52d7aa9f540/microkanren-0.4.0.tar.gz
+[2023-04-23 23:51:06] INFO root fetch - processPackages [wifitool]: executing diffoscope
+[2023-04-23 23:51:06] INFO root fetch - processPackages [wifitool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wifitool-0.1.0.tar.gz tmp/wifitool-0.2.0.tar.gz --markdown 20230423/w/wifitool/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-23 23:51:06] INFO root fetch - processPackages [ascii-yt]: executing diffoscope
+[2023-04-23 23:51:06] INFO root fetch - processPackages [ascii-yt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ascii-yt-2.1.0.tar.gz tmp/ascii-yt-2.1.1.tar.gz --markdown 20230423/a/ascii-yt/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-04-23 23:51:06] INFO root fetch - processPackages [golem-gpt]: executing diffoscope
+[2023-04-23 23:51:06] INFO root fetch - processPackages [golem-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/golem-gpt-0.0.1.tar.gz tmp/golem-gpt-0.0.2.tar.gz --markdown 20230423/g/golem-gpt/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 23:51:06] INFO root fetch - processPackages [microkanren]: executing diffoscope
+[2023-04-23 23:51:06] INFO root fetch - processPackages [microkanren]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/microkanren-0.3.0.tar.gz tmp/microkanren-0.4.0.tar.gz --markdown 20230423/m/microkanren/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-23 23:51:06] INFO root fetch - main [MainThread]: End processing [dank-mids]: success
+[2023-04-23 23:51:07] INFO root fetch - main [MainThread]: End processing [jsonclass]: success
+[2023-04-23 23:51:07] INFO root fetch - main [MainThread]: End processing [accurating]: success
+[2023-04-23 23:51:07] INFO root fetch - main [MainThread]: End processing [wifitool]: success
+[2023-04-23 23:51:07] INFO root fetch - main [MainThread]: End processing [ascii-yt]: success
+[2023-04-23 23:51:07] INFO root fetch - main [MainThread]: End processing [golem-gpt]: success
+[2023-04-23 23:51:08] INFO root fetch - main [MainThread]: End processing [microkanren]: success
+[2023-04-23 23:51:08] INFO root fetch - main [MainThread]: Store serial: [17826120]
