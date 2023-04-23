@@ -1448,3 +1448,148 @@
 [2023-04-23 02:46:45] INFO root fetch - main [MainThread]: End processing [icpd-core]: success
 [2023-04-23 02:46:53] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2023-04-23 02:46:53] INFO root fetch - main [MainThread]: Store serial: [17818431]
+[2023-04-23 02:51:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818431]
+[2023-04-23 02:52:01] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-23 02:52:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yandex-music
+[2023-04-23 02:52:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-comprehend-s3olap
+[2023-04-23 02:52:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kubric-nightly
+[2023-04-23 02:52:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: crowdcores-node
+[2023-04-23 02:52:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: np-queuey
+[2023-04-23 02:52:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ovos-dinkum-listener
+[2023-04-23 02:52:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Loterias
+[2023-04-23 02:52:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: projen
+[2023-04-23 02:52:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pycde
+[2023-04-23 02:52:01] INFO root fetch - processPackages [yandex-music]: New version: [2.1.0] Old Version: [2.0.1]
+[2023-04-23 02:52:01] INFO root fetch - processPackages [cdk-comprehend-s3olap]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-23 02:52:01] INFO root fetch - processPackages [pycde]: New version: [0.2.1.dev9] Old Version: [0.2.1.dev80]
+[2023-04-23 02:52:01] INFO root fetch - processPackages [crowdcores-node]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-04-23 02:52:01] INFO root fetch - processPackages [np-queuey]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 02:52:01] INFO root fetch - processPackages [ovos-dinkum-listener]: New version: [0.0.2a7] Old Version: [0.0.2a6]
+[2023-04-23 02:52:01] INFO root fetch - processPackages [Loterias]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 02:52:01] INFO root fetch - processPackages [kubric-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-23 02:52:01] INFO root fetch - processPackages [projen]: New version: [0.71.9] Old Version: [0.71.8]
+[2023-04-23 02:52:01] INFO root fetch - processPackages [cdk-comprehend-s3olap]: Downloading https://files.pythonhosted.org/packages/d2/64/ec00fce58a2563fe9a768f5ee5a77ecba74bfccf89b1ec489306be4a20a8/cdk_comprehend_s3olap-2.0.98.tar.gz
+[2023-04-23 02:52:01] INFO root fetch - processPackages [ovos-dinkum-listener]: Downloading https://files.pythonhosted.org/packages/fc/38/c21ff8613777938136edd0a8d462668352a5d8f0087c46b651ee43ab0943/ovos_dinkum_listener-0.0.2a6-py3-none-any.whl
+[2023-04-23 02:52:01] WARNING root fetch - processPackages [cdk-comprehend-s3olap]: Skipping package: exceeds size limit 14179128>=10485760
+[2023-04-23 02:52:01] INFO root fetch - main [MainThread]: End processing [cdk-comprehend-s3olap] error
+[2023-04-23 02:52:01] INFO root fetch - processPackages [np-queuey]: executing diffoscope
+[2023-04-23 02:52:01] INFO root fetch - processPackages [np-queuey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_queuey-0.1.8.tar.gz tmp/np_queuey-0.1.9.tar.gz --markdown 20230423/n/np-queuey/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 02:52:01] INFO root fetch - processPackages [kubric-nightly]: executing diffoscope
+[2023-04-23 02:52:01] INFO root fetch - processPackages [kubric-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kubric-nightly-2023.4.8.tar.gz tmp/kubric-nightly-2023.4.9.tar.gz --markdown 20230423/k/kubric-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-23 02:52:01] INFO root fetch - processPackages [yandex-music]: Downloading https://files.pythonhosted.org/packages/20/e0/855d8f67016077485d5650ebe905d9081738334b5299a41c94a7a822b1fe/yandex-music-2.0.1.tar.gz
+[2023-04-23 02:52:01] INFO root fetch - processPackages [crowdcores-node]: Downloading https://files.pythonhosted.org/packages/7e/7c/7625b73b1e6b6f0301a7ef9895aa75bb1155894c3c9220e5f5bced75244a/crowdcores-node-1.1.3.tar.gz
+[2023-04-23 02:52:02] INFO root fetch - processPackages [Loterias]: Downloading https://files.pythonhosted.org/packages/80/6a/9eb5bcc276657321af94f106f50878d098550e07d95eef977941abecb2f4/Loterias-0.0.9.tar.gz
+[2023-04-23 02:52:02] INFO root fetch - processPackages [projen]: executing diffoscope
+[2023-04-23 02:52:02] INFO root fetch - processPackages [projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projen-0.71.8.tar.gz tmp/projen-0.71.9.tar.gz --markdown 20230423/p/projen/0.71.8-0.71.9/diff.md --exclude *.pyd
+[2023-04-23 02:52:02] INFO root fetch - processPackages [Loterias]: executing diffoscope
+[2023-04-23 02:52:02] INFO root fetch - processPackages [Loterias]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Loterias-0.0.8.tar.gz tmp/Loterias-0.0.9.tar.gz --markdown 20230423/L/Loterias/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 02:52:02] INFO root fetch - processPackages [ovos-dinkum-listener]: Downloading https://files.pythonhosted.org/packages/f7/b8/c7a3710aeea6a8d6b2205bde1a98e1850933c7924424d21e13b48c33102c/ovos_dinkum_listener-0.0.2a7-py3-none-any.whl
+[2023-04-23 02:52:02] INFO root fetch - processPackages [yandex-music]: Downloading https://files.pythonhosted.org/packages/82/bf/1b7edf5f53ce131a75873d59702b028d17152c9680b6f818d773591d1206/yandex-music-2.1.0.tar.gz
+[2023-04-23 02:52:02] INFO root fetch - processPackages [pycde]: executing diffoscope
+[2023-04-23 02:52:02] INFO root fetch - processPackages [pycde]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycde-0.2.1.dev80-cp39-cp39-win_amd64.whl.zip tmp/pycde-0.2.1.dev9-cp39-cp39-win_amd64.whl.zip --markdown 20230423/p/pycde/0.2.1.dev80-0.2.1.dev9/diff.md --exclude *.pyd
+[2023-04-23 02:52:02] INFO root fetch - processPackages [crowdcores-node]: Downloading https://files.pythonhosted.org/packages/59/3e/725738f5a70116bd5dafc900e1c0b143f528db3f9064e62edc2756bea2c6/crowdcores-node-1.1.4.tar.gz
+[2023-04-23 02:52:02] INFO root fetch - processPackages [ovos-dinkum-listener]: executing diffoscope
+[2023-04-23 02:52:02] INFO root fetch - processPackages [ovos-dinkum-listener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_dinkum_listener-0.0.2a6-py3-none-any.whl.zip tmp/ovos_dinkum_listener-0.0.2a7-py3-none-any.whl.zip --markdown 20230423/o/ovos-dinkum-listener/0.0.2a6-0.0.2a7/diff.md --exclude *.pyd
+[2023-04-23 02:52:02] INFO root fetch - processPackages [yandex-music]: executing diffoscope
+[2023-04-23 02:52:02] INFO root fetch - processPackages [yandex-music]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yandex-music-2.0.1.tar.gz tmp/yandex-music-2.1.0.tar.gz --markdown 20230423/y/yandex-music/2.0.1-2.1.0/diff.md --exclude *.pyd
+[2023-04-23 02:52:02] INFO root fetch - processPackages [crowdcores-node]: executing diffoscope
+[2023-04-23 02:52:02] INFO root fetch - processPackages [crowdcores-node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crowdcores-node-1.1.3.tar.gz tmp/crowdcores-node-1.1.4.tar.gz --markdown 20230423/c/crowdcores-node/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-04-23 02:52:03] INFO root fetch - main [MainThread]: End processing [np-queuey]: success
+[2023-04-23 02:52:03] INFO root fetch - main [MainThread]: End processing [Loterias]: success
+[2023-04-23 02:52:03] INFO root fetch - main [MainThread]: End processing [ovos-dinkum-listener]: success
+[2023-04-23 02:52:03] INFO root fetch - main [MainThread]: End processing [crowdcores-node]: success
+[2023-04-23 02:52:04] INFO root fetch - main [MainThread]: End processing [kubric-nightly]: success
+[2023-04-23 02:52:05] INFO root fetch - main [MainThread]: End processing [yandex-music]: success
+[2023-04-23 02:52:06] INFO root fetch - main [MainThread]: End processing [projen]: success
+[2023-04-23 02:52:44] ERROR root fetch - processPackages [pycde]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 127, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=139909096545824)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/ar.py", line 71, in compare_details
+    Difference.from_text_readers(
+  File "/srv/diffoscope/diffoscope/difference.py", line 258, in from_text_readers
+    return Difference.from_feeder(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 127, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=139909230764448)
+
+[2023-04-23 02:52:44] INFO root fetch - main [MainThread]: End processing [pycde] error
+[2023-04-23 02:52:44] INFO root fetch - main [MainThread]: Store serial: [17818458]
