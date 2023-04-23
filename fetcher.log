@@ -2530,3 +2530,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 05:00:17] INFO root fetch - main [MainThread]: End processing [np-queuey]: success
 [2023-04-23 05:00:19] INFO root fetch - main [MainThread]: End processing [onvif-gui]: success
 [2023-04-23 05:00:19] INFO root fetch - main [MainThread]: Store serial: [17819143]
+[2023-04-23 05:05:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819143]
+[2023-04-23 05:05:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-23 05:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Anilist
+[2023-04-23 05:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pi-ina219
+[2023-04-23 05:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sohuprompt
+[2023-04-23 05:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dg-itest
+[2023-04-23 05:05:28] INFO root fetch - processPackages [Anilist]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-23 05:05:28] INFO root fetch - processPackages [pi-ina219]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-04-23 05:05:28] INFO root fetch - processPackages [dg-itest]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 05:05:28] INFO root fetch - processPackages [sohuprompt]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-23 05:05:29] INFO root fetch - processPackages [pi-ina219]: Downloading https://files.pythonhosted.org/packages/fe/c9/5d9adad5393ad93d4b804324305e3505bc28becfe831ea3dc30dfa9825c0/pi_ina219-1.4.0-py2.py3-none-any.whl
+[2023-04-23 05:05:29] INFO root fetch - processPackages [sohuprompt]: Downloading https://files.pythonhosted.org/packages/1f/a1/bac2f2c075d4c30988248cd90c65e7fb9aca5f591e835a844829544b5d44/sohuprompt-1.0.3.tar.gz
+[2023-04-23 05:05:29] INFO root fetch - processPackages [dg-itest]: Downloading https://files.pythonhosted.org/packages/32/fb/9729b231d99561b2659391e919ea683d104f1542d0948a4569e0d158e748/dg-itest-0.0.6.tar.gz
+[2023-04-23 05:05:29] INFO root fetch - processPackages [Anilist]: Downloading https://files.pythonhosted.org/packages/e9/00/2e6c83e96125d14c87c655350ab78206aae0664e7779bdd4aed36b41ebcf/Anilist-0.9.1.tar.gz
+[2023-04-23 05:05:29] INFO root fetch - processPackages [sohuprompt]: executing diffoscope
+[2023-04-23 05:05:29] INFO root fetch - processPackages [sohuprompt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sohuprompt-1.0.2.tar.gz tmp/sohuprompt-1.0.3.tar.gz --markdown 20230423/s/sohuprompt/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-23 05:05:29] INFO root fetch - processPackages [dg-itest]: executing diffoscope
+[2023-04-23 05:05:29] INFO root fetch - processPackages [dg-itest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dg-itest-0.0.5.tar.gz tmp/dg-itest-0.0.6.tar.gz --markdown 20230423/d/dg-itest/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 05:05:29] INFO root fetch - processPackages [pi-ina219]: Downloading https://files.pythonhosted.org/packages/51/b7/7fb7bc5d9caac0581a24bce30ceb260898cb8ef7efe2be34f115e87afbbe/pi_ina219-1.4.1-py2.py3-none-any.whl
+[2023-04-23 05:05:29] INFO root fetch - processPackages [Anilist]: executing diffoscope
+[2023-04-23 05:05:29] INFO root fetch - processPackages [Anilist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Anilist-0.9.0.tar.gz tmp/Anilist-0.9.1.tar.gz --markdown 20230423/A/Anilist/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-23 05:05:29] INFO root fetch - processPackages [pi-ina219]: executing diffoscope
+[2023-04-23 05:05:29] INFO root fetch - processPackages [pi-ina219]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_ina219-1.4.0-py2.py3-none-any.whl.zip tmp/pi_ina219-1.4.1-py2.py3-none-any.whl.zip --markdown 20230423/p/pi-ina219/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-04-23 05:05:30] INFO root fetch - main [MainThread]: End processing [dg-itest]: success
+[2023-04-23 05:05:30] INFO root fetch - main [MainThread]: End processing [pi-ina219]: success
+[2023-04-23 05:05:30] INFO root fetch - main [MainThread]: End processing [Anilist]: success
+[2023-04-23 05:05:31] INFO root fetch - main [MainThread]: End processing [sohuprompt]: success
+[2023-04-23 05:05:31] INFO root fetch - main [MainThread]: Store serial: [17819154]
