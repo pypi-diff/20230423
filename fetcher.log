@@ -2402,3 +2402,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 04:34:03] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-26]: success
 [2023-04-23 04:34:08] INFO root fetch - main [MainThread]: End processing [monailabel-weekly]: success
 [2023-04-23 04:34:08] INFO root fetch - main [MainThread]: Store serial: [17819026]
+[2023-04-23 04:39:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819026]
+[2023-04-23 04:39:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-23 04:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Starfysh
+[2023-04-23 04:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk8s-plus-25
+[2023-04-23 04:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iam-actions
+[2023-04-23 04:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pygptj
+[2023-04-23 04:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cy-widgets
+[2023-04-23 04:39:16] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20230423] Old Version: [1.2.20230422]
+[2023-04-23 04:39:16] INFO root fetch - processPackages [cdk8s-plus-25]: New version: [2.7.6] Old Version: [2.7.5]
+[2023-04-23 04:39:16] WARNING root fetch - processPackages [Starfysh]: Skipping, unable to determine old version
+[2023-04-23 04:39:16] INFO root fetch - main [MainThread]: End processing [Starfysh] error
+[2023-04-23 04:39:16] INFO root fetch - processPackages [pygptj]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-23 04:39:16] INFO root fetch - processPackages [cy-widgets]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-23 04:39:17] INFO root fetch - processPackages [cdk8s-plus-25]: Downloading https://files.pythonhosted.org/packages/76/fd/4bfc4650de1c21d0792f40d4f57d317d4bb41c9981ac6c6112088866a1d3/cdk8s-plus-25-2.7.5.tar.gz
+[2023-04-23 04:39:17] INFO root fetch - processPackages [cy-widgets]: Downloading https://files.pythonhosted.org/packages/eb/d5/8f92cc8b0d9062c5bda8dc527dfec3bc421de391e832bc7d2a6884381ac7/cy_widgets-0.4.8.tar.gz
+[2023-04-23 04:39:17] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/21/e0/f07944cc4869a289db76747e7bf38ac69b74a4b7d8b1dba53fe9c3dd2b06/iam_actions-1.2.20230423.tar.gz
+[2023-04-23 04:39:17] INFO root fetch - processPackages [pygptj]: Downloading https://files.pythonhosted.org/packages/64/03/c56dd6e36099c6a64ebeb5e7ecfc63a0661030f4f481303a66c3ea15cd89/pygptj-1.0.4.tar.gz
+[2023-04-23 04:39:17] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2023-04-23 04:39:17] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20230422.tar.gz tmp/iam_actions-1.2.20230423.tar.gz --markdown 20230423/i/iam-actions/1.2.20230422-1.2.20230423/diff.md --exclude *.pyd
+[2023-04-23 04:39:17] INFO root fetch - processPackages [pygptj]: Downloading https://files.pythonhosted.org/packages/6b/34/f7c0be2fdac047a20df18564c011167e6c207d1111e1c61d710b5a93c529/pygptj-1.0.5.tar.gz
+[2023-04-23 04:39:17] INFO root fetch - processPackages [cy-widgets]: Downloading https://files.pythonhosted.org/packages/83/97/b92f8805223c5a6223ac4e27b0de68ff88f1a405cc79e67f150f9b23b4ba/cy_widgets-0.4.9.tar.gz
+[2023-04-23 04:39:17] INFO root fetch - processPackages [cdk8s-plus-25]: Downloading https://files.pythonhosted.org/packages/7e/7f/a94cb86a10dce3511158e61c8f858e27d883ee1e7518b410ac2497251311/cdk8s-plus-25-2.7.6.tar.gz
+[2023-04-23 04:39:17] INFO root fetch - processPackages [cy-widgets]: executing diffoscope
+[2023-04-23 04:39:17] INFO root fetch - processPackages [cy-widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cy_widgets-0.4.8.tar.gz tmp/cy_widgets-0.4.9.tar.gz --markdown 20230423/c/cy-widgets/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-23 04:39:17] INFO root fetch - processPackages [cdk8s-plus-25]: executing diffoscope
+[2023-04-23 04:39:17] INFO root fetch - processPackages [cdk8s-plus-25]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-25-2.7.5.tar.gz tmp/cdk8s-plus-25-2.7.6.tar.gz --markdown 20230423/c/cdk8s-plus-25/2.7.5-2.7.6/diff.md --exclude *.pyd
+[2023-04-23 04:39:17] INFO root fetch - processPackages [pygptj]: executing diffoscope
+[2023-04-23 04:39:17] INFO root fetch - processPackages [pygptj]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygptj-1.0.4.tar.gz tmp/pygptj-1.0.5.tar.gz --markdown 20230423/p/pygptj/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-23 04:39:18] INFO root fetch - main [MainThread]: End processing [cy-widgets]: success
+[2023-04-23 04:39:19] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-25]: success
+[2023-04-23 04:39:19] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2023-04-23 04:39:19] INFO root fetch - main [MainThread]: End processing [pygptj]: success
+[2023-04-23 04:39:19] INFO root fetch - main [MainThread]: Store serial: [17819063]
