@@ -5669,3 +5669,65 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 11:22:01] INFO root fetch - main [MainThread]: End processing [akshare]: success
 [2023-04-23 11:22:15] INFO root fetch - main [MainThread]: End processing [Qcover]: success
 [2023-04-23 11:22:15] INFO root fetch - main [MainThread]: Store serial: [17820891]
+[2023-04-23 11:27:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820891]
+[2023-04-23 11:27:24] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-23 11:27:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: enquiries
+[2023-04-23 11:27:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qwak-core
+[2023-04-23 11:27:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: huhangkai
+[2023-04-23 11:27:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flask-cloudflared
+[2023-04-23 11:27:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: FastCNN2
+[2023-04-23 11:27:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ciqar
+[2023-04-23 11:27:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pelican-data-files
+[2023-04-23 11:27:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lumigo-opentelemetry
+[2023-04-23 11:27:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: shopee-artifactplatform-test
+[2023-04-23 11:27:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: gpt-pynvim
+[2023-04-23 11:27:24] INFO root fetch - processPackages [enquiries]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-23 11:27:24] INFO root fetch - processPackages [flask-cloudflared]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 11:27:24] WARNING root fetch - processPackages [ciqar]: Skipping, unable to determine old version
+[2023-04-23 11:27:24] INFO root fetch - main [MainThread]: End processing [ciqar] error
+[2023-04-23 11:27:24] INFO root fetch - processPackages [gpt-pynvim]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 11:27:24] WARNING root fetch - processPackages [shopee-artifactplatform-test]: Skipping, unable to determine old version
+[2023-04-23 11:27:24] INFO root fetch - processPackages [qwak-core]: New version: [0.0.27] Old Version: [0.0.26]
+[2023-04-23 11:27:24] INFO root fetch - main [MainThread]: End processing [shopee-artifactplatform-test] error
+[2023-04-23 11:27:24] INFO root fetch - processPackages [FastCNN2]: New version: [1.23.423.1723] Old Version: [1.23.423.1720]
+[2023-04-23 11:27:24] INFO root fetch - processPackages [huhangkai]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-23 11:27:24] INFO root fetch - processPackages [pelican-data-files]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-04-23 11:27:24] INFO root fetch - processPackages [lumigo-opentelemetry]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-23 11:27:24] INFO root fetch - processPackages [enquiries]: Downloading https://files.pythonhosted.org/packages/e2/4f/7fd508cb98176a9e8b6c10623917ce840f4b63981fe8c17f7917dddabe97/enquiries-0.1.0-py3-none-any.whl
+[2023-04-23 11:27:24] INFO root fetch - processPackages [gpt-pynvim]: Downloading https://files.pythonhosted.org/packages/52/f6/b39404ff62bc2cbc1045103c7b4b1d55c07b3c21422cc5181ea23bcd5490/gpt-pynvim-0.1.0.tar.gz
+[2023-04-23 11:27:24] INFO root fetch - processPackages [flask-cloudflared]: Downloading https://files.pythonhosted.org/packages/54/1f/309066c84787f9153d3054361c87850c48c6a314dbaae6eeb44b4f0713f1/flask_cloudflared-0.0.8.tar.gz
+[2023-04-23 11:27:24] INFO root fetch - processPackages [FastCNN2]: Downloading https://files.pythonhosted.org/packages/8a/c8/8d235c8ede7b82a7f74fd8a7ebeff9d224c09e830aa7bcfa6a5aeebe8e5d/FastCNN2-1.23.423.1723.tar.gz
+[2023-04-23 11:27:24] INFO root fetch - processPackages [pelican-data-files]: Downloading https://files.pythonhosted.org/packages/58/11/8b290d7d5ab1cdd15676ebeea8dc6a44cc8a62c68e4ec7f08d16b3c5ae1c/pelican-data-files-1.2.0.tar.gz
+[2023-04-23 11:27:24] INFO root fetch - processPackages [huhangkai]: Downloading https://files.pythonhosted.org/packages/65/40/71af048fa9f162824fb7fc380ce6168752286201bdf594326fd6fa75ee7d/huhangkai-1.0.9.tar.gz
+[2023-04-23 11:27:24] INFO root fetch - processPackages [huhangkai]: executing diffoscope
+[2023-04-23 11:27:24] INFO root fetch - processPackages [huhangkai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/huhangkai-1.0.8.tar.gz tmp/huhangkai-1.0.9.tar.gz --markdown 20230423/h/huhangkai/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-23 11:27:24] INFO root fetch - processPackages [lumigo-opentelemetry]: Downloading https://files.pythonhosted.org/packages/9c/64/2e350612673dcde2f1bd79c8b6fea2e0ef8b6239bdff92276be501c2c300/lumigo_opentelemetry-1.0.8-py3-none-any.whl
+[2023-04-23 11:27:24] INFO root fetch - processPackages [FastCNN2]: executing diffoscope
+[2023-04-23 11:27:24] INFO root fetch - processPackages [FastCNN2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FastCNN2-1.23.423.1720.tar.gz tmp/FastCNN2-1.23.423.1723.tar.gz --markdown 20230423/F/FastCNN2/1.23.423.1720-1.23.423.1723/diff.md --exclude *.pyd
+[2023-04-23 11:27:24] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/1c/31/077578b2c1b0be29401d98f934a538ee7a6febb0d21039bb238c42d2ef15/qwak_core-0.0.27.tar.gz
+[2023-04-23 11:27:24] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2023-04-23 11:27:24] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.0.26.tar.gz tmp/qwak_core-0.0.27.tar.gz --markdown 20230423/q/qwak-core/0.0.26-0.0.27/diff.md --exclude *.pyd
+[2023-04-23 11:27:24] INFO root fetch - processPackages [gpt-pynvim]: Downloading https://files.pythonhosted.org/packages/4f/c7/485364a41d553684c0a29cdc40856c2b7e15f95f02eb64d9192b84ab1d52/gpt-pynvim-0.1.1.tar.gz
+[2023-04-23 11:27:24] INFO root fetch - processPackages [enquiries]: Downloading https://files.pythonhosted.org/packages/a7/ff/a31e613be5d4ece22bf6f469b116f53e5c56a564540f8b32945ac30f4ba2/enquiries-0.2.0.tar.gz
+[2023-04-23 11:27:24] INFO root fetch - processPackages [enquiries]: executing diffoscope
+[2023-04-23 11:27:24] INFO root fetch - processPackages [enquiries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enquiries-0.1.0-py3-none-any.whl.zip tmp/enquiries-0.2.0.tar.gz --markdown 20230423/e/enquiries/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-23 11:27:24] INFO root fetch - processPackages [pelican-data-files]: Downloading https://files.pythonhosted.org/packages/7c/b1/aa90eb2881e971bd4b93f0d7b5b2c29b523fb33ece27a03daec470df795d/pelican-data-files-1.3.0.tar.gz
+[2023-04-23 11:27:25] INFO root fetch - processPackages [gpt-pynvim]: executing diffoscope
+[2023-04-23 11:27:25] INFO root fetch - processPackages [gpt-pynvim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt-pynvim-0.1.0.tar.gz tmp/gpt-pynvim-0.1.1.tar.gz --markdown 20230423/g/gpt-pynvim/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 11:27:25] INFO root fetch - processPackages [pelican-data-files]: executing diffoscope
+[2023-04-23 11:27:25] INFO root fetch - processPackages [pelican-data-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pelican-data-files-1.2.0.tar.gz tmp/pelican-data-files-1.3.0.tar.gz --markdown 20230423/p/pelican-data-files/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-04-23 11:27:25] INFO root fetch - processPackages [lumigo-opentelemetry]: Downloading https://files.pythonhosted.org/packages/f7/5b/deb6be16415fe585d5fa6fd34df7999995f7157a010bcaddba8ef665f9ae/lumigo_opentelemetry-1.0.9-py3-none-any.whl
+[2023-04-23 11:27:25] INFO root fetch - processPackages [flask-cloudflared]: Downloading https://files.pythonhosted.org/packages/3a/fc/1c632e9797b9d3d9eb71e935151eecc10d58b5422bddebf82a9fddd0cb89/flask_cloudflared-0.0.9.tar.gz
+[2023-04-23 11:27:25] INFO root fetch - processPackages [lumigo-opentelemetry]: executing diffoscope
+[2023-04-23 11:27:25] INFO root fetch - processPackages [lumigo-opentelemetry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lumigo_opentelemetry-1.0.8-py3-none-any.whl.zip tmp/lumigo_opentelemetry-1.0.9-py3-none-any.whl.zip --markdown 20230423/l/lumigo-opentelemetry/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-23 11:27:25] INFO root fetch - processPackages [flask-cloudflared]: executing diffoscope
+[2023-04-23 11:27:25] INFO root fetch - processPackages [flask-cloudflared]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_cloudflared-0.0.8.tar.gz tmp/flask_cloudflared-0.0.9.tar.gz --markdown 20230423/f/flask-cloudflared/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 11:27:26] INFO root fetch - main [MainThread]: End processing [enquiries]: success
+[2023-04-23 11:27:26] INFO root fetch - main [MainThread]: End processing [huhangkai]: success
+[2023-04-23 11:27:26] INFO root fetch - main [MainThread]: End processing [pelican-data-files]: success
+[2023-04-23 11:27:26] INFO root fetch - main [MainThread]: End processing [gpt-pynvim]: success
+[2023-04-23 11:27:26] INFO root fetch - main [MainThread]: End processing [flask-cloudflared]: success
+[2023-04-23 11:27:26] INFO root fetch - main [MainThread]: End processing [lumigo-opentelemetry]: success
+[2023-04-23 11:27:27] INFO root fetch - main [MainThread]: End processing [FastCNN2]: success
+[2023-04-23 11:27:29] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2023-04-23 11:27:29] INFO root fetch - main [MainThread]: Store serial: [17820928]
