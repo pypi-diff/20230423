@@ -9699,3 +9699,92 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 17:12:29] INFO root fetch - main [MainThread]: End processing [tensorflow-text-nightly]: success
 [2023-04-23 17:12:35] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2023-04-23 17:12:35] INFO root fetch - main [MainThread]: Store serial: [17823306]
+[2023-04-23 17:17:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823306]
+[2023-04-23 17:17:45] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-23 17:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-Ayra
+[2023-04-23 17:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mb-pytorch
+[2023-04-23 17:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: IPRA
+[2023-04-23 17:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-score
+[2023-04-23 17:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wok-code
+[2023-04-23 17:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: netin
+[2023-04-23 17:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyram-mogus
+[2023-04-23 17:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: giftmaster
+[2023-04-23 17:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: CLUEstering
+[2023-04-23 17:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sql-test-kit
+[2023-04-23 17:17:45] INFO root fetch - processPackages [pyram-mogus]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 17:17:45] INFO root fetch - processPackages [odoo-score]: New version: [2.0.5] Old Version: [2.0.3]
+[2023-04-23 17:17:45] INFO root fetch - processPackages [mb-pytorch]: New version: [1.0.202304231511] Old Version: [1.0.202304221736]
+[2023-04-23 17:17:45] INFO root fetch - processPackages [CLUEstering]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-04-23 17:17:45] INFO root fetch - processPackages [netin]: New version: [1.0.5.7] Old Version: [1.0.5.6]
+[2023-04-23 17:17:45] INFO root fetch - processPackages [sql-test-kit]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-23 17:17:45] INFO root fetch - processPackages [giftmaster]: New version: [0.1.54] Old Version: [0.0.9]
+[2023-04-23 17:17:45] INFO root fetch - processPackages [py-Ayra]: New version: [8.6.0] Old Version: [8.2.8]
+[2023-04-23 17:17:45] INFO root fetch - processPackages [IPRA]: New version: [3.17.47] Old Version: [3.16.47]
+[2023-04-23 17:17:45] INFO root fetch - processPackages [wok-code]: New version: [2.0.6] Old Version: [2.0.4]
+[2023-04-23 17:17:45] INFO root fetch - processPackages [odoo-score]: Downloading https://files.pythonhosted.org/packages/f7/d3/0e5a9c668a8979affb44e424b0bebc2f49b87bcd6e852b747d841c4a326a/odoo_score-2.0.3.tar.gz
+[2023-04-23 17:17:45] INFO root fetch - processPackages [IPRA]: Downloading https://files.pythonhosted.org/packages/c7/dd/ee1edb1b036e7a4bee76368bd4ce6cdd1ef4d8f44f06e2a6205102b52b15/IPRA-3.16.47-py3-none-any.whl
+[2023-04-23 17:17:45] INFO root fetch - processPackages [CLUEstering]: Downloading https://files.pythonhosted.org/packages/9c/4f/83c8e78c59ab46f6f9e8d2c79feffcbf8bff55982aac227cff54f87ebd49/CLUEstering-1.2.0.tar.gz
+[2023-04-23 17:17:45] INFO root fetch - processPackages [pyram-mogus]: Downloading https://files.pythonhosted.org/packages/30/e7/0e22300673ee8b9e71d522eb6960b9f754b313c967f2064564871c179a49/pyram_mogus-0.0.1.tar.gz
+[2023-04-23 17:17:45] INFO root fetch - processPackages [wok-code]: Downloading https://files.pythonhosted.org/packages/83/36/73636d42d008ee104df9a50e76ce6f8255070d81dd1a7267e4f6e0ec2562/wok_code-2.0.4.tar.gz
+[2023-04-23 17:17:45] INFO root fetch - processPackages [py-Ayra]: Downloading https://files.pythonhosted.org/packages/50/7a/f54c0a6b1760d7f7c041f1d047fe7cae602a80b19090a569f40242da3aac/py-Ayra-8.6.0.tar.gz
+[2023-04-23 17:17:45] INFO root fetch - processPackages [netin]: Downloading https://files.pythonhosted.org/packages/35/7c/66f51f549ea50dc002733cf9d86223f4f9c6110191c930840b1d876308fc/netin-1.0.5.7.tar.gz
+[2023-04-23 17:17:45] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/bd/8c/81d596e0d7b060f5345b9e97aa9dbccee3b212a645449d14e8b07bca30fe/mb_pytorch-1.0.202304231511-py3-none-any.whl
+[2023-04-23 17:17:45] INFO root fetch - processPackages [giftmaster]: Downloading https://files.pythonhosted.org/packages/df/7a/d1fd88321a2c6c91ee33637b22bc8ed0e7db09c2c5a765b489daf12d8b28/giftmaster-0.0.9.tar.gz
+[2023-04-23 17:17:45] INFO root fetch - processPackages [sql-test-kit]: Downloading https://files.pythonhosted.org/packages/0f/51/7fc61550c4ad1f49eb87bd12ae66784a78935b57291fd20d94caab84758e/sql_test_kit-0.2.1.tar.gz
+[2023-04-23 17:17:45] INFO root fetch - processPackages [netin]: executing diffoscope
+[2023-04-23 17:17:45] INFO root fetch - processPackages [netin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netin-1.0.5.6.tar.gz tmp/netin-1.0.5.7.tar.gz --markdown 20230423/n/netin/1.0.5.6-1.0.5.7/diff.md --exclude *.pyd
+[2023-04-23 17:17:45] INFO root fetch - processPackages [mb-pytorch]: executing diffoscope
+[2023-04-23 17:17:45] INFO root fetch - processPackages [mb-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pytorch-1.0.202304221736-py3-none-any.whl.zip tmp/mb_pytorch-1.0.202304231511-py3-none-any.whl.zip --markdown 20230423/m/mb-pytorch/1.0.202304221736-1.0.202304231511/diff.md --exclude *.pyd
+[2023-04-23 17:17:45] INFO root fetch - processPackages [odoo-score]: Downloading https://files.pythonhosted.org/packages/92/dd/25afb4e1a6f04ff3ace8dc26b49af0815f9642f93bcb0aca3c34f5696332/odoo_score-2.0.5.tar.gz
+[2023-04-23 17:17:45] INFO root fetch - processPackages [sql-test-kit]: executing diffoscope
+[2023-04-23 17:17:45] INFO root fetch - processPackages [sql-test-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sql_test_kit-0.2.0.tar.gz tmp/sql_test_kit-0.2.1.tar.gz --markdown 20230423/s/sql-test-kit/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-23 17:17:45] INFO root fetch - processPackages [wok-code]: Downloading https://files.pythonhosted.org/packages/ed/62/1a4378e60f322157916b9f44c1d16d3a0dba4adadd5697388cc664d382be/wok_code-2.0.6.tar.gz
+[2023-04-23 17:17:45] INFO root fetch - processPackages [pyram-mogus]: Downloading https://files.pythonhosted.org/packages/c1/85/5cd50f745b14ab1fca0174b148ce32d82bfdabc2e133475eabb4e0bf592c/pyram_mogus-0.0.2.tar.gz
+[2023-04-23 17:17:45] INFO root fetch - processPackages [CLUEstering]: Downloading https://files.pythonhosted.org/packages/f9/ef/1818eec0fa58235979d3d7d6a0af11d00c76c7cc74353332a1c5e524baef/CLUEstering-1.3.0.tar.gz
+[2023-04-23 17:17:46] INFO root fetch - processPackages [giftmaster]: Downloading https://files.pythonhosted.org/packages/68/e9/6516e312aa64dde80465753a062ecf28dd31c09338033179917d05b7d1ca/giftmaster-0.1.54.tar.gz
+[2023-04-23 17:17:46] INFO root fetch - processPackages [IPRA]: Downloading https://files.pythonhosted.org/packages/29/3d/5cc2914bd902f630fa0c3b150c02cd153a012846b10606cfc9ab283d4c60/IPRA-3.17.47-py3-none-any.whl
+[2023-04-23 17:17:46] INFO root fetch - processPackages [odoo-score]: executing diffoscope
+[2023-04-23 17:17:46] INFO root fetch - processPackages [odoo-score]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_score-2.0.3.tar.gz tmp/odoo_score-2.0.5.tar.gz --markdown 20230423/o/odoo-score/2.0.3-2.0.5/diff.md --exclude *.pyd
+[2023-04-23 17:17:46] INFO root fetch - processPackages [py-Ayra]: executing diffoscope
+[2023-04-23 17:17:46] INFO root fetch - processPackages [py-Ayra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-Ayra-8.2.8.tar.gz tmp/py-Ayra-8.6.0.tar.gz --markdown 20230423/p/py-Ayra/8.2.8-8.6.0/diff.md --exclude *.pyd
+[2023-04-23 17:17:46] INFO root fetch - processPackages [wok-code]: executing diffoscope
+[2023-04-23 17:17:46] INFO root fetch - processPackages [wok-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wok_code-2.0.4.tar.gz tmp/wok_code-2.0.6.tar.gz --markdown 20230423/w/wok-code/2.0.4-2.0.6/diff.md --exclude *.pyd
+[2023-04-23 17:17:46] INFO root fetch - processPackages [CLUEstering]: executing diffoscope
+[2023-04-23 17:17:46] INFO root fetch - processPackages [CLUEstering]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CLUEstering-1.2.0.tar.gz tmp/CLUEstering-1.3.0.tar.gz --markdown 20230423/C/CLUEstering/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-04-23 17:17:46] INFO root fetch - processPackages [pyram-mogus]: executing diffoscope
+[2023-04-23 17:17:46] INFO root fetch - processPackages [pyram-mogus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyram_mogus-0.0.1.tar.gz tmp/pyram_mogus-0.0.2.tar.gz --markdown 20230423/p/pyram-mogus/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 17:17:46] INFO root fetch - processPackages [giftmaster]: executing diffoscope
+[2023-04-23 17:17:46] INFO root fetch - processPackages [giftmaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/giftmaster-0.0.9.tar.gz tmp/giftmaster-0.1.54.tar.gz --markdown 20230423/g/giftmaster/0.0.9-0.1.54/diff.md --exclude *.pyd
+[2023-04-23 17:17:46] INFO root fetch - processPackages [IPRA]: executing diffoscope
+[2023-04-23 17:17:46] INFO root fetch - processPackages [IPRA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IPRA-3.16.47-py3-none-any.whl.zip tmp/IPRA-3.17.47-py3-none-any.whl.zip --markdown 20230423/I/IPRA/3.16.47-3.17.47/diff.md --exclude *.pyd
+[2023-04-23 17:17:47] INFO root fetch - processPackages [sql-test-kit]: Start processing: quarter-lib
+[2023-04-23 17:17:47] INFO root fetch - main [MainThread]: End processing [sql-test-kit]: success
+[2023-04-23 17:17:47] INFO root fetch - processPackages [quarter-lib]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-23 17:17:47] INFO root fetch - processPackages [mb-pytorch]: Start processing: clodoo
+[2023-04-23 17:17:47] INFO root fetch - main [MainThread]: End processing [mb-pytorch]: success
+[2023-04-23 17:17:47] INFO root fetch - processPackages [clodoo]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-04-23 17:17:47] INFO root fetch - processPackages [clodoo]: Downloading https://files.pythonhosted.org/packages/f6/09/c4e316a903a9c95b5abe883dbe397040ed06f2cac5f26fc20dc4bf840748/clodoo-2.0.3.tar.gz
+[2023-04-23 17:17:47] INFO root fetch - processPackages [quarter-lib]: Downloading https://files.pythonhosted.org/packages/9b/2c/e3bb99ac668b35c7fa2b66ee8d36052b84861b367a38bd7089b64806de1f/quarter_lib-0.0.8.tar.gz
+[2023-04-23 17:17:47] INFO root fetch - processPackages [CLUEstering]: Start processing: travis-emulator
+[2023-04-23 17:17:47] INFO root fetch - main [MainThread]: End processing [CLUEstering]: success
+[2023-04-23 17:17:47] INFO root fetch - processPackages [travis-emulator]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-04-23 17:17:47] INFO root fetch - main [MainThread]: End processing [pyram-mogus]: success
+[2023-04-23 17:17:47] INFO root fetch - processPackages [clodoo]: Downloading https://files.pythonhosted.org/packages/95/26/a9b7cd9c4df13f3d50bfcfb5148b986f1cb08bfb6234285c6d9220aed354/clodoo-2.0.4.tar.gz
+[2023-04-23 17:17:47] INFO root fetch - processPackages [quarter-lib]: executing diffoscope
+[2023-04-23 17:17:47] INFO root fetch - processPackages [quarter-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quarter_lib-0.0.7.tar.gz tmp/quarter_lib-0.0.8.tar.gz --markdown 20230423/q/quarter-lib/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-23 17:17:48] INFO root fetch - processPackages [travis-emulator]: Downloading https://files.pythonhosted.org/packages/5e/5a/c44c0fe027997aa63ea8eb2498c11dda5c814f8f417cdef31587bf7c4beb/travis_emulator-2.0.3.tar.gz
+[2023-04-23 17:17:48] INFO root fetch - main [MainThread]: End processing [netin]: success
+[2023-04-23 17:17:48] INFO root fetch - processPackages [clodoo]: executing diffoscope
+[2023-04-23 17:17:48] INFO root fetch - processPackages [clodoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clodoo-2.0.3.tar.gz tmp/clodoo-2.0.4.tar.gz --markdown 20230423/c/clodoo/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-04-23 17:17:48] INFO root fetch - main [MainThread]: End processing [IPRA]: success
+[2023-04-23 17:17:48] INFO root fetch - processPackages [travis-emulator]: Downloading https://files.pythonhosted.org/packages/2d/8b/681e48239364e308173a9c893e16eb511bd0cfc7cabddcd22be9263032ac/travis_emulator-2.0.4.tar.gz
+[2023-04-23 17:17:48] INFO root fetch - main [MainThread]: End processing [giftmaster]: success
+[2023-04-23 17:17:48] INFO root fetch - processPackages [travis-emulator]: executing diffoscope
+[2023-04-23 17:17:48] INFO root fetch - processPackages [travis-emulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/travis_emulator-2.0.3.tar.gz tmp/travis_emulator-2.0.4.tar.gz --markdown 20230423/t/travis-emulator/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-04-23 17:17:48] INFO root fetch - main [MainThread]: End processing [wok-code]: success
+[2023-04-23 17:17:48] INFO root fetch - main [MainThread]: End processing [odoo-score]: success
+[2023-04-23 17:17:48] INFO root fetch - main [MainThread]: End processing [py-Ayra]: success
+[2023-04-23 17:17:49] INFO root fetch - main [MainThread]: End processing [quarter-lib]: success
+[2023-04-23 17:17:49] INFO root fetch - main [MainThread]: End processing [travis-emulator]: success
+[2023-04-23 17:17:49] INFO root fetch - main [MainThread]: End processing [clodoo]: success
+[2023-04-23 17:17:49] INFO root fetch - main [MainThread]: Store serial: [17823342]
