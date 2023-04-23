@@ -2944,3 +2944,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 06:14:42] INFO root fetch - main [MainThread]: End processing [SCALECAST]: success
 [2023-04-23 06:14:43] INFO root fetch - main [MainThread]: End processing [pydflow]: success
 [2023-04-23 06:14:43] INFO root fetch - main [MainThread]: Store serial: [17819361]
+[2023-04-23 06:19:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819361]
+[2023-04-23 06:19:52] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-23 06:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-brainfuck
+[2023-04-23 06:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-hr-attendance-reason
+[2023-04-23 06:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gpt-gateway
+[2023-04-23 06:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: semantra
+[2023-04-23 06:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: audioviz
+[2023-04-23 06:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: botterino
+[2023-04-23 06:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pwproxy
+[2023-04-23 06:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: shioajicaller
+[2023-04-23 06:19:52] WARNING root fetch - processPackages [audioviz]: Skipping, unable to determine old version
+[2023-04-23 06:19:52] INFO root fetch - main [MainThread]: End processing [audioviz] error
+[2023-04-23 06:19:52] INFO root fetch - processPackages [botterino]: New version: [0.4.7] Old Version: [0.4.6]
+[2023-04-23 06:19:52] INFO root fetch - processPackages [nonebot-plugin-brainfuck]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-23 06:19:52] INFO root fetch - processPackages [semantra]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 06:19:52] INFO root fetch - processPackages [odoo14-addon-hr-attendance-reason]: New version: [14.0.1.1.2.dev1] Old Version: [14.0.1.1.1.dev4]
+[2023-04-23 06:19:52] INFO root fetch - processPackages [gpt-gateway]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 06:19:52] WARNING root fetch - processPackages [pwproxy]: Skipping, unable to determine old version
+[2023-04-23 06:19:52] INFO root fetch - main [MainThread]: End processing [pwproxy] error
+[2023-04-23 06:19:52] INFO root fetch - processPackages [shioajicaller]: New version: [0.4.1.0] Old Version: [0.4.0.0]
+[2023-04-23 06:19:52] INFO root fetch - processPackages [gpt-gateway]: executing diffoscope
+[2023-04-23 06:19:52] INFO root fetch - processPackages [gpt-gateway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_gateway-0.0.8.tar.gz tmp/gpt_gateway-0.0.9.tar.gz --markdown 20230423/g/gpt-gateway/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 06:19:52] INFO root fetch - processPackages [shioajicaller]: executing diffoscope
+[2023-04-23 06:19:52] INFO root fetch - processPackages [shioajicaller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shioajicaller-0.4.0.0.tar.gz tmp/shioajicaller-0.4.1.0.tar.gz --markdown 20230423/s/shioajicaller/0.4.0.0-0.4.1.0/diff.md --exclude *.pyd
+[2023-04-23 06:19:52] INFO root fetch - processPackages [botterino]: Downloading https://files.pythonhosted.org/packages/0d/0d/4e171b515fca364f07af9eff83c6e2bc946668059a6507e97b5de5a11dd0/botterino-0.4.7.tar.gz
+[2023-04-23 06:19:52] INFO root fetch - processPackages [nonebot-plugin-brainfuck]: Downloading https://files.pythonhosted.org/packages/13/dc/3738bcc134aaa4429f4ca1d915f618a41dce48eb86d0ce2fa2c441b85322/nonebot-plugin-brainfuck-1.0.2.tar.gz
+[2023-04-23 06:19:52] INFO root fetch - processPackages [semantra]: Downloading https://files.pythonhosted.org/packages/cb/da/9e425e39a9b4dd315baf188e36a483b20b0b61fecd95392cf9a58925120c/semantra-0.0.1.tar.gz
+[2023-04-23 06:19:52] INFO root fetch - processPackages [nonebot-plugin-brainfuck]: executing diffoscope
+[2023-04-23 06:19:52] INFO root fetch - processPackages [nonebot-plugin-brainfuck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-brainfuck-1.0.1.tar.gz tmp/nonebot-plugin-brainfuck-1.0.2.tar.gz --markdown 20230423/n/nonebot-plugin-brainfuck/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-23 06:19:52] INFO root fetch - processPackages [odoo14-addon-hr-attendance-reason]: Downloading https://files.pythonhosted.org/packages/1f/94/abad3f4bda360ed5188cb3599758ed56737f4e410c42edf9054e79891574/odoo14_addon_hr_attendance_reason-14.0.1.1.2.dev1-py3-none-any.whl
+[2023-04-23 06:19:52] INFO root fetch - processPackages [botterino]: executing diffoscope
+[2023-04-23 06:19:52] INFO root fetch - processPackages [botterino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botterino-0.4.6.tar.gz tmp/botterino-0.4.7.tar.gz --markdown 20230423/b/botterino/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2023-04-23 06:19:52] INFO root fetch - processPackages [odoo14-addon-hr-attendance-reason]: executing diffoscope
+[2023-04-23 06:19:52] INFO root fetch - processPackages [odoo14-addon-hr-attendance-reason]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_hr_attendance_reason-14.0.1.1.1.dev4-py3-none-any.whl.zip tmp/odoo14_addon_hr_attendance_reason-14.0.1.1.2.dev1-py3-none-any.whl.zip --markdown 20230423/o/odoo14-addon-hr-attendance-reason/14.0.1.1.1.dev4-14.0.1.1.2.dev1/diff.md --exclude *.pyd
+[2023-04-23 06:19:52] INFO root fetch - processPackages [semantra]: Downloading https://files.pythonhosted.org/packages/10/3f/1356e80215ac29dc9b00b44adce3a0b7f1c50c625b27edf82969ef132408/semantra-0.0.2.tar.gz
+[2023-04-23 06:19:52] INFO root fetch - processPackages [semantra]: executing diffoscope
+[2023-04-23 06:19:52] INFO root fetch - processPackages [semantra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantra-0.0.1.tar.gz tmp/semantra-0.0.2.tar.gz --markdown 20230423/s/semantra/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 06:19:53] INFO root fetch - main [MainThread]: End processing [gpt-gateway]: success
+[2023-04-23 06:19:53] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-brainfuck]: success
+[2023-04-23 06:19:53] INFO root fetch - main [MainThread]: End processing [shioajicaller]: success
+[2023-04-23 06:19:53] INFO root fetch - main [MainThread]: End processing [botterino]: success
+[2023-04-23 06:19:53] INFO root fetch - main [MainThread]: End processing [odoo14-addon-hr-attendance-reason]: success
+[2023-04-23 06:19:54] INFO root fetch - main [MainThread]: End processing [semantra]: success
+[2023-04-23 06:19:54] INFO root fetch - main [MainThread]: Store serial: [17819383]
