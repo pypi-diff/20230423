@@ -11999,3 +11999,65 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 20:13:26] INFO root fetch - main [MainThread]: End processing [pyvantage]: success
 [2023-04-23 20:13:28] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
 [2023-04-23 20:13:28] INFO root fetch - main [MainThread]: Store serial: [17824715]
+[2023-04-23 20:18:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17824715]
+[2023-04-23 20:18:37] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-23 20:18:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cloudsnorkel.cdk-github-runners
+[2023-04-23 20:18:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: graph-model-parser
+[2023-04-23 20:18:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dfa-identify
+[2023-04-23 20:18:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: plantuml-markdown
+[2023-04-23 20:18:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vunit-hdl
+[2023-04-23 20:18:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gym-trading-env
+[2023-04-23 20:18:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gpt4all-j
+[2023-04-23 20:18:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyhOn
+[2023-04-23 20:18:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pygame-gui
+[2023-04-23 20:18:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: emlib
+[2023-04-23 20:18:37] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-04-23 20:18:37] WARNING root fetch - processPackages [graph-model-parser]: Skipping, unable to determine old version
+[2023-04-23 20:18:37] INFO root fetch - main [MainThread]: End processing [graph-model-parser] error
+[2023-04-23 20:18:37] INFO root fetch - processPackages [plantuml-markdown]: New version: [3.9.0] Old Version: [3.8.3]
+[2023-04-23 20:18:37] INFO root fetch - processPackages [gpt4all-j]: New version: [0.2.0] Old Version: [0.1.4]
+[2023-04-23 20:18:37] INFO root fetch - processPackages [gym-trading-env]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 20:18:37] INFO root fetch - processPackages [dfa-identify]: New version: [3.9.1] Old Version: [3.9.0]
+[2023-04-23 20:18:37] INFO root fetch - processPackages [emlib]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-04-23 20:18:37] INFO root fetch - processPackages [vunit-hdl]: New version: [4.7.0] Old Version: [4.6.2]
+[2023-04-23 20:18:37] INFO root fetch - processPackages [pyhOn]: New version: [0.8.6] Old Version: [0.8.5]
+[2023-04-23 20:18:38] INFO root fetch - processPackages [pygame-gui]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-23 20:18:38] INFO root fetch - processPackages [dfa-identify]: Downloading https://files.pythonhosted.org/packages/2e/54/7a4408c7ad2d248a9fe61f78b331bce0839c3be8ba3ab548190b514a4d2f/dfa_identify-3.9.0.tar.gz
+[2023-04-23 20:18:38] INFO root fetch - processPackages [plantuml-markdown]: Downloading https://files.pythonhosted.org/packages/9d/d4/1b35ab6f68cb3e9364aa166511978ad1a146f2d0e847741bfbffb3ec350a/plantuml_markdown-3.8.3-py3-none-any.whl
+[2023-04-23 20:18:38] INFO root fetch - processPackages [vunit-hdl]: Downloading https://files.pythonhosted.org/packages/3d/0d/d9d9b4e38de5d6fd9b70f06649f9ad6170661323a39e20703c29143dc085/vunit_hdl-4.6.2.tar.gz
+[2023-04-23 20:18:38] INFO root fetch - processPackages [gym-trading-env]: Downloading https://files.pythonhosted.org/packages/c1/0a/7cb644d9c5395556c29fa4916aabe25195a8537244d97183c09ac72e9a82/gym-trading-env-0.1.8.tar.gz
+[2023-04-23 20:18:38] INFO root fetch - processPackages [emlib]: executing diffoscope
+[2023-04-23 20:18:38] INFO root fetch - processPackages [emlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emlib-1.8.1.tar.gz tmp/emlib-1.9.0.tar.gz --markdown 20230423/e/emlib/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-04-23 20:18:38] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: Downloading https://files.pythonhosted.org/packages/90/2d/c66a2d38386dcbb5b7c765b0aabbb5ec25edb6f9292a6ac5891fe08027b5/cloudsnorkel.cdk-github-runners-0.9.6.tar.gz
+[2023-04-23 20:18:38] INFO root fetch - processPackages [pygame-gui]: Downloading https://files.pythonhosted.org/packages/b9/25/68d0c83715db73a69185bed847e1a4b1afcb62dc1c45cc760b22ebe3122f/pygame_gui-0.6.8-py3-none-any.whl
+[2023-04-23 20:18:38] INFO root fetch - processPackages [pyhOn]: Downloading https://files.pythonhosted.org/packages/52/5c/bc0a462944cb68f40b91d2583e96b5d1ed22dd5c2b7f54b13da3df27b13c/pyhOn-0.8.6.tar.gz
+[2023-04-23 20:18:38] WARNING root fetch - processPackages [pygame-gui]: Skipping package: exceeds size limit 23569387>=10485760
+[2023-04-23 20:18:38] INFO root fetch - main [MainThread]: End processing [pygame-gui] error
+[2023-04-23 20:18:38] INFO root fetch - processPackages [gpt4all-j]: Downloading https://files.pythonhosted.org/packages/92/c5/5d4ce4018e94d7a9018f1816467b96fe74eab13661bd7e47a4ee982d7eab/gpt4all-j-0.2.0.tar.gz
+[2023-04-23 20:18:38] INFO root fetch - processPackages [dfa-identify]: Downloading https://files.pythonhosted.org/packages/40/ec/355b1cfbe98e9cc560d60b5fd3835b232c0ad20f7e0046d8d39ad7012dd8/dfa_identify-3.9.1.tar.gz
+[2023-04-23 20:18:38] INFO root fetch - processPackages [pyhOn]: executing diffoscope
+[2023-04-23 20:18:38] INFO root fetch - processPackages [pyhOn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhOn-0.8.5.tar.gz tmp/pyhOn-0.8.6.tar.gz --markdown 20230423/p/pyhOn/0.8.5-0.8.6/diff.md --exclude *.pyd
+[2023-04-23 20:18:38] INFO root fetch - processPackages [plantuml-markdown]: Downloading https://files.pythonhosted.org/packages/79/d6/251fa40097fdae157590fa663e8999a367c5537799ec401a0a58e2f6b17b/plantuml_markdown-3.9.0-py3-none-any.whl
+[2023-04-23 20:18:38] INFO root fetch - processPackages [vunit-hdl]: Downloading https://files.pythonhosted.org/packages/06/4e/bb6c6c1aaccc19f5ebd261fa241a044b501a3704dcb8103b769335badbc4/vunit_hdl-4.7.0.tar.gz
+[2023-04-23 20:18:38] INFO root fetch - processPackages [gym-trading-env]: Downloading https://files.pythonhosted.org/packages/95/93/501e110f47d45960ce867dd8dce92c2553b045461a23dbc052f8edb07062/gym-trading-env-0.1.9.tar.gz
+[2023-04-23 20:18:38] INFO root fetch - processPackages [gym-trading-env]: executing diffoscope
+[2023-04-23 20:18:38] INFO root fetch - processPackages [gym-trading-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gym-trading-env-0.1.8.tar.gz tmp/gym-trading-env-0.1.9.tar.gz --markdown 20230423/g/gym-trading-env/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 20:18:38] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: executing diffoscope
+[2023-04-23 20:18:38] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudsnorkel.cdk-github-runners-0.9.5.tar.gz tmp/cloudsnorkel.cdk-github-runners-0.9.6.tar.gz --markdown 20230423/c/cloudsnorkel.cdk-github-runners/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-04-23 20:18:38] INFO root fetch - processPackages [gpt4all-j]: executing diffoscope
+[2023-04-23 20:18:38] INFO root fetch - processPackages [gpt4all-j]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt4all-j-0.1.4.tar.gz tmp/gpt4all-j-0.2.0.tar.gz --markdown 20230423/g/gpt4all-j/0.1.4-0.2.0/diff.md --exclude *.pyd
+[2023-04-23 20:18:38] INFO root fetch - processPackages [dfa-identify]: executing diffoscope
+[2023-04-23 20:18:38] INFO root fetch - processPackages [dfa-identify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfa_identify-3.9.0.tar.gz tmp/dfa_identify-3.9.1.tar.gz --markdown 20230423/d/dfa-identify/3.9.0-3.9.1/diff.md --exclude *.pyd
+[2023-04-23 20:18:38] INFO root fetch - processPackages [plantuml-markdown]: executing diffoscope
+[2023-04-23 20:18:38] INFO root fetch - processPackages [plantuml-markdown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plantuml_markdown-3.8.3-py3-none-any.whl.zip tmp/plantuml_markdown-3.9.0-py3-none-any.whl.zip --markdown 20230423/p/plantuml-markdown/3.8.3-3.9.0/diff.md --exclude *.pyd
+[2023-04-23 20:18:38] INFO root fetch - processPackages [vunit-hdl]: executing diffoscope
+[2023-04-23 20:18:38] INFO root fetch - processPackages [vunit-hdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vunit_hdl-4.6.2.tar.gz tmp/vunit_hdl-4.7.0.tar.gz --markdown 20230423/v/vunit-hdl/4.6.2-4.7.0/diff.md --exclude *.pyd
+[2023-04-23 20:18:39] INFO root fetch - main [MainThread]: End processing [pyhOn]: success
+[2023-04-23 20:18:39] INFO root fetch - main [MainThread]: End processing [dfa-identify]: success
+[2023-04-23 20:18:39] INFO root fetch - main [MainThread]: End processing [plantuml-markdown]: success
+[2023-04-23 20:18:40] INFO root fetch - main [MainThread]: End processing [cloudsnorkel.cdk-github-runners]: success
+[2023-04-23 20:18:40] INFO root fetch - main [MainThread]: End processing [gym-trading-env]: success
+[2023-04-23 20:18:41] INFO root fetch - main [MainThread]: End processing [emlib]: success
+[2023-04-23 20:18:48] INFO root fetch - main [MainThread]: End processing [vunit-hdl]: success
+[2023-04-23 20:18:49] INFO root fetch - main [MainThread]: End processing [gpt4all-j]: success
+[2023-04-23 20:18:49] INFO root fetch - main [MainThread]: Store serial: [17824743]
