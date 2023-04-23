@@ -10081,3 +10081,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 17:54:28] INFO root fetch - main [MainThread]: End processing [srtranslator]: success
 [2023-04-23 17:54:28] INFO root fetch - main [MainThread]: End processing [ccinput]: success
 [2023-04-23 17:54:28] INFO root fetch - main [MainThread]: Store serial: [17823512]
+[2023-04-23 17:59:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823512]
+[2023-04-23 17:59:37] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-23 17:59:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quarter-lib
+[2023-04-23 17:59:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyHRM
+[2023-04-23 17:59:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ksfctl
+[2023-04-23 17:59:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ssb-altinn-python
+[2023-04-23 17:59:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shellextools
+[2023-04-23 17:59:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spotdl
+[2023-04-23 17:59:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: typed-boto3
+[2023-04-23 17:59:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: snaptrade-python-sdk
+[2023-04-23 17:59:37] INFO root fetch - processPackages [quarter-lib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 17:59:37] INFO root fetch - processPackages [PyHRM]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 17:59:37] WARNING root fetch - processPackages [typed-boto3]: Skipping, unable to determine old version
+[2023-04-23 17:59:37] INFO root fetch - main [MainThread]: End processing [typed-boto3] error
+[2023-04-23 17:59:37] INFO root fetch - processPackages [ksfctl]: New version: [0.2.3] Old Version: [0.2.1]
+[2023-04-23 17:59:37] INFO root fetch - processPackages [shellextools]: New version: [0.11] Old Version: [0.10]
+[2023-04-23 17:59:37] INFO root fetch - processPackages [ssb-altinn-python]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 17:59:37] INFO root fetch - processPackages [spotdl]: New version: [4.1.8] Old Version: [4.1.7]
+[2023-04-23 17:59:37] INFO root fetch - processPackages [snaptrade-python-sdk]: New version: [9.0.0] Old Version: [8.4.0]
+[2023-04-23 17:59:37] INFO root fetch - processPackages [quarter-lib]: executing diffoscope
+[2023-04-23 17:59:37] INFO root fetch - processPackages [quarter-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quarter_lib-0.0.8.tar.gz tmp/quarter_lib-0.0.9.tar.gz --markdown 20230423/q/quarter-lib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 17:59:37] INFO root fetch - processPackages [PyHRM]: Downloading https://files.pythonhosted.org/packages/17/af/ddd84e773e428c5349f992548da6272a3c41d42a8ccdd3ed848ce998f518/PyHRM-0.0.1.tar.gz
+[2023-04-23 17:59:37] INFO root fetch - processPackages [shellextools]: Downloading https://files.pythonhosted.org/packages/c9/02/b5935e9359783928c37b2a883b9227768d36d2ee15afdd2461a3cbef2c1b/shellextools-0.10.tar.gz
+[2023-04-23 17:59:38] INFO root fetch - processPackages [spotdl]: Downloading https://files.pythonhosted.org/packages/de/ef/fdb06966e85adf268cd98e2c5a532cc7feabcd553515ae2385c3d01cc545/spotdl-4.1.8.tar.gz
+[2023-04-23 17:59:38] INFO root fetch - processPackages [ksfctl]: Downloading https://files.pythonhosted.org/packages/9c/b0/f90894ccf18698345c000cbf556384f004b7bd18a844d942646c35494d23/ksfctl-0.2.3.tar.gz
+[2023-04-23 17:59:38] INFO root fetch - processPackages [ssb-altinn-python]: Downloading https://files.pythonhosted.org/packages/05/06/078018dc1dc5cda64f51ee152339b59e656d7ac65df50f02e24002f9a087/ssb_altinn_python-0.0.6.tar.gz
+[2023-04-23 17:59:38] INFO root fetch - processPackages [spotdl]: executing diffoscope
+[2023-04-23 17:59:38] INFO root fetch - processPackages [spotdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotdl-4.1.7.tar.gz tmp/spotdl-4.1.8.tar.gz --markdown 20230423/s/spotdl/4.1.7-4.1.8/diff.md --exclude *.pyd
+[2023-04-23 17:59:38] INFO root fetch - processPackages [snaptrade-python-sdk]: executing diffoscope
+[2023-04-23 17:59:38] INFO root fetch - processPackages [snaptrade-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snaptrade-python-sdk-8.4.0.tar.gz tmp/snaptrade-python-sdk-9.0.0.tar.gz --markdown 20230423/s/snaptrade-python-sdk/8.4.0-9.0.0/diff.md --exclude *.pyd
+[2023-04-23 17:59:38] INFO root fetch - processPackages [shellextools]: Downloading https://files.pythonhosted.org/packages/67/5e/485114de3b4b9aa5530d649ae52bd58d78b5eeed97e613562b38ad9a54ef/shellextools-0.11.tar.gz
+[2023-04-23 17:59:38] INFO root fetch - processPackages [PyHRM]: Downloading https://files.pythonhosted.org/packages/cf/3a/b8d911b8d114bd8df1c5e7b3dde52deae07cc56f2729d8f15b4f76ef62a5/PyHRM-0.0.2.tar.gz
+[2023-04-23 17:59:38] INFO root fetch - processPackages [ksfctl]: executing diffoscope
+[2023-04-23 17:59:38] INFO root fetch - processPackages [ksfctl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ksfctl-0.2.1.tar.gz tmp/ksfctl-0.2.3.tar.gz --markdown 20230423/k/ksfctl/0.2.1-0.2.3/diff.md --exclude *.pyd
+[2023-04-23 17:59:38] INFO root fetch - processPackages [ssb-altinn-python]: executing diffoscope
+[2023-04-23 17:59:38] INFO root fetch - processPackages [ssb-altinn-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssb_altinn_python-0.0.5.tar.gz tmp/ssb_altinn_python-0.0.6.tar.gz --markdown 20230423/s/ssb-altinn-python/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 17:59:38] INFO root fetch - processPackages [shellextools]: executing diffoscope
+[2023-04-23 17:59:38] INFO root fetch - processPackages [shellextools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shellextools-0.10.tar.gz tmp/shellextools-0.11.tar.gz --markdown 20230423/s/shellextools/0.10-0.11/diff.md --exclude *.pyd
+[2023-04-23 17:59:38] INFO root fetch - processPackages [PyHRM]: executing diffoscope
+[2023-04-23 17:59:38] INFO root fetch - processPackages [PyHRM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyHRM-0.0.1.tar.gz tmp/PyHRM-0.0.2.tar.gz --markdown 20230423/P/PyHRM/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 17:59:39] INFO root fetch - main [MainThread]: End processing [quarter-lib]: success
+[2023-04-23 17:59:39] INFO root fetch - main [MainThread]: End processing [ssb-altinn-python]: success
+[2023-04-23 17:59:39] INFO root fetch - main [MainThread]: End processing [ksfctl]: success
+[2023-04-23 17:59:39] INFO root fetch - main [MainThread]: End processing [PyHRM]: success
+[2023-04-23 17:59:39] INFO root fetch - main [MainThread]: End processing [spotdl]: success
+[2023-04-23 17:59:40] INFO root fetch - main [MainThread]: End processing [shellextools]: success
+[2023-04-23 17:59:46] INFO root fetch - main [MainThread]: End processing [snaptrade-python-sdk]: success
+[2023-04-23 17:59:46] INFO root fetch - main [MainThread]: Store serial: [17823539]
