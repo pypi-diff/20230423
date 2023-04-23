@@ -1730,3 +1730,19 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 03:09:06] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
 [2023-04-23 03:09:07] INFO root fetch - main [MainThread]: End processing [fedbase]: success
 [2023-04-23 03:09:07] INFO root fetch - main [MainThread]: Store serial: [17818545]
+[2023-04-23 03:14:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818545]
+[2023-04-23 03:14:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-23 03:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vnpy-tqsdk
+[2023-04-23 03:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zuspec-parser
+[2023-04-23 03:14:15] INFO root fetch - processPackages [vnpy-tqsdk]: New version: [3.4.0] Old Version: [3.2.11]
+[2023-04-23 03:14:15] INFO root fetch - processPackages [zuspec-parser]: New version: [0.0.1.4775617509] Old Version: [0.0.1.4775095816]
+[2023-04-23 03:14:15] INFO root fetch - processPackages [vnpy-tqsdk]: Downloading https://files.pythonhosted.org/packages/c5/61/35c2a37a3704ca5498bd009904434cc1f74a7638afa094a0e8f4b35e3c91/vnpy_tqsdk-3.2.11.tar.gz
+[2023-04-23 03:14:15] INFO root fetch - processPackages [zuspec-parser]: Downloading https://files.pythonhosted.org/packages/44/85/1352a4346c83f037958dccf92a4b5b0dc43d2e63289975098a3d56f31982/zuspec_parser-0.0.1.4775617509-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-23 03:14:15] INFO root fetch - processPackages [vnpy-tqsdk]: Downloading https://files.pythonhosted.org/packages/a2/56/3c29d253f078243da797b3ee5403bf782ed634c1b7de33d28d3b598cb02a/vnpy_tqsdk-3.4.0.tar.gz
+[2023-04-23 03:14:16] INFO root fetch - processPackages [vnpy-tqsdk]: executing diffoscope
+[2023-04-23 03:14:16] INFO root fetch - processPackages [vnpy-tqsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnpy_tqsdk-3.2.11.tar.gz tmp/vnpy_tqsdk-3.4.0.tar.gz --markdown 20230423/v/vnpy-tqsdk/3.2.11-3.4.0/diff.md --exclude *.pyd
+[2023-04-23 03:14:16] INFO root fetch - processPackages [zuspec-parser]: executing diffoscope
+[2023-04-23 03:14:16] INFO root fetch - processPackages [zuspec-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_parser-0.0.1.4775095816-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_parser-0.0.1.4775617509-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230423/z/zuspec-parser/0.0.1.4775095816-0.0.1.4775617509/diff.md --exclude *.pyd
+[2023-04-23 03:14:17] INFO root fetch - main [MainThread]: End processing [vnpy-tqsdk]: success
+[2023-04-23 03:14:18] INFO root fetch - main [MainThread]: End processing [zuspec-parser]: success
+[2023-04-23 03:14:18] INFO root fetch - main [MainThread]: Store serial: [17818553]
