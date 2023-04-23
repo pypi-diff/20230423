@@ -7546,3 +7546,49 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 14:07:54] INFO root fetch - main [MainThread]: End processing [cv2-collage-v2]: success
 [2023-04-23 14:07:54] INFO root fetch - main [MainThread]: End processing [dj-migration-test]: success
 [2023-04-23 14:07:54] INFO root fetch - main [MainThread]: Store serial: [17821998]
+[2023-04-23 14:12:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17821998]
+[2023-04-23 14:13:02] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-23 14:13:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyviews
+[2023-04-23 14:13:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scace
+[2023-04-23 14:13:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: taskiq-memphis
+[2023-04-23 14:13:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: maxilearn
+[2023-04-23 14:13:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: langcorn
+[2023-04-23 14:13:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: maxilearn
+[2023-04-23 14:13:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tum-esm-em27-metadata
+[2023-04-23 14:13:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aiei
+[2023-04-23 14:13:02] INFO root fetch - processPackages [maxilearn]: New version: [4.5.0] Old Version: [4.4.9]
+[2023-04-23 14:13:02] INFO root fetch - processPackages [maxilearn]: New version: [4.5.0] Old Version: [4.4.9]
+[2023-04-23 14:13:03] INFO root fetch - processPackages [tum-esm-em27-metadata]: New version: [2.0.0rc1] Old Version: [1.0.1]
+[2023-04-23 14:13:03] INFO root fetch - processPackages [pyviews]: New version: [4.0.0] Old Version: [3.2.0]
+[2023-04-23 14:13:03] INFO root fetch - processPackages [scace]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 14:13:03] WARNING root fetch - processPackages [taskiq-memphis]: Skipping, unable to determine old version
+[2023-04-23 14:13:03] INFO root fetch - main [MainThread]: End processing [taskiq-memphis] error
+[2023-04-23 14:13:03] INFO root fetch - processPackages [aiei]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-23 14:13:03] INFO root fetch - processPackages [langcorn]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 14:13:03] ERROR root fetch - processPackages [maxilearn]: Unable to fetch info: No such project/version 'maxilearn' 4.4.9
+[2023-04-23 14:13:03] ERROR root fetch - processPackages [maxilearn]: Unable to fetch info: No such project/version 'maxilearn' 4.4.9
+[2023-04-23 14:13:03] INFO root fetch - main [MainThread]: End processing [maxilearn] error
+[2023-04-23 14:13:03] INFO root fetch - main [MainThread]: End processing [maxilearn] error
+[2023-04-23 14:13:03] INFO root fetch - processPackages [tum-esm-em27-metadata]: executing diffoscope
+[2023-04-23 14:13:03] INFO root fetch - processPackages [tum-esm-em27-metadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tum_esm_em27_metadata-1.0.1.tar.gz tmp/tum_esm_em27_metadata-2.0.0rc1.tar.gz --markdown 20230423/t/tum-esm-em27-metadata/1.0.1-2.0.0rc1/diff.md --exclude *.pyd
+[2023-04-23 14:13:03] INFO root fetch - processPackages [scace]: Downloading https://files.pythonhosted.org/packages/53/65/bc7b725919fe367246411e309b2dc3e1b4360dd811df423d3fa41767fdbe/scace-0.1.0.tar.gz
+[2023-04-23 14:13:03] INFO root fetch - processPackages [pyviews]: Downloading https://files.pythonhosted.org/packages/26/86/46d0942a8cb91b009176611cce714c7fcf0af650836e3ad0e8af3be61f00/pyviews-3.2.0.tar.gz
+[2023-04-23 14:13:03] INFO root fetch - processPackages [aiei]: Downloading https://files.pythonhosted.org/packages/2b/17/579c9e1566886259da108115820b3e6af52fba8b416f0e9b714ebb2c4ce9/aiei-1.0.2.tar.gz
+[2023-04-23 14:13:03] INFO root fetch - processPackages [langcorn]: Downloading https://files.pythonhosted.org/packages/9c/63/5ff47e8c2cf41866234cc84e9ed8b499cc78e82f4fce6656c1fc0471ea9f/langcorn-0.0.6.tar.gz
+[2023-04-23 14:13:03] INFO root fetch - processPackages [scace]: Downloading https://files.pythonhosted.org/packages/1b/bb/119faa3c36f03d666b441016ef97d9703480bd45ec8f465d08cfb54f0051/scace-0.1.1.tar.gz
+[2023-04-23 14:13:03] INFO root fetch - processPackages [aiei]: Downloading https://files.pythonhosted.org/packages/99/cd/70e59f9c90301159553c2517f06465b70a546551fdacd77a5b654ca5305b/aiei-1.0.3.tar.gz
+[2023-04-23 14:13:03] INFO root fetch - processPackages [pyviews]: Downloading https://files.pythonhosted.org/packages/4c/6d/b93ffa1b49dd5b64f4332b749cbc71a3cfe6862edc9d4cd3eb1fdc825c76/pyviews-4.0.0.tar.gz
+[2023-04-23 14:13:03] INFO root fetch - processPackages [langcorn]: executing diffoscope
+[2023-04-23 14:13:03] INFO root fetch - processPackages [langcorn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langcorn-0.0.5.tar.gz tmp/langcorn-0.0.6.tar.gz --markdown 20230423/l/langcorn/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 14:13:03] INFO root fetch - processPackages [scace]: executing diffoscope
+[2023-04-23 14:13:03] INFO root fetch - processPackages [scace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scace-0.1.0.tar.gz tmp/scace-0.1.1.tar.gz --markdown 20230423/s/scace/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 14:13:03] INFO root fetch - processPackages [aiei]: executing diffoscope
+[2023-04-23 14:13:03] INFO root fetch - processPackages [aiei]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiei-1.0.2.tar.gz tmp/aiei-1.0.3.tar.gz --markdown 20230423/a/aiei/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-23 14:13:03] INFO root fetch - processPackages [pyviews]: executing diffoscope
+[2023-04-23 14:13:03] INFO root fetch - processPackages [pyviews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyviews-3.2.0.tar.gz tmp/pyviews-4.0.0.tar.gz --markdown 20230423/p/pyviews/3.2.0-4.0.0/diff.md --exclude *.pyd
+[2023-04-23 14:13:04] INFO root fetch - main [MainThread]: End processing [tum-esm-em27-metadata]: success
+[2023-04-23 14:13:04] INFO root fetch - main [MainThread]: End processing [langcorn]: success
+[2023-04-23 14:13:04] INFO root fetch - main [MainThread]: End processing [scace]: success
+[2023-04-23 14:13:05] INFO root fetch - main [MainThread]: End processing [aiei]: success
+[2023-04-23 14:13:05] INFO root fetch - main [MainThread]: End processing [pyviews]: success
+[2023-04-23 14:13:05] INFO root fetch - main [MainThread]: Store serial: [17822023]
