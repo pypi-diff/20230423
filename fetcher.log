@@ -11119,3 +11119,58 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 19:25:50] INFO root fetch - main [MainThread]: End processing [bagbag]: success
 [2023-04-23 19:25:50] INFO root fetch - main [MainThread]: End processing [monggregate]: success
 [2023-04-23 19:25:50] INFO root fetch - main [MainThread]: Store serial: [17824224]
+[2023-04-23 19:30:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17824224]
+[2023-04-23 19:30:59] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-23 19:30:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyFileWriter
+[2023-04-23 19:30:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytest-hot-reloading
+[2023-04-23 19:30:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-portfolio-tools
+[2023-04-23 19:30:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: embykeeper
+[2023-04-23 19:30:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: policyengine-canada
+[2023-04-23 19:30:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: musicli
+[2023-04-23 19:30:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: micropython-async-websocket-client
+[2023-04-23 19:30:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: crazy-thursday
+[2023-04-23 19:30:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: drifting
+[2023-04-23 19:30:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: agnmol
+[2023-04-23 19:30:59] INFO root fetch - processPackages [pytest-hot-reloading]: New version: [0.1.0a2] Old Version: [0.1.0a1]
+[2023-04-23 19:30:59] WARNING root fetch - processPackages [PyFileWriter]: Skipping, unable to determine old version
+[2023-04-23 19:30:59] INFO root fetch - main [MainThread]: End processing [PyFileWriter] error
+[2023-04-23 19:30:59] INFO root fetch - processPackages [py-portfolio-tools]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-04-23 19:30:59] INFO root fetch - processPackages [embykeeper]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-04-23 19:30:59] INFO root fetch - processPackages [musicli]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 19:30:59] ERROR root fetch - processPackages [drifting]: Unable to get metadata: No such project 'drifting'
+[2023-04-23 19:30:59] INFO root fetch - processPackages [micropython-async-websocket-client]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-04-23 19:30:59] INFO root fetch - main [MainThread]: End processing [drifting] error
+[2023-04-23 19:30:59] INFO root fetch - processPackages [agnmol]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-23 19:30:59] INFO root fetch - processPackages [policyengine-canada]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-23 19:30:59] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.4.9.1] Old Version: [2023.4.9.0]
+[2023-04-23 19:30:59] INFO root fetch - processPackages [pytest-hot-reloading]: Downloading https://files.pythonhosted.org/packages/7b/8a/ac04e5066628ccb6475163d99ace680f117e147b2d69c5a381d3ec25568c/pytest_hot_reloading-0.1.0a1.tar.gz
+[2023-04-23 19:30:59] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-04-23 19:30:59] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.4.9.0.tar.gz tmp/crazy-thursday-2023.4.9.1.tar.gz --markdown 20230423/c/crazy-thursday/2023.4.9.0-2023.4.9.1/diff.md --exclude *.pyd
+[2023-04-23 19:31:00] INFO root fetch - processPackages [py-portfolio-tools]: Downloading https://files.pythonhosted.org/packages/1c/1f/6def3ea6f11a071a966a939fe4dab55c423391c67e15b88a6e203d2e01a7/py-portfolio-tools-0.0.5.tar.gz
+[2023-04-23 19:31:00] INFO root fetch - processPackages [micropython-async-websocket-client]: Downloading https://files.pythonhosted.org/packages/52/62/43ca96ce4cd99c1be3be7ef29efc94dedf1c986669439add7a0ec5d3b3c1/micropython-async_websocket_client-0.1.9.tar.gz
+[2023-04-23 19:31:00] INFO root fetch - processPackages [agnmol]: Downloading https://files.pythonhosted.org/packages/9c/38/ff605086f695e8e17baeaac0faf07841e666b15076fa5a81055dfc3060be/agnmol-1.0.9.tar.gz
+[2023-04-23 19:31:00] INFO root fetch - processPackages [policyengine-canada]: executing diffoscope
+[2023-04-23 19:31:00] INFO root fetch - processPackages [py-portfolio-tools]: executing diffoscope
+[2023-04-23 19:31:00] INFO root fetch - processPackages [policyengine-canada]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-canada-0.8.0.tar.gz tmp/policyengine-canada-0.9.0.tar.gz --markdown 20230423/p/policyengine-canada/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-23 19:31:00] INFO root fetch - processPackages [py-portfolio-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-portfolio-tools-0.0.3.tar.gz tmp/py-portfolio-tools-0.0.5.tar.gz --markdown 20230423/p/py-portfolio-tools/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 19:31:00] INFO root fetch - processPackages [musicli]: executing diffoscope
+[2023-04-23 19:31:00] INFO root fetch - processPackages [musicli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musicli-0.0.8.tar.gz tmp/musicli-0.0.9.tar.gz --markdown 20230423/m/musicli/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 19:31:00] INFO root fetch - processPackages [embykeeper]: executing diffoscope
+[2023-04-23 19:31:00] INFO root fetch - processPackages [embykeeper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embykeeper-2.0.8.tar.gz tmp/embykeeper-2.0.9.tar.gz --markdown 20230423/e/embykeeper/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-04-23 19:31:00] INFO root fetch - processPackages [agnmol]: executing diffoscope
+[2023-04-23 19:31:00] INFO root fetch - processPackages [agnmol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agnmol-1.0.8.tar.gz tmp/agnmol-1.0.9.tar.gz --markdown 20230423/a/agnmol/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-23 19:31:00] INFO root fetch - processPackages [pytest-hot-reloading]: Downloading https://files.pythonhosted.org/packages/02/fa/2274250f9f8c98550280fac2f52105bda35fd7b9dbb8c498f2c8fdc5ce22/pytest_hot_reloading-0.1.0a2.tar.gz
+[2023-04-23 19:31:00] INFO root fetch - processPackages [micropython-async-websocket-client]: Downloading https://files.pythonhosted.org/packages/18/07/a63ab7bd2a7d6caaf501239a61a71289852dee0697f54a264d75d7bcfa41/micropython-async_websocket_client-0.2.0.tar.gz
+[2023-04-23 19:31:00] INFO root fetch - processPackages [pytest-hot-reloading]: executing diffoscope
+[2023-04-23 19:31:00] INFO root fetch - processPackages [pytest-hot-reloading]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_hot_reloading-0.1.0a1.tar.gz tmp/pytest_hot_reloading-0.1.0a2.tar.gz --markdown 20230423/p/pytest-hot-reloading/0.1.0a1-0.1.0a2/diff.md --exclude *.pyd
+[2023-04-23 19:31:00] INFO root fetch - processPackages [micropython-async-websocket-client]: executing diffoscope
+[2023-04-23 19:31:00] INFO root fetch - processPackages [micropython-async-websocket-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micropython-async_websocket_client-0.1.9.tar.gz tmp/micropython-async_websocket_client-0.2.0.tar.gz --markdown 20230423/m/micropython-async-websocket-client/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-04-23 19:31:01] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-04-23 19:31:01] INFO root fetch - main [MainThread]: End processing [musicli]: success
+[2023-04-23 19:31:01] INFO root fetch - main [MainThread]: End processing [py-portfolio-tools]: success
+[2023-04-23 19:31:01] INFO root fetch - main [MainThread]: End processing [policyengine-canada]: success
+[2023-04-23 19:31:01] INFO root fetch - main [MainThread]: End processing [micropython-async-websocket-client]: success
+[2023-04-23 19:31:01] INFO root fetch - main [MainThread]: End processing [agnmol]: success
+[2023-04-23 19:31:02] INFO root fetch - main [MainThread]: End processing [pytest-hot-reloading]: success
+[2023-04-23 19:31:03] INFO root fetch - main [MainThread]: End processing [embykeeper]: success
+[2023-04-23 19:31:03] INFO root fetch - main [MainThread]: Store serial: [17824258]
