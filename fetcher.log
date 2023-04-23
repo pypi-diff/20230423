@@ -5076,3 +5076,34 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 10:09:02] INFO root fetch - main [MainThread]: End processing [pyglove]: success
 [2023-04-23 10:09:03] INFO root fetch - main [MainThread]: End processing [ez-toolkits]: success
 [2023-04-23 10:09:03] INFO root fetch - main [MainThread]: Store serial: [17820548]
+[2023-04-23 10:14:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820548]
+[2023-04-23 10:14:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-23 10:14:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dss-python-sdk
+[2023-04-23 10:14:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aliyun-python-sdk-imm
+[2023-04-23 10:14:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xjm
+[2023-04-23 10:14:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-poe-chat
+[2023-04-23 10:14:12] INFO root fetch - processPackages [nonebot-poe-chat]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-23 10:14:12] INFO root fetch - processPackages [xjm]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-23 10:14:12] INFO root fetch - processPackages [dss-python-sdk]: New version: [0.10.0] Old Version: [0.0.9]
+[2023-04-23 10:14:12] INFO root fetch - processPackages [aliyun-python-sdk-imm]: New version: [2.1.12] Old Version: [2.1.11]
+[2023-04-23 10:14:12] INFO root fetch - processPackages [nonebot-poe-chat]: Downloading https://files.pythonhosted.org/packages/e2/fd/cf268d39237921c288e8340e25297bddecc5b92dd8db306f2fae72503bef/nonebot_poe_chat-1.0.1.tar.gz
+[2023-04-23 10:14:12] INFO root fetch - processPackages [xjm]: Downloading https://files.pythonhosted.org/packages/c3/57/89acf42d13691f2d0871f9efae2b7decaffd0d9559da9b73e1486cd5562f/xjm-0.0.2.tar.gz
+[2023-04-23 10:14:12] INFO root fetch - processPackages [aliyun-python-sdk-imm]: Downloading https://files.pythonhosted.org/packages/94/e4/310be6d4d4e1ab4d8b7d0422d74dec37583306698bdaa6df9c0fb2ad8a8f/aliyun-python-sdk-imm-2.1.11.tar.gz
+[2023-04-23 10:14:12] INFO root fetch - processPackages [dss-python-sdk]: Downloading https://files.pythonhosted.org/packages/5e/08/49c595b1f85c24f13d311312fa6b4e1d91f900f16901648117990febf314/dss-python-sdk-0.0.9.tar.gz
+[2023-04-23 10:14:12] INFO root fetch - processPackages [nonebot-poe-chat]: Downloading https://files.pythonhosted.org/packages/f7/34/86537a8a191cfc504be8ad32a1b89f65323fcf2a7573dd8754fd4b810d22/nonebot_poe_chat-1.0.2.tar.gz
+[2023-04-23 10:14:12] INFO root fetch - processPackages [dss-python-sdk]: Downloading https://files.pythonhosted.org/packages/bb/ba/7eb014be994fd184ff5f2abe9704cddea3abdf4b0f85bbc920a732fe9365/dss-python-sdk-0.10.0.tar.gz
+[2023-04-23 10:14:12] INFO root fetch - processPackages [aliyun-python-sdk-imm]: Downloading https://files.pythonhosted.org/packages/57/6c/a52c593c94c5735803f3eeb3cef5389a9d21493d57d0caa5cdf46769bfc6/aliyun-python-sdk-imm-2.1.12.tar.gz
+[2023-04-23 10:14:12] INFO root fetch - processPackages [xjm]: Downloading https://files.pythonhosted.org/packages/a4/5d/627b81433fa144d38d8e4adf08a1ac634032ac5710b95eaa4aae525202db/xjm-0.0.3-py3.6.egg
+[2023-04-23 10:14:13] INFO root fetch - processPackages [nonebot-poe-chat]: executing diffoscope
+[2023-04-23 10:14:13] INFO root fetch - processPackages [nonebot-poe-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_poe_chat-1.0.1.tar.gz tmp/nonebot_poe_chat-1.0.2.tar.gz --markdown 20230423/n/nonebot-poe-chat/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-23 10:14:13] INFO root fetch - processPackages [dss-python-sdk]: executing diffoscope
+[2023-04-23 10:14:13] INFO root fetch - processPackages [dss-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dss-python-sdk-0.0.9.tar.gz tmp/dss-python-sdk-0.10.0.tar.gz --markdown 20230423/d/dss-python-sdk/0.0.9-0.10.0/diff.md --exclude *.pyd
+[2023-04-23 10:14:13] INFO root fetch - processPackages [aliyun-python-sdk-imm]: executing diffoscope
+[2023-04-23 10:14:13] INFO root fetch - processPackages [aliyun-python-sdk-imm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-imm-2.1.11.tar.gz tmp/aliyun-python-sdk-imm-2.1.12.tar.gz --markdown 20230423/a/aliyun-python-sdk-imm/2.1.11-2.1.12/diff.md --exclude *.pyd
+[2023-04-23 10:14:13] INFO root fetch - processPackages [xjm]: executing diffoscope
+[2023-04-23 10:14:13] INFO root fetch - processPackages [xjm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xjm-0.0.2.tar.gz tmp/xjm-0.0.3-py3.6.egg --markdown 20230423/x/xjm/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 10:14:14] INFO root fetch - main [MainThread]: End processing [nonebot-poe-chat]: success
+[2023-04-23 10:14:14] INFO root fetch - main [MainThread]: End processing [xjm]: success
+[2023-04-23 10:14:14] INFO root fetch - main [MainThread]: End processing [dss-python-sdk]: success
+[2023-04-23 10:14:14] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-imm]: success
+[2023-04-23 10:14:14] INFO root fetch - main [MainThread]: Store serial: [17820562]
