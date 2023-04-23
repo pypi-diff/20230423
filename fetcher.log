@@ -13613,3 +13613,86 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 22:52:41] INFO root fetch - main [MainThread]: End processing [strictdoc]: success
 [2023-04-23 22:52:45] INFO root fetch - main [MainThread]: End processing [fluids]: success
 [2023-04-23 22:52:45] INFO root fetch - main [MainThread]: Store serial: [17825776]
+[2023-04-23 22:57:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825776]
+[2023-04-23 22:57:54] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-23 22:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dasdsajdjsadsad
+[2023-04-23 22:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-jwt-oidc
+[2023-04-23 22:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-money
+[2023-04-23 22:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bpf4
+[2023-04-23 22:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yt5
+[2023-04-23 22:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rvid.tex-runner
+[2023-04-23 22:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: landsat9-lc
+[2023-04-23 22:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vesper-api
+[2023-04-23 22:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dasdsajdjsaasddsad
+[2023-04-23 22:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: corolab
+[2023-04-23 22:57:54] WARNING root fetch - processPackages [dasdsajdjsadsad]: Skipping, unable to determine old version
+[2023-04-23 22:57:54] INFO root fetch - processPackages [dasdsajdjsadsad]: Start processing: oidc-client
+[2023-04-23 22:57:54] INFO root fetch - processPackages [yt5]: New version: [1.5.3] Old Version: [1.2.1]
+[2023-04-23 22:57:54] INFO root fetch - main [MainThread]: End processing [dasdsajdjsadsad] error
+[2023-04-23 22:57:54] INFO root fetch - processPackages [django-money]: New version: [3.1.0] Old Version: [3.0.0]
+[2023-04-23 22:57:54] INFO root fetch - processPackages [landsat9-lc]: New version: [0.0.31] Old Version: [0.0.3]
+[2023-04-23 22:57:54] INFO root fetch - processPackages [django-jwt-oidc]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-23 22:57:54] WARNING root fetch - processPackages [dasdsajdjsaasddsad]: Skipping, unable to determine old version
+[2023-04-23 22:57:54] INFO root fetch - processPackages [corolab]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 22:57:54] INFO root fetch - processPackages [dasdsajdjsaasddsad]: Start processing: Shreya-Dhumal-finance-charts
+[2023-04-23 22:57:54] INFO root fetch - main [MainThread]: End processing [dasdsajdjsaasddsad] error
+[2023-04-23 22:57:54] INFO root fetch - processPackages [rvid.tex-runner]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-23 22:57:54] INFO root fetch - processPackages [vesper-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 22:57:54] INFO root fetch - processPackages [bpf4]: New version: [1.8.5] Old Version: [1.8.4]
+[2023-04-23 22:57:54] INFO root fetch - processPackages [oidc-client]: New version: [0.2.2] Old Version: [0.2.0]
+[2023-04-23 22:57:54] WARNING root fetch - processPackages [Shreya-Dhumal-finance-charts]: Skipping, unable to determine old version
+[2023-04-23 22:57:54] INFO root fetch - processPackages [Shreya-Dhumal-finance-charts]: Start processing: yt5
+[2023-04-23 22:57:54] INFO root fetch - main [MainThread]: End processing [Shreya-Dhumal-finance-charts] error
+[2023-04-23 22:57:54] INFO root fetch - processPackages [yt5]: New version: [1.5.3] Old Version: [1.2.1]
+[2023-04-23 22:57:54] INFO root fetch - processPackages [django-money]: Downloading https://files.pythonhosted.org/packages/16/e2/5d3db4650562a7fbd74358da2a341879949cfc478e61247044615c8366d5/django-money-3.0.0.tar.gz
+[2023-04-23 22:57:54] INFO root fetch - processPackages [yt5]: Downloading https://files.pythonhosted.org/packages/f3/67/fea82127ba515a5885d90e885afe24a38afd44fbabb5b022c1cf026de1c3/yt5-1.2.1-py3-none-any.whl
+[2023-04-23 22:57:54] INFO root fetch - processPackages [yt5]: Downloading https://files.pythonhosted.org/packages/f3/67/fea82127ba515a5885d90e885afe24a38afd44fbabb5b022c1cf026de1c3/yt5-1.2.1-py3-none-any.whl
+[2023-04-23 22:57:54] INFO root fetch - processPackages [landsat9-lc]: Downloading https://files.pythonhosted.org/packages/60/ed/9146bfdad22a421c7529716147a649ecb90d2070ede626b9b17384525c27/landsat9_lc-0.0.3.tar.gz
+[2023-04-23 22:57:54] INFO root fetch - processPackages [bpf4]: Downloading https://files.pythonhosted.org/packages/e9/a3/1d6c735ea61a53d958f7a975c1fbd3163bb3a058fadf147b6ab66b47a38f/bpf4-1.8.4.tar.gz
+[2023-04-23 22:57:54] INFO root fetch - processPackages [django-jwt-oidc]: Downloading https://files.pythonhosted.org/packages/94/ec/f39381385f3982d29568cab266634188d44aff810b060b9a7322416f850d/django-jwt-oidc-1.0.7.tar.gz
+[2023-04-23 22:57:54] INFO root fetch - processPackages [django-jwt-oidc]: executing diffoscope
+[2023-04-23 22:57:54] INFO root fetch - processPackages [django-jwt-oidc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-jwt-oidc-1.0.6.tar.gz tmp/django-jwt-oidc-1.0.7.tar.gz --markdown 20230423/d/django-jwt-oidc/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-23 22:57:54] INFO root fetch - processPackages [rvid.tex-runner]: Downloading https://files.pythonhosted.org/packages/ac/84/f9880de8bc1e4b3bbeb7cfd3993d4c66976725156cb18d0030d01e88fc7f/rvid.tex_runner-0.2.0-py3-none-any.whl
+[2023-04-23 22:57:54] INFO root fetch - processPackages [vesper-api]: Downloading https://files.pythonhosted.org/packages/94/51/0b719ce3d16eba6bdf3ac2a4cf46a07c34c120adf4031c11122406e81448/vesper_api-0.1.9-cp39-cp39-win_amd64.whl
+[2023-04-23 22:57:54] INFO root fetch - processPackages [oidc-client]: Downloading https://files.pythonhosted.org/packages/26/21/acdc6a7398e98105bbee76629b0f260049088076cf7c676e7a35149673f6/oidc_client-0.2.2.tar.gz
+[2023-04-23 22:57:54] INFO root fetch - processPackages [corolab]: Downloading https://files.pythonhosted.org/packages/36/5e/614c38dcb14857c3ad4038ade04e394786b46c853cedddf31b909ee9de24/corolab-0.1.9-cp39-cp39-win_amd64.whl
+[2023-04-23 22:57:54] INFO root fetch - processPackages [yt5]: Downloading https://files.pythonhosted.org/packages/4e/18/6008aa9434b31df167be0ef41ebb93ce882a4097f8264be532590ce4f3cc/yt5-1.5.3.tar.gz
+[2023-04-23 22:57:54] INFO root fetch - processPackages [yt5]: Downloading https://files.pythonhosted.org/packages/4e/18/6008aa9434b31df167be0ef41ebb93ce882a4097f8264be532590ce4f3cc/yt5-1.5.3.tar.gz
+[2023-04-23 22:57:54] INFO root fetch - processPackages [django-money]: Downloading https://files.pythonhosted.org/packages/70/5e/a059f5dae57d60b6ea157d489ae1de4c2e65f5290e24e1ac5189a82da15c/django-money-3.1.0.tar.gz
+[2023-04-23 22:57:54] INFO root fetch - processPackages [landsat9-lc]: Downloading https://files.pythonhosted.org/packages/42/82/92b3ed0baf261a4c955f13675e204ee9506ae436604de15526118949ceb5/landsat9_lc-0.0.31.tar.gz
+[2023-04-23 22:57:54] INFO root fetch - processPackages [rvid.tex-runner]: executing diffoscope
+[2023-04-23 22:57:54] INFO root fetch - processPackages [rvid.tex-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rvid.tex_runner-0.1.1-py3-none-any.whl.zip tmp/rvid.tex_runner-0.2.0-py3-none-any.whl.zip --markdown 20230423/r/rvid.tex-runner/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-23 22:57:54] INFO root fetch - processPackages [oidc-client]: executing diffoscope
+[2023-04-23 22:57:54] INFO root fetch - processPackages [oidc-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oidc_client-0.2.0.tar.gz tmp/oidc_client-0.2.2.tar.gz --markdown 20230423/o/oidc-client/0.2.0-0.2.2/diff.md --exclude *.pyd
+[2023-04-23 22:57:54] INFO root fetch - processPackages [vesper-api]: executing diffoscope
+[2023-04-23 22:57:54] INFO root fetch - processPackages [vesper-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vesper_api-0.1.8-cp39-cp39-win_amd64.whl.zip tmp/vesper_api-0.1.9-cp39-cp39-win_amd64.whl.zip --markdown 20230423/v/vesper-api/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 22:57:54] INFO root fetch - processPackages [yt5]: executing diffoscope
+[2023-04-23 22:57:54] INFO root fetch - processPackages [yt5]: executing diffoscope
+[2023-04-23 22:57:54] INFO root fetch - processPackages [yt5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt5-1.2.1-py3-none-any.whl.zip tmp/yt5-1.5.3.tar.gz --markdown 20230423/y/yt5/1.2.1-1.5.3/diff.md --exclude *.pyd
+[2023-04-23 22:57:54] INFO root fetch - processPackages [yt5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt5-1.2.1-py3-none-any.whl.zip tmp/yt5-1.5.3.tar.gz --markdown 20230423/y/yt5/1.2.1-1.5.3/diff.md --exclude *.pyd
+[2023-04-23 22:57:54] INFO root fetch - processPackages [bpf4]: Downloading https://files.pythonhosted.org/packages/f8/74/5c857875a0b67560249316703b556332cc8f44edc0bbed83cdb2dc894f6e/bpf4-1.8.5.tar.gz
+[2023-04-23 22:57:54] INFO root fetch - processPackages [django-money]: executing diffoscope
+[2023-04-23 22:57:54] INFO root fetch - processPackages [django-money]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-money-3.0.0.tar.gz tmp/django-money-3.1.0.tar.gz --markdown 20230423/d/django-money/3.0.0-3.1.0/diff.md --exclude *.pyd
+[2023-04-23 22:57:54] INFO root fetch - processPackages [bpf4]: executing diffoscope
+[2023-04-23 22:57:54] INFO root fetch - processPackages [bpf4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bpf4-1.8.4.tar.gz tmp/bpf4-1.8.5.tar.gz --markdown 20230423/b/bpf4/1.8.4-1.8.5/diff.md --exclude *.pyd
+[2023-04-23 22:57:55] INFO root fetch - processPackages [landsat9-lc]: executing diffoscope
+[2023-04-23 22:57:55] INFO root fetch - processPackages [landsat9-lc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/landsat9_lc-0.0.3.tar.gz tmp/landsat9_lc-0.0.31.tar.gz --markdown 20230423/l/landsat9-lc/0.0.3-0.0.31/diff.md --exclude *.pyd
+[2023-04-23 22:57:55] INFO root fetch - processPackages [corolab]: executing diffoscope
+[2023-04-23 22:57:55] INFO root fetch - processPackages [corolab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corolab-0.1.8-cp39-cp39-win_amd64.whl.zip tmp/corolab-0.1.9-cp39-cp39-win_amd64.whl.zip --markdown 20230423/c/corolab/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 22:57:56] INFO root fetch - processPackages [rvid.tex-runner]: Start processing: antibodyomics
+[2023-04-23 22:57:56] INFO root fetch - main [MainThread]: End processing [rvid.tex-runner]: success
+[2023-04-23 22:57:56] INFO root fetch - processPackages [vesper-api]: Start processing: antibodyomics-test
+[2023-04-23 22:57:56] INFO root fetch - main [MainThread]: End processing [vesper-api]: success
+[2023-04-23 22:57:56] WARNING root fetch - processPackages [antibodyomics]: Skipping, unable to determine old version
+[2023-04-23 22:57:56] INFO root fetch - main [MainThread]: End processing [antibodyomics] error
+[2023-04-23 22:57:56] INFO root fetch - main [MainThread]: End processing [yt5]: success
+[2023-04-23 22:57:56] WARNING root fetch - processPackages [antibodyomics-test]: Skipping, unable to determine old version
+[2023-04-23 22:57:56] INFO root fetch - main [MainThread]: End processing [antibodyomics-test] error
+[2023-04-23 22:57:56] INFO root fetch - main [MainThread]: End processing [yt5]: success
+[2023-04-23 22:57:56] INFO root fetch - main [MainThread]: End processing [django-jwt-oidc]: success
+[2023-04-23 22:57:56] INFO root fetch - main [MainThread]: End processing [oidc-client]: success
+[2023-04-23 22:57:56] INFO root fetch - main [MainThread]: End processing [django-money]: success
+[2023-04-23 22:57:58] INFO root fetch - main [MainThread]: End processing [bpf4]: success
+[2023-04-23 22:57:58] INFO root fetch - main [MainThread]: End processing [landsat9-lc]: success
+[2023-04-23 22:57:59] INFO root fetch - main [MainThread]: End processing [corolab]: success
+[2023-04-23 22:57:59] INFO root fetch - main [MainThread]: Store serial: [17825835]
