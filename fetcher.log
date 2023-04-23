@@ -8032,3 +8032,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 14:55:28] INFO root fetch - main [MainThread]: End processing [talos-install]: success
 [2023-04-23 14:55:30] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
 [2023-04-23 14:55:30] INFO root fetch - main [MainThread]: Store serial: [17822343]
+[2023-04-23 15:00:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17822343]
+[2023-04-23 15:00:39] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 15:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mausy5043-common
+[2023-04-23 15:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-project-panel
+[2023-04-23 15:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tkterm
+[2023-04-23 15:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pik-utils
+[2023-04-23 15:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-master
+[2023-04-23 15:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ooo-dev-tools
+[2023-04-23 15:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ShellcodeTester
+[2023-04-23 15:00:39] INFO root fetch - processPackages [pik-utils]: New version: [1.0.2] Old Version: [1.0.0]
+[2023-04-23 15:00:39] INFO root fetch - processPackages [mausy5043-common]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-04-23 15:00:39] WARNING root fetch - processPackages [tkterm]: Skipping, unable to determine old version
+[2023-04-23 15:00:39] INFO root fetch - main [MainThread]: End processing [tkterm] error
+[2023-04-23 15:00:39] INFO root fetch - processPackages [django-project-panel]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 15:00:39] INFO root fetch - processPackages [ooo-dev-tools]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-23 15:00:39] INFO root fetch - processPackages [ShellcodeTester]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-23 15:00:39] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230423.9.45.830382] Old Version: [20230423.9.27.838761]
+[2023-04-23 15:00:39] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/4b/90/c69801a790e19a2e66e9ddd613e62dcd304b6db0e4ab2b290e5eac93d060/certora-cli-alpha-master-20230423.9.27.838761.tar.gz
+[2023-04-23 15:00:39] INFO root fetch - processPackages [ShellcodeTester]: executing diffoscope
+[2023-04-23 15:00:39] INFO root fetch - processPackages [ShellcodeTester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ShellcodeTester-0.2.6.tar.gz tmp/ShellcodeTester-0.2.7.tar.gz --markdown 20230423/S/ShellcodeTester/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-23 15:00:39] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38069556>=10485760
+[2023-04-23 15:00:39] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-04-23 15:00:39] INFO root fetch - processPackages [pik-utils]: Downloading https://files.pythonhosted.org/packages/68/98/19d554a2739386ff2075959f20eeb925d2e17f6174a84df9043df1ded0cd/pik_utils-1.0.0.tar.gz
+[2023-04-23 15:00:39] INFO root fetch - processPackages [ooo-dev-tools]: executing diffoscope
+[2023-04-23 15:00:39] INFO root fetch - processPackages [ooo-dev-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ooo_dev_tools-0.9.3.tar.gz tmp/ooo_dev_tools-0.9.4.tar.gz --markdown 20230423/o/ooo-dev-tools/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-23 15:00:39] INFO root fetch - processPackages [django-project-panel]: Downloading https://files.pythonhosted.org/packages/37/29/4133e6c9c053c4a06b36f8c10bc4c9f6a970a1a0ac501c189775e1a57c8c/django-project-panel-0.0.1.tar.gz
+[2023-04-23 15:00:39] INFO root fetch - processPackages [mausy5043-common]: Downloading https://files.pythonhosted.org/packages/92/37/142d643b7332953f67b159fbb67e0929fcdfa9939a93f1407257d84e747b/mausy5043_common-1.4.2.tar.gz
+[2023-04-23 15:00:40] INFO root fetch - processPackages [pik-utils]: Downloading https://files.pythonhosted.org/packages/49/b3/51cc27ff5f400ab6135577d5e57f3011cfae0fe3ac8819840840b1859641/pik-utils-1.0.2.tar.gz
+[2023-04-23 15:00:40] INFO root fetch - processPackages [mausy5043-common]: executing diffoscope
+[2023-04-23 15:00:40] INFO root fetch - processPackages [mausy5043-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mausy5043_common-1.4.1.tar.gz tmp/mausy5043_common-1.4.2.tar.gz --markdown 20230423/m/mausy5043-common/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-04-23 15:00:40] INFO root fetch - processPackages [django-project-panel]: Downloading https://files.pythonhosted.org/packages/a4/2a/23a0385ea4f631350fcf74676158b0c496b28c2f0d3ffd40af84fc41098d/django-project-panel-0.0.2.tar.gz
+[2023-04-23 15:00:40] INFO root fetch - processPackages [pik-utils]: executing diffoscope
+[2023-04-23 15:00:40] INFO root fetch - processPackages [pik-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pik_utils-1.0.0.tar.gz tmp/pik-utils-1.0.2.tar.gz --markdown 20230423/p/pik-utils/1.0.0-1.0.2/diff.md --exclude *.pyd
+[2023-04-23 15:00:40] INFO root fetch - processPackages [django-project-panel]: executing diffoscope
+[2023-04-23 15:00:40] INFO root fetch - processPackages [django-project-panel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-project-panel-0.0.1.tar.gz tmp/django-project-panel-0.0.2.tar.gz --markdown 20230423/d/django-project-panel/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 15:00:41] INFO root fetch - main [MainThread]: End processing [mausy5043-common]: success
+[2023-04-23 15:00:41] INFO root fetch - main [MainThread]: End processing [pik-utils]: success
+[2023-04-23 15:00:41] INFO root fetch - main [MainThread]: End processing [django-project-panel]: success
+[2023-04-23 15:00:41] INFO root fetch - main [MainThread]: End processing [ShellcodeTester]: success
+[2023-04-23 15:00:49] INFO root fetch - main [MainThread]: End processing [ooo-dev-tools]: success
+[2023-04-23 15:00:49] INFO root fetch - main [MainThread]: Store serial: [17822369]
