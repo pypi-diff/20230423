@@ -7228,3 +7228,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 13:38:54] INFO root fetch - main [MainThread]: End processing [xia-api]: success
 [2023-04-23 13:38:57] INFO root fetch - main [MainThread]: End processing [paper-uploads]: success
 [2023-04-23 13:38:57] INFO root fetch - main [MainThread]: Store serial: [17821791]
+[2023-04-23 13:44:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17821791]
+[2023-04-23 13:44:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-23 13:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: carefree-drawboard
+[2023-04-23 13:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nuxt
+[2023-04-23 13:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jax-moseq
+[2023-04-23 13:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openlimit
+[2023-04-23 13:44:06] INFO root fetch - processPackages [jax-moseq]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 13:44:06] INFO root fetch - processPackages [openlimit]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-23 13:44:06] INFO root fetch - processPackages [nuxt]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-23 13:44:06] INFO root fetch - processPackages [carefree-drawboard]: New version: [0.0.0a6] Old Version: [0.0.0a4]
+[2023-04-23 13:44:06] INFO root fetch - processPackages [openlimit]: Downloading https://files.pythonhosted.org/packages/43/24/db387e86011b89c94e9b46ccab1549f9ded4d37e1c14e258e36dadbf3b5b/openlimit-0.2.1.tar.gz
+[2023-04-23 13:44:06] INFO root fetch - processPackages [jax-moseq]: Downloading https://files.pythonhosted.org/packages/e6/f4/9d660f96d4aa4186d883490ff30d91b91de6973d3c2291b6667bd104ba9c/jax-moseq-0.0.1.tar.gz
+[2023-04-23 13:44:06] INFO root fetch - processPackages [nuxt]: Downloading https://files.pythonhosted.org/packages/2a/45/5c7a0320adec2d559313bf1265c35c1c96e51ff862efdcd3e793d3a01911/nuxt-0.2.0.tar.gz
+[2023-04-23 13:44:06] INFO root fetch - processPackages [carefree-drawboard]: Downloading https://files.pythonhosted.org/packages/79/27/dd8015df2efed4f9437f7bbe6a867fc4fcc9f6a6a2ed019085736db6f2e1/carefree-drawboard-0.0.0a6.tar.gz
+[2023-04-23 13:44:06] INFO root fetch - processPackages [jax-moseq]: Downloading https://files.pythonhosted.org/packages/5c/93/0d5960d891f2aa8a9e6836b2d4b245232f1dd4d87f6c81a6729e67e88696/jax-moseq-0.0.2.tar.gz
+[2023-04-23 13:44:06] INFO root fetch - processPackages [openlimit]: Downloading https://files.pythonhosted.org/packages/d6/d8/251980f83c1f83204f7a961699fef7a8a8e1ffc70ec261ad94164ca3cf13/openlimit-0.2.2.tar.gz
+[2023-04-23 13:44:06] INFO root fetch - processPackages [carefree-drawboard]: executing diffoscope
+[2023-04-23 13:44:06] INFO root fetch - processPackages [carefree-drawboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carefree-drawboard-0.0.0a4.tar.gz tmp/carefree-drawboard-0.0.0a6.tar.gz --markdown 20230423/c/carefree-drawboard/0.0.0a4-0.0.0a6/diff.md --exclude *.pyd
+[2023-04-23 13:44:06] INFO root fetch - processPackages [nuxt]: Downloading https://files.pythonhosted.org/packages/b1/bf/7599ec6e689ce5195a0960d0b90472158f1d6908766edd7e8d8d0bdc3a45/nuxt-0.2.1.tar.gz
+[2023-04-23 13:44:07] INFO root fetch - processPackages [jax-moseq]: executing diffoscope
+[2023-04-23 13:44:07] INFO root fetch - processPackages [jax-moseq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jax-moseq-0.0.1.tar.gz tmp/jax-moseq-0.0.2.tar.gz --markdown 20230423/j/jax-moseq/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 13:44:07] INFO root fetch - processPackages [nuxt]: executing diffoscope
+[2023-04-23 13:44:07] INFO root fetch - processPackages [nuxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nuxt-0.2.0.tar.gz tmp/nuxt-0.2.1.tar.gz --markdown 20230423/n/nuxt/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-23 13:44:07] INFO root fetch - processPackages [openlimit]: executing diffoscope
+[2023-04-23 13:44:07] INFO root fetch - processPackages [openlimit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openlimit-0.2.1.tar.gz tmp/openlimit-0.2.2.tar.gz --markdown 20230423/o/openlimit/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-23 13:44:08] INFO root fetch - main [MainThread]: End processing [nuxt]: success
+[2023-04-23 13:44:08] INFO root fetch - main [MainThread]: End processing [jax-moseq]: success
+[2023-04-23 13:44:08] INFO root fetch - main [MainThread]: End processing [openlimit]: success
+[2023-04-23 13:44:08] INFO root fetch - main [MainThread]: End processing [carefree-drawboard]: success
+[2023-04-23 13:44:08] INFO root fetch - main [MainThread]: Store serial: [17821809]
