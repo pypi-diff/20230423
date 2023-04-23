@@ -8166,3 +8166,66 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 15:12:54] INFO root fetch - main [MainThread]: End processing [semantra]: success
 [2023-04-23 15:12:54] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
 [2023-04-23 15:12:54] INFO root fetch - main [MainThread]: Store serial: [17822426]
+[2023-04-23 15:17:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17822426]
+[2023-04-23 15:18:03] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-23 15:18:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hallon
+[2023-04-23 15:18:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autoscale-queue-rq
+[2023-04-23 15:18:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: HackerGprat
+[2023-04-23 15:18:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev-scipy
+[2023-04-23 15:18:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: areixio
+[2023-04-23 15:18:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wagtailmedia
+[2023-04-23 15:18:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: devchat
+[2023-04-23 15:18:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nbdev-sphinx
+[2023-04-23 15:18:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pypdf
+[2023-04-23 15:18:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: twarc2sql
+[2023-04-23 15:18:03] INFO root fetch - processPackages [HackerGprat]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-04-23 15:18:03] INFO root fetch - processPackages [wagtailmedia]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-23 15:18:03] WARNING root fetch - processPackages [autoscale-queue-rq]: Skipping, unable to determine old version
+[2023-04-23 15:18:03] INFO root fetch - processPackages [autoscale-queue-rq]: Start processing: nbdev-django
+[2023-04-23 15:18:03] INFO root fetch - main [MainThread]: End processing [autoscale-queue-rq] error
+[2023-04-23 15:18:03] INFO root fetch - processPackages [hallon]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 15:18:03] WARNING root fetch - processPackages [twarc2sql]: Skipping, unable to determine old version
+[2023-04-23 15:18:03] INFO root fetch - processPackages [devchat]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 15:18:03] INFO root fetch - main [MainThread]: End processing [twarc2sql] error
+[2023-04-23 15:18:03] INFO root fetch - processPackages [areixio]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-23 15:18:03] INFO root fetch - processPackages [pypdf]: New version: [3.8.1] Old Version: [3.8.0]
+[2023-04-23 15:18:03] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 15:18:03] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 15:18:03] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 15:18:03] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-04-23 15:18:03] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230423/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 15:18:03] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-04-23 15:18:03] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230423/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 15:18:03] INFO root fetch - processPackages [hallon]: Downloading https://files.pythonhosted.org/packages/a0/67/7653645ce238641669218835fc731dd00321eb794b17cb9de4b0a0eb0873/hallon-0.0.1.tar.gz
+[2023-04-23 15:18:03] INFO root fetch - processPackages [HackerGprat]: Downloading https://files.pythonhosted.org/packages/52/be/4e640571e12d70f1f8862ea1bd673bfa62e104d9a6a64d6fa155a030f5ed/HackerGprat-0.3.4.tar.gz
+[2023-04-23 15:18:03] INFO root fetch - processPackages [wagtailmedia]: Downloading https://files.pythonhosted.org/packages/01/e5/1d9d02582f9f8b3d872bc29450669190cdc843b17645a8ff6170a3e55d45/wagtailmedia-0.8.0.tar.gz
+[2023-04-23 15:18:03] INFO root fetch - processPackages [devchat]: Downloading https://files.pythonhosted.org/packages/19/45/3a3dc6dc7f43fdc3cf91badb1387d6faad3ce323df1cfab12b416713145a/devchat-0.1.0.tar.gz
+[2023-04-23 15:18:03] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-04-23 15:18:03] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230423/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 15:18:03] INFO root fetch - processPackages [pypdf]: Downloading https://files.pythonhosted.org/packages/ca/e9/d31f82a026d06deeddd0055094258bec9dc1deba2ad475de40fb53476c19/pypdf-3.8.1.tar.gz
+[2023-04-23 15:18:03] INFO root fetch - processPackages [areixio]: executing diffoscope
+[2023-04-23 15:18:03] INFO root fetch - processPackages [areixio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/areixio-0.2.8.tar.gz tmp/areixio-0.2.9.tar.gz --markdown 20230423/a/areixio/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-23 15:18:03] INFO root fetch - processPackages [devchat]: Downloading https://files.pythonhosted.org/packages/84/7e/183d9cfba6b65d46d5a3bda4b7bd65730c085eeaa541aae07a8f51c4f0b2/devchat-0.1.1.tar.gz
+[2023-04-23 15:18:04] INFO root fetch - processPackages [hallon]: Downloading https://files.pythonhosted.org/packages/9b/09/f81625e0356bc4d27668446fa2f9885dae4048868ea5780d92ef0e70835f/hallon-0.0.2.tar.gz
+[2023-04-23 15:18:04] INFO root fetch - processPackages [HackerGprat]: Downloading https://files.pythonhosted.org/packages/e8/25/862991b0f0f4c737946a2a0a322ee8e9602d0feb937f8dde4148cb58ee9f/HackerGprat-0.3.5.tar.gz
+[2023-04-23 15:18:04] INFO root fetch - processPackages [pypdf]: executing diffoscope
+[2023-04-23 15:18:04] INFO root fetch - processPackages [pypdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypdf-3.8.0.tar.gz tmp/pypdf-3.8.1.tar.gz --markdown 20230423/p/pypdf/3.8.0-3.8.1/diff.md --exclude *.pyd
+[2023-04-23 15:18:04] INFO root fetch - processPackages [devchat]: executing diffoscope
+[2023-04-23 15:18:04] INFO root fetch - processPackages [devchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devchat-0.1.0.tar.gz tmp/devchat-0.1.1.tar.gz --markdown 20230423/d/devchat/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 15:18:04] INFO root fetch - processPackages [wagtailmedia]: Downloading https://files.pythonhosted.org/packages/35/ff/5faed71a4528a523443609a241943aca2dbc0e5046b1584f06816829301e/wagtailmedia-0.9.0.tar.gz
+[2023-04-23 15:18:04] INFO root fetch - processPackages [hallon]: executing diffoscope
+[2023-04-23 15:18:04] INFO root fetch - processPackages [hallon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hallon-0.0.1.tar.gz tmp/hallon-0.0.2.tar.gz --markdown 20230423/h/hallon/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 15:18:04] INFO root fetch - processPackages [HackerGprat]: executing diffoscope
+[2023-04-23 15:18:04] INFO root fetch - processPackages [HackerGprat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HackerGprat-0.3.4.tar.gz tmp/HackerGprat-0.3.5.tar.gz --markdown 20230423/H/HackerGprat/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-04-23 15:18:04] INFO root fetch - processPackages [wagtailmedia]: executing diffoscope
+[2023-04-23 15:18:04] INFO root fetch - processPackages [wagtailmedia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtailmedia-0.8.0.tar.gz tmp/wagtailmedia-0.9.0.tar.gz --markdown 20230423/w/wagtailmedia/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-23 15:18:05] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-04-23 15:18:05] INFO root fetch - main [MainThread]: End processing [devchat]: success
+[2023-04-23 15:18:05] INFO root fetch - main [MainThread]: End processing [HackerGprat]: success
+[2023-04-23 15:18:05] INFO root fetch - main [MainThread]: End processing [pypdf]: success
+[2023-04-23 15:18:05] INFO root fetch - main [MainThread]: End processing [hallon]: success
+[2023-04-23 15:18:05] INFO root fetch - main [MainThread]: End processing [wagtailmedia]: success
+[2023-04-23 15:18:06] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-04-23 15:18:06] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-04-23 15:18:16] INFO root fetch - main [MainThread]: End processing [areixio]: success
+[2023-04-23 15:18:16] INFO root fetch - main [MainThread]: Store serial: [17822462]
