@@ -13104,3 +13104,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 21:59:21] WARNING root fetch - processPackages [drifting]: Skipping, unable to determine old version
 [2023-04-23 21:59:21] INFO root fetch - main [MainThread]: End processing [drifting] error
 [2023-04-23 21:59:21] INFO root fetch - main [MainThread]: Store serial: [17825406]
+[2023-04-23 22:04:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825406]
+[2023-04-23 22:04:30] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 22:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prosemble
+[2023-04-23 22:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coscontents
+[2023-04-23 22:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: workflow-templater
+[2023-04-23 22:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wiver
+[2023-04-23 22:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autobricks
+[2023-04-23 22:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cs-nds
+[2023-04-23 22:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: twitter-graphql
+[2023-04-23 22:04:30] INFO root fetch - processPackages [autobricks]: New version: [0.2.0] Old Version: [0.1.5.dev3]
+[2023-04-23 22:04:30] WARNING root fetch - processPackages [twitter-graphql]: Skipping, unable to determine old version
+[2023-04-23 22:04:30] INFO root fetch - main [MainThread]: End processing [twitter-graphql] error
+[2023-04-23 22:04:30] INFO root fetch - processPackages [wiver]: New version: [1.9.0] Old Version: [1.8.2]
+[2023-04-23 22:04:30] INFO root fetch - processPackages [coscontents]: New version: [2023.1005] Old Version: [2023.1004]
+[2023-04-23 22:04:30] INFO root fetch - processPackages [cs-nds]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-23 22:04:30] INFO root fetch - processPackages [prosemble]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-23 22:04:30] INFO root fetch - processPackages [workflow-templater]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-23 22:04:30] INFO root fetch - processPackages [wiver]: Downloading https://files.pythonhosted.org/packages/7f/5d/96debc2810456b5059e84d88931418f511567668226b2d8c020b3cd61a4d/wiver-1.8.2.tar.gz
+[2023-04-23 22:04:30] INFO root fetch - processPackages [coscontents]: Downloading https://files.pythonhosted.org/packages/64/90/ec188d531cbfa258d246a85d69ebcb7d1a04768758f4379c145539fabdc5/coscontents-2023.1004.tar.gz
+[2023-04-23 22:04:30] INFO root fetch - processPackages [prosemble]: Downloading https://files.pythonhosted.org/packages/aa/1b/0794d0a28a9e488bbacbf43554dcbe583b2463d3eb922c71bbbd004feb8a/prosemble-0.4.0.tar.gz
+[2023-04-23 22:04:30] INFO root fetch - processPackages [autobricks]: Downloading https://files.pythonhosted.org/packages/a4/71/94fdb07c80e03504d9861cafae7593bbb9f3f3ad204126c4984c7668d1e1/autobricks-0.1.5.dev3.tar.gz
+[2023-04-23 22:04:30] INFO root fetch - processPackages [cs-nds]: Downloading https://files.pythonhosted.org/packages/87/42/f36462c9151b04ed0c2d5d53d16667b6a00e1ed450223de2ecdfc212a58d/cs-nds-0.3.1.tar.gz
+[2023-04-23 22:04:30] INFO root fetch - processPackages [workflow-templater]: executing diffoscope
+[2023-04-23 22:04:30] INFO root fetch - processPackages [workflow-templater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/workflow_templater-0.2.8.tar.gz tmp/workflow_templater-0.2.9.tar.gz --markdown 20230423/w/workflow-templater/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-23 22:04:30] INFO root fetch - processPackages [cs-nds]: executing diffoscope
+[2023-04-23 22:04:30] INFO root fetch - processPackages [cs-nds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs-nds-0.3.0.tar.gz tmp/cs-nds-0.3.1.tar.gz --markdown 20230423/c/cs-nds/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-23 22:04:30] INFO root fetch - processPackages [autobricks]: Downloading https://files.pythonhosted.org/packages/1f/22/0667eb2950b66fe0d0f1211daf0c0914110e3117e8cee0259862b68f4dfe/autobricks-0.2.0.tar.gz
+[2023-04-23 22:04:30] INFO root fetch - processPackages [wiver]: Downloading https://files.pythonhosted.org/packages/14/1d/b9e901d263f3e78babc66ac4c173e9a50833c6d900c611df83bb3934f64f/wiver-1.9.0.tar.gz
+[2023-04-23 22:04:30] INFO root fetch - processPackages [coscontents]: Downloading https://files.pythonhosted.org/packages/bd/f5/6b7561d4cd16416e77357a498ddf2e26de0af20546603283e29eedbfec84/coscontents-2023.1005.tar.gz
+[2023-04-23 22:04:30] INFO root fetch - processPackages [prosemble]: Downloading https://files.pythonhosted.org/packages/9a/a3/65d2c8b12e75c77c141046cd0c9f429edc7f803a7f1aa933f74b8c7f675d/prosemble-0.5.0.tar.gz
+[2023-04-23 22:04:31] INFO root fetch - processPackages [coscontents]: executing diffoscope
+[2023-04-23 22:04:31] INFO root fetch - processPackages [prosemble]: executing diffoscope
+[2023-04-23 22:04:31] INFO root fetch - processPackages [coscontents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coscontents-2023.1004.tar.gz tmp/coscontents-2023.1005.tar.gz --markdown 20230423/c/coscontents/2023.1004-2023.1005/diff.md --exclude *.pyd
+[2023-04-23 22:04:31] INFO root fetch - processPackages [prosemble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prosemble-0.4.0.tar.gz tmp/prosemble-0.5.0.tar.gz --markdown 20230423/p/prosemble/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-23 22:04:31] INFO root fetch - processPackages [wiver]: executing diffoscope
+[2023-04-23 22:04:31] INFO root fetch - processPackages [wiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wiver-1.8.2.tar.gz tmp/wiver-1.9.0.tar.gz --markdown 20230423/w/wiver/1.8.2-1.9.0/diff.md --exclude *.pyd
+[2023-04-23 22:04:31] INFO root fetch - processPackages [autobricks]: executing diffoscope
+[2023-04-23 22:04:31] INFO root fetch - processPackages [autobricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autobricks-0.1.5.dev3.tar.gz tmp/autobricks-0.2.0.tar.gz --markdown 20230423/a/autobricks/0.1.5.dev3-0.2.0/diff.md --exclude *.pyd
+[2023-04-23 22:04:31] INFO root fetch - main [MainThread]: End processing [cs-nds]: success
+[2023-04-23 22:04:31] INFO root fetch - main [MainThread]: End processing [workflow-templater]: success
+[2023-04-23 22:04:32] INFO root fetch - main [MainThread]: End processing [coscontents]: success
+[2023-04-23 22:04:32] INFO root fetch - main [MainThread]: End processing [autobricks]: success
+[2023-04-23 22:04:32] INFO root fetch - main [MainThread]: End processing [wiver]: success
+[2023-04-23 22:04:33] INFO root fetch - main [MainThread]: End processing [prosemble]: success
+[2023-04-23 22:04:33] INFO root fetch - main [MainThread]: Store serial: [17825429]
