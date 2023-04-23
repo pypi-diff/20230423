@@ -4452,3 +4452,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 09:04:14] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2023-04-23 09:04:36] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-04-23 09:04:36] INFO root fetch - main [MainThread]: Store serial: [17820174]
+[2023-04-23 09:09:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820174]
+[2023-04-23 09:09:45] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 09:09:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dbxconfig
+[2023-04-23 09:09:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yolink-api
+[2023-04-23 09:09:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zq-config
+[2023-04-23 09:09:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Aciembler
+[2023-04-23 09:09:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ccgzl
+[2023-04-23 09:09:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nonebot-plugin-autoreply
+[2023-04-23 09:09:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: MetaMatching
+[2023-04-23 09:09:45] INFO root fetch - processPackages [dbxconfig]: New version: [2.2.0] Old Version: [2.1.1]
+[2023-04-23 09:09:45] WARNING root fetch - processPackages [zq-config]: Skipping, unable to determine old version
+[2023-04-23 09:09:45] INFO root fetch - main [MainThread]: End processing [zq-config] error
+[2023-04-23 09:09:45] INFO root fetch - processPackages [yolink-api]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-23 09:09:45] WARNING root fetch - processPackages [ccgzl]: Skipping, unable to determine old version
+[2023-04-23 09:09:45] INFO root fetch - main [MainThread]: End processing [ccgzl] error
+[2023-04-23 09:09:45] INFO root fetch - processPackages [MetaMatching]: New version: [1.0.1] Old Version: [0.2.3]
+[2023-04-23 09:09:45] INFO root fetch - processPackages [Aciembler]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-23 09:09:45] INFO root fetch - processPackages [nonebot-plugin-autoreply]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-23 09:09:45] INFO root fetch - processPackages [MetaMatching]: Downloading https://files.pythonhosted.org/packages/75/38/8b2a735920030fcd26adf363a9039298052e6e312a9916991d479fedc7bc/MetaMatching-0.2.3.tar.gz
+[2023-04-23 09:09:45] INFO root fetch - processPackages [yolink-api]: Downloading https://files.pythonhosted.org/packages/de/2c/81245494022a4ad1b96950e7d88c34d26a74e57e9f02fd27b25da78070b6/yolink-api-0.2.8.tar.gz
+[2023-04-23 09:09:45] INFO root fetch - processPackages [Aciembler]: Downloading https://files.pythonhosted.org/packages/50/ad/399b9507da940e63a3baff95cf45b8e96dfb0ae51c6c1fbc5b42f902b9a6/Aciembler-1.0.2-py2.py3-none-any.whl
+[2023-04-23 09:09:45] INFO root fetch - processPackages [dbxconfig]: Downloading https://files.pythonhosted.org/packages/86/69/00308fce635e2da25396752dcdeb474d7dab82745c5c395ea519dfd69358/dbxconfig-2.2.0.tar.gz
+[2023-04-23 09:09:45] INFO root fetch - processPackages [nonebot-plugin-autoreply]: Downloading https://files.pythonhosted.org/packages/5f/8c/18842184e4fcf6ad92d13d72717f0cd0f9775f796c4a90a0705f089b792b/nonebot_plugin_autoreply-0.2.5.tar.gz
+[2023-04-23 09:09:46] INFO root fetch - processPackages [Aciembler]: executing diffoscope
+[2023-04-23 09:09:46] INFO root fetch - processPackages [Aciembler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Aciembler-1.0.1-py2.py3-none-any.whl.zip tmp/Aciembler-1.0.2-py2.py3-none-any.whl.zip --markdown 20230423/A/Aciembler/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-23 09:09:46] INFO root fetch - processPackages [MetaMatching]: Downloading https://files.pythonhosted.org/packages/5e/1a/260466ab32d1554697df1e54ec2704244ac62e8f00854c1a55ab0600b4b3/MetaMatching-1.0.1.tar.gz
+[2023-04-23 09:09:46] INFO root fetch - processPackages [yolink-api]: Downloading https://files.pythonhosted.org/packages/8c/47/d2aa60bfbb0514d5bfbf81a8dccfd2aee2b731b5d261787097fc909f3106/yolink-api-0.2.9.tar.gz
+[2023-04-23 09:09:46] INFO root fetch - processPackages [dbxconfig]: executing diffoscope
+[2023-04-23 09:09:46] INFO root fetch - processPackages [dbxconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbxconfig-2.1.1.tar.gz tmp/dbxconfig-2.2.0.tar.gz --markdown 20230423/d/dbxconfig/2.1.1-2.2.0/diff.md --exclude *.pyd
+[2023-04-23 09:09:46] INFO root fetch - processPackages [nonebot-plugin-autoreply]: executing diffoscope
+[2023-04-23 09:09:46] INFO root fetch - processPackages [nonebot-plugin-autoreply]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_autoreply-0.2.4.tar.gz tmp/nonebot_plugin_autoreply-0.2.5.tar.gz --markdown 20230423/n/nonebot-plugin-autoreply/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-23 09:09:46] INFO root fetch - processPackages [MetaMatching]: executing diffoscope
+[2023-04-23 09:09:46] INFO root fetch - processPackages [MetaMatching]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MetaMatching-0.2.3.tar.gz tmp/MetaMatching-1.0.1.tar.gz --markdown 20230423/M/MetaMatching/0.2.3-1.0.1/diff.md --exclude *.pyd
+[2023-04-23 09:09:46] INFO root fetch - processPackages [yolink-api]: executing diffoscope
+[2023-04-23 09:09:46] INFO root fetch - processPackages [yolink-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yolink-api-0.2.8.tar.gz tmp/yolink-api-0.2.9.tar.gz --markdown 20230423/y/yolink-api/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-23 09:09:47] INFO root fetch - main [MainThread]: End processing [Aciembler]: success
+[2023-04-23 09:09:47] INFO root fetch - main [MainThread]: End processing [dbxconfig]: success
+[2023-04-23 09:09:47] INFO root fetch - main [MainThread]: End processing [MetaMatching]: success
+[2023-04-23 09:09:47] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-autoreply]: success
+[2023-04-23 09:10:03] INFO root fetch - main [MainThread]: End processing [yolink-api]: success
+[2023-04-23 09:10:03] INFO root fetch - main [MainThread]: Store serial: [17820202]
