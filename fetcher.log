@@ -2435,3 +2435,19 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 04:39:19] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2023-04-23 04:39:19] INFO root fetch - main [MainThread]: End processing [pygptj]: success
 [2023-04-23 04:39:19] INFO root fetch - main [MainThread]: Store serial: [17819063]
+[2023-04-23 04:44:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819063]
+[2023-04-23 04:44:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-23 04:44:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hpc-utils
+[2023-04-23 04:44:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: forust
+[2023-04-23 04:44:28] INFO root fetch - processPackages [hpc-utils]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 04:44:28] INFO root fetch - processPackages [forust]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-23 04:44:28] INFO root fetch - processPackages [hpc-utils]: Downloading https://files.pythonhosted.org/packages/bd/c8/d55b86fca181088e9b5ecb717f97d2caf4660ec53b5c47ee5c903ae54cd8/hpc-utils-0.1.0.tar.gz
+[2023-04-23 04:44:28] INFO root fetch - processPackages [forust]: Downloading https://files.pythonhosted.org/packages/ad/f4/f3411cbe62ca784e079cab061e2d4f0308923dd70fe649ff20800b3c82cf/forust-0.2.1.tar.gz
+[2023-04-23 04:44:28] INFO root fetch - processPackages [hpc-utils]: Downloading https://files.pythonhosted.org/packages/94/24/e8b4b20ce6034a4b4264efcbe672b7003f2cfaaaeffecd016b5475dfccda/hpc-utils-0.1.1.tar.gz
+[2023-04-23 04:44:28] INFO root fetch - processPackages [hpc-utils]: executing diffoscope
+[2023-04-23 04:44:28] INFO root fetch - processPackages [hpc-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hpc-utils-0.1.0.tar.gz tmp/hpc-utils-0.1.1.tar.gz --markdown 20230423/h/hpc-utils/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 04:44:28] INFO root fetch - processPackages [forust]: executing diffoscope
+[2023-04-23 04:44:28] INFO root fetch - processPackages [forust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/forust-0.2.0.tar.gz tmp/forust-0.2.1.tar.gz --markdown 20230423/f/forust/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-23 04:44:29] INFO root fetch - main [MainThread]: End processing [hpc-utils]: success
+[2023-04-23 04:44:30] INFO root fetch - main [MainThread]: End processing [forust]: success
+[2023-04-23 04:44:30] INFO root fetch - main [MainThread]: Store serial: [17819089]
