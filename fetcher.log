@@ -3029,3 +3029,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 06:25:04] INFO root fetch - main [MainThread]: End processing [shioajicaller]: success
 [2023-04-23 06:25:04] INFO root fetch - main [MainThread]: End processing [vnpy-rpcservice]: success
 [2023-04-23 06:25:04] INFO root fetch - main [MainThread]: Store serial: [17819398]
+[2023-04-23 06:30:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819398]
+[2023-04-23 06:30:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 06:30:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gama-config
+[2023-04-23 06:30:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alchemiscale
+[2023-04-23 06:30:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gama-cli
+[2023-04-23 06:30:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: semantra
+[2023-04-23 06:30:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vnpy-tap
+[2023-04-23 06:30:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pwproxy
+[2023-04-23 06:30:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: semantra
+[2023-04-23 06:30:12] INFO root fetch - processPackages [gama-cli]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-23 06:30:12] INFO root fetch - processPackages [pwproxy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 06:30:12] INFO root fetch - processPackages [alchemiscale]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-23 06:30:12] INFO root fetch - processPackages [gama-config]: New version: [1.9.0] Old Version: [1.12.0]
+[2023-04-23 06:30:12] INFO root fetch - processPackages [vnpy-tap]: New version: [9.3.8] Old Version: [9.0.2]
+[2023-04-23 06:30:12] INFO root fetch - processPackages [semantra]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-23 06:30:12] INFO root fetch - processPackages [semantra]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-23 06:30:12] INFO root fetch - processPackages [pwproxy]: executing diffoscope
+[2023-04-23 06:30:12] INFO root fetch - processPackages [pwproxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pwproxy-0.0.8.tar.gz tmp/pwproxy-0.0.9.tar.gz --markdown 20230423/p/pwproxy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 06:30:12] INFO root fetch - processPackages [gama-config]: Downloading https://files.pythonhosted.org/packages/9c/a4/edf633e6a3d2559dbb77f7831091c369cc50d2399d299b585949319bb83b/gama_config-1.12.0.tar.gz
+[2023-04-23 06:30:12] INFO root fetch - processPackages [semantra]: Downloading https://files.pythonhosted.org/packages/d7/fd/bd3706b03db51ade3dffe808d1cc5fa386ab55dcc025159ba4b82cb31dcb/semantra-0.0.4.tar.gz
+[2023-04-23 06:30:13] INFO root fetch - processPackages [semantra]: Downloading https://files.pythonhosted.org/packages/d7/fd/bd3706b03db51ade3dffe808d1cc5fa386ab55dcc025159ba4b82cb31dcb/semantra-0.0.4.tar.gz
+[2023-04-23 06:30:13] INFO root fetch - processPackages [vnpy-tap]: Downloading https://files.pythonhosted.org/packages/38/95/a2c8d2ceb3d97a3c5ae1a511e573336b026f6beea01a4b14bd0a7edc29dd/vnpy_tap-9.0.2.tar.gz
+[2023-04-23 06:30:13] INFO root fetch - processPackages [alchemiscale]: Downloading https://files.pythonhosted.org/packages/f5/c1/9b1671f9c19b9a000c867f06aac14a805f84f3af3ac89de60e9fecad0e44/alchemiscale-0.1.1.tar.gz
+[2023-04-23 06:30:13] INFO root fetch - processPackages [semantra]: executing diffoscope
+[2023-04-23 06:30:13] INFO root fetch - processPackages [semantra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantra-0.0.3.tar.gz tmp/semantra-0.0.4.tar.gz --markdown 20230423/s/semantra/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-23 06:30:13] INFO root fetch - processPackages [semantra]: executing diffoscope
+[2023-04-23 06:30:13] INFO root fetch - processPackages [semantra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantra-0.0.3.tar.gz tmp/semantra-0.0.4.tar.gz --markdown 20230423/s/semantra/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-23 06:30:13] INFO root fetch - processPackages [gama-cli]: executing diffoscope
+[2023-04-23 06:30:13] INFO root fetch - processPackages [gama-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gama_cli-1.8.0.tar.gz tmp/gama_cli-1.9.0.tar.gz --markdown 20230423/g/gama-cli/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-23 06:30:13] INFO root fetch - processPackages [gama-config]: executing diffoscope
+[2023-04-23 06:30:13] INFO root fetch - processPackages [gama-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gama_config-1.12.0.tar.gz tmp/gama_config-1.9.0.tar.gz --markdown 20230423/g/gama-config/1.12.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-23 06:30:13] INFO root fetch - processPackages [alchemiscale]: Downloading https://files.pythonhosted.org/packages/3d/2f/ff8546e26d3b25dfdfe8f323c28cb1f4cd1f39b6bc88819dc9c9b5ce66c6/alchemiscale-0.1.2.tar.gz
+[2023-04-23 06:30:13] INFO root fetch - processPackages [vnpy-tap]: Downloading https://files.pythonhosted.org/packages/6e/8b/b3cb9ea702485c58dae9cb362cf024150f2dcf015200c83ddd28958498c5/vnpy_tap-9.3.8.tar.gz
+[2023-04-23 06:30:13] INFO root fetch - processPackages [alchemiscale]: executing diffoscope
+[2023-04-23 06:30:13] INFO root fetch - processPackages [alchemiscale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alchemiscale-0.1.1.tar.gz tmp/alchemiscale-0.1.2.tar.gz --markdown 20230423/a/alchemiscale/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-23 06:30:13] INFO root fetch - processPackages [vnpy-tap]: executing diffoscope
+[2023-04-23 06:30:13] INFO root fetch - processPackages [vnpy-tap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnpy_tap-9.0.2.tar.gz tmp/vnpy_tap-9.3.8.tar.gz --markdown 20230423/v/vnpy-tap/9.0.2-9.3.8/diff.md --exclude *.pyd
+[2023-04-23 06:30:14] INFO root fetch - main [MainThread]: End processing [pwproxy]: success
+[2023-04-23 06:30:14] INFO root fetch - main [MainThread]: End processing [semantra]: success
+[2023-04-23 06:30:14] INFO root fetch - main [MainThread]: End processing [gama-config]: success
+[2023-04-23 06:30:14] INFO root fetch - main [MainThread]: End processing [alchemiscale]: success
+[2023-04-23 06:30:15] INFO root fetch - main [MainThread]: End processing [gama-cli]: success
+[2023-04-23 06:30:15] INFO root fetch - main [MainThread]: End processing [semantra]: success
+[2023-04-23 06:30:36] INFO root fetch - main [MainThread]: End processing [vnpy-tap]: success
+[2023-04-23 06:30:36] INFO root fetch - main [MainThread]: Store serial: [17819418]
