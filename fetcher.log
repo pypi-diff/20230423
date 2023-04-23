@@ -6851,3 +6851,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 13:07:31] INFO root fetch - main [MainThread]: End processing [bigdl-chronos]: success
 [2023-04-23 13:07:32] INFO root fetch - main [MainThread]: End processing [bigdl-nano]: success
 [2023-04-23 13:07:32] INFO root fetch - main [MainThread]: Store serial: [17821588]
+[2023-04-23 13:12:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17821588]
+[2023-04-23 13:12:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-23 13:12:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: botsniffer
+[2023-04-23 13:12:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spagrn
+[2023-04-23 13:12:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MeUtils
+[2023-04-23 13:12:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: maxilearn
+[2023-04-23 13:12:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pheno-utils
+[2023-04-23 13:12:40] INFO root fetch - processPackages [pheno-utils]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-23 13:12:40] WARNING root fetch - processPackages [botsniffer]: Skipping, unable to determine old version
+[2023-04-23 13:12:40] INFO root fetch - processPackages [spagrn]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-23 13:12:40] INFO root fetch - main [MainThread]: End processing [botsniffer] error
+[2023-04-23 13:12:40] INFO root fetch - processPackages [maxilearn]: New version: [4.4.5] Old Version: [4.4.4]
+[2023-04-23 13:12:40] INFO root fetch - processPackages [MeUtils]: New version: [2023.4.6.14.28.33] Old Version: [2023.4.6.14.19.58]
+[2023-04-23 13:12:40] INFO root fetch - processPackages [MeUtils]: executing diffoscope
+[2023-04-23 13:12:40] INFO root fetch - processPackages [MeUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MeUtils-2023.4.6.14.19.58.tar.gz tmp/MeUtils-2023.4.6.14.28.33.tar.gz --markdown 20230423/M/MeUtils/2023.4.6.14.19.58-2023.4.6.14.28.33/diff.md --exclude *.pyd
+[2023-04-23 13:12:40] INFO root fetch - processPackages [maxilearn]: Downloading https://files.pythonhosted.org/packages/24/5c/c46d2c53a38e9c1fa017dd5151f6eee9c63261cb6180f2054ab246500214/maxilearn-4.4.5.tar.gz
+[2023-04-23 13:12:41] INFO root fetch - processPackages [pheno-utils]: Downloading https://files.pythonhosted.org/packages/e4/45/44ab95f71efa298827cc6e1308bf87db877a8c75b1d32b14dc1ba899b20c/pheno-utils-0.1.5.tar.gz
+[2023-04-23 13:12:41] INFO root fetch - processPackages [spagrn]: Downloading https://files.pythonhosted.org/packages/82/15/3a0879485176792359622ab67f3916ca45c5c487b33d028d703e0f28cb4e/spagrn-1.0.4.tar.gz
+[2023-04-23 13:12:41] INFO root fetch - processPackages [maxilearn]: executing diffoscope
+[2023-04-23 13:12:41] INFO root fetch - processPackages [maxilearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maxilearn-4.4.4.tar.gz tmp/maxilearn-4.4.5.tar.gz --markdown 20230423/m/maxilearn/4.4.4-4.4.5/diff.md --exclude *.pyd
+[2023-04-23 13:12:41] INFO root fetch - processPackages [pheno-utils]: executing diffoscope
+[2023-04-23 13:12:41] INFO root fetch - processPackages [pheno-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pheno-utils-0.1.4.tar.gz tmp/pheno-utils-0.1.5.tar.gz --markdown 20230423/p/pheno-utils/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-23 13:12:41] INFO root fetch - processPackages [spagrn]: executing diffoscope
+[2023-04-23 13:12:41] INFO root fetch - processPackages [spagrn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spagrn-1.0.3.tar.gz tmp/spagrn-1.0.4.tar.gz --markdown 20230423/s/spagrn/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-23 13:12:42] INFO root fetch - main [MainThread]: End processing [maxilearn]: success
+[2023-04-23 13:12:42] INFO root fetch - main [MainThread]: End processing [spagrn]: success
+[2023-04-23 13:12:42] INFO root fetch - main [MainThread]: End processing [pheno-utils]: success
+[2023-04-23 13:12:43] INFO root fetch - main [MainThread]: End processing [MeUtils]: success
+[2023-04-23 13:12:43] INFO root fetch - main [MainThread]: Store serial: [17821605]
