@@ -9408,3 +9408,83 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 16:51:28] INFO root fetch - main [MainThread]: End processing [khl]: success
 [2023-04-23 16:51:28] INFO root fetch - main [MainThread]: End processing [ml-pckg]: success
 [2023-04-23 16:51:28] INFO root fetch - main [MainThread]: Store serial: [17823150]
+[2023-04-23 16:56:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823150]
+[2023-04-23 16:56:36] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-23 16:56:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plttbc
+[2023-04-23 16:56:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rtamt
+[2023-04-23 16:56:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sd-parsers
+[2023-04-23 16:56:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mextractor
+[2023-04-23 16:56:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: patchelf
+[2023-04-23 16:56:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: assisted-service-client
+[2023-04-23 16:56:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: metaseg
+[2023-04-23 16:56:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: me-setups
+[2023-04-23 16:56:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: gptrim
+[2023-04-23 16:56:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: spid-cie-oidc
+[2023-04-23 16:56:36] INFO root fetch - processPackages [mextractor]: New version: [3.0.0] Old Version: [2.2.0]
+[2023-04-23 16:56:36] INFO root fetch - processPackages [sd-parsers]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-23 16:56:36] INFO root fetch - processPackages [metaseg]: New version: [0.7.0] Old Version: [0.6.1]
+[2023-04-23 16:56:36] INFO root fetch - processPackages [gptrim]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-23 16:56:36] WARNING root fetch - processPackages [plttbc]: Skipping, unable to determine old version
+[2023-04-23 16:56:37] INFO root fetch - processPackages [plttbc]: Start processing: paper-admin
+[2023-04-23 16:56:37] INFO root fetch - main [MainThread]: End processing [plttbc] error
+[2023-04-23 16:56:37] INFO root fetch - processPackages [patchelf]: New version: [0.18.0.0] Old Version: [0.17.2.1]
+[2023-04-23 16:56:37] INFO root fetch - processPackages [rtamt]: New version: [0.3.5] Old Version: [0.3]
+[2023-04-23 16:56:37] INFO root fetch - processPackages [me-setups]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-04-23 16:56:37] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2023-04-23 16:56:37] INFO root fetch - processPackages [spid-cie-oidc]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-23 16:56:37] INFO root fetch - processPackages [paper-admin]: New version: [6.0.0rc4] Old Version: [6.0.0rc3]
+[2023-04-23 16:56:37] INFO root fetch - processPackages [metaseg]: Downloading https://files.pythonhosted.org/packages/fe/8e/a8b4a7f603cb1456e27c0c8e395be63f0fe3404e1e99bcd204ed6fbfa874/metaseg-0.6.1.tar.gz
+[2023-04-23 16:56:37] INFO root fetch - processPackages [patchelf]: Downloading https://files.pythonhosted.org/packages/83/ec/ac383eb82792e092d8037649b382cf78a7b79c2ce4e5b861f61519b9b14e/patchelf-0.17.2.1.tar.gz
+[2023-04-23 16:56:37] INFO root fetch - processPackages [gptrim]: Downloading https://files.pythonhosted.org/packages/a3/fc/894adf1440c008c5a753cadcce890d506e72b871450e0d39b96e199b376b/gptrim-0.1.3.tar.gz
+[2023-04-23 16:56:37] INFO root fetch - processPackages [mextractor]: Downloading https://files.pythonhosted.org/packages/8c/67/62372c87c30c6dfe38ea07f2ce2338900593da4dab87c936ae93591b1acd/mextractor-2.2.0.tar.gz
+[2023-04-23 16:56:37] INFO root fetch - processPackages [me-setups]: executing diffoscope
+[2023-04-23 16:56:37] INFO root fetch - processPackages [me-setups]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/me_setups-1.6.8.tar.gz tmp/me_setups-1.6.9.tar.gz --markdown 20230423/m/me-setups/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-04-23 16:56:37] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2023-04-23 16:56:37] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20230423/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2023-04-23 16:56:37] INFO root fetch - processPackages [spid-cie-oidc]: Downloading https://files.pythonhosted.org/packages/1c/76/915b157e7b8b1eb7a35cb604f6f3b2065d1027c932abe0a37867226ad477/spid_cie_oidc-0.8.8.tar.gz
+[2023-04-23 16:56:37] INFO root fetch - processPackages [sd-parsers]: Downloading https://files.pythonhosted.org/packages/d5/59/65c95c6d3b71ea65d46df5605d39fb6b5f1350699389bd253afdd8f1c4c0/sd-parsers-0.2.2.tar.gz
+[2023-04-23 16:56:37] INFO root fetch - processPackages [patchelf]: Downloading https://files.pythonhosted.org/packages/53/65/b7cddff782ebed7c9fcc488bf3eced29d3b0eee51bf1258a9f80ab07267b/patchelf-0.18.0.0.tar.gz
+[2023-04-23 16:56:37] INFO root fetch - processPackages [metaseg]: Downloading https://files.pythonhosted.org/packages/5e/7c/1c9ebf00f206f47a3f70d6d24551056c8e0a7d637edbd7ef226c40e0e46a/metaseg-0.7.0.tar.gz
+[2023-04-23 16:56:37] INFO root fetch - processPackages [sd-parsers]: executing diffoscope
+[2023-04-23 16:56:37] INFO root fetch - processPackages [sd-parsers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sd-parsers-0.2.1.tar.gz tmp/sd-parsers-0.2.2.tar.gz --markdown 20230423/s/sd-parsers/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-23 16:56:37] INFO root fetch - processPackages [metaseg]: executing diffoscope
+[2023-04-23 16:56:37] INFO root fetch - processPackages [metaseg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaseg-0.6.1.tar.gz tmp/metaseg-0.7.0.tar.gz --markdown 20230423/m/metaseg/0.6.1-0.7.0/diff.md --exclude *.pyd
+[2023-04-23 16:56:37] INFO root fetch - processPackages [patchelf]: executing diffoscope
+[2023-04-23 16:56:37] INFO root fetch - processPackages [patchelf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/patchelf-0.17.2.1.tar.gz tmp/patchelf-0.18.0.0.tar.gz --markdown 20230423/p/patchelf/0.17.2.1-0.18.0.0/diff.md --exclude *.pyd
+[2023-04-23 16:56:37] INFO root fetch - processPackages [gptrim]: Downloading https://files.pythonhosted.org/packages/a5/dd/983b4e946dce27cd743396ebd9b70294d2bdf199ce08bed3188b255052d5/gptrim-0.1.4-py3-none-any.whl
+[2023-04-23 16:56:37] INFO root fetch - processPackages [mextractor]: Downloading https://files.pythonhosted.org/packages/d4/8f/8db192d080e5c5ab1b33ecd7e0c6e34c12d87b252a5e16dcdec8581cf70a/mextractor-3.0.0.tar.gz
+[2023-04-23 16:56:37] INFO root fetch - processPackages [paper-admin]: Downloading https://files.pythonhosted.org/packages/96/e9/860f1e9a2bc64e383b12ec4e3e1940d33d57b94fd699350a3ba3d6cb7fc9/paper-admin-6.0.0rc4.tar.gz
+[2023-04-23 16:56:37] INFO root fetch - processPackages [gptrim]: executing diffoscope
+[2023-04-23 16:56:37] INFO root fetch - processPackages [gptrim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptrim-0.1.3.tar.gz tmp/gptrim-0.1.4-py3-none-any.whl.zip --markdown 20230423/g/gptrim/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-23 16:56:37] INFO root fetch - processPackages [mextractor]: executing diffoscope
+[2023-04-23 16:56:37] INFO root fetch - processPackages [mextractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mextractor-2.2.0.tar.gz tmp/mextractor-3.0.0.tar.gz --markdown 20230423/m/mextractor/2.2.0-3.0.0/diff.md --exclude *.pyd
+[2023-04-23 16:56:37] INFO root fetch - processPackages [rtamt]: Downloading https://files.pythonhosted.org/packages/9c/35/a3718af0019deb14dde02b2df1d1911e6c2de9b0411cb22687e768bbaa50/rtamt-0.3.tar.gz
+[2023-04-23 16:56:37] INFO root fetch - processPackages [spid-cie-oidc]: Downloading https://files.pythonhosted.org/packages/5b/31/7b9013419ddbb5db4271086a0a9ff9800669f9a1b08095d2d0e3fb5ce777/spid_cie_oidc-0.8.9.tar.gz
+[2023-04-23 16:56:37] INFO root fetch - processPackages [rtamt]: Downloading https://files.pythonhosted.org/packages/cd/81/16240b8f959887a32c9fcfcd5f529b0d48dbdfa4980f0e6969d543a7221a/rtamt-0.3.5.tar.gz
+[2023-04-23 16:56:37] INFO root fetch - processPackages [spid-cie-oidc]: executing diffoscope
+[2023-04-23 16:56:37] INFO root fetch - processPackages [spid-cie-oidc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spid_cie_oidc-0.8.8.tar.gz tmp/spid_cie_oidc-0.8.9.tar.gz --markdown 20230423/s/spid-cie-oidc/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-23 16:56:37] INFO root fetch - processPackages [rtamt]: executing diffoscope
+[2023-04-23 16:56:37] INFO root fetch - processPackages [rtamt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtamt-0.3.tar.gz tmp/rtamt-0.3.5.tar.gz --markdown 20230423/r/rtamt/0.3-0.3.5/diff.md --exclude *.pyd
+[2023-04-23 16:56:38] INFO root fetch - processPackages [paper-admin]: executing diffoscope
+[2023-04-23 16:56:38] INFO root fetch - processPackages [paper-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper-admin-6.0.0rc3.tar.gz tmp/paper-admin-6.0.0rc4.tar.gz --markdown 20230423/p/paper-admin/6.0.0rc3-6.0.0rc4/diff.md --exclude *.pyd
+[2023-04-23 16:56:38] INFO root fetch - processPackages [me-setups]: Start processing: kaggle-util
+[2023-04-23 16:56:38] INFO root fetch - main [MainThread]: End processing [me-setups]: success
+[2023-04-23 16:56:39] INFO root fetch - processPackages [gptrim]: Start processing: fastapi-analytics
+[2023-04-23 16:56:39] INFO root fetch - main [MainThread]: End processing [gptrim]: success
+[2023-04-23 16:56:39] WARNING root fetch - processPackages [kaggle-util]: Skipping, unable to determine old version
+[2023-04-23 16:56:39] INFO root fetch - main [MainThread]: End processing [kaggle-util] error
+[2023-04-23 16:56:39] INFO root fetch - processPackages [fastapi-analytics]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-23 16:56:39] INFO root fetch - main [MainThread]: End processing [mextractor]: success
+[2023-04-23 16:56:39] INFO root fetch - processPackages [fastapi-analytics]: Downloading https://files.pythonhosted.org/packages/d5/cd/b9ad4312078a9a5e255b39a90dd123e04abe7638331c2f659aff59ac1333/fastapi-analytics-1.1.2.tar.gz
+[2023-04-23 16:56:39] INFO root fetch - main [MainThread]: End processing [metaseg]: success
+[2023-04-23 16:56:39] INFO root fetch - processPackages [fastapi-analytics]: Downloading https://files.pythonhosted.org/packages/84/04/cb6db21d45368c82e068a563a44cf38f661d3c3754825f390bbf1c2dfad1/fastapi-analytics-1.1.3.tar.gz
+[2023-04-23 16:56:39] INFO root fetch - main [MainThread]: End processing [patchelf]: success
+[2023-04-23 16:56:39] INFO root fetch - processPackages [fastapi-analytics]: executing diffoscope
+[2023-04-23 16:56:39] INFO root fetch - processPackages [fastapi-analytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-analytics-1.1.2.tar.gz tmp/fastapi-analytics-1.1.3.tar.gz --markdown 20230423/f/fastapi-analytics/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-23 16:56:40] INFO root fetch - main [MainThread]: End processing [sd-parsers]: success
+[2023-04-23 16:56:40] INFO root fetch - main [MainThread]: End processing [fastapi-analytics]: success
+[2023-04-23 16:56:40] INFO root fetch - main [MainThread]: End processing [rtamt]: success
+[2023-04-23 16:56:41] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2023-04-23 16:56:41] INFO root fetch - main [MainThread]: End processing [paper-admin]: success
+[2023-04-23 16:56:43] INFO root fetch - main [MainThread]: End processing [spid-cie-oidc]: success
+[2023-04-23 16:56:43] INFO root fetch - main [MainThread]: Store serial: [17823194]
