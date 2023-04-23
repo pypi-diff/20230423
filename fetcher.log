@@ -10599,3 +10599,58 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 18:38:45] INFO root fetch - main [MainThread]: End processing [tradeX]: success
 [2023-04-23 18:38:50] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2023-04-23 18:38:50] INFO root fetch - main [MainThread]: Store serial: [17823881]
+[2023-04-23 18:43:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823881]
+[2023-04-23 18:43:59] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-23 18:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ooresults
+[2023-04-23 18:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alacorder
+[2023-04-23 18:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Solarflare
+[2023-04-23 18:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: giftmaster
+[2023-04-23 18:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: burner-process
+[2023-04-23 18:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vocabmaster
+[2023-04-23 18:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pysparkplus
+[2023-04-23 18:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: plttbc
+[2023-04-23 18:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mvclib
+[2023-04-23 18:43:59] INFO root fetch - processPackages [ooresults]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-23 18:43:59] INFO root fetch - processPackages [giftmaster]: New version: [0.1.58] Old Version: [0.1.57]
+[2023-04-23 18:43:59] WARNING root fetch - processPackages [burner-process]: Skipping, unable to determine old version
+[2023-04-23 18:43:59] INFO root fetch - processPackages [plttbc]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-23 18:43:59] INFO root fetch - processPackages [pysparkplus]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-23 18:43:59] INFO root fetch - processPackages [Solarflare]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 18:43:59] INFO root fetch - main [MainThread]: End processing [burner-process] error
+[2023-04-23 18:43:59] WARNING root fetch - processPackages [vocabmaster]: Skipping, unable to determine old version
+[2023-04-23 18:43:59] INFO root fetch - main [MainThread]: End processing [vocabmaster] error
+[2023-04-23 18:43:59] INFO root fetch - processPackages [alacorder]: New version: [79.7.0] Old Version: [79.6.9]
+[2023-04-23 18:43:59] INFO root fetch - processPackages [mvclib]: New version: [0.6.0] Old Version: [0.5.9]
+[2023-04-23 18:43:59] INFO root fetch - processPackages [giftmaster]: Downloading https://files.pythonhosted.org/packages/d7/9a/3ca03f169e392559eb2151a882244feef653cd63535a0b821f237ee1edaf/giftmaster-0.1.57.tar.gz
+[2023-04-23 18:43:59] INFO root fetch - processPackages [ooresults]: Downloading https://files.pythonhosted.org/packages/00/1f/3f1c3cd08dae69fc190c94fe7d01d20a0c24f5eb5796137556a769938ba3/ooresults-0.2.2.tar.gz
+[2023-04-23 18:43:59] INFO root fetch - processPackages [plttbc]: Downloading https://files.pythonhosted.org/packages/05/43/ca128ec67a309a3549ceb1a1e38875886daebd1f4d1a1a792d0630174c40/plttbc-0.2.3.tar.gz
+[2023-04-23 18:43:59] INFO root fetch - processPackages [Solarflare]: Downloading https://files.pythonhosted.org/packages/31/5a/53bcc90e33293c092c2d6181f392d8d9697464cacdd3945fc06824d14846/Solarflare-0.0.2.tar.gz
+[2023-04-23 18:43:59] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/4a/eb/ebb66bc9c8277583c16979b054abdd6993d2840fc51062627c8091f01dbb/alacorder-79.7.0.tar.gz
+[2023-04-23 18:43:59] INFO root fetch - processPackages [mvclib]: Downloading https://files.pythonhosted.org/packages/55/6d/f49bffe21c1d47ee1ff634abe81bb90182679aa9ab382c3330e1da606d49/mvclib-0.5.9.tar.gz
+[2023-04-23 18:44:00] INFO root fetch - processPackages [pysparkplus]: Downloading https://files.pythonhosted.org/packages/36/c6/7f79fb230f3456b13ba54b94749392390d0995275b9e3f6cc2aeb720e24f/pysparkplus-0.0.3.tar.gz
+[2023-04-23 18:44:00] INFO root fetch - processPackages [Solarflare]: executing diffoscope
+[2023-04-23 18:44:00] INFO root fetch - processPackages [Solarflare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Solarflare-0.0.1.tar.gz tmp/Solarflare-0.0.2.tar.gz --markdown 20230423/S/Solarflare/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 18:44:00] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-04-23 18:44:00] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-79.6.9.tar.gz tmp/alacorder-79.7.0.tar.gz --markdown 20230423/a/alacorder/79.6.9-79.7.0/diff.md --exclude *.pyd
+[2023-04-23 18:44:00] INFO root fetch - processPackages [giftmaster]: Downloading https://files.pythonhosted.org/packages/72/37/be56faf49fe7f1b518834f8d6614e6b773265782c600007f4e59cc58cc3d/giftmaster-0.1.58.tar.gz
+[2023-04-23 18:44:00] INFO root fetch - processPackages [pysparkplus]: executing diffoscope
+[2023-04-23 18:44:00] INFO root fetch - processPackages [pysparkplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysparkplus-0.0.2.tar.gz tmp/pysparkplus-0.0.3.tar.gz --markdown 20230423/p/pysparkplus/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 18:44:00] INFO root fetch - processPackages [ooresults]: Downloading https://files.pythonhosted.org/packages/44/ca/10ec46a6dc7233863d0d5d3c36d316126800ec51a69ddeb410823b8c1259/ooresults-0.2.3.tar.gz
+[2023-04-23 18:44:00] INFO root fetch - processPackages [plttbc]: Downloading https://files.pythonhosted.org/packages/61/fb/fd814dab26fe72d126b074222dd78a6f116ad902efb4e881faed3f207a7e/plttbc-0.2.4.tar.gz
+[2023-04-23 18:44:00] INFO root fetch - processPackages [mvclib]: Downloading https://files.pythonhosted.org/packages/90/c1/f4c669271c18e2a4facfc8c53c76f6e5c6bdb60f68f45beba3713d513e1a/mvclib-0.6.0.tar.gz
+[2023-04-23 18:44:00] INFO root fetch - processPackages [giftmaster]: executing diffoscope
+[2023-04-23 18:44:00] INFO root fetch - processPackages [giftmaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/giftmaster-0.1.57.tar.gz tmp/giftmaster-0.1.58.tar.gz --markdown 20230423/g/giftmaster/0.1.57-0.1.58/diff.md --exclude *.pyd
+[2023-04-23 18:44:00] INFO root fetch - processPackages [plttbc]: executing diffoscope
+[2023-04-23 18:44:00] INFO root fetch - processPackages [plttbc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plttbc-0.2.3.tar.gz tmp/plttbc-0.2.4.tar.gz --markdown 20230423/p/plttbc/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-23 18:44:00] INFO root fetch - processPackages [mvclib]: executing diffoscope
+[2023-04-23 18:44:00] INFO root fetch - processPackages [mvclib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mvclib-0.5.9.tar.gz tmp/mvclib-0.6.0.tar.gz --markdown 20230423/m/mvclib/0.5.9-0.6.0/diff.md --exclude *.pyd
+[2023-04-23 18:44:00] INFO root fetch - processPackages [ooresults]: executing diffoscope
+[2023-04-23 18:44:00] INFO root fetch - processPackages [ooresults]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ooresults-0.2.2.tar.gz tmp/ooresults-0.2.3.tar.gz --markdown 20230423/o/ooresults/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-23 18:44:01] INFO root fetch - main [MainThread]: End processing [Solarflare]: success
+[2023-04-23 18:44:01] INFO root fetch - main [MainThread]: End processing [pysparkplus]: success
+[2023-04-23 18:44:01] INFO root fetch - main [MainThread]: End processing [plttbc]: success
+[2023-04-23 18:44:02] INFO root fetch - main [MainThread]: End processing [mvclib]: success
+[2023-04-23 18:44:02] INFO root fetch - main [MainThread]: End processing [giftmaster]: success
+[2023-04-23 18:44:03] INFO root fetch - main [MainThread]: End processing [ooresults]: success
+[2023-04-23 18:44:12] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-04-23 18:44:12] INFO root fetch - main [MainThread]: Store serial: [17823914]
