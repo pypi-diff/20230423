@@ -2188,3 +2188,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 04:02:37] INFO root fetch - main [MainThread]: End processing [ovos-audio-plugin-simple]: success
 [2023-04-23 04:02:39] INFO root fetch - main [MainThread]: End processing [hat-syslog]: success
 [2023-04-23 04:02:39] INFO root fetch - main [MainThread]: Store serial: [17818854]
+[2023-04-23 04:07:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818854]
+[2023-04-23 04:07:48] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 04:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lunchable
+[2023-04-23 04:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openxlab
+[2023-04-23 04:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ml-botting-core
+[2023-04-23 04:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coredis
+[2023-04-23 04:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: simple-ado
+[2023-04-23 04:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: twitter-api-client
+[2023-04-23 04:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cnki-html2json
+[2023-04-23 04:07:48] INFO root fetch - processPackages [ml-botting-core]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-23 04:07:48] INFO root fetch - processPackages [simple-ado]: New version: [3.9.0] Old Version: [3.8.0]
+[2023-04-23 04:07:48] INFO root fetch - processPackages [twitter-api-client]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-04-23 04:07:48] INFO root fetch - processPackages [cnki-html2json]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-23 04:07:48] INFO root fetch - processPackages [openxlab]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 04:07:48] INFO root fetch - processPackages [lunchable]: New version: [0.6.0] Old Version: [0.5.1]
+[2023-04-23 04:07:48] INFO root fetch - processPackages [coredis]: New version: [4.9.0] Old Version: [4.8.3]
+[2023-04-23 04:07:48] INFO root fetch - processPackages [simple-ado]: Downloading https://files.pythonhosted.org/packages/e8/d7/ac75bb467d11ec1ef5c119c9d2a4e909fccb99ba83f98d9529c4b978bdb8/simple_ado-3.8.0.tar.gz
+[2023-04-23 04:07:48] INFO root fetch - processPackages [lunchable]: Downloading https://files.pythonhosted.org/packages/41/34/853561fe5c50832f25f429e4f237e207b934dddcfd1074e7682d35a71ee3/lunchable-0.5.1.tar.gz
+[2023-04-23 04:07:48] INFO root fetch - processPackages [openxlab]: Downloading https://files.pythonhosted.org/packages/db/7c/426bc4b3ccc5390f684e2ea1cb623f87dde64c7e69a08aed24016651d8fd/openxlab-0.0.1.tar.gz
+[2023-04-23 04:07:48] INFO root fetch - processPackages [twitter-api-client]: Downloading https://files.pythonhosted.org/packages/b5/9f/b8ec6dfd3825bc42693c912a02563a3e787d6bf07ce76b731175a441d824/twitter-api-client-0.7.4.tar.gz
+[2023-04-23 04:07:48] INFO root fetch - processPackages [cnki-html2json]: Downloading https://files.pythonhosted.org/packages/a3/37/688cae7fce509872e8ab6071c3f66c9947b7c6ee764b851f0280f50eaf86/cnki_html2json-0.1.2.tar.gz
+[2023-04-23 04:07:48] INFO root fetch - processPackages [ml-botting-core]: Downloading https://files.pythonhosted.org/packages/d5/d1/e23cd3b2401188afdfa5861ebfa5547c3a6368d0c15817831fbde242c873/ml_botting_core-1.0.4.tar.gz
+[2023-04-23 04:07:48] INFO root fetch - processPackages [openxlab]: Downloading https://files.pythonhosted.org/packages/92/2a/af1c3782a333caae7bda39624166ccd2566563199696f9f67177cdd8e74a/openxlab-0.0.2.tar.gz
+[2023-04-23 04:07:48] INFO root fetch - processPackages [twitter-api-client]: executing diffoscope
+[2023-04-23 04:07:48] INFO root fetch - processPackages [cnki-html2json]: executing diffoscope
+[2023-04-23 04:07:48] INFO root fetch - processPackages [twitter-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter-api-client-0.7.3.tar.gz tmp/twitter-api-client-0.7.4.tar.gz --markdown 20230423/t/twitter-api-client/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2023-04-23 04:07:48] INFO root fetch - processPackages [cnki-html2json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnki_html2json-0.1.1.tar.gz tmp/cnki_html2json-0.1.2.tar.gz --markdown 20230423/c/cnki-html2json/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-23 04:07:48] INFO root fetch - processPackages [lunchable]: Downloading https://files.pythonhosted.org/packages/b4/14/73fae3bcbdc5badaa9b5b618a8d1aac4bf612986bc265875d49e7714aeed/lunchable-0.6.0.tar.gz
+[2023-04-23 04:07:48] INFO root fetch - processPackages [ml-botting-core]: executing diffoscope
+[2023-04-23 04:07:48] INFO root fetch - processPackages [ml-botting-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_botting_core-1.0.3.tar.gz tmp/ml_botting_core-1.0.4.tar.gz --markdown 20230423/m/ml-botting-core/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-23 04:07:48] INFO root fetch - processPackages [coredis]: executing diffoscope
+[2023-04-23 04:07:48] INFO root fetch - processPackages [coredis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coredis-4.8.3.tar.gz tmp/coredis-4.9.0.tar.gz --markdown 20230423/c/coredis/4.8.3-4.9.0/diff.md --exclude *.pyd
+[2023-04-23 04:07:48] INFO root fetch - processPackages [simple-ado]: Downloading https://files.pythonhosted.org/packages/52/3d/20cffeccb0d10c419f24a236158626c71501f4fc62c786873ff7c221d08e/simple_ado-3.9.0.tar.gz
+[2023-04-23 04:07:48] INFO root fetch - processPackages [openxlab]: executing diffoscope
+[2023-04-23 04:07:48] INFO root fetch - processPackages [openxlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openxlab-0.0.1.tar.gz tmp/openxlab-0.0.2.tar.gz --markdown 20230423/o/openxlab/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 04:07:48] INFO root fetch - processPackages [lunchable]: executing diffoscope
+[2023-04-23 04:07:48] INFO root fetch - processPackages [lunchable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lunchable-0.5.1.tar.gz tmp/lunchable-0.6.0.tar.gz --markdown 20230423/l/lunchable/0.5.1-0.6.0/diff.md --exclude *.pyd
+[2023-04-23 04:07:49] INFO root fetch - processPackages [simple-ado]: executing diffoscope
+[2023-04-23 04:07:49] INFO root fetch - processPackages [simple-ado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_ado-3.8.0.tar.gz tmp/simple_ado-3.9.0.tar.gz --markdown 20230423/s/simple-ado/3.8.0-3.9.0/diff.md --exclude *.pyd
+[2023-04-23 04:07:50] INFO root fetch - main [MainThread]: End processing [ml-botting-core]: success
+[2023-04-23 04:07:50] INFO root fetch - main [MainThread]: End processing [cnki-html2json]: success
+[2023-04-23 04:07:50] INFO root fetch - main [MainThread]: End processing [twitter-api-client]: success
+[2023-04-23 04:07:50] INFO root fetch - main [MainThread]: End processing [lunchable]: success
+[2023-04-23 04:07:50] INFO root fetch - main [MainThread]: End processing [simple-ado]: success
+[2023-04-23 04:07:50] INFO root fetch - main [MainThread]: End processing [openxlab]: success
+[2023-04-23 04:07:52] INFO root fetch - main [MainThread]: End processing [coredis]: success
+[2023-04-23 04:07:52] INFO root fetch - main [MainThread]: Store serial: [17818898]
