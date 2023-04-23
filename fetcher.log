@@ -4855,3 +4855,52 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 09:47:29] INFO root fetch - main [MainThread]: End processing [graphql-http-server]: success
 [2023-04-23 09:47:37] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
 [2023-04-23 09:47:37] INFO root fetch - main [MainThread]: Store serial: [17820424]
+[2023-04-23 09:52:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820424]
+[2023-04-23 09:52:47] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 09:52:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: modoboa
+[2023-04-23 09:52:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bycon
+[2023-04-23 09:52:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dash-data-prep
+[2023-04-23 09:52:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mausy5043-common
+[2023-04-23 09:52:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tf-nightly-cpu
+[2023-04-23 09:52:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: megabot
+[2023-04-23 09:52:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nonebot-plugin-mcqq
+[2023-04-23 09:52:47] INFO root fetch - processPackages [modoboa]: New version: [2.1.3.dev0] Old Version: [2.1.2.dev0]
+[2023-04-23 09:52:47] INFO root fetch - processPackages [dash-data-prep]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 09:52:47] INFO root fetch - processPackages [nonebot-plugin-mcqq]: New version: [1.1.5.post4] Old Version: [1.1.5.post3]
+[2023-04-23 09:52:47] INFO root fetch - processPackages [mausy5043-common]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-04-23 09:52:47] INFO root fetch - processPackages [megabot]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-23 09:52:47] INFO root fetch - processPackages [bycon]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-23 09:52:47] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.13.0.dev20230423] Old Version: [2.13.0.dev20230422]
+[2023-04-23 09:52:47] INFO root fetch - processPackages [megabot]: Downloading https://files.pythonhosted.org/packages/29/2a/2f3d5f2594c659cf0e2fe54e65557e73fa852f7c47ea6e4b6f46e62f4cb3/megabot-0.0.4.tar.gz
+[2023-04-23 09:52:47] INFO root fetch - processPackages [dash-data-prep]: Downloading https://files.pythonhosted.org/packages/63/e0/4bcb4d63c325d0e88019800bd30dd86ae76fe4c7ca80aae30f969147b4bd/dash_data_prep-0.0.1.tar.gz
+[2023-04-23 09:52:47] INFO root fetch - processPackages [nonebot-plugin-mcqq]: Downloading https://files.pythonhosted.org/packages/4a/35/4a54d4ce328bcd248dd4d9e035bebc7da589161aa7d97aa13ef4c27ac26b/nonebot-plugin-mcqq-1.1.5.post3.tar.gz
+[2023-04-23 09:52:47] INFO root fetch - processPackages [modoboa]: Downloading https://files.pythonhosted.org/packages/88/64/2b146a0105816c837d201760902c06170d85260a1d0ab297dbdb7cae189e/modoboa-2.1.2.dev0.tar.gz
+[2023-04-23 09:52:47] WARNING root fetch - processPackages [modoboa]: Skipping package: exceeds size limit 11884233>=10485760
+[2023-04-23 09:52:47] INFO root fetch - main [MainThread]: End processing [modoboa] error
+[2023-04-23 09:52:47] INFO root fetch - processPackages [bycon]: Downloading https://files.pythonhosted.org/packages/d8/52/9205bbdcf60c69e8870bca5c3a21b54dc9acc3dc4e845822e9f9630cbb34/bycon-1.0.8.tar.gz
+[2023-04-23 09:52:47] INFO root fetch - processPackages [dash-data-prep]: Downloading https://files.pythonhosted.org/packages/03/8d/c64cf8bf6c199f486172f8e5605a36ae77b06505e9d4388f8acc3609ab00/dash_data_prep-0.0.2.tar.gz
+[2023-04-23 09:52:47] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/0e/18/e1e9afb4d9ee787cb905b9c6a07102a1f13034f4e4592fd954348ae2b6cf/tf_nightly_cpu-2.13.0.dev20230423-cp39-cp39-win_amd64.whl
+[2023-04-23 09:52:47] INFO root fetch - processPackages [megabot]: Downloading https://files.pythonhosted.org/packages/45/82/1f76e226ae7e93814c9a3d3b38b9fa13d9cb6c4b6ed2bd4b0b78eb2e5bb8/megabot-0.0.5.tar.gz
+[2023-04-23 09:52:48] INFO root fetch - processPackages [nonebot-plugin-mcqq]: Downloading https://files.pythonhosted.org/packages/c7/9a/aae2753b07b56e1d70aae722bb359570f786a787b14d0210d30be79a307b/nonebot-plugin-mcqq-1.1.5.post4.tar.gz
+[2023-04-23 09:52:48] INFO root fetch - processPackages [dash-data-prep]: executing diffoscope
+[2023-04-23 09:52:48] INFO root fetch - processPackages [dash-data-prep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_data_prep-0.0.1.tar.gz tmp/dash_data_prep-0.0.2.tar.gz --markdown 20230423/d/dash-data-prep/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 09:52:48] INFO root fetch - processPackages [megabot]: executing diffoscope
+[2023-04-23 09:52:48] INFO root fetch - processPackages [megabot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/megabot-0.0.4.tar.gz tmp/megabot-0.0.5.tar.gz --markdown 20230423/m/megabot/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 09:52:48] INFO root fetch - processPackages [nonebot-plugin-mcqq]: executing diffoscope
+[2023-04-23 09:52:48] INFO root fetch - processPackages [nonebot-plugin-mcqq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-mcqq-1.1.5.post3.tar.gz tmp/nonebot-plugin-mcqq-1.1.5.post4.tar.gz --markdown 20230423/n/nonebot-plugin-mcqq/1.1.5.post3-1.1.5.post4/diff.md --exclude *.pyd
+[2023-04-23 09:52:48] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2023-04-23 09:52:48] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.13.0.dev20230422-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.13.0.dev20230423-cp39-cp39-win_amd64.whl.zip --markdown 20230423/t/tf-nightly-cpu/2.13.0.dev20230422-2.13.0.dev20230423/diff.md --exclude *.pyd
+[2023-04-23 09:52:48] INFO root fetch - processPackages [bycon]: Downloading https://files.pythonhosted.org/packages/0c/b2/ef8a7b90b711214a2f00741f476f95ddd0b540bf9732ac39a993a39e0d03/bycon-1.0.9.tar.gz
+[2023-04-23 09:52:48] INFO root fetch - processPackages [bycon]: executing diffoscope
+[2023-04-23 09:52:48] INFO root fetch - processPackages [bycon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bycon-1.0.8.tar.gz tmp/bycon-1.0.9.tar.gz --markdown 20230423/b/bycon/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-23 09:52:49] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2023-04-23 09:52:49] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-mcqq]: success
+[2023-04-23 09:52:49] INFO root fetch - main [MainThread]: End processing [dash-data-prep]: success
+[2023-04-23 09:52:49] INFO root fetch - main [MainThread]: End processing [megabot]: success
+[2023-04-23 09:52:53] INFO root fetch - main [MainThread]: End processing [bycon]: success
+[2023-04-23 09:52:57] INFO root fetch - processPackages [mausy5043-common]: Downloading https://files.pythonhosted.org/packages/19/78/e208ca2032a321f0b2f7af56855d637868d9642591d2bb1073a1d532e13b/mausy5043_common-1.2.2.tar.gz
+[2023-04-23 09:52:57] INFO root fetch - processPackages [mausy5043-common]: Downloading https://files.pythonhosted.org/packages/86/00/d7d6982bb7e79fa433503da9c8ff554e727001deceaec7cf8d7ad07cefb0/mausy5043_common-1.2.3.tar.gz
+[2023-04-23 09:52:57] INFO root fetch - processPackages [mausy5043-common]: executing diffoscope
+[2023-04-23 09:52:57] INFO root fetch - processPackages [mausy5043-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mausy5043_common-1.2.2.tar.gz tmp/mausy5043_common-1.2.3.tar.gz --markdown 20230423/m/mausy5043-common/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-04-23 09:52:59] INFO root fetch - main [MainThread]: End processing [mausy5043-common]: success
+[2023-04-23 09:52:59] INFO root fetch - main [MainThread]: Store serial: [17820448]
