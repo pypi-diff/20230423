@@ -3400,3 +3400,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 07:23:49] INFO root fetch - main [MainThread]: End processing [pyHRM]: success
 [2023-04-23 07:23:50] INFO root fetch - main [MainThread]: End processing [modal-client]: success
 [2023-04-23 07:23:50] INFO root fetch - main [MainThread]: Store serial: [17819586]
+[2023-04-23 07:28:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819586]
+[2023-04-23 07:28:58] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-23 07:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rest-framework-redesign
+[2023-04-23 07:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Perceptron-ndsnajam
+[2023-04-23 07:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crazy-thursday
+[2023-04-23 07:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dotabase
+[2023-04-23 07:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PySide2-Fluent-Widgets
+[2023-04-23 07:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: avendesora
+[2023-04-23 07:28:58] WARNING root fetch - processPackages [Perceptron-ndsnajam]: Skipping, unable to determine old version
+[2023-04-23 07:28:58] INFO root fetch - main [MainThread]: End processing [Perceptron-ndsnajam] error
+[2023-04-23 07:28:58] INFO root fetch - processPackages [avendesora]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-23 07:28:58] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: New version: [0.7.4] Old Version: [0.7.2]
+[2023-04-23 07:28:58] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.4.9.1] Old Version: [2023.4.9.0]
+[2023-04-23 07:28:58] INFO root fetch - processPackages [dotabase]: New version: [7.4.1] Old Version: [7.4.0]
+[2023-04-23 07:28:58] INFO root fetch - processPackages [rest-framework-redesign]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-23 07:28:58] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-04-23 07:28:58] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.4.9.0.tar.gz tmp/crazy-thursday-2023.4.9.1.tar.gz --markdown 20230423/c/crazy-thursday/2023.4.9.0-2023.4.9.1/diff.md --exclude *.pyd
+[2023-04-23 07:28:58] INFO root fetch - processPackages [dotabase]: Downloading https://files.pythonhosted.org/packages/45/ce/cd214cbf875bfdb78d3e77b51b6aec88132b792c9b4b8ef38cce707b1654/dotabase-7.4.0.tar.gz
+[2023-04-23 07:28:58] INFO root fetch - processPackages [avendesora]: Downloading https://files.pythonhosted.org/packages/da/bc/ef8ee78e8424cd4ee62a4d0a40672610484c17c40f1d535dd7db97190ea4/avendesora-1.8.0.tar.gz
+[2023-04-23 07:28:58] INFO root fetch - processPackages [rest-framework-redesign]: Downloading https://files.pythonhosted.org/packages/d8/6d/14223004289e0fb1d6020373619aa7f5856647565270b0200707f1cd0fcd/rest_framework_redesign-0.1.8.tar.gz
+[2023-04-23 07:28:58] INFO root fetch - processPackages [rest-framework-redesign]: executing diffoscope
+[2023-04-23 07:28:58] INFO root fetch - processPackages [rest-framework-redesign]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rest_framework_redesign-0.1.7.tar.gz tmp/rest_framework_redesign-0.1.8.tar.gz --markdown 20230423/r/rest-framework-redesign/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-23 07:28:58] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/22/3f/773922e216542d83c8bd0ac079f6d32009367d39147f15fc13e84437ef47/PySide2-Fluent-Widgets-0.7.4.tar.gz
+[2023-04-23 07:28:58] WARNING root fetch - processPackages [dotabase]: Skipping package: exceeds size limit 15878332>=10485760
+[2023-04-23 07:28:58] INFO root fetch - main [MainThread]: End processing [dotabase] error
+[2023-04-23 07:28:59] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: executing diffoscope
+[2023-04-23 07:28:59] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySide2-Fluent-Widgets-0.7.2.tar.gz tmp/PySide2-Fluent-Widgets-0.7.4.tar.gz --markdown 20230423/P/PySide2-Fluent-Widgets/0.7.2-0.7.4/diff.md --exclude *.pyd
+[2023-04-23 07:28:59] INFO root fetch - processPackages [avendesora]: Downloading https://files.pythonhosted.org/packages/eb/fe/12714fa3f10d97bae0361b5a4c3e9c353a9f932c2bd5e26a44d24f6f6baa/avendesora-1.9.0.tar.gz
+[2023-04-23 07:28:59] INFO root fetch - processPackages [avendesora]: executing diffoscope
+[2023-04-23 07:28:59] INFO root fetch - processPackages [avendesora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/avendesora-1.8.0.tar.gz tmp/avendesora-1.9.0.tar.gz --markdown 20230423/a/avendesora/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-23 07:28:59] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-04-23 07:29:00] INFO root fetch - main [MainThread]: End processing [rest-framework-redesign]: success
+[2023-04-23 07:29:01] INFO root fetch - main [MainThread]: End processing [avendesora]: success
+[2023-04-23 07:29:02] INFO root fetch - main [MainThread]: End processing [PySide2-Fluent-Widgets]: success
+[2023-04-23 07:29:02] INFO root fetch - main [MainThread]: Store serial: [17819606]
