@@ -11747,3 +11747,100 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 19:52:35] INFO root fetch - main [MainThread]: End processing [movemapp-client]: success
 [2023-04-23 19:52:36] INFO root fetch - main [MainThread]: End processing [Pgenlib]: success
 [2023-04-23 19:52:36] INFO root fetch - main [MainThread]: Store serial: [17824584]
+[2023-04-23 19:57:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17824584]
+[2023-04-23 19:57:45] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-23 19:57:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: polario
+[2023-04-23 19:57:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cotat
+[2023-04-23 19:57:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: discounts
+[2023-04-23 19:57:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tttracking
+[2023-04-23 19:57:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aiointeractions
+[2023-04-23 19:57:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: alacorder
+[2023-04-23 19:57:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: edgetest-pip-tools
+[2023-04-23 19:57:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: troposphere-dns-certificate
+[2023-04-23 19:57:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: shellextools
+[2023-04-23 19:57:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: rottentomatoes-python
+[2023-04-23 19:57:45] WARNING root fetch - processPackages [discounts]: Skipping, unable to determine old version
+[2023-04-23 19:57:45] INFO root fetch - processPackages [discounts]: Start processing: giftmaster
+[2023-04-23 19:57:45] INFO root fetch - main [MainThread]: End processing [discounts] error
+[2023-04-23 19:57:45] INFO root fetch - processPackages [cotat]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-23 19:57:45] WARNING root fetch - processPackages [tttracking]: Skipping, unable to determine old version
+[2023-04-23 19:57:45] INFO root fetch - processPackages [aiointeractions]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-04-23 19:57:45] INFO root fetch - processPackages [polario]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-23 19:57:45] INFO root fetch - processPackages [tttracking]: Start processing: audiconnectpy
+[2023-04-23 19:57:45] INFO root fetch - main [MainThread]: End processing [tttracking] error
+[2023-04-23 19:57:45] INFO root fetch - processPackages [troposphere-dns-certificate]: New version: [1.8.0] Old Version: [1.7.5]
+[2023-04-23 19:57:45] INFO root fetch - processPackages [shellextools]: New version: [0.12] Old Version: [0.11]
+[2023-04-23 19:57:45] INFO root fetch - processPackages [edgetest-pip-tools]: New version: [2023.4.0] Old Version: [2022.4.1]
+[2023-04-23 19:57:45] INFO root fetch - processPackages [audiconnectpy]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-23 19:57:45] INFO root fetch - processPackages [rottentomatoes-python]: New version: [0.5.2] Old Version: [0.5.13]
+[2023-04-23 19:57:45] INFO root fetch - processPackages [giftmaster]: New version: [0.1.61] Old Version: [0.1.60]
+[2023-04-23 19:57:45] INFO root fetch - processPackages [alacorder]: New version: [79.7.1] Old Version: [79.7.0]
+[2023-04-23 19:57:46] INFO root fetch - processPackages [polario]: Downloading https://files.pythonhosted.org/packages/35/d3/c4364f81e8fbe6c241029e1544a368b9fb5cba1b88dedb91ee58ad141ad8/polario-0.2.1.tar.gz
+[2023-04-23 19:57:46] INFO root fetch - processPackages [aiointeractions]: Downloading https://files.pythonhosted.org/packages/63/f2/c6b72f4c2e6bba0356e7b5f1aaea7af3ba0ec77e86e588ea2e7687415dc3/aiointeractions-1.1.1.tar.gz
+[2023-04-23 19:57:46] INFO root fetch - processPackages [cotat]: Downloading https://files.pythonhosted.org/packages/23/f4/901dc8e5711782df2868f50efe1675b5e298bbb407419847a100e2523a35/cotat-0.1.0.tar.gz
+[2023-04-23 19:57:46] INFO root fetch - processPackages [rottentomatoes-python]: Downloading https://files.pythonhosted.org/packages/3a/60/f6c6a6a7db2293569cfcf1c1a74bcdb776478d609d82fb737f3c8c68b64e/rottentomatoes-python-0.5.13.tar.gz
+[2023-04-23 19:57:46] INFO root fetch - processPackages [edgetest-pip-tools]: Downloading https://files.pythonhosted.org/packages/7b/2b/44b2d40d85595c536d737a4c982041dc1e6dd900a4df3697298ed0bf4c95/edgetest-pip-tools-2022.4.1.tar.gz
+[2023-04-23 19:57:46] INFO root fetch - processPackages [troposphere-dns-certificate]: Downloading https://files.pythonhosted.org/packages/6a/73/aa7025bec76de0ffe3a828562658fa7eae057603c7388a99c47786800c56/troposphere-dns-certificate-1.7.5.tar.gz
+[2023-04-23 19:57:46] INFO root fetch - processPackages [shellextools]: Downloading https://files.pythonhosted.org/packages/35/a7/faa239ce90333ccef75049be55161ee005e28617bafcfef4f6e48244d130/shellextools-0.12.tar.gz
+[2023-04-23 19:57:46] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/67/07/74b85206f41276fd216760651015c92cd10814fcc49da0bedecf5ff51028/audiconnectpy-1.2.9.tar.gz
+[2023-04-23 19:57:46] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/d8/4d/dfc5b887141109391291754bda3a38570cabffdc0308b38a2d4614fd6c06/alacorder-79.7.1.tar.gz
+[2023-04-23 19:57:46] INFO root fetch - processPackages [giftmaster]: Downloading https://files.pythonhosted.org/packages/e4/45/caed2043ccda14c16ea3959ccbadc75afe4aec925f603abdb28a33c059ae/giftmaster-0.1.61.tar.gz
+[2023-04-23 19:57:46] INFO root fetch - processPackages [shellextools]: executing diffoscope
+[2023-04-23 19:57:46] INFO root fetch - processPackages [shellextools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shellextools-0.11.tar.gz tmp/shellextools-0.12.tar.gz --markdown 20230423/s/shellextools/0.11-0.12/diff.md --exclude *.pyd
+[2023-04-23 19:57:46] INFO root fetch - processPackages [polario]: Downloading https://files.pythonhosted.org/packages/52/dd/cc200dfc0377f678424a6c86f34610cb62b4b3fa2d7a099ab510e7b4b55b/polario-0.2.2.tar.gz
+[2023-04-23 19:57:46] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2023-04-23 19:57:46] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-1.2.8.tar.gz tmp/audiconnectpy-1.2.9.tar.gz --markdown 20230423/a/audiconnectpy/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-23 19:57:46] INFO root fetch - processPackages [edgetest-pip-tools]: Downloading https://files.pythonhosted.org/packages/7e/1b/203034915d87b866de4e42ff78806bdd9a548cea7f20b07e2a3ecdce9202/edgetest-pip-tools-2023.4.0.tar.gz
+[2023-04-23 19:57:46] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-04-23 19:57:46] INFO root fetch - processPackages [giftmaster]: executing diffoscope
+[2023-04-23 19:57:46] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-79.7.0.tar.gz tmp/alacorder-79.7.1.tar.gz --markdown 20230423/a/alacorder/79.7.0-79.7.1/diff.md --exclude *.pyd
+[2023-04-23 19:57:46] INFO root fetch - processPackages [giftmaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/giftmaster-0.1.60.tar.gz tmp/giftmaster-0.1.61.tar.gz --markdown 20230423/g/giftmaster/0.1.60-0.1.61/diff.md --exclude *.pyd
+[2023-04-23 19:57:46] INFO root fetch - processPackages [aiointeractions]: Downloading https://files.pythonhosted.org/packages/e0/9f/005b94468b479edfb9dc8cbfbb55768beea399dd0c5cb16b7a1d0e5d303b/aiointeractions-1.2.0.tar.gz
+[2023-04-23 19:57:46] INFO root fetch - processPackages [cotat]: Downloading https://files.pythonhosted.org/packages/bc/04/e02bf7c2f387ab71744a141c52cc08bfa9b13bb33dcdf90cae951e1db9c5/cotat-0.2.0.tar.gz
+[2023-04-23 19:57:46] INFO root fetch - processPackages [troposphere-dns-certificate]: Downloading https://files.pythonhosted.org/packages/79/5d/54e9d6a72e8e0e4760d7a607a4e5e0ed8a1789230041865323bb05996c29/troposphere-dns-certificate-1.8.0.tar.gz
+[2023-04-23 19:57:46] INFO root fetch - processPackages [rottentomatoes-python]: Downloading https://files.pythonhosted.org/packages/61/e7/4a274d5581e47e1b6cbf86fd4adad1be6da4c61a1ff8bf9f48cb9c08b2b3/rottentomatoes-python-0.5.2.tar.gz
+[2023-04-23 19:57:46] INFO root fetch - processPackages [polario]: executing diffoscope
+[2023-04-23 19:57:46] INFO root fetch - processPackages [polario]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polario-0.2.1.tar.gz tmp/polario-0.2.2.tar.gz --markdown 20230423/p/polario/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-23 19:57:46] INFO root fetch - processPackages [edgetest-pip-tools]: executing diffoscope
+[2023-04-23 19:57:46] INFO root fetch - processPackages [edgetest-pip-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgetest-pip-tools-2022.4.1.tar.gz tmp/edgetest-pip-tools-2023.4.0.tar.gz --markdown 20230423/e/edgetest-pip-tools/2022.4.1-2023.4.0/diff.md --exclude *.pyd
+[2023-04-23 19:57:46] INFO root fetch - processPackages [cotat]: executing diffoscope
+[2023-04-23 19:57:46] INFO root fetch - processPackages [cotat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cotat-0.1.0.tar.gz tmp/cotat-0.2.0.tar.gz --markdown 20230423/c/cotat/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-23 19:57:46] INFO root fetch - processPackages [rottentomatoes-python]: executing diffoscope
+[2023-04-23 19:57:46] INFO root fetch - processPackages [rottentomatoes-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rottentomatoes-python-0.5.13.tar.gz tmp/rottentomatoes-python-0.5.2.tar.gz --markdown 20230423/r/rottentomatoes-python/0.5.13-0.5.2/diff.md --exclude *.pyd
+[2023-04-23 19:57:46] INFO root fetch - processPackages [aiointeractions]: executing diffoscope
+[2023-04-23 19:57:46] INFO root fetch - processPackages [aiointeractions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiointeractions-1.1.1.tar.gz tmp/aiointeractions-1.2.0.tar.gz --markdown 20230423/a/aiointeractions/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-04-23 19:57:46] INFO root fetch - processPackages [troposphere-dns-certificate]: executing diffoscope
+[2023-04-23 19:57:46] INFO root fetch - processPackages [troposphere-dns-certificate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/troposphere-dns-certificate-1.7.5.tar.gz tmp/troposphere-dns-certificate-1.8.0.tar.gz --markdown 20230423/t/troposphere-dns-certificate/1.7.5-1.8.0/diff.md --exclude *.pyd
+[2023-04-23 19:57:47] INFO root fetch - processPackages [shellextools]: Start processing: naturalspeech2-pytorch
+[2023-04-23 19:57:47] INFO root fetch - main [MainThread]: End processing [shellextools]: success
+[2023-04-23 19:57:47] INFO root fetch - processPackages [naturalspeech2-pytorch]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 19:57:48] INFO root fetch - processPackages [naturalspeech2-pytorch]: Downloading https://files.pythonhosted.org/packages/54/6b/28bef816ddfaad5ba4db36c13c7cab1fb99af0e7bcb77a792ecc0cb9e652/naturalspeech2-pytorch-0.0.8.tar.gz
+[2023-04-23 19:57:48] INFO root fetch - processPackages [giftmaster]: Start processing: ForgyPs
+[2023-04-23 19:57:48] INFO root fetch - main [MainThread]: End processing [giftmaster]: success
+[2023-04-23 19:57:48] WARNING root fetch - processPackages [ForgyPs]: Skipping, unable to determine old version
+[2023-04-23 19:57:48] INFO root fetch - processPackages [ForgyPs]: Start processing: zython
+[2023-04-23 19:57:48] INFO root fetch - main [MainThread]: End processing [ForgyPs] error
+[2023-04-23 19:57:48] INFO root fetch - processPackages [zython]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-23 19:57:48] INFO root fetch - processPackages [audiconnectpy]: Start processing: image-to-arduino
+[2023-04-23 19:57:48] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2023-04-23 19:57:48] INFO root fetch - processPackages [image-to-arduino]: New version: [1.0.3.2] Old Version: [1.0.3.1]
+[2023-04-23 19:57:48] INFO root fetch - processPackages [naturalspeech2-pytorch]: Downloading https://files.pythonhosted.org/packages/25/77/db03ee7a507e4ce8e35645277508dfba8829e32cb2f6b4c8d7ef2d19de99/naturalspeech2-pytorch-0.0.9.tar.gz
+[2023-04-23 19:57:48] INFO root fetch - processPackages [zython]: Downloading https://files.pythonhosted.org/packages/37/18/19eeae046319194861d9915025734031b163d08fac7f6a0e2d5e2e66a104/zython-0.4.1-py3-none-any.whl
+[2023-04-23 19:57:48] INFO root fetch - main [MainThread]: End processing [edgetest-pip-tools]: success
+[2023-04-23 19:57:48] INFO root fetch - processPackages [image-to-arduino]: Downloading https://files.pythonhosted.org/packages/6d/78/b7e1922b06deeeaae29737a1dc1d627dd60cb5221404a28b0b6ce916385e/image-to-arduino-1.0.3.2.tar.gz
+[2023-04-23 19:57:48] INFO root fetch - processPackages [naturalspeech2-pytorch]: executing diffoscope
+[2023-04-23 19:57:48] INFO root fetch - processPackages [naturalspeech2-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naturalspeech2-pytorch-0.0.8.tar.gz tmp/naturalspeech2-pytorch-0.0.9.tar.gz --markdown 20230423/n/naturalspeech2-pytorch/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 19:57:48] INFO root fetch - main [MainThread]: End processing [polario]: success
+[2023-04-23 19:57:48] INFO root fetch - main [MainThread]: End processing [rottentomatoes-python]: success
+[2023-04-23 19:57:48] INFO root fetch - main [MainThread]: End processing [cotat]: success
+[2023-04-23 19:57:48] INFO root fetch - main [MainThread]: End processing [aiointeractions]: success
+[2023-04-23 19:57:48] INFO root fetch - processPackages [zython]: executing diffoscope
+[2023-04-23 19:57:48] INFO root fetch - processPackages [zython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zython-0.4.0-py3-none-any.whl.zip tmp/zython-0.4.1-py3-none-any.whl.zip --markdown 20230423/z/zython/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-23 19:57:48] INFO root fetch - main [MainThread]: End processing [troposphere-dns-certificate]: success
+[2023-04-23 19:57:48] INFO root fetch - processPackages [image-to-arduino]: executing diffoscope
+[2023-04-23 19:57:48] INFO root fetch - processPackages [image-to-arduino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image_to_arduino-1.0.3.1.tar.gz tmp/image-to-arduino-1.0.3.2.tar.gz --markdown 20230423/i/image-to-arduino/1.0.3.1-1.0.3.2/diff.md --exclude *.pyd
+[2023-04-23 19:57:49] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-04-23 19:57:49] INFO root fetch - main [MainThread]: End processing [naturalspeech2-pytorch]: success
+[2023-04-23 19:57:49] INFO root fetch - main [MainThread]: End processing [zython]: success
+[2023-04-23 19:57:49] INFO root fetch - main [MainThread]: End processing [image-to-arduino]: success
+[2023-04-23 19:57:49] INFO root fetch - main [MainThread]: Store serial: [17824633]
