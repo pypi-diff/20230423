@@ -3782,3 +3782,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 08:10:40] INFO root fetch - main [MainThread]: End processing [quarkstudio]: success
 [2023-04-23 08:10:43] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2023-04-23 08:10:43] INFO root fetch - main [MainThread]: Store serial: [17819814]
+[2023-04-23 08:15:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819814]
+[2023-04-23 08:15:53] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 08:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webarchiver
+[2023-04-23 08:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aws-chain-secrets
+[2023-04-23 08:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chatgpt-pre-commit-hooks
+[2023-04-23 08:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: media-manager
+[2023-04-23 08:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: p-template-generator
+[2023-04-23 08:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: truegrad
+[2023-04-23 08:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: alaric
+[2023-04-23 08:15:53] WARNING root fetch - processPackages [aws-chain-secrets]: Skipping, unable to determine old version
+[2023-04-23 08:15:53] INFO root fetch - main [MainThread]: End processing [aws-chain-secrets] error
+[2023-04-23 08:15:53] INFO root fetch - processPackages [media-manager]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-23 08:15:53] INFO root fetch - processPackages [chatgpt-pre-commit-hooks]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-23 08:15:53] INFO root fetch - processPackages [p-template-generator]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 08:15:53] INFO root fetch - processPackages [webarchiver]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-04-23 08:15:53] INFO root fetch - processPackages [truegrad]: New version: [4.0.0] Old Version: [3.1.1]
+[2023-04-23 08:15:53] INFO root fetch - processPackages [media-manager]: executing diffoscope
+[2023-04-23 08:15:53] INFO root fetch - processPackages [media-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip --markdown 20230423/m/media-manager/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-23 08:15:53] INFO root fetch - processPackages [alaric]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-04-23 08:15:53] INFO root fetch - processPackages [truegrad]: executing diffoscope
+[2023-04-23 08:15:53] INFO root fetch - processPackages [truegrad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/truegrad-3.1.1.tar.gz tmp/truegrad-4.0.0.tar.gz --markdown 20230423/t/truegrad/3.1.1-4.0.0/diff.md --exclude *.pyd
+[2023-04-23 08:15:53] INFO root fetch - processPackages [webarchiver]: Downloading https://files.pythonhosted.org/packages/99/9d/8bd3896d610ddf6c794dc763f518914cfe0b9d512ac76c65327d9e48ccc2/webarchiver-0.7.0-py2.py3-none-any.whl
+[2023-04-23 08:15:53] INFO root fetch - processPackages [alaric]: Downloading https://files.pythonhosted.org/packages/57/7c/3b9d4fa3c1d58fa5513f578711a5a5d276e5370ae3cdea7c2b350d2c9bad/alaric-1.3.1.tar.gz
+[2023-04-23 08:15:53] INFO root fetch - processPackages [chatgpt-pre-commit-hooks]: Downloading https://files.pythonhosted.org/packages/0d/1d/29896f9de0e71b2179dfb4a3805e6866aa31b82a147a2d677cfc7e866b72/chatgpt_pre_commit_hooks-0.1.3-py3-none-any.whl
+[2023-04-23 08:15:53] INFO root fetch - processPackages [p-template-generator]: executing diffoscope
+[2023-04-23 08:15:53] INFO root fetch - processPackages [p-template-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-generator-0.1.8.tar.gz tmp/p-template-generator-0.1.9.tar.gz --markdown 20230423/p/p-template-generator/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 08:15:54] INFO root fetch - main [MainThread]: End processing [truegrad]: success
+[2023-04-23 08:15:54] INFO root fetch - main [MainThread]: End processing [media-manager]: success
+[2023-04-23 08:15:54] INFO root fetch - processPackages [chatgpt-pre-commit-hooks]: executing diffoscope
+[2023-04-23 08:15:54] INFO root fetch - processPackages [chatgpt-pre-commit-hooks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatgpt_pre_commit_hooks-0.1.2-py3-none-any.whl.zip tmp/chatgpt_pre_commit_hooks-0.1.3-py3-none-any.whl.zip --markdown 20230423/c/chatgpt-pre-commit-hooks/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-23 08:15:54] INFO root fetch - main [MainThread]: End processing [p-template-generator]: success
+[2023-04-23 08:15:54] INFO root fetch - processPackages [alaric]: Downloading https://files.pythonhosted.org/packages/48/69/109289aef04e205efee6057f395bd84a908758ecc4faf8c57c68acd464fe/alaric-1.3.2.tar.gz
+[2023-04-23 08:15:54] INFO root fetch - processPackages [alaric]: executing diffoscope
+[2023-04-23 08:15:54] INFO root fetch - processPackages [alaric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alaric-1.3.1.tar.gz tmp/alaric-1.3.2.tar.gz --markdown 20230423/a/alaric/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-04-23 08:15:55] INFO root fetch - processPackages [webarchiver]: Downloading https://files.pythonhosted.org/packages/8b/9a/c8f521351841e4f8f2e9edc8e89dc32dd5d69a459228392ab38660d0914b/webarchiver-0.8.0-py2.py3-none-any.whl
+[2023-04-23 08:15:55] INFO root fetch - processPackages [webarchiver]: executing diffoscope
+[2023-04-23 08:15:55] INFO root fetch - processPackages [webarchiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webarchiver-0.7.0-py2.py3-none-any.whl.zip tmp/webarchiver-0.8.0-py2.py3-none-any.whl.zip --markdown 20230423/w/webarchiver/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-04-23 08:15:55] INFO root fetch - main [MainThread]: End processing [chatgpt-pre-commit-hooks]: success
+[2023-04-23 08:15:56] INFO root fetch - main [MainThread]: End processing [alaric]: success
+[2023-04-23 08:15:56] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
+[2023-04-23 08:15:56] INFO root fetch - main [MainThread]: Store serial: [17819833]
