@@ -7911,3 +7911,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 14:39:39] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
 [2023-04-23 14:39:53] INFO root fetch - main [MainThread]: End processing [vsg]: success
 [2023-04-23 14:39:53] INFO root fetch - main [MainThread]: Store serial: [17822270]
+[2023-04-23 14:44:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17822270]
+[2023-04-23 14:45:02] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-23 14:45:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: discoger
+[2023-04-23 14:45:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zerocs
+[2023-04-23 14:45:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: elemeta
+[2023-04-23 14:45:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bagbag
+[2023-04-23 14:45:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rozklad-ontu-parser-MakisuKurisu
+[2023-04-23 14:45:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyhOn
+[2023-04-23 14:45:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aiei
+[2023-04-23 14:45:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pinyin-jyutping
+[2023-04-23 14:45:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: manticore
+[2023-04-23 14:45:02] INFO root fetch - processPackages [elemeta]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-23 14:45:02] INFO root fetch - processPackages [aiei]: New version: [1.0.6] Old Version: [1.0.2]
+[2023-04-23 14:45:02] INFO root fetch - processPackages [zerocs]: New version: [0.6] Old Version: [0.5]
+[2023-04-23 14:45:02] INFO root fetch - processPackages [rozklad-ontu-parser-MakisuKurisu]: New version: [0.0.4.1] Old Version: [0.0.4]
+[2023-04-23 14:45:02] INFO root fetch - processPackages [pyhOn]: New version: [0.8.3] Old Version: [0.8.2]
+[2023-04-23 14:45:02] INFO root fetch - processPackages [discoger]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-23 14:45:02] INFO root fetch - processPackages [pinyin-jyutping]: New version: [0.8] Old Version: [0.7]
+[2023-04-23 14:45:02] INFO root fetch - processPackages [bagbag]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-04-23 14:45:02] INFO root fetch - processPackages [manticore]: New version: [0.3.8.dev230423] Old Version: [0.3.8.dev230422]
+[2023-04-23 14:45:02] INFO root fetch - processPackages [zerocs]: Downloading https://files.pythonhosted.org/packages/73/c6/4a4dda20d1e229edbe15937b9139d1f4d835a08d9d3701e9f1e4b8751369/zerocs-0.5.tar.gz
+[2023-04-23 14:45:02] INFO root fetch - processPackages [elemeta]: Downloading https://files.pythonhosted.org/packages/24/38/1efa0e47af8c980eb872a93ce44f3c7c5673fe976a514ca4823e7cad287e/elemeta-1.0.1.tar.gz
+[2023-04-23 14:45:02] INFO root fetch - processPackages [pinyin-jyutping]: Downloading https://files.pythonhosted.org/packages/67/00/f2ff1d7aef8a208b287bbc53ee16b12300f4290f0c26ae64ffffa9d73dab/pinyin_jyutping-0.7.tar.gz
+[2023-04-23 14:45:02] INFO root fetch - processPackages [pyhOn]: Downloading https://files.pythonhosted.org/packages/93/ba/76fde836882342cfd3a9a67f7e3599e1724ce4f6dfac1db86df52e07b55a/pyhOn-0.8.3.tar.gz
+[2023-04-23 14:45:02] INFO root fetch - processPackages [aiei]: Downloading https://files.pythonhosted.org/packages/49/05/3ea9446c9779edca23633c84a5590a37cce54c4cbcb88fb08c2d35a4ba57/aiei-1.0.6.tar.gz
+[2023-04-23 14:45:02] INFO root fetch - processPackages [rozklad-ontu-parser-MakisuKurisu]: Downloading https://files.pythonhosted.org/packages/b2/48/fdf9ee89a34d09e2c442f4c89cb66b39a9fda5909241f0e540fb369bbd24/rozklad_ontu_parser_makisukurisu-0.0.4.1.tar.gz
+[2023-04-23 14:45:03] INFO root fetch - processPackages [discoger]: Downloading https://files.pythonhosted.org/packages/d1/1a/41b60c983e7f3c4cb189aeb956f573c01734a69933ab0108dd38af0d1476/discoger-1.0.1.tar.gz
+[2023-04-23 14:45:03] INFO root fetch - processPackages [manticore]: Downloading https://files.pythonhosted.org/packages/20/2f/0a4c6345cf89b4c42717e2c2e9c42d48119dbc21b1a890f99a2ed08f324c/manticore-0.3.8.dev230423.tar.gz
+[2023-04-23 14:45:03] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2023-04-23 14:45:03] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.9.5.tar.gz tmp/bagbag-0.9.6.tar.gz --markdown 20230423/b/bagbag/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-04-23 14:45:03] WARNING root fetch - processPackages [elemeta]: Skipping package: exceeds size limit 27330718>=10485760
+[2023-04-23 14:45:03] INFO root fetch - main [MainThread]: End processing [elemeta] error
+[2023-04-23 14:45:03] INFO root fetch - processPackages [pyhOn]: executing diffoscope
+[2023-04-23 14:45:03] INFO root fetch - processPackages [pyhOn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhOn-0.8.2.tar.gz tmp/pyhOn-0.8.3.tar.gz --markdown 20230423/p/pyhOn/0.8.2-0.8.3/diff.md --exclude *.pyd
+[2023-04-23 14:45:03] INFO root fetch - processPackages [rozklad-ontu-parser-MakisuKurisu]: executing diffoscope
+[2023-04-23 14:45:03] INFO root fetch - processPackages [rozklad-ontu-parser-MakisuKurisu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rozklad_ontu_parser_makisukurisu-0.0.4.tar.gz tmp/rozklad_ontu_parser_makisukurisu-0.0.4.1.tar.gz --markdown 20230423/r/rozklad-ontu-parser-MakisuKurisu/0.0.4-0.0.4.1/diff.md --exclude *.pyd
+[2023-04-23 14:45:03] INFO root fetch - processPackages [aiei]: executing diffoscope
+[2023-04-23 14:45:03] INFO root fetch - processPackages [aiei]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiei-1.0.2.tar.gz tmp/aiei-1.0.6.tar.gz --markdown 20230423/a/aiei/1.0.2-1.0.6/diff.md --exclude *.pyd
+[2023-04-23 14:45:03] INFO root fetch - processPackages [discoger]: executing diffoscope
+[2023-04-23 14:45:03] INFO root fetch - processPackages [discoger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discoger-1.0.0.tar.gz tmp/discoger-1.0.1.tar.gz --markdown 20230423/d/discoger/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-23 14:45:03] INFO root fetch - processPackages [manticore]: executing diffoscope
+[2023-04-23 14:45:03] INFO root fetch - processPackages [manticore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manticore-0.3.8.dev230422.tar.gz tmp/manticore-0.3.8.dev230423.tar.gz --markdown 20230423/m/manticore/0.3.8.dev230422-0.3.8.dev230423/diff.md --exclude *.pyd
+[2023-04-23 14:45:03] INFO root fetch - processPackages [zerocs]: Downloading https://files.pythonhosted.org/packages/ac/d4/bb9bf662afbdb2f1e0e6ab4aeac2cebc7e18ab709ae33860b779a8691386/zerocs-0.6.tar.gz
+[2023-04-23 14:45:03] INFO root fetch - processPackages [zerocs]: executing diffoscope
+[2023-04-23 14:45:03] INFO root fetch - processPackages [zerocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zerocs-0.5.tar.gz tmp/zerocs-0.6.tar.gz --markdown 20230423/z/zerocs/0.5-0.6/diff.md --exclude *.pyd
+[2023-04-23 14:45:04] INFO root fetch - processPackages [pinyin-jyutping]: Downloading https://files.pythonhosted.org/packages/5a/cc/ab9ef4488a077728c72caac23e1088f95acac3d87acf12b04cab39fcca9d/pinyin_jyutping-0.8.tar.gz
+[2023-04-23 14:45:04] INFO root fetch - main [MainThread]: End processing [bagbag]: success
+[2023-04-23 14:45:04] INFO root fetch - main [MainThread]: End processing [pyhOn]: success
+[2023-04-23 14:45:04] INFO root fetch - main [MainThread]: End processing [rozklad-ontu-parser-MakisuKurisu]: success
+[2023-04-23 14:45:04] INFO root fetch - main [MainThread]: End processing [discoger]: success
+[2023-04-23 14:45:04] INFO root fetch - main [MainThread]: End processing [zerocs]: success
+[2023-04-23 14:45:05] INFO root fetch - main [MainThread]: End processing [aiei]: success
+[2023-04-23 14:45:05] INFO root fetch - main [MainThread]: End processing [manticore]: success
+[2023-04-23 14:45:05] INFO root fetch - processPackages [pinyin-jyutping]: executing diffoscope
+[2023-04-23 14:45:05] INFO root fetch - processPackages [pinyin-jyutping]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pinyin_jyutping-0.7.tar.gz tmp/pinyin_jyutping-0.8.tar.gz --markdown 20230423/p/pinyin-jyutping/0.7-0.8/diff.md --exclude *.pyd
+[2023-04-23 14:45:08] INFO root fetch - main [MainThread]: End processing [pinyin-jyutping]: success
+[2023-04-23 14:45:08] INFO root fetch - main [MainThread]: Store serial: [17822299]
