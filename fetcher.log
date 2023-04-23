@@ -12802,3 +12802,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 21:12:36] INFO root fetch - main [MainThread]: End processing [foursight]: success
 [2023-04-23 21:12:36] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
 [2023-04-23 21:12:36] INFO root fetch - main [MainThread]: Store serial: [17825191]
+[2023-04-23 21:17:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825191]
+[2023-04-23 21:17:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-23 21:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opvious
+[2023-04-23 21:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dank-mids
+[2023-04-23 21:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: accurating
+[2023-04-23 21:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: use-case-registry
+[2023-04-23 21:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: easy-crud-repo-service
+[2023-04-23 21:17:45] INFO root fetch - processPackages [opvious]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-04-23 21:17:45] WARNING root fetch - processPackages [easy-crud-repo-service]: Skipping, unable to determine old version
+[2023-04-23 21:17:45] INFO root fetch - main [MainThread]: End processing [easy-crud-repo-service] error
+[2023-04-23 21:17:45] INFO root fetch - processPackages [accurating]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-23 21:17:45] INFO root fetch - processPackages [use-case-registry]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-04-23 21:17:45] INFO root fetch - processPackages [dank-mids]: New version: [4.20.9] Old Version: [4.20.8]
+[2023-04-23 21:17:45] INFO root fetch - processPackages [dank-mids]: executing diffoscope
+[2023-04-23 21:17:45] INFO root fetch - processPackages [dank-mids]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dank_mids-4.20.8.tar.gz tmp/dank_mids-4.20.9.tar.gz --markdown 20230423/d/dank-mids/4.20.8-4.20.9/diff.md --exclude *.pyd
+[2023-04-23 21:17:45] INFO root fetch - processPackages [use-case-registry]: Downloading https://files.pythonhosted.org/packages/4f/9c/4158bbb3f9f08c5704a88723f22479cda7fd8b1ddfcb714f9c4b79995114/use_case_registry-1.4.8.tar.gz
+[2023-04-23 21:17:45] INFO root fetch - processPackages [accurating]: Downloading https://files.pythonhosted.org/packages/d4/de/5cba31c7e88d81344c8aec7b088ebca0a7a09fbd2e66edcde27717aa978c/accurating-0.4.4.tar.gz
+[2023-04-23 21:17:45] INFO root fetch - processPackages [opvious]: executing diffoscope
+[2023-04-23 21:17:45] INFO root fetch - processPackages [opvious]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opvious-0.9.5.tar.gz tmp/opvious-0.9.6.tar.gz --markdown 20230423/o/opvious/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-04-23 21:17:45] INFO root fetch - processPackages [accurating]: executing diffoscope
+[2023-04-23 21:17:45] INFO root fetch - processPackages [accurating]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/accurating-0.4.3.tar.gz tmp/accurating-0.4.4.tar.gz --markdown 20230423/a/accurating/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-04-23 21:17:46] INFO root fetch - processPackages [use-case-registry]: Downloading https://files.pythonhosted.org/packages/e5/a5/d4348a8ca0922b09f0a736d6ce9d9f9dc7dddf4880596fbf9321920c3a67/use_case_registry-1.4.9.tar.gz
+[2023-04-23 21:17:46] INFO root fetch - processPackages [use-case-registry]: executing diffoscope
+[2023-04-23 21:17:46] INFO root fetch - processPackages [use-case-registry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/use_case_registry-1.4.8.tar.gz tmp/use_case_registry-1.4.9.tar.gz --markdown 20230423/u/use-case-registry/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-04-23 21:17:46] INFO root fetch - main [MainThread]: End processing [dank-mids]: success
+[2023-04-23 21:17:47] INFO root fetch - main [MainThread]: End processing [opvious]: success
+[2023-04-23 21:17:47] INFO root fetch - main [MainThread]: End processing [accurating]: success
+[2023-04-23 21:17:47] INFO root fetch - main [MainThread]: End processing [use-case-registry]: success
+[2023-04-23 21:17:47] INFO root fetch - main [MainThread]: Store serial: [17825211]
