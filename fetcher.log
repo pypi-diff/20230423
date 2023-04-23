@@ -6059,3 +6059,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 11:58:57] INFO root fetch - main [MainThread]: End processing [CUQIpy]: success
 [2023-04-23 11:58:57] INFO root fetch - main [MainThread]: End processing [akshare]: success
 [2023-04-23 11:58:57] INFO root fetch - main [MainThread]: Store serial: [17821140]
+[2023-04-23 12:04:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17821140]
+[2023-04-23 12:04:06] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-23 12:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-chronos-spark3
+[2023-04-23 12:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-spark3
+[2023-04-23 12:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quiltz-domain
+[2023-04-23 12:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyckett
+[2023-04-23 12:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cc12703-uiautomator2
+[2023-04-23 12:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: neo-vendors
+[2023-04-23 12:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jija-sqlalchemy
+[2023-04-23 12:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mcqq-tool
+[2023-04-23 12:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cc12703-uiautomator2
+[2023-04-23 12:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: AIUT-RoboticsToolbox
+[2023-04-23 12:04:06] INFO root fetch - processPackages [mcqq-tool]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-23 12:04:06] INFO root fetch - processPackages [quiltz-domain]: New version: [0.8.1] Old Version: [0.7.3]
+[2023-04-23 12:04:06] INFO root fetch - processPackages [pyckett]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-23 12:04:06] WARNING root fetch - processPackages [jija-sqlalchemy]: Skipping, unable to determine old version
+[2023-04-23 12:04:06] INFO root fetch - processPackages [neo-vendors]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-23 12:04:06] INFO root fetch - main [MainThread]: End processing [jija-sqlalchemy] error
+[2023-04-23 12:04:06] INFO root fetch - processPackages [cc12703-uiautomator2]: New version: [2.7.3] Old Version: [2.7.2]
+[2023-04-23 12:04:06] INFO root fetch - processPackages [AIUT-RoboticsToolbox]: New version: [0.0.0.2] Old Version: [0.0.0.1]
+[2023-04-23 12:04:06] INFO root fetch - processPackages [cc12703-uiautomator2]: New version: [2.7.3] Old Version: [2.7.2]
+[2023-04-23 12:04:06] INFO root fetch - processPackages [bigdl-chronos-spark3]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-23 12:04:06] INFO root fetch - processPackages [bigdl-spark3]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-23 12:04:06] INFO root fetch - processPackages [mcqq-tool]: Downloading https://files.pythonhosted.org/packages/b7/7d/92f6fe104449dea56321753193c82aa70efd45d7fcf3e3c313f3f57dad84/mcqq-tool-0.0.5.tar.gz
+[2023-04-23 12:04:06] INFO root fetch - processPackages [neo-vendors]: Downloading https://files.pythonhosted.org/packages/83/cc/ea7ec4dd4e89ade6d4084feb804df5543cd2b986e8748a02a7c528d8ab37/neo_vendors-0.9.8.tar.gz
+[2023-04-23 12:04:06] INFO root fetch - processPackages [quiltz-domain]: Downloading https://files.pythonhosted.org/packages/6f/89/f2a28cc136bc881fd64eb75e213e071b914149c9a3ee6a561e0c82323c8c/quiltz-domain-0.7.3.tar.gz
+[2023-04-23 12:04:06] INFO root fetch - processPackages [AIUT-RoboticsToolbox]: Downloading https://files.pythonhosted.org/packages/92/80/a79ac19bcf7757030b279933c5e242d5901b0b1914d238bcdb3eb319269e/AIUT_RoboticsToolbox-0.0.0.1.tar.gz
+[2023-04-23 12:04:06] INFO root fetch - processPackages [pyckett]: Downloading https://files.pythonhosted.org/packages/98/aa/1817f396c8cedc307fff590d9042f185f3f7057cdade01df60f765703e30/pyckett-0.1.6.tar.gz
+[2023-04-23 12:04:06] INFO root fetch - processPackages [mcqq-tool]: executing diffoscope
+[2023-04-23 12:04:06] INFO root fetch - processPackages [mcqq-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcqq-tool-0.0.4.tar.gz tmp/mcqq-tool-0.0.5.tar.gz --markdown 20230423/m/mcqq-tool/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 12:04:06] INFO root fetch - processPackages [cc12703-uiautomator2]: executing diffoscope
+[2023-04-23 12:04:06] INFO root fetch - processPackages [cc12703-uiautomator2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cc12703_uiautomator2-2.7.2.tar.gz tmp/cc12703_uiautomator2-2.7.3.tar.gz --markdown 20230423/c/cc12703-uiautomator2/2.7.2-2.7.3/diff.md --exclude *.pyd
+[2023-04-23 12:04:06] INFO root fetch - processPackages [cc12703-uiautomator2]: executing diffoscope
+[2023-04-23 12:04:06] INFO root fetch - processPackages [cc12703-uiautomator2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cc12703_uiautomator2-2.7.2.tar.gz tmp/cc12703_uiautomator2-2.7.3.tar.gz --markdown 20230423/c/cc12703-uiautomator2/2.7.2-2.7.3/diff.md --exclude *.pyd
+[2023-04-23 12:04:06] INFO root fetch - processPackages [bigdl-chronos-spark3]: executing diffoscope
+[2023-04-23 12:04:06] INFO root fetch - processPackages [bigdl-chronos-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos_spark3-2.4.0b20230421-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_chronos_spark3-2.4.0b20230422-py3-none-manylinux1_x86_64.whl.zip --markdown 20230423/b/bigdl-chronos-spark3/2.4.0b20230421-2.4.0b20230422/diff.md --exclude *.pyd
+[2023-04-23 12:04:06] INFO root fetch - processPackages [neo-vendors]: Downloading https://files.pythonhosted.org/packages/d0/cd/daed68510baa92c884144c604fb68d69389b9738f1158fafc975cf4c6f3b/neo_vendors-0.9.9.tar.gz
+[2023-04-23 12:04:06] INFO root fetch - processPackages [bigdl-spark3]: executing diffoscope
+[2023-04-23 12:04:06] INFO root fetch - processPackages [bigdl-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_spark3-2.4.0b20230421-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_spark3-2.4.0b20230422-py3-none-manylinux1_x86_64.whl.zip --markdown 20230423/b/bigdl-spark3/2.4.0b20230421-2.4.0b20230422/diff.md --exclude *.pyd
+[2023-04-23 12:04:07] INFO root fetch - processPackages [quiltz-domain]: Downloading https://files.pythonhosted.org/packages/08/2c/65aeb8c3c8342a03e4e60aa24f5351d45e54841c38426a11ad375801b1af/quiltz-domain-0.8.1.tar.gz
+[2023-04-23 12:04:07] INFO root fetch - processPackages [AIUT-RoboticsToolbox]: Downloading https://files.pythonhosted.org/packages/99/52/01876ada3dad059e2f2b645d9c542e5ef7c292752ca4ff79a149cf6511c1/AIUT_RoboticsToolbox-0.0.0.2.tar.gz
+[2023-04-23 12:04:07] INFO root fetch - processPackages [pyckett]: Downloading https://files.pythonhosted.org/packages/77/bc/63c8fdba4d32eb0811d8e5ca0af3d24d172dc50595ecb74ca680b3455d88/pyckett-0.1.7.tar.gz
+[2023-04-23 12:04:07] INFO root fetch - processPackages [neo-vendors]: executing diffoscope
+[2023-04-23 12:04:07] INFO root fetch - processPackages [neo-vendors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neo_vendors-0.9.8.tar.gz tmp/neo_vendors-0.9.9.tar.gz --markdown 20230423/n/neo-vendors/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-23 12:04:07] INFO root fetch - processPackages [quiltz-domain]: executing diffoscope
+[2023-04-23 12:04:07] INFO root fetch - processPackages [quiltz-domain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quiltz-domain-0.7.3.tar.gz tmp/quiltz-domain-0.8.1.tar.gz --markdown 20230423/q/quiltz-domain/0.7.3-0.8.1/diff.md --exclude *.pyd
+[2023-04-23 12:04:07] INFO root fetch - processPackages [AIUT-RoboticsToolbox]: executing diffoscope
+[2023-04-23 12:04:07] INFO root fetch - processPackages [AIUT-RoboticsToolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AIUT_RoboticsToolbox-0.0.0.1.tar.gz tmp/AIUT_RoboticsToolbox-0.0.0.2.tar.gz --markdown 20230423/A/AIUT-RoboticsToolbox/0.0.0.1-0.0.0.2/diff.md --exclude *.pyd
+[2023-04-23 12:04:07] INFO root fetch - processPackages [pyckett]: executing diffoscope
+[2023-04-23 12:04:07] INFO root fetch - processPackages [pyckett]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyckett-0.1.6.tar.gz tmp/pyckett-0.1.7.tar.gz --markdown 20230423/p/pyckett/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-23 12:04:08] INFO root fetch - main [MainThread]: End processing [mcqq-tool]: success
+[2023-04-23 12:04:08] INFO root fetch - main [MainThread]: End processing [bigdl-spark3]: success
+[2023-04-23 12:04:08] INFO root fetch - main [MainThread]: End processing [pyckett]: success
+[2023-04-23 12:04:08] INFO root fetch - main [MainThread]: End processing [AIUT-RoboticsToolbox]: success
+[2023-04-23 12:04:08] INFO root fetch - main [MainThread]: End processing [neo-vendors]: success
+[2023-04-23 12:04:08] INFO root fetch - main [MainThread]: End processing [cc12703-uiautomator2]: success
+[2023-04-23 12:04:09] INFO root fetch - main [MainThread]: End processing [bigdl-chronos-spark3]: success
+[2023-04-23 12:04:11] INFO root fetch - main [MainThread]: End processing [cc12703-uiautomator2]: success
+[2023-04-23 12:04:24] INFO root fetch - main [MainThread]: End processing [quiltz-domain]: success
+[2023-04-23 12:04:24] INFO root fetch - main [MainThread]: Store serial: [17821171]
