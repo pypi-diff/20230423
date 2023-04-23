@@ -14002,3 +14002,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 23:29:31] INFO root fetch - main [MainThread]: End processing [PyFlyt]: success
 [2023-04-23 23:29:39] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-04-23 23:29:39] INFO root fetch - main [MainThread]: Store serial: [17826013]
+[2023-04-23 23:34:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17826013]
+[2023-04-23 23:34:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-23 23:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: foursight-core
+[2023-04-23 23:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chromat
+[2023-04-23 23:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: json-stream-to-standard-types
+[2023-04-23 23:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: onsale
+[2023-04-23 23:34:48] INFO root fetch - processPackages [onsale]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 23:34:48] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.5b29] Old Version: [4.1.0.5b28]
+[2023-04-23 23:34:48] INFO root fetch - processPackages [chromat]: New version: [0.1.0] Old Version: [0.0.6]
+[2023-04-23 23:34:48] INFO root fetch - processPackages [json-stream-to-standard-types]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-23 23:34:48] INFO root fetch - processPackages [onsale]: executing diffoscope
+[2023-04-23 23:34:48] INFO root fetch - processPackages [onsale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onsale-0.0.1.tar.gz tmp/onsale-0.0.2.tar.gz --markdown 20230423/o/onsale/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 23:34:48] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/fd/17/ec09c3b5bcdad4a82a675fe792cf8059874b2dd3ff193c055c33fecf51e7/foursight_core-4.1.0.5b29.tar.gz
+[2023-04-23 23:34:48] INFO root fetch - processPackages [json-stream-to-standard-types]: Downloading https://files.pythonhosted.org/packages/00/a7/e626a08f1706465d8626f9588f9b68eebe9aa9c48ccc780d1bd9364bea7e/json_stream_to_standard_types-0.1.3.tar.gz
+[2023-04-23 23:34:49] INFO root fetch - processPackages [chromat]: Downloading https://files.pythonhosted.org/packages/1a/db/a400409bc550b5f94a6199130be1cab55c3bff0c91506a207bf3707eb79b/chromat-0.1.0.tar.gz
+[2023-04-23 23:34:49] INFO root fetch - processPackages [chromat]: executing diffoscope
+[2023-04-23 23:34:49] INFO root fetch - processPackages [chromat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromat-0.0.6.tar.gz tmp/chromat-0.1.0.tar.gz --markdown 20230423/c/chromat/0.0.6-0.1.0/diff.md --exclude *.pyd
+[2023-04-23 23:34:49] INFO root fetch - processPackages [json-stream-to-standard-types]: Downloading https://files.pythonhosted.org/packages/67/42/aadf9f11d800a0b53a109ac74dffa135d39143140baec72c7cef98001896/json_stream_to_standard_types-0.1.4.tar.gz
+[2023-04-23 23:34:49] INFO root fetch - processPackages [json-stream-to-standard-types]: executing diffoscope
+[2023-04-23 23:34:49] INFO root fetch - processPackages [json-stream-to-standard-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_stream_to_standard_types-0.1.3.tar.gz tmp/json_stream_to_standard_types-0.1.4.tar.gz --markdown 20230423/j/json-stream-to-standard-types/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-23 23:34:49] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-23 23:34:49] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.5b28.tar.gz tmp/foursight_core-4.1.0.5b29.tar.gz --markdown 20230423/f/foursight-core/4.1.0.5b28-4.1.0.5b29/diff.md --exclude *.pyd
+[2023-04-23 23:34:49] INFO root fetch - main [MainThread]: End processing [onsale]: success
+[2023-04-23 23:34:50] INFO root fetch - main [MainThread]: End processing [chromat]: success
+[2023-04-23 23:34:50] INFO root fetch - main [MainThread]: End processing [json-stream-to-standard-types]: success
+[2023-04-23 23:35:05] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-23 23:35:05] INFO root fetch - main [MainThread]: Store serial: [17826027]
