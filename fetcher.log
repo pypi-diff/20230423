@@ -7968,3 +7968,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 14:45:05] INFO root fetch - processPackages [pinyin-jyutping]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pinyin_jyutping-0.7.tar.gz tmp/pinyin_jyutping-0.8.tar.gz --markdown 20230423/p/pinyin-jyutping/0.7-0.8/diff.md --exclude *.pyd
 [2023-04-23 14:45:08] INFO root fetch - main [MainThread]: End processing [pinyin-jyutping]: success
 [2023-04-23 14:45:08] INFO root fetch - main [MainThread]: Store serial: [17822299]
+[2023-04-23 14:50:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17822299]
+[2023-04-23 14:50:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-23 14:50:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-project-panel
+[2023-04-23 14:50:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Muralikrishnan-Nambiar-booking-mail
+[2023-04-23 14:50:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: guira
+[2023-04-23 14:50:17] WARNING root fetch - processPackages [django-project-panel]: Skipping, unable to determine old version
+[2023-04-23 14:50:17] INFO root fetch - main [MainThread]: End processing [django-project-panel] error
+[2023-04-23 14:50:17] WARNING root fetch - processPackages [Muralikrishnan-Nambiar-booking-mail]: Skipping, unable to determine old version
+[2023-04-23 14:50:17] INFO root fetch - main [MainThread]: End processing [Muralikrishnan-Nambiar-booking-mail] error
+[2023-04-23 14:50:17] WARNING root fetch - processPackages [guira]: Skipping, unable to determine old version
+[2023-04-23 14:50:17] INFO root fetch - main [MainThread]: End processing [guira] error
+[2023-04-23 14:50:17] INFO root fetch - main [MainThread]: Store serial: [17822314]
