@@ -12352,3 +12352,74 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 20:40:18] INFO root fetch - main [MainThread]: End processing [Mastodon.py]: success
 [2023-04-23 20:40:22] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-23 20:40:22] INFO root fetch - main [MainThread]: Store serial: [17824906]
+[2023-04-23 20:45:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17824906]
+[2023-04-23 20:45:34] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-23 20:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: foursight-core
+[2023-04-23 20:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bagbag
+[2023-04-23 20:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: st-kedro-viz-component
+[2023-04-23 20:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: atprototools
+[2023-04-23 20:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gWeaver
+[2023-04-23 20:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: helyos-agent-sdk
+[2023-04-23 20:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: circuitpython-slider
+[2023-04-23 20:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tunein
+[2023-04-23 20:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: discounts
+[2023-04-23 20:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: act-workers
+[2023-04-23 20:45:34] WARNING root fetch - processPackages [st-kedro-viz-component]: Skipping, unable to determine old version
+[2023-04-23 20:45:34] INFO root fetch - processPackages [st-kedro-viz-component]: Start processing: gym-trading-env
+[2023-04-23 20:45:34] INFO root fetch - main [MainThread]: End processing [st-kedro-viz-component] error
+[2023-04-23 20:45:34] INFO root fetch - processPackages [atprototools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 20:45:34] INFO root fetch - processPackages [circuitpython-slider]: New version: [0.4.4] Old Version: [0.4.2]
+[2023-04-23 20:45:34] INFO root fetch - processPackages [gWeaver]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-23 20:45:34] INFO root fetch - processPackages [discounts]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 20:45:34] INFO root fetch - processPackages [helyos-agent-sdk]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-23 20:45:34] INFO root fetch - processPackages [tunein]: New version: [0.0.3a1] Old Version: [0.0.2a3]
+[2023-04-23 20:45:34] INFO root fetch - processPackages [gym-trading-env]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 20:45:34] INFO root fetch - processPackages [foursight-core]: New version: [4.0.0] Old Version: [3.3.2.2b1]
+[2023-04-23 20:45:34] INFO root fetch - processPackages [act-workers]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-04-23 20:45:34] INFO root fetch - processPackages [bagbag]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-04-23 20:45:34] INFO root fetch - processPackages [helyos-agent-sdk]: Downloading https://files.pythonhosted.org/packages/57/3c/e4f1ec478d3eb26f3266a2d872437a9fce8256b0b86b22a95eb5295e07b6/helyos_agent_sdk-0.3.0.tar.gz
+[2023-04-23 20:45:34] INFO root fetch - processPackages [atprototools]: executing diffoscope
+[2023-04-23 20:45:34] INFO root fetch - processPackages [atprototools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atprototools-0.0.8.tar.gz tmp/atprototools-0.0.9.tar.gz --markdown 20230423/a/atprototools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 20:45:34] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2023-04-23 20:45:34] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.9.5.tar.gz tmp/bagbag-0.9.6.tar.gz --markdown 20230423/b/bagbag/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-04-23 20:45:34] INFO root fetch - processPackages [tunein]: Downloading https://files.pythonhosted.org/packages/86/59/6806104507614ebf72e3c282b4badd0a1a3600438f56caf38b19841f7b75/tunein-0.0.2a3-py3-none-any.whl
+[2023-04-23 20:45:34] INFO root fetch - processPackages [circuitpython-slider]: Downloading https://files.pythonhosted.org/packages/c8/15/9a6fbf9fbf8e7d550461a144fae90de567323617348b14dec28d09eb3920/circuitpython-slider-0.4.2.tar.gz
+[2023-04-23 20:45:34] INFO root fetch - processPackages [gym-trading-env]: executing diffoscope
+[2023-04-23 20:45:34] INFO root fetch - processPackages [gym-trading-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gym-trading-env-0.1.8.tar.gz tmp/gym-trading-env-0.1.9.tar.gz --markdown 20230423/g/gym-trading-env/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 20:45:34] INFO root fetch - processPackages [act-workers]: Downloading https://files.pythonhosted.org/packages/d5/e8/fc282f938e631fb6bc673183892252314f3c847f7143f5e66d7b631a8a41/act-workers-2.1.8.tar.gz
+[2023-04-23 20:45:34] INFO root fetch - processPackages [discounts]: Downloading https://files.pythonhosted.org/packages/31/6e/17dc61271e9bb2c533dc050e0cb4535e20bd81970b7dca43eb6a46c905df/discounts-0.0.6.tar.gz
+[2023-04-23 20:45:34] INFO root fetch - processPackages [gWeaver]: Downloading https://files.pythonhosted.org/packages/2d/13/a64b3544e01e5ad9b1cee85faab2fdb213f7e832b43edb57e2d32bab877b/gWeaver-1.0.3.tar.gz
+[2023-04-23 20:45:34] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-23 20:45:34] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-3.3.2.2b1.tar.gz tmp/foursight_core-4.0.0.tar.gz --markdown 20230423/f/foursight-core/3.3.2.2b1-4.0.0/diff.md --exclude *.pyd
+[2023-04-23 20:45:34] INFO root fetch - processPackages [helyos-agent-sdk]: Downloading https://files.pythonhosted.org/packages/36/50/a1975996fc4cef69cb8670c67e461c5b88624df1250f8d69df16666edb3a/helyos_agent_sdk-0.4.0.tar.gz
+[2023-04-23 20:45:34] INFO root fetch - processPackages [discounts]: executing diffoscope
+[2023-04-23 20:45:34] INFO root fetch - processPackages [discounts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discounts-0.0.5.tar.gz tmp/discounts-0.0.6.tar.gz --markdown 20230423/d/discounts/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 20:45:34] INFO root fetch - processPackages [gWeaver]: executing diffoscope
+[2023-04-23 20:45:34] INFO root fetch - processPackages [gWeaver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gWeaver-1.0.2.tar.gz tmp/gWeaver-1.0.3.tar.gz --markdown 20230423/g/gWeaver/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-23 20:45:34] INFO root fetch - processPackages [circuitpython-slider]: Downloading https://files.pythonhosted.org/packages/45/25/190eb3900efc6f50e188dbaeb3616ae5ba307c4f1cfe9babd62ca88bba89/circuitpython-slider-0.4.4.tar.gz
+[2023-04-23 20:45:34] INFO root fetch - processPackages [tunein]: Downloading https://files.pythonhosted.org/packages/77/7e/d38dd286a4953deb360ce555333522be4d8bf028f7fdd61ab631c002a5ed/tunein-0.0.3a1-py3-none-any.whl
+[2023-04-23 20:45:34] INFO root fetch - processPackages [helyos-agent-sdk]: executing diffoscope
+[2023-04-23 20:45:34] INFO root fetch - processPackages [helyos-agent-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/helyos_agent_sdk-0.3.0.tar.gz tmp/helyos_agent_sdk-0.4.0.tar.gz --markdown 20230423/h/helyos-agent-sdk/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-23 20:45:34] INFO root fetch - processPackages [act-workers]: Downloading https://files.pythonhosted.org/packages/3a/de/34855e231033bd22d76d343400c2508beb4db4d52ba142b10032a757ab16/act-workers-2.1.9.tar.gz
+[2023-04-23 20:45:34] INFO root fetch - processPackages [circuitpython-slider]: executing diffoscope
+[2023-04-23 20:45:34] INFO root fetch - processPackages [circuitpython-slider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circuitpython-slider-0.4.2.tar.gz tmp/circuitpython-slider-0.4.4.tar.gz --markdown 20230423/c/circuitpython-slider/0.4.2-0.4.4/diff.md --exclude *.pyd
+[2023-04-23 20:45:34] INFO root fetch - processPackages [tunein]: executing diffoscope
+[2023-04-23 20:45:34] INFO root fetch - processPackages [tunein]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tunein-0.0.2a3-py3-none-any.whl.zip tmp/tunein-0.0.3a1-py3-none-any.whl.zip --markdown 20230423/t/tunein/0.0.2a3-0.0.3a1/diff.md --exclude *.pyd
+[2023-04-23 20:45:34] INFO root fetch - processPackages [act-workers]: executing diffoscope
+[2023-04-23 20:45:34] INFO root fetch - processPackages [act-workers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/act-workers-2.1.8.tar.gz tmp/act-workers-2.1.9.tar.gz --markdown 20230423/a/act-workers/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-04-23 20:45:35] INFO root fetch - processPackages [atprototools]: Start processing: odoo-models-connect
+[2023-04-23 20:45:35] INFO root fetch - main [MainThread]: End processing [atprototools]: success
+[2023-04-23 20:45:35] INFO root fetch - processPackages [odoo-models-connect]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-23 20:45:36] INFO root fetch - main [MainThread]: End processing [bagbag]: success
+[2023-04-23 20:45:36] INFO root fetch - processPackages [odoo-models-connect]: executing diffoscope
+[2023-04-23 20:45:36] INFO root fetch - processPackages [odoo-models-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_models_connect-0.1.7.tar.gz tmp/odoo_models_connect-0.1.8.tar.gz --markdown 20230423/o/odoo-models-connect/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-23 20:45:36] INFO root fetch - main [MainThread]: End processing [discounts]: success
+[2023-04-23 20:45:36] INFO root fetch - main [MainThread]: End processing [gym-trading-env]: success
+[2023-04-23 20:45:36] INFO root fetch - main [MainThread]: End processing [gWeaver]: success
+[2023-04-23 20:45:36] INFO root fetch - main [MainThread]: End processing [tunein]: success
+[2023-04-23 20:45:36] INFO root fetch - main [MainThread]: End processing [helyos-agent-sdk]: success
+[2023-04-23 20:45:36] INFO root fetch - main [MainThread]: End processing [circuitpython-slider]: success
+[2023-04-23 20:45:37] INFO root fetch - main [MainThread]: End processing [odoo-models-connect]: success
+[2023-04-23 20:45:37] INFO root fetch - main [MainThread]: End processing [act-workers]: success
+[2023-04-23 20:45:50] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-23 20:45:50] INFO root fetch - main [MainThread]: Store serial: [17824944]
