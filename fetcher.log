@@ -4078,3 +4078,73 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 08:36:54] INFO root fetch - main [MainThread]: End processing [python-lorem]: success
 [2023-04-23 08:36:56] INFO root fetch - main [MainThread]: End processing [msadapter]: success
 [2023-04-23 08:36:56] INFO root fetch - main [MainThread]: Store serial: [17819950]
+[2023-04-23 08:42:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819950]
+[2023-04-23 08:42:06] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-23 08:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stock-price-plot
+[2023-04-23 08:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-nano
+[2023-04-23 08:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-chronos
+[2023-04-23 08:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigdl-serving
+[2023-04-23 08:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyathena
+[2023-04-23 08:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyathena
+[2023-04-23 08:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: foliolib
+[2023-04-23 08:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyathena
+[2023-04-23 08:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: python-lorem
+[2023-04-23 08:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mcqq-tool
+[2023-04-23 08:42:06] WARNING root fetch - processPackages [stock-price-plot]: Skipping, unable to determine old version
+[2023-04-23 08:42:06] INFO root fetch - processPackages [stock-price-plot]: Start processing: bionty
+[2023-04-23 08:42:06] INFO root fetch - main [MainThread]: End processing [stock-price-plot] error
+[2023-04-23 08:42:06] INFO root fetch - processPackages [mcqq-tool]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-23 08:42:06] INFO root fetch - processPackages [pyathena]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-04-23 08:42:06] INFO root fetch - processPackages [foliolib]: New version: [0.3.3a1] Old Version: [0.3.2a1]
+[2023-04-23 08:42:06] INFO root fetch - processPackages [python-lorem]: New version: [1.3.0rc1] Old Version: [1.3.0]
+[2023-04-23 08:42:06] INFO root fetch - processPackages [bigdl-serving]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-23 08:42:06] INFO root fetch - processPackages [bionty]: New version: [0.9.0rc1] Old Version: [0.9.0]
+[2023-04-23 08:42:06] INFO root fetch - processPackages [pyathena]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-04-23 08:42:06] INFO root fetch - processPackages [pyathena]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-04-23 08:42:07] INFO root fetch - processPackages [bigdl-nano]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-23 08:42:07] INFO root fetch - processPackages [bigdl-chronos]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-23 08:42:07] INFO root fetch - processPackages [bigdl-serving]: executing diffoscope
+[2023-04-23 08:42:07] INFO root fetch - processPackages [bigdl-serving]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_serving-2.4.0b20230421-py2.py3-none-any.whl.zip tmp/bigdl_serving-2.4.0b20230422-py2.py3-none-any.whl.zip --markdown 20230423/b/bigdl-serving/2.4.0b20230421-2.4.0b20230422/diff.md --exclude *.pyd
+[2023-04-23 08:42:07] INFO root fetch - processPackages [pyathena]: executing diffoscope
+[2023-04-23 08:42:07] INFO root fetch - processPackages [pyathena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAthena-2.9.5.tar.gz tmp/PyAthena-2.9.6.tar.gz --markdown 20230423/p/pyathena/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-04-23 08:42:07] INFO root fetch - processPackages [pyathena]: executing diffoscope
+[2023-04-23 08:42:07] INFO root fetch - processPackages [pyathena]: executing diffoscope
+[2023-04-23 08:42:07] INFO root fetch - processPackages [pyathena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAthena-2.9.5.tar.gz tmp/PyAthena-2.9.6.tar.gz --markdown 20230423/p/pyathena/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-04-23 08:42:07] INFO root fetch - processPackages [pyathena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAthena-2.9.5.tar.gz tmp/PyAthena-2.9.6.tar.gz --markdown 20230423/p/pyathena/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-04-23 08:42:07] INFO root fetch - processPackages [python-lorem]: Downloading https://files.pythonhosted.org/packages/f0/21/3ff1c98a371e8fda55cdf6163cea2cbd142362a2b73049dacf2373c52e3b/python-lorem-1.3.0.tar.gz
+[2023-04-23 08:42:07] INFO root fetch - processPackages [mcqq-tool]: Downloading https://files.pythonhosted.org/packages/0b/9e/3aaa4bdcc3d65255d0925c9d0045b7faf8a24ab43f887ba53288e087caf2/mcqq-tool-0.0.2.tar.gz
+[2023-04-23 08:42:07] INFO root fetch - processPackages [foliolib]: Downloading https://files.pythonhosted.org/packages/f6/e6/dfd5ff526b7f7d5d1909078726ca508277e92e05fcef07e1daa5e11cd214/foliolib-0.3.3a1.tar.gz
+[2023-04-23 08:42:07] INFO root fetch - processPackages [bigdl-nano]: executing diffoscope
+[2023-04-23 08:42:07] INFO root fetch - processPackages [bigdl-nano]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_nano-2.4.0b20230421-py3-none-win_amd64.whl.zip tmp/bigdl_nano-2.4.0b20230422-py3-none-win_amd64.whl.zip --markdown 20230423/b/bigdl-nano/2.4.0b20230421-2.4.0b20230422/diff.md --exclude *.pyd
+[2023-04-23 08:42:07] INFO root fetch - processPackages [python-lorem]: executing diffoscope
+[2023-04-23 08:42:07] INFO root fetch - processPackages [python-lorem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-lorem-1.3.0.tar.gz tmp/python-lorem-1.3.0rc1.tar.gz --markdown 20230423/p/python-lorem/1.3.0-1.3.0rc1/diff.md --exclude *.pyd
+[2023-04-23 08:42:07] INFO root fetch - processPackages [bionty]: executing diffoscope
+[2023-04-23 08:42:07] INFO root fetch - processPackages [bionty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bionty-0.9.0.tar.gz tmp/bionty-0.9.0rc1.tar.gz --markdown 20230423/b/bionty/0.9.0-0.9.0rc1/diff.md --exclude *.pyd
+[2023-04-23 08:42:07] INFO root fetch - processPackages [bigdl-chronos]: executing diffoscope
+[2023-04-23 08:42:07] INFO root fetch - processPackages [bigdl-chronos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos-2.4.0b20230421-py3-none-win_amd64.whl.zip tmp/bigdl_chronos-2.4.0b20230422-py3-none-win_amd64.whl.zip --markdown 20230423/b/bigdl-chronos/2.4.0b20230421-2.4.0b20230422/diff.md --exclude *.pyd
+[2023-04-23 08:42:07] INFO root fetch - processPackages [mcqq-tool]: Downloading https://files.pythonhosted.org/packages/86/19/4c874cb415971fe2139b7d891cc41e6fcc56bf7a6c0f346d77dc0c8be807/mcqq-tool-0.0.3.tar.gz
+[2023-04-23 08:42:07] INFO root fetch - processPackages [foliolib]: executing diffoscope
+[2023-04-23 08:42:07] INFO root fetch - processPackages [foliolib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foliolib-0.3.2a1.tar.gz tmp/foliolib-0.3.3a1.tar.gz --markdown 20230423/f/foliolib/0.3.2a1-0.3.3a1/diff.md --exclude *.pyd
+[2023-04-23 08:42:07] INFO root fetch - processPackages [mcqq-tool]: executing diffoscope
+[2023-04-23 08:42:07] INFO root fetch - processPackages [mcqq-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcqq-tool-0.0.2.tar.gz tmp/mcqq-tool-0.0.3.tar.gz --markdown 20230423/m/mcqq-tool/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 08:42:08] INFO root fetch - processPackages [bigdl-serving]: Start processing: dfa-mutate
+[2023-04-23 08:42:08] INFO root fetch - main [MainThread]: End processing [bigdl-serving]: success
+[2023-04-23 08:42:08] INFO root fetch - processPackages [dfa-mutate]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 08:42:08] INFO root fetch - processPackages [pyathena]: Start processing: hak
+[2023-04-23 08:42:08] INFO root fetch - main [MainThread]: End processing [pyathena]: success
+[2023-04-23 08:42:08] INFO root fetch - processPackages [hak]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 08:42:08] INFO root fetch - processPackages [dfa-mutate]: executing diffoscope
+[2023-04-23 08:42:08] INFO root fetch - processPackages [dfa-mutate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfa_mutate-0.1.0.tar.gz tmp/dfa_mutate-0.1.1.tar.gz --markdown 20230423/d/dfa-mutate/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 08:42:08] INFO root fetch - processPackages [hak]: executing diffoscope
+[2023-04-23 08:42:08] INFO root fetch - processPackages [hak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hak-0.0.8.tar.gz tmp/hak-0.0.9.tar.gz --markdown 20230423/h/hak/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 08:42:08] INFO root fetch - main [MainThread]: End processing [pyathena]: success
+[2023-04-23 08:42:08] INFO root fetch - main [MainThread]: End processing [pyathena]: success
+[2023-04-23 08:42:09] INFO root fetch - main [MainThread]: End processing [mcqq-tool]: success
+[2023-04-23 08:42:09] INFO root fetch - main [MainThread]: End processing [bionty]: success
+[2023-04-23 08:42:09] INFO root fetch - main [MainThread]: End processing [python-lorem]: success
+[2023-04-23 08:42:10] INFO root fetch - main [MainThread]: End processing [dfa-mutate]: success
+[2023-04-23 08:42:10] INFO root fetch - main [MainThread]: End processing [bigdl-chronos]: success
+[2023-04-23 08:42:10] INFO root fetch - main [MainThread]: End processing [bigdl-nano]: success
+[2023-04-23 08:42:10] INFO root fetch - main [MainThread]: End processing [foliolib]: success
+[2023-04-23 08:42:11] INFO root fetch - main [MainThread]: End processing [hak]: success
+[2023-04-23 08:42:11] INFO root fetch - main [MainThread]: Store serial: [17819989]
