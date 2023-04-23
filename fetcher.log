@@ -1411,3 +1411,40 @@
 [2023-04-23 02:41:31] INFO root fetch - main [MainThread]: End processing [imbrium]: success
 [2023-04-23 02:41:31] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
 [2023-04-23 02:41:31] INFO root fetch - main [MainThread]: Store serial: [17818416]
+[2023-04-23 02:46:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818416]
+[2023-04-23 02:46:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-23 02:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mell
+[2023-04-23 02:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lmao-nlp
+[2023-04-23 02:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: html2info
+[2023-04-23 02:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tfds-nightly
+[2023-04-23 02:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: icpd-core
+[2023-04-23 02:46:41] INFO root fetch - processPackages [mell]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-23 02:46:41] INFO root fetch - processPackages [lmao-nlp]: New version: [0.0.1b2] Old Version: [0.0.1b1]
+[2023-04-23 02:46:41] INFO root fetch - processPackages [icpd-core]: New version: [0.0.22] Old Version: [0.0.21]
+[2023-04-23 02:46:41] INFO root fetch - processPackages [html2info]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-23 02:46:41] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.2.dev202304220044] Old Version: [4.9.2.dev202304210044]
+[2023-04-23 02:46:41] INFO root fetch - processPackages [icpd-core]: Downloading https://files.pythonhosted.org/packages/15/72/70afabfcf7988ffecaf9631f4aef0382031efc49c91acb1f6da72de9c784/icpd_core-0.0.21-py3-none-any.whl
+[2023-04-23 02:46:41] INFO root fetch - processPackages [mell]: Downloading https://files.pythonhosted.org/packages/aa/cb/d1ee1dc8baa99d28168705a9af1230e65bfe9a13d5df8f398a0d2e5115a0/mell-2.0.0.tar.gz
+[2023-04-23 02:46:41] INFO root fetch - processPackages [lmao-nlp]: Downloading https://files.pythonhosted.org/packages/64/98/af75529acd1731190d2413b39c36e2a5d7c9ca75f7735746a34baea77cac/lmao-nlp-0.0.1b1.tar.gz
+[2023-04-23 02:46:41] INFO root fetch - processPackages [html2info]: Downloading https://files.pythonhosted.org/packages/b9/50/f5779a175ac6a70939dd9cf719ecf44d1417a9dc167581acc36fa1120483/html2info-0.1.4.tar.gz
+[2023-04-23 02:46:41] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/0e/48/6debb3b2fcc975f1278fbc1cf275ca8a04627e755eab0010535b67af6326/tfds-nightly-4.9.2.dev202304220044.tar.gz
+[2023-04-23 02:46:41] INFO root fetch - processPackages [icpd-core]: Downloading https://files.pythonhosted.org/packages/93/97/1fccae0b24439b780c81e80334fb2f17286a6830e432276bc7d7093b8700/icpd_core-0.0.22-py3-none-any.whl
+[2023-04-23 02:46:41] INFO root fetch - processPackages [mell]: Downloading https://files.pythonhosted.org/packages/f9/05/f3e615afbc60c7e6b4787a27e907328db196ed6b500c6e219e34062b67a9/mell-2.0.1.tar.gz
+[2023-04-23 02:46:41] INFO root fetch - processPackages [html2info]: Downloading https://files.pythonhosted.org/packages/36/be/988c599c1f7235fe8ff17dc34fa2d5595576df4da683b59b15aa3d92253f/html2info-0.1.5.tar.gz
+[2023-04-23 02:46:41] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2023-04-23 02:46:41] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.2.dev202304210044.tar.gz tmp/tfds-nightly-4.9.2.dev202304220044.tar.gz --markdown 20230423/t/tfds-nightly/4.9.2.dev202304210044-4.9.2.dev202304220044/diff.md --exclude *.pyd
+[2023-04-23 02:46:41] INFO root fetch - processPackages [mell]: executing diffoscope
+[2023-04-23 02:46:41] INFO root fetch - processPackages [mell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mell-2.0.0.tar.gz tmp/mell-2.0.1.tar.gz --markdown 20230423/m/mell/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-23 02:46:41] INFO root fetch - processPackages [html2info]: executing diffoscope
+[2023-04-23 02:46:41] INFO root fetch - processPackages [html2info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/html2info-0.1.4.tar.gz tmp/html2info-0.1.5.tar.gz --markdown 20230423/h/html2info/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-23 02:46:41] INFO root fetch - processPackages [icpd-core]: executing diffoscope
+[2023-04-23 02:46:41] INFO root fetch - processPackages [icpd-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/icpd_core-0.0.21-py3-none-any.whl.zip tmp/icpd_core-0.0.22-py3-none-any.whl.zip --markdown 20230423/i/icpd-core/0.0.21-0.0.22/diff.md --exclude *.pyd
+[2023-04-23 02:46:41] INFO root fetch - processPackages [lmao-nlp]: Downloading https://files.pythonhosted.org/packages/14/63/da25ec3d1f0b51e8abe3969d5777bb8492119e0804a07117e9e2f619c077/lmao-nlp-0.0.1b2.tar.gz
+[2023-04-23 02:46:42] INFO root fetch - processPackages [lmao-nlp]: executing diffoscope
+[2023-04-23 02:46:42] INFO root fetch - processPackages [lmao-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lmao-nlp-0.0.1b1.tar.gz tmp/lmao-nlp-0.0.1b2.tar.gz --markdown 20230423/l/lmao-nlp/0.0.1b1-0.0.1b2/diff.md --exclude *.pyd
+[2023-04-23 02:46:43] INFO root fetch - main [MainThread]: End processing [mell]: success
+[2023-04-23 02:46:43] INFO root fetch - main [MainThread]: End processing [html2info]: success
+[2023-04-23 02:46:43] INFO root fetch - main [MainThread]: End processing [lmao-nlp]: success
+[2023-04-23 02:46:45] INFO root fetch - main [MainThread]: End processing [icpd-core]: success
+[2023-04-23 02:46:53] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2023-04-23 02:46:53] INFO root fetch - main [MainThread]: Store serial: [17818431]
