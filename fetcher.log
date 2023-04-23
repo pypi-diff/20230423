@@ -8114,3 +8114,55 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 15:06:01] INFO root fetch - main [MainThread]: End processing [syft]: success
 [2023-04-23 15:07:29] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2023-04-23 15:07:29] INFO root fetch - main [MainThread]: Store serial: [17822391]
+[2023-04-23 15:12:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17822391]
+[2023-04-23 15:12:50] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-23 15:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: image-frequency-analysis
+[2023-04-23 15:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nbdev-stdlib
+[2023-04-23 15:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: semantra
+[2023-04-23 15:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev-numpy
+[2023-04-23 15:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nbdev-pandas
+[2023-04-23 15:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bdating-common
+[2023-04-23 15:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: python-frank-energie
+[2023-04-23 15:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aiomisc
+[2023-04-23 15:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nbdev-pytorch
+[2023-04-23 15:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: semantra
+[2023-04-23 15:12:50] WARNING root fetch - processPackages [image-frequency-analysis]: Skipping, unable to determine old version
+[2023-04-23 15:12:50] INFO root fetch - main [MainThread]: End processing [image-frequency-analysis] error
+[2023-04-23 15:12:50] INFO root fetch - processPackages [bdating-common]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-23 15:12:50] INFO root fetch - processPackages [semantra]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 15:12:50] INFO root fetch - processPackages [semantra]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 15:12:50] INFO root fetch - processPackages [python-frank-energie]: New version: [4.0.0] Old Version: [3.1.0]
+[2023-04-23 15:12:50] INFO root fetch - processPackages [aiomisc]: New version: [9.8.4] Old Version: [9.8.1]
+[2023-04-23 15:12:50] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 15:12:50] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 15:12:50] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 15:12:50] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 15:12:50] INFO root fetch - processPackages [semantra]: executing diffoscope
+[2023-04-23 15:12:50] INFO root fetch - processPackages [semantra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantra-0.0.8.tar.gz tmp/semantra-0.0.9.tar.gz --markdown 20230423/s/semantra/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 15:12:50] INFO root fetch - processPackages [semantra]: executing diffoscope
+[2023-04-23 15:12:50] INFO root fetch - processPackages [semantra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantra-0.0.8.tar.gz tmp/semantra-0.0.9.tar.gz --markdown 20230423/s/semantra/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 15:12:51] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-04-23 15:12:51] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230423/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 15:12:51] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-04-23 15:12:51] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230423/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 15:12:51] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-04-23 15:12:51] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230423/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 15:12:51] INFO root fetch - processPackages [bdating-common]: executing diffoscope
+[2023-04-23 15:12:51] INFO root fetch - processPackages [bdating-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdating-common-0.9.8.tar.gz tmp/bdating-common-0.9.9.tar.gz --markdown 20230423/b/bdating-common/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-23 15:12:51] INFO root fetch - processPackages [python-frank-energie]: Downloading https://files.pythonhosted.org/packages/1e/ad/c2c2961cf3badca48f3de1eef75941da10d4d50691c6f98660a8ac81af08/python_frank_energie-4.0.0.tar.gz
+[2023-04-23 15:12:51] INFO root fetch - processPackages [python-frank-energie]: executing diffoscope
+[2023-04-23 15:12:51] INFO root fetch - processPackages [python-frank-energie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_frank_energie-3.1.0.tar.gz tmp/python_frank_energie-4.0.0.tar.gz --markdown 20230423/p/python-frank-energie/3.1.0-4.0.0/diff.md --exclude *.pyd
+[2023-04-23 15:12:51] INFO root fetch - processPackages [aiomisc]: executing diffoscope
+[2023-04-23 15:12:51] INFO root fetch - processPackages [aiomisc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiomisc-9.8.1.tar.gz tmp/aiomisc-9.8.4.tar.gz --markdown 20230423/a/aiomisc/9.8.1-9.8.4/diff.md --exclude *.pyd
+[2023-04-23 15:12:51] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-04-23 15:12:51] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230423/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 15:12:52] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-04-23 15:12:52] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-04-23 15:12:52] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-04-23 15:12:52] INFO root fetch - main [MainThread]: End processing [semantra]: success
+[2023-04-23 15:12:52] INFO root fetch - main [MainThread]: End processing [python-frank-energie]: success
+[2023-04-23 15:12:53] INFO root fetch - main [MainThread]: End processing [aiomisc]: success
+[2023-04-23 15:12:53] INFO root fetch - main [MainThread]: End processing [bdating-common]: success
+[2023-04-23 15:12:54] INFO root fetch - main [MainThread]: End processing [semantra]: success
+[2023-04-23 15:12:54] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-04-23 15:12:54] INFO root fetch - main [MainThread]: Store serial: [17822426]
