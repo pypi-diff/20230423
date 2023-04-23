@@ -942,3 +942,72 @@
 [2023-04-23 02:04:14] INFO root fetch - main [MainThread]: End processing [pysr]: success
 [2023-04-23 02:04:15] INFO root fetch - main [MainThread]: End processing [ShellcodeTester]: success
 [2023-04-23 02:04:15] INFO root fetch - main [MainThread]: Store serial: [17818140]
+[2023-04-23 02:09:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818140]
+[2023-04-23 02:09:24] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-23 02:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mct-nightly
+[2023-04-23 02:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bitmex-websocket
+[2023-04-23 02:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jaxkern-nightly
+[2023-04-23 02:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: varya
+[2023-04-23 02:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jaxutils-nightly
+[2023-04-23 02:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: structio
+[2023-04-23 02:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: competitor-intelligence
+[2023-04-23 02:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk8s-redis
+[2023-04-23 02:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: torchlayers-nightly
+[2023-04-23 02:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: bitmex-websocket
+[2023-04-23 02:09:24] ERROR root fetch - processPackages [competitor-intelligence]: Unable to get metadata: No such project 'competitor-intelligence'
+[2023-04-23 02:09:24] INFO root fetch - processPackages [competitor-intelligence]: Start processing: cdk-common
+[2023-04-23 02:09:24] INFO root fetch - main [MainThread]: End processing [competitor-intelligence] error
+[2023-04-23 02:09:24] INFO root fetch - processPackages [varya]: New version: [0.0.6a1] Old Version: [0.0.5a1]
+[2023-04-23 02:09:24] INFO root fetch - processPackages [mct-nightly]: New version: [1.8.0.9042023.post411] Old Version: [1.8.0.9032023.post431]
+[2023-04-23 02:09:24] INFO root fetch - processPackages [structio]: New version: [1.2.0] Old Version: [1.1.7]
+[2023-04-23 02:09:24] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2023-04-23 02:09:24] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20230422] Old Version: [0.0.8.dev20230421]
+[2023-04-23 02:09:24] INFO root fetch - processPackages [bitmex-websocket]: New version: [0.3.1] Old Version: [0.2.83]
+[2023-04-23 02:09:24] INFO root fetch - processPackages [cdk8s-redis]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-23 02:09:24] INFO root fetch - processPackages [bitmex-websocket]: New version: [0.3.1] Old Version: [0.2.83]
+[2023-04-23 02:09:24] INFO root fetch - processPackages [torchlayers-nightly]: New version: [1682122021] Old Version: [1682035607]
+[2023-04-23 02:09:24] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-23 02:09:24] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2023-04-23 02:09:24] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20230423/j/jaxkern-nightly/0.dev20221221-0.dev20221222/diff.md --exclude *.pyd
+[2023-04-23 02:09:24] INFO root fetch - processPackages [cdk8s-redis]: executing diffoscope
+[2023-04-23 02:09:24] INFO root fetch - processPackages [cdk8s-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-redis-0.1.98.tar.gz tmp/cdk8s-redis-0.1.99.tar.gz --markdown 20230423/c/cdk8s-redis/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-23 02:09:24] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2023-04-23 02:09:24] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-1.8.0.9032023.post431.tar.gz tmp/mct-nightly-1.8.0.9042023.post411.tar.gz --markdown 20230423/m/mct-nightly/1.8.0.9032023.post431-1.8.0.9042023.post411/diff.md --exclude *.pyd
+[2023-04-23 02:09:24] INFO root fetch - processPackages [bitmex-websocket]: Downloading https://files.pythonhosted.org/packages/16/32/95a9bf0f0f1a42c4c940c96ca8104b0ab284f0462c97d69b801c286f2de9/bitmex_websocket-0.2.83-py3.6.egg
+[2023-04-23 02:09:24] INFO root fetch - processPackages [bitmex-websocket]: Downloading https://files.pythonhosted.org/packages/16/32/95a9bf0f0f1a42c4c940c96ca8104b0ab284f0462c97d69b801c286f2de9/bitmex_websocket-0.2.83-py3.6.egg
+[2023-04-23 02:09:24] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/b0/93/8a780490f9114c1416d7243378f76c23e9396ec2d78973e43626fde55e61/jaxutils-nightly-0.0.8.dev20230422.tar.gz
+[2023-04-23 02:09:24] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2023-04-23 02:09:24] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20230423/c/cdk-common/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-23 02:09:24] INFO root fetch - processPackages [torchlayers-nightly]: executing diffoscope
+[2023-04-23 02:09:24] INFO root fetch - processPackages [torchlayers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlayers-nightly-1682035607.tar.gz tmp/torchlayers-nightly-1682122021.tar.gz --markdown 20230423/t/torchlayers-nightly/1682035607-1682122021/diff.md --exclude *.pyd
+[2023-04-23 02:09:24] INFO root fetch - processPackages [varya]: Downloading https://files.pythonhosted.org/packages/d1/37/48cea1ef4a3274c352fd04d16fcf56988ad2bfe96f894e5379aa996ae383/varya-0.0.5a1-py3-none-any.whl
+[2023-04-23 02:09:25] INFO root fetch - processPackages [structio]: Downloading https://files.pythonhosted.org/packages/97/f1/f3b74afe8c58ffb834ad09ce086d1372daa72a2d4c476d82b6522a0a9e15/structio-1.2.0.tar.gz
+[2023-04-23 02:09:25] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2023-04-23 02:09:25] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20230421.tar.gz tmp/jaxutils-nightly-0.0.8.dev20230422.tar.gz --markdown 20230423/j/jaxutils-nightly/0.0.8.dev20230421-0.0.8.dev20230422/diff.md --exclude *.pyd
+[2023-04-23 02:09:25] INFO root fetch - processPackages [structio]: executing diffoscope
+[2023-04-23 02:09:25] INFO root fetch - processPackages [structio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structio-1.1.7.tar.gz tmp/structio-1.2.0.tar.gz --markdown 20230423/s/structio/1.1.7-1.2.0/diff.md --exclude *.pyd
+[2023-04-23 02:09:25] INFO root fetch - processPackages [bitmex-websocket]: Downloading https://files.pythonhosted.org/packages/f8/18/372c7cbb5f9c0498f8a508b34166eba1233f54961b3888abcfed27866029/bitmex_websocket-0.3.1.tar.gz
+[2023-04-23 02:09:25] INFO root fetch - processPackages [bitmex-websocket]: Downloading https://files.pythonhosted.org/packages/f8/18/372c7cbb5f9c0498f8a508b34166eba1233f54961b3888abcfed27866029/bitmex_websocket-0.3.1.tar.gz
+[2023-04-23 02:09:25] INFO root fetch - processPackages [bitmex-websocket]: executing diffoscope
+[2023-04-23 02:09:25] INFO root fetch - processPackages [bitmex-websocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitmex_websocket-0.2.83-py3.6.egg tmp/bitmex_websocket-0.3.1.tar.gz --markdown 20230423/b/bitmex-websocket/0.2.83-0.3.1/diff.md --exclude *.pyd
+[2023-04-23 02:09:25] INFO root fetch - processPackages [bitmex-websocket]: executing diffoscope
+[2023-04-23 02:09:25] INFO root fetch - processPackages [bitmex-websocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitmex_websocket-0.2.83-py3.6.egg tmp/bitmex_websocket-0.3.1.tar.gz --markdown 20230423/b/bitmex-websocket/0.2.83-0.3.1/diff.md --exclude *.pyd
+[2023-04-23 02:09:25] INFO root fetch - processPackages [varya]: Downloading https://files.pythonhosted.org/packages/e2/ee/1d62a59c74b9ee0f643b72f697a5755d9c1fde7b99676c11a88eb05ea6d7/varya-0.0.6a1-py3-none-any.whl
+[2023-04-23 02:09:25] INFO root fetch - processPackages [varya]: executing diffoscope
+[2023-04-23 02:09:25] INFO root fetch - processPackages [varya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/varya-0.0.5a1-py3-none-any.whl.zip tmp/varya-0.0.6a1-py3-none-any.whl.zip --markdown 20230423/v/varya/0.0.5a1-0.0.6a1/diff.md --exclude *.pyd
+[2023-04-23 02:09:26] INFO root fetch - processPackages [torchlayers-nightly]: Start processing: varya
+[2023-04-23 02:09:26] INFO root fetch - main [MainThread]: End processing [torchlayers-nightly]: success
+[2023-04-23 02:09:26] INFO root fetch - processPackages [varya]: New version: [0.0.6a1] Old Version: [0.0.5a1]
+[2023-04-23 02:09:26] INFO root fetch - processPackages [varya]: executing diffoscope
+[2023-04-23 02:09:26] INFO root fetch - processPackages [varya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/varya-0.0.5a1-py3-none-any.whl.zip tmp/varya-0.0.6a1-py3-none-any.whl.zip --markdown 20230423/v/varya/0.0.5a1-0.0.6a1/diff.md --exclude *.pyd
+[2023-04-23 02:09:26] INFO root fetch - main [MainThread]: End processing [structio]: success
+[2023-04-23 02:09:26] INFO root fetch - main [MainThread]: End processing [bitmex-websocket]: success
+[2023-04-23 02:09:26] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2023-04-23 02:09:26] INFO root fetch - main [MainThread]: End processing [bitmex-websocket]: success
+[2023-04-23 02:09:26] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2023-04-23 02:09:26] INFO root fetch - main [MainThread]: End processing [varya]: success
+[2023-04-23 02:09:27] INFO root fetch - main [MainThread]: End processing [cdk8s-redis]: success
+[2023-04-23 02:09:27] INFO root fetch - main [MainThread]: End processing [varya]: success
+[2023-04-23 02:09:28] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2023-04-23 02:09:32] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2023-04-23 02:09:32] INFO root fetch - main [MainThread]: Store serial: [17818177]
