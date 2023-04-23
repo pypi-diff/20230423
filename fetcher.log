@@ -13571,3 +13571,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 22:47:27] INFO root fetch - main [MainThread]: End processing [scandb]: success
 [2023-04-23 22:47:29] INFO root fetch - main [MainThread]: End processing [causallib]: success
 [2023-04-23 22:47:29] INFO root fetch - main [MainThread]: Store serial: [17825753]
+[2023-04-23 22:52:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825753]
+[2023-04-23 22:52:38] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 22:52:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sf-hamilton
+[2023-04-23 22:52:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: peaqevcore
+[2023-04-23 22:52:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: atlasapi
+[2023-04-23 22:52:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fluids
+[2023-04-23 22:52:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-jwt-oidc
+[2023-04-23 22:52:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yt5
+[2023-04-23 22:52:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: strictdoc
+[2023-04-23 22:52:38] INFO root fetch - processPackages [fluids]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-23 22:52:38] INFO root fetch - processPackages [atlasapi]: New version: [3.0.1b7] Old Version: [3.0.1b6]
+[2023-04-23 22:52:38] INFO root fetch - processPackages [strictdoc]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 22:52:38] INFO root fetch - processPackages [django-jwt-oidc]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-23 22:52:38] INFO root fetch - processPackages [sf-hamilton]: New version: [1.9.0rc0] Old Version: [1.9.0]
+[2023-04-23 22:52:38] WARNING root fetch - processPackages [yt5]: Skipping, unable to determine old version
+[2023-04-23 22:52:38] INFO root fetch - main [MainThread]: End processing [yt5] error
+[2023-04-23 22:52:38] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2023-04-23 22:52:38] INFO root fetch - processPackages [fluids]: Downloading https://files.pythonhosted.org/packages/24/63/e76906ee8472940f12c3a7e1e0806037d04fedf1e6fc51d172b4e695778d/fluids-1.0.8.tar.gz
+[2023-04-23 22:52:38] INFO root fetch - processPackages [atlasapi]: Downloading https://files.pythonhosted.org/packages/f7/cd/e59badd43488e7bd9f44d192c9e292403bfe6a70521fe9a6869c421c22a5/atlasapi-3.0.1b7.tar.gz
+[2023-04-23 22:52:38] INFO root fetch - processPackages [strictdoc]: Downloading https://files.pythonhosted.org/packages/0e/0c/3782c5673a36cda9e2189ef1e7d9661ba2f1e5c9822b736cf2ce0d2545a7/strictdoc-0.0.8.tar.gz
+[2023-04-23 22:52:38] INFO root fetch - processPackages [django-jwt-oidc]: Downloading https://files.pythonhosted.org/packages/03/97/8a169cf83db8e3740a5dd69c6d0d27ea098e388b336b46d0b2549f50dce1/django-jwt-oidc-1.0.6.tar.gz
+[2023-04-23 22:52:38] INFO root fetch - processPackages [sf-hamilton]: executing diffoscope
+[2023-04-23 22:52:38] INFO root fetch - processPackages [sf-hamilton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sf-hamilton-1.9.0.tar.gz tmp/sf-hamilton-1.9.0rc0.tar.gz --markdown 20230423/s/sf-hamilton/1.9.0-1.9.0rc0/diff.md --exclude *.pyd
+[2023-04-23 22:52:38] INFO root fetch - processPackages [django-jwt-oidc]: executing diffoscope
+[2023-04-23 22:52:38] INFO root fetch - processPackages [django-jwt-oidc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-jwt-oidc-1.0.5.tar.gz tmp/django-jwt-oidc-1.0.6.tar.gz --markdown 20230423/d/django-jwt-oidc/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-23 22:52:38] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2023-04-23 22:52:38] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20230423/p/peaqevcore/9.2.2-9.2.3/diff.md --exclude *.pyd
+[2023-04-23 22:52:38] INFO root fetch - processPackages [atlasapi]: executing diffoscope
+[2023-04-23 22:52:38] INFO root fetch - processPackages [atlasapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atlasapi-3.0.1b6.tar.gz tmp/atlasapi-3.0.1b7.tar.gz --markdown 20230423/a/atlasapi/3.0.1b6-3.0.1b7/diff.md --exclude *.pyd
+[2023-04-23 22:52:39] INFO root fetch - processPackages [strictdoc]: Downloading https://files.pythonhosted.org/packages/b6/06/2219b569301c00406d344dca69ac5e31a169bb9529b66ec957609495d940/strictdoc-0.0.9.tar.gz
+[2023-04-23 22:52:39] INFO root fetch - processPackages [strictdoc]: executing diffoscope
+[2023-04-23 22:52:39] INFO root fetch - processPackages [strictdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strictdoc-0.0.8.tar.gz tmp/strictdoc-0.0.9.tar.gz --markdown 20230423/s/strictdoc/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 22:52:40] INFO root fetch - processPackages [fluids]: Downloading https://files.pythonhosted.org/packages/9d/c4/8372ac4d044d4d27a34a8e1177c28cc53d954f649373b023478f6e60c464/fluids-1.0.9.tar.gz
+[2023-04-23 22:52:40] INFO root fetch - main [MainThread]: End processing [django-jwt-oidc]: success
+[2023-04-23 22:52:40] INFO root fetch - main [MainThread]: End processing [atlasapi]: success
+[2023-04-23 22:52:40] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2023-04-23 22:52:40] INFO root fetch - main [MainThread]: End processing [sf-hamilton]: success
+[2023-04-23 22:52:40] INFO root fetch - processPackages [fluids]: executing diffoscope
+[2023-04-23 22:52:40] INFO root fetch - processPackages [fluids]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluids-1.0.8.tar.gz tmp/fluids-1.0.9.tar.gz --markdown 20230423/f/fluids/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-23 22:52:41] INFO root fetch - main [MainThread]: End processing [strictdoc]: success
+[2023-04-23 22:52:45] INFO root fetch - main [MainThread]: End processing [fluids]: success
+[2023-04-23 22:52:45] INFO root fetch - main [MainThread]: Store serial: [17825776]
