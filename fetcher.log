@@ -3750,3 +3750,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 08:05:28] INFO root fetch - main [MainThread]: End processing [truegrad]: success
 [2023-04-23 08:05:29] INFO root fetch - main [MainThread]: End processing [siat]: success
 [2023-04-23 08:05:29] INFO root fetch - main [MainThread]: Store serial: [17819797]
+[2023-04-23 08:10:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819797]
+[2023-04-23 08:10:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-23 08:10:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyg-nightly
+[2023-04-23 08:10:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dash-data-prep
+[2023-04-23 08:10:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fprime-tools
+[2023-04-23 08:10:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: quarkstudio
+[2023-04-23 08:10:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: media-manager
+[2023-04-23 08:10:37] INFO root fetch - processPackages [quarkstudio]: New version: [6.5.0rc9] Old Version: [6.5.0rc10]
+[2023-04-23 08:10:37] INFO root fetch - processPackages [media-manager]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-23 08:10:37] WARNING root fetch - processPackages [dash-data-prep]: Skipping, unable to determine old version
+[2023-04-23 08:10:37] INFO root fetch - main [MainThread]: End processing [dash-data-prep] error
+[2023-04-23 08:10:37] INFO root fetch - processPackages [fprime-tools]: New version: [3.2.1] Old Version: [3.2.0]
+[2023-04-23 08:10:37] INFO root fetch - processPackages [pyg-nightly]: New version: [2.4.0.dev20230422] Old Version: [2.4.0.dev20230421]
+[2023-04-23 08:10:38] INFO root fetch - processPackages [quarkstudio]: Downloading https://files.pythonhosted.org/packages/4f/cf/b2f743b1442be02888883258e32efe023bae8a8878a0d90a7377171409ae/quarkstudio-6.5.0rc10-cp311-cp311-win_amd64.whl
+[2023-04-23 08:10:38] INFO root fetch - processPackages [fprime-tools]: Downloading https://files.pythonhosted.org/packages/f8/e6/8f4d81fb7a8e63972ddcf4a509b51fdc15c3f4bb294f13f367ccbf02df89/fprime-tools-3.2.0.tar.gz
+[2023-04-23 08:10:38] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/75/11/acc8a436463477db369c803d9007e03acdd0b43a677cd0cbb78b7ea5b3bb/media_manager-0.8.0-py2.py3-none-any.whl
+[2023-04-23 08:10:38] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/e2/b6/28c8ebeb95817c8a8dd0ee18a1fae4d42627e0514330d297b00567b4a23a/pyg-nightly-2.4.0.dev20230422.tar.gz
+[2023-04-23 08:10:38] INFO root fetch - processPackages [fprime-tools]: Downloading https://files.pythonhosted.org/packages/1d/15/8720a2350677d804a20d1843533c51ae55fa1d1ab91459bcf8a7458fb5f8/fprime-tools-3.2.1.tar.gz
+[2023-04-23 08:10:38] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/9b/a7/1155a373b195bebb88c0274982964c45aecd8d7206b2f4731838007628fd/media_manager-0.9.0-py2.py3-none-any.whl
+[2023-04-23 08:10:38] INFO root fetch - processPackages [fprime-tools]: executing diffoscope
+[2023-04-23 08:10:38] INFO root fetch - processPackages [fprime-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fprime-tools-3.2.0.tar.gz tmp/fprime-tools-3.2.1.tar.gz --markdown 20230423/f/fprime-tools/3.2.0-3.2.1/diff.md --exclude *.pyd
+[2023-04-23 08:10:38] INFO root fetch - processPackages [media-manager]: executing diffoscope
+[2023-04-23 08:10:38] INFO root fetch - processPackages [media-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip --markdown 20230423/m/media-manager/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-23 08:10:38] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2023-04-23 08:10:38] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg-nightly-2.4.0.dev20230421.tar.gz tmp/pyg-nightly-2.4.0.dev20230422.tar.gz --markdown 20230423/p/pyg-nightly/2.4.0.dev20230421-2.4.0.dev20230422/diff.md --exclude *.pyd
+[2023-04-23 08:10:39] INFO root fetch - processPackages [quarkstudio]: executing diffoscope
+[2023-04-23 08:10:39] INFO root fetch - processPackages [quarkstudio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quarkstudio-6.5.0rc10-cp311-cp311-win_amd64.whl.zip tmp/quarkstudio-6.5.0rc9-cp311-cp311-win_amd64.whl.zip --markdown 20230423/q/quarkstudio/6.5.0rc10-6.5.0rc9/diff.md --exclude *.pyd
+[2023-04-23 08:10:39] INFO root fetch - main [MainThread]: End processing [media-manager]: success
+[2023-04-23 08:10:40] INFO root fetch - main [MainThread]: End processing [fprime-tools]: success
+[2023-04-23 08:10:40] INFO root fetch - main [MainThread]: End processing [quarkstudio]: success
+[2023-04-23 08:10:43] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2023-04-23 08:10:43] INFO root fetch - main [MainThread]: Store serial: [17819814]
