@@ -2451,3 +2451,19 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 04:44:29] INFO root fetch - main [MainThread]: End processing [hpc-utils]: success
 [2023-04-23 04:44:30] INFO root fetch - main [MainThread]: End processing [forust]: success
 [2023-04-23 04:44:30] INFO root fetch - main [MainThread]: Store serial: [17819089]
+[2023-04-23 04:49:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819089]
+[2023-04-23 04:49:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-23 04:49:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Anilist
+[2023-04-23 04:49:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: taskiq-aiohttp
+[2023-04-23 04:49:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: onvif-gui
+[2023-04-23 04:49:38] WARNING root fetch - processPackages [taskiq-aiohttp]: Skipping, unable to determine old version
+[2023-04-23 04:49:38] INFO root fetch - main [MainThread]: End processing [taskiq-aiohttp] error
+[2023-04-23 04:49:38] INFO root fetch - processPackages [Anilist]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-23 04:49:38] WARNING root fetch - processPackages [onvif-gui]: Skipping, unable to determine old version
+[2023-04-23 04:49:38] INFO root fetch - main [MainThread]: End processing [onvif-gui] error
+[2023-04-23 04:49:39] INFO root fetch - processPackages [Anilist]: Downloading https://files.pythonhosted.org/packages/3b/97/97140467d19185ba021a62ace1d0ccd2824831a0ca4f707d782925c8f054/Anilist-0.8.1.tar.gz
+[2023-04-23 04:49:39] INFO root fetch - processPackages [Anilist]: Downloading https://files.pythonhosted.org/packages/c8/8c/c572c3f1b9f2d4fe34ab08792c20e968262b07fd2d7b6cddd7396f56c5f0/Anilist-0.9.0.tar.gz
+[2023-04-23 04:49:39] INFO root fetch - processPackages [Anilist]: executing diffoscope
+[2023-04-23 04:49:39] INFO root fetch - processPackages [Anilist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Anilist-0.8.1.tar.gz tmp/Anilist-0.9.0.tar.gz --markdown 20230423/A/Anilist/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-23 04:49:40] INFO root fetch - main [MainThread]: End processing [Anilist]: success
+[2023-04-23 04:49:40] INFO root fetch - main [MainThread]: Store serial: [17819112]
