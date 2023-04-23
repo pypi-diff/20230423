@@ -3897,3 +3897,81 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 08:21:09] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
 [2023-04-23 08:21:14] INFO root fetch - main [MainThread]: End processing [pretext]: success
 [2023-04-23 08:21:14] INFO root fetch - main [MainThread]: Store serial: [17819866]
+[2023-04-23 08:26:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819866]
+[2023-04-23 08:26:24] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-23 08:26:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyperformance
+[2023-04-23 08:26:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sentiment-stock-plot
+[2023-04-23 08:26:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MazeSolvingAlgos
+[2023-04-23 08:26:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: botterino
+[2023-04-23 08:26:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jutool
+[2023-04-23 08:26:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nestersows
+[2023-04-23 08:26:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nobus
+[2023-04-23 08:26:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: paper2cmap
+[2023-04-23 08:26:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: fake-bpy-module-latest
+[2023-04-23 08:26:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: huhangkai
+[2023-04-23 08:26:24] INFO root fetch - processPackages [botterino]: New version: [0.4.8] Old Version: [0.4.7]
+[2023-04-23 08:26:24] WARNING root fetch - processPackages [sentiment-stock-plot]: Skipping, unable to determine old version
+[2023-04-23 08:26:24] INFO root fetch - processPackages [nobus]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-23 08:26:24] INFO root fetch - processPackages [pyperformance]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-23 08:26:24] INFO root fetch - processPackages [sentiment-stock-plot]: Start processing: pyCeph
+[2023-04-23 08:26:24] INFO root fetch - main [MainThread]: End processing [sentiment-stock-plot] error
+[2023-04-23 08:26:24] INFO root fetch - processPackages [nestersows]: New version: [1.2.0] Old Version: [1.0.0]
+[2023-04-23 08:26:24] INFO root fetch - processPackages [MazeSolvingAlgos]: New version: [1.5] Old Version: [1.4]
+[2023-04-23 08:26:24] INFO root fetch - processPackages [paper2cmap]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-23 08:26:24] INFO root fetch - processPackages [jutool]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-23 08:26:24] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20230423] Old Version: [20230422]
+[2023-04-23 08:26:24] INFO root fetch - processPackages [pyCeph]: New version: [0.5.0] Old Version: [0.4.2]
+[2023-04-23 08:26:24] INFO root fetch - processPackages [huhangkai]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-23 08:26:24] INFO root fetch - processPackages [MazeSolvingAlgos]: Downloading https://files.pythonhosted.org/packages/df/a5/ac879609f02c8d16d79f82a1cf5940a9e885311ebd5681b4735449d6872b/MazeSolvingAlgos-1.4.tar.gz
+[2023-04-23 08:26:24] INFO root fetch - processPackages [botterino]: Downloading https://files.pythonhosted.org/packages/00/a5/661308e554df98065da62ce766917a56cbafae1db8f00b31d8f3d7888fc9/botterino-0.4.8.tar.gz
+[2023-04-23 08:26:24] INFO root fetch - processPackages [nobus]: Downloading https://files.pythonhosted.org/packages/e9/10/6f5edc1cc2415694694b621a711f49d2e2f67dfd99c1efd361e41dd25469/nobus-0.1.3.tar.gz
+[2023-04-23 08:26:24] INFO root fetch - processPackages [pyperformance]: Downloading https://files.pythonhosted.org/packages/f5/4d/7a2eb04181ab6f3858a15bd85026e33838ced83b7acdb8141bb3c09f9127/pyperformance-1.0.6.tar.gz
+[2023-04-23 08:26:24] INFO root fetch - processPackages [paper2cmap]: Downloading https://files.pythonhosted.org/packages/99/31/4a912f68a2a15207d77990806a20befe80c1665afb9e7f2fe548e3748652/paper2cmap-0.1.3.tar.gz
+[2023-04-23 08:26:24] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/19/98/cc9c5e73327952562e3d90a7e9db7a82843ef6523b2f5f3c37be8745cbe9/fake-bpy-module-latest-20230422.tar.gz
+[2023-04-23 08:26:24] INFO root fetch - processPackages [huhangkai]: Downloading https://files.pythonhosted.org/packages/93/ee/6e4dbeb3a1613060df50bb6c35c00be8cc467b32762d122ae95629c94a72/huhangkai-1.0.7.tar.gz
+[2023-04-23 08:26:24] INFO root fetch - processPackages [nobus]: executing diffoscope
+[2023-04-23 08:26:24] INFO root fetch - processPackages [nobus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nobus-0.1.2.tar.gz tmp/nobus-0.1.3.tar.gz --markdown 20230423/n/nobus/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-23 08:26:24] INFO root fetch - processPackages [pyCeph]: Downloading https://files.pythonhosted.org/packages/36/31/f4a27d68212346122146cbfbb2626023e015ab215c118abbf02fee6b491f/pyCeph-0.4.2.tar.gz
+[2023-04-23 08:26:24] INFO root fetch - processPackages [paper2cmap]: executing diffoscope
+[2023-04-23 08:26:24] INFO root fetch - processPackages [paper2cmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper2cmap-0.1.2.tar.gz tmp/paper2cmap-0.1.3.tar.gz --markdown 20230423/p/paper2cmap/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-23 08:26:24] INFO root fetch - processPackages [nestersows]: Downloading https://files.pythonhosted.org/packages/ec/d8/a7929fe22b3dfdef00163e3a6c1f97743ed7fa767eefb22e095df5c2db93/nestersows-1.2.0.tar.gz
+[2023-04-23 08:26:24] INFO root fetch - processPackages [botterino]: executing diffoscope
+[2023-04-23 08:26:24] INFO root fetch - processPackages [botterino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botterino-0.4.7.tar.gz tmp/botterino-0.4.8.tar.gz --markdown 20230423/b/botterino/0.4.7-0.4.8/diff.md --exclude *.pyd
+[2023-04-23 08:26:25] INFO root fetch - processPackages [jutool]: executing diffoscope
+[2023-04-23 08:26:25] INFO root fetch - processPackages [jutool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jutool-0.2.8-py3-none-any.whl.zip tmp/jutool-0.2.9-py3-none-any.whl.zip --markdown 20230423/j/jutool/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-23 08:26:25] INFO root fetch - processPackages [nestersows]: executing diffoscope
+[2023-04-23 08:26:25] INFO root fetch - processPackages [nestersows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nestersows-1.0.0.tar.gz tmp/nestersows-1.2.0.tar.gz --markdown 20230423/n/nestersows/1.0.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-23 08:26:25] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/dc/a9/17da51b3990630d357c6001e869168f1240ec472448ccf46237462ca54b7/fake-bpy-module-latest-20230423.tar.gz
+[2023-04-23 08:26:25] INFO root fetch - processPackages [MazeSolvingAlgos]: Downloading https://files.pythonhosted.org/packages/2d/08/9ab7af109b312f1c95e48bdc0d2d62c70a9f2159b9580c734328ffb7d606/MazeSolvingAlgos-1.5.tar.gz
+[2023-04-23 08:26:25] INFO root fetch - processPackages [pyCeph]: Downloading https://files.pythonhosted.org/packages/c4/f2/d790d7fd0d8b4a142c0ac3ec5d180019106a0522665547c5bbfd75608fce/pyCeph-0.5.0-py3-none-any.whl
+[2023-04-23 08:26:25] INFO root fetch - processPackages [MazeSolvingAlgos]: executing diffoscope
+[2023-04-23 08:26:25] INFO root fetch - processPackages [MazeSolvingAlgos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MazeSolvingAlgos-1.4.tar.gz tmp/MazeSolvingAlgos-1.5.tar.gz --markdown 20230423/M/MazeSolvingAlgos/1.4-1.5/diff.md --exclude *.pyd
+[2023-04-23 08:26:25] INFO root fetch - processPackages [huhangkai]: Downloading https://files.pythonhosted.org/packages/5a/0c/698614cc3d8719130dfe57fc6190f95429cf9b258a3e26fe3c370509c791/huhangkai-1.0.8.tar.gz
+[2023-04-23 08:26:25] INFO root fetch - processPackages [pyCeph]: executing diffoscope
+[2023-04-23 08:26:25] INFO root fetch - processPackages [pyCeph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyCeph-0.4.2.tar.gz tmp/pyCeph-0.5.0-py3-none-any.whl.zip --markdown 20230423/p/pyCeph/0.4.2-0.5.0/diff.md --exclude *.pyd
+[2023-04-23 08:26:25] INFO root fetch - processPackages [huhangkai]: executing diffoscope
+[2023-04-23 08:26:25] INFO root fetch - processPackages [huhangkai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/huhangkai-1.0.7.tar.gz tmp/huhangkai-1.0.8.tar.gz --markdown 20230423/h/huhangkai/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-23 08:26:25] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2023-04-23 08:26:25] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake-bpy-module-latest-20230422.tar.gz tmp/fake-bpy-module-latest-20230423.tar.gz --markdown 20230423/f/fake-bpy-module-latest/20230422-20230423/diff.md --exclude *.pyd
+[2023-04-23 08:26:25] INFO root fetch - processPackages [pyperformance]: Downloading https://files.pythonhosted.org/packages/e9/36/6778e0e2e0c437b5a76b941b386a80aa0f1adf1531143f771abe85644c9a/pyperformance-1.0.7.tar.gz
+[2023-04-23 08:26:25] INFO root fetch - processPackages [pyperformance]: executing diffoscope
+[2023-04-23 08:26:25] INFO root fetch - processPackages [pyperformance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyperformance-1.0.6.tar.gz tmp/pyperformance-1.0.7.tar.gz --markdown 20230423/p/pyperformance/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-23 08:26:26] INFO root fetch - processPackages [nobus]: Start processing: PyMemoryEditor
+[2023-04-23 08:26:26] INFO root fetch - main [MainThread]: End processing [nobus]: success
+[2023-04-23 08:26:26] INFO root fetch - processPackages [PyMemoryEditor]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-04-23 08:26:26] INFO root fetch - processPackages [PyMemoryEditor]: executing diffoscope
+[2023-04-23 08:26:26] INFO root fetch - processPackages [PyMemoryEditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyMemoryEditor-1.4.8.tar.gz tmp/PyMemoryEditor-1.4.9.tar.gz --markdown 20230423/P/PyMemoryEditor/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-04-23 08:26:26] INFO root fetch - processPackages [nestersows]: Start processing: aws-chain-secrets
+[2023-04-23 08:26:26] INFO root fetch - main [MainThread]: End processing [nestersows]: success
+[2023-04-23 08:26:26] WARNING root fetch - processPackages [aws-chain-secrets]: Skipping, unable to determine old version
+[2023-04-23 08:26:26] INFO root fetch - main [MainThread]: End processing [aws-chain-secrets] error
+[2023-04-23 08:26:26] INFO root fetch - main [MainThread]: End processing [botterino]: success
+[2023-04-23 08:26:26] INFO root fetch - main [MainThread]: End processing [MazeSolvingAlgos]: success
+[2023-04-23 08:26:26] INFO root fetch - main [MainThread]: End processing [pyCeph]: success
+[2023-04-23 08:26:27] INFO root fetch - main [MainThread]: End processing [paper2cmap]: success
+[2023-04-23 08:26:27] INFO root fetch - main [MainThread]: End processing [jutool]: success
+[2023-04-23 08:26:27] INFO root fetch - main [MainThread]: End processing [huhangkai]: success
+[2023-04-23 08:26:27] INFO root fetch - main [MainThread]: End processing [PyMemoryEditor]: success
+[2023-04-23 08:26:29] INFO root fetch - main [MainThread]: End processing [pyperformance]: success
+[2023-04-23 08:26:31] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
+[2023-04-23 08:26:31] INFO root fetch - main [MainThread]: Store serial: [17819903]
