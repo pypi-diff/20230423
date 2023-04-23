@@ -5344,3 +5344,58 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 10:45:22] INFO root fetch - main [MainThread]: End processing [pyocs]: success
 [2023-04-23 10:45:32] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2023-04-23 10:45:32] INFO root fetch - main [MainThread]: Store serial: [17820694]
+[2023-04-23 10:50:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820694]
+[2023-04-23 10:50:41] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-23 10:50:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tastytrade-api
+[2023-04-23 10:50:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yatracker-linker
+[2023-04-23 10:50:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sentinel-satellites
+[2023-04-23 10:50:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kkpyutil
+[2023-04-23 10:50:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: BukeColabProject
+[2023-04-23 10:50:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: skyagi
+[2023-04-23 10:50:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Pandora-ChatGPT
+[2023-04-23 10:50:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mlsuite
+[2023-04-23 10:50:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: zytlib
+[2023-04-23 10:50:41] WARNING root fetch - processPackages [yatracker-linker]: Skipping, unable to determine old version
+[2023-04-23 10:50:41] INFO root fetch - main [MainThread]: End processing [yatracker-linker] error
+[2023-04-23 10:50:41] INFO root fetch - processPackages [sentinel-satellites]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 10:50:41] INFO root fetch - processPackages [tastytrade-api]: New version: [0.8.4] Old Version: [0.8.2]
+[2023-04-23 10:50:41] INFO root fetch - processPackages [skyagi]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 10:50:41] INFO root fetch - processPackages [mlsuite]: New version: [2.1.4] Old Version: [2.1.3]
+[2023-04-23 10:50:41] INFO root fetch - processPackages [kkpyutil]: New version: [0.99.1] Old Version: [0.99.0]
+[2023-04-23 10:50:41] INFO root fetch - processPackages [BukeColabProject]: New version: [0.4.2] Old Version: [0.4.0]
+[2023-04-23 10:50:41] INFO root fetch - processPackages [Pandora-ChatGPT]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-23 10:50:41] INFO root fetch - processPackages [skyagi]: executing diffoscope
+[2023-04-23 10:50:41] INFO root fetch - processPackages [skyagi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skyagi-0.0.8.tar.gz tmp/skyagi-0.0.9.tar.gz --markdown 20230423/s/skyagi/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 10:50:41] INFO root fetch - processPackages [zytlib]: New version: [0.3.326] Old Version: [0.3.325]
+[2023-04-23 10:50:41] INFO root fetch - processPackages [BukeColabProject]: Downloading https://files.pythonhosted.org/packages/9e/41/12734cf1424a4f44f69cb671a2feb279fe710c4e1b0f005bb545bcd6bd6f/BukeColabProject-0.4.0.tar.gz
+[2023-04-23 10:50:41] INFO root fetch - processPackages [mlsuite]: Downloading https://files.pythonhosted.org/packages/19/09/6241b0760e8a48ae813865fe88d2c8d7d1218d9458711fdd98f6d9054468/mlsuite-2.1.3.tar.gz
+[2023-04-23 10:50:41] INFO root fetch - processPackages [sentinel-satellites]: Downloading https://files.pythonhosted.org/packages/f7/b6/916ce21cd07436102c5acf589b794bf9afc1977d4653c1355370a9ba212d/sentinel_satellites-0.0.8.tar.gz
+[2023-04-23 10:50:41] INFO root fetch - processPackages [tastytrade-api]: Downloading https://files.pythonhosted.org/packages/f7/e6/da8b27c2c907ab1898a7d9746274652d0612af216dc0747b7c92f940cfa1/tastytrade-api-0.8.4.tar.gz
+[2023-04-23 10:50:41] INFO root fetch - processPackages [Pandora-ChatGPT]: Downloading https://files.pythonhosted.org/packages/dc/d2/95eb5d40d259042d993f9e19cb84357abab8c6981cd1ac3963c9c3d32c0c/Pandora-ChatGPT-1.0.5.tar.gz
+[2023-04-23 10:50:41] INFO root fetch - processPackages [BukeColabProject]: Downloading https://files.pythonhosted.org/packages/c7/23/41099b09fc9b07404ea5e807f6a93ceeac17eac1f7036d4e52d0af1d8c5f/BukeColabProject-0.4.2.tar.gz
+[2023-04-23 10:50:41] INFO root fetch - processPackages [kkpyutil]: executing diffoscope
+[2023-04-23 10:50:41] INFO root fetch - processPackages [kkpyutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkpyutil-0.99.0.tar.gz tmp/kkpyutil-0.99.1.tar.gz --markdown 20230423/k/kkpyutil/0.99.0-0.99.1/diff.md --exclude *.pyd
+[2023-04-23 10:50:41] INFO root fetch - processPackages [zytlib]: Downloading https://files.pythonhosted.org/packages/a7/18/032a1684ef2db9d645f794afa036adb4178950ef2caed68966191cee06f2/zytlib-0.3.326-py3-none-any.whl
+[2023-04-23 10:50:41] INFO root fetch - processPackages [tastytrade-api]: executing diffoscope
+[2023-04-23 10:50:41] INFO root fetch - processPackages [tastytrade-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tastytrade-api-0.8.2.tar.gz tmp/tastytrade-api-0.8.4.tar.gz --markdown 20230423/t/tastytrade-api/0.8.2-0.8.4/diff.md --exclude *.pyd
+[2023-04-23 10:50:41] INFO root fetch - processPackages [mlsuite]: Downloading https://files.pythonhosted.org/packages/fb/44/e0512b7e38ad75d532d25d4735c2af5a3d17409014001190285e34bbc636/mlsuite-2.1.4.tar.gz
+[2023-04-23 10:50:41] INFO root fetch - processPackages [sentinel-satellites]: Downloading https://files.pythonhosted.org/packages/14/c1/6fbc136aa9dc0363b7e86d73d05c419da0791995bafdb209328f500a323b/sentinel_satellites-0.0.9.tar.gz
+[2023-04-23 10:50:41] INFO root fetch - processPackages [BukeColabProject]: executing diffoscope
+[2023-04-23 10:50:41] INFO root fetch - processPackages [BukeColabProject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BukeColabProject-0.4.0.tar.gz tmp/BukeColabProject-0.4.2.tar.gz --markdown 20230423/B/BukeColabProject/0.4.0-0.4.2/diff.md --exclude *.pyd
+[2023-04-23 10:50:41] INFO root fetch - processPackages [Pandora-ChatGPT]: executing diffoscope
+[2023-04-23 10:50:41] INFO root fetch - processPackages [Pandora-ChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pandora-ChatGPT-1.0.4.tar.gz tmp/Pandora-ChatGPT-1.0.5.tar.gz --markdown 20230423/P/Pandora-ChatGPT/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-23 10:50:41] INFO root fetch - processPackages [sentinel-satellites]: executing diffoscope
+[2023-04-23 10:50:41] INFO root fetch - processPackages [sentinel-satellites]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sentinel_satellites-0.0.8.tar.gz tmp/sentinel_satellites-0.0.9.tar.gz --markdown 20230423/s/sentinel-satellites/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 10:50:41] INFO root fetch - processPackages [zytlib]: executing diffoscope
+[2023-04-23 10:50:41] INFO root fetch - processPackages [zytlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zytlib-0.3.325-py3-none-any.whl.zip tmp/zytlib-0.3.326-py3-none-any.whl.zip --markdown 20230423/z/zytlib/0.3.325-0.3.326/diff.md --exclude *.pyd
+[2023-04-23 10:50:41] INFO root fetch - processPackages [mlsuite]: executing diffoscope
+[2023-04-23 10:50:41] INFO root fetch - processPackages [mlsuite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlsuite-2.1.3.tar.gz tmp/mlsuite-2.1.4.tar.gz --markdown 20230423/m/mlsuite/2.1.3-2.1.4/diff.md --exclude *.pyd
+[2023-04-23 10:50:42] INFO root fetch - main [MainThread]: End processing [kkpyutil]: success
+[2023-04-23 10:50:42] INFO root fetch - main [MainThread]: End processing [tastytrade-api]: success
+[2023-04-23 10:50:43] INFO root fetch - main [MainThread]: End processing [BukeColabProject]: success
+[2023-04-23 10:50:43] INFO root fetch - main [MainThread]: End processing [skyagi]: success
+[2023-04-23 10:50:43] INFO root fetch - main [MainThread]: End processing [sentinel-satellites]: success
+[2023-04-23 10:50:43] INFO root fetch - main [MainThread]: End processing [mlsuite]: success
+[2023-04-23 10:50:44] INFO root fetch - main [MainThread]: End processing [zytlib]: success
+[2023-04-23 10:50:45] INFO root fetch - main [MainThread]: End processing [Pandora-ChatGPT]: success
+[2023-04-23 10:50:45] INFO root fetch - main [MainThread]: Store serial: [17820724]
