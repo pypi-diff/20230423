@@ -5107,3 +5107,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 10:14:14] INFO root fetch - main [MainThread]: End processing [dss-python-sdk]: success
 [2023-04-23 10:14:14] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-imm]: success
 [2023-04-23 10:14:14] INFO root fetch - main [MainThread]: Store serial: [17820562]
+[2023-04-23 10:19:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820562]
+[2023-04-23 10:19:23] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-23 10:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: megfile
+[2023-04-23 10:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FastTranslate
+[2023-04-23 10:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-poe-chat
+[2023-04-23 10:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: megabot
+[2023-04-23 10:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wxgl
+[2023-04-23 10:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xjm
+[2023-04-23 10:19:23] WARNING root fetch - processPackages [FastTranslate]: Skipping, unable to determine old version
+[2023-04-23 10:19:23] INFO root fetch - main [MainThread]: End processing [FastTranslate] error
+[2023-04-23 10:19:23] INFO root fetch - processPackages [wxgl]: New version: [0.9.8] Old Version: [0.9.3]
+[2023-04-23 10:19:23] INFO root fetch - processPackages [nonebot-poe-chat]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-23 10:19:23] INFO root fetch - processPackages [megfile]: New version: [2.0.4.post3] Old Version: [2.0.4.post2]
+[2023-04-23 10:19:23] INFO root fetch - processPackages [xjm]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-23 10:19:23] INFO root fetch - processPackages [megabot]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 10:19:23] INFO root fetch - processPackages [xjm]: Downloading https://files.pythonhosted.org/packages/2b/ec/264270563639663a7cae0e8afb0e5ecd5da4d5c8c45a3d70c2a9a945d808/xjm-0.0.4.tar.gz
+[2023-04-23 10:19:23] INFO root fetch - processPackages [megabot]: Downloading https://files.pythonhosted.org/packages/e9/92/018a8ecb4813f2a2a2bd46b59de0dc73a0606c86ef495ecc96f06bb3a0d1/megabot-0.0.6.tar.gz
+[2023-04-23 10:19:23] INFO root fetch - processPackages [megfile]: Downloading https://files.pythonhosted.org/packages/9f/f1/750fe84968a16970fb4db62aea29882ae9219196c53864536021602675fe/megfile-2.0.4.post3-py3-none-any.whl
+[2023-04-23 10:19:23] INFO root fetch - processPackages [nonebot-poe-chat]: Downloading https://files.pythonhosted.org/packages/46/7f/8e67d7ed87dd8baa1cca1b7d1170025ba44f99c0c45d5d727374ea5cf8f9/nonebot_poe_chat-1.0.3.tar.gz
+[2023-04-23 10:19:23] INFO root fetch - processPackages [wxgl]: executing diffoscope
+[2023-04-23 10:19:23] INFO root fetch - processPackages [wxgl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wxgl-0.9.3-py3-none-any.whl.zip tmp/wxgl-0.9.8-py3-none-any.whl.zip --markdown 20230423/w/wxgl/0.9.3-0.9.8/diff.md --exclude *.pyd
+[2023-04-23 10:19:23] INFO root fetch - processPackages [megabot]: executing diffoscope
+[2023-04-23 10:19:23] INFO root fetch - processPackages [megabot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/megabot-0.0.5.tar.gz tmp/megabot-0.0.6.tar.gz --markdown 20230423/m/megabot/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 10:19:23] INFO root fetch - processPackages [xjm]: executing diffoscope
+[2023-04-23 10:19:23] INFO root fetch - processPackages [xjm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xjm-0.0.3-py3.6.egg tmp/xjm-0.0.4.tar.gz --markdown 20230423/x/xjm/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-23 10:19:23] INFO root fetch - processPackages [megfile]: executing diffoscope
+[2023-04-23 10:19:23] INFO root fetch - processPackages [megfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/megfile-2.0.4.post2-py3-none-any.whl.zip tmp/megfile-2.0.4.post3-py3-none-any.whl.zip --markdown 20230423/m/megfile/2.0.4.post2-2.0.4.post3/diff.md --exclude *.pyd
+[2023-04-23 10:19:23] WARNING root fetch - processPackages [nonebot-poe-chat]: Skipping package: exceeds size limit 13488610>=10485760
+[2023-04-23 10:19:23] INFO root fetch - main [MainThread]: End processing [nonebot-poe-chat] error
+[2023-04-23 10:19:24] INFO root fetch - main [MainThread]: End processing [xjm]: success
+[2023-04-23 10:19:24] INFO root fetch - main [MainThread]: End processing [megabot]: success
+[2023-04-23 10:19:24] INFO root fetch - main [MainThread]: End processing [wxgl]: success
+[2023-04-23 10:19:25] INFO root fetch - main [MainThread]: End processing [megfile]: success
+[2023-04-23 10:19:25] INFO root fetch - main [MainThread]: Store serial: [17820579]
