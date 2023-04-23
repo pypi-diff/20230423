@@ -12875,3 +12875,80 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 21:22:59] INFO root fetch - processPackages [tradchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradchat-0.0.1.tar.gz tmp/tradchat-0.0.2.tar.gz --markdown 20230423/t/tradchat/0.0.1-0.0.2/diff.md --exclude *.pyd
 [2023-04-23 21:23:00] INFO root fetch - main [MainThread]: End processing [tradchat]: success
 [2023-04-23 21:23:00] INFO root fetch - main [MainThread]: Store serial: [17825228]
+[2023-04-23 21:28:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825228]
+[2023-04-23 21:28:09] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-23 21:28:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vollseg
+[2023-04-23 21:28:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cpppackage-lms
+[2023-04-23 21:28:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: media-downloader
+[2023-04-23 21:28:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: embykeeper
+[2023-04-23 21:28:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: secapi-tl
+[2023-04-23 21:28:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: microservices-common
+[2023-04-23 21:28:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Conanmail
+[2023-04-23 21:28:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cnd-vault
+[2023-04-23 21:28:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: systems-manager
+[2023-04-23 21:28:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: media-downloader
+[2023-04-23 21:28:09] WARNING root fetch - processPackages [cpppackage-lms]: Skipping, unable to determine old version
+[2023-04-23 21:28:09] INFO root fetch - processPackages [cpppackage-lms]: Start processing: gpt-index
+[2023-04-23 21:28:09] INFO root fetch - main [MainThread]: End processing [cpppackage-lms] error
+[2023-04-23 21:28:09] INFO root fetch - processPackages [systems-manager]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-23 21:28:09] INFO root fetch - processPackages [Conanmail]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-23 21:28:09] INFO root fetch - processPackages [embykeeper]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-04-23 21:28:09] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-23 21:28:09] INFO root fetch - processPackages [media-downloader]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-23 21:28:09] INFO root fetch - processPackages [cnd-vault]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 21:28:09] INFO root fetch - processPackages [media-downloader]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-23 21:28:09] INFO root fetch - processPackages [microservices-common]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 21:28:09] INFO root fetch - processPackages [secapi-tl]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-04-23 21:28:10] INFO root fetch - processPackages [Conanmail]: executing diffoscope
+[2023-04-23 21:28:10] INFO root fetch - processPackages [Conanmail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Conanmail-1.0.7-py3-none-any.whl.zip tmp/Conanmail-1.0.8-py3-none-any.whl.zip --markdown 20230423/C/Conanmail/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-23 21:28:10] INFO root fetch - processPackages [embykeeper]: executing diffoscope
+[2023-04-23 21:28:10] INFO root fetch - processPackages [embykeeper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embykeeper-2.0.8.tar.gz tmp/embykeeper-2.0.9.tar.gz --markdown 20230423/e/embykeeper/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-04-23 21:28:10] INFO root fetch - processPackages [gpt-index]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-23 21:28:10] INFO root fetch - processPackages [systems-manager]: Downloading https://files.pythonhosted.org/packages/0a/9f/637250b3c42b63a59c45de07eb90853ea0958cb78d0d043b573838e73584/systems_manager-0.8.0-py2.py3-none-any.whl
+[2023-04-23 21:28:10] INFO root fetch - processPackages [cnd-vault]: Downloading https://files.pythonhosted.org/packages/a0/12/56a85b47187499bb27f4a2d2b3e7bfe030755fa742ab22d27fd49363282d/cnd_vault-0.1.0-py3-none-any.whl
+[2023-04-23 21:28:10] INFO root fetch - processPackages [secapi-tl]: Downloading https://files.pythonhosted.org/packages/d9/95/3c512ab0a3a1fff0a725ec51ce6951069e6c555ab88ff9719ad43638bf2f/secapi-tl-1.1.8.tar.gz
+[2023-04-23 21:28:10] INFO root fetch - processPackages [microservices-common]: Downloading https://files.pythonhosted.org/packages/cf/26/d61009fe7a48c56135d6109d63dde027b1f58aa65451904967d42313b5fe/microservices_common-0.0.8.tar.gz
+[2023-04-23 21:28:10] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-23 21:28:10] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-23 21:28:10] INFO root fetch - processPackages [vollseg]: Start processing: mash-shell
+[2023-04-23 21:28:10] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-23 21:28:10] INFO root fetch - processPackages [media-downloader]: Downloading https://files.pythonhosted.org/packages/c4/15/9446ad9c3f72c875549aaea0df63381df5f49a0410e429dcef5782ed8d29/media_downloader-0.5.0-py2.py3-none-any.whl
+[2023-04-23 21:28:10] INFO root fetch - processPackages [media-downloader]: Downloading https://files.pythonhosted.org/packages/c4/15/9446ad9c3f72c875549aaea0df63381df5f49a0410e429dcef5782ed8d29/media_downloader-0.5.0-py2.py3-none-any.whl
+[2023-04-23 21:28:10] INFO root fetch - processPackages [systems-manager]: Downloading https://files.pythonhosted.org/packages/68/28/02a27173c177a8a83a2fbf278250985f93c69856fda1ba8ab95e09bd391f/systems_manager-0.9.0-py2.py3-none-any.whl
+[2023-04-23 21:28:10] INFO root fetch - processPackages [secapi-tl]: executing diffoscope
+[2023-04-23 21:28:10] INFO root fetch - processPackages [secapi-tl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secapi-tl-1.1.7.tar.gz tmp/secapi-tl-1.1.8.tar.gz --markdown 20230423/s/secapi-tl/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-04-23 21:28:10] INFO root fetch - processPackages [mash-shell]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-23 21:28:10] INFO root fetch - processPackages [gpt-index]: executing diffoscope
+[2023-04-23 21:28:10] INFO root fetch - processPackages [gpt-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_index-0.5.8.tar.gz tmp/gpt_index-0.5.9.tar.gz --markdown 20230423/g/gpt-index/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-23 21:28:10] INFO root fetch - processPackages [cnd-vault]: Downloading https://files.pythonhosted.org/packages/73/8f/33a660a820b110c66745dccf8de2c01665bcee963ca1a35873a660296332/cnd_vault-0.1.1-py3-none-any.whl
+[2023-04-23 21:28:10] INFO root fetch - processPackages [media-downloader]: executing diffoscope
+[2023-04-23 21:28:10] INFO root fetch - processPackages [media-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/media_downloader-0.4.0-py2.py3-none-any.whl.zip tmp/media_downloader-0.5.0-py2.py3-none-any.whl.zip --markdown 20230423/m/media-downloader/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-23 21:28:10] INFO root fetch - processPackages [media-downloader]: executing diffoscope
+[2023-04-23 21:28:10] INFO root fetch - processPackages [media-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/media_downloader-0.4.0-py2.py3-none-any.whl.zip tmp/media_downloader-0.5.0-py2.py3-none-any.whl.zip --markdown 20230423/m/media-downloader/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-23 21:28:10] INFO root fetch - processPackages [systems-manager]: executing diffoscope
+[2023-04-23 21:28:10] INFO root fetch - processPackages [systems-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systems_manager-0.8.0-py2.py3-none-any.whl.zip tmp/systems_manager-0.9.0-py2.py3-none-any.whl.zip --markdown 20230423/s/systems-manager/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-23 21:28:10] INFO root fetch - processPackages [mash-shell]: Downloading https://files.pythonhosted.org/packages/ce/0c/f50f1dc2feea6a3e2fe0c15ee959a9afeecf57b9124a9418fa10fb6fd1d8/mash-shell-0.2.4.tar.gz
+[2023-04-23 21:28:10] INFO root fetch - processPackages [microservices-common]: Downloading https://files.pythonhosted.org/packages/18/65/42a7244c50e3cb0b26a6a430635e23b6584e219c7a28c6cb6bd4d7925540/microservices_common-0.0.9.tar.gz
+[2023-04-23 21:28:10] INFO root fetch - processPackages [cnd-vault]: executing diffoscope
+[2023-04-23 21:28:10] INFO root fetch - processPackages [cnd-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnd_vault-0.1.0-py3-none-any.whl.zip tmp/cnd_vault-0.1.1-py3-none-any.whl.zip --markdown 20230423/c/cnd-vault/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 21:28:10] INFO root fetch - processPackages [microservices-common]: executing diffoscope
+[2023-04-23 21:28:10] INFO root fetch - processPackages [microservices-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/microservices_common-0.0.8.tar.gz tmp/microservices_common-0.0.9.tar.gz --markdown 20230423/m/microservices-common/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 21:28:10] INFO root fetch - processPackages [mash-shell]: Downloading https://files.pythonhosted.org/packages/39/e5/5089c8c5df88a75a681b543ed20ff81c7842cd11739abf40df754b620250/mash-shell-0.2.5.tar.gz
+[2023-04-23 21:28:11] INFO root fetch - processPackages [mash-shell]: executing diffoscope
+[2023-04-23 21:28:11] INFO root fetch - processPackages [mash-shell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mash-shell-0.2.4.tar.gz tmp/mash-shell-0.2.5.tar.gz --markdown 20230423/m/mash-shell/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-23 21:28:11] INFO root fetch - processPackages [Conanmail]: Start processing: llama-index
+[2023-04-23 21:28:11] INFO root fetch - main [MainThread]: End processing [Conanmail]: success
+[2023-04-23 21:28:11] INFO root fetch - processPackages [llama-index]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-23 21:28:11] INFO root fetch - main [MainThread]: End processing [secapi-tl]: success
+[2023-04-23 21:28:11] INFO root fetch - processPackages [llama-index]: executing diffoscope
+[2023-04-23 21:28:11] INFO root fetch - processPackages [llama-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index-0.5.8.tar.gz tmp/llama_index-0.5.9.tar.gz --markdown 20230423/l/llama-index/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-23 21:28:12] INFO root fetch - main [MainThread]: End processing [media-downloader]: success
+[2023-04-23 21:28:12] INFO root fetch - main [MainThread]: End processing [systems-manager]: success
+[2023-04-23 21:28:12] INFO root fetch - main [MainThread]: End processing [microservices-common]: success
+[2023-04-23 21:28:12] INFO root fetch - main [MainThread]: End processing [media-downloader]: success
+[2023-04-23 21:28:12] INFO root fetch - main [MainThread]: End processing [embykeeper]: success
+[2023-04-23 21:28:12] INFO root fetch - main [MainThread]: End processing [cnd-vault]: success
+[2023-04-23 21:28:13] INFO root fetch - main [MainThread]: End processing [gpt-index]: success
+[2023-04-23 21:28:13] INFO root fetch - main [MainThread]: End processing [mash-shell]: success
+[2023-04-23 21:28:14] INFO root fetch - main [MainThread]: End processing [llama-index]: success
+[2023-04-23 21:28:14] INFO root fetch - main [MainThread]: Store serial: [17825266]
