@@ -13862,3 +13862,78 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 23:18:56] INFO root fetch - main [MainThread]: End processing [atlasapi]: success
 [2023-04-23 23:18:58] INFO root fetch - main [MainThread]: End processing [clearml]: success
 [2023-04-23 23:18:58] INFO root fetch - main [MainThread]: Store serial: [17825941]
+[2023-04-23 23:24:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825941]
+[2023-04-23 23:24:07] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-23 23:24:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dfm-tools
+[2023-04-23 23:24:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alacorder
+[2023-04-23 23:24:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kcli
+[2023-04-23 23:24:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rlaphoenix-pymp4
+[2023-04-23 23:24:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: onsale
+[2023-04-23 23:24:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ht
+[2023-04-23 23:24:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kcli
+[2023-04-23 23:24:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: k8s-audit-filter
+[2023-04-23 23:24:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aa-timezones
+[2023-04-23 23:24:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: jsonclass
+[2023-04-23 23:24:07] WARNING root fetch - processPackages [dfm-tools]: Skipping, unable to determine old version
+[2023-04-23 23:24:08] INFO root fetch - processPackages [dfm-tools]: Start processing: stylgebra
+[2023-04-23 23:24:08] INFO root fetch - main [MainThread]: End processing [dfm-tools] error
+[2023-04-23 23:24:08] INFO root fetch - processPackages [rlaphoenix-pymp4]: New version: [1.5.0] Old Version: [1.4.0]
+[2023-04-23 23:24:08] INFO root fetch - processPackages [onsale]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 23:24:08] WARNING root fetch - processPackages [jsonclass]: Skipping, unable to determine old version
+[2023-04-23 23:24:08] INFO root fetch - processPackages [jsonclass]: Start processing: lib-pybroker
+[2023-04-23 23:24:08] INFO root fetch - main [MainThread]: End processing [jsonclass] error
+[2023-04-23 23:24:08] INFO root fetch - processPackages [ht]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-23 23:24:08] INFO root fetch - processPackages [k8s-audit-filter]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-23 23:24:08] INFO root fetch - processPackages [alacorder]: New version: [79.7.3] Old Version: [79.7.2]
+[2023-04-23 23:24:08] INFO root fetch - processPackages [kcli]: New version: [99.0.202304232122] Old Version: [99.0.202304232120]
+[2023-04-23 23:24:08] INFO root fetch - processPackages [kcli]: New version: [99.0.202304232122] Old Version: [99.0.202304232120]
+[2023-04-23 23:24:08] INFO root fetch - processPackages [aa-timezones]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-23 23:24:08] WARNING root fetch - processPackages [stylgebra]: Skipping, unable to determine old version
+[2023-04-23 23:24:08] INFO root fetch - main [MainThread]: End processing [stylgebra] error
+[2023-04-23 23:24:08] INFO root fetch - processPackages [lib-pybroker]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-04-23 23:24:08] INFO root fetch - processPackages [rlaphoenix-pymp4]: Downloading https://files.pythonhosted.org/packages/a1/81/bdca9eafde17d0902cdea46a3776e2e357fb67b8ea08a111c924fd0096bd/rlaphoenix_pymp4-1.4.0.tar.gz
+[2023-04-23 23:24:08] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/8c/d1/afee8dbe65db548cc06ba752d161ed6ee98485738b814340c1d62bdd22bb/alacorder-79.7.2.tar.gz
+[2023-04-23 23:24:08] INFO root fetch - processPackages [k8s-audit-filter]: Downloading https://files.pythonhosted.org/packages/bc/71/bb5679fad3a61240192315cba42434290bf8bd21c13a63bbba49afd50bf9/k8s_audit_filter-0.0.2-py3-none-any.whl
+[2023-04-23 23:24:08] INFO root fetch - processPackages [onsale]: Downloading https://files.pythonhosted.org/packages/a8/0d/ed76cf472f22b894644a69399fc647083b202c01e32b25fbe0bcf5404970/onsale-0.0.1.tar.gz
+[2023-04-23 23:24:08] INFO root fetch - processPackages [ht]: Downloading https://files.pythonhosted.org/packages/61/25/c0059157b6182f1df609c284f69e8cdc649ad05a48ff7f0683550f671139/ht-1.0.3.tar.gz
+[2023-04-23 23:24:08] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/30/c8/b54a73a52444f451293f86d0e0ffa8f0537fc4d2327b5d63be8b3abd2249/kcli-99.0.202304232120-py3-none-any.whl
+[2023-04-23 23:24:08] INFO root fetch - processPackages [aa-timezones]: Downloading https://files.pythonhosted.org/packages/90/72/88bc759140568bf7d91306163813ef64201dc6648be9177eb1ca5e033c79/aa-timezones-1.8.0.tar.gz
+[2023-04-23 23:24:08] INFO root fetch - processPackages [lib-pybroker]: Downloading https://files.pythonhosted.org/packages/b5/ac/05fb40abd32c266917cfed8fa33c129ade1933174e9482c1f92766816149/lib-pybroker-1.1.3.tar.gz
+[2023-04-23 23:24:08] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/30/c8/b54a73a52444f451293f86d0e0ffa8f0537fc4d2327b5d63be8b3abd2249/kcli-99.0.202304232120-py3-none-any.whl
+[2023-04-23 23:24:08] INFO root fetch - processPackages [onsale]: Downloading https://files.pythonhosted.org/packages/08/56/1ad65161a522a77aab2260d3c37c5f55d15fdc83f711ae386f59b9906aac/onsale-0.0.2.tar.gz
+[2023-04-23 23:24:08] INFO root fetch - processPackages [k8s-audit-filter]: Downloading https://files.pythonhosted.org/packages/d5/2a/b5fc78d7343aacf77b939788854c421bb5d8f913b18a5172c40fa93c9340/k8s_audit_filter-0.0.3-py3-none-any.whl
+[2023-04-23 23:24:08] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/38/e1/9af54d484b5df019383d4249eee65604928ae7ba2215bc4f5b8a2b79c57d/alacorder-79.7.3.tar.gz
+[2023-04-23 23:24:08] INFO root fetch - processPackages [onsale]: executing diffoscope
+[2023-04-23 23:24:08] INFO root fetch - processPackages [onsale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onsale-0.0.1.tar.gz tmp/onsale-0.0.2.tar.gz --markdown 20230423/o/onsale/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 23:24:08] INFO root fetch - processPackages [k8s-audit-filter]: executing diffoscope
+[2023-04-23 23:24:08] INFO root fetch - processPackages [k8s-audit-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/k8s_audit_filter-0.0.2-py3-none-any.whl.zip tmp/k8s_audit_filter-0.0.3-py3-none-any.whl.zip --markdown 20230423/k/k8s-audit-filter/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 23:24:08] INFO root fetch - processPackages [rlaphoenix-pymp4]: Downloading https://files.pythonhosted.org/packages/c0/06/48e41d2f683344ddae9eace03da1853c535ece50201a5e6b33152efc8361/rlaphoenix_pymp4-1.5.0.tar.gz
+[2023-04-23 23:24:08] INFO root fetch - processPackages [rlaphoenix-pymp4]: executing diffoscope
+[2023-04-23 23:24:08] INFO root fetch - processPackages [rlaphoenix-pymp4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rlaphoenix_pymp4-1.4.0.tar.gz tmp/rlaphoenix_pymp4-1.5.0.tar.gz --markdown 20230423/r/rlaphoenix-pymp4/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2023-04-23 23:24:08] INFO root fetch - processPackages [aa-timezones]: Downloading https://files.pythonhosted.org/packages/42/6b/f45b4abe322578e7ddc2cba523837f7aa8c2f1b44f83f052c2c600ebf95b/aa_timezones-1.9.0.tar.gz
+[2023-04-23 23:24:08] INFO root fetch - processPackages [ht]: Downloading https://files.pythonhosted.org/packages/81/b7/9d574041d6f4e2cb92505d54bbabe1c6bd442bae7694ddc72d1945916c89/ht-1.0.4-py3-none-any.whl
+[2023-04-23 23:24:08] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-04-23 23:24:08] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-79.7.2.tar.gz tmp/alacorder-79.7.3.tar.gz --markdown 20230423/a/alacorder/79.7.2-79.7.3/diff.md --exclude *.pyd
+[2023-04-23 23:24:08] INFO root fetch - processPackages [lib-pybroker]: Downloading https://files.pythonhosted.org/packages/91/03/db506bdc18919459b06f5c02da5d1aabb10de172fa28fe928d82cc6c85a2/lib-pybroker-1.1.4.tar.gz
+[2023-04-23 23:24:08] INFO root fetch - processPackages [ht]: executing diffoscope
+[2023-04-23 23:24:08] INFO root fetch - processPackages [ht]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ht-1.0.3.tar.gz tmp/ht-1.0.4-py3-none-any.whl.zip --markdown 20230423/h/ht/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-23 23:24:08] INFO root fetch - processPackages [aa-timezones]: executing diffoscope
+[2023-04-23 23:24:08] INFO root fetch - processPackages [aa-timezones]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa-timezones-1.8.0.tar.gz tmp/aa_timezones-1.9.0.tar.gz --markdown 20230423/a/aa-timezones/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-23 23:24:08] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/a2/08/83b7b05d87551ad44b92e31b7749b589cf7d4680ec237ef445e16a6fb594/kcli-99.0.202304232122-py3-none-any.whl
+[2023-04-23 23:24:08] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/a2/08/83b7b05d87551ad44b92e31b7749b589cf7d4680ec237ef445e16a6fb594/kcli-99.0.202304232122-py3-none-any.whl
+[2023-04-23 23:24:08] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-23 23:24:08] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304232120-py3-none-any.whl.zip tmp/kcli-99.0.202304232122-py3-none-any.whl.zip --markdown 20230423/k/kcli/99.0.202304232120-99.0.202304232122/diff.md --exclude *.pyd
+[2023-04-23 23:24:08] INFO root fetch - processPackages [lib-pybroker]: executing diffoscope
+[2023-04-23 23:24:08] INFO root fetch - processPackages [lib-pybroker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-pybroker-1.1.3.tar.gz tmp/lib-pybroker-1.1.4.tar.gz --markdown 20230423/l/lib-pybroker/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-04-23 23:24:08] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-23 23:24:08] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304232120-py3-none-any.whl.zip tmp/kcli-99.0.202304232122-py3-none-any.whl.zip --markdown 20230423/k/kcli/99.0.202304232120-99.0.202304232122/diff.md --exclude *.pyd
+[2023-04-23 23:24:09] INFO root fetch - main [MainThread]: End processing [onsale]: success
+[2023-04-23 23:24:10] INFO root fetch - main [MainThread]: End processing [k8s-audit-filter]: success
+[2023-04-23 23:24:10] INFO root fetch - main [MainThread]: End processing [rlaphoenix-pymp4]: success
+[2023-04-23 23:24:10] INFO root fetch - main [MainThread]: End processing [ht]: success
+[2023-04-23 23:24:11] INFO root fetch - main [MainThread]: End processing [lib-pybroker]: success
+[2023-04-23 23:24:12] INFO root fetch - main [MainThread]: End processing [aa-timezones]: success
+[2023-04-23 23:24:17] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-23 23:24:18] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-23 23:24:19] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-04-23 23:24:19] INFO root fetch - main [MainThread]: Store serial: [17825979]
