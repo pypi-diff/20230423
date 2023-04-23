@@ -7019,3 +7019,80 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 13:23:10] INFO root fetch - main [MainThread]: End processing [carculator-utils]: success
 [2023-04-23 13:23:11] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2023-04-23 13:23:11] INFO root fetch - main [MainThread]: Store serial: [17821674]
+[2023-04-23 13:28:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17821674]
+[2023-04-23 13:28:20] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-23 13:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: daily-leet
+[2023-04-23 13:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: robotframework-MailClientLibrary
+[2023-04-23 13:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xia-engine-sql
+[2023-04-23 13:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: drf-nested-browsable
+[2023-04-23 13:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ebi-eva-common-pyutils
+[2023-04-23 13:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: maxilearn
+[2023-04-23 13:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: OctoBot-Services
+[2023-04-23 13:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nendo-sf-segmenter
+[2023-04-23 13:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: torchserve-nightly
+[2023-04-23 13:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: torch-model-archiver-nightly
+[2023-04-23 13:28:20] WARNING root fetch - processPackages [robotframework-MailClientLibrary]: Skipping, unable to determine old version
+[2023-04-23 13:28:20] INFO root fetch - processPackages [robotframework-MailClientLibrary]: Start processing: torch-workflow-archiver-nightly
+[2023-04-23 13:28:20] INFO root fetch - main [MainThread]: End processing [robotframework-MailClientLibrary] error
+[2023-04-23 13:28:20] WARNING root fetch - processPackages [drf-nested-browsable]: Skipping, unable to determine old version
+[2023-04-23 13:28:20] INFO root fetch - processPackages [daily-leet]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-23 13:28:20] INFO root fetch - processPackages [drf-nested-browsable]: Start processing: llm4chat
+[2023-04-23 13:28:20] INFO root fetch - main [MainThread]: End processing [drf-nested-browsable] error
+[2023-04-23 13:28:20] INFO root fetch - processPackages [ebi-eva-common-pyutils]: New version: [0.5.3.dev3] Old Version: [0.5.3.dev2]
+[2023-04-23 13:28:20] WARNING root fetch - processPackages [nendo-sf-segmenter]: Skipping, unable to determine old version
+[2023-04-23 13:28:20] INFO root fetch - processPackages [nendo-sf-segmenter]: Start processing: spycio
+[2023-04-23 13:28:20] INFO root fetch - main [MainThread]: End processing [nendo-sf-segmenter] error
+[2023-04-23 13:28:20] INFO root fetch - processPackages [maxilearn]: New version: [4.4.5] Old Version: [4.4.4]
+[2023-04-23 13:28:20] INFO root fetch - processPackages [xia-engine-sql]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 13:28:20] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-23 13:28:20] INFO root fetch - processPackages [torchserve-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-23 13:28:20] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-23 13:28:20] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/00/82/319f3c998c1b886c648e7560fce0ad6d68fa06b6b8807405ce7adbe77519/torchserve_nightly-2023.4.8-py3-none-any.whl
+[2023-04-23 13:28:20] INFO root fetch - processPackages [maxilearn]: executing diffoscope
+[2023-04-23 13:28:20] INFO root fetch - processPackages [maxilearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maxilearn-4.4.4.tar.gz tmp/maxilearn-4.4.5.tar.gz --markdown 20230423/m/maxilearn/4.4.4-4.4.5/diff.md --exclude *.pyd
+[2023-04-23 13:28:20] INFO root fetch - processPackages [ebi-eva-common-pyutils]: executing diffoscope
+[2023-04-23 13:28:20] INFO root fetch - processPackages [ebi-eva-common-pyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ebi_eva_common_pyutils-0.5.3.dev2.tar.gz tmp/ebi_eva_common_pyutils-0.5.3.dev3.tar.gz --markdown 20230423/e/ebi-eva-common-pyutils/0.5.3.dev2-0.5.3.dev3/diff.md --exclude *.pyd
+[2023-04-23 13:28:20] INFO root fetch - processPackages [OctoBot-Services]: New version: [1.5.5] Old Version: [1.5.4]
+[2023-04-23 13:28:20] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2023-04-23 13:28:20] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2023.4.8-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2023.4.9-py3-none-any.whl.zip --markdown 20230423/t/torch-model-archiver-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-23 13:28:20] WARNING root fetch - processPackages [llm4chat]: Skipping, unable to determine old version
+[2023-04-23 13:28:20] INFO root fetch - processPackages [llm4chat]: Start processing: torchx-nightly
+[2023-04-23 13:28:20] INFO root fetch - main [MainThread]: End processing [llm4chat] error
+[2023-04-23 13:28:20] INFO root fetch - processPackages [spycio]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-23 13:28:20] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2023-04-23 13:28:20] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2023.4.8-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2023.4.9-py3-none-any.whl.zip --markdown 20230423/t/torch-workflow-archiver-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-23 13:28:20] INFO root fetch - processPackages [torchx-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-23 13:28:20] INFO root fetch - processPackages [daily-leet]: Downloading https://files.pythonhosted.org/packages/51/1e/ccdf388ee469753e1bba5c27a0477683d6812ed0858a8e54ad1268d2db84/daily_leet-0.2.6.tar.gz
+[2023-04-23 13:28:20] INFO root fetch - processPackages [xia-engine-sql]: Downloading https://files.pythonhosted.org/packages/d5/a2/47ebe9e252ef1aea69e8fbd2d05616224a23c5abdbdffbc82d55c2fbee5e/xia_engine_sql-0.1.8-cp39-none-win_amd64.whl
+[2023-04-23 13:28:20] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 23695640>=10485760
+[2023-04-23 13:28:20] INFO root fetch - processPackages [torchserve-nightly]: Start processing: torchrec-nightly
+[2023-04-23 13:28:20] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2023-04-23 13:28:20] INFO root fetch - processPackages [torchrec-nightly]: New version: [2023.4.9] Old Version: [2023.4.7]
+[2023-04-23 13:28:20] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2023-04-23 13:28:20] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2023.4.8-py3-none-any.whl.zip tmp/torchx_nightly-2023.4.9-py3-none-any.whl.zip --markdown 20230423/t/torchx-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-23 13:28:20] INFO root fetch - processPackages [OctoBot-Services]: Downloading https://files.pythonhosted.org/packages/ef/1b/48ee3b1fcb2fab3d6d4a63fa2dae6fc9086ea218154ce264706a9a8b45da/OctoBot-Services-1.5.4.tar.gz
+[2023-04-23 13:28:20] INFO root fetch - processPackages [torchrec-nightly]: executing diffoscope
+[2023-04-23 13:28:20] INFO root fetch - processPackages [torchrec-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrec_nightly-2023.4.7-py39-none-any.whl.zip tmp/torchrec_nightly-2023.4.9-py39-none-any.whl.zip --markdown 20230423/t/torchrec-nightly/2023.4.7-2023.4.9/diff.md --exclude *.pyd
+[2023-04-23 13:28:20] INFO root fetch - processPackages [daily-leet]: Downloading https://files.pythonhosted.org/packages/5a/ee/5aa53b6c461644fe41cee7aa36654a973020b37dec29e4aa101cc5b928d8/daily_leet-0.2.7.tar.gz
+[2023-04-23 13:28:20] INFO root fetch - processPackages [spycio]: Downloading https://files.pythonhosted.org/packages/cc/9f/b9af584b7456bf16ddebe5daf2175463108b221167c22f1ef35b42f0f9cd/spycio-0.2.6.tar.gz
+[2023-04-23 13:28:20] INFO root fetch - processPackages [daily-leet]: executing diffoscope
+[2023-04-23 13:28:20] INFO root fetch - processPackages [daily-leet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/daily_leet-0.2.6.tar.gz tmp/daily_leet-0.2.7.tar.gz --markdown 20230423/d/daily-leet/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-23 13:28:20] INFO root fetch - processPackages [xia-engine-sql]: Downloading https://files.pythonhosted.org/packages/d9/ce/f87d758f7072e878904cffa66da984aa50043ec27dd836c974baab85ab18/xia_engine_sql-0.1.9-cp39-none-win_amd64.whl
+[2023-04-23 13:28:20] INFO root fetch - processPackages [OctoBot-Services]: Downloading https://files.pythonhosted.org/packages/4f/45/7f6437fb5746a083630236fe3bee8505b73b71243f0653eaca0fbc160927/OctoBot-Services-1.5.5.tar.gz
+[2023-04-23 13:28:20] INFO root fetch - processPackages [spycio]: executing diffoscope
+[2023-04-23 13:28:20] INFO root fetch - processPackages [spycio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spycio-0.2.5.tar.gz tmp/spycio-0.2.6.tar.gz --markdown 20230423/s/spycio/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-23 13:28:20] INFO root fetch - processPackages [xia-engine-sql]: executing diffoscope
+[2023-04-23 13:28:20] INFO root fetch - processPackages [xia-engine-sql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_engine_sql-0.1.8-cp39-none-win_amd64.whl.zip tmp/xia_engine_sql-0.1.9-cp39-none-win_amd64.whl.zip --markdown 20230423/x/xia-engine-sql/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 13:28:20] INFO root fetch - processPackages [OctoBot-Services]: executing diffoscope
+[2023-04-23 13:28:20] INFO root fetch - processPackages [OctoBot-Services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OctoBot-Services-1.5.4.tar.gz tmp/OctoBot-Services-1.5.5.tar.gz --markdown 20230423/O/OctoBot-Services/1.5.4-1.5.5/diff.md --exclude *.pyd
+[2023-04-23 13:28:21] INFO root fetch - main [MainThread]: End processing [maxilearn]: success
+[2023-04-23 13:28:21] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2023-04-23 13:28:22] INFO root fetch - main [MainThread]: End processing [ebi-eva-common-pyutils]: success
+[2023-04-23 13:28:22] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2023-04-23 13:28:22] INFO root fetch - main [MainThread]: End processing [daily-leet]: success
+[2023-04-23 13:28:22] INFO root fetch - main [MainThread]: End processing [xia-engine-sql]: success
+[2023-04-23 13:28:22] INFO root fetch - main [MainThread]: End processing [spycio]: success
+[2023-04-23 13:28:22] INFO root fetch - main [MainThread]: End processing [OctoBot-Services]: success
+[2023-04-23 13:28:22] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2023-04-23 13:28:23] INFO root fetch - main [MainThread]: End processing [torchrec-nightly]: success
+[2023-04-23 13:28:23] INFO root fetch - main [MainThread]: Store serial: [17821724]
