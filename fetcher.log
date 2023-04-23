@@ -11887,3 +11887,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 20:03:00] INFO root fetch - main [MainThread]: End processing [parasect]: success
 [2023-04-23 20:03:01] INFO root fetch - main [MainThread]: End processing [dlt]: success
 [2023-04-23 20:03:01] INFO root fetch - main [MainThread]: Store serial: [17824657]
+[2023-04-23 20:08:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17824657]
+[2023-04-23 20:08:10] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-23 20:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: circleci-stubs
+[2023-04-23 20:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: evalAIRR
+[2023-04-23 20:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: locusdb
+[2023-04-23 20:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sitcom
+[2023-04-23 20:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: piperider-nightly
+[2023-04-23 20:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: esmerald
+[2023-04-23 20:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: forecast-solar
+[2023-04-23 20:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spccpkg
+[2023-04-23 20:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: jija
+[2023-04-23 20:08:10] WARNING root fetch - processPackages [circleci-stubs]: Skipping, unable to determine old version
+[2023-04-23 20:08:10] INFO root fetch - main [MainThread]: End processing [circleci-stubs] error
+[2023-04-23 20:08:10] INFO root fetch - processPackages [evalAIRR]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 20:08:10] INFO root fetch - processPackages [locusdb]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-23 20:08:10] INFO root fetch - processPackages [spccpkg]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-23 20:08:10] INFO root fetch - processPackages [sitcom]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-23 20:08:10] INFO root fetch - processPackages [forecast-solar]: New version: [3.0.0] Old Version: [2.3.0]
+[2023-04-23 20:08:10] INFO root fetch - processPackages [esmerald]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-23 20:08:10] INFO root fetch - processPackages [evalAIRR]: executing diffoscope
+[2023-04-23 20:08:10] INFO root fetch - processPackages [evalAIRR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evalAIRR-0.0.8.tar.gz tmp/evalAIRR-0.0.9.tar.gz --markdown 20230423/e/evalAIRR/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 20:08:10] INFO root fetch - processPackages [jija]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-23 20:08:10] INFO root fetch - processPackages [sitcom]: executing diffoscope
+[2023-04-23 20:08:10] INFO root fetch - processPackages [sitcom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sitcom-1.0.1.tar.gz tmp/sitcom-1.0.2.tar.gz --markdown 20230423/s/sitcom/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-23 20:08:10] INFO root fetch - processPackages [piperider-nightly]: New version: [0.9.0.20220921] Old Version: [0.9.0.20220920]
+[2023-04-23 20:08:11] INFO root fetch - processPackages [forecast-solar]: Downloading https://files.pythonhosted.org/packages/8b/35/3b6ed71b949e865839e941640b4d53c16a7d34896df1dce2371d656cfe63/forecast_solar-2.3.0.tar.gz
+[2023-04-23 20:08:11] INFO root fetch - processPackages [spccpkg]: Downloading https://files.pythonhosted.org/packages/a7/81/9a4035fe77f4f001b12ac711b0b00309b0f0cd65ef7d3b1ede2b9cf06f51/spccpkg-0.0.5.tar.gz
+[2023-04-23 20:08:11] INFO root fetch - processPackages [esmerald]: Downloading https://files.pythonhosted.org/packages/ff/4a/b1b0be923eda670c5185505a8c40b448dffd0e86033c9c930d9a21735efb/esmerald-1.2.2.tar.gz
+[2023-04-23 20:08:11] INFO root fetch - processPackages [locusdb]: Downloading https://files.pythonhosted.org/packages/ed/95/8d10ea78eefe0690498a5b97cccc4d830ea8468b6442238ba9ef9aefb175/locusdb-0.1.0.tar.gz
+[2023-04-23 20:08:11] INFO root fetch - processPackages [spccpkg]: executing diffoscope
+[2023-04-23 20:08:11] INFO root fetch - processPackages [spccpkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spccpkg-0.0.4.tar.gz tmp/spccpkg-0.0.5.tar.gz --markdown 20230423/s/spccpkg/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 20:08:11] INFO root fetch - processPackages [esmerald]: executing diffoscope
+[2023-04-23 20:08:11] INFO root fetch - processPackages [esmerald]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esmerald-1.2.1.tar.gz tmp/esmerald-1.2.2.tar.gz --markdown 20230423/e/esmerald/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-23 20:08:11] INFO root fetch - processPackages [locusdb]: Downloading https://files.pythonhosted.org/packages/1f/92/6b9612afdcc900372ec206a602566141db0a639864da43abc841c96dc882/locusdb-0.2.0.tar.gz
+[2023-04-23 20:08:11] INFO root fetch - processPackages [jija]: Downloading https://files.pythonhosted.org/packages/32/6d/0368853473396d8babde209573a957346aab12d57582e40771802f1d2042/jija-0.3.2.tar.gz
+[2023-04-23 20:08:11] INFO root fetch - processPackages [forecast-solar]: Downloading https://files.pythonhosted.org/packages/52/f4/662ddd720ea21908ac055cc40bbd51f6e521a5ad13ebb1c654f500435462/forecast_solar-3.0.0.tar.gz
+[2023-04-23 20:08:11] INFO root fetch - processPackages [piperider-nightly]: executing diffoscope
+[2023-04-23 20:08:11] INFO root fetch - processPackages [piperider-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piperider-nightly-0.9.0.20220920.tar.gz tmp/piperider-nightly-0.9.0.20220921.tar.gz --markdown 20230423/p/piperider-nightly/0.9.0.20220920-0.9.0.20220921/diff.md --exclude *.pyd
+[2023-04-23 20:08:11] INFO root fetch - processPackages [forecast-solar]: executing diffoscope
+[2023-04-23 20:08:11] INFO root fetch - processPackages [forecast-solar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/forecast_solar-2.3.0.tar.gz tmp/forecast_solar-3.0.0.tar.gz --markdown 20230423/f/forecast-solar/2.3.0-3.0.0/diff.md --exclude *.pyd
+[2023-04-23 20:08:11] INFO root fetch - processPackages [locusdb]: executing diffoscope
+[2023-04-23 20:08:11] INFO root fetch - processPackages [locusdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locusdb-0.1.0.tar.gz tmp/locusdb-0.2.0.tar.gz --markdown 20230423/l/locusdb/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-23 20:08:11] INFO root fetch - processPackages [jija]: executing diffoscope
+[2023-04-23 20:08:11] INFO root fetch - processPackages [jija]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jija-0.3.1.tar.gz tmp/jija-0.3.2.tar.gz --markdown 20230423/j/jija/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-23 20:08:12] INFO root fetch - main [MainThread]: End processing [spccpkg]: success
+[2023-04-23 20:08:12] INFO root fetch - main [MainThread]: End processing [evalAIRR]: success
+[2023-04-23 20:08:12] INFO root fetch - main [MainThread]: End processing [sitcom]: success
+[2023-04-23 20:08:12] INFO root fetch - main [MainThread]: End processing [forecast-solar]: success
+[2023-04-23 20:08:12] INFO root fetch - main [MainThread]: End processing [locusdb]: success
+[2023-04-23 20:08:12] INFO root fetch - main [MainThread]: End processing [jija]: success
+[2023-04-23 20:08:13] INFO root fetch - main [MainThread]: End processing [esmerald]: success
+[2023-04-23 20:08:15] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
+[2023-04-23 20:08:15] INFO root fetch - main [MainThread]: Store serial: [17824690]
