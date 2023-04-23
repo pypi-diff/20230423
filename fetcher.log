@@ -3237,3 +3237,40 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 06:59:24] INFO root fetch - main [MainThread]: End processing [netron]: success
 [2023-04-23 06:59:26] INFO root fetch - main [MainThread]: End processing [unmanic]: success
 [2023-04-23 06:59:26] INFO root fetch - main [MainThread]: Store serial: [17819502]
+[2023-04-23 07:04:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819502]
+[2023-04-23 07:04:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-23 07:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AISimuToolKit
+[2023-04-23 07:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tflite-runtime-nightly
+[2023-04-23 07:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tact
+[2023-04-23 07:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vmigration-helper
+[2023-04-23 07:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: reliability
+[2023-04-23 07:04:37] INFO root fetch - processPackages [vmigration-helper]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-23 07:04:37] INFO root fetch - processPackages [reliability]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-23 07:04:37] INFO root fetch - processPackages [AISimuToolKit]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-23 07:04:37] INFO root fetch - processPackages [tact]: New version: [0.5.0] Old Version: [0.4.1]
+[2023-04-23 07:04:37] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.13.0.dev20230422] Old Version: [2.13.0.dev20230419]
+[2023-04-23 07:04:37] INFO root fetch - processPackages [vmigration-helper]: Downloading https://files.pythonhosted.org/packages/aa/d6/87fc8c2ff09fa7ece398c6b492e2c6a54472c373a45069760561953d166e/vmigration_helper-0.2.0.tar.gz
+[2023-04-23 07:04:37] INFO root fetch - processPackages [AISimuToolKit]: Downloading https://files.pythonhosted.org/packages/fe/20/d64b20a919929ae1ebd864734bdd486f15ec4593a7a8dc8fb745625a2b56/AISimuToolKit-0.0.2.tar.gz
+[2023-04-23 07:04:37] INFO root fetch - processPackages [tact]: Downloading https://files.pythonhosted.org/packages/de/13/0565dbf59f60f8ce348ed24d6a5f0b3855aa09811b2edf09d5c2e43bcf5c/tact-0.4.1.tar.gz
+[2023-04-23 07:04:37] INFO root fetch - processPackages [reliability]: Downloading https://files.pythonhosted.org/packages/d2/79/221445e50d12bfd5d185c753c71357107d3323e99e9f0f22da8f1cda1e69/reliability-0.8.8.tar.gz
+[2023-04-23 07:04:37] INFO root fetch - processPackages [AISimuToolKit]: Downloading https://files.pythonhosted.org/packages/e6/a1/65283b64e0096a278052ea533763565fcf115c59024768b41d8a5209f14c/AISimuToolKit-0.0.3.tar.gz
+[2023-04-23 07:04:37] INFO root fetch - processPackages [vmigration-helper]: Downloading https://files.pythonhosted.org/packages/fd/84/7edfff89ef2af8ea412cba64298724c0139cf928ce0845086e1f7c4f892d/vmigration_helper-0.2.1.tar.gz
+[2023-04-23 07:04:37] INFO root fetch - processPackages [AISimuToolKit]: executing diffoscope
+[2023-04-23 07:04:37] INFO root fetch - processPackages [AISimuToolKit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AISimuToolKit-0.0.2.tar.gz tmp/AISimuToolKit-0.0.3.tar.gz --markdown 20230423/A/AISimuToolKit/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 07:04:37] INFO root fetch - processPackages [vmigration-helper]: executing diffoscope
+[2023-04-23 07:04:37] INFO root fetch - processPackages [vmigration-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vmigration_helper-0.2.0.tar.gz tmp/vmigration_helper-0.2.1.tar.gz --markdown 20230423/v/vmigration-helper/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-23 07:04:37] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/39/28/af3cf2741e358289d75e904a3f47c8821c2c424e563f050bbaa1a8817906/tflite_runtime_nightly-2.13.0.dev20230422-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-23 07:04:37] INFO root fetch - processPackages [tact]: Downloading https://files.pythonhosted.org/packages/02/11/8c17a8c7246efd4972218688794498f668df865e8814600a47343f986ab7/tact-0.5.0.tar.gz
+[2023-04-23 07:04:37] INFO root fetch - processPackages [tact]: executing diffoscope
+[2023-04-23 07:04:37] INFO root fetch - processPackages [tact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tact-0.4.1.tar.gz tmp/tact-0.5.0.tar.gz --markdown 20230423/t/tact/0.4.1-0.5.0/diff.md --exclude *.pyd
+[2023-04-23 07:04:38] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2023-04-23 07:04:38] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.13.0.dev20230419-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/tflite_runtime_nightly-2.13.0.dev20230422-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230423/t/tflite-runtime-nightly/2.13.0.dev20230419-2.13.0.dev20230422/diff.md --exclude *.pyd
+[2023-04-23 07:04:38] INFO root fetch - main [MainThread]: End processing [vmigration-helper]: success
+[2023-04-23 07:04:38] INFO root fetch - main [MainThread]: End processing [AISimuToolKit]: success
+[2023-04-23 07:04:38] INFO root fetch - main [MainThread]: End processing [tact]: success
+[2023-04-23 07:04:39] INFO root fetch - processPackages [reliability]: Downloading https://files.pythonhosted.org/packages/3a/43/ffdf1e9baf80baaf58e0e91509d5096dc98aeabc6d7ed3fe4fcd167ea88b/reliability-0.8.9.tar.gz
+[2023-04-23 07:04:39] INFO root fetch - processPackages [reliability]: executing diffoscope
+[2023-04-23 07:04:39] INFO root fetch - processPackages [reliability]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reliability-0.8.8.tar.gz tmp/reliability-0.8.9.tar.gz --markdown 20230423/r/reliability/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-23 07:04:42] INFO root fetch - main [MainThread]: End processing [reliability]: success
+[2023-04-23 07:05:14] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2023-04-23 07:05:14] INFO root fetch - main [MainThread]: Store serial: [17819523]
