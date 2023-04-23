@@ -4604,3 +4604,64 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 09:25:42] INFO root fetch - main [MainThread]: End processing [prunerr]: success
 [2023-04-23 09:25:58] INFO root fetch - main [MainThread]: End processing [danmakuC]: success
 [2023-04-23 09:25:58] INFO root fetch - main [MainThread]: Store serial: [17820294]
+[2023-04-23 09:31:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820294]
+[2023-04-23 09:31:07] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-23 09:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Aciembler
+[2023-04-23 09:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-dllib-spark3
+[2023-04-23 09:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-orca-spark3
+[2023-04-23 09:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mcqq-tool
+[2023-04-23 09:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bigdl-friesian-spark3
+[2023-04-23 09:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bigdl-chronos-spark3
+[2023-04-23 09:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bigdl-spark3
+[2023-04-23 09:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pygpt4all
+[2023-04-23 09:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: Aciembler
+[2023-04-23 09:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nonebot-plugin-mcqq
+[2023-04-23 09:31:07] INFO root fetch - processPackages [mcqq-tool]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-23 09:31:07] INFO root fetch - processPackages [Aciembler]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-23 09:31:07] INFO root fetch - processPackages [Aciembler]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-23 09:31:07] INFO root fetch - processPackages [bigdl-dllib-spark3]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-23 09:31:07] INFO root fetch - processPackages [nonebot-plugin-mcqq]: New version: [1.1.5.post2] Old Version: [1.1.5.post1]
+[2023-04-23 09:31:07] INFO root fetch - processPackages [bigdl-orca-spark3]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-23 09:31:07] INFO root fetch - processPackages [bigdl-spark3]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-23 09:31:07] INFO root fetch - processPackages [bigdl-friesian-spark3]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-23 09:31:07] INFO root fetch - processPackages [bigdl-chronos-spark3]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-23 09:31:07] INFO root fetch - processPackages [bigdl-orca-spark3]: Downloading https://files.pythonhosted.org/packages/29/d6/cea74f0f5ccb6248d9d97fae168d7039fbce7a54d40873114f3c34b656ad/bigdl_orca_spark3-2.4.0b20230421-py3-none-manylinux1_x86_64.whl
+[2023-04-23 09:31:07] INFO root fetch - processPackages [nonebot-plugin-mcqq]: executing diffoscope
+[2023-04-23 09:31:07] INFO root fetch - processPackages [nonebot-plugin-mcqq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-mcqq-1.1.5.post1.tar.gz tmp/nonebot-plugin-mcqq-1.1.5.post2.tar.gz --markdown 20230423/n/nonebot-plugin-mcqq/1.1.5.post1-1.1.5.post2/diff.md --exclude *.pyd
+[2023-04-23 09:31:07] WARNING root fetch - processPackages [pygpt4all]: Skipping, unable to determine old version
+[2023-04-23 09:31:07] INFO root fetch - processPackages [pygpt4all]: Start processing: yashpy
+[2023-04-23 09:31:07] INFO root fetch - main [MainThread]: End processing [pygpt4all] error
+[2023-04-23 09:31:07] INFO root fetch - processPackages [bigdl-friesian-spark3]: executing diffoscope
+[2023-04-23 09:31:07] INFO root fetch - processPackages [bigdl-friesian-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_friesian_spark3-2.4.0b20230421-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_friesian_spark3-2.4.0b20230422-py3-none-manylinux1_x86_64.whl.zip --markdown 20230423/b/bigdl-friesian-spark3/2.4.0b20230421-2.4.0b20230422/diff.md --exclude *.pyd
+[2023-04-23 09:31:07] WARNING root fetch - processPackages [bigdl-orca-spark3]: Skipping package: exceeds size limit 20207386>=10485760
+[2023-04-23 09:31:07] INFO root fetch - main [MainThread]: End processing [bigdl-orca-spark3] error
+[2023-04-23 09:31:07] INFO root fetch - processPackages [yashpy]: New version: [0.4] Old Version: [0.3]
+[2023-04-23 09:31:07] INFO root fetch - processPackages [Aciembler]: Downloading https://files.pythonhosted.org/packages/4b/1c/ea5f15f812ffedc3de53e871ab350b0e534ed72b97bd6bb84a48761d20e4/Aciembler-1.0.4-py2.py3-none-any.whl
+[2023-04-23 09:31:07] INFO root fetch - processPackages [Aciembler]: Downloading https://files.pythonhosted.org/packages/4b/1c/ea5f15f812ffedc3de53e871ab350b0e534ed72b97bd6bb84a48761d20e4/Aciembler-1.0.4-py2.py3-none-any.whl
+[2023-04-23 09:31:07] INFO root fetch - processPackages [mcqq-tool]: Downloading https://files.pythonhosted.org/packages/cd/01/e279a229d7967147d9e0451f78bf1492ce4b9129fec3f9e6369695270196/mcqq-tool-0.0.4.tar.gz
+[2023-04-23 09:31:07] INFO root fetch - processPackages [bigdl-dllib-spark3]: Downloading https://files.pythonhosted.org/packages/94/97/7ee06d9da705197e48e201f0b8898282f3383e1415089c1f9b8f24b61b3d/bigdl-dllib-spark3-2.4.0b20230421.tar.gz
+[2023-04-23 09:31:07] INFO root fetch - processPackages [yashpy]: executing diffoscope
+[2023-04-23 09:31:07] INFO root fetch - processPackages [yashpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yashpy-0.3.tar.gz tmp/yashpy-0.4.tar.gz --markdown 20230423/y/yashpy/0.3-0.4/diff.md --exclude *.pyd
+[2023-04-23 09:31:07] WARNING root fetch - processPackages [bigdl-dllib-spark3]: Skipping package: exceeds size limit 61251749>=10485760
+[2023-04-23 09:31:07] INFO root fetch - main [MainThread]: End processing [bigdl-dllib-spark3] error
+[2023-04-23 09:31:07] INFO root fetch - processPackages [bigdl-spark3]: Downloading https://files.pythonhosted.org/packages/d1/9c/1e25e6e565767fb34161718af7d66fb98d23274d9401f8e5810688456ff7/bigdl_spark3-2.4.0b20230422-py3-none-manylinux1_x86_64.whl
+[2023-04-23 09:31:07] INFO root fetch - processPackages [bigdl-chronos-spark3]: Downloading https://files.pythonhosted.org/packages/36/e6/f2177c1405c75f17d4a1a609d115ce73ec75d253364c38360f2f1a8d512a/bigdl_chronos_spark3-2.4.0b20230422-py3-none-manylinux1_x86_64.whl
+[2023-04-23 09:31:07] INFO root fetch - processPackages [Aciembler]: executing diffoscope
+[2023-04-23 09:31:07] INFO root fetch - processPackages [Aciembler]: executing diffoscope
+[2023-04-23 09:31:07] INFO root fetch - processPackages [Aciembler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Aciembler-1.0.3-py2.py3-none-any.whl.zip tmp/Aciembler-1.0.4-py2.py3-none-any.whl.zip --markdown 20230423/A/Aciembler/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-23 09:31:07] INFO root fetch - processPackages [Aciembler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Aciembler-1.0.3-py2.py3-none-any.whl.zip tmp/Aciembler-1.0.4-py2.py3-none-any.whl.zip --markdown 20230423/A/Aciembler/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-23 09:31:07] INFO root fetch - processPackages [mcqq-tool]: executing diffoscope
+[2023-04-23 09:31:07] INFO root fetch - processPackages [mcqq-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcqq-tool-0.0.3.tar.gz tmp/mcqq-tool-0.0.4.tar.gz --markdown 20230423/m/mcqq-tool/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-23 09:31:08] INFO root fetch - processPackages [bigdl-spark3]: executing diffoscope
+[2023-04-23 09:31:08] INFO root fetch - processPackages [bigdl-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_spark3-2.4.0b20230421-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_spark3-2.4.0b20230422-py3-none-manylinux1_x86_64.whl.zip --markdown 20230423/b/bigdl-spark3/2.4.0b20230421-2.4.0b20230422/diff.md --exclude *.pyd
+[2023-04-23 09:31:08] INFO root fetch - processPackages [bigdl-chronos-spark3]: executing diffoscope
+[2023-04-23 09:31:08] INFO root fetch - processPackages [bigdl-chronos-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos_spark3-2.4.0b20230421-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_chronos_spark3-2.4.0b20230422-py3-none-manylinux1_x86_64.whl.zip --markdown 20230423/b/bigdl-chronos-spark3/2.4.0b20230421-2.4.0b20230422/diff.md --exclude *.pyd
+[2023-04-23 09:31:09] INFO root fetch - main [MainThread]: End processing [yashpy]: success
+[2023-04-23 09:31:09] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-mcqq]: success
+[2023-04-23 09:31:09] INFO root fetch - main [MainThread]: End processing [Aciembler]: success
+[2023-04-23 09:31:09] INFO root fetch - main [MainThread]: End processing [Aciembler]: success
+[2023-04-23 09:31:09] INFO root fetch - main [MainThread]: End processing [bigdl-spark3]: success
+[2023-04-23 09:31:09] INFO root fetch - main [MainThread]: End processing [mcqq-tool]: success
+[2023-04-23 09:31:09] INFO root fetch - main [MainThread]: End processing [bigdl-friesian-spark3]: success
+[2023-04-23 09:31:10] INFO root fetch - main [MainThread]: End processing [bigdl-chronos-spark3]: success
+[2023-04-23 09:31:10] INFO root fetch - main [MainThread]: Store serial: [17820324]
