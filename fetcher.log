@@ -3074,3 +3074,23 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 06:30:15] INFO root fetch - main [MainThread]: End processing [semantra]: success
 [2023-04-23 06:30:36] INFO root fetch - main [MainThread]: End processing [vnpy-tap]: success
 [2023-04-23 06:30:36] INFO root fetch - main [MainThread]: Store serial: [17819418]
+[2023-04-23 06:35:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819418]
+[2023-04-23 06:35:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-23 06:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-l10n-br-account-payment-order
+[2023-04-23 06:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lunchable
+[2023-04-23 06:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: txt2ebook
+[2023-04-23 06:35:49] INFO root fetch - processPackages [odoo14-addon-l10n-br-account-payment-order]: New version: [14.0.2.5.1.dev1] Old Version: [14.0.2.5.0]
+[2023-04-23 06:35:49] INFO root fetch - processPackages [lunchable]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-23 06:35:49] INFO root fetch - processPackages [txt2ebook]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 06:35:49] INFO root fetch - processPackages [lunchable]: Downloading https://files.pythonhosted.org/packages/b4/7d/2502cb106318af39f124464280caf4f4d056ca978d05e2ca4382e769c8a0/lunchable-0.7.0.tar.gz
+[2023-04-23 06:35:49] INFO root fetch - processPackages [lunchable]: executing diffoscope
+[2023-04-23 06:35:49] INFO root fetch - processPackages [lunchable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lunchable-0.6.0.tar.gz tmp/lunchable-0.7.0.tar.gz --markdown 20230423/l/lunchable/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-23 06:35:49] INFO root fetch - processPackages [odoo14-addon-l10n-br-account-payment-order]: Downloading https://files.pythonhosted.org/packages/17/ef/4c1d1f9db62259f8f2c96ecf8bd1a8f7eafba30b1a4b1794c5eb36408fd7/odoo14_addon_l10n_br_account_payment_order-14.0.2.5.1.dev1-py3-none-any.whl
+[2023-04-23 06:35:49] INFO root fetch - processPackages [txt2ebook]: executing diffoscope
+[2023-04-23 06:35:49] INFO root fetch - processPackages [txt2ebook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txt2ebook-0.1.8.tar.gz tmp/txt2ebook-0.1.9.tar.gz --markdown 20230423/t/txt2ebook/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 06:35:50] INFO root fetch - processPackages [odoo14-addon-l10n-br-account-payment-order]: executing diffoscope
+[2023-04-23 06:35:50] INFO root fetch - processPackages [odoo14-addon-l10n-br-account-payment-order]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_account_payment_order-14.0.2.5.0-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_account_payment_order-14.0.2.5.1.dev1-py3-none-any.whl.zip --markdown 20230423/o/odoo14-addon-l10n-br-account-payment-order/14.0.2.5.0-14.0.2.5.1.dev1/diff.md --exclude *.pyd
+[2023-04-23 06:35:50] INFO root fetch - main [MainThread]: End processing [txt2ebook]: success
+[2023-04-23 06:35:51] INFO root fetch - main [MainThread]: End processing [lunchable]: success
+[2023-04-23 06:35:51] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-account-payment-order]: success
+[2023-04-23 06:35:51] INFO root fetch - main [MainThread]: Store serial: [17819426]
