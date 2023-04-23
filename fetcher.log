@@ -3975,3 +3975,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 08:26:29] INFO root fetch - main [MainThread]: End processing [pyperformance]: success
 [2023-04-23 08:26:31] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
 [2023-04-23 08:26:31] INFO root fetch - main [MainThread]: Store serial: [17819903]
+[2023-04-23 08:31:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819903]
+[2023-04-23 08:31:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-23 08:31:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jsbgym
+[2023-04-23 08:31:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yuanfen
+[2023-04-23 08:31:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Aciembler
+[2023-04-23 08:31:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mtsql
+[2023-04-23 08:31:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: apitest-ezgo
+[2023-04-23 08:31:41] INFO root fetch - processPackages [jsbgym]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-23 08:31:41] INFO root fetch - processPackages [mtsql]: New version: [1.4.202304230628] Old Version: [1.3.202304072016]
+[2023-04-23 08:31:41] WARNING root fetch - processPackages [Aciembler]: Skipping, unable to determine old version
+[2023-04-23 08:31:41] INFO root fetch - main [MainThread]: End processing [Aciembler] error
+[2023-04-23 08:31:41] INFO root fetch - processPackages [yuanfen]: New version: [1.0.0] Old Version: [0.0.1]
+[2023-04-23 08:31:41] INFO root fetch - processPackages [apitest-ezgo]: New version: [2.0.0] Old Version: [0.0.6]
+[2023-04-23 08:31:41] INFO root fetch - processPackages [yuanfen]: Downloading https://files.pythonhosted.org/packages/29/91/f129440aff9275eed8b0b2124d1ed5a7cc0fff689dfafa68abe7bcbe3e28/yuanfen-0.0.1.tar.gz
+[2023-04-23 08:31:41] INFO root fetch - processPackages [mtsql]: Downloading https://files.pythonhosted.org/packages/87/df/d6e7ef0bd775e9b0fd429e8b9e40468d7f8d715fbcfad55a3e2d29235af8/mtsql-1.3.202304072016-py3-none-any.whl
+[2023-04-23 08:31:41] INFO root fetch - processPackages [apitest-ezgo]: Downloading https://files.pythonhosted.org/packages/84/6d/df5c8f537687ba1ecb52023ad6209fb935199837df8c51d5346dfed4aa60/apitest_ezgo-0.0.6-py2-none-any.whl
+[2023-04-23 08:31:41] INFO root fetch - processPackages [jsbgym]: Downloading https://files.pythonhosted.org/packages/8f/94/42940508d800dc7cdc2c24f9bd38ae090f5a9e1aa5bd4d69155e39476090/jsbgym-0.1.7.tar.gz
+[2023-04-23 08:31:41] INFO root fetch - processPackages [apitest-ezgo]: Downloading https://files.pythonhosted.org/packages/68/f4/754881e5b519d3acaf8e9943b1a1a83edb79b09e69dc40fe84f3496e930e/apitest_ezgo-2.0.0-py2.py3-none-any.whl
+[2023-04-23 08:31:41] INFO root fetch - processPackages [apitest-ezgo]: executing diffoscope
+[2023-04-23 08:31:41] INFO root fetch - processPackages [apitest-ezgo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apitest_ezgo-0.0.6-py2-none-any.whl.zip tmp/apitest_ezgo-2.0.0-py2.py3-none-any.whl.zip --markdown 20230423/a/apitest-ezgo/0.0.6-2.0.0/diff.md --exclude *.pyd
+[2023-04-23 08:31:41] INFO root fetch - processPackages [yuanfen]: Downloading https://files.pythonhosted.org/packages/77/2f/a908530f1b7233ed1b2c651baef11124d0df0d7d04c03069cf1fb6706c88/yuanfen-1.0.0.tar.gz
+[2023-04-23 08:31:41] INFO root fetch - processPackages [jsbgym]: Downloading https://files.pythonhosted.org/packages/ac/80/b066bb5aa7e0950813c629d3aac680d6702270b14212f8c86c277ae339e8/jsbgym-0.1.8.tar.gz
+[2023-04-23 08:31:41] INFO root fetch - processPackages [mtsql]: Downloading https://files.pythonhosted.org/packages/92/d9/b59b43107f47b8806dcb85e99a220192c624712d2fb52bf41b3c0ceacdc1/mtsql-1.4.202304230628-py3-none-any.whl
+[2023-04-23 08:31:41] INFO root fetch - processPackages [yuanfen]: executing diffoscope
+[2023-04-23 08:31:41] INFO root fetch - processPackages [yuanfen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yuanfen-0.0.1.tar.gz tmp/yuanfen-1.0.0.tar.gz --markdown 20230423/y/yuanfen/0.0.1-1.0.0/diff.md --exclude *.pyd
+[2023-04-23 08:31:41] INFO root fetch - processPackages [jsbgym]: executing diffoscope
+[2023-04-23 08:31:41] INFO root fetch - processPackages [jsbgym]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsbgym-0.1.7.tar.gz tmp/jsbgym-0.1.8.tar.gz --markdown 20230423/j/jsbgym/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-23 08:31:41] INFO root fetch - processPackages [mtsql]: executing diffoscope
+[2023-04-23 08:31:41] INFO root fetch - processPackages [mtsql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtsql-1.3.202304072016-py3-none-any.whl.zip tmp/mtsql-1.4.202304230628-py3-none-any.whl.zip --markdown 20230423/m/mtsql/1.3.202304072016-1.4.202304230628/diff.md --exclude *.pyd
+[2023-04-23 08:31:42] INFO root fetch - main [MainThread]: End processing [yuanfen]: success
+[2023-04-23 08:31:42] INFO root fetch - main [MainThread]: End processing [apitest-ezgo]: success
+[2023-04-23 08:31:42] INFO root fetch - main [MainThread]: End processing [mtsql]: success
+[2023-04-23 08:31:43] INFO root fetch - main [MainThread]: End processing [jsbgym]: success
+[2023-04-23 08:31:43] INFO root fetch - main [MainThread]: Store serial: [17819919]
