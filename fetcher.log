@@ -3094,3 +3094,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 06:35:51] INFO root fetch - main [MainThread]: End processing [lunchable]: success
 [2023-04-23 06:35:51] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-account-payment-order]: success
 [2023-04-23 06:35:51] INFO root fetch - main [MainThread]: Store serial: [17819426]
+[2023-04-23 06:40:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819426]
+[2023-04-23 06:41:00] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 06:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cwsearch-utils
+[2023-04-23 06:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vnpy-spreadtrading
+[2023-04-23 06:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-brainfuck
+[2023-04-23 06:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sentiment-nltk
+[2023-04-23 06:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mlas
+[2023-04-23 06:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: CommonlyTools
+[2023-04-23 06:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: starwhale
+[2023-04-23 06:41:00] INFO root fetch - processPackages [vnpy-spreadtrading]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-04-23 06:41:00] INFO root fetch - processPackages [CommonlyTools]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-23 06:41:00] INFO root fetch - processPackages [starwhale]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-04-23 06:41:00] INFO root fetch - processPackages [cwsearch-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 06:41:00] WARNING root fetch - processPackages [mlas]: Skipping, unable to determine old version
+[2023-04-23 06:41:00] WARNING root fetch - processPackages [sentiment-nltk]: Skipping, unable to determine old version
+[2023-04-23 06:41:00] INFO root fetch - processPackages [nonebot-plugin-brainfuck]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-23 06:41:00] INFO root fetch - main [MainThread]: End processing [mlas] error
+[2023-04-23 06:41:00] INFO root fetch - main [MainThread]: End processing [sentiment-nltk] error
+[2023-04-23 06:41:00] INFO root fetch - processPackages [vnpy-spreadtrading]: Downloading https://files.pythonhosted.org/packages/85/d3/5807386b855f21a61097eb9f7e633e2e629a0a5031268869ab22ccc1ef59/vnpy_spreadtrading-1.1.7.tar.gz
+[2023-04-23 06:41:00] INFO root fetch - processPackages [CommonlyTools]: Downloading https://files.pythonhosted.org/packages/85/c8/81644da72291a6258dbc2560040e160eea7aa233d6b51f21aa4856e89854/CommonlyTools-1.0.3.tar.gz
+[2023-04-23 06:41:00] INFO root fetch - processPackages [nonebot-plugin-brainfuck]: Downloading https://files.pythonhosted.org/packages/e6/f2/5ca368780f3d82e35ba4150a06c54ada83f535bd5bdb358261a0c303bdb4/nonebot-plugin-brainfuck-1.0.4.tar.gz
+[2023-04-23 06:41:00] INFO root fetch - processPackages [CommonlyTools]: executing diffoscope
+[2023-04-23 06:41:00] INFO root fetch - processPackages [CommonlyTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CommonlyTools-1.0.2.tar.gz tmp/CommonlyTools-1.0.3.tar.gz --markdown 20230423/C/CommonlyTools/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-23 06:41:01] INFO root fetch - processPackages [nonebot-plugin-brainfuck]: executing diffoscope
+[2023-04-23 06:41:01] INFO root fetch - processPackages [nonebot-plugin-brainfuck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-brainfuck-1.0.3.tar.gz tmp/nonebot-plugin-brainfuck-1.0.4.tar.gz --markdown 20230423/n/nonebot-plugin-brainfuck/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-23 06:41:01] INFO root fetch - processPackages [starwhale]: Downloading https://files.pythonhosted.org/packages/60/7a/ddfe1debb4d668683c9052ead1ef97dae88d5999f7595ffea384a80c2cbe/starwhale-0.4.3.tar.gz
+[2023-04-23 06:41:01] INFO root fetch - processPackages [cwsearch-utils]: executing diffoscope
+[2023-04-23 06:41:01] INFO root fetch - processPackages [cwsearch-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cwsearch_utils-0.1.8-py3-none-any.whl.zip tmp/cwsearch_utils-0.1.9-py3-none-any.whl.zip --markdown 20230423/c/cwsearch-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 06:41:01] INFO root fetch - processPackages [vnpy-spreadtrading]: Downloading https://files.pythonhosted.org/packages/23/eb/d2d409895a62b9408fd6f2db2da49ceaf95f0344cd8a69a26f36624ff7bd/vnpy_spreadtrading-1.1.8.tar.gz
+[2023-04-23 06:41:01] INFO root fetch - processPackages [vnpy-spreadtrading]: executing diffoscope
+[2023-04-23 06:41:01] INFO root fetch - processPackages [vnpy-spreadtrading]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnpy_spreadtrading-1.1.7.tar.gz tmp/vnpy_spreadtrading-1.1.8.tar.gz --markdown 20230423/v/vnpy-spreadtrading/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-04-23 06:41:01] INFO root fetch - processPackages [starwhale]: executing diffoscope
+[2023-04-23 06:41:01] INFO root fetch - processPackages [starwhale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starwhale-0.4.2.tar.gz tmp/starwhale-0.4.3.tar.gz --markdown 20230423/s/starwhale/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-04-23 06:41:02] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-brainfuck]: success
+[2023-04-23 06:41:02] INFO root fetch - main [MainThread]: End processing [CommonlyTools]: success
+[2023-04-23 06:41:02] INFO root fetch - main [MainThread]: End processing [cwsearch-utils]: success
+[2023-04-23 06:41:02] INFO root fetch - main [MainThread]: End processing [vnpy-spreadtrading]: success
+[2023-04-23 06:43:44] INFO root fetch - main [MainThread]: End processing [starwhale]: success
+[2023-04-23 06:43:44] INFO root fetch - main [MainThread]: Store serial: [17819453]
