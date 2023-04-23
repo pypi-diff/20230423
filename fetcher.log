@@ -3435,3 +3435,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 07:29:01] INFO root fetch - main [MainThread]: End processing [avendesora]: success
 [2023-04-23 07:29:02] INFO root fetch - main [MainThread]: End processing [PySide2-Fluent-Widgets]: success
 [2023-04-23 07:29:02] INFO root fetch - main [MainThread]: Store serial: [17819606]
+[2023-04-23 07:34:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819606]
+[2023-04-23 07:34:11] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 07:34:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rest-framework-material
+[2023-04-23 07:34:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: textquisite-parsers
+[2023-04-23 07:34:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyMemoryEditor
+[2023-04-23 07:34:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: atheriusmt5
+[2023-04-23 07:34:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: megadata
+[2023-04-23 07:34:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ac-websocket-server
+[2023-04-23 07:34:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: siat
+[2023-04-23 07:34:11] INFO root fetch - processPackages [megadata]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 07:34:11] WARNING root fetch - processPackages [textquisite-parsers]: Skipping, unable to determine old version
+[2023-04-23 07:34:11] INFO root fetch - main [MainThread]: End processing [textquisite-parsers] error
+[2023-04-23 07:34:11] INFO root fetch - processPackages [rest-framework-material]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-23 07:34:11] INFO root fetch - processPackages [PyMemoryEditor]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-04-23 07:34:11] WARNING root fetch - processPackages [atheriusmt5]: Skipping, unable to determine old version
+[2023-04-23 07:34:11] INFO root fetch - main [MainThread]: End processing [atheriusmt5] error
+[2023-04-23 07:34:11] INFO root fetch - processPackages [ac-websocket-server]: New version: [0.2.dev9] Old Version: [0.2.dev8]
+[2023-04-23 07:34:11] INFO root fetch - processPackages [siat]: New version: [1.9.6] Old Version: [1.9.5]
+[2023-04-23 07:34:11] INFO root fetch - processPackages [megadata]: executing diffoscope
+[2023-04-23 07:34:11] INFO root fetch - processPackages [megadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/megadata-0.0.8.tar.gz tmp/megadata-0.0.9.tar.gz --markdown 20230423/m/megadata/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 07:34:11] INFO root fetch - processPackages [PyMemoryEditor]: Downloading https://files.pythonhosted.org/packages/66/c3/374ce7482e840fb508d1b406489f0f2a84427950e58488c0d48f5324c986/PyMemoryEditor-1.4.8.tar.gz
+[2023-04-23 07:34:11] INFO root fetch - processPackages [rest-framework-material]: Downloading https://files.pythonhosted.org/packages/fe/58/c9356ba501d2dbfdc3e417dd29809dd9c6734e4f44354051ee32852f4547/rest_framework_material-0.1.5.tar.gz
+[2023-04-23 07:34:11] INFO root fetch - processPackages [ac-websocket-server]: executing diffoscope
+[2023-04-23 07:34:11] INFO root fetch - processPackages [ac-websocket-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ac-websocket-server-0.2.dev8.tar.gz tmp/ac-websocket-server-0.2.dev9.tar.gz --markdown 20230423/a/ac-websocket-server/0.2.dev8-0.2.dev9/diff.md --exclude *.pyd
+[2023-04-23 07:34:11] INFO root fetch - processPackages [rest-framework-material]: executing diffoscope
+[2023-04-23 07:34:11] INFO root fetch - processPackages [rest-framework-material]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rest_framework_material-0.1.4.tar.gz tmp/rest_framework_material-0.1.5.tar.gz --markdown 20230423/r/rest-framework-material/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-23 07:34:11] INFO root fetch - processPackages [siat]: Downloading https://files.pythonhosted.org/packages/1c/97/cb32ebd1803e655e30dd77d1e28446d5a86f58b60f653bfc278675ed9666/siat-1.9.6-py3-none-any.whl
+[2023-04-23 07:34:11] INFO root fetch - processPackages [PyMemoryEditor]: Downloading https://files.pythonhosted.org/packages/07/37/2a95223d0eeca87544cabdcb23b867448c4372154cac1da3b69af65cf9e7/PyMemoryEditor-1.4.9.tar.gz
+[2023-04-23 07:34:11] INFO root fetch - processPackages [PyMemoryEditor]: executing diffoscope
+[2023-04-23 07:34:11] INFO root fetch - processPackages [PyMemoryEditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyMemoryEditor-1.4.8.tar.gz tmp/PyMemoryEditor-1.4.9.tar.gz --markdown 20230423/P/PyMemoryEditor/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-04-23 07:34:12] INFO root fetch - processPackages [siat]: executing diffoscope
+[2023-04-23 07:34:12] INFO root fetch - processPackages [siat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/siat-1.9.5-py3-none-any.whl.zip tmp/siat-1.9.6-py3-none-any.whl.zip --markdown 20230423/s/siat/1.9.5-1.9.6/diff.md --exclude *.pyd
+[2023-04-23 07:34:12] INFO root fetch - main [MainThread]: End processing [megadata]: success
+[2023-04-23 07:34:12] INFO root fetch - main [MainThread]: End processing [ac-websocket-server]: success
+[2023-04-23 07:34:13] INFO root fetch - main [MainThread]: End processing [PyMemoryEditor]: success
+[2023-04-23 07:34:13] INFO root fetch - main [MainThread]: End processing [rest-framework-material]: success
+[2023-04-23 07:34:14] INFO root fetch - main [MainThread]: End processing [siat]: success
+[2023-04-23 07:34:14] INFO root fetch - main [MainThread]: Store serial: [17819632]
