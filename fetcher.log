@@ -11940,3 +11940,62 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 20:08:13] INFO root fetch - main [MainThread]: End processing [esmerald]: success
 [2023-04-23 20:08:15] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
 [2023-04-23 20:08:15] INFO root fetch - main [MainThread]: Store serial: [17824690]
+[2023-04-23 20:13:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17824690]
+[2023-04-23 20:13:24] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-23 20:13:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spotube
+[2023-04-23 20:13:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: webarchiver
+[2023-04-23 20:13:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-ember-mug
+[2023-04-23 20:13:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qemu-runner
+[2023-04-23 20:13:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cosmopower-jax
+[2023-04-23 20:13:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vocabmaster
+[2023-04-23 20:13:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: geniusbot
+[2023-04-23 20:13:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: text-box-wrapper
+[2023-04-23 20:13:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyvantage
+[2023-04-23 20:13:24] INFO root fetch - processPackages [qemu-runner]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-04-23 20:13:24] INFO root fetch - processPackages [python-ember-mug]: New version: [0.7.0b1] Old Version: [0.6.2]
+[2023-04-23 20:13:24] INFO root fetch - processPackages [cosmopower-jax]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 20:13:24] INFO root fetch - processPackages [webarchiver]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-23 20:13:24] INFO root fetch - processPackages [vocabmaster]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-23 20:13:24] INFO root fetch - processPackages [geniusbot]: New version: [3.9.1] Old Version: [3.9.0]
+[2023-04-23 20:13:24] INFO root fetch - processPackages [pyvantage]: New version: [0.0.41] Old Version: [0.0.40]
+[2023-04-23 20:13:24] INFO root fetch - processPackages [text-box-wrapper]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 20:13:24] INFO root fetch - processPackages [spotube]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-04-23 20:13:24] INFO root fetch - processPackages [webarchiver]: executing diffoscope
+[2023-04-23 20:13:24] INFO root fetch - processPackages [webarchiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webarchiver-0.8.0-py2.py3-none-any.whl.zip tmp/webarchiver-0.9.0-py2.py3-none-any.whl.zip --markdown 20230423/w/webarchiver/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-23 20:13:24] INFO root fetch - processPackages [text-box-wrapper]: Downloading https://files.pythonhosted.org/packages/ba/2a/718c4cda42a09353578b0ab4126a4659b0fedce8aeb452384a18711ec998/text-box-wrapper-0.1.0.tar.gz
+[2023-04-23 20:13:24] INFO root fetch - processPackages [vocabmaster]: Downloading https://files.pythonhosted.org/packages/5f/87/89961d8816eb9e289dd005ab35bd4b2318db0a2fb8696fa62fe8d2e75891/vocabmaster-0.1.3.tar.gz
+[2023-04-23 20:13:24] INFO root fetch - processPackages [cosmopower-jax]: Downloading https://files.pythonhosted.org/packages/ea/8d/dc521e7d388eb6ad00fc42f3dd81519c533b1dc0d3f7145277d48fef271f/cosmopower_jax-0.1.0.tar.gz
+[2023-04-23 20:13:24] INFO root fetch - processPackages [geniusbot]: Downloading https://files.pythonhosted.org/packages/87/c3/88d2af0ecdbe668b9913881156aaa2a50de55b9d6483d66755117f18371a/geniusbot-3.9.0-py2.py3-none-any.whl
+[2023-04-23 20:13:24] INFO root fetch - processPackages [pyvantage]: Downloading https://files.pythonhosted.org/packages/41/3e/442ac5b8c58e1f6cb86141421f9ea718155339ecf0941264291ed1b766c3/pyvantage-0.0.40.tar.gz
+[2023-04-23 20:13:24] INFO root fetch - processPackages [spotube]: Downloading https://files.pythonhosted.org/packages/15/32/6a76a78ffd34033790ba64beed05f4d62da4f47fcb09a6d64573b79dcefc/spotube-0.5.2.tar.gz
+[2023-04-23 20:13:25] INFO root fetch - processPackages [python-ember-mug]: Downloading https://files.pythonhosted.org/packages/7b/29/9009c52b11ff0127b75719d7df72b26ac77fbf47a6d8e863dfe158a9289e/python_ember_mug-0.7.0b1.tar.gz
+[2023-04-23 20:13:25] WARNING root fetch - processPackages [cosmopower-jax]: Skipping package: exceeds size limit 41403049>=10485760
+[2023-04-23 20:13:25] INFO root fetch - main [MainThread]: End processing [cosmopower-jax] error
+[2023-04-23 20:13:25] INFO root fetch - processPackages [qemu-runner]: Downloading https://files.pythonhosted.org/packages/14/9c/857b5033580f572f49d5f805bebdaa62e855368b38367a0dcf4add8f8e29/qemu-runner-1.3.2.tar.gz
+[2023-04-23 20:13:25] INFO root fetch - processPackages [vocabmaster]: executing diffoscope
+[2023-04-23 20:13:25] INFO root fetch - processPackages [vocabmaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vocabmaster-0.1.2.tar.gz tmp/vocabmaster-0.1.3.tar.gz --markdown 20230423/v/vocabmaster/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-23 20:13:25] INFO root fetch - processPackages [spotube]: Downloading https://files.pythonhosted.org/packages/6d/91/57bf9dfddd1f5d7eb745003a53d033bc9a51c11b04de716d27dff180e067/spotube-0.5.3.tar.gz
+[2023-04-23 20:13:25] INFO root fetch - processPackages [geniusbot]: Downloading https://files.pythonhosted.org/packages/d7/1a/f3b2573c0ae4f53b9de279f2ca2c73dc121e230d12340e32fe3592e059a8/geniusbot-3.9.1-py2.py3-none-any.whl
+[2023-04-23 20:13:25] INFO root fetch - processPackages [python-ember-mug]: executing diffoscope
+[2023-04-23 20:13:25] INFO root fetch - processPackages [python-ember-mug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_ember_mug-0.6.2.tar.gz tmp/python_ember_mug-0.7.0b1.tar.gz --markdown 20230423/p/python-ember-mug/0.6.2-0.7.0b1/diff.md --exclude *.pyd
+[2023-04-23 20:13:25] INFO root fetch - processPackages [text-box-wrapper]: Downloading https://files.pythonhosted.org/packages/0e/58/8c93547484e049445375bc2a38d8d8aa6c57f1363cfbfcea1d0409c97918/text-box-wrapper-0.1.1.tar.gz
+[2023-04-23 20:13:25] INFO root fetch - processPackages [qemu-runner]: executing diffoscope
+[2023-04-23 20:13:25] INFO root fetch - processPackages [qemu-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qemu-runner-1.3.1.tar.gz tmp/qemu-runner-1.3.2.tar.gz --markdown 20230423/q/qemu-runner/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-04-23 20:13:25] INFO root fetch - processPackages [pyvantage]: Downloading https://files.pythonhosted.org/packages/1f/d1/15e8cdcb393bd64dd33dc3503ea346d61562c58d607af1683afed91c6ad2/pyvantage-0.0.41.tar.gz
+[2023-04-23 20:13:25] INFO root fetch - processPackages [spotube]: executing diffoscope
+[2023-04-23 20:13:25] INFO root fetch - processPackages [spotube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotube-0.5.2.tar.gz tmp/spotube-0.5.3.tar.gz --markdown 20230423/s/spotube/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-04-23 20:13:25] INFO root fetch - processPackages [text-box-wrapper]: executing diffoscope
+[2023-04-23 20:13:25] INFO root fetch - processPackages [text-box-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text-box-wrapper-0.1.0.tar.gz tmp/text-box-wrapper-0.1.1.tar.gz --markdown 20230423/t/text-box-wrapper/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 20:13:25] INFO root fetch - processPackages [geniusbot]: executing diffoscope
+[2023-04-23 20:13:25] INFO root fetch - processPackages [geniusbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geniusbot-3.9.0-py2.py3-none-any.whl.zip tmp/geniusbot-3.9.1-py2.py3-none-any.whl.zip --markdown 20230423/g/geniusbot/3.9.0-3.9.1/diff.md --exclude *.pyd
+[2023-04-23 20:13:25] INFO root fetch - processPackages [pyvantage]: executing diffoscope
+[2023-04-23 20:13:25] INFO root fetch - processPackages [pyvantage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvantage-0.0.40.tar.gz tmp/pyvantage-0.0.41.tar.gz --markdown 20230423/p/pyvantage/0.0.40-0.0.41/diff.md --exclude *.pyd
+[2023-04-23 20:13:26] INFO root fetch - main [MainThread]: End processing [spotube]: success
+[2023-04-23 20:13:26] INFO root fetch - main [MainThread]: End processing [geniusbot]: success
+[2023-04-23 20:13:26] INFO root fetch - main [MainThread]: End processing [vocabmaster]: success
+[2023-04-23 20:13:26] INFO root fetch - main [MainThread]: End processing [qemu-runner]: success
+[2023-04-23 20:13:26] INFO root fetch - main [MainThread]: End processing [python-ember-mug]: success
+[2023-04-23 20:13:26] INFO root fetch - main [MainThread]: End processing [text-box-wrapper]: success
+[2023-04-23 20:13:26] INFO root fetch - main [MainThread]: End processing [pyvantage]: success
+[2023-04-23 20:13:28] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
+[2023-04-23 20:13:28] INFO root fetch - main [MainThread]: Store serial: [17824715]
