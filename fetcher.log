@@ -13273,3 +13273,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 22:15:53] INFO root fetch - main [MainThread]: End processing [aim]: success
 [2023-04-23 22:16:06] INFO root fetch - main [MainThread]: End processing [printf-log-formatter]: success
 [2023-04-23 22:16:06] INFO root fetch - main [MainThread]: Store serial: [17825508]
+[2023-04-23 22:21:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825508]
+[2023-04-23 22:21:21] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-23 22:21:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: RockyRoad
+[2023-04-23 22:21:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: leuci-pol
+[2023-04-23 22:21:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iac-validate
+[2023-04-23 22:21:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: iac-test
+[2023-04-23 22:21:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stubborn
+[2023-04-23 22:21:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bizlogic
+[2023-04-23 22:21:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ponty
+[2023-04-23 22:21:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: wwpdb.apps.chem-ref-data
+[2023-04-23 22:21:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ReverseBox
+[2023-04-23 22:21:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: chdb
+[2023-04-23 22:21:21] INFO root fetch - processPackages [iac-test]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-23 22:21:21] WARNING root fetch - processPackages [stubborn]: Skipping, unable to determine old version
+[2023-04-23 22:21:21] INFO root fetch - main [MainThread]: End processing [stubborn] error
+[2023-04-23 22:21:21] INFO root fetch - processPackages [iac-validate]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-23 22:21:21] INFO root fetch - processPackages [leuci-pol]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 22:21:21] INFO root fetch - processPackages [ponty]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-04-23 22:21:21] INFO root fetch - processPackages [bizlogic]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 22:21:21] INFO root fetch - processPackages [wwpdb.apps.chem-ref-data]: New version: [0.20.dev1] Old Version: [0.19]
+[2023-04-23 22:21:21] INFO root fetch - processPackages [ReverseBox]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-23 22:21:21] INFO root fetch - processPackages [RockyRoad]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 22:21:21] INFO root fetch - processPackages [chdb]: New version: [0.6.2] Old Version: [0.6.0]
+[2023-04-23 22:21:21] INFO root fetch - processPackages [bizlogic]: executing diffoscope
+[2023-04-23 22:21:21] INFO root fetch - processPackages [bizlogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bizlogic-0.0.8.tar.gz tmp/bizlogic-0.0.9.tar.gz --markdown 20230423/b/bizlogic/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 22:21:21] INFO root fetch - processPackages [leuci-pol]: executing diffoscope
+[2023-04-23 22:21:21] INFO root fetch - processPackages [leuci-pol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leuci-pol-0.0.8.tar.gz tmp/leuci-pol-0.0.9.tar.gz --markdown 20230423/l/leuci-pol/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 22:21:21] INFO root fetch - processPackages [iac-validate]: Downloading https://files.pythonhosted.org/packages/17/58/6ea1b0b4c9dda98081322b41ad970f65cd88fce480b3937dbfdb8c3d59b0/iac_validate-0.2.2.tar.gz
+[2023-04-23 22:21:21] INFO root fetch - processPackages [wwpdb.apps.chem-ref-data]: Downloading https://files.pythonhosted.org/packages/a9/06/9c4ce19b3c862aa1bea307e274cf04022cd7e10ecf0c1d9e4ca85b8db9a6/wwpdb.apps.chem_ref_data-0.19.tar.gz
+[2023-04-23 22:21:21] INFO root fetch - processPackages [iac-test]: Downloading https://files.pythonhosted.org/packages/0a/2f/a316edcd4fdf5a2d19b8ed26bfcafe39358fd853f55c80caab00e80d76e1/iac_test-0.2.2.tar.gz
+[2023-04-23 22:21:21] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/a7/07/5e56730fbc87b0fe00343496fd376bb58d298a516f4d8367cfc2125c01ca/ReverseBox-0.5.1.tar.gz
+[2023-04-23 22:21:21] INFO root fetch - processPackages [chdb]: Downloading https://files.pythonhosted.org/packages/ba/77/0537895fe59f5f68a83fdfcffb21c462e8c669d8284c501fc5e393141f0d/chdb-0.6.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-23 22:21:21] INFO root fetch - processPackages [ponty]: Downloading https://files.pythonhosted.org/packages/1c/a9/88f88cd7b4a1bfc12ea9388d04dae289d1f4993c009a854b3cbdb8558cff/ponty-0.3.7.tar.gz
+[2023-04-23 22:21:21] WARNING root fetch - processPackages [chdb]: Skipping package: exceeds size limit 107053108>=10485760
+[2023-04-23 22:21:21] INFO root fetch - main [MainThread]: End processing [chdb] error
+[2023-04-23 22:21:22] INFO root fetch - processPackages [ReverseBox]: executing diffoscope
+[2023-04-23 22:21:22] INFO root fetch - processPackages [ReverseBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseBox-0.5.0.tar.gz tmp/ReverseBox-0.5.1.tar.gz --markdown 20230423/R/ReverseBox/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-23 22:21:22] INFO root fetch - processPackages [RockyRoad]: executing diffoscope
+[2023-04-23 22:21:22] INFO root fetch - processPackages [RockyRoad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RockyRoad-0.0.98-py3-none-any.whl.zip tmp/RockyRoad-0.0.99-py3-none-any.whl.zip --markdown 20230423/R/RockyRoad/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 22:21:22] INFO root fetch - processPackages [iac-validate]: Downloading https://files.pythonhosted.org/packages/ec/f5/ec72a4d8bd9b03ec29b5c5592f182dc1a94a7155620382ce955f1b7d5a7f/iac_validate-0.2.3.tar.gz
+[2023-04-23 22:21:22] INFO root fetch - processPackages [wwpdb.apps.chem-ref-data]: Downloading https://files.pythonhosted.org/packages/1f/c8/79e4f93741aec76ec755c4da356c5c0b98ed8f089a1bc1d976c625f31661/wwpdb.apps.chem_ref_data-0.20.dev1.tar.gz
+[2023-04-23 22:21:22] INFO root fetch - processPackages [iac-test]: Downloading https://files.pythonhosted.org/packages/ed/91/41d14894c4bf674dbae24b96182d02b4934129b778bf17a3d416edbdfb59/iac_test-0.2.3.tar.gz
+[2023-04-23 22:21:22] INFO root fetch - processPackages [ponty]: Downloading https://files.pythonhosted.org/packages/0c/e9/31a29dbc4b043ecb6493693c6a729ecc00be0999625f9c42f18f4bd676bd/ponty-0.3.8.tar.gz
+[2023-04-23 22:21:22] INFO root fetch - processPackages [iac-validate]: executing diffoscope
+[2023-04-23 22:21:22] INFO root fetch - processPackages [iac-validate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iac_validate-0.2.2.tar.gz tmp/iac_validate-0.2.3.tar.gz --markdown 20230423/i/iac-validate/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-23 22:21:22] INFO root fetch - processPackages [wwpdb.apps.chem-ref-data]: executing diffoscope
+[2023-04-23 22:21:22] INFO root fetch - processPackages [wwpdb.apps.chem-ref-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.apps.chem_ref_data-0.19.tar.gz tmp/wwpdb.apps.chem_ref_data-0.20.dev1.tar.gz --markdown 20230423/w/wwpdb.apps.chem-ref-data/0.19-0.20.dev1/diff.md --exclude *.pyd
+[2023-04-23 22:21:22] INFO root fetch - processPackages [iac-test]: executing diffoscope
+[2023-04-23 22:21:22] INFO root fetch - processPackages [iac-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iac_test-0.2.2.tar.gz tmp/iac_test-0.2.3.tar.gz --markdown 20230423/i/iac-test/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-23 22:21:22] INFO root fetch - processPackages [ponty]: executing diffoscope
+[2023-04-23 22:21:22] INFO root fetch - processPackages [ponty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ponty-0.3.7.tar.gz tmp/ponty-0.3.8.tar.gz --markdown 20230423/p/ponty/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-04-23 22:21:23] INFO root fetch - main [MainThread]: End processing [bizlogic]: success
+[2023-04-23 22:21:23] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
+[2023-04-23 22:21:23] INFO root fetch - main [MainThread]: End processing [RockyRoad]: success
+[2023-04-23 22:21:23] INFO root fetch - main [MainThread]: End processing [leuci-pol]: success
+[2023-04-23 22:21:23] INFO root fetch - main [MainThread]: End processing [iac-validate]: success
+[2023-04-23 22:21:23] INFO root fetch - main [MainThread]: End processing [iac-test]: success
+[2023-04-23 22:21:23] INFO root fetch - main [MainThread]: End processing [wwpdb.apps.chem-ref-data]: success
+[2023-04-23 22:21:24] INFO root fetch - main [MainThread]: End processing [ponty]: success
+[2023-04-23 22:21:24] INFO root fetch - main [MainThread]: Store serial: [17825547]
