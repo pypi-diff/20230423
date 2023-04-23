@@ -5616,3 +5616,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 11:16:46] INFO root fetch - main [MainThread]: End processing [bigdl-nano]: success
 [2023-04-23 11:16:48] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
 [2023-04-23 11:16:48] INFO root fetch - main [MainThread]: Store serial: [17820863]
+[2023-04-23 11:21:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820863]
+[2023-04-23 11:21:57] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-23 11:21:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: akshare
+[2023-04-23 11:21:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nobus
+[2023-04-23 11:21:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bagbag
+[2023-04-23 11:21:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Qcover
+[2023-04-23 11:21:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spanishconjugator
+[2023-04-23 11:21:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spanishconjugator
+[2023-04-23 11:21:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xia-engine-firestore
+[2023-04-23 11:21:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: shunting-yard
+[2023-04-23 11:21:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: FastCNN2
+[2023-04-23 11:21:57] INFO root fetch - processPackages [Qcover]: New version: [2.4.0] Old Version: [2.3.0]
+[2023-04-23 11:21:57] INFO root fetch - processPackages [xia-engine-firestore]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-23 11:21:57] INFO root fetch - processPackages [nobus]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-23 11:21:57] INFO root fetch - processPackages [bagbag]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-04-23 11:21:57] INFO root fetch - processPackages [akshare]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-23 11:21:57] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-23 11:21:57] INFO root fetch - processPackages [shunting-yard]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-23 11:21:57] INFO root fetch - processPackages [FastCNN2]: New version: [1.23.423.1720] Old Version: [1.23.412.1647]
+[2023-04-23 11:21:57] INFO root fetch - processPackages [Qcover]: Downloading https://files.pythonhosted.org/packages/4a/e3/be93e12f62337c3912b3ba18a72a0b45554a936af55c4bc28936e232c15a/Qcover-2.3.0.tar.gz
+[2023-04-23 11:21:57] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-23 11:21:57] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2023-04-23 11:21:57] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.8.tar.gz tmp/akshare-1.9.9.tar.gz --markdown 20230423/a/akshare/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-23 11:21:57] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-23 11:21:57] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230423/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-23 11:21:57] INFO root fetch - processPackages [nobus]: Downloading https://files.pythonhosted.org/packages/02/12/11a2f28de80cfa2ac3907fe06b888b2daf8025aadf943c2ee7af40eb8d22/nobus-0.1.4.tar.gz
+[2023-04-23 11:21:57] INFO root fetch - processPackages [FastCNN2]: Downloading https://files.pythonhosted.org/packages/87/cb/821c7dfa48dc446f218d11461574add502e66f405374614b1339ae3882be/FastCNN2-1.23.412.1647.tar.gz
+[2023-04-23 11:21:57] INFO root fetch - processPackages [xia-engine-firestore]: executing diffoscope
+[2023-04-23 11:21:57] INFO root fetch - processPackages [xia-engine-firestore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_engine_firestore-0.2.6-cp39-none-win_amd64.whl.zip tmp/xia_engine_firestore-0.2.7-cp39-none-win_amd64.whl.zip --markdown 20230423/x/xia-engine-firestore/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-23 11:21:57] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-23 11:21:57] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230423/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-23 11:21:57] INFO root fetch - processPackages [nobus]: executing diffoscope
+[2023-04-23 11:21:57] INFO root fetch - processPackages [nobus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nobus-0.1.3.tar.gz tmp/nobus-0.1.4.tar.gz --markdown 20230423/n/nobus/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-23 11:21:57] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2023-04-23 11:21:57] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.9.5.tar.gz tmp/bagbag-0.9.6.tar.gz --markdown 20230423/b/bagbag/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-04-23 11:21:57] INFO root fetch - processPackages [shunting-yard]: executing diffoscope
+[2023-04-23 11:21:57] INFO root fetch - processPackages [shunting-yard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shunting-yard-1.0.8.tar.gz tmp/shunting-yard-1.0.9.tar.gz --markdown 20230423/s/shunting-yard/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-23 11:21:57] INFO root fetch - processPackages [Qcover]: Downloading https://files.pythonhosted.org/packages/f3/7b/931d871bdbd82915032806bec7294606d9c054a375aa3ac4c45c1be4033f/Qcover-2.4.0.tar.gz
+[2023-04-23 11:21:58] INFO root fetch - processPackages [FastCNN2]: Downloading https://files.pythonhosted.org/packages/7b/a2/60c4b3c3b7d7b0a78e301eda78d528fdf477f8441d6886ea034d7352bbf8/FastCNN2-1.23.423.1720.tar.gz
+[2023-04-23 11:21:58] INFO root fetch - processPackages [Qcover]: executing diffoscope
+[2023-04-23 11:21:58] INFO root fetch - processPackages [Qcover]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Qcover-2.3.0.tar.gz tmp/Qcover-2.4.0.tar.gz --markdown 20230423/Q/Qcover/2.3.0-2.4.0/diff.md --exclude *.pyd
+[2023-04-23 11:21:58] INFO root fetch - processPackages [FastCNN2]: executing diffoscope
+[2023-04-23 11:21:58] INFO root fetch - processPackages [FastCNN2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FastCNN2-1.23.412.1647.tar.gz tmp/FastCNN2-1.23.423.1720.tar.gz --markdown 20230423/F/FastCNN2/1.23.412.1647-1.23.423.1720/diff.md --exclude *.pyd
+[2023-04-23 11:21:59] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-23 11:21:59] INFO root fetch - main [MainThread]: End processing [nobus]: success
+[2023-04-23 11:21:59] INFO root fetch - main [MainThread]: End processing [xia-engine-firestore]: success
+[2023-04-23 11:21:59] INFO root fetch - main [MainThread]: End processing [shunting-yard]: success
+[2023-04-23 11:21:59] INFO root fetch - main [MainThread]: End processing [bagbag]: success
+[2023-04-23 11:21:59] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-23 11:22:01] INFO root fetch - main [MainThread]: End processing [FastCNN2]: success
+[2023-04-23 11:22:01] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2023-04-23 11:22:15] INFO root fetch - main [MainThread]: End processing [Qcover]: success
+[2023-04-23 11:22:15] INFO root fetch - main [MainThread]: Store serial: [17820891]
