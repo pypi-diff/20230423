@@ -1815,3 +1815,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 03:24:53] INFO root fetch - main [MainThread]: End processing [pyagrum-nightly]: success
 [2023-04-23 03:24:53] INFO root fetch - main [MainThread]: End processing [college-scorecard]: success
 [2023-04-23 03:24:53] INFO root fetch - main [MainThread]: Store serial: [17818613]
+[2023-04-23 03:29:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818613]
+[2023-04-23 03:30:02] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-23 03:30:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydflow
+[2023-04-23 03:30:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lmao-nlp
+[2023-04-23 03:30:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bizlogic
+[2023-04-23 03:30:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: foursight
+[2023-04-23 03:30:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lockexclusive
+[2023-04-23 03:30:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dejankify
+[2023-04-23 03:30:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aesara-nightly
+[2023-04-23 03:30:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jsonrpc-py
+[2023-04-23 03:30:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: foursight-cgap
+[2023-04-23 03:30:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: bioregistry
+[2023-04-23 03:30:02] INFO root fetch - processPackages [bizlogic]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-23 03:30:02] INFO root fetch - processPackages [lmao-nlp]: New version: [0.1.0b1] Old Version: [0.0.1b1]
+[2023-04-23 03:30:02] INFO root fetch - processPackages [jsonrpc-py]: New version: [3.0.2] Old Version: [3.0.1]
+[2023-04-23 03:30:02] WARNING root fetch - processPackages [lockexclusive]: Skipping, unable to determine old version
+[2023-04-23 03:30:02] INFO root fetch - processPackages [lockexclusive]: Start processing: scotthsieh-projen-statemachine
+[2023-04-23 03:30:02] INFO root fetch - main [MainThread]: End processing [lockexclusive] error
+[2023-04-23 03:30:02] WARNING root fetch - processPackages [dejankify]: Skipping, unable to determine old version
+[2023-04-23 03:30:02] INFO root fetch - main [MainThread]: End processing [dejankify] error
+[2023-04-23 03:30:02] INFO root fetch - processPackages [foursight]: New version: [3.4.0.5b2] Old Version: [3.4.0.1b7]
+[2023-04-23 03:30:02] INFO root fetch - processPackages [aesara-nightly]: New version: [2.8.9.post118] Old Version: [2.8.9.post117]
+[2023-04-23 03:30:02] INFO root fetch - processPackages [pydflow]: New version: [1.6.99] Old Version: [1.6.98]
+[2023-04-23 03:30:02] INFO root fetch - processPackages [bioregistry]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-23 03:30:02] INFO root fetch - processPackages [foursight-cgap]: New version: [3.4.0.5b3] Old Version: [3.4.0.1b7]
+[2023-04-23 03:30:02] INFO root fetch - processPackages [aesara-nightly]: executing diffoscope
+[2023-04-23 03:30:02] INFO root fetch - processPackages [aesara-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aesara-nightly-2.8.9.post117.tar.gz tmp/aesara-nightly-2.8.9.post118.tar.gz --markdown 20230423/a/aesara-nightly/2.8.9.post117-2.8.9.post118/diff.md --exclude *.pyd
+[2023-04-23 03:30:02] INFO root fetch - processPackages [pydflow]: executing diffoscope
+[2023-04-23 03:30:02] INFO root fetch - processPackages [pydflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydflow-1.6.98.tar.gz tmp/pydflow-1.6.99.tar.gz --markdown 20230423/p/pydflow/1.6.98-1.6.99/diff.md --exclude *.pyd
+[2023-04-23 03:30:02] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-23 03:30:02] INFO root fetch - processPackages [bioregistry]: executing diffoscope
+[2023-04-23 03:30:02] INFO root fetch - processPackages [bioregistry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioregistry-0.8.8.tar.gz tmp/bioregistry-0.8.9.tar.gz --markdown 20230423/b/bioregistry/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-23 03:30:02] INFO root fetch - processPackages [bizlogic]: Downloading https://files.pythonhosted.org/packages/d5/d9/845e1cf6475f7c9ea6065707790554b389309e5e579f7088b96f4c997401/bizlogic-0.0.3.tar.gz
+[2023-04-23 03:30:02] INFO root fetch - processPackages [foursight]: Downloading https://files.pythonhosted.org/packages/5c/cf/5e89ea5e8032ef2cc5fdcd1c29f683b2f8b1614201a94d955c4d31975a6b/foursight-3.4.0.1b7.tar.gz
+[2023-04-23 03:30:02] INFO root fetch - processPackages [bizlogic]: executing diffoscope
+[2023-04-23 03:30:02] INFO root fetch - processPackages [bizlogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bizlogic-0.0.2.tar.gz tmp/bizlogic-0.0.3.tar.gz --markdown 20230423/b/bizlogic/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 03:30:02] INFO root fetch - processPackages [jsonrpc-py]: Downloading https://files.pythonhosted.org/packages/e5/69/621e2d405eeb54c2fb1321fdc901ef8efb07fc1fb4a715890600235e3f11/jsonrpc-py-3.0.2.tar.gz
+[2023-04-23 03:30:02] INFO root fetch - processPackages [lmao-nlp]: Downloading https://files.pythonhosted.org/packages/26/11/79e162209334d1f435ac701f0ce031bc01f05585edc18b2e9da9a84df558/lmao-nlp-0.1.0b1.tar.gz
+[2023-04-23 03:30:02] INFO root fetch - processPackages [foursight-cgap]: Downloading https://files.pythonhosted.org/packages/1d/f2/69e95f29a419c1f8c852e3ba20bf3ae67f44de6d1441b47178bb53097a74/foursight_cgap-3.4.0.5b3.tar.gz
+[2023-04-23 03:30:02] INFO root fetch - processPackages [jsonrpc-py]: executing diffoscope
+[2023-04-23 03:30:02] INFO root fetch - processPackages [jsonrpc-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonrpc-py-3.0.1.tar.gz tmp/jsonrpc-py-3.0.2.tar.gz --markdown 20230423/j/jsonrpc-py/3.0.1-3.0.2/diff.md --exclude *.pyd
+[2023-04-23 03:30:02] INFO root fetch - processPackages [foursight]: Downloading https://files.pythonhosted.org/packages/6e/7e/d49b0faf156c19f0219d546be737449f85064c54dfd2608f58fe8e6da61e/foursight-3.4.0.5b2.tar.gz
+[2023-04-23 03:30:02] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: executing diffoscope
+[2023-04-23 03:30:02] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scotthsieh_projen_statemachine-2.0.98.tar.gz tmp/scotthsieh_projen_statemachine-2.0.99.tar.gz --markdown 20230423/s/scotthsieh-projen-statemachine/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-23 03:30:02] INFO root fetch - processPackages [lmao-nlp]: executing diffoscope
+[2023-04-23 03:30:02] INFO root fetch - processPackages [lmao-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lmao-nlp-0.0.1b1.tar.gz tmp/lmao-nlp-0.1.0b1.tar.gz --markdown 20230423/l/lmao-nlp/0.0.1b1-0.1.0b1/diff.md --exclude *.pyd
+[2023-04-23 03:30:02] INFO root fetch - processPackages [foursight-cgap]: executing diffoscope
+[2023-04-23 03:30:02] INFO root fetch - processPackages [foursight-cgap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_cgap-3.4.0.1b7.tar.gz tmp/foursight_cgap-3.4.0.5b3.tar.gz --markdown 20230423/f/foursight-cgap/3.4.0.1b7-3.4.0.5b3/diff.md --exclude *.pyd
+[2023-04-23 03:30:02] INFO root fetch - processPackages [foursight]: executing diffoscope
+[2023-04-23 03:30:02] INFO root fetch - processPackages [foursight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight-3.4.0.1b7.tar.gz tmp/foursight-3.4.0.5b2.tar.gz --markdown 20230423/f/foursight/3.4.0.1b7-3.4.0.5b2/diff.md --exclude *.pyd
+[2023-04-23 03:30:03] INFO root fetch - main [MainThread]: End processing [bizlogic]: success
+[2023-04-23 03:30:04] INFO root fetch - main [MainThread]: End processing [pydflow]: success
+[2023-04-23 03:30:04] INFO root fetch - main [MainThread]: End processing [jsonrpc-py]: success
+[2023-04-23 03:30:04] INFO root fetch - main [MainThread]: End processing [scotthsieh-projen-statemachine]: success
+[2023-04-23 03:30:04] INFO root fetch - main [MainThread]: End processing [lmao-nlp]: success
+[2023-04-23 03:30:04] INFO root fetch - main [MainThread]: End processing [foursight-cgap]: success
+[2023-04-23 03:30:04] INFO root fetch - main [MainThread]: End processing [foursight]: success
+[2023-04-23 03:30:09] INFO root fetch - main [MainThread]: End processing [aesara-nightly]: success
+[2023-04-23 03:31:12] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
+[2023-04-23 03:31:12] INFO root fetch - main [MainThread]: Store serial: [17818648]
