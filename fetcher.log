@@ -7592,3 +7592,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 14:13:05] INFO root fetch - main [MainThread]: End processing [aiei]: success
 [2023-04-23 14:13:05] INFO root fetch - main [MainThread]: End processing [pyviews]: success
 [2023-04-23 14:13:05] INFO root fetch - main [MainThread]: Store serial: [17822023]
+[2023-04-23 14:18:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17822023]
+[2023-04-23 14:18:13] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-23 14:18:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ShynaTelegramBotNotification
+[2023-04-23 14:18:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moto
+[2023-04-23 14:18:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gpush
+[2023-04-23 14:18:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MMEdu
+[2023-04-23 14:18:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: semantra
+[2023-04-23 14:18:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rubrical
+[2023-04-23 14:18:13] INFO root fetch - processPackages [ShynaTelegramBotNotification]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-23 14:18:14] INFO root fetch - processPackages [semantra]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 14:18:14] INFO root fetch - processPackages [moto]: New version: [4.1.8.dev9] Old Version: [4.1.8.dev8]
+[2023-04-23 14:18:14] INFO root fetch - processPackages [gpush]: New version: [3.1.0] Old Version: [3.0.1]
+[2023-04-23 14:18:14] INFO root fetch - processPackages [MMEdu]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 14:18:14] INFO root fetch - processPackages [semantra]: executing diffoscope
+[2023-04-23 14:18:14] INFO root fetch - processPackages [semantra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantra-0.0.5.tar.gz tmp/semantra-0.0.6.tar.gz --markdown 20230423/s/semantra/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 14:18:14] INFO root fetch - processPackages [rubrical]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-04-23 14:18:14] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-04-23 14:18:14] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.8.dev8.tar.gz tmp/moto-4.1.8.dev9.tar.gz --markdown 20230423/m/moto/4.1.8.dev8-4.1.8.dev9/diff.md --exclude *.pyd
+[2023-04-23 14:18:14] INFO root fetch - processPackages [ShynaTelegramBotNotification]: Downloading https://files.pythonhosted.org/packages/3b/e5/a89682c9b71a3206c5bef50eae739634e75eee5134abf2dbc3aa24bb45d8/ShynaTelegramBotNotification-0.0.3.tar.gz
+[2023-04-23 14:18:14] INFO root fetch - processPackages [MMEdu]: Downloading https://files.pythonhosted.org/packages/ab/1e/588ba9856221eb0f1fdb52ad1f4ec1112510c4d8806e8ce3fe35dc706347/MMEdu-0.1.8.tar.gz
+[2023-04-23 14:18:14] INFO root fetch - processPackages [gpush]: Downloading https://files.pythonhosted.org/packages/e6/dc/04da318f34c7068c953c69806c0b25ee2bcf6b4af351dd10b728bf961d69/gpush-3.0.1.tar.gz
+[2023-04-23 14:18:14] INFO root fetch - processPackages [rubrical]: Downloading https://files.pythonhosted.org/packages/f5/61/ce7e06d6f0dd5ed46ccc02a0433359c181a6bdbe72528b43552acc24cf43/rubrical-0.1.2.tar.gz
+[2023-04-23 14:18:14] INFO root fetch - processPackages [ShynaTelegramBotNotification]: Downloading https://files.pythonhosted.org/packages/2b/97/24d9661c8803f06c0bf9dcf0b0b78f9bbc42953c0edb912d30b1c87bab74/ShynaTelegramBotNotification-0.0.4.tar.gz
+[2023-04-23 14:18:14] INFO root fetch - processPackages [MMEdu]: Downloading https://files.pythonhosted.org/packages/47/39/353c28206b6bb14419b0637ed054cdda8882895e90995b407e8ac6891b0e/MMEdu-0.1.9.tar.gz
+[2023-04-23 14:18:14] INFO root fetch - processPackages [gpush]: Downloading https://files.pythonhosted.org/packages/0f/2c/decd5fb42e2a613b389fc40c481da61cd4feb23b7a8dcc8e99d2a26fb5e9/gpush-3.1.0.tar.gz
+[2023-04-23 14:18:14] INFO root fetch - processPackages [rubrical]: Downloading https://files.pythonhosted.org/packages/00/ff/2a007927627fc19986daaa7aa66c754b42bf7312ce141ab1f3b6ae3961f8/rubrical-0.2.0.tar.gz
+[2023-04-23 14:18:14] INFO root fetch - processPackages [ShynaTelegramBotNotification]: executing diffoscope
+[2023-04-23 14:18:14] INFO root fetch - processPackages [ShynaTelegramBotNotification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ShynaTelegramBotNotification-0.0.3.tar.gz tmp/ShynaTelegramBotNotification-0.0.4.tar.gz --markdown 20230423/S/ShynaTelegramBotNotification/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-23 14:18:14] INFO root fetch - processPackages [MMEdu]: executing diffoscope
+[2023-04-23 14:18:14] INFO root fetch - processPackages [MMEdu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MMEdu-0.1.8.tar.gz tmp/MMEdu-0.1.9.tar.gz --markdown 20230423/M/MMEdu/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 14:18:14] INFO root fetch - processPackages [gpush]: executing diffoscope
+[2023-04-23 14:18:14] INFO root fetch - processPackages [gpush]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpush-3.0.1.tar.gz tmp/gpush-3.1.0.tar.gz --markdown 20230423/g/gpush/3.0.1-3.1.0/diff.md --exclude *.pyd
+[2023-04-23 14:18:14] INFO root fetch - processPackages [rubrical]: executing diffoscope
+[2023-04-23 14:18:14] INFO root fetch - processPackages [rubrical]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rubrical-0.1.2.tar.gz tmp/rubrical-0.2.0.tar.gz --markdown 20230423/r/rubrical/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-04-23 14:18:15] INFO root fetch - main [MainThread]: End processing [semantra]: success
+[2023-04-23 14:18:15] INFO root fetch - main [MainThread]: End processing [ShynaTelegramBotNotification]: success
+[2023-04-23 14:18:16] INFO root fetch - main [MainThread]: End processing [gpush]: success
+[2023-04-23 14:18:16] INFO root fetch - main [MainThread]: End processing [MMEdu]: success
+[2023-04-23 14:18:16] INFO root fetch - main [MainThread]: End processing [rubrical]: success
+[2023-04-23 14:18:46] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2023-04-23 14:18:46] INFO root fetch - main [MainThread]: Store serial: [17822046]
