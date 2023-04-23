@@ -7504,3 +7504,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 14:02:43] INFO root fetch - main [MainThread]: End processing [mitmproxy2swagger]: success
 [2023-04-23 14:02:43] INFO root fetch - main [MainThread]: End processing [environment-framework]: success
 [2023-04-23 14:02:43] INFO root fetch - main [MainThread]: Store serial: [17821973]
+[2023-04-23 14:07:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17821973]
+[2023-04-23 14:07:52] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 14:07:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: audiconnectpy
+[2023-04-23 14:07:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: currency-codes
+[2023-04-23 14:07:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dj-migration-test
+[2023-04-23 14:07:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cv2-collage-v2
+[2023-04-23 14:07:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cv2-collage-v2
+[2023-04-23 14:07:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dj-migration-test
+[2023-04-23 14:07:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: stockprice-cli
+[2023-04-23 14:07:52] WARNING root fetch - processPackages [audiconnectpy]: Skipping, unable to determine old version
+[2023-04-23 14:07:52] INFO root fetch - main [MainThread]: End processing [audiconnectpy] error
+[2023-04-23 14:07:52] WARNING root fetch - processPackages [currency-codes]: Skipping, unable to determine old version
+[2023-04-23 14:07:52] INFO root fetch - main [MainThread]: End processing [currency-codes] error
+[2023-04-23 14:07:52] INFO root fetch - processPackages [stockprice-cli]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-04-23 14:07:52] INFO root fetch - processPackages [dj-migration-test]: New version: [v0.2.162] Old Version: [v0.2.155]
+[2023-04-23 14:07:52] INFO root fetch - processPackages [dj-migration-test]: New version: [v0.2.162] Old Version: [v0.2.155]
+[2023-04-23 14:07:52] INFO root fetch - processPackages [cv2-collage-v2]: New version: [0.11] Old Version: [0.10]
+[2023-04-23 14:07:52] INFO root fetch - processPackages [cv2-collage-v2]: New version: [0.11] Old Version: [0.10]
+[2023-04-23 14:07:52] INFO root fetch - processPackages [stockprice-cli]: executing diffoscope
+[2023-04-23 14:07:52] INFO root fetch - processPackages [stockprice-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stockprice_cli-2.1.0-py3-none-any.whl.zip tmp/stockprice_cli-2.1.1-py3-none-any.whl.zip --markdown 20230423/s/stockprice-cli/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-04-23 14:07:52] INFO root fetch - processPackages [cv2-collage-v2]: Downloading https://files.pythonhosted.org/packages/7a/10/48bda65c0169da7bd38f076098c6727babae065fd3d81732ed5f2717bf42/cv2_collage_v2-0.10.tar.gz
+[2023-04-23 14:07:52] INFO root fetch - processPackages [cv2-collage-v2]: Downloading https://files.pythonhosted.org/packages/7a/10/48bda65c0169da7bd38f076098c6727babae065fd3d81732ed5f2717bf42/cv2_collage_v2-0.10.tar.gz
+[2023-04-23 14:07:52] INFO root fetch - processPackages [dj-migration-test]: Downloading https://files.pythonhosted.org/packages/62/77/0176982fe54a09d330db5e2e19dd6a3d9beec4b8e83dd99672d302f93aa1/dj-migration-test-v0.2.155.tar.gz
+[2023-04-23 14:07:52] INFO root fetch - processPackages [dj-migration-test]: Downloading https://files.pythonhosted.org/packages/62/77/0176982fe54a09d330db5e2e19dd6a3d9beec4b8e83dd99672d302f93aa1/dj-migration-test-v0.2.155.tar.gz
+[2023-04-23 14:07:52] INFO root fetch - processPackages [cv2-collage-v2]: Downloading https://files.pythonhosted.org/packages/48/03/338e2592cb17fc9b5c401f588fce71058b3f7e9cff7bdf7840190853ec35/cv2_collage_v2-0.11.tar.gz
+[2023-04-23 14:07:52] INFO root fetch - processPackages [cv2-collage-v2]: Downloading https://files.pythonhosted.org/packages/48/03/338e2592cb17fc9b5c401f588fce71058b3f7e9cff7bdf7840190853ec35/cv2_collage_v2-0.11.tar.gz
+[2023-04-23 14:07:53] INFO root fetch - processPackages [dj-migration-test]: Downloading https://files.pythonhosted.org/packages/bf/7e/f8320e44f9885e071f089928455c8e4939fe4170ac87f6de386142db7941/dj-migration-test-v0.2.162.tar.gz
+[2023-04-23 14:07:53] INFO root fetch - processPackages [dj-migration-test]: Downloading https://files.pythonhosted.org/packages/bf/7e/f8320e44f9885e071f089928455c8e4939fe4170ac87f6de386142db7941/dj-migration-test-v0.2.162.tar.gz
+[2023-04-23 14:07:53] INFO root fetch - processPackages [cv2-collage-v2]: executing diffoscope
+[2023-04-23 14:07:53] INFO root fetch - processPackages [cv2-collage-v2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cv2_collage_v2-0.10.tar.gz tmp/cv2_collage_v2-0.11.tar.gz --markdown 20230423/c/cv2-collage-v2/0.10-0.11/diff.md --exclude *.pyd
+[2023-04-23 14:07:53] INFO root fetch - processPackages [cv2-collage-v2]: executing diffoscope
+[2023-04-23 14:07:53] INFO root fetch - processPackages [cv2-collage-v2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cv2_collage_v2-0.10.tar.gz tmp/cv2_collage_v2-0.11.tar.gz --markdown 20230423/c/cv2-collage-v2/0.10-0.11/diff.md --exclude *.pyd
+[2023-04-23 14:07:53] INFO root fetch - processPackages [dj-migration-test]: executing diffoscope
+[2023-04-23 14:07:53] INFO root fetch - processPackages [dj-migration-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dj-migration-test-v0.2.155.tar.gz tmp/dj-migration-test-v0.2.162.tar.gz --markdown 20230423/d/dj-migration-test/v0.2.155-v0.2.162/diff.md --exclude *.pyd
+[2023-04-23 14:07:53] INFO root fetch - processPackages [dj-migration-test]: executing diffoscope
+[2023-04-23 14:07:53] INFO root fetch - processPackages [dj-migration-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dj-migration-test-v0.2.155.tar.gz tmp/dj-migration-test-v0.2.162.tar.gz --markdown 20230423/d/dj-migration-test/v0.2.155-v0.2.162/diff.md --exclude *.pyd
+[2023-04-23 14:07:53] INFO root fetch - main [MainThread]: End processing [stockprice-cli]: success
+[2023-04-23 14:07:54] INFO root fetch - main [MainThread]: End processing [cv2-collage-v2]: success
+[2023-04-23 14:07:54] INFO root fetch - main [MainThread]: End processing [dj-migration-test]: success
+[2023-04-23 14:07:54] INFO root fetch - main [MainThread]: End processing [cv2-collage-v2]: success
+[2023-04-23 14:07:54] INFO root fetch - main [MainThread]: End processing [dj-migration-test]: success
+[2023-04-23 14:07:54] INFO root fetch - main [MainThread]: Store serial: [17821998]
