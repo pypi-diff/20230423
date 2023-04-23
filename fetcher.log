@@ -2988,3 +2988,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 06:19:53] INFO root fetch - main [MainThread]: End processing [odoo14-addon-hr-attendance-reason]: success
 [2023-04-23 06:19:54] INFO root fetch - main [MainThread]: End processing [semantra]: success
 [2023-04-23 06:19:54] INFO root fetch - main [MainThread]: Store serial: [17819383]
+[2023-04-23 06:24:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819383]
+[2023-04-23 06:25:02] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-23 06:25:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shioajicaller
+[2023-04-23 06:25:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vnpy-rpcservice
+[2023-04-23 06:25:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quickstart-vdk
+[2023-04-23 06:25:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-brainfuck
+[2023-04-23 06:25:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pwproxy
+[2023-04-23 06:25:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: semantra
+[2023-04-23 06:25:02] INFO root fetch - processPackages [shioajicaller]: New version: [0.4.1.1] Old Version: [0.4.1.0]
+[2023-04-23 06:25:02] INFO root fetch - processPackages [pwproxy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 06:25:02] INFO root fetch - processPackages [vnpy-rpcservice]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-23 06:25:02] INFO root fetch - processPackages [semantra]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-23 06:25:02] INFO root fetch - processPackages [nonebot-plugin-brainfuck]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-23 06:25:02] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.845597441.dev9494] Old Version: [0.2.843267135.dev9402]
+[2023-04-23 06:25:02] INFO root fetch - processPackages [vnpy-rpcservice]: Downloading https://files.pythonhosted.org/packages/f2/c9/45f4f1668c1b5f794514945dfc34d9d6885257256d8e0ff10f05193ec7d9/vnpy_rpcservice-1.0.3.tar.gz
+[2023-04-23 06:25:02] INFO root fetch - processPackages [pwproxy]: Downloading https://files.pythonhosted.org/packages/c1/0c/e40c9a56d53b49fe1b3f700d17175d07db475aec15e3bff567ebab0df0fb/pwproxy-0.0.8.tar.gz
+[2023-04-23 06:25:02] INFO root fetch - processPackages [nonebot-plugin-brainfuck]: Downloading https://files.pythonhosted.org/packages/87/e9/fda17274236ea4aa1e39788e67a4910de1e9869b2218d49cb1751c7e71ea/nonebot-plugin-brainfuck-1.0.3.tar.gz
+[2023-04-23 06:25:02] INFO root fetch - processPackages [semantra]: Downloading https://files.pythonhosted.org/packages/e7/5a/1fec333119b2c4f423aaf19bd159a4b4b4253d0eeb12fb09ab67e6d3b490/semantra-0.0.3.tar.gz
+[2023-04-23 06:25:02] INFO root fetch - processPackages [shioajicaller]: Downloading https://files.pythonhosted.org/packages/e4/6d/5bae4987c3f1173a3f53f3a6c8a2efd7e22a1f280c40aae87ca6d0a21a73/shioajicaller-0.4.1.1.tar.gz
+[2023-04-23 06:25:02] INFO root fetch - processPackages [nonebot-plugin-brainfuck]: executing diffoscope
+[2023-04-23 06:25:02] INFO root fetch - processPackages [nonebot-plugin-brainfuck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-brainfuck-1.0.2.tar.gz tmp/nonebot-plugin-brainfuck-1.0.3.tar.gz --markdown 20230423/n/nonebot-plugin-brainfuck/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-23 06:25:02] INFO root fetch - processPackages [semantra]: executing diffoscope
+[2023-04-23 06:25:02] INFO root fetch - processPackages [semantra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantra-0.0.2.tar.gz tmp/semantra-0.0.3.tar.gz --markdown 20230423/s/semantra/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 06:25:02] INFO root fetch - processPackages [shioajicaller]: executing diffoscope
+[2023-04-23 06:25:02] INFO root fetch - processPackages [shioajicaller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shioajicaller-0.4.1.0.tar.gz tmp/shioajicaller-0.4.1.1.tar.gz --markdown 20230423/s/shioajicaller/0.4.1.0-0.4.1.1/diff.md --exclude *.pyd
+[2023-04-23 06:25:02] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/2f/ee/07f64f1147411d163904425d572eedf00f76236f8614a432563bd7c928c9/quickstart-vdk-0.2.845597441.dev9494.tar.gz
+[2023-04-23 06:25:02] INFO root fetch - processPackages [vnpy-rpcservice]: Downloading https://files.pythonhosted.org/packages/ae/42/10d345510b1ac66a9f5e7093d08b612ab6152f67666a3887b87b7a3dadc6/vnpy_rpcservice-1.0.4.tar.gz
+[2023-04-23 06:25:02] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2023-04-23 06:25:02] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.843267135.dev9402.tar.gz tmp/quickstart-vdk-0.2.845597441.dev9494.tar.gz --markdown 20230423/q/quickstart-vdk/0.2.843267135.dev9402-0.2.845597441.dev9494/diff.md --exclude *.pyd
+[2023-04-23 06:25:02] INFO root fetch - processPackages [pwproxy]: Downloading https://files.pythonhosted.org/packages/1f/80/2ff7f3b2873a8101d26f78018ec66c8db348a1ad132d89168fb90a33fb14/pwproxy-0.0.9.tar.gz
+[2023-04-23 06:25:02] INFO root fetch - processPackages [vnpy-rpcservice]: executing diffoscope
+[2023-04-23 06:25:02] INFO root fetch - processPackages [vnpy-rpcservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnpy_rpcservice-1.0.3.tar.gz tmp/vnpy_rpcservice-1.0.4.tar.gz --markdown 20230423/v/vnpy-rpcservice/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-23 06:25:03] INFO root fetch - processPackages [pwproxy]: executing diffoscope
+[2023-04-23 06:25:03] INFO root fetch - processPackages [pwproxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pwproxy-0.0.8.tar.gz tmp/pwproxy-0.0.9.tar.gz --markdown 20230423/p/pwproxy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 06:25:03] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-brainfuck]: success
+[2023-04-23 06:25:04] INFO root fetch - main [MainThread]: End processing [semantra]: success
+[2023-04-23 06:25:04] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2023-04-23 06:25:04] INFO root fetch - main [MainThread]: End processing [pwproxy]: success
+[2023-04-23 06:25:04] INFO root fetch - main [MainThread]: End processing [shioajicaller]: success
+[2023-04-23 06:25:04] INFO root fetch - main [MainThread]: End processing [vnpy-rpcservice]: success
+[2023-04-23 06:25:04] INFO root fetch - main [MainThread]: Store serial: [17819398]
