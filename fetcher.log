@@ -4383,3 +4383,72 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 08:58:45] INFO root fetch - main [MainThread]: End processing [imesh]: success
 [2023-04-23 08:58:47] INFO root fetch - main [MainThread]: End processing [blacksheep]: success
 [2023-04-23 08:58:47] INFO root fetch - main [MainThread]: Store serial: [17820131]
+[2023-04-23 09:03:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820131]
+[2023-04-23 09:03:56] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-23 09:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xjm
+[2023-04-23 09:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: open-gpt-torch
+[2023-04-23 09:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-orca-spark2
+[2023-04-23 09:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigdl-friesian-spark2
+[2023-04-23 09:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tkinter-form
+[2023-04-23 09:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bigdl-chronos-spark2
+[2023-04-23 09:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bigdl-spark2
+[2023-04-23 09:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tf-models-nightly
+[2023-04-23 09:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: checkov
+[2023-04-23 09:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: megadata
+[2023-04-23 09:03:56] INFO root fetch - processPackages [tkinter-form]: New version: [0.1.5.0] Old Version: [0.1.4.1]
+[2023-04-23 09:03:56] INFO root fetch - processPackages [megadata]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 09:03:56] INFO root fetch - processPackages [bigdl-chronos-spark2]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-23 09:03:56] INFO root fetch - processPackages [bigdl-orca-spark2]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-23 09:03:56] INFO root fetch - processPackages [bigdl-spark2]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-23 09:03:56] INFO root fetch - processPackages [bigdl-friesian-spark2]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-23 09:03:56] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2023-04-23 09:03:56] INFO root fetch - processPackages [open-gpt-torch]: New version: [0.0.1rc4] Old Version: [0.0.1rc3]
+[2023-04-23 09:03:56] WARNING root fetch - processPackages [xjm]: Skipping, unable to determine old version
+[2023-04-23 09:03:56] INFO root fetch - processPackages [xjm]: Start processing: seqio-nightly
+[2023-04-23 09:03:56] INFO root fetch - main [MainThread]: End processing [xjm] error
+[2023-04-23 09:03:56] INFO root fetch - processPackages [tkinter-form]: executing diffoscope
+[2023-04-23 09:03:56] INFO root fetch - processPackages [tkinter-form]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkinter_form-0.1.4.1.tar.gz tmp/tkinter_form-0.1.5.0.tar.gz --markdown 20230423/t/tkinter-form/0.1.4.1-0.1.5.0/diff.md --exclude *.pyd
+[2023-04-23 09:03:56] INFO root fetch - processPackages [megadata]: executing diffoscope
+[2023-04-23 09:03:56] INFO root fetch - processPackages [megadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/megadata-0.0.8.tar.gz tmp/megadata-0.0.9.tar.gz --markdown 20230423/m/megadata/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 09:03:56] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-23 09:03:56] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2023-04-23 09:03:56] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2023-04-23 09:03:56] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20230423/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/diff.md --exclude *.pyd
+[2023-04-23 09:03:56] INFO root fetch - processPackages [bigdl-orca-spark2]: Downloading https://files.pythonhosted.org/packages/d7/7e/1eabc6fdcbff108fa01d016dd315f7aac9579a66239a272080ec32a52906/bigdl_orca_spark2-2.4.0b20230421-py3-none-manylinux1_x86_64.whl
+[2023-04-23 09:03:56] WARNING root fetch - processPackages [bigdl-orca-spark2]: Skipping package: exceeds size limit 20369307>=10485760
+[2023-04-23 09:03:56] INFO root fetch - processPackages [bigdl-orca-spark2]: Start processing: findmyorder
+[2023-04-23 09:03:56] INFO root fetch - main [MainThread]: End processing [bigdl-orca-spark2] error
+[2023-04-23 09:03:56] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2023-04-23 09:03:56] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20230423/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/diff.md --exclude *.pyd
+[2023-04-23 09:03:56] INFO root fetch - processPackages [findmyorder]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 09:03:56] INFO root fetch - processPackages [findmyorder]: executing diffoscope
+[2023-04-23 09:03:56] INFO root fetch - processPackages [findmyorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findmyorder-0.0.1.tar.gz tmp/findmyorder-0.0.2.tar.gz --markdown 20230423/f/findmyorder/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 09:03:56] INFO root fetch - processPackages [bigdl-friesian-spark2]: executing diffoscope
+[2023-04-23 09:03:56] INFO root fetch - processPackages [bigdl-friesian-spark2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_friesian_spark2-2.4.0b20230421-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_friesian_spark2-2.4.0b20230422-py3-none-manylinux1_x86_64.whl.zip --markdown 20230423/b/bigdl-friesian-spark2/2.4.0b20230421-2.4.0b20230422/diff.md --exclude *.pyd
+[2023-04-23 09:03:56] INFO root fetch - processPackages [open-gpt-torch]: Downloading https://files.pythonhosted.org/packages/0b/d1/0614ecc7d6a5fcaff9a315a2a957361a24952ffb4b007fe519d4ed76e555/open_gpt_torch-0.0.1rc4.tar.gz
+[2023-04-23 09:03:56] INFO root fetch - processPackages [bigdl-spark2]: executing diffoscope
+[2023-04-23 09:03:56] INFO root fetch - processPackages [bigdl-spark2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_spark2-2.4.0b20230421-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_spark2-2.4.0b20230422-py3-none-manylinux1_x86_64.whl.zip --markdown 20230423/b/bigdl-spark2/2.4.0b20230421-2.4.0b20230422/diff.md --exclude *.pyd
+[2023-04-23 09:03:56] INFO root fetch - processPackages [bigdl-chronos-spark2]: executing diffoscope
+[2023-04-23 09:03:56] INFO root fetch - processPackages [bigdl-chronos-spark2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos_spark2-2.4.0b20230421-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_chronos_spark2-2.4.0b20230422-py3-none-manylinux1_x86_64.whl.zip --markdown 20230423/b/bigdl-chronos-spark2/2.4.0b20230421-2.4.0b20230422/diff.md --exclude *.pyd
+[2023-04-23 09:03:56] INFO root fetch - processPackages [open-gpt-torch]: executing diffoscope
+[2023-04-23 09:03:56] INFO root fetch - processPackages [open-gpt-torch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_gpt_torch-0.0.1rc3.tar.gz tmp/open_gpt_torch-0.0.1rc4.tar.gz --markdown 20230423/o/open-gpt-torch/0.0.1rc3-0.0.1rc4/diff.md --exclude *.pyd
+[2023-04-23 09:03:56] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-04-23 09:03:56] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230423/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-23 09:03:57] INFO root fetch - processPackages [tkinter-form]: Start processing: py-aiger-gridworld
+[2023-04-23 09:03:57] INFO root fetch - main [MainThread]: End processing [tkinter-form]: success
+[2023-04-23 09:03:57] INFO root fetch - processPackages [py-aiger-gridworld]: New version: [0.4.3] Old Version: [0.4.1]
+[2023-04-23 09:03:57] INFO root fetch - main [MainThread]: End processing [megadata]: success
+[2023-04-23 09:03:57] INFO root fetch - processPackages [py-aiger-gridworld]: Downloading https://files.pythonhosted.org/packages/1e/26/95607aeb2d2925f91036e0cdd4a73e35a5592ca6b06bcf1eb10439c14ef4/py-aiger-gridworld-0.4.1.tar.gz
+[2023-04-23 09:03:58] INFO root fetch - main [MainThread]: End processing [bigdl-spark2]: success
+[2023-04-23 09:03:58] INFO root fetch - processPackages [py-aiger-gridworld]: Downloading https://files.pythonhosted.org/packages/fa/e5/778447c655a16ce1df6fd606e3e3e4f0fc8a928399f031c82f9933d676b6/py_aiger_gridworld-0.4.3.tar.gz
+[2023-04-23 09:03:58] INFO root fetch - main [MainThread]: End processing [findmyorder]: success
+[2023-04-23 09:03:58] INFO root fetch - processPackages [py-aiger-gridworld]: executing diffoscope
+[2023-04-23 09:03:58] INFO root fetch - processPackages [py-aiger-gridworld]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-aiger-gridworld-0.4.1.tar.gz tmp/py_aiger_gridworld-0.4.3.tar.gz --markdown 20230423/p/py-aiger-gridworld/0.4.1-0.4.3/diff.md --exclude *.pyd
+[2023-04-23 09:03:58] INFO root fetch - main [MainThread]: End processing [open-gpt-torch]: success
+[2023-04-23 09:03:59] INFO root fetch - main [MainThread]: End processing [bigdl-chronos-spark2]: success
+[2023-04-23 09:03:59] INFO root fetch - main [MainThread]: End processing [bigdl-friesian-spark2]: success
+[2023-04-23 09:03:59] INFO root fetch - main [MainThread]: End processing [py-aiger-gridworld]: success
+[2023-04-23 09:04:00] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2023-04-23 09:04:14] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
+[2023-04-23 09:04:36] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-04-23 09:04:36] INFO root fetch - main [MainThread]: Store serial: [17820174]
