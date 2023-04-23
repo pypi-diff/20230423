@@ -1593,3 +1593,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 
 [2023-04-23 02:52:44] INFO root fetch - main [MainThread]: End processing [pycde] error
 [2023-04-23 02:52:44] INFO root fetch - main [MainThread]: Store serial: [17818458]
+[2023-04-23 02:57:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818458]
+[2023-04-23 02:57:53] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-23 02:57:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pybuildtools
+[2023-04-23 02:57:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: embedin
+[2023-04-23 02:57:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gpt-gateway
+[2023-04-23 02:57:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-databrew-cicd
+[2023-04-23 02:57:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Aciembler-preter
+[2023-04-23 02:57:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bioversions
+[2023-04-23 02:57:53] INFO root fetch - processPackages [embedin]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-23 02:57:53] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-23 02:57:53] INFO root fetch - processPackages [pybuildtools]: New version: [0.5.8] Old Version: [0.5.7]
+[2023-04-23 02:57:53] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2023-04-23 02:57:53] WARNING root fetch - processPackages [Aciembler-preter]: Skipping, unable to determine old version
+[2023-04-23 02:57:53] INFO root fetch - main [MainThread]: End processing [Aciembler-preter] error
+[2023-04-23 02:57:53] INFO root fetch - processPackages [gpt-gateway]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 02:57:53] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2023-04-23 02:57:53] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20230423/c/cdk-databrew-cicd/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-23 02:57:53] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2023-04-23 02:57:53] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20230423/b/bioversions/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2023-04-23 02:57:53] INFO root fetch - processPackages [gpt-gateway]: Downloading https://files.pythonhosted.org/packages/83/c9/b87a8496685d4dbd688ea015ab4be36d99df6e374d957258f966e30bcf2c/gpt_gateway-0.0.9.tar.gz
+[2023-04-23 02:57:53] INFO root fetch - processPackages [pybuildtools]: Downloading https://files.pythonhosted.org/packages/5b/2f/08ef6856c665ba406af6a39b580169c7fb659cd51107b4fa0e5901c11310/pybuildtools-0.5.8.tar.gz
+[2023-04-23 02:57:53] INFO root fetch - processPackages [embedin]: Downloading https://files.pythonhosted.org/packages/e6/d0/dd115a39f905f739bbeaff095b84295b46b3c0c4e53de1862b7060d48811/embedin-0.1.2.tar.gz
+[2023-04-23 02:57:53] INFO root fetch - processPackages [gpt-gateway]: executing diffoscope
+[2023-04-23 02:57:53] INFO root fetch - processPackages [gpt-gateway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_gateway-0.0.8.tar.gz tmp/gpt_gateway-0.0.9.tar.gz --markdown 20230423/g/gpt-gateway/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 02:57:53] INFO root fetch - processPackages [pybuildtools]: executing diffoscope
+[2023-04-23 02:57:53] INFO root fetch - processPackages [pybuildtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybuildtools-0.5.7.tar.gz tmp/pybuildtools-0.5.8.tar.gz --markdown 20230423/p/pybuildtools/0.5.7-0.5.8/diff.md --exclude *.pyd
+[2023-04-23 02:57:53] INFO root fetch - processPackages [embedin]: executing diffoscope
+[2023-04-23 02:57:53] INFO root fetch - processPackages [embedin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedin-0.1.1.tar.gz tmp/embedin-0.1.2.tar.gz --markdown 20230423/e/embedin/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-23 02:57:54] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
+[2023-04-23 02:57:54] INFO root fetch - main [MainThread]: End processing [gpt-gateway]: success
+[2023-04-23 02:57:55] INFO root fetch - main [MainThread]: End processing [embedin]: success
+[2023-04-23 02:57:55] INFO root fetch - main [MainThread]: End processing [pybuildtools]: success
+[2023-04-23 02:58:13] INFO root fetch - main [MainThread]: End processing [bioversions]: success
+[2023-04-23 02:58:13] INFO root fetch - main [MainThread]: Store serial: [17818482]
