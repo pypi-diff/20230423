@@ -8323,3 +8323,65 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 15:28:42] INFO root fetch - main [MainThread]: End processing [cloudlanguagetools]: success
 [2023-04-23 15:28:42] INFO root fetch - main [MainThread]: End processing [sitcom]: success
 [2023-04-23 15:28:42] INFO root fetch - main [MainThread]: Store serial: [17822510]
+[2023-04-23 15:33:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17822510]
+[2023-04-23 15:33:52] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-23 15:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: log-request-id
+[2023-04-23 15:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crunch-cli
+[2023-04-23 15:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyHRM
+[2023-04-23 15:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ultralytics
+[2023-04-23 15:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: newnewid
+[2023-04-23 15:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: crunch-cli
+[2023-04-23 15:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mtehis
+[2023-04-23 15:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pixivSpiderCreatedByHanXu
+[2023-04-23 15:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nonebot-plugin-bilifan
+[2023-04-23 15:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: krillscan
+[2023-04-23 15:33:52] INFO root fetch - processPackages [log-request-id]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 15:33:52] INFO root fetch - processPackages [newnewid]: New version: [0.5.0] Old Version: [0.4.4]
+[2023-04-23 15:33:52] INFO root fetch - processPackages [crunch-cli]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-23 15:33:52] INFO root fetch - processPackages [mtehis]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-23 15:33:52] WARNING root fetch - processPackages [pixivSpiderCreatedByHanXu]: Skipping, unable to determine old version
+[2023-04-23 15:33:52] INFO root fetch - processPackages [nonebot-plugin-bilifan]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 15:33:52] INFO root fetch - processPackages [pyHRM]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-23 15:33:52] INFO root fetch - processPackages [ultralytics]: New version: [8.0.9] Old Version: [8.0.86]
+[2023-04-23 15:33:52] INFO root fetch - main [MainThread]: End processing [pixivSpiderCreatedByHanXu] error
+[2023-04-23 15:33:52] INFO root fetch - processPackages [crunch-cli]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-23 15:33:52] INFO root fetch - processPackages [krillscan]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-23 15:33:52] INFO root fetch - processPackages [ultralytics]: Downloading https://files.pythonhosted.org/packages/27/39/688939c35dabea8809afd801cc70e170b0475d06e905a94cb5a1408a3315/ultralytics-8.0.86.tar.gz
+[2023-04-23 15:33:52] INFO root fetch - processPackages [newnewid]: Downloading https://files.pythonhosted.org/packages/8e/ec/7acce768079eb2a0a6a4c43ae81cb811dcd6591b8efb27aeb0454853b214/newnewid-0.4.4.tar.gz
+[2023-04-23 15:33:53] INFO root fetch - processPackages [log-request-id]: Downloading https://files.pythonhosted.org/packages/e1/21/0320d02e1becf1fe179b36640a0673f6239ea5f6ea40c6d3759942ca6d5b/log_request_id-0.1.0.tar.gz
+[2023-04-23 15:33:53] INFO root fetch - processPackages [pyHRM]: Downloading https://files.pythonhosted.org/packages/7a/df/4c66b7164e980975efa806cf701a3fcf6a0e2fb5b770b90ea9e8f7e1ba5e/pyHRM-0.1.6.tar.gz
+[2023-04-23 15:33:53] INFO root fetch - processPackages [ultralytics]: executing diffoscope
+[2023-04-23 15:33:53] INFO root fetch - processPackages [ultralytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultralytics-8.0.86.tar.gz tmp/ultralytics-8.0.9.tar.gz --markdown 20230423/u/ultralytics/8.0.86-8.0.9/diff.md --exclude *.pyd
+[2023-04-23 15:33:53] INFO root fetch - processPackages [nonebot-plugin-bilifan]: Downloading https://files.pythonhosted.org/packages/3a/c8/c2a025998e56670dcf538b41a55554c7ba0cca3ffcb850ddccf79c0eb7be/nonebot_plugin_bilifan-0.1.1.tar.gz
+[2023-04-23 15:33:53] INFO root fetch - processPackages [krillscan]: Downloading https://files.pythonhosted.org/packages/07/72/938c229df50a90a1c9cd0d6bac0b84269d4bb34a164b5ccf61d2e9cb5c88/krillscan-0.2.8.tar.gz
+[2023-04-23 15:33:53] INFO root fetch - processPackages [crunch-cli]: executing diffoscope
+[2023-04-23 15:33:53] INFO root fetch - processPackages [crunch-cli]: executing diffoscope
+[2023-04-23 15:33:53] INFO root fetch - processPackages [crunch-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crunch-cli-0.8.1.tar.gz tmp/crunch-cli-0.9.0.tar.gz --markdown 20230423/c/crunch-cli/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-23 15:33:53] INFO root fetch - processPackages [crunch-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crunch-cli-0.8.1.tar.gz tmp/crunch-cli-0.9.0.tar.gz --markdown 20230423/c/crunch-cli/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-23 15:33:53] INFO root fetch - processPackages [mtehis]: Downloading https://files.pythonhosted.org/packages/79/36/ad2fc7b44508336bf9eb5df3b0577108e9d6226c5c72608ad01ced9a0d5a/mtehis-0.1.3.tar.gz
+[2023-04-23 15:33:53] INFO root fetch - processPackages [nonebot-plugin-bilifan]: executing diffoscope
+[2023-04-23 15:33:53] INFO root fetch - processPackages [nonebot-plugin-bilifan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_bilifan-0.1.0.tar.gz tmp/nonebot_plugin_bilifan-0.1.1.tar.gz --markdown 20230423/n/nonebot-plugin-bilifan/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 15:33:53] INFO root fetch - processPackages [mtehis]: executing diffoscope
+[2023-04-23 15:33:53] INFO root fetch - processPackages [mtehis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtehis-0.1.2.tar.gz tmp/mtehis-0.1.3.tar.gz --markdown 20230423/m/mtehis/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-23 15:33:53] INFO root fetch - processPackages [newnewid]: Downloading https://files.pythonhosted.org/packages/5c/5f/c10b359d10451b55871e6834aaa853bdd0ac35dbb389bdeb0cd452f26285/newnewid-0.5.0.tar.gz
+[2023-04-23 15:33:53] INFO root fetch - processPackages [pyHRM]: Downloading https://files.pythonhosted.org/packages/81/4d/0dcc86103b594437d43578d6e25a9470b53a4d017f33166c696a4dfadf8d/pyHRM-0.1.7.tar.gz
+[2023-04-23 15:33:53] INFO root fetch - processPackages [log-request-id]: Downloading https://files.pythonhosted.org/packages/a3/8e/378ad5fbb954c6128e94fc2babb10d9f3b4ebfe5818b5d540195c953a7f6/log_request_id-0.1.1.tar.gz
+[2023-04-23 15:33:53] INFO root fetch - processPackages [pyHRM]: executing diffoscope
+[2023-04-23 15:33:53] INFO root fetch - processPackages [pyHRM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyHRM-0.1.6.tar.gz tmp/pyHRM-0.1.7.tar.gz --markdown 20230423/p/pyHRM/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-23 15:33:53] INFO root fetch - processPackages [log-request-id]: executing diffoscope
+[2023-04-23 15:33:53] INFO root fetch - processPackages [log-request-id]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/log_request_id-0.1.0.tar.gz tmp/log_request_id-0.1.1.tar.gz --markdown 20230423/l/log-request-id/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 15:33:53] INFO root fetch - processPackages [newnewid]: executing diffoscope
+[2023-04-23 15:33:53] INFO root fetch - processPackages [newnewid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/newnewid-0.4.4.tar.gz tmp/newnewid-0.5.0.tar.gz --markdown 20230423/n/newnewid/0.4.4-0.5.0/diff.md --exclude *.pyd
+[2023-04-23 15:33:53] INFO root fetch - processPackages [krillscan]: Downloading https://files.pythonhosted.org/packages/b5/55/35d651f1351d7c94b597bb11783e2e9faccafaf74fd7bf2aff59c4711d5f/krillscan-0.2.9.tar.gz
+[2023-04-23 15:33:53] INFO root fetch - processPackages [krillscan]: executing diffoscope
+[2023-04-23 15:33:53] INFO root fetch - processPackages [krillscan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krillscan-0.2.8.tar.gz tmp/krillscan-0.2.9.tar.gz --markdown 20230423/k/krillscan/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-23 15:33:54] INFO root fetch - main [MainThread]: End processing [crunch-cli]: success
+[2023-04-23 15:33:54] INFO root fetch - main [MainThread]: End processing [crunch-cli]: success
+[2023-04-23 15:33:55] INFO root fetch - main [MainThread]: End processing [mtehis]: success
+[2023-04-23 15:33:55] INFO root fetch - main [MainThread]: End processing [log-request-id]: success
+[2023-04-23 15:33:55] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilifan]: success
+[2023-04-23 15:33:55] INFO root fetch - main [MainThread]: End processing [pyHRM]: success
+[2023-04-23 15:33:55] INFO root fetch - main [MainThread]: End processing [newnewid]: success
+[2023-04-23 15:33:57] INFO root fetch - main [MainThread]: End processing [krillscan]: success
+[2023-04-23 15:33:58] INFO root fetch - main [MainThread]: End processing [ultralytics]: success
+[2023-04-23 15:33:58] INFO root fetch - main [MainThread]: Store serial: [17822540]
