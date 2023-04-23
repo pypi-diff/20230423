@@ -4977,3 +4977,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 09:58:11] INFO root fetch - main [MainThread]: End processing [qt-command-palette]: success
 [2023-04-23 09:58:13] INFO root fetch - main [MainThread]: End processing [pywikibot]: success
 [2023-04-23 09:58:13] INFO root fetch - main [MainThread]: Store serial: [17820480]
+[2023-04-23 10:03:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820480]
+[2023-04-23 10:03:22] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-23 10:03:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yashpy
+[2023-04-23 10:03:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: labelu
+[2023-04-23 10:03:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dss-p-s
+[2023-04-23 10:03:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: letsbuilda-pypi
+[2023-04-23 10:03:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: app01
+[2023-04-23 10:03:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Aciembler
+[2023-04-23 10:03:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gpt-pynvim
+[2023-04-23 10:03:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: yashpy
+[2023-04-23 10:03:22] INFO root fetch - processPackages [letsbuilda-pypi]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-04-23 10:03:22] INFO root fetch - processPackages [yashpy]: New version: [0.8] Old Version: [0.7]
+[2023-04-23 10:03:22] WARNING root fetch - processPackages [dss-p-s]: Skipping, unable to determine old version
+[2023-04-23 10:03:22] INFO root fetch - main [MainThread]: End processing [dss-p-s] error
+[2023-04-23 10:03:22] INFO root fetch - processPackages [labelu]: New version: [0.5.5.1] Old Version: [0.5.5]
+[2023-04-23 10:03:22] INFO root fetch - processPackages [Aciembler]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-23 10:03:22] WARNING root fetch - processPackages [app01]: Skipping, unable to determine old version
+[2023-04-23 10:03:22] INFO root fetch - processPackages [yashpy]: New version: [0.8] Old Version: [0.7]
+[2023-04-23 10:03:22] WARNING root fetch - processPackages [gpt-pynvim]: Skipping, unable to determine old version
+[2023-04-23 10:03:22] INFO root fetch - main [MainThread]: End processing [app01] error
+[2023-04-23 10:03:22] INFO root fetch - main [MainThread]: End processing [gpt-pynvim] error
+[2023-04-23 10:03:22] INFO root fetch - processPackages [letsbuilda-pypi]: Downloading https://files.pythonhosted.org/packages/bd/15/fb06061ba026d13017b1010e54fb7350dbd2b2f155101f0b41a7d3442686/letsbuilda-pypi-3.1.1.tar.gz
+[2023-04-23 10:03:22] INFO root fetch - processPackages [Aciembler]: Downloading https://files.pythonhosted.org/packages/44/4c/232b7bc4a5965b1dade6427e832cafb1bea3b2478ca5db347dc2450a1129/Aciembler-1.0.8-py2.py3-none-any.whl
+[2023-04-23 10:03:22] INFO root fetch - processPackages [yashpy]: Downloading https://files.pythonhosted.org/packages/24/cd/d1b87155e255a6b84acd7d8616767c91247532c259e4bb28eeb1b93c0d9c/yashpy-0.7.tar.gz
+[2023-04-23 10:03:22] INFO root fetch - processPackages [yashpy]: Downloading https://files.pythonhosted.org/packages/24/cd/d1b87155e255a6b84acd7d8616767c91247532c259e4bb28eeb1b93c0d9c/yashpy-0.7.tar.gz
+[2023-04-23 10:03:22] INFO root fetch - processPackages [letsbuilda-pypi]: executing diffoscope
+[2023-04-23 10:03:22] INFO root fetch - processPackages [letsbuilda-pypi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/letsbuilda-pypi-3.1.0.tar.gz tmp/letsbuilda-pypi-3.1.1.tar.gz --markdown 20230423/l/letsbuilda-pypi/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-04-23 10:03:22] INFO root fetch - processPackages [Aciembler]: executing diffoscope
+[2023-04-23 10:03:22] INFO root fetch - processPackages [Aciembler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Aciembler-1.0.7-py2.py3-none-any.whl.zip tmp/Aciembler-1.0.8-py2.py3-none-any.whl.zip --markdown 20230423/A/Aciembler/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-23 10:03:22] INFO root fetch - processPackages [labelu]: Downloading https://files.pythonhosted.org/packages/83/e0/6879ffe15641e717f4276624d67675fddb419653be6e16cdfec09fa13fb4/labelu-0.5.5.1.tar.gz
+[2023-04-23 10:03:22] INFO root fetch - processPackages [yashpy]: Downloading https://files.pythonhosted.org/packages/30/70/66078b97c2b8f1fbb3e1594bcf2758c198be83700769da7f7af0bee470b4/yashpy-0.8.tar.gz
+[2023-04-23 10:03:22] INFO root fetch - processPackages [yashpy]: Downloading https://files.pythonhosted.org/packages/30/70/66078b97c2b8f1fbb3e1594bcf2758c198be83700769da7f7af0bee470b4/yashpy-0.8.tar.gz
+[2023-04-23 10:03:22] INFO root fetch - processPackages [labelu]: executing diffoscope
+[2023-04-23 10:03:22] INFO root fetch - processPackages [labelu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/labelu-0.5.5.tar.gz tmp/labelu-0.5.5.1.tar.gz --markdown 20230423/l/labelu/0.5.5-0.5.5.1/diff.md --exclude *.pyd
+[2023-04-23 10:03:23] INFO root fetch - processPackages [yashpy]: executing diffoscope
+[2023-04-23 10:03:23] INFO root fetch - processPackages [yashpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yashpy-0.7.tar.gz tmp/yashpy-0.8.tar.gz --markdown 20230423/y/yashpy/0.7-0.8/diff.md --exclude *.pyd
+[2023-04-23 10:03:23] INFO root fetch - processPackages [yashpy]: executing diffoscope
+[2023-04-23 10:03:23] INFO root fetch - processPackages [yashpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yashpy-0.7.tar.gz tmp/yashpy-0.8.tar.gz --markdown 20230423/y/yashpy/0.7-0.8/diff.md --exclude *.pyd
+[2023-04-23 10:03:23] INFO root fetch - main [MainThread]: End processing [letsbuilda-pypi]: success
+[2023-04-23 10:03:23] INFO root fetch - main [MainThread]: End processing [Aciembler]: success
+[2023-04-23 10:03:24] INFO root fetch - main [MainThread]: End processing [yashpy]: success
+[2023-04-23 10:03:24] INFO root fetch - main [MainThread]: End processing [yashpy]: success
+[2023-04-23 10:03:50] INFO root fetch - main [MainThread]: End processing [labelu]: success
+[2023-04-23 10:03:50] INFO root fetch - main [MainThread]: Store serial: [17820516]
