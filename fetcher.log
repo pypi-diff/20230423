@@ -8797,3 +8797,96 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 16:04:08] ERROR root fetch - processPackages [PyMCTranslate]: Timeout during execution of pkgdiff
 [2023-04-23 16:04:08] INFO root fetch - main [MainThread]: End processing [PyMCTranslate] error
 [2023-04-23 16:04:08] INFO root fetch - main [MainThread]: Store serial: [17822787]
+[2023-04-23 16:09:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17822787]
+[2023-04-23 16:09:16] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-23 16:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: IPFS-Toolkit
+[2023-04-23 16:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: n0struct
+[2023-04-23 16:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ml-pckg
+[2023-04-23 16:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: printopia
+[2023-04-23 16:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-website-sale-secondary-unit
+[2023-04-23 16:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pysasl
+[2023-04-23 16:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: threadsnake
+[2023-04-23 16:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: findmyorder
+[2023-04-23 16:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: baiduSpiderCreatedByHanXu
+[2023-04-23 16:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: arclet-letoderea
+[2023-04-23 16:09:16] INFO root fetch - processPackages [ml-pckg]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-04-23 16:09:16] INFO root fetch - processPackages [odoo-addon-website-sale-secondary-unit]: New version: [15.0.1.1.0] Old Version: [15.0.1.0.0.5]
+[2023-04-23 16:09:16] INFO root fetch - processPackages [n0struct]: New version: [0.2.94] Old Version: [0.2.93]
+[2023-04-23 16:09:16] INFO root fetch - processPackages [IPFS-Toolkit]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-04-23 16:09:16] INFO root fetch - processPackages [findmyorder]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 16:09:16] INFO root fetch - processPackages [arclet-letoderea]: New version: [0.5.0] Old Version: [0.4.4]
+[2023-04-23 16:09:16] WARNING root fetch - processPackages [printopia]: Skipping, unable to determine old version
+[2023-04-23 16:09:16] INFO root fetch - processPackages [printopia]: Start processing: perceiver-io
+[2023-04-23 16:09:16] INFO root fetch - main [MainThread]: End processing [printopia] error
+[2023-04-23 16:09:16] INFO root fetch - processPackages [pysasl]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-23 16:09:16] INFO root fetch - processPackages [threadsnake]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-23 16:09:16] INFO root fetch - processPackages [baiduSpiderCreatedByHanXu]: New version: [0.0.3] Old Version: [0.0.1]
+[2023-04-23 16:09:16] INFO root fetch - processPackages [perceiver-io]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-04-23 16:09:16] INFO root fetch - processPackages [arclet-letoderea]: Downloading https://files.pythonhosted.org/packages/a5/d5/be37a5f469631360d0620ecdb6ade54a3bd6b5486d599e1344e0c77fed7c/arclet-letoderea-0.4.4.tar.gz
+[2023-04-23 16:09:16] INFO root fetch - processPackages [odoo-addon-website-sale-secondary-unit]: Downloading https://files.pythonhosted.org/packages/72/e9/570a3cb38a2885cc95c24bf92c66f74de2f05650bf782fff2a35b4c41fb7/odoo_addon_website_sale_secondary_unit-15.0.1.0.0.5-py3-none-any.whl
+[2023-04-23 16:09:16] INFO root fetch - processPackages [pysasl]: Downloading https://files.pythonhosted.org/packages/83/5c/03f3e269c8e251553ebd3185d9d7ead3e8b2a28e859122ff6ac1010981cc/pysasl-1.0.1.tar.gz
+[2023-04-23 16:09:16] INFO root fetch - processPackages [IPFS-Toolkit]: Downloading https://files.pythonhosted.org/packages/63/20/8948def70dcda628e168abdef9eccbe791a2a85fa7b653e7a87197f614f8/IPFS-Toolkit-0.5.2.tar.gz
+[2023-04-23 16:09:16] INFO root fetch - processPackages [perceiver-io]: Downloading https://files.pythonhosted.org/packages/30/d3/3fe1bc64dae68898688704d55b10787c04e8ae22f6eb450e586ee1a8603f/perceiver-io-0.8.2.tar.gz
+[2023-04-23 16:09:16] INFO root fetch - processPackages [threadsnake]: Downloading https://files.pythonhosted.org/packages/f3/d0/1a098531d1dce5fbf702e5eeac8f5e1761ae94a43a6d6d0d96144b712358/threadsnake-1.0.8.tar.gz
+[2023-04-23 16:09:16] INFO root fetch - processPackages [ml-pckg]: Downloading https://files.pythonhosted.org/packages/e8/f6/f2169ed5c5edf70a984be33350be8b985089cdc0bedfc106db4cdc5e59e9/ml_pckg-1.1.7.tar.gz
+[2023-04-23 16:09:16] INFO root fetch - processPackages [findmyorder]: Downloading https://files.pythonhosted.org/packages/67/05/087e64d5c23b6c0e06a2813947176798c01dd31c010950740afd0569bf37/findmyorder-0.0.9.tar.gz
+[2023-04-23 16:09:16] INFO root fetch - processPackages [n0struct]: Downloading https://files.pythonhosted.org/packages/c8/e1/830dfe42348d41784808b3b4f4e0183f8d6f57350c2f6f722ea84da908ea/n0struct-0.2.94.tar.gz
+[2023-04-23 16:09:16] INFO root fetch - processPackages [baiduSpiderCreatedByHanXu]: Downloading https://files.pythonhosted.org/packages/15/04/7b2d1ceafa2aa0416bf2e37839c12fc8475c785acee1b9ecc4e3d1f65b91/baiduSpiderCreatedByHanXu-0.0.3.tar.gz
+[2023-04-23 16:09:16] INFO root fetch - processPackages [ml-pckg]: executing diffoscope
+[2023-04-23 16:09:16] INFO root fetch - processPackages [ml-pckg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_pckg-1.1.6.tar.gz tmp/ml_pckg-1.1.7.tar.gz --markdown 20230423/m/ml-pckg/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-04-23 16:09:16] INFO root fetch - processPackages [arclet-letoderea]: Downloading https://files.pythonhosted.org/packages/0f/5d/738fa88c977a2a3c96d947651cfaff2dbbcb60f999b77a8eb21b31e43107/arclet-letoderea-0.5.0.tar.gz
+[2023-04-23 16:09:16] INFO root fetch - processPackages [findmyorder]: executing diffoscope
+[2023-04-23 16:09:16] INFO root fetch - processPackages [findmyorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findmyorder-0.0.8.tar.gz tmp/findmyorder-0.0.9.tar.gz --markdown 20230423/f/findmyorder/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 16:09:17] INFO root fetch - processPackages [IPFS-Toolkit]: Downloading https://files.pythonhosted.org/packages/d9/2b/546e7806201798a304098ee15fc9d5ad985dd3681916d73e0d08c74f6944/IPFS-Toolkit-0.5.3.tar.gz
+[2023-04-23 16:09:17] INFO root fetch - processPackages [pysasl]: Downloading https://files.pythonhosted.org/packages/66/cd/9d8864829deed8b307af794239d11efc1fdc2b4f482d210cc1fd3595430d/pysasl-1.0.2.tar.gz
+[2023-04-23 16:09:17] INFO root fetch - processPackages [n0struct]: executing diffoscope
+[2023-04-23 16:09:17] INFO root fetch - processPackages [n0struct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/n0struct-0.2.93.tar.gz tmp/n0struct-0.2.94.tar.gz --markdown 20230423/n/n0struct/0.2.93-0.2.94/diff.md --exclude *.pyd
+[2023-04-23 16:09:17] INFO root fetch - processPackages [perceiver-io]: Downloading https://files.pythonhosted.org/packages/66/a9/c0b3bfe871bc5e586b36eee2363c85a7c7fa530509c245c45bc1ca048b34/perceiver-io-0.9.0.tar.gz
+[2023-04-23 16:09:17] INFO root fetch - processPackages [baiduSpiderCreatedByHanXu]: executing diffoscope
+[2023-04-23 16:09:17] INFO root fetch - processPackages [baiduSpiderCreatedByHanXu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baiduspiderCreatedByHanXu-0.0.1.tar.gz tmp/baiduSpiderCreatedByHanXu-0.0.3.tar.gz --markdown 20230423/b/baiduSpiderCreatedByHanXu/0.0.1-0.0.3/diff.md --exclude *.pyd
+[2023-04-23 16:09:17] INFO root fetch - processPackages [arclet-letoderea]: executing diffoscope
+[2023-04-23 16:09:17] INFO root fetch - processPackages [arclet-letoderea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-letoderea-0.4.4.tar.gz tmp/arclet-letoderea-0.5.0.tar.gz --markdown 20230423/a/arclet-letoderea/0.4.4-0.5.0/diff.md --exclude *.pyd
+[2023-04-23 16:09:17] INFO root fetch - processPackages [threadsnake]: Downloading https://files.pythonhosted.org/packages/f4/5d/62ea5d3fe0b425052269ee146a081aea076505110bb62c05c9ef9db06cdd/threadsnake-1.0.9.tar.gz
+[2023-04-23 16:09:17] INFO root fetch - processPackages [IPFS-Toolkit]: executing diffoscope
+[2023-04-23 16:09:17] INFO root fetch - processPackages [IPFS-Toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IPFS-Toolkit-0.5.2.tar.gz tmp/IPFS-Toolkit-0.5.3.tar.gz --markdown 20230423/I/IPFS-Toolkit/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-04-23 16:09:17] INFO root fetch - processPackages [pysasl]: executing diffoscope
+[2023-04-23 16:09:17] INFO root fetch - processPackages [odoo-addon-website-sale-secondary-unit]: Downloading https://files.pythonhosted.org/packages/6a/dc/4b1b03bb214f003ded0613b62369bdf9ecb073150c4182aec02a41a98841/odoo_addon_website_sale_secondary_unit-15.0.1.1.0-py3-none-any.whl
+[2023-04-23 16:09:17] INFO root fetch - processPackages [pysasl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysasl-1.0.1.tar.gz tmp/pysasl-1.0.2.tar.gz --markdown 20230423/p/pysasl/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-23 16:09:17] WARNING root fetch - processPackages [perceiver-io]: Skipping package: exceeds size limit 15401978>=10485760
+[2023-04-23 16:09:17] INFO root fetch - processPackages [perceiver-io]: Start processing: openlimit
+[2023-04-23 16:09:17] INFO root fetch - main [MainThread]: End processing [perceiver-io] error
+[2023-04-23 16:09:17] INFO root fetch - processPackages [openlimit]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-23 16:09:17] INFO root fetch - processPackages [threadsnake]: executing diffoscope
+[2023-04-23 16:09:17] INFO root fetch - processPackages [threadsnake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/threadsnake-1.0.8.tar.gz tmp/threadsnake-1.0.9.tar.gz --markdown 20230423/t/threadsnake/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-23 16:09:17] INFO root fetch - processPackages [odoo-addon-website-sale-secondary-unit]: executing diffoscope
+[2023-04-23 16:09:17] INFO root fetch - processPackages [odoo-addon-website-sale-secondary-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_website_sale_secondary_unit-15.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_website_sale_secondary_unit-15.0.1.1.0-py3-none-any.whl.zip --markdown 20230423/o/odoo-addon-website-sale-secondary-unit/15.0.1.0.0.5-15.0.1.1.0/diff.md --exclude *.pyd
+[2023-04-23 16:09:17] INFO root fetch - processPackages [openlimit]: Downloading https://files.pythonhosted.org/packages/56/63/d9ef0d75b8817a1987a4852c6f6c6d6f7b899ad9dc86e7d2a86b7e3e75eb/openlimit-0.2.3.tar.gz
+[2023-04-23 16:09:17] INFO root fetch - processPackages [openlimit]: Downloading https://files.pythonhosted.org/packages/f8/fd/fc5111d6b972d25db6bad098b0a9d5a716e9ad3f2ed7ee0a5e6fac15d92a/openlimit-0.2.4.tar.gz
+[2023-04-23 16:09:17] INFO root fetch - processPackages [openlimit]: executing diffoscope
+[2023-04-23 16:09:17] INFO root fetch - processPackages [openlimit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openlimit-0.2.3.tar.gz tmp/openlimit-0.2.4.tar.gz --markdown 20230423/o/openlimit/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-23 16:09:18] INFO root fetch - processPackages [ml-pckg]: Start processing: amulet-map-editor
+[2023-04-23 16:09:18] INFO root fetch - main [MainThread]: End processing [ml-pckg]: success
+[2023-04-23 16:09:18] INFO root fetch - processPackages [findmyorder]: Start processing: hydrogibs-giboul
+[2023-04-23 16:09:18] INFO root fetch - main [MainThread]: End processing [findmyorder]: success
+[2023-04-23 16:09:18] INFO root fetch - processPackages [amulet-map-editor]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-04-23 16:09:18] WARNING root fetch - processPackages [hydrogibs-giboul]: Skipping, unable to determine old version
+[2023-04-23 16:09:18] INFO root fetch - processPackages [hydrogibs-giboul]: Start processing: threadsnake
+[2023-04-23 16:09:18] INFO root fetch - main [MainThread]: End processing [hydrogibs-giboul] error
+[2023-04-23 16:09:18] INFO root fetch - processPackages [threadsnake]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-23 16:09:18] INFO root fetch - processPackages [threadsnake]: executing diffoscope
+[2023-04-23 16:09:18] INFO root fetch - processPackages [threadsnake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/threadsnake-1.0.8.tar.gz tmp/threadsnake-1.0.9.tar.gz --markdown 20230423/t/threadsnake/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-23 16:09:18] INFO root fetch - processPackages [amulet-map-editor]: Downloading https://files.pythonhosted.org/packages/3f/22/fe3c93fbda35d1cdacc4caca6d416247cf754bced7899f75801286234efd/amulet-map-editor-0.9.5.tar.gz
+[2023-04-23 16:09:18] INFO root fetch - main [MainThread]: End processing [baiduSpiderCreatedByHanXu]: success
+[2023-04-23 16:09:19] INFO root fetch - main [MainThread]: End processing [pysasl]: success
+[2023-04-23 16:09:19] INFO root fetch - main [MainThread]: End processing [threadsnake]: success
+[2023-04-23 16:09:19] INFO root fetch - processPackages [amulet-map-editor]: Downloading https://files.pythonhosted.org/packages/3f/6c/53a1a90d5583a066d8244e345ab522afff85e8fd5acd593d8195f9fcb7b7/amulet-map-editor-0.9.6.tar.gz
+[2023-04-23 16:09:19] INFO root fetch - main [MainThread]: End processing [openlimit]: success
+[2023-04-23 16:09:19] INFO root fetch - main [MainThread]: End processing [IPFS-Toolkit]: success
+[2023-04-23 16:09:19] INFO root fetch - main [MainThread]: End processing [arclet-letoderea]: success
+[2023-04-23 16:09:19] INFO root fetch - main [MainThread]: End processing [odoo-addon-website-sale-secondary-unit]: success
+[2023-04-23 16:09:20] INFO root fetch - main [MainThread]: End processing [threadsnake]: success
+[2023-04-23 16:09:20] INFO root fetch - main [MainThread]: End processing [n0struct]: success
+[2023-04-23 16:09:20] INFO root fetch - processPackages [amulet-map-editor]: executing diffoscope
+[2023-04-23 16:09:20] INFO root fetch - processPackages [amulet-map-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amulet-map-editor-0.9.5.tar.gz tmp/amulet-map-editor-0.9.6.tar.gz --markdown 20230423/a/amulet-map-editor/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-04-23 16:09:25] INFO root fetch - main [MainThread]: End processing [amulet-map-editor]: success
+[2023-04-23 16:09:25] INFO root fetch - main [MainThread]: Store serial: [17822835]
