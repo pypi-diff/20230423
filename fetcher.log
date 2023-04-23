@@ -9272,3 +9272,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 16:35:37] INFO root fetch - main [MainThread]: End processing [hmcode]: success
 [2023-04-23 16:35:39] INFO root fetch - main [MainThread]: End processing [sdbus-networkmanager]: success
 [2023-04-23 16:35:39] INFO root fetch - main [MainThread]: Store serial: [17823045]
+[2023-04-23 16:40:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823045]
+[2023-04-23 16:40:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-23 16:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pywhu3d
+[2023-04-23 16:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: npyx
+[2023-04-23 16:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tap-shiftbase
+[2023-04-23 16:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gama-config
+[2023-04-23 16:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gama-cli
+[2023-04-23 16:40:48] INFO root fetch - processPackages [pywhu3d]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-23 16:40:48] INFO root fetch - processPackages [gama-config]: New version: [1.9.0] Old Version: [1.12.0]
+[2023-04-23 16:40:48] INFO root fetch - processPackages [gama-cli]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-23 16:40:48] INFO root fetch - processPackages [tap-shiftbase]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-23 16:40:48] INFO root fetch - processPackages [npyx]: New version: [2.8.2] Old Version: [2.8.1]
+[2023-04-23 16:40:48] INFO root fetch - processPackages [gama-cli]: executing diffoscope
+[2023-04-23 16:40:48] INFO root fetch - processPackages [gama-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gama_cli-1.8.0.tar.gz tmp/gama_cli-1.9.0.tar.gz --markdown 20230423/g/gama-cli/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-23 16:40:48] INFO root fetch - processPackages [tap-shiftbase]: executing diffoscope
+[2023-04-23 16:40:48] INFO root fetch - processPackages [tap-shiftbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap_shiftbase-0.0.3.tar.gz tmp/tap_shiftbase-0.0.4.tar.gz --markdown 20230423/t/tap-shiftbase/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-23 16:40:48] INFO root fetch - processPackages [gama-config]: executing diffoscope
+[2023-04-23 16:40:48] INFO root fetch - processPackages [gama-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gama_config-1.12.0.tar.gz tmp/gama_config-1.9.0.tar.gz --markdown 20230423/g/gama-config/1.12.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-23 16:40:48] INFO root fetch - processPackages [pywhu3d]: Downloading https://files.pythonhosted.org/packages/f1/c0/591a6e4474f19f106acead03c21b505192cf2a0018b4fa93c1c4fac03525/pywhu3d-0.2.1-py3-none-any.whl
+[2023-04-23 16:40:48] INFO root fetch - processPackages [npyx]: Downloading https://files.pythonhosted.org/packages/91/61/3d555b51b5c3db11a35178629a6d0d3c6eebb771d57c4f8b899737400faa/npyx-2.8.1.tar.gz
+[2023-04-23 16:40:48] INFO root fetch - processPackages [npyx]: Downloading https://files.pythonhosted.org/packages/6a/ef/09224a2835dedfcbfbce8c29b1bd915ddd1b66d604ae36f6efb73b932e2a/npyx-2.8.2.tar.gz
+[2023-04-23 16:40:48] INFO root fetch - processPackages [pywhu3d]: Downloading https://files.pythonhosted.org/packages/97/65/4ea366f9f28e1a51999188aae13f6e0fd34ca465ec2f5111da067890a8a8/pywhu3d-0.2.2-py3-none-any.whl
+[2023-04-23 16:40:48] INFO root fetch - processPackages [npyx]: executing diffoscope
+[2023-04-23 16:40:48] INFO root fetch - processPackages [npyx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/npyx-2.8.1.tar.gz tmp/npyx-2.8.2.tar.gz --markdown 20230423/n/npyx/2.8.1-2.8.2/diff.md --exclude *.pyd
+[2023-04-23 16:40:48] INFO root fetch - processPackages [pywhu3d]: executing diffoscope
+[2023-04-23 16:40:48] INFO root fetch - processPackages [pywhu3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywhu3d-0.2.1-py3-none-any.whl.zip tmp/pywhu3d-0.2.2-py3-none-any.whl.zip --markdown 20230423/p/pywhu3d/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-23 16:40:49] INFO root fetch - main [MainThread]: End processing [gama-config]: success
+[2023-04-23 16:40:49] INFO root fetch - main [MainThread]: End processing [gama-cli]: success
+[2023-04-23 16:40:50] INFO root fetch - main [MainThread]: End processing [pywhu3d]: success
+[2023-04-23 16:40:50] INFO root fetch - main [MainThread]: End processing [npyx]: success
+[2023-04-23 16:40:50] INFO root fetch - main [MainThread]: End processing [tap-shiftbase]: success
+[2023-04-23 16:40:50] INFO root fetch - main [MainThread]: Store serial: [17823062]
