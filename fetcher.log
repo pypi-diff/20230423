@@ -6119,3 +6119,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 12:04:11] INFO root fetch - main [MainThread]: End processing [cc12703-uiautomator2]: success
 [2023-04-23 12:04:24] INFO root fetch - main [MainThread]: End processing [quiltz-domain]: success
 [2023-04-23 12:04:24] INFO root fetch - main [MainThread]: Store serial: [17821171]
+[2023-04-23 12:09:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17821171]
+[2023-04-23 12:09:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-23 12:09:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-mcqq
+[2023-04-23 12:09:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zytlib
+[2023-04-23 12:09:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: proxy-supporter
+[2023-04-23 12:09:33] WARNING root fetch - processPackages [proxy-supporter]: Skipping, unable to determine old version
+[2023-04-23 12:09:33] INFO root fetch - processPackages [nonebot-plugin-mcqq]: New version: [1.1.5.post5] Old Version: [1.1.5.post4]
+[2023-04-23 12:09:33] INFO root fetch - main [MainThread]: End processing [proxy-supporter] error
+[2023-04-23 12:09:33] INFO root fetch - processPackages [zytlib]: New version: [0.3.328] Old Version: [0.3.327]
+[2023-04-23 12:09:33] INFO root fetch - processPackages [nonebot-plugin-mcqq]: Downloading https://files.pythonhosted.org/packages/af/d6/0a1976f0e0c12f82d4d0d7d75bf4605bdf8b146ac76d90f238296973d0c2/nonebot-plugin-mcqq-1.1.5.post5.tar.gz
+[2023-04-23 12:09:33] INFO root fetch - processPackages [zytlib]: Downloading https://files.pythonhosted.org/packages/d2/4e/3944024a9ae1039abb12aa9349ad3c9db4a97b797fd5e9adcc50444621e1/zytlib-0.3.328-py3-none-any.whl
+[2023-04-23 12:09:33] INFO root fetch - processPackages [zytlib]: executing diffoscope
+[2023-04-23 12:09:33] INFO root fetch - processPackages [nonebot-plugin-mcqq]: executing diffoscope
+[2023-04-23 12:09:33] INFO root fetch - processPackages [nonebot-plugin-mcqq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-mcqq-1.1.5.post4.tar.gz tmp/nonebot-plugin-mcqq-1.1.5.post5.tar.gz --markdown 20230423/n/nonebot-plugin-mcqq/1.1.5.post4-1.1.5.post5/diff.md --exclude *.pyd
+[2023-04-23 12:09:33] INFO root fetch - processPackages [zytlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zytlib-0.3.327-py3-none-any.whl.zip tmp/zytlib-0.3.328-py3-none-any.whl.zip --markdown 20230423/z/zytlib/0.3.327-0.3.328/diff.md --exclude *.pyd
+[2023-04-23 12:09:34] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-mcqq]: success
+[2023-04-23 12:09:34] INFO root fetch - main [MainThread]: End processing [zytlib]: success
+[2023-04-23 12:09:34] INFO root fetch - main [MainThread]: Store serial: [17821182]
