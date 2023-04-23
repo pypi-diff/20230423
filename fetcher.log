@@ -1691,3 +1691,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 03:03:26] INFO root fetch - main [MainThread]: End processing [flet]: success
 [2023-04-23 03:03:56] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2023-04-23 03:03:56] INFO root fetch - main [MainThread]: Store serial: [17818521]
+[2023-04-23 03:08:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818521]
+[2023-04-23 03:09:04] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 03:09:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-lambda-layer-curl
+[2023-04-23 03:09:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: np-queuey
+[2023-04-23 03:09:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lmao-nlp
+[2023-04-23 03:09:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: NotifyUI
+[2023-04-23 03:09:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: proconip
+[2023-04-23 03:09:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fedbase
+[2023-04-23 03:09:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fedbase
+[2023-04-23 03:09:04] INFO root fetch - processPackages [fedbase]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-23 03:09:04] WARNING root fetch - processPackages [NotifyUI]: Skipping, unable to determine old version
+[2023-04-23 03:09:04] INFO root fetch - main [MainThread]: End processing [NotifyUI] error
+[2023-04-23 03:09:04] INFO root fetch - processPackages [lmao-nlp]: New version: [0.0.1b3] Old Version: [0.0.1b2]
+[2023-04-23 03:09:04] WARNING root fetch - processPackages [proconip]: Skipping, unable to determine old version
+[2023-04-23 03:09:04] INFO root fetch - main [MainThread]: End processing [proconip] error
+[2023-04-23 03:09:04] INFO root fetch - processPackages [np-queuey]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 03:09:04] INFO root fetch - processPackages [fedbase]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-23 03:09:04] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-23 03:09:05] INFO root fetch - processPackages [fedbase]: Downloading https://files.pythonhosted.org/packages/fd/e6/1668a4848684fac17f795c73509435344cb3e6bd0fb2531da6d0cfab4953/fedbase-0.9.4.tar.gz
+[2023-04-23 03:09:05] INFO root fetch - processPackages [fedbase]: Downloading https://files.pythonhosted.org/packages/fd/e6/1668a4848684fac17f795c73509435344cb3e6bd0fb2531da6d0cfab4953/fedbase-0.9.4.tar.gz
+[2023-04-23 03:09:05] INFO root fetch - processPackages [np-queuey]: executing diffoscope
+[2023-04-23 03:09:05] INFO root fetch - processPackages [np-queuey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_queuey-0.1.8.tar.gz tmp/np_queuey-0.1.9.tar.gz --markdown 20230423/n/np-queuey/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 03:09:05] INFO root fetch - processPackages [lmao-nlp]: Downloading https://files.pythonhosted.org/packages/1d/59/63a9182f1f11c134d8e697cd03fdee30cadd443cb6fb14abc58a0d12b711/lmao-nlp-0.0.1b3.tar.gz
+[2023-04-23 03:09:05] INFO root fetch - processPackages [fedbase]: Downloading https://files.pythonhosted.org/packages/bf/bb/e65128085e5daa8bfb15d6b4e8c115c62ffc257ae446961cf1d6ca591d13/fedbase-0.9.5.tar.gz
+[2023-04-23 03:09:05] INFO root fetch - processPackages [fedbase]: Downloading https://files.pythonhosted.org/packages/bf/bb/e65128085e5daa8bfb15d6b4e8c115c62ffc257ae446961cf1d6ca591d13/fedbase-0.9.5.tar.gz
+[2023-04-23 03:09:05] INFO root fetch - processPackages [lmao-nlp]: executing diffoscope
+[2023-04-23 03:09:05] INFO root fetch - processPackages [lmao-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lmao-nlp-0.0.1b2.tar.gz tmp/lmao-nlp-0.0.1b3.tar.gz --markdown 20230423/l/lmao-nlp/0.0.1b2-0.0.1b3/diff.md --exclude *.pyd
+[2023-04-23 03:09:05] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-04-23 03:09:05] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230423/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-23 03:09:05] INFO root fetch - processPackages [fedbase]: executing diffoscope
+[2023-04-23 03:09:05] INFO root fetch - processPackages [fedbase]: executing diffoscope
+[2023-04-23 03:09:05] INFO root fetch - processPackages [fedbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fedbase-0.9.4.tar.gz tmp/fedbase-0.9.5.tar.gz --markdown 20230423/f/fedbase/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-23 03:09:05] INFO root fetch - processPackages [fedbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fedbase-0.9.4.tar.gz tmp/fedbase-0.9.5.tar.gz --markdown 20230423/f/fedbase/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-23 03:09:06] INFO root fetch - main [MainThread]: End processing [np-queuey]: success
+[2023-04-23 03:09:06] INFO root fetch - main [MainThread]: End processing [lmao-nlp]: success
+[2023-04-23 03:09:06] INFO root fetch - main [MainThread]: End processing [fedbase]: success
+[2023-04-23 03:09:06] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-04-23 03:09:07] INFO root fetch - main [MainThread]: End processing [fedbase]: success
+[2023-04-23 03:09:07] INFO root fetch - main [MainThread]: Store serial: [17818545]
