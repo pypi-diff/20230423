@@ -2516,3 +2516,17 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 04:54:52] INFO root fetch - main [MainThread]: End processing [onvif-gui]: success
 [2023-04-23 04:55:07] INFO root fetch - main [MainThread]: End processing [fabrictestbed-mflib]: success
 [2023-04-23 04:55:07] INFO root fetch - main [MainThread]: Store serial: [17819138]
+[2023-04-23 05:00:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819138]
+[2023-04-23 05:00:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-23 05:00:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: np-queuey
+[2023-04-23 05:00:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onvif-gui
+[2023-04-23 05:00:16] INFO root fetch - processPackages [np-queuey]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 05:00:16] INFO root fetch - processPackages [onvif-gui]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-23 05:00:16] INFO root fetch - processPackages [np-queuey]: executing diffoscope
+[2023-04-23 05:00:16] INFO root fetch - processPackages [np-queuey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_queuey-0.1.8.tar.gz tmp/np_queuey-0.1.9.tar.gz --markdown 20230423/n/np-queuey/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 05:00:16] INFO root fetch - processPackages [onvif-gui]: Downloading https://files.pythonhosted.org/packages/b5/56/8e4f9cdd34db02a974bd20fc3b0aead1acd219166dd69eb256e36eebeab2/onvif-gui-1.0.3.tar.gz
+[2023-04-23 05:00:17] INFO root fetch - processPackages [onvif-gui]: executing diffoscope
+[2023-04-23 05:00:17] INFO root fetch - processPackages [onvif-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onvif_gui-1.0.2.tar.gz tmp/onvif-gui-1.0.3.tar.gz --markdown 20230423/o/onvif-gui/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-23 05:00:17] INFO root fetch - main [MainThread]: End processing [np-queuey]: success
+[2023-04-23 05:00:19] INFO root fetch - main [MainThread]: End processing [onvif-gui]: success
+[2023-04-23 05:00:19] INFO root fetch - main [MainThread]: Store serial: [17819143]
