@@ -14029,3 +14029,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 23:34:50] INFO root fetch - main [MainThread]: End processing [json-stream-to-standard-types]: success
 [2023-04-23 23:35:05] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-23 23:35:05] INFO root fetch - main [MainThread]: Store serial: [17826027]
+[2023-04-23 23:40:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17826027]
+[2023-04-23 23:40:14] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-23 23:40:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: redast
+[2023-04-23 23:40:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: argcomplete
+[2023-04-23 23:40:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: semantra
+[2023-04-23 23:40:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lightning-rod
+[2023-04-23 23:40:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: typer-tinydb
+[2023-04-23 23:40:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wordpress-scanner
+[2023-04-23 23:40:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: foursight-cgap
+[2023-04-23 23:40:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: forust
+[2023-04-23 23:40:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: foursight
+[2023-04-23 23:40:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mutwo.music
+[2023-04-23 23:40:14] INFO root fetch - processPackages [redast]: New version: [0.1.7] Old Version: [0.1.5]
+[2023-04-23 23:40:14] INFO root fetch - processPackages [semantra]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 23:40:14] INFO root fetch - processPackages [mutwo.music]: New version: [0.23.0] Old Version: [0.22.0]
+[2023-04-23 23:40:14] WARNING root fetch - processPackages [typer-tinydb]: Skipping, unable to determine old version
+[2023-04-23 23:40:14] INFO root fetch - main [MainThread]: End processing [typer-tinydb] error
+[2023-04-23 23:40:14] INFO root fetch - processPackages [wordpress-scanner]: New version: [1.2] Old Version: [1.1]
+[2023-04-23 23:40:14] INFO root fetch - processPackages [forust]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-23 23:40:14] INFO root fetch - processPackages [argcomplete]: New version: [3.0.7] Old Version: [3.0.6]
+[2023-04-23 23:40:14] INFO root fetch - processPackages [foursight]: New version: [3.4.0.5b3] Old Version: [3.4.0.5b29]
+[2023-04-23 23:40:14] INFO root fetch - processPackages [foursight-cgap]: New version: [3.4.0.5b3] Old Version: [3.4.0.5b29]
+[2023-04-23 23:40:14] WARNING root fetch - processPackages [lightning-rod]: Skipping, unable to determine old version
+[2023-04-23 23:40:14] INFO root fetch - main [MainThread]: End processing [lightning-rod] error
+[2023-04-23 23:40:14] INFO root fetch - processPackages [foursight]: Downloading https://files.pythonhosted.org/packages/9d/e6/50e7ef1c483b9435166a4c6dea19bb16ce252ec4c5332c6812d0c157d8cd/foursight-3.4.0.5b29.tar.gz
+[2023-04-23 23:40:14] INFO root fetch - processPackages [foursight-cgap]: Downloading https://files.pythonhosted.org/packages/5f/f0/5c35c6d631f192bd3224f40c011b33eadc1b1f550ccb2ced1d583849f08b/foursight_cgap-3.4.0.5b29.tar.gz
+[2023-04-23 23:40:14] INFO root fetch - processPackages [redast]: Downloading https://files.pythonhosted.org/packages/3a/78/56f0658019b0569b79077a5e02e7ea4b95bb87dc0e56f3a159cf647adf65/redast-0.1.5.tar.gz
+[2023-04-23 23:40:14] INFO root fetch - processPackages [semantra]: Downloading https://files.pythonhosted.org/packages/1d/24/e5931a32d5140ef22562482d55df92e9ec800d03fa265fba089ca3e7a348/semantra-0.1.1.tar.gz
+[2023-04-23 23:40:14] INFO root fetch - processPackages [wordpress-scanner]: Downloading https://files.pythonhosted.org/packages/70/70/f27ba6d470b7068b7bd136fcbea91542955612352b401a20d3f5fdee0dd1/wordpress-scanner-1.1.tar.gz
+[2023-04-23 23:40:15] INFO root fetch - processPackages [mutwo.music]: Downloading https://files.pythonhosted.org/packages/1d/25/10510d393baa71b540024e20d32f63497c005f4547fc3acdbe379475f71f/mutwo.music-0.22.0.tar.gz
+[2023-04-23 23:40:15] INFO root fetch - processPackages [forust]: Downloading https://files.pythonhosted.org/packages/8a/19/62135325b0800c35b106dd7726a7451c265c7fbdc00e2a7458c3bc997a33/forust-0.2.2.tar.gz
+[2023-04-23 23:40:15] INFO root fetch - processPackages [redast]: Downloading https://files.pythonhosted.org/packages/5a/f8/a2ec3111020876579fc8c03865810e9a2437725a26d25f15fe870ce20014/redast-0.1.7.tar.gz
+[2023-04-23 23:40:15] INFO root fetch - processPackages [foursight-cgap]: executing diffoscope
+[2023-04-23 23:40:15] INFO root fetch - processPackages [foursight-cgap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_cgap-3.4.0.5b29.tar.gz tmp/foursight_cgap-3.4.0.5b3.tar.gz --markdown 20230423/f/foursight-cgap/3.4.0.5b29-3.4.0.5b3/diff.md --exclude *.pyd
+[2023-04-23 23:40:15] INFO root fetch - processPackages [wordpress-scanner]: Downloading https://files.pythonhosted.org/packages/db/d1/1bf158d9da6ac4ab5ad4f1b45382e971981ba9dd73b1fa7e111084580ddc/wordpress-scanner-1.2.tar.gz
+[2023-04-23 23:40:15] INFO root fetch - processPackages [semantra]: executing diffoscope
+[2023-04-23 23:40:15] INFO root fetch - processPackages [semantra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantra-0.1.0.tar.gz tmp/semantra-0.1.1.tar.gz --markdown 20230423/s/semantra/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 23:40:15] INFO root fetch - processPackages [foursight]: executing diffoscope
+[2023-04-23 23:40:15] INFO root fetch - processPackages [foursight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight-3.4.0.5b29.tar.gz tmp/foursight-3.4.0.5b3.tar.gz --markdown 20230423/f/foursight/3.4.0.5b29-3.4.0.5b3/diff.md --exclude *.pyd
+[2023-04-23 23:40:15] INFO root fetch - processPackages [mutwo.music]: Downloading https://files.pythonhosted.org/packages/11/3a/75ed95b3255f3924f38c2c25aee1adbf659418517437c109961ba0f11423/mutwo.music-0.23.0.tar.gz
+[2023-04-23 23:40:15] INFO root fetch - processPackages [redast]: executing diffoscope
+[2023-04-23 23:40:15] INFO root fetch - processPackages [redast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redast-0.1.5.tar.gz tmp/redast-0.1.7.tar.gz --markdown 20230423/r/redast/0.1.5-0.1.7/diff.md --exclude *.pyd
+[2023-04-23 23:40:15] INFO root fetch - processPackages [wordpress-scanner]: executing diffoscope
+[2023-04-23 23:40:15] INFO root fetch - processPackages [wordpress-scanner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wordpress-scanner-1.1.tar.gz tmp/wordpress-scanner-1.2.tar.gz --markdown 20230423/w/wordpress-scanner/1.1-1.2/diff.md --exclude *.pyd
+[2023-04-23 23:40:15] INFO root fetch - processPackages [argcomplete]: Downloading https://files.pythonhosted.org/packages/d0/d7/b79e6ebc82db36671a2ae26f29cf19320697445d9cae9eef176340a1d741/argcomplete-3.0.7.tar.gz
+[2023-04-23 23:40:15] INFO root fetch - processPackages [forust]: executing diffoscope
+[2023-04-23 23:40:15] INFO root fetch - processPackages [forust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/forust-0.2.1.tar.gz tmp/forust-0.2.2.tar.gz --markdown 20230423/f/forust/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-23 23:40:15] INFO root fetch - processPackages [mutwo.music]: executing diffoscope
+[2023-04-23 23:40:15] INFO root fetch - processPackages [mutwo.music]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mutwo.music-0.22.0.tar.gz tmp/mutwo.music-0.23.0.tar.gz --markdown 20230423/m/mutwo.music/0.22.0-0.23.0/diff.md --exclude *.pyd
+[2023-04-23 23:40:15] INFO root fetch - processPackages [argcomplete]: executing diffoscope
+[2023-04-23 23:40:15] INFO root fetch - processPackages [argcomplete]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argcomplete-3.0.6.tar.gz tmp/argcomplete-3.0.7.tar.gz --markdown 20230423/a/argcomplete/3.0.6-3.0.7/diff.md --exclude *.pyd
+[2023-04-23 23:40:16] INFO root fetch - main [MainThread]: End processing [wordpress-scanner]: success
+[2023-04-23 23:40:16] INFO root fetch - main [MainThread]: End processing [redast]: success
+[2023-04-23 23:40:17] INFO root fetch - main [MainThread]: End processing [argcomplete]: success
+[2023-04-23 23:40:17] INFO root fetch - main [MainThread]: End processing [forust]: success
+[2023-04-23 23:40:17] INFO root fetch - main [MainThread]: End processing [mutwo.music]: success
+[2023-04-23 23:40:17] INFO root fetch - main [MainThread]: End processing [foursight-cgap]: success
+[2023-04-23 23:40:18] INFO root fetch - main [MainThread]: End processing [foursight]: success
+[2023-04-23 23:40:45] INFO root fetch - main [MainThread]: End processing [semantra]: success
+[2023-04-23 23:40:45] INFO root fetch - main [MainThread]: Store serial: [17826065]
