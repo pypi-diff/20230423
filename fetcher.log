@@ -3597,3 +3597,26 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 07:44:39] INFO root fetch - main [MainThread]: End processing [drf-recaptcha]: success
 [2023-04-23 07:44:40] INFO root fetch - main [MainThread]: End processing [n0struct]: success
 [2023-04-23 07:44:40] INFO root fetch - main [MainThread]: Store serial: [17819704]
+[2023-04-23 07:49:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819704]
+[2023-04-23 07:49:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-23 07:49:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: telugu
+[2023-04-23 07:49:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-mixin
+[2023-04-23 07:49:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nestersows
+[2023-04-23 07:49:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anyon
+[2023-04-23 07:49:49] WARNING root fetch - processPackages [nonebot-plugin-mixin]: Skipping, unable to determine old version
+[2023-04-23 07:49:49] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-mixin] error
+[2023-04-23 07:49:49] WARNING root fetch - processPackages [telugu]: Skipping, unable to determine old version
+[2023-04-23 07:49:49] INFO root fetch - main [MainThread]: End processing [telugu] error
+[2023-04-23 07:49:49] INFO root fetch - processPackages [nestersows]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-23 07:49:49] INFO root fetch - processPackages [anyon]: New version: [3.1.23] Old Version: [3.1.22]
+[2023-04-23 07:49:49] INFO root fetch - processPackages [nestersows]: Downloading https://files.pythonhosted.org/packages/58/16/fdfcc715b2e0722848865e5bc2806d584ee23241579488237d6d16a72cde/nestersows-1.0.0.tar.gz
+[2023-04-23 07:49:49] INFO root fetch - processPackages [anyon]: Downloading https://files.pythonhosted.org/packages/61/1e/d781fa9c4bc811344e2bca91e25454e67a44e6982b6c9fac264760c8162a/anyon-3.1.22-cp311-cp311-win_amd64.whl
+[2023-04-23 07:49:49] INFO root fetch - processPackages [nestersows]: Downloading https://files.pythonhosted.org/packages/ab/66/a2f28babe8f68d585454b01110fff27b28fa9854cb8cf5a5af6cca304ab3/nestersows-1.1.0.tar.gz
+[2023-04-23 07:49:50] INFO root fetch - processPackages [anyon]: Downloading https://files.pythonhosted.org/packages/7c/5a/d481f6a689cc32dc20f6382ffff4dfb3309a9b9d096a3e8d7cdacdac8dfe/anyon-3.1.23-cp311-cp311-macosx_10_9_universal2.whl
+[2023-04-23 07:49:50] INFO root fetch - processPackages [nestersows]: executing diffoscope
+[2023-04-23 07:49:50] INFO root fetch - processPackages [nestersows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nestersows-1.0.0.tar.gz tmp/nestersows-1.1.0.tar.gz --markdown 20230423/n/nestersows/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-23 07:49:50] INFO root fetch - processPackages [anyon]: executing diffoscope
+[2023-04-23 07:49:50] INFO root fetch - processPackages [anyon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyon-3.1.22-cp311-cp311-win_amd64.whl.zip tmp/anyon-3.1.23-cp311-cp311-macosx_10_9_universal2.whl.zip --markdown 20230423/a/anyon/3.1.22-3.1.23/diff.md --exclude *.pyd
+[2023-04-23 07:49:51] INFO root fetch - main [MainThread]: End processing [nestersows]: success
+[2023-04-23 07:49:51] INFO root fetch - main [MainThread]: End processing [anyon]: success
+[2023-04-23 07:49:51] INFO root fetch - main [MainThread]: Store serial: [17819721]
