@@ -3373,3 +3373,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 07:18:38] INFO root fetch - main [MainThread]: End processing [txapi]: success
 [2023-04-23 07:18:38] INFO root fetch - main [MainThread]: End processing [txapi]: success
 [2023-04-23 07:18:38] INFO root fetch - main [MainThread]: Store serial: [17819575]
+[2023-04-23 07:23:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819575]
+[2023-04-23 07:23:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-23 07:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: modal-client
+[2023-04-23 07:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DNBC4dev
+[2023-04-23 07:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyHRM
+[2023-04-23 07:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Scrapy-Distributed
+[2023-04-23 07:23:47] INFO root fetch - processPackages [pyHRM]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-23 07:23:47] INFO root fetch - processPackages [DNBC4dev]: New version: [2.1.6] Old Version: [2.1.5]
+[2023-04-23 07:23:47] INFO root fetch - processPackages [Scrapy-Distributed]: New version: [2023.4.23] Old Version: [2020.12.1]
+[2023-04-23 07:23:47] INFO root fetch - processPackages [modal-client]: New version: [0.49.2010] Old Version: [0.49.2007]
+[2023-04-23 07:23:47] INFO root fetch - processPackages [pyHRM]: Downloading https://files.pythonhosted.org/packages/e6/d2/c37643b469413b8621a635ac33ffedc7d9abd52af3bc8e5c69839cab68f5/pyHRM-0.1.2.tar.gz
+[2023-04-23 07:23:47] INFO root fetch - processPackages [Scrapy-Distributed]: Downloading https://files.pythonhosted.org/packages/b4/14/5da63637aa9a0112d2c45dfd60aedc38726a73528ba2cf254028b4186274/Scrapy-Distributed-2020.12.1.tar.gz
+[2023-04-23 07:23:47] INFO root fetch - processPackages [DNBC4dev]: Downloading https://files.pythonhosted.org/packages/db/97/093abbdff815f9868133e0828883b9d06fbc5e3319e40aa3030551632d2a/DNBC4dev-2.1.5.tar.gz
+[2023-04-23 07:23:48] INFO root fetch - processPackages [modal-client]: executing diffoscope
+[2023-04-23 07:23:48] INFO root fetch - processPackages [modal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal_client-0.49.2007-py3-none-any.whl.zip tmp/modal_client-0.49.2010-py3-none-any.whl.zip --markdown 20230423/m/modal-client/0.49.2007-0.49.2010/diff.md --exclude *.pyd
+[2023-04-23 07:23:48] WARNING root fetch - processPackages [DNBC4dev]: Skipping package: exceeds size limit 28763083>=10485760
+[2023-04-23 07:23:48] INFO root fetch - main [MainThread]: End processing [DNBC4dev] error
+[2023-04-23 07:23:48] INFO root fetch - processPackages [Scrapy-Distributed]: Downloading https://files.pythonhosted.org/packages/ea/4f/45752f122a7eef6e33ebae677a355a17267fe86c1cf7a69431259d62a6af/Scrapy-Distributed-2023.4.23.tar.gz
+[2023-04-23 07:23:48] INFO root fetch - processPackages [pyHRM]: Downloading https://files.pythonhosted.org/packages/d3/ff/2b8d3ee8218f7de949fb50fa969e529907724fc40f3da4779a2d375de1fc/pyHRM-0.1.3.tar.gz
+[2023-04-23 07:23:48] INFO root fetch - processPackages [Scrapy-Distributed]: executing diffoscope
+[2023-04-23 07:23:48] INFO root fetch - processPackages [Scrapy-Distributed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Scrapy-Distributed-2020.12.1.tar.gz tmp/Scrapy-Distributed-2023.4.23.tar.gz --markdown 20230423/S/Scrapy-Distributed/2020.12.1-2023.4.23/diff.md --exclude *.pyd
+[2023-04-23 07:23:48] INFO root fetch - processPackages [pyHRM]: executing diffoscope
+[2023-04-23 07:23:48] INFO root fetch - processPackages [pyHRM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyHRM-0.1.2.tar.gz tmp/pyHRM-0.1.3.tar.gz --markdown 20230423/p/pyHRM/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-23 07:23:49] INFO root fetch - main [MainThread]: End processing [Scrapy-Distributed]: success
+[2023-04-23 07:23:49] INFO root fetch - main [MainThread]: End processing [pyHRM]: success
+[2023-04-23 07:23:50] INFO root fetch - main [MainThread]: End processing [modal-client]: success
+[2023-04-23 07:23:50] INFO root fetch - main [MainThread]: Store serial: [17819586]
