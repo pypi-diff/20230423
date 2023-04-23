@@ -2165,3 +2165,26 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 03:57:20] INFO root fetch - main [MainThread]: End processing [jawanndenn]: success
 [2023-04-23 03:57:27] INFO root fetch - main [MainThread]: End processing [alacorder]: success
 [2023-04-23 03:57:27] INFO root fetch - main [MainThread]: Store serial: [17818846]
+[2023-04-23 04:02:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818846]
+[2023-04-23 04:02:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-23 04:02:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vnpy-ctabacktester
+[2023-04-23 04:02:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-audio-plugin-simple
+[2023-04-23 04:02:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hat-syslog
+[2023-04-23 04:02:35] INFO root fetch - processPackages [vnpy-ctabacktester]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-23 04:02:35] INFO root fetch - processPackages [ovos-audio-plugin-simple]: New version: [0.0.2a3] Old Version: [0.0.2a2]
+[2023-04-23 04:02:35] INFO root fetch - processPackages [hat-syslog]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-04-23 04:02:36] INFO root fetch - processPackages [vnpy-ctabacktester]: Downloading https://files.pythonhosted.org/packages/f8/31/bc07aeba892e719ab3920b6322dfaa01a0a8e2fcefc01b3cf82999548e43/vnpy_ctabacktester-1.1.0.tar.gz
+[2023-04-23 04:02:36] INFO root fetch - processPackages [ovos-audio-plugin-simple]: Downloading https://files.pythonhosted.org/packages/03/44/f440a3e94e0d82afac63422ad4eacd6feeec66b8f44daf84ffe980d64489/ovos_audio_plugin_simple-0.0.2a2-py3-none-any.whl
+[2023-04-23 04:02:36] INFO root fetch - processPackages [hat-syslog]: Downloading https://files.pythonhosted.org/packages/aa/94/14f4eb1a43b1ab443af7fc311f56674ac8274e00266f78aecc30a713945a/hat_syslog-0.7.4-cp38.cp39.cp310.cp311-none-any.whl
+[2023-04-23 04:02:36] INFO root fetch - processPackages [vnpy-ctabacktester]: Downloading https://files.pythonhosted.org/packages/d4/29/1c761fffd7dc7ab812a605ec053564bcdeaf7e72aef2a79ee45e354ab470/vnpy_ctabacktester-1.1.1.tar.gz
+[2023-04-23 04:02:36] INFO root fetch - processPackages [hat-syslog]: executing diffoscope
+[2023-04-23 04:02:36] INFO root fetch - processPackages [hat-syslog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hat_syslog-0.7.3-cp38.cp39.cp310.cp311-none-any.whl.zip tmp/hat_syslog-0.7.4-cp38.cp39.cp310.cp311-none-any.whl.zip --markdown 20230423/h/hat-syslog/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2023-04-23 04:02:36] INFO root fetch - processPackages [vnpy-ctabacktester]: executing diffoscope
+[2023-04-23 04:02:36] INFO root fetch - processPackages [vnpy-ctabacktester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnpy_ctabacktester-1.1.0.tar.gz tmp/vnpy_ctabacktester-1.1.1.tar.gz --markdown 20230423/v/vnpy-ctabacktester/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-23 04:02:36] INFO root fetch - processPackages [ovos-audio-plugin-simple]: Downloading https://files.pythonhosted.org/packages/f9/3c/605a1c131e768357be71670dc8b1c969bf2afbfe8c3736368275325d1ddd/ovos_audio_plugin_simple-0.0.2a3-py3-none-any.whl
+[2023-04-23 04:02:36] INFO root fetch - processPackages [ovos-audio-plugin-simple]: executing diffoscope
+[2023-04-23 04:02:36] INFO root fetch - processPackages [ovos-audio-plugin-simple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_audio_plugin_simple-0.0.2a2-py3-none-any.whl.zip tmp/ovos_audio_plugin_simple-0.0.2a3-py3-none-any.whl.zip --markdown 20230423/o/ovos-audio-plugin-simple/0.0.2a2-0.0.2a3/diff.md --exclude *.pyd
+[2023-04-23 04:02:37] INFO root fetch - main [MainThread]: End processing [vnpy-ctabacktester]: success
+[2023-04-23 04:02:37] INFO root fetch - main [MainThread]: End processing [ovos-audio-plugin-simple]: success
+[2023-04-23 04:02:39] INFO root fetch - main [MainThread]: End processing [hat-syslog]: success
+[2023-04-23 04:02:39] INFO root fetch - main [MainThread]: Store serial: [17818854]
