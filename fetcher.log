@@ -9488,3 +9488,64 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 16:56:41] INFO root fetch - main [MainThread]: End processing [paper-admin]: success
 [2023-04-23 16:56:43] INFO root fetch - main [MainThread]: End processing [spid-cie-oidc]: success
 [2023-04-23 16:56:43] INFO root fetch - main [MainThread]: Store serial: [17823194]
+[2023-04-23 17:01:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823194]
+[2023-04-23 17:01:51] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-23 17:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cascade-ml
+[2023-04-23 17:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tap-shiftbase
+[2023-04-23 17:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: api-analytics
+[2023-04-23 17:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: enrRiceTrait
+[2023-04-23 17:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tornado-analytics
+[2023-04-23 17:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: psyki
+[2023-04-23 17:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: twarc2sql
+[2023-04-23 17:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jumpthegun
+[2023-04-23 17:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tap-shiftbase
+[2023-04-23 17:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: psdelivery
+[2023-04-23 17:01:51] INFO root fetch - processPackages [api-analytics]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-23 17:01:51] INFO root fetch - processPackages [tap-shiftbase]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 17:01:51] INFO root fetch - processPackages [cascade-ml]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-23 17:01:51] INFO root fetch - processPackages [tap-shiftbase]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 17:01:51] INFO root fetch - processPackages [tornado-analytics]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-23 17:01:52] WARNING root fetch - processPackages [twarc2sql]: Skipping, unable to determine old version
+[2023-04-23 17:01:52] INFO root fetch - processPackages [psyki]: New version: [0.3.9] Old Version: [0.3.5]
+[2023-04-23 17:01:52] INFO root fetch - main [MainThread]: End processing [twarc2sql] error
+[2023-04-23 17:01:52] INFO root fetch - processPackages [enrRiceTrait]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-04-23 17:01:52] INFO root fetch - processPackages [jumpthegun]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-23 17:01:52] WARNING root fetch - processPackages [psdelivery]: Skipping, unable to determine old version
+[2023-04-23 17:01:52] INFO root fetch - main [MainThread]: End processing [psdelivery] error
+[2023-04-23 17:01:52] INFO root fetch - processPackages [tap-shiftbase]: Downloading https://files.pythonhosted.org/packages/05/d5/e40966d1402644824cd6dad623f673492f4fd3f2f86c8bc73f59e0282919/tap_shiftbase-0.0.5.tar.gz
+[2023-04-23 17:01:52] INFO root fetch - processPackages [tap-shiftbase]: Downloading https://files.pythonhosted.org/packages/05/d5/e40966d1402644824cd6dad623f673492f4fd3f2f86c8bc73f59e0282919/tap_shiftbase-0.0.5.tar.gz
+[2023-04-23 17:01:52] INFO root fetch - processPackages [cascade-ml]: Downloading https://files.pythonhosted.org/packages/fd/bd/31c9612f2908d0bcd67a4e7826fe9fd276d024f36c9f64db4a2846224de6/cascade-ml-0.8.0.tar.gz
+[2023-04-23 17:01:52] INFO root fetch - processPackages [tornado-analytics]: Downloading https://files.pythonhosted.org/packages/dd/1b/eb173de174bd0f18fcff293e839af6e4c3b38529f3600dd7670f6b8d5c0a/tornado-analytics-1.1.2.tar.gz
+[2023-04-23 17:01:52] INFO root fetch - processPackages [api-analytics]: Downloading https://files.pythonhosted.org/packages/eb/7f/83811754e2835b55fe21308ea2dcdd3b4b8ad17eba210c4cdd62cc6b94bf/api-analytics-1.1.2.tar.gz
+[2023-04-23 17:01:52] INFO root fetch - processPackages [enrRiceTrait]: Downloading https://files.pythonhosted.org/packages/9d/c6/462f9503188dbdc0b3923dbe2736b590498503c21375bd61051f1917a5f2/enrRiceTrait-1.2.1.tar.gz
+[2023-04-23 17:01:52] INFO root fetch - processPackages [jumpthegun]: Downloading https://files.pythonhosted.org/packages/2d/9c/b6336b985e68fea7f3372b575c109a10ec16d746dbdc9cf9b1c1b61fef5c/jumpthegun-0.0.5.tar.gz
+[2023-04-23 17:01:52] INFO root fetch - processPackages [tornado-analytics]: Downloading https://files.pythonhosted.org/packages/71/37/029d2ce010996419f6a3f4b6564c26b6a54e758789c3e925fc8b104406a2/tornado-analytics-1.1.3.tar.gz
+[2023-04-23 17:01:52] INFO root fetch - processPackages [api-analytics]: Downloading https://files.pythonhosted.org/packages/d8/7b/6b208d935a3f8d643b85665f9e368bc14c20a7f1f4166e378b5bbda934b2/api-analytics-1.1.3.tar.gz
+[2023-04-23 17:01:52] INFO root fetch - processPackages [psyki]: executing diffoscope
+[2023-04-23 17:01:52] INFO root fetch - processPackages [psyki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psyki-0.3.5.tar.gz tmp/psyki-0.3.9.tar.gz --markdown 20230423/p/psyki/0.3.5-0.3.9/diff.md --exclude *.pyd
+[2023-04-23 17:01:52] INFO root fetch - processPackages [cascade-ml]: Downloading https://files.pythonhosted.org/packages/04/ed/96e5a036ceb3af484d0593afb2477ca46531777fbdd97b8718447228c4e3/cascade-ml-0.9.0.tar.gz
+[2023-04-23 17:01:52] INFO root fetch - processPackages [tap-shiftbase]: Downloading https://files.pythonhosted.org/packages/21/fa/df7ef82c7f8881cb9116ced949a69776753a16859054f22ac397d718c919/tap_shiftbase-0.0.6.tar.gz
+[2023-04-23 17:01:52] INFO root fetch - processPackages [tap-shiftbase]: Downloading https://files.pythonhosted.org/packages/21/fa/df7ef82c7f8881cb9116ced949a69776753a16859054f22ac397d718c919/tap_shiftbase-0.0.6.tar.gz
+[2023-04-23 17:01:52] INFO root fetch - processPackages [enrRiceTrait]: executing diffoscope
+[2023-04-23 17:01:52] INFO root fetch - processPackages [enrRiceTrait]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enrRiceTrait-1.2.0.tar.gz tmp/enrRiceTrait-1.2.1.tar.gz --markdown 20230423/e/enrRiceTrait/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-04-23 17:01:52] INFO root fetch - processPackages [jumpthegun]: executing diffoscope
+[2023-04-23 17:01:52] INFO root fetch - processPackages [jumpthegun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jumpthegun-0.0.4.tar.gz tmp/jumpthegun-0.0.5.tar.gz --markdown 20230423/j/jumpthegun/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 17:01:52] INFO root fetch - processPackages [api-analytics]: executing diffoscope
+[2023-04-23 17:01:52] INFO root fetch - processPackages [api-analytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api-analytics-1.1.2.tar.gz tmp/api-analytics-1.1.3.tar.gz --markdown 20230423/a/api-analytics/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-23 17:01:52] INFO root fetch - processPackages [tornado-analytics]: executing diffoscope
+[2023-04-23 17:01:52] INFO root fetch - processPackages [tornado-analytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tornado-analytics-1.1.2.tar.gz tmp/tornado-analytics-1.1.3.tar.gz --markdown 20230423/t/tornado-analytics/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-23 17:01:52] INFO root fetch - processPackages [tap-shiftbase]: executing diffoscope
+[2023-04-23 17:01:52] INFO root fetch - processPackages [tap-shiftbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap_shiftbase-0.0.5.tar.gz tmp/tap_shiftbase-0.0.6.tar.gz --markdown 20230423/t/tap-shiftbase/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 17:01:52] INFO root fetch - processPackages [tap-shiftbase]: executing diffoscope
+[2023-04-23 17:01:52] INFO root fetch - processPackages [tap-shiftbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap_shiftbase-0.0.5.tar.gz tmp/tap_shiftbase-0.0.6.tar.gz --markdown 20230423/t/tap-shiftbase/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 17:01:52] INFO root fetch - processPackages [cascade-ml]: executing diffoscope
+[2023-04-23 17:01:52] INFO root fetch - processPackages [cascade-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cascade-ml-0.8.0.tar.gz tmp/cascade-ml-0.9.0.tar.gz --markdown 20230423/c/cascade-ml/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-23 17:01:54] INFO root fetch - main [MainThread]: End processing [tornado-analytics]: success
+[2023-04-23 17:01:54] INFO root fetch - main [MainThread]: End processing [api-analytics]: success
+[2023-04-23 17:01:54] INFO root fetch - main [MainThread]: End processing [tap-shiftbase]: success
+[2023-04-23 17:01:54] INFO root fetch - main [MainThread]: End processing [tap-shiftbase]: success
+[2023-04-23 17:01:54] INFO root fetch - main [MainThread]: End processing [jumpthegun]: success
+[2023-04-23 17:01:54] INFO root fetch - main [MainThread]: End processing [enrRiceTrait]: success
+[2023-04-23 17:01:55] INFO root fetch - main [MainThread]: End processing [psyki]: success
+[2023-04-23 17:01:55] INFO root fetch - main [MainThread]: End processing [cascade-ml]: success
+[2023-04-23 17:01:55] INFO root fetch - main [MainThread]: Store serial: [17823228]
