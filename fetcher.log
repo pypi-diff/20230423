@@ -10706,3 +10706,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 18:49:24] INFO root fetch - main [MainThread]: End processing [erscipcard]: success
 [2023-04-23 18:49:25] INFO root fetch - main [MainThread]: End processing [PyQt-Fluent-Widgets]: success
 [2023-04-23 18:49:25] INFO root fetch - main [MainThread]: Store serial: [17823948]
+[2023-04-23 18:54:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823948]
+[2023-04-23 18:54:34] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-23 18:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: passwordtools-yt
+[2023-04-23 18:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mmedit.egg
+[2023-04-23 18:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keypact
+[2023-04-23 18:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vocabmaster
+[2023-04-23 18:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mpservice
+[2023-04-23 18:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bmkg
+[2023-04-23 18:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cli-command-parser
+[2023-04-23 18:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: teg-CCC
+[2023-04-23 18:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: guitk
+[2023-04-23 18:54:34] WARNING root fetch - processPackages [keypact]: Skipping, unable to determine old version
+[2023-04-23 18:54:34] INFO root fetch - main [MainThread]: End processing [keypact] error
+[2023-04-23 18:54:34] INFO root fetch - processPackages [passwordtools-yt]: New version: [0.2.1] Old Version: [0.1]
+[2023-04-23 18:54:34] WARNING root fetch - processPackages [vocabmaster]: Skipping, unable to determine old version
+[2023-04-23 18:54:34] INFO root fetch - processPackages [teg-CCC]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 18:54:34] INFO root fetch - main [MainThread]: End processing [vocabmaster] error
+[2023-04-23 18:54:34] WARNING root fetch - processPackages [mmedit.egg]: Skipping, unable to determine old version
+[2023-04-23 18:54:34] INFO root fetch - main [MainThread]: End processing [mmedit.egg] error
+[2023-04-23 18:54:34] INFO root fetch - processPackages [teg-CCC]: executing diffoscope
+[2023-04-23 18:54:34] INFO root fetch - processPackages [teg-CCC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teg_CCC-0.0.1.tar.gz tmp/teg_CCC-0.0.2.tar.gz --markdown 20230423/t/teg-CCC/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 18:54:34] INFO root fetch - processPackages [bmkg]: New version: [1.0.0] Old Version: [0.1.1]
+[2023-04-23 18:54:34] INFO root fetch - processPackages [cli-command-parser]: New version: [2023.4.8] Old Version: [2023.4.7]
+[2023-04-23 18:54:34] WARNING root fetch - processPackages [guitk]: Skipping, unable to determine old version
+[2023-04-23 18:54:34] INFO root fetch - main [MainThread]: End processing [guitk] error
+[2023-04-23 18:54:34] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2023-04-23 18:54:34] INFO root fetch - processPackages [passwordtools-yt]: Downloading https://files.pythonhosted.org/packages/6a/63/bfb99f8042e764228063960ff44abf0ad9c54b58a45543407c12e562c743/passwordtools-yt-0.1.tar.gz
+[2023-04-23 18:54:35] INFO root fetch - processPackages [bmkg]: Downloading https://files.pythonhosted.org/packages/f8/38/e6cfb285510d617e4a8caf730f6908f5b773575d9a1e58896aa496e1e9c6/bmkg-0.1.1.tar.gz
+[2023-04-23 18:54:35] ERROR root fetch - processPackages [passwordtools-yt]: Unable to fetch info: No such project/version 'passwordtools-yt' 0.2.1
+[2023-04-23 18:54:35] INFO root fetch - main [MainThread]: End processing [passwordtools-yt] error
+[2023-04-23 18:54:35] INFO root fetch - processPackages [cli-command-parser]: executing diffoscope
+[2023-04-23 18:54:35] INFO root fetch - processPackages [cli-command-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli_command_parser-2023.4.7.tar.gz tmp/cli_command_parser-2023.4.8.tar.gz --markdown 20230423/c/cli-command-parser/2023.4.7-2023.4.8/diff.md --exclude *.pyd
+[2023-04-23 18:54:35] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2023-04-23 18:54:35] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20230423/m/mpservice/0.9.9-0.9.9.post1/diff.md --exclude *.pyd
+[2023-04-23 18:54:35] INFO root fetch - processPackages [bmkg]: Downloading https://files.pythonhosted.org/packages/ce/78/658223df193716473331ae5928496988150c0862147fbb74169a7d3145ae/bmkg-1.0.0.tar.gz
+[2023-04-23 18:54:35] INFO root fetch - processPackages [bmkg]: executing diffoscope
+[2023-04-23 18:54:35] INFO root fetch - processPackages [bmkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmkg-0.1.1.tar.gz tmp/bmkg-1.0.0.tar.gz --markdown 20230423/b/bmkg/0.1.1-1.0.0/diff.md --exclude *.pyd
+[2023-04-23 18:54:36] INFO root fetch - main [MainThread]: End processing [teg-CCC]: success
+[2023-04-23 18:54:36] INFO root fetch - main [MainThread]: End processing [mpservice]: success
+[2023-04-23 18:54:36] INFO root fetch - main [MainThread]: End processing [bmkg]: success
+[2023-04-23 18:54:36] INFO root fetch - main [MainThread]: End processing [cli-command-parser]: success
+[2023-04-23 18:54:36] INFO root fetch - main [MainThread]: Store serial: [17823981]
