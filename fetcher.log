@@ -7464,3 +7464,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 13:57:32] INFO root fetch - main [MainThread]: End processing [FFmpyg-DavidRodriguezSoaresCUI]: success
 [2023-04-23 13:57:32] INFO root fetch - main [MainThread]: End processing [domain-park]: success
 [2023-04-23 13:57:32] INFO root fetch - main [MainThread]: Store serial: [17821936]
+[2023-04-23 14:02:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17821936]
+[2023-04-23 14:02:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-23 14:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mitmproxy2swagger
+[2023-04-23 14:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: environment-framework
+[2023-04-23 14:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scrape-schema
+[2023-04-23 14:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dexparser
+[2023-04-23 14:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xia-engine
+[2023-04-23 14:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yeref
+[2023-04-23 14:02:41] INFO root fetch - processPackages [mitmproxy2swagger]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-04-23 14:02:41] INFO root fetch - processPackages [scrape-schema]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 14:02:41] INFO root fetch - processPackages [environment-framework]: New version: [0.3.0a0] Old Version: [0.2.0]
+[2023-04-23 14:02:41] INFO root fetch - processPackages [yeref]: New version: [0.1.42] Old Version: [0.1.41]
+[2023-04-23 14:02:41] INFO root fetch - processPackages [xia-engine]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-23 14:02:41] INFO root fetch - processPackages [dexparser]: New version: [1.2.0] Old Version: [1.1.2]
+[2023-04-23 14:02:41] INFO root fetch - processPackages [scrape-schema]: executing diffoscope
+[2023-04-23 14:02:41] INFO root fetch - processPackages [scrape-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrape_schema-0.0.5.tar.gz tmp/scrape_schema-0.0.6.tar.gz --markdown 20230423/s/scrape-schema/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 14:02:41] INFO root fetch - processPackages [mitmproxy2swagger]: Downloading https://files.pythonhosted.org/packages/ae/d4/9b90cb1d434d3d1b19bc78dfff263cb67b96ad775ef432ce1b5a2080bd28/mitmproxy2swagger-0.8.2.tar.gz
+[2023-04-23 14:02:41] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/7a/3f/b51fbdec8e695870279ba647c674662c0f243e0b63a272721419e3c66c63/yeref-0.1.42.tar.gz
+[2023-04-23 14:02:41] INFO root fetch - processPackages [dexparser]: Downloading https://files.pythonhosted.org/packages/4b/60/d4d92367848f84e235b07d9948f56abb663d1845483797115713f5ea53ba/dexparser-1.1.2.tar.gz
+[2023-04-23 14:02:41] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2023-04-23 14:02:41] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.1.41.tar.gz tmp/yeref-0.1.42.tar.gz --markdown 20230423/y/yeref/0.1.41-0.1.42/diff.md --exclude *.pyd
+[2023-04-23 14:02:41] INFO root fetch - processPackages [environment-framework]: Downloading https://files.pythonhosted.org/packages/6f/a5/cab6a3564604cfbbc2baf94d0ba259bfd0b6092d1519bdae80c7dfb732c9/environment_framework-0.3.0a0.tar.gz
+[2023-04-23 14:02:42] INFO root fetch - processPackages [xia-engine]: Downloading https://files.pythonhosted.org/packages/08/ea/73962143eb9c77bccefb1d76760a9ce4df7c83c18ea898a1526dab32e9a1/xia_engine-0.7.1-cp39-none-win_amd64.whl
+[2023-04-23 14:02:42] INFO root fetch - processPackages [environment-framework]: executing diffoscope
+[2023-04-23 14:02:42] INFO root fetch - processPackages [environment-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/environment_framework-0.2.0.tar.gz tmp/environment_framework-0.3.0a0.tar.gz --markdown 20230423/e/environment-framework/0.2.0-0.3.0a0/diff.md --exclude *.pyd
+[2023-04-23 14:02:42] INFO root fetch - processPackages [mitmproxy2swagger]: Downloading https://files.pythonhosted.org/packages/e6/c6/305a4bd276e70544277e661267892502b38651a292b4d6b8b49a09065e7a/mitmproxy2swagger-0.9.0.tar.gz
+[2023-04-23 14:02:42] INFO root fetch - processPackages [xia-engine]: executing diffoscope
+[2023-04-23 14:02:42] INFO root fetch - processPackages [xia-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_engine-0.7.0-cp39-none-win_amd64.whl.zip tmp/xia_engine-0.7.1-cp39-none-win_amd64.whl.zip --markdown 20230423/x/xia-engine/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-23 14:02:42] INFO root fetch - processPackages [dexparser]: Downloading https://files.pythonhosted.org/packages/5f/0c/ab784c503d907f88c97f31e418879d0a64ccc21bc333d4bdfa3b1dab64cf/dexparser-1.2.0-py3-none-any.whl
+[2023-04-23 14:02:42] INFO root fetch - processPackages [mitmproxy2swagger]: executing diffoscope
+[2023-04-23 14:02:42] INFO root fetch - processPackages [mitmproxy2swagger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mitmproxy2swagger-0.8.2.tar.gz tmp/mitmproxy2swagger-0.9.0.tar.gz --markdown 20230423/m/mitmproxy2swagger/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-04-23 14:02:42] INFO root fetch - processPackages [dexparser]: executing diffoscope
+[2023-04-23 14:02:42] INFO root fetch - processPackages [dexparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dexparser-1.1.2.tar.gz tmp/dexparser-1.2.0-py3-none-any.whl.zip --markdown 20230423/d/dexparser/1.1.2-1.2.0/diff.md --exclude *.pyd
+[2023-04-23 14:02:42] INFO root fetch - main [MainThread]: End processing [scrape-schema]: success
+[2023-04-23 14:02:43] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2023-04-23 14:02:43] INFO root fetch - main [MainThread]: End processing [xia-engine]: success
+[2023-04-23 14:02:43] INFO root fetch - main [MainThread]: End processing [dexparser]: success
+[2023-04-23 14:02:43] INFO root fetch - main [MainThread]: End processing [mitmproxy2swagger]: success
+[2023-04-23 14:02:43] INFO root fetch - main [MainThread]: End processing [environment-framework]: success
+[2023-04-23 14:02:43] INFO root fetch - main [MainThread]: Store serial: [17821973]
