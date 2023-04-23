@@ -5563,3 +5563,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 11:11:31] INFO root fetch - main [MainThread]: End processing [lg-april-permissions]: success
 [2023-04-23 11:11:34] INFO root fetch - main [MainThread]: End processing [gbd-tools]: success
 [2023-04-23 11:11:34] INFO root fetch - main [MainThread]: Store serial: [17820828]
+[2023-04-23 11:16:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17820828]
+[2023-04-23 11:16:42] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-23 11:16:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thu-learn-downloader
+[2023-04-23 11:16:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Aciembler
+[2023-04-23 11:16:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-nano
+[2023-04-23 11:16:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xia-engine-test
+[2023-04-23 11:16:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vtkplotlib
+[2023-04-23 11:16:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bigdl-chronos
+[2023-04-23 11:16:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bigdl-serving
+[2023-04-23 11:16:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tf-nightly
+[2023-04-23 11:16:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tbp-nightly
+[2023-04-23 11:16:42] INFO root fetch - processPackages [thu-learn-downloader]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 11:16:42] INFO root fetch - processPackages [vtkplotlib]: New version: [2.1.0] Old Version: [2.0.0]
+[2023-04-23 11:16:42] INFO root fetch - processPackages [Aciembler]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-23 11:16:42] INFO root fetch - processPackages [xia-engine-test]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 11:16:42] INFO root fetch - processPackages [bigdl-serving]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-23 11:16:42] INFO root fetch - processPackages [bigdl-chronos]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-23 11:16:42] INFO root fetch - processPackages [bigdl-nano]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-23 11:16:42] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2023-04-23 11:16:42] INFO root fetch - processPackages [tf-nightly]: New version: [2.13.0.dev20230423] Old Version: [2.13.0.dev20230422]
+[2023-04-23 11:16:42] INFO root fetch - processPackages [Aciembler]: executing diffoscope
+[2023-04-23 11:16:42] INFO root fetch - processPackages [Aciembler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Aciembler-1.0.8-py2.py3-none-any.whl.zip tmp/Aciembler-1.0.9-py2.py3-none-any.whl.zip --markdown 20230423/A/Aciembler/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-23 11:16:42] INFO root fetch - processPackages [bigdl-serving]: executing diffoscope
+[2023-04-23 11:16:42] INFO root fetch - processPackages [bigdl-serving]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_serving-2.4.0b20230421-py2.py3-none-any.whl.zip tmp/bigdl_serving-2.4.0b20230422-py2.py3-none-any.whl.zip --markdown 20230423/b/bigdl-serving/2.4.0b20230421-2.4.0b20230422/diff.md --exclude *.pyd
+[2023-04-23 11:16:42] INFO root fetch - processPackages [vtkplotlib]: Downloading https://files.pythonhosted.org/packages/76/bd/374d2cc363edab89d4503b0a4844db980c0e62dd030f18b9e7924d651840/vtkplotlib-2.0.0-py3-none-any.whl
+[2023-04-23 11:16:42] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2023-04-23 11:16:42] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20230423/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/diff.md --exclude *.pyd
+[2023-04-23 11:16:42] INFO root fetch - processPackages [xia-engine-test]: Downloading https://files.pythonhosted.org/packages/24/74/92e6678725bb4f2f495ccf09109cc621d4a6e8808f201de6e66080cd3208/xia_engine_test-0.1.0-cp39-none-win_amd64.whl
+[2023-04-23 11:16:43] INFO root fetch - processPackages [thu-learn-downloader]: executing diffoscope
+[2023-04-23 11:16:43] INFO root fetch - processPackages [thu-learn-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thu_learn_downloader-0.1.8.tar.gz tmp/thu_learn_downloader-0.1.9.tar.gz --markdown 20230423/t/thu-learn-downloader/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 11:16:43] INFO root fetch - processPackages [bigdl-chronos]: executing diffoscope
+[2023-04-23 11:16:43] INFO root fetch - processPackages [bigdl-chronos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos-2.4.0b20230421-py3-none-win_amd64.whl.zip tmp/bigdl_chronos-2.4.0b20230422-py3-none-win_amd64.whl.zip --markdown 20230423/b/bigdl-chronos/2.4.0b20230421-2.4.0b20230422/diff.md --exclude *.pyd
+[2023-04-23 11:16:43] INFO root fetch - processPackages [bigdl-nano]: executing diffoscope
+[2023-04-23 11:16:43] INFO root fetch - processPackages [bigdl-nano]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_nano-2.4.0b20230421-py3-none-win_amd64.whl.zip tmp/bigdl_nano-2.4.0b20230422-py3-none-win_amd64.whl.zip --markdown 20230423/b/bigdl-nano/2.4.0b20230421-2.4.0b20230422/diff.md --exclude *.pyd
+[2023-04-23 11:16:43] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/49/6f/98fb36d79fc5f7e2d47cc6b5e4ca410130ae18fa56e590a8d03fc93715cc/tf_nightly-2.13.0.dev20230423-cp39-cp39-win_amd64.whl
+[2023-04-23 11:16:43] INFO root fetch - processPackages [vtkplotlib]: Downloading https://files.pythonhosted.org/packages/8b/a8/49dd3d5f14ab86a1defa9d7fbc6c5ba014a7ca6e1ffc0bbe42ee5048f8e5/vtkplotlib-2.1.0-py3-none-any.whl
+[2023-04-23 11:16:43] INFO root fetch - processPackages [xia-engine-test]: Downloading https://files.pythonhosted.org/packages/09/10/4ec344060dbfd95067428c300bc11695bd7f878498490af43d23f01909dd/xia_engine_test-0.1.1-cp39-none-win_amd64.whl
+[2023-04-23 11:16:43] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2023-04-23 11:16:43] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.13.0.dev20230422-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.13.0.dev20230423-cp39-cp39-win_amd64.whl.zip --markdown 20230423/t/tf-nightly/2.13.0.dev20230422-2.13.0.dev20230423/diff.md --exclude *.pyd
+[2023-04-23 11:16:43] INFO root fetch - processPackages [vtkplotlib]: executing diffoscope
+[2023-04-23 11:16:43] INFO root fetch - processPackages [vtkplotlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vtkplotlib-2.0.0-py3-none-any.whl.zip tmp/vtkplotlib-2.1.0-py3-none-any.whl.zip --markdown 20230423/v/vtkplotlib/2.0.0-2.1.0/diff.md --exclude *.pyd
+[2023-04-23 11:16:43] INFO root fetch - processPackages [xia-engine-test]: executing diffoscope
+[2023-04-23 11:16:43] INFO root fetch - processPackages [xia-engine-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_engine_test-0.1.0-cp39-none-win_amd64.whl.zip tmp/xia_engine_test-0.1.1-cp39-none-win_amd64.whl.zip --markdown 20230423/x/xia-engine-test/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 11:16:44] INFO root fetch - main [MainThread]: End processing [bigdl-serving]: success
+[2023-04-23 11:16:44] INFO root fetch - main [MainThread]: End processing [Aciembler]: success
+[2023-04-23 11:16:44] INFO root fetch - main [MainThread]: End processing [thu-learn-downloader]: success
+[2023-04-23 11:16:44] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2023-04-23 11:16:44] INFO root fetch - main [MainThread]: End processing [xia-engine-test]: success
+[2023-04-23 11:16:45] INFO root fetch - main [MainThread]: End processing [vtkplotlib]: success
+[2023-04-23 11:16:45] INFO root fetch - main [MainThread]: End processing [bigdl-chronos]: success
+[2023-04-23 11:16:46] INFO root fetch - main [MainThread]: End processing [bigdl-nano]: success
+[2023-04-23 11:16:48] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2023-04-23 11:16:48] INFO root fetch - main [MainThread]: Store serial: [17820863]
