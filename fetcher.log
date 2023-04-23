@@ -9351,3 +9351,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 16:46:08] INFO root fetch - main [MainThread]: End processing [affine-transform]: success
 [2023-04-23 16:46:15] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-23 16:46:15] INFO root fetch - main [MainThread]: Store serial: [17823122]
+[2023-04-23 16:51:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823122]
+[2023-04-23 16:51:25] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-23 16:51:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: khl
+[2023-04-23 16:51:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: featurizerai
+[2023-04-23 16:51:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymap-admin
+[2023-04-23 16:51:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-object-safety
+[2023-04-23 16:51:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pynocaptcha
+[2023-04-23 16:51:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ml-pckg
+[2023-04-23 16:51:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: elemeta
+[2023-04-23 16:51:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ml-pckg
+[2023-04-23 16:51:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: yeref
+[2023-04-23 16:51:26] INFO root fetch - processPackages [elemeta]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-23 16:51:26] INFO root fetch - processPackages [pymap-admin]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-23 16:51:26] INFO root fetch - processPackages [pynocaptcha]: New version: [1.4.3] Old Version: [1.4.2]
+[2023-04-23 16:51:26] INFO root fetch - processPackages [featurizerai]: New version: [1.4.5] Old Version: [1.4.4]
+[2023-04-23 16:51:26] INFO root fetch - processPackages [django-object-safety]: New version: [0.2.0] Old Version: [0.1.4]
+[2023-04-23 16:51:26] INFO root fetch - processPackages [ml-pckg]: New version: [1.2.7] Old Version: [1.2.6]
+[2023-04-23 16:51:26] INFO root fetch - processPackages [khl]: New version: [2.0.0] Old Version: [1.0.7]
+[2023-04-23 16:51:26] INFO root fetch - processPackages [ml-pckg]: New version: [1.2.7] Old Version: [1.2.6]
+[2023-04-23 16:51:26] INFO root fetch - processPackages [yeref]: New version: [0.1.44] Old Version: [0.1.43]
+[2023-04-23 16:51:26] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2023-04-23 16:51:26] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.1.43.tar.gz tmp/yeref-0.1.44.tar.gz --markdown 20230423/y/yeref/0.1.43-0.1.44/diff.md --exclude *.pyd
+[2023-04-23 16:51:26] INFO root fetch - processPackages [ml-pckg]: Downloading https://files.pythonhosted.org/packages/93/94/c44b0be203a73aec25106410d4a641a74ce951d892b0ec34a53b5008e950/ml_pckg-1.2.6.tar.gz
+[2023-04-23 16:51:26] INFO root fetch - processPackages [ml-pckg]: Downloading https://files.pythonhosted.org/packages/93/94/c44b0be203a73aec25106410d4a641a74ce951d892b0ec34a53b5008e950/ml_pckg-1.2.6.tar.gz
+[2023-04-23 16:51:26] INFO root fetch - processPackages [pymap-admin]: Downloading https://files.pythonhosted.org/packages/9e/02/7f793741b3d8a5c8f25f7075c659cdeb2e784e4b3516ce3d578c17f750eb/pymap_admin-0.9.2.tar.gz
+[2023-04-23 16:51:26] INFO root fetch - processPackages [elemeta]: Downloading https://files.pythonhosted.org/packages/8d/cd/ff0f7480ad11cc463437814c5926187d120218b546dce12e2fe3ce490140/elemeta-1.0.2.tar.gz
+[2023-04-23 16:51:26] INFO root fetch - processPackages [pynocaptcha]: Downloading https://files.pythonhosted.org/packages/ea/7d/9b1019ab9c6e76008a03703cffdcfed31a1157f2be59f54bfa42ed47b796/pynocaptcha-1.4.3.tar.gz
+[2023-04-23 16:51:26] INFO root fetch - processPackages [django-object-safety]: Downloading https://files.pythonhosted.org/packages/31/6f/25f41f179ec39f7accefa7360d01562b4ee7905239703490fc1e681d16bb/django_object_safety-0.2.0.tar.gz
+[2023-04-23 16:51:26] INFO root fetch - processPackages [pymap-admin]: executing diffoscope
+[2023-04-23 16:51:26] INFO root fetch - processPackages [pymap-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymap_admin-0.9.1.tar.gz tmp/pymap_admin-0.9.2.tar.gz --markdown 20230423/p/pymap-admin/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-23 16:51:26] WARNING root fetch - processPackages [elemeta]: Skipping package: exceeds size limit 30399147>=10485760
+[2023-04-23 16:51:26] INFO root fetch - main [MainThread]: End processing [elemeta] error
+[2023-04-23 16:51:26] INFO root fetch - processPackages [featurizerai]: Downloading https://files.pythonhosted.org/packages/79/c6/3798f82e35d9dfcee0912234300892d662eb37881417c49aad131f0ddc6f/featurizerai-1.4.5.tar.gz
+[2023-04-23 16:51:26] INFO root fetch - processPackages [django-object-safety]: executing diffoscope
+[2023-04-23 16:51:26] INFO root fetch - processPackages [django-object-safety]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_object_safety-0.1.4.tar.gz tmp/django_object_safety-0.2.0.tar.gz --markdown 20230423/d/django-object-safety/0.1.4-0.2.0/diff.md --exclude *.pyd
+[2023-04-23 16:51:26] INFO root fetch - processPackages [pynocaptcha]: executing diffoscope
+[2023-04-23 16:51:26] INFO root fetch - processPackages [pynocaptcha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynocaptcha-1.4.2.tar.gz tmp/pynocaptcha-1.4.3.tar.gz --markdown 20230423/p/pynocaptcha/1.4.2-1.4.3/diff.md --exclude *.pyd
+[2023-04-23 16:51:26] INFO root fetch - processPackages [featurizerai]: executing diffoscope
+[2023-04-23 16:51:26] INFO root fetch - processPackages [featurizerai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featurizerai-1.4.4.tar.gz tmp/featurizerai-1.4.5.tar.gz --markdown 20230423/f/featurizerai/1.4.4-1.4.5/diff.md --exclude *.pyd
+[2023-04-23 16:51:26] INFO root fetch - processPackages [khl]: Downloading https://files.pythonhosted.org/packages/e8/a1/250df30b9a5b8e5e7a752d255ae9fa694c19e5536b0e579209d78346f8a5/khl-2.0.0.tar.gz
+[2023-04-23 16:51:26] INFO root fetch - processPackages [khl]: executing diffoscope
+[2023-04-23 16:51:26] INFO root fetch - processPackages [khl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khl-1.0.7.tar.gz tmp/khl-2.0.0.tar.gz --markdown 20230423/k/khl/1.0.7-2.0.0/diff.md --exclude *.pyd
+[2023-04-23 16:51:26] INFO root fetch - processPackages [ml-pckg]: Downloading https://files.pythonhosted.org/packages/c4/92/b0475c3b9e1b91f42ae53949f4e74de46f51c7b1f478916ec3891707dc8c/ml_pckg-1.2.7.tar.gz
+[2023-04-23 16:51:26] INFO root fetch - processPackages [ml-pckg]: Downloading https://files.pythonhosted.org/packages/c4/92/b0475c3b9e1b91f42ae53949f4e74de46f51c7b1f478916ec3891707dc8c/ml_pckg-1.2.7.tar.gz
+[2023-04-23 16:51:26] INFO root fetch - processPackages [ml-pckg]: executing diffoscope
+[2023-04-23 16:51:26] INFO root fetch - processPackages [ml-pckg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_pckg-1.2.6.tar.gz tmp/ml_pckg-1.2.7.tar.gz --markdown 20230423/m/ml-pckg/1.2.6-1.2.7/diff.md --exclude *.pyd
+[2023-04-23 16:51:26] INFO root fetch - processPackages [ml-pckg]: executing diffoscope
+[2023-04-23 16:51:26] INFO root fetch - processPackages [ml-pckg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_pckg-1.2.6.tar.gz tmp/ml_pckg-1.2.7.tar.gz --markdown 20230423/m/ml-pckg/1.2.6-1.2.7/diff.md --exclude *.pyd
+[2023-04-23 16:51:27] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2023-04-23 16:51:27] INFO root fetch - main [MainThread]: End processing [featurizerai]: success
+[2023-04-23 16:51:27] INFO root fetch - main [MainThread]: End processing [pymap-admin]: success
+[2023-04-23 16:51:27] INFO root fetch - main [MainThread]: End processing [pynocaptcha]: success
+[2023-04-23 16:51:28] INFO root fetch - main [MainThread]: End processing [django-object-safety]: success
+[2023-04-23 16:51:28] INFO root fetch - main [MainThread]: End processing [ml-pckg]: success
+[2023-04-23 16:51:28] INFO root fetch - main [MainThread]: End processing [khl]: success
+[2023-04-23 16:51:28] INFO root fetch - main [MainThread]: End processing [ml-pckg]: success
+[2023-04-23 16:51:28] INFO root fetch - main [MainThread]: Store serial: [17823150]
