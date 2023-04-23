@@ -1627,3 +1627,67 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 02:57:55] INFO root fetch - main [MainThread]: End processing [pybuildtools]: success
 [2023-04-23 02:58:13] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2023-04-23 02:58:13] INFO root fetch - main [MainThread]: Store serial: [17818482]
+[2023-04-23 03:03:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818482]
+[2023-04-23 03:03:21] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-23 03:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moto
+[2023-04-23 03:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Loterias
+[2023-04-23 03:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-sns-notify
+[2023-04-23 03:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: circuitpython-mag-cal
+[2023-04-23 03:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: html2info
+[2023-04-23 03:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-lambda-layer-wget
+[2023-04-23 03:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: flet-core
+[2023-04-23 03:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: flet
+[2023-04-23 03:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cdk-emrserverless-with-delta-lake
+[2023-04-23 03:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: aemcmc-nightly
+[2023-04-23 03:03:21] INFO root fetch - processPackages [Loterias]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 03:03:21] INFO root fetch - processPackages [circuitpython-mag-cal]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-23 03:03:21] INFO root fetch - processPackages [html2info]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-23 03:03:21] INFO root fetch - processPackages [flet-core]: New version: [0.6.0.dev1344] Old Version: [0.6.0.dev1336]
+[2023-04-23 03:03:21] INFO root fetch - processPackages [aemcmc-nightly]: New version: [0.0.8.dev20230422] Old Version: [0.0.8.dev20230421]
+[2023-04-23 03:03:21] INFO root fetch - processPackages [cdk-sns-notify]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 03:03:21] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-23 03:03:21] INFO root fetch - processPackages [flet]: New version: [0.6.0.dev1344] Old Version: [0.6.0.dev1336]
+[2023-04-23 03:03:22] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-23 03:03:22] INFO root fetch - processPackages [Loterias]: executing diffoscope
+[2023-04-23 03:03:22] INFO root fetch - processPackages [Loterias]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Loterias-0.0.8.tar.gz tmp/Loterias-0.0.9.tar.gz --markdown 20230423/L/Loterias/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 03:03:22] INFO root fetch - processPackages [moto]: New version: [4.1.8.dev9] Old Version: [4.1.8.dev8]
+[2023-04-23 03:03:22] INFO root fetch - processPackages [cdk-sns-notify]: executing diffoscope
+[2023-04-23 03:03:22] INFO root fetch - processPackages [cdk-sns-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sns-notify-0.0.98.tar.gz tmp/cdk-sns-notify-0.0.99.tar.gz --markdown 20230423/c/cdk-sns-notify/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 03:03:22] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-04-23 03:03:22] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230423/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-23 03:03:22] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: executing diffoscope
+[2023-04-23 03:03:22] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_emrserverless_with_delta_lake-2.0.98.tar.gz tmp/cdk_emrserverless_with_delta_lake-2.0.99.tar.gz --markdown 20230423/c/cdk-emrserverless-with-delta-lake/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-23 03:03:22] INFO root fetch - processPackages [html2info]: Downloading https://files.pythonhosted.org/packages/62/fc/cd0ac89afa5a17df9d86d2a1db7f74e706859a923b6d38cd4409ab72d248/html2info-0.1.6.tar.gz
+[2023-04-23 03:03:22] INFO root fetch - processPackages [circuitpython-mag-cal]: Downloading https://files.pythonhosted.org/packages/4a/4b/69a2fe15308698250efe7b6c44a9094527471d011ddb775874bc1a64348b/circuitpython-mag-cal-1.0.3.tar.gz
+[2023-04-23 03:03:22] INFO root fetch - processPackages [aemcmc-nightly]: Downloading https://files.pythonhosted.org/packages/6b/d7/a9edda367d0f7d5d9976677160b71159b465b36c4d3c2ad4b5167053a5ce/aemcmc-nightly-0.0.8.dev20230422.tar.gz
+[2023-04-23 03:03:22] INFO root fetch - processPackages [html2info]: executing diffoscope
+[2023-04-23 03:03:22] INFO root fetch - processPackages [html2info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/html2info-0.1.5.tar.gz tmp/html2info-0.1.6.tar.gz --markdown 20230423/h/html2info/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-23 03:03:22] INFO root fetch - processPackages [flet]: Downloading https://files.pythonhosted.org/packages/96/9f/a1e4587ecd51ce01ff6fb58daea75a8df45b30b80504d5bf7250513704b5/flet-0.6.0.dev1344.tar.gz
+[2023-04-23 03:03:22] INFO root fetch - processPackages [flet-core]: Downloading https://files.pythonhosted.org/packages/f1/f4/144393ab934907ea796e672a4ac13dcea94443a69f01f0f573097b0ee234/flet_core-0.6.0.dev1344.tar.gz
+[2023-04-23 03:03:22] INFO root fetch - processPackages [circuitpython-mag-cal]: executing diffoscope
+[2023-04-23 03:03:22] INFO root fetch - processPackages [circuitpython-mag-cal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circuitpython-mag-cal-1.0.2.tar.gz tmp/circuitpython-mag-cal-1.0.3.tar.gz --markdown 20230423/c/circuitpython-mag-cal/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-23 03:03:22] INFO root fetch - processPackages [aemcmc-nightly]: executing diffoscope
+[2023-04-23 03:03:22] INFO root fetch - processPackages [aemcmc-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aemcmc-nightly-0.0.8.dev20230421.tar.gz tmp/aemcmc-nightly-0.0.8.dev20230422.tar.gz --markdown 20230423/a/aemcmc-nightly/0.0.8.dev20230421-0.0.8.dev20230422/diff.md --exclude *.pyd
+[2023-04-23 03:03:22] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-04-23 03:03:22] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.8.dev8.tar.gz tmp/moto-4.1.8.dev9.tar.gz --markdown 20230423/m/moto/4.1.8.dev8-4.1.8.dev9/diff.md --exclude *.pyd
+[2023-04-23 03:03:22] INFO root fetch - processPackages [flet-core]: executing diffoscope
+[2023-04-23 03:03:22] INFO root fetch - processPackages [flet-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_core-0.6.0.dev1336.tar.gz tmp/flet_core-0.6.0.dev1344.tar.gz --markdown 20230423/f/flet-core/0.6.0.dev1336-0.6.0.dev1344/diff.md --exclude *.pyd
+[2023-04-23 03:03:22] INFO root fetch - processPackages [flet]: executing diffoscope
+[2023-04-23 03:03:22] INFO root fetch - processPackages [flet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet-0.6.0.dev1336.tar.gz tmp/flet-0.6.0.dev1344.tar.gz --markdown 20230423/f/flet/0.6.0.dev1336-0.6.0.dev1344/diff.md --exclude *.pyd
+[2023-04-23 03:03:23] INFO root fetch - processPackages [cdk-sns-notify]: Start processing: flet-pyodide
+[2023-04-23 03:03:23] INFO root fetch - main [MainThread]: End processing [cdk-sns-notify]: success
+[2023-04-23 03:03:23] INFO root fetch - main [MainThread]: End processing [Loterias]: success
+[2023-04-23 03:03:23] INFO root fetch - processPackages [flet-pyodide]: New version: [0.6.0.dev1344] Old Version: [0.6.0.dev1336]
+[2023-04-23 03:03:23] INFO root fetch - main [MainThread]: End processing [html2info]: success
+[2023-04-23 03:03:23] INFO root fetch - main [MainThread]: End processing [cdk-emrserverless-with-delta-lake]: success
+[2023-04-23 03:03:24] INFO root fetch - processPackages [flet-pyodide]: Downloading https://files.pythonhosted.org/packages/01/41/9bb6ae181d7d6eab72472b936761ac1a1449f8b07494bc321b8b059bca6b/flet_pyodide-0.6.0.dev1344.tar.gz
+[2023-04-23 03:03:24] INFO root fetch - main [MainThread]: End processing [aemcmc-nightly]: success
+[2023-04-23 03:03:24] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-04-23 03:03:24] INFO root fetch - processPackages [flet-pyodide]: executing diffoscope
+[2023-04-23 03:03:24] INFO root fetch - processPackages [flet-pyodide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_pyodide-0.6.0.dev1336.tar.gz tmp/flet_pyodide-0.6.0.dev1344.tar.gz --markdown 20230423/f/flet-pyodide/0.6.0.dev1336-0.6.0.dev1344/diff.md --exclude *.pyd
+[2023-04-23 03:03:24] INFO root fetch - main [MainThread]: End processing [circuitpython-mag-cal]: success
+[2023-04-23 03:03:25] INFO root fetch - main [MainThread]: End processing [flet-pyodide]: success
+[2023-04-23 03:03:25] INFO root fetch - main [MainThread]: End processing [flet-core]: success
+[2023-04-23 03:03:26] INFO root fetch - main [MainThread]: End processing [flet]: success
+[2023-04-23 03:03:56] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2023-04-23 03:03:56] INFO root fetch - main [MainThread]: Store serial: [17818521]
