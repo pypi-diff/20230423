@@ -8539,3 +8539,78 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 15:44:25] INFO root fetch - main [MainThread]: End processing [empiric-network]: success
 [2023-04-23 15:44:33] INFO root fetch - main [MainThread]: End processing [aiohttp-admin]: success
 [2023-04-23 15:44:33] INFO root fetch - main [MainThread]: Store serial: [17822630]
+[2023-04-23 15:49:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17822630]
+[2023-04-23 15:49:42] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-23 15:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bingImageSpiderCreatedByHanXu
+[2023-04-23 15:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: terka
+[2023-04-23 15:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deepqt
+[2023-04-23 15:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tap-shiftbase
+[2023-04-23 15:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: foursight-core
+[2023-04-23 15:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tf-nightly-intel
+[2023-04-23 15:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kuki
+[2023-04-23 15:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: buteo
+[2023-04-23 15:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: django-encryption
+[2023-04-23 15:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ml-pckg
+[2023-04-23 15:49:42] INFO root fetch - processPackages [deepqt]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-04-23 15:49:42] INFO root fetch - processPackages [tap-shiftbase]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 15:49:42] INFO root fetch - processPackages [buteo]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-23 15:49:42] INFO root fetch - processPackages [terka]: New version: [1.6.4] Old Version: [1.6.3]
+[2023-04-23 15:49:42] INFO root fetch - processPackages [ml-pckg]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-23 15:49:42] INFO root fetch - processPackages [kuki]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 15:49:42] INFO root fetch - processPackages [django-encryption]: New version: [0.3.0] Old Version: [0.1.4]
+[2023-04-23 15:49:42] WARNING root fetch - processPackages [bingImageSpiderCreatedByHanXu]: Skipping, unable to determine old version
+[2023-04-23 15:49:42] INFO root fetch - processPackages [bingImageSpiderCreatedByHanXu]: Start processing: autoscale-queue-celery
+[2023-04-23 15:49:42] INFO root fetch - main [MainThread]: End processing [bingImageSpiderCreatedByHanXu] error
+[2023-04-23 15:49:42] INFO root fetch - processPackages [tf-nightly-intel]: New version: [2.13.0.dev20230422] Old Version: [2.13.0.dev20230420]
+[2023-04-23 15:49:42] INFO root fetch - processPackages [foursight-core]: New version: [4.0.0] Old Version: [3.3.2.2b1]
+[2023-04-23 15:49:42] WARNING root fetch - processPackages [autoscale-queue-celery]: Skipping, unable to determine old version
+[2023-04-23 15:49:42] INFO root fetch - processPackages [autoscale-queue-celery]: Start processing: foursight-core
+[2023-04-23 15:49:42] INFO root fetch - main [MainThread]: End processing [autoscale-queue-celery] error
+[2023-04-23 15:49:42] INFO root fetch - processPackages [foursight-core]: New version: [4.0.0] Old Version: [3.3.2.2b1]
+[2023-04-23 15:49:42] INFO root fetch - processPackages [tf-nightly-intel]: Downloading https://files.pythonhosted.org/packages/df/a9/39f4fe31b2f6691c7bd8c132546bacfd8b2ddcd5f7f997291d54425778aa/tf_nightly_intel-2.13.0.dev20230420-cp39-cp39-win_amd64.whl
+[2023-04-23 15:49:42] INFO root fetch - processPackages [buteo]: executing diffoscope
+[2023-04-23 15:49:42] INFO root fetch - processPackages [buteo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buteo-0.8.8.tar.gz tmp/buteo-0.8.9.tar.gz --markdown 20230423/b/buteo/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-23 15:49:42] WARNING root fetch - processPackages [tf-nightly-intel]: Skipping package: exceeds size limit 178591549>=10485760
+[2023-04-23 15:49:42] INFO root fetch - processPackages [tf-nightly-intel]: Start processing: FFmpyg-DavidRodriguezSoaresCUI
+[2023-04-23 15:49:42] INFO root fetch - main [MainThread]: End processing [tf-nightly-intel] error
+[2023-04-23 15:49:42] INFO root fetch - processPackages [tap-shiftbase]: Downloading https://files.pythonhosted.org/packages/d5/2a/a21bbcd61d264b6c1583059ce47e8ead340b0ddb9e9aed3a00ff8c14698f/tap_shiftbase-0.0.1.tar.gz
+[2023-04-23 15:49:43] INFO root fetch - processPackages [deepqt]: Downloading https://files.pythonhosted.org/packages/dd/bf/43e1004e66b995e58e8ac4bef377f4dd433b963f1254cb49052e20a18e12/deepqt-1.1.6.tar.gz
+[2023-04-23 15:49:43] INFO root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 15:49:43] INFO root fetch - processPackages [kuki]: Downloading https://files.pythonhosted.org/packages/87/9f/baad9ab74915face07df9ea079024f83fb224f1cd4d5830e7736d6e5bec4/kuki-0.0.1.tar.gz
+[2023-04-23 15:49:43] INFO root fetch - processPackages [ml-pckg]: Downloading https://files.pythonhosted.org/packages/e3/27/e196a0689438df934979d8e671f7b762502a94e37ae8a759ae49d5c26ed1/ml_pckg-1.1.1.tar.gz
+[2023-04-23 15:49:43] INFO root fetch - processPackages [django-encryption]: Downloading https://files.pythonhosted.org/packages/28/e5/33d5f73f1832c107cbbf52a2af5712b7f3a8dfa8977a5803ad21566bf0bb/django_encryption-0.3.0.tar.gz
+[2023-04-23 15:49:43] INFO root fetch - processPackages [deepqt]: executing diffoscope
+[2023-04-23 15:49:43] INFO root fetch - processPackages [deepqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepqt-1.1.5.tar.gz tmp/deepqt-1.1.6.tar.gz --markdown 20230423/d/deepqt/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-04-23 15:49:43] INFO root fetch - processPackages [ml-pckg]: executing diffoscope
+[2023-04-23 15:49:43] INFO root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: executing diffoscope
+[2023-04-23 15:49:43] INFO root fetch - processPackages [ml-pckg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_pckg-1.1.0.tar.gz tmp/ml_pckg-1.1.1.tar.gz --markdown 20230423/m/ml-pckg/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-23 15:49:43] INFO root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FFmpyg_DavidRodriguezSoaresCUI-0.0.1.tar.gz tmp/FFmpyg_DavidRodriguezSoaresCUI-0.0.2.tar.gz --markdown 20230423/F/FFmpyg-DavidRodriguezSoaresCUI/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 15:49:43] INFO root fetch - processPackages [terka]: Downloading https://files.pythonhosted.org/packages/e8/84/e78d6a3fe34833535a69f5644218bfd1e332c58acb792f47b1d7ba2d92c0/terka-1.6.4.tar.gz
+[2023-04-23 15:49:43] INFO root fetch - processPackages [django-encryption]: executing diffoscope
+[2023-04-23 15:49:43] INFO root fetch - processPackages [django-encryption]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_encryption-0.1.4.tar.gz tmp/django_encryption-0.3.0.tar.gz --markdown 20230423/d/django-encryption/0.1.4-0.3.0/diff.md --exclude *.pyd
+[2023-04-23 15:49:43] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-23 15:49:43] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-23 15:49:43] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-3.3.2.2b1.tar.gz tmp/foursight_core-4.0.0.tar.gz --markdown 20230423/f/foursight-core/3.3.2.2b1-4.0.0/diff.md --exclude *.pyd
+[2023-04-23 15:49:43] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-3.3.2.2b1.tar.gz tmp/foursight_core-4.0.0.tar.gz --markdown 20230423/f/foursight-core/3.3.2.2b1-4.0.0/diff.md --exclude *.pyd
+[2023-04-23 15:49:43] INFO root fetch - processPackages [tap-shiftbase]: Downloading https://files.pythonhosted.org/packages/1e/34/dee44644244845d67ae0b5abd8dcffd9ba08ec1986b31746d1363c27dde0/tap_shiftbase-0.0.2.tar.gz
+[2023-04-23 15:49:43] INFO root fetch - processPackages [kuki]: Downloading https://files.pythonhosted.org/packages/77/b5/aa8b259b1e40bca2c42315211e81460b7d5909949cd5f9e553d473baf59c/kuki-0.0.2.tar.gz
+[2023-04-23 15:49:43] INFO root fetch - processPackages [terka]: executing diffoscope
+[2023-04-23 15:49:43] INFO root fetch - processPackages [terka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terka-1.6.3.tar.gz tmp/terka-1.6.4.tar.gz --markdown 20230423/t/terka/1.6.3-1.6.4/diff.md --exclude *.pyd
+[2023-04-23 15:49:43] INFO root fetch - processPackages [tap-shiftbase]: executing diffoscope
+[2023-04-23 15:49:43] INFO root fetch - processPackages [tap-shiftbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap_shiftbase-0.0.1.tar.gz tmp/tap_shiftbase-0.0.2.tar.gz --markdown 20230423/t/tap-shiftbase/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 15:49:43] INFO root fetch - processPackages [kuki]: executing diffoscope
+[2023-04-23 15:49:43] INFO root fetch - processPackages [kuki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuki-0.0.1.tar.gz tmp/kuki-0.0.2.tar.gz --markdown 20230423/k/kuki/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 15:49:44] INFO root fetch - processPackages [buteo]: Start processing: autoscale-queue-rq
+[2023-04-23 15:49:44] INFO root fetch - main [MainThread]: End processing [buteo]: success
+[2023-04-23 15:49:44] WARNING root fetch - processPackages [autoscale-queue-rq]: Skipping, unable to determine old version
+[2023-04-23 15:49:44] INFO root fetch - main [MainThread]: End processing [autoscale-queue-rq] error
+[2023-04-23 15:49:44] INFO root fetch - main [MainThread]: End processing [deepqt]: success
+[2023-04-23 15:49:44] INFO root fetch - main [MainThread]: End processing [FFmpyg-DavidRodriguezSoaresCUI]: success
+[2023-04-23 15:49:45] INFO root fetch - main [MainThread]: End processing [django-encryption]: success
+[2023-04-23 15:49:45] INFO root fetch - main [MainThread]: End processing [ml-pckg]: success
+[2023-04-23 15:49:45] INFO root fetch - main [MainThread]: End processing [kuki]: success
+[2023-04-23 15:49:46] INFO root fetch - main [MainThread]: End processing [tap-shiftbase]: success
+[2023-04-23 15:49:46] INFO root fetch - main [MainThread]: End processing [terka]: success
+[2023-04-23 15:50:00] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-23 15:50:00] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-23 15:50:00] INFO root fetch - main [MainThread]: Store serial: [17822681]
