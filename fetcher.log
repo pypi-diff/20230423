@@ -3158,3 +3158,53 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 06:48:58] INFO root fetch - main [MainThread]: End processing [html2notion]: success
 [2023-04-23 06:48:58] INFO root fetch - main [MainThread]: End processing [hak]: success
 [2023-04-23 06:48:58] INFO root fetch - main [MainThread]: Store serial: [17819466]
+[2023-04-23 06:54:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819466]
+[2023-04-23 06:54:08] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-23 06:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rembg
+[2023-04-23 06:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spectree
+[2023-04-23 06:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dg-itest
+[2023-04-23 06:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: AMAS-sb
+[2023-04-23 06:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: AMAS-sb
+[2023-04-23 06:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: shioajicaller
+[2023-04-23 06:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: CommonlyTools
+[2023-04-23 06:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: my-flask
+[2023-04-23 06:54:08] INFO root fetch - processPackages [rembg]: New version: [2.0.33] Old Version: [2.0.32]
+[2023-04-23 06:54:08] INFO root fetch - processPackages [spectree]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-23 06:54:08] INFO root fetch - processPackages [dg-itest]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 06:54:08] INFO root fetch - processPackages [CommonlyTools]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-23 06:54:08] INFO root fetch - processPackages [AMAS-sb]: New version: [0.0.4] Old Version: [0.0.1]
+[2023-04-23 06:54:08] INFO root fetch - processPackages [AMAS-sb]: New version: [0.0.4] Old Version: [0.0.1]
+[2023-04-23 06:54:08] INFO root fetch - processPackages [shioajicaller]: New version: [0.4.1.2] Old Version: [0.4.1.1]
+[2023-04-23 06:54:08] WARNING root fetch - processPackages [my-flask]: Skipping, unable to determine old version
+[2023-04-23 06:54:08] INFO root fetch - main [MainThread]: End processing [my-flask] error
+[2023-04-23 06:54:08] INFO root fetch - processPackages [rembg]: Downloading https://files.pythonhosted.org/packages/3f/6d/d50eea990f7c6d0b7c46b2232ce89f2126d858364b554206457cfb97853e/rembg-2.0.32.tar.gz
+[2023-04-23 06:54:08] INFO root fetch - processPackages [spectree]: Downloading https://files.pythonhosted.org/packages/5d/ca/35c39ce7818474ceb1e9d34529f2d7874b166a3a5cd3ff4892c270c3a080/spectree-1.1.0.tar.gz
+[2023-04-23 06:54:08] INFO root fetch - processPackages [CommonlyTools]: Downloading https://files.pythonhosted.org/packages/f8/38/51908835c5304612fe7cbcf2a7b859e6c64ea236cf97ca57c0ca73eab8a1/CommonlyTools-1.0.4.tar.gz
+[2023-04-23 06:54:09] INFO root fetch - processPackages [AMAS-sb]: Downloading https://files.pythonhosted.org/packages/71/d0/d3d0536fe078e9d8a2f3da869dbdb93664bb8c618f06a17504523f847701/AMAS-sb-0.0.1.tar.gz
+[2023-04-23 06:54:09] INFO root fetch - processPackages [AMAS-sb]: Downloading https://files.pythonhosted.org/packages/71/d0/d3d0536fe078e9d8a2f3da869dbdb93664bb8c618f06a17504523f847701/AMAS-sb-0.0.1.tar.gz
+[2023-04-23 06:54:09] INFO root fetch - processPackages [dg-itest]: Downloading https://files.pythonhosted.org/packages/49/3d/20545a273c3ff5068b2cad2c51394773957ec86cd1607d365b25b7773979/dg-itest-0.0.9.tar.gz
+[2023-04-23 06:54:09] INFO root fetch - processPackages [CommonlyTools]: executing diffoscope
+[2023-04-23 06:54:09] INFO root fetch - processPackages [CommonlyTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CommonlyTools-1.0.3.tar.gz tmp/CommonlyTools-1.0.4.tar.gz --markdown 20230423/C/CommonlyTools/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-23 06:54:09] INFO root fetch - processPackages [shioajicaller]: Downloading https://files.pythonhosted.org/packages/41/2e/8646914e5b076822c588bec9fdad900203705be9ab6d813e0e0260a930e3/shioajicaller-0.4.1.2.tar.gz
+[2023-04-23 06:54:09] INFO root fetch - processPackages [dg-itest]: executing diffoscope
+[2023-04-23 06:54:09] INFO root fetch - processPackages [dg-itest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dg-itest-0.0.8.tar.gz tmp/dg-itest-0.0.9.tar.gz --markdown 20230423/d/dg-itest/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 06:54:09] INFO root fetch - processPackages [spectree]: Downloading https://files.pythonhosted.org/packages/32/0f/f5d68309e134680687079a1269247692df7be150a7c927553e7123064c68/spectree-1.1.1.tar.gz
+[2023-04-23 06:54:09] INFO root fetch - processPackages [rembg]: Downloading https://files.pythonhosted.org/packages/02/97/52275db26ff523f30dbe93a557fccb3df546299177186aeadaef3bd6e242/rembg-2.0.33.tar.gz
+[2023-04-23 06:54:09] INFO root fetch - processPackages [shioajicaller]: executing diffoscope
+[2023-04-23 06:54:09] INFO root fetch - processPackages [shioajicaller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shioajicaller-0.4.1.1.tar.gz tmp/shioajicaller-0.4.1.2.tar.gz --markdown 20230423/s/shioajicaller/0.4.1.1-0.4.1.2/diff.md --exclude *.pyd
+[2023-04-23 06:54:09] INFO root fetch - processPackages [spectree]: executing diffoscope
+[2023-04-23 06:54:09] INFO root fetch - processPackages [spectree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spectree-1.1.0.tar.gz tmp/spectree-1.1.1.tar.gz --markdown 20230423/s/spectree/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-23 06:54:09] INFO root fetch - processPackages [rembg]: executing diffoscope
+[2023-04-23 06:54:09] INFO root fetch - processPackages [rembg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rembg-2.0.32.tar.gz tmp/rembg-2.0.33.tar.gz --markdown 20230423/r/rembg/2.0.32-2.0.33/diff.md --exclude *.pyd
+[2023-04-23 06:54:10] INFO root fetch - main [MainThread]: End processing [CommonlyTools]: success
+[2023-04-23 06:54:10] INFO root fetch - processPackages [AMAS-sb]: Downloading https://files.pythonhosted.org/packages/92/3d/444d4d49b8718ce5c4d8bb5acc3ae21c8abc01d0e27b62c51b82084aca17/AMAS-sb-0.0.4.tar.gz
+[2023-04-23 06:54:10] INFO root fetch - processPackages [AMAS-sb]: Downloading https://files.pythonhosted.org/packages/92/3d/444d4d49b8718ce5c4d8bb5acc3ae21c8abc01d0e27b62c51b82084aca17/AMAS-sb-0.0.4.tar.gz
+[2023-04-23 06:54:10] INFO root fetch - main [MainThread]: End processing [dg-itest]: success
+[2023-04-23 06:54:10] WARNING root fetch - processPackages [AMAS-sb]: Skipping package: exceeds size limit 23248227>=10485760
+[2023-04-23 06:54:10] WARNING root fetch - processPackages [AMAS-sb]: Skipping package: exceeds size limit 23248227>=10485760
+[2023-04-23 06:54:10] INFO root fetch - main [MainThread]: End processing [AMAS-sb] error
+[2023-04-23 06:54:10] INFO root fetch - main [MainThread]: End processing [AMAS-sb] error
+[2023-04-23 06:54:10] INFO root fetch - main [MainThread]: End processing [rembg]: success
+[2023-04-23 06:54:10] INFO root fetch - main [MainThread]: End processing [shioajicaller]: success
+[2023-04-23 06:54:11] INFO root fetch - main [MainThread]: End processing [spectree]: success
+[2023-04-23 06:54:11] INFO root fetch - main [MainThread]: Store serial: [17819491]
