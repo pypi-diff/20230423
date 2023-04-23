@@ -2888,3 +2888,59 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 06:09:31] INFO root fetch - main [MainThread]: End processing [synthea-rdf]: success
 [2023-04-23 06:09:32] INFO root fetch - main [MainThread]: End processing [python-geoacumen]: success
 [2023-04-23 06:09:32] INFO root fetch - main [MainThread]: Store serial: [17819334]
+[2023-04-23 06:14:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819334]
+[2023-04-23 06:14:40] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-23 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shioajicaller
+[2023-04-23 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-brainfuck
+[2023-04-23 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cookiecutter-autodocs
+[2023-04-23 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-gpt3
+[2023-04-23 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: geomapdemo
+[2023-04-23 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gpt-term
+[2023-04-23 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: SCALECAST
+[2023-04-23 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: wbpShell
+[2023-04-23 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pydflow
+[2023-04-23 06:14:40] INFO root fetch - processPackages [cookiecutter-autodocs]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-23 06:14:40] INFO root fetch - processPackages [geomapdemo]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-23 06:14:40] INFO root fetch - processPackages [nonebot-plugin-brainfuck]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-23 06:14:40] INFO root fetch - processPackages [shioajicaller]: New version: [0.4.1.0] Old Version: [0.4.0.0]
+[2023-04-23 06:14:40] WARNING root fetch - processPackages [gpt-term]: Skipping, unable to determine old version
+[2023-04-23 06:14:40] INFO root fetch - main [MainThread]: End processing [gpt-term] error
+[2023-04-23 06:14:40] INFO root fetch - processPackages [nonebot-plugin-gpt3]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-23 06:14:40] INFO root fetch - processPackages [SCALECAST]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-23 06:14:40] INFO root fetch - processPackages [pydflow]: New version: [1.6.99] Old Version: [1.6.98]
+[2023-04-23 06:14:40] INFO root fetch - processPackages [wbpShell]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-23 06:14:40] INFO root fetch - processPackages [pydflow]: executing diffoscope
+[2023-04-23 06:14:40] INFO root fetch - processPackages [pydflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydflow-1.6.98.tar.gz tmp/pydflow-1.6.99.tar.gz --markdown 20230423/p/pydflow/1.6.98-1.6.99/diff.md --exclude *.pyd
+[2023-04-23 06:14:40] INFO root fetch - processPackages [nonebot-plugin-brainfuck]: Downloading https://files.pythonhosted.org/packages/a9/4d/ab7d1657f950fe7c7b60048bc589fe064588c946aeeec66c4c2fced0cd3c/nonebot-plugin-brainfuck-1.0.0.tar.gz
+[2023-04-23 06:14:40] INFO root fetch - processPackages [shioajicaller]: Downloading https://files.pythonhosted.org/packages/58/05/299bdff6406204bcb2a6c206efe0e7783040f8c417a7dabe8cd872eb45dd/shioajicaller-0.4.0.0.tar.gz
+[2023-04-23 06:14:40] INFO root fetch - processPackages [nonebot-plugin-gpt3]: Downloading https://files.pythonhosted.org/packages/ce/17/645498a9f7ddfb773f49e825eca1b9e5283658d19951f8a98655a5e7e13d/nonebot_plugin_gpt3-1.1.8.tar.gz
+[2023-04-23 06:14:40] INFO root fetch - processPackages [wbpShell]: Downloading https://files.pythonhosted.org/packages/e8/64/b3764d287402f68094d732cde9eaefc84b786df2c27ab7dfa7a822c6ca6f/wbpShell-0.1.6.tar.gz
+[2023-04-23 06:14:40] INFO root fetch - processPackages [geomapdemo]: Downloading https://files.pythonhosted.org/packages/3b/7f/53a4a4a343d6e7b81f0e66c876d8741a566afc1e184e813b9922903561bf/geomapdemo-0.1.5.tar.gz
+[2023-04-23 06:14:40] INFO root fetch - processPackages [cookiecutter-autodocs]: Downloading https://files.pythonhosted.org/packages/a6/d9/35f088ce708b17daa7fa867f08977c57e866ec2af615ab6d7d0795b78d73/cookiecutter_autodocs-0.0.4.tar.gz
+[2023-04-23 06:14:40] INFO root fetch - processPackages [geomapdemo]: executing diffoscope
+[2023-04-23 06:14:40] INFO root fetch - processPackages [geomapdemo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geomapdemo-0.1.4.tar.gz tmp/geomapdemo-0.1.5.tar.gz --markdown 20230423/g/geomapdemo/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-23 06:14:40] INFO root fetch - processPackages [cookiecutter-autodocs]: executing diffoscope
+[2023-04-23 06:14:40] INFO root fetch - processPackages [cookiecutter-autodocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cookiecutter_autodocs-0.0.3.tar.gz tmp/cookiecutter_autodocs-0.0.4.tar.gz --markdown 20230423/c/cookiecutter-autodocs/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-23 06:14:40] INFO root fetch - processPackages [nonebot-plugin-brainfuck]: Downloading https://files.pythonhosted.org/packages/ee/91/c63a0b5f8a02feb873aaa709c78f44ec7b051595adf2a68f1d20cb18a6f2/nonebot-plugin-brainfuck-1.0.1.tar.gz
+[2023-04-23 06:14:40] INFO root fetch - processPackages [SCALECAST]: executing diffoscope
+[2023-04-23 06:14:40] INFO root fetch - processPackages [SCALECAST]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SCALECAST-0.9.8.tar.gz tmp/SCALECAST-0.9.9.tar.gz --markdown 20230423/S/SCALECAST/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-23 06:14:40] INFO root fetch - processPackages [nonebot-plugin-brainfuck]: executing diffoscope
+[2023-04-23 06:14:40] INFO root fetch - processPackages [nonebot-plugin-brainfuck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-brainfuck-1.0.0.tar.gz tmp/nonebot-plugin-brainfuck-1.0.1.tar.gz --markdown 20230423/n/nonebot-plugin-brainfuck/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-23 06:14:40] INFO root fetch - processPackages [shioajicaller]: Downloading https://files.pythonhosted.org/packages/84/15/851d1feb2435b6cc2eb6d2be0904011c1259537db685253dc63553193433/shioajicaller-0.4.1.0.tar.gz
+[2023-04-23 06:14:40] INFO root fetch - processPackages [nonebot-plugin-gpt3]: Downloading https://files.pythonhosted.org/packages/76/9a/e3e3b92721a9a65fd29534b2304d9357c7608c2b3ed3db3ed73edc041d41/nonebot_plugin_gpt3-1.1.9.tar.gz
+[2023-04-23 06:14:40] INFO root fetch - processPackages [shioajicaller]: executing diffoscope
+[2023-04-23 06:14:40] INFO root fetch - processPackages [shioajicaller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shioajicaller-0.4.0.0.tar.gz tmp/shioajicaller-0.4.1.0.tar.gz --markdown 20230423/s/shioajicaller/0.4.0.0-0.4.1.0/diff.md --exclude *.pyd
+[2023-04-23 06:14:40] INFO root fetch - processPackages [nonebot-plugin-gpt3]: executing diffoscope
+[2023-04-23 06:14:40] INFO root fetch - processPackages [nonebot-plugin-gpt3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_gpt3-1.1.8.tar.gz tmp/nonebot_plugin_gpt3-1.1.9.tar.gz --markdown 20230423/n/nonebot-plugin-gpt3/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-23 06:14:40] INFO root fetch - processPackages [wbpShell]: Downloading https://files.pythonhosted.org/packages/d9/ec/ab01cfe6a2bc34c51a67c4c004f15687ea4061733d43f4ee82a5d95e2bb7/wbpShell-0.1.7.tar.gz
+[2023-04-23 06:14:41] INFO root fetch - processPackages [wbpShell]: executing diffoscope
+[2023-04-23 06:14:41] INFO root fetch - processPackages [wbpShell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wbpShell-0.1.6.tar.gz tmp/wbpShell-0.1.7.tar.gz --markdown 20230423/w/wbpShell/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-23 06:14:41] INFO root fetch - main [MainThread]: End processing [geomapdemo]: success
+[2023-04-23 06:14:42] INFO root fetch - main [MainThread]: End processing [cookiecutter-autodocs]: success
+[2023-04-23 06:14:42] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-brainfuck]: success
+[2023-04-23 06:14:42] INFO root fetch - main [MainThread]: End processing [wbpShell]: success
+[2023-04-23 06:14:42] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-gpt3]: success
+[2023-04-23 06:14:42] INFO root fetch - main [MainThread]: End processing [shioajicaller]: success
+[2023-04-23 06:14:42] INFO root fetch - main [MainThread]: End processing [SCALECAST]: success
+[2023-04-23 06:14:43] INFO root fetch - main [MainThread]: End processing [pydflow]: success
+[2023-04-23 06:14:43] INFO root fetch - main [MainThread]: Store serial: [17819361]
