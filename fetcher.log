@@ -11844,3 +11844,46 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 19:57:49] INFO root fetch - main [MainThread]: End processing [zython]: success
 [2023-04-23 19:57:49] INFO root fetch - main [MainThread]: End processing [image-to-arduino]: success
 [2023-04-23 19:57:49] INFO root fetch - main [MainThread]: Store serial: [17824633]
+[2023-04-23 20:02:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17824633]
+[2023-04-23 20:02:58] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 20:02:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tttracking
+[2023-04-23 20:02:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: parasect
+[2023-04-23 20:02:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AegosLib2
+[2023-04-23 20:02:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vocabmaster
+[2023-04-23 20:02:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ValLocal
+[2023-04-23 20:02:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dlt
+[2023-04-23 20:02:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: auto-screener
+[2023-04-23 20:02:58] INFO root fetch - processPackages [vocabmaster]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-23 20:02:58] WARNING root fetch - processPackages [AegosLib2]: Skipping, unable to determine old version
+[2023-04-23 20:02:58] INFO root fetch - main [MainThread]: End processing [AegosLib2] error
+[2023-04-23 20:02:58] INFO root fetch - processPackages [dlt]: New version: [0.2.6a0] Old Version: [0.2.5a1]
+[2023-04-23 20:02:58] INFO root fetch - processPackages [tttracking]: New version: [0.0.1.1] Old Version: [0.0.1]
+[2023-04-23 20:02:58] INFO root fetch - processPackages [auto-screener]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-23 20:02:58] WARNING root fetch - processPackages [ValLocal]: Skipping, unable to determine old version
+[2023-04-23 20:02:58] INFO root fetch - processPackages [parasect]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-23 20:02:58] INFO root fetch - main [MainThread]: End processing [ValLocal] error
+[2023-04-23 20:02:58] INFO root fetch - processPackages [vocabmaster]: Downloading https://files.pythonhosted.org/packages/cb/7a/e6da344717fc5382886e07e7f9687151b818135166d7ab3de52e591fcfea/vocabmaster-0.1.1.tar.gz
+[2023-04-23 20:02:58] INFO root fetch - processPackages [tttracking]: Downloading https://files.pythonhosted.org/packages/d8/ee/2267cbe68c7505079ba0980a8808760873579fe106f669cd8450e792bc8f/tttracking-0.0.1-py3-none-any.whl
+[2023-04-23 20:02:59] INFO root fetch - processPackages [auto-screener]: Downloading https://files.pythonhosted.org/packages/a7/2c/bf7b2b9b5b8006f280b61ebe32538396960f75603ade19558e68ce80760d/auto-screener-0.0.7.tar.gz
+[2023-04-23 20:02:59] INFO root fetch - processPackages [parasect]: Downloading https://files.pythonhosted.org/packages/7c/92/1c156291d7e0dfcad8a900002202e975228d6b8b0438fea77fb426f3caa6/parasect-1.1.0.tar.gz
+[2023-04-23 20:02:59] INFO root fetch - processPackages [dlt]: Downloading https://files.pythonhosted.org/packages/de/ee/18518f03aad76aa35dfc16b89bbcd4276bb233737d5fc3c9260204c43bcc/dlt-0.2.6a0.tar.gz
+[2023-04-23 20:02:59] INFO root fetch - processPackages [vocabmaster]: Downloading https://files.pythonhosted.org/packages/3a/44/6480600b09c70de6d47e2c9c97e0ee76dc83a62dc1849bbadc2131d805f1/vocabmaster-0.1.2.tar.gz
+[2023-04-23 20:02:59] INFO root fetch - processPackages [dlt]: executing diffoscope
+[2023-04-23 20:02:59] INFO root fetch - processPackages [dlt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dlt-0.2.5a1.tar.gz tmp/dlt-0.2.6a0.tar.gz --markdown 20230423/d/dlt/0.2.5a1-0.2.6a0/diff.md --exclude *.pyd
+[2023-04-23 20:02:59] INFO root fetch - processPackages [tttracking]: Downloading https://files.pythonhosted.org/packages/35/a8/77c4d913b92169403a0f29ce97d07cef1cad4d6b07cc61d9cfc1c0ca605a/tttracking-0.0.1.1-py3-none-any.whl
+[2023-04-23 20:02:59] INFO root fetch - processPackages [auto-screener]: Downloading https://files.pythonhosted.org/packages/95/23/4dbcfba64c876f7bcecd12377e084d5142ab1da8b4ebeb3d3a127852b847/auto-screener-0.0.8.tar.gz
+[2023-04-23 20:02:59] INFO root fetch - processPackages [parasect]: Downloading https://files.pythonhosted.org/packages/0b/79/6edbf9974432cac8cf73e7db66fd7780eb93bd2ee2e71bfbdcccc9cead61/parasect-1.1.1.tar.gz
+[2023-04-23 20:02:59] INFO root fetch - processPackages [vocabmaster]: executing diffoscope
+[2023-04-23 20:02:59] INFO root fetch - processPackages [vocabmaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vocabmaster-0.1.1.tar.gz tmp/vocabmaster-0.1.2.tar.gz --markdown 20230423/v/vocabmaster/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-23 20:02:59] INFO root fetch - processPackages [tttracking]: executing diffoscope
+[2023-04-23 20:02:59] INFO root fetch - processPackages [tttracking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tttracking-0.0.1-py3-none-any.whl.zip tmp/tttracking-0.0.1.1-py3-none-any.whl.zip --markdown 20230423/t/tttracking/0.0.1-0.0.1.1/diff.md --exclude *.pyd
+[2023-04-23 20:02:59] INFO root fetch - processPackages [auto-screener]: executing diffoscope
+[2023-04-23 20:02:59] INFO root fetch - processPackages [auto-screener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto-screener-0.0.7.tar.gz tmp/auto-screener-0.0.8.tar.gz --markdown 20230423/a/auto-screener/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-23 20:02:59] INFO root fetch - processPackages [parasect]: executing diffoscope
+[2023-04-23 20:02:59] INFO root fetch - processPackages [parasect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parasect-1.1.0.tar.gz tmp/parasect-1.1.1.tar.gz --markdown 20230423/p/parasect/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-23 20:03:00] INFO root fetch - main [MainThread]: End processing [tttracking]: success
+[2023-04-23 20:03:00] INFO root fetch - main [MainThread]: End processing [vocabmaster]: success
+[2023-04-23 20:03:00] INFO root fetch - main [MainThread]: End processing [auto-screener]: success
+[2023-04-23 20:03:00] INFO root fetch - main [MainThread]: End processing [parasect]: success
+[2023-04-23 20:03:01] INFO root fetch - main [MainThread]: End processing [dlt]: success
+[2023-04-23 20:03:01] INFO root fetch - main [MainThread]: Store serial: [17824657]
