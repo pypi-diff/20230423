@@ -1783,3 +1783,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 03:19:36] INFO root fetch - main [MainThread]: End processing [alacorder]: success
 [2023-04-23 03:19:41] INFO root fetch - main [MainThread]: End processing [oak9-tython]: success
 [2023-04-23 03:19:41] INFO root fetch - main [MainThread]: Store serial: [17818574]
+[2023-04-23 03:24:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818574]
+[2023-04-23 03:24:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-23 03:24:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: neatmesh
+[2023-04-23 03:24:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyagrum-nightly
+[2023-04-23 03:24:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-lambda-subminute
+[2023-04-23 03:24:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-lambda-layer-curl
+[2023-04-23 03:24:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: college-scorecard
+[2023-04-23 03:24:51] INFO root fetch - processPackages [neatmesh]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-23 03:24:51] INFO root fetch - processPackages [cdk-lambda-subminute]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-23 03:24:51] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-23 03:24:51] INFO root fetch - processPackages [college-scorecard]: New version: [1.4] Old Version: [1.3]
+[2023-04-23 03:24:51] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-04-23 03:24:51] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230423/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-23 03:24:51] INFO root fetch - processPackages [pyagrum-nightly]: New version: [1.7.1.9.dev202304221681314159] Old Version: [1.7.1.9.dev202304211681314159]
+[2023-04-23 03:24:51] INFO root fetch - processPackages [college-scorecard]: Downloading https://files.pythonhosted.org/packages/a0/bf/d0fa49b43c77b9578088b5bce3506ef56388abfdf910dc61c63b5b4354f8/college-scorecard-1.3.tar.gz
+[2023-04-23 03:24:51] INFO root fetch - processPackages [neatmesh]: Downloading https://files.pythonhosted.org/packages/b9/de/b81434a8d554c64e9e2c3bc7dbe55557f4c7de5443a608c31945ea3941dc/neatmesh-0.0.8.tar.gz
+[2023-04-23 03:24:51] INFO root fetch - processPackages [cdk-lambda-subminute]: executing diffoscope
+[2023-04-23 03:24:51] INFO root fetch - processPackages [cdk-lambda-subminute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_lambda_subminute-2.0.98.tar.gz tmp/cdk_lambda_subminute-2.0.99.tar.gz --markdown 20230423/c/cdk-lambda-subminute/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-23 03:24:51] INFO root fetch - processPackages [pyagrum-nightly]: Downloading https://files.pythonhosted.org/packages/15/94/c49324cd0b665511fc8f3c94ada72e765b27bef063acca241781736e3143/pyAgrum_nightly-1.7.1.9.dev202304221681314159-cp39-cp39-win_amd64.whl
+[2023-04-23 03:24:51] INFO root fetch - processPackages [neatmesh]: executing diffoscope
+[2023-04-23 03:24:51] INFO root fetch - processPackages [neatmesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neatmesh-0.0.7.tar.gz tmp/neatmesh-0.0.8.tar.gz --markdown 20230423/n/neatmesh/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-23 03:24:51] INFO root fetch - processPackages [college-scorecard]: Downloading https://files.pythonhosted.org/packages/a8/32/c79f9264dd1ddd286d31c88bb7ad313c32b9e1d1aadd895d092600cae7cc/college-scorecard-1.4.tar.gz
+[2023-04-23 03:24:52] INFO root fetch - processPackages [college-scorecard]: executing diffoscope
+[2023-04-23 03:24:52] INFO root fetch - processPackages [college-scorecard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/college-scorecard-1.3.tar.gz tmp/college-scorecard-1.4.tar.gz --markdown 20230423/c/college-scorecard/1.3-1.4/diff.md --exclude *.pyd
+[2023-04-23 03:24:52] INFO root fetch - processPackages [pyagrum-nightly]: executing diffoscope
+[2023-04-23 03:24:52] INFO root fetch - processPackages [pyagrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.7.1.9.dev202304211681314159-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.7.1.9.dev202304221681314159-cp39-cp39-win_amd64.whl.zip --markdown 20230423/p/pyagrum-nightly/1.7.1.9.dev202304211681314159-1.7.1.9.dev202304221681314159/diff.md --exclude *.pyd
+[2023-04-23 03:24:52] INFO root fetch - main [MainThread]: End processing [cdk-lambda-subminute]: success
+[2023-04-23 03:24:53] INFO root fetch - main [MainThread]: End processing [neatmesh]: success
+[2023-04-23 03:24:53] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-04-23 03:24:53] INFO root fetch - main [MainThread]: End processing [pyagrum-nightly]: success
+[2023-04-23 03:24:53] INFO root fetch - main [MainThread]: End processing [college-scorecard]: success
+[2023-04-23 03:24:53] INFO root fetch - main [MainThread]: Store serial: [17818613]
