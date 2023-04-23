@@ -9950,3 +9950,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 17:38:48] INFO root fetch - main [MainThread]: End processing [gpt-term]: success
 [2023-04-23 17:38:48] INFO root fetch - main [MainThread]: End processing [jupyterlab-judge]: success
 [2023-04-23 17:38:48] INFO root fetch - main [MainThread]: Store serial: [17823438]
+[2023-04-23 17:43:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823438]
+[2023-04-23 17:43:57] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 17:43:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: high-order-layers-torch
+[2023-04-23 17:43:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ohmyi3
+[2023-04-23 17:43:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyHRM
+[2023-04-23 17:43:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: asari-metabolomics
+[2023-04-23 17:43:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: strplus
+[2023-04-23 17:43:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bizlogic
+[2023-04-23 17:43:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spotify-recommender-api
+[2023-04-23 17:43:57] INFO root fetch - processPackages [bizlogic]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 17:43:57] INFO root fetch - processPackages [high-order-layers-torch]: New version: [1.3.4] Old Version: [1.3.3]
+[2023-04-23 17:43:57] INFO root fetch - processPackages [strplus]: New version: [1.0.8] Old Version: [1.0.6]
+[2023-04-23 17:43:57] INFO root fetch - processPackages [spotify-recommender-api]: New version: [4.0.0] Old Version: [3.9.5]
+[2023-04-23 17:43:57] INFO root fetch - processPackages [ohmyi3]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-23 17:43:57] INFO root fetch - processPackages [asari-metabolomics]: New version: [1.9.8] Old Version: [1.9.7]
+[2023-04-23 17:43:57] WARNING root fetch - processPackages [PyHRM]: Skipping, unable to determine old version
+[2023-04-23 17:43:57] INFO root fetch - main [MainThread]: End processing [PyHRM] error
+[2023-04-23 17:43:57] INFO root fetch - processPackages [spotify-recommender-api]: executing diffoscope
+[2023-04-23 17:43:57] INFO root fetch - processPackages [spotify-recommender-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotify_recommender_api-3.9.5-py3-none-any.whl.zip tmp/spotify_recommender_api-4.0.0-py3-none-any.whl.zip --markdown 20230423/s/spotify-recommender-api/3.9.5-4.0.0/diff.md --exclude *.pyd
+[2023-04-23 17:43:57] INFO root fetch - processPackages [bizlogic]: executing diffoscope
+[2023-04-23 17:43:57] INFO root fetch - processPackages [bizlogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bizlogic-0.0.5.tar.gz tmp/bizlogic-0.0.6.tar.gz --markdown 20230423/b/bizlogic/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 17:43:57] INFO root fetch - processPackages [asari-metabolomics]: Downloading https://files.pythonhosted.org/packages/6c/0a/5a8ad010795f48017a8133744462ccc1429e3e0a20f8d99fbc6356045db9/asari-metabolomics-1.9.7.tar.gz
+[2023-04-23 17:43:57] INFO root fetch - processPackages [ohmyi3]: Downloading https://files.pythonhosted.org/packages/51/51/7f887d6d46b95b443133f2723b06e251338b13b4ed737151f6de220580e0/ohmyi3-0.1.4.tar.gz
+[2023-04-23 17:43:57] INFO root fetch - processPackages [strplus]: Downloading https://files.pythonhosted.org/packages/70/90/7660fa732b651febd2e76b60b812315dd06ba67562c85dcfd5054eae7477/strplus-1.0.8.tar.gz
+[2023-04-23 17:43:57] INFO root fetch - processPackages [high-order-layers-torch]: Downloading https://files.pythonhosted.org/packages/17/cf/3274e31f365d5accf302843eb60a10af356fd0e7d9d7d3876d05b7766255/high_order_layers_torch-1.3.4.tar.gz
+[2023-04-23 17:43:58] INFO root fetch - processPackages [strplus]: executing diffoscope
+[2023-04-23 17:43:58] INFO root fetch - processPackages [strplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strplus-1.0.6.tar.gz tmp/strplus-1.0.8.tar.gz --markdown 20230423/s/strplus/1.0.6-1.0.8/diff.md --exclude *.pyd
+[2023-04-23 17:43:58] INFO root fetch - processPackages [ohmyi3]: executing diffoscope
+[2023-04-23 17:43:58] INFO root fetch - processPackages [ohmyi3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ohmyi3-0.1.3.tar.gz tmp/ohmyi3-0.1.4.tar.gz --markdown 20230423/o/ohmyi3/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-23 17:43:58] INFO root fetch - processPackages [high-order-layers-torch]: executing diffoscope
+[2023-04-23 17:43:58] INFO root fetch - processPackages [high-order-layers-torch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/high_order_layers_torch-1.3.3.tar.gz tmp/high_order_layers_torch-1.3.4.tar.gz --markdown 20230423/h/high-order-layers-torch/1.3.3-1.3.4/diff.md --exclude *.pyd
+[2023-04-23 17:43:58] INFO root fetch - main [MainThread]: End processing [bizlogic]: success
+[2023-04-23 17:43:58] INFO root fetch - main [MainThread]: End processing [spotify-recommender-api]: success
+[2023-04-23 17:43:59] INFO root fetch - main [MainThread]: End processing [strplus]: success
+[2023-04-23 17:43:59] INFO root fetch - main [MainThread]: End processing [high-order-layers-torch]: success
+[2023-04-23 17:43:59] INFO root fetch - processPackages [asari-metabolomics]: Downloading https://files.pythonhosted.org/packages/0c/ec/31f7daaa8a016fba464e73e22784642a5130fa579870d9f5ee0c0d31028d/asari-metabolomics-1.9.8.tar.gz
+[2023-04-23 17:44:00] INFO root fetch - main [MainThread]: End processing [ohmyi3]: success
+[2023-04-23 17:44:01] INFO root fetch - processPackages [asari-metabolomics]: executing diffoscope
+[2023-04-23 17:44:01] INFO root fetch - processPackages [asari-metabolomics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asari-metabolomics-1.9.7.tar.gz tmp/asari-metabolomics-1.9.8.tar.gz --markdown 20230423/a/asari-metabolomics/1.9.7-1.9.8/diff.md --exclude *.pyd
+[2023-04-23 17:44:05] INFO root fetch - main [MainThread]: End processing [asari-metabolomics]: success
+[2023-04-23 17:44:05] INFO root fetch - main [MainThread]: Store serial: [17823458]
