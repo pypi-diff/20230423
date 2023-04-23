@@ -12423,3 +12423,83 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 20:45:37] INFO root fetch - main [MainThread]: End processing [act-workers]: success
 [2023-04-23 20:45:50] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-23 20:45:50] INFO root fetch - main [MainThread]: Store serial: [17824944]
+[2023-04-23 20:50:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17824944]
+[2023-04-23 20:50:59] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-23 20:50:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Conanmail
+[2023-04-23 20:50:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bhv
+[2023-04-23 20:50:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cosmopower-jax
+[2023-04-23 20:50:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: foursight-core
+[2023-04-23 20:50:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bagbag
+[2023-04-23 20:50:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: foursight-core
+[2023-04-23 20:50:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xlttbc
+[2023-04-23 20:50:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vollseg
+[2023-04-23 20:50:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: peakrdl-python
+[2023-04-23 20:50:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: elmax-api
+[2023-04-23 20:50:59] INFO root fetch - processPackages [Conanmail]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-23 20:50:59] INFO root fetch - processPackages [peakrdl-python]: New version: [0.6.0rc1] Old Version: [0.6.0]
+[2023-04-23 20:50:59] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-23 20:50:59] INFO root fetch - processPackages [cosmopower-jax]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-23 20:50:59] INFO root fetch - processPackages [bhv]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-23 20:50:59] WARNING root fetch - processPackages [xlttbc]: Skipping, unable to determine old version
+[2023-04-23 20:50:59] INFO root fetch - processPackages [xlttbc]: Start processing: zeroconf
+[2023-04-23 20:50:59] INFO root fetch - main [MainThread]: End processing [xlttbc] error
+[2023-04-23 20:50:59] INFO root fetch - processPackages [elmax-api]: New version: [0.0.4] Old Version: [0.0.3rc4]
+[2023-04-23 20:50:59] INFO root fetch - processPackages [foursight-core]: New version: [4.0.0] Old Version: [3.3.2.2b1]
+[2023-04-23 20:50:59] INFO root fetch - processPackages [foursight-core]: New version: [4.0.0] Old Version: [3.3.2.2b1]
+[2023-04-23 20:50:59] INFO root fetch - processPackages [bagbag]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-04-23 20:50:59] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-23 20:50:59] INFO root fetch - processPackages [zeroconf]: New version: [0.57.0] Old Version: [0.56.0]
+[2023-04-23 20:50:59] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-23 20:50:59] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-3.3.2.2b1.tar.gz tmp/foursight_core-4.0.0.tar.gz --markdown 20230423/f/foursight-core/3.3.2.2b1-4.0.0/diff.md --exclude *.pyd
+[2023-04-23 20:50:59] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-23 20:50:59] INFO root fetch - processPackages [vollseg]: Start processing: vnkdj5-utils
+[2023-04-23 20:50:59] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-23 20:50:59] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2023-04-23 20:50:59] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.9.5.tar.gz tmp/bagbag-0.9.6.tar.gz --markdown 20230423/b/bagbag/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-04-23 20:50:59] INFO root fetch - processPackages [peakrdl-python]: Downloading https://files.pythonhosted.org/packages/39/00/155042c0c3fa8605de695e000af1a32e14ce3714b6648d4a34325bf871a2/peakrdl-python-0.6.0.tar.gz
+[2023-04-23 20:50:59] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-23 20:50:59] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-3.3.2.2b1.tar.gz tmp/foursight_core-4.0.0.tar.gz --markdown 20230423/f/foursight-core/3.3.2.2b1-4.0.0/diff.md --exclude *.pyd
+[2023-04-23 20:50:59] INFO root fetch - processPackages [vnkdj5-utils]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 20:50:59] INFO root fetch - processPackages [cosmopower-jax]: Downloading https://files.pythonhosted.org/packages/97/35/582147478ea28aa9834f2ff4a053581751b1d06de38c6dce28b6e2e36c48/cosmopower_jax-0.2.0.tar.gz
+[2023-04-23 20:50:59] WARNING root fetch - processPackages [cosmopower-jax]: Skipping package: exceeds size limit 41404353>=10485760
+[2023-04-23 20:50:59] INFO root fetch - processPackages [cosmopower-jax]: Start processing: np-queuey
+[2023-04-23 20:50:59] INFO root fetch - main [MainThread]: End processing [cosmopower-jax] error
+[2023-04-23 20:50:59] INFO root fetch - processPackages [elmax-api]: Downloading https://files.pythonhosted.org/packages/37/a5/a6deaa80cf879c5491fa49c756de7de92c2f625fdd3a6d71c8689e0b9143/elmax_api-0.0.3rc4.tar.gz
+[2023-04-23 20:50:59] INFO root fetch - processPackages [np-queuey]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 20:50:59] INFO root fetch - processPackages [zeroconf]: Downloading https://files.pythonhosted.org/packages/ba/1b/7b94a73e33b648be5884319da1d0e6c164ac26d30fa902dced3339cbe923/zeroconf-0.56.0.tar.gz
+[2023-04-23 20:50:59] INFO root fetch - processPackages [np-queuey]: executing diffoscope
+[2023-04-23 20:50:59] INFO root fetch - processPackages [np-queuey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_queuey-0.1.8.tar.gz tmp/np_queuey-0.1.9.tar.gz --markdown 20230423/n/np-queuey/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 20:50:59] INFO root fetch - processPackages [vnkdj5-utils]: Downloading https://files.pythonhosted.org/packages/3b/ae/2c2050f1dbea3a3f1416a1eac2bd3424a92abcd2ffd26220ebc0add1713a/vnkdj5_utils-0.1.0.tar.gz
+[2023-04-23 20:50:59] INFO root fetch - processPackages [bhv]: Downloading https://files.pythonhosted.org/packages/16/a6/61dcf353123ce0e9793afc4ae44676570447fe3bcb3844bdb9ea367bc018/bhv-0.2.4.tar.gz
+[2023-04-23 20:51:00] INFO root fetch - processPackages [Conanmail]: executing diffoscope
+[2023-04-23 20:51:00] INFO root fetch - processPackages [Conanmail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Conanmail-1.0.7-py3-none-any.whl.zip tmp/Conanmail-1.0.8-py3-none-any.whl.zip --markdown 20230423/C/Conanmail/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-23 20:51:00] INFO root fetch - processPackages [bhv]: executing diffoscope
+[2023-04-23 20:51:00] INFO root fetch - processPackages [bhv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bhv-0.2.3.tar.gz tmp/bhv-0.2.4.tar.gz --markdown 20230423/b/bhv/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-23 20:51:00] INFO root fetch - processPackages [peakrdl-python]: executing diffoscope
+[2023-04-23 20:51:00] INFO root fetch - processPackages [peakrdl-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peakrdl-python-0.6.0.tar.gz tmp/peakrdl-python-0.6.0rc1.tar.gz --markdown 20230423/p/peakrdl-python/0.6.0-0.6.0rc1/diff.md --exclude *.pyd
+[2023-04-23 20:51:00] INFO root fetch - processPackages [zeroconf]: Downloading https://files.pythonhosted.org/packages/fc/e2/a045487060919e3454f67541e6cfdddc608d8466036ea6c43a9737360f10/zeroconf-0.57.0.tar.gz
+[2023-04-23 20:51:00] INFO root fetch - processPackages [elmax-api]: Downloading https://files.pythonhosted.org/packages/2e/b0/4550814e87f6140fa56b39e7da94226e488db433726c3db8655cb2bd662e/elmax_api-0.0.4.tar.gz
+[2023-04-23 20:51:00] INFO root fetch - processPackages [vnkdj5-utils]: Downloading https://files.pythonhosted.org/packages/13/2a/7ff2dffa618d2d4db2ae86dc96a24d704d77867bdb87d3d1218ee227e132/vnkdj5_utils-0.1.1-py3-none-any.whl
+[2023-04-23 20:51:00] INFO root fetch - processPackages [zeroconf]: executing diffoscope
+[2023-04-23 20:51:00] INFO root fetch - processPackages [zeroconf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zeroconf-0.56.0.tar.gz tmp/zeroconf-0.57.0.tar.gz --markdown 20230423/z/zeroconf/0.56.0-0.57.0/diff.md --exclude *.pyd
+[2023-04-23 20:51:00] INFO root fetch - processPackages [vnkdj5-utils]: executing diffoscope
+[2023-04-23 20:51:00] INFO root fetch - processPackages [vnkdj5-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnkdj5_utils-0.1.0.tar.gz tmp/vnkdj5_utils-0.1.1-py3-none-any.whl.zip --markdown 20230423/v/vnkdj5-utils/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 20:51:00] INFO root fetch - processPackages [elmax-api]: executing diffoscope
+[2023-04-23 20:51:00] INFO root fetch - processPackages [elmax-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elmax_api-0.0.3rc4.tar.gz tmp/elmax_api-0.0.4.tar.gz --markdown 20230423/e/elmax-api/0.0.3rc4-0.0.4/diff.md --exclude *.pyd
+[2023-04-23 20:51:01] INFO root fetch - processPackages [Conanmail]: Start processing: text-box-wrapper
+[2023-04-23 20:51:01] INFO root fetch - main [MainThread]: End processing [Conanmail]: success
+[2023-04-23 20:51:01] INFO root fetch - processPackages [text-box-wrapper]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-23 20:51:01] INFO root fetch - main [MainThread]: End processing [bagbag]: success
+[2023-04-23 20:51:01] INFO root fetch - processPackages [text-box-wrapper]: Downloading https://files.pythonhosted.org/packages/b9/96/ca3507ba3f9616a49ead2b0be1ecb2f96e3ddffabc113508731da731ad48/text_box_wrapper-0.1.2.tar.gz
+[2023-04-23 20:51:01] INFO root fetch - main [MainThread]: End processing [bhv]: success
+[2023-04-23 20:51:01] INFO root fetch - main [MainThread]: End processing [np-queuey]: success
+[2023-04-23 20:51:01] INFO root fetch - main [MainThread]: End processing [peakrdl-python]: success
+[2023-04-23 20:51:01] INFO root fetch - processPackages [text-box-wrapper]: executing diffoscope
+[2023-04-23 20:51:01] INFO root fetch - processPackages [text-box-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text-box-wrapper-0.1.1.tar.gz tmp/text_box_wrapper-0.1.2.tar.gz --markdown 20230423/t/text-box-wrapper/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-23 20:51:01] INFO root fetch - main [MainThread]: End processing [vnkdj5-utils]: success
+[2023-04-23 20:51:02] INFO root fetch - main [MainThread]: End processing [zeroconf]: success
+[2023-04-23 20:51:02] INFO root fetch - main [MainThread]: End processing [elmax-api]: success
+[2023-04-23 20:51:02] INFO root fetch - main [MainThread]: End processing [text-box-wrapper]: success
+[2023-04-23 20:51:16] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-23 20:51:16] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-23 20:51:16] INFO root fetch - main [MainThread]: Store serial: [17825000]
