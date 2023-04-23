@@ -2017,3 +2017,73 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 03:41:41] INFO root fetch - main [MainThread]: End processing [sweetrpg-api-core]: success
 [2023-04-23 03:41:42] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
 [2023-04-23 03:41:42] INFO root fetch - main [MainThread]: Store serial: [17818722]
+[2023-04-23 03:46:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818722]
+[2023-04-23 03:46:50] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-23 03:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: selfcord.py
+[2023-04-23 03:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nbdev-django
+[2023-04-23 03:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: proactive-jupyter-kernel
+[2023-04-23 03:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sweetrpg-web-core
+[2023-04-23 03:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nbdev-apl
+[2023-04-23 03:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mecord-cli
+[2023-04-23 03:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: honeypot
+[2023-04-23 03:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: wbpLoglist
+[2023-04-23 03:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: jsonrpc-py
+[2023-04-23 03:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cdk-wordpress
+[2023-04-23 03:46:50] INFO root fetch - processPackages [selfcord.py]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 03:46:50] INFO root fetch - processPackages [honeypot]: New version: [0.1.1] Old Version: [0.1]
+[2023-04-23 03:46:50] INFO root fetch - processPackages [jsonrpc-py]: New version: [3.0.3] Old Version: [3.0.2]
+[2023-04-23 03:46:50] INFO root fetch - processPackages [wbpLoglist]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-23 03:46:50] INFO root fetch - processPackages [mecord-cli]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 03:46:50] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.730] Old Version: [0.0.729]
+[2023-04-23 03:46:50] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 03:46:50] INFO root fetch - processPackages [proactive-jupyter-kernel]: New version: [13.1.1.2212191832.dev0] Old Version: [13.1.1.2212191149.dev0]
+[2023-04-23 03:46:50] INFO root fetch - processPackages [cdk-wordpress]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 03:46:50] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 03:46:50] INFO root fetch - processPackages [proactive-jupyter-kernel]: executing diffoscope
+[2023-04-23 03:46:50] INFO root fetch - processPackages [proactive-jupyter-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proactive-jupyter-kernel-13.1.1.2212191149.dev0.zip tmp/proactive-jupyter-kernel-13.1.1.2212191832.dev0.zip --markdown 20230423/p/proactive-jupyter-kernel/13.1.1.2212191149.dev0-13.1.1.2212191832.dev0/diff.md --exclude *.pyd
+[2023-04-23 03:46:50] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2023-04-23 03:46:50] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20230423/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 03:46:50] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-04-23 03:46:50] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230423/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 03:46:50] INFO root fetch - processPackages [honeypot]: Downloading https://files.pythonhosted.org/packages/6b/c1/da9505eb0ef8ab0534f0139b2d3d0828ea905b7551a9b0e5a48e7c456e69/honeypot-0.1.tar.gz
+[2023-04-23 03:46:50] INFO root fetch - processPackages [selfcord.py]: Downloading https://files.pythonhosted.org/packages/60/a1/62d85baca5734a7b8afb84f2d41feabfc6e550c05942f66f4bb35bb6bac3/selfcord.py-0.0.8.tar.gz
+[2023-04-23 03:46:50] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/c2/37/3546a4d55b470125ea64eee16c4090264861d03a9c84ff3309c4aceacd68/nbdev-apl-0.0.730.tar.gz
+[2023-04-23 03:46:50] INFO root fetch - processPackages [wbpLoglist]: Downloading https://files.pythonhosted.org/packages/b7/eb/dc116ed082fdd85d8159676acdefdadd252d2153e1e6eeb63ea9d30533c7/wbpLoglist-0.1.4.tar.gz
+[2023-04-23 03:46:50] INFO root fetch - processPackages [jsonrpc-py]: Downloading https://files.pythonhosted.org/packages/1e/eb/7430223987012ffef69bacf38abbc865161b0e7635229aafbb4f40319811/jsonrpc-py-3.0.3.tar.gz
+[2023-04-23 03:46:51] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-04-23 03:46:51] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.729.tar.gz tmp/nbdev-apl-0.0.730.tar.gz --markdown 20230423/n/nbdev-apl/0.0.729-0.0.730/diff.md --exclude *.pyd
+[2023-04-23 03:46:51] INFO root fetch - processPackages [jsonrpc-py]: executing diffoscope
+[2023-04-23 03:46:51] INFO root fetch - processPackages [jsonrpc-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonrpc-py-3.0.2.tar.gz tmp/jsonrpc-py-3.0.3.tar.gz --markdown 20230423/j/jsonrpc-py/3.0.2-3.0.3/diff.md --exclude *.pyd
+[2023-04-23 03:46:51] INFO root fetch - processPackages [mecord-cli]: executing diffoscope
+[2023-04-23 03:46:51] INFO root fetch - processPackages [mecord-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mecord-cli-0.1.8.tar.gz tmp/mecord-cli-0.1.9.tar.gz --markdown 20230423/m/mecord-cli/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 03:46:51] INFO root fetch - processPackages [honeypot]: Downloading https://files.pythonhosted.org/packages/6e/f9/473949ae12b1084c199200d01b6463560835778e1024db3bf010c5a1035b/honeypot-0.1.1-py3-none-any.whl
+[2023-04-23 03:46:51] INFO root fetch - processPackages [wbpLoglist]: Downloading https://files.pythonhosted.org/packages/46/cf/88dbc429ea2195b7fd3c31902334c880ba7a52647b7f0fd7bd4a05a2add0/wbpLoglist-0.1.5.tar.gz
+[2023-04-23 03:46:51] INFO root fetch - processPackages [selfcord.py]: Downloading https://files.pythonhosted.org/packages/f0/59/540e84ae62ebd89119024caaacdfc977fb89dcc6507a52e741435ad5882a/selfcord.py-0.0.9.tar.gz
+[2023-04-23 03:46:51] INFO root fetch - processPackages [selfcord.py]: executing diffoscope
+[2023-04-23 03:46:51] INFO root fetch - processPackages [selfcord.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selfcord.py-0.0.8.tar.gz tmp/selfcord.py-0.0.9.tar.gz --markdown 20230423/s/selfcord.py/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 03:46:51] INFO root fetch - processPackages [honeypot]: executing diffoscope
+[2023-04-23 03:46:51] INFO root fetch - processPackages [honeypot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeypot-0.1.tar.gz tmp/honeypot-0.1.1-py3-none-any.whl.zip --markdown 20230423/h/honeypot/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 03:46:51] INFO root fetch - processPackages [wbpLoglist]: executing diffoscope
+[2023-04-23 03:46:51] INFO root fetch - processPackages [wbpLoglist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wbpLoglist-0.1.4.tar.gz tmp/wbpLoglist-0.1.5.tar.gz --markdown 20230423/w/wbpLoglist/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-23 03:46:51] INFO root fetch - processPackages [cdk-wordpress]: executing diffoscope
+[2023-04-23 03:46:51] INFO root fetch - processPackages [cdk-wordpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-wordpress-0.0.98.tar.gz tmp/cdk-wordpress-0.0.99.tar.gz --markdown 20230423/c/cdk-wordpress/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 03:46:52] INFO root fetch - processPackages [sweetrpg-web-core]: Start processing: harambot
+[2023-04-23 03:46:52] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2023-04-23 03:46:52] WARNING root fetch - processPackages [harambot]: Skipping, unable to determine old version
+[2023-04-23 03:46:52] INFO root fetch - processPackages [harambot]: Start processing: selfcord.py
+[2023-04-23 03:46:52] INFO root fetch - main [MainThread]: End processing [harambot] error
+[2023-04-23 03:46:52] INFO root fetch - processPackages [selfcord.py]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-04-23 03:46:52] INFO root fetch - main [MainThread]: End processing [proactive-jupyter-kernel]: success
+[2023-04-23 03:46:52] INFO root fetch - processPackages [selfcord.py]: Downloading https://files.pythonhosted.org/packages/f8/ac/4373aa58ca847a0e494f570b6d763589dd245e6800ddf918ba9014a7a7eb/selfcord.py-0.1.0.tar.gz
+[2023-04-23 03:46:52] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-04-23 03:46:52] INFO root fetch - processPackages [selfcord.py]: executing diffoscope
+[2023-04-23 03:46:52] INFO root fetch - processPackages [selfcord.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selfcord.py-0.0.9.tar.gz tmp/selfcord.py-0.1.0.tar.gz --markdown 20230423/s/selfcord.py/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-04-23 03:46:52] INFO root fetch - main [MainThread]: End processing [honeypot]: success
+[2023-04-23 03:46:52] INFO root fetch - main [MainThread]: End processing [cdk-wordpress]: success
+[2023-04-23 03:46:52] INFO root fetch - main [MainThread]: End processing [selfcord.py]: success
+[2023-04-23 03:46:53] INFO root fetch - main [MainThread]: End processing [wbpLoglist]: success
+[2023-04-23 03:46:53] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-04-23 03:46:53] INFO root fetch - main [MainThread]: End processing [jsonrpc-py]: success
+[2023-04-23 03:46:53] INFO root fetch - main [MainThread]: End processing [selfcord.py]: success
+[2023-04-23 03:46:54] INFO root fetch - main [MainThread]: End processing [mecord-cli]: success
+[2023-04-23 03:46:54] INFO root fetch - main [MainThread]: Store serial: [17818768]
