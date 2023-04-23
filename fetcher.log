@@ -9843,3 +9843,40 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 17:28:24] INFO root fetch - main [MainThread]: End processing [transaction-accounts]: success
 [2023-04-23 17:28:25] INFO root fetch - main [MainThread]: End processing [cvxpygen]: success
 [2023-04-23 17:28:25] INFO root fetch - main [MainThread]: Store serial: [17823372]
+[2023-04-23 17:33:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823372]
+[2023-04-23 17:33:34] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-23 17:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bizlogic
+[2023-04-23 17:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simplebox
+[2023-04-23 17:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: syncedlyrics
+[2023-04-23 17:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ansible-variables
+[2023-04-23 17:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: quarter-lib
+[2023-04-23 17:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pythonsdk
+[2023-04-23 17:33:34] INFO root fetch - processPackages [ansible-variables]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-23 17:33:34] INFO root fetch - processPackages [bizlogic]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-23 17:33:34] INFO root fetch - processPackages [syncedlyrics]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-23 17:33:34] INFO root fetch - processPackages [pythonsdk]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-23 17:33:34] WARNING root fetch - processPackages [simplebox]: Skipping, unable to determine old version
+[2023-04-23 17:33:34] INFO root fetch - processPackages [quarter-lib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 17:33:34] INFO root fetch - main [MainThread]: End processing [simplebox] error
+[2023-04-23 17:33:34] INFO root fetch - processPackages [quarter-lib]: executing diffoscope
+[2023-04-23 17:33:34] INFO root fetch - processPackages [quarter-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quarter_lib-0.0.8.tar.gz tmp/quarter_lib-0.0.9.tar.gz --markdown 20230423/q/quarter-lib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 17:33:34] INFO root fetch - processPackages [bizlogic]: Downloading https://files.pythonhosted.org/packages/33/77/17660b081f27a848df77f99c6cc2e1b1a31ca5f033c717dd7a36e6ae3e6e/bizlogic-0.0.6.tar.gz
+[2023-04-23 17:33:34] INFO root fetch - processPackages [syncedlyrics]: Downloading https://files.pythonhosted.org/packages/ea/ac/734e04c605722f6689947ea4263a3dc1f7cbad5c552be2398939136b1cc7/syncedlyrics-0.4.0.tar.gz
+[2023-04-23 17:33:34] INFO root fetch - processPackages [pythonsdk]: Downloading https://files.pythonhosted.org/packages/67/10/f86c812e9625e02f8ca1fb96d0b8bf5263ea4791bb971ad1a63b94b6d70b/pythonsdk-0.1.0.tar.gz
+[2023-04-23 17:33:35] INFO root fetch - processPackages [ansible-variables]: Downloading https://files.pythonhosted.org/packages/90/89/cbb87e5839c38c16f55f1cbd26170d9c92a8800bdead491e467adca32ace/ansible-variables-0.4.2.tar.gz
+[2023-04-23 17:33:35] INFO root fetch - processPackages [bizlogic]: executing diffoscope
+[2023-04-23 17:33:35] INFO root fetch - processPackages [bizlogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bizlogic-0.0.5.tar.gz tmp/bizlogic-0.0.6.tar.gz --markdown 20230423/b/bizlogic/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-23 17:33:35] INFO root fetch - processPackages [syncedlyrics]: Downloading https://files.pythonhosted.org/packages/ce/b9/7da57244f871167de84ec54208bfbcc33847dcb444dd3a721e2715eb5481/syncedlyrics-0.5.0.tar.gz
+[2023-04-23 17:33:35] INFO root fetch - processPackages [ansible-variables]: executing diffoscope
+[2023-04-23 17:33:35] INFO root fetch - processPackages [ansible-variables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansible-variables-0.4.1.tar.gz tmp/ansible-variables-0.4.2.tar.gz --markdown 20230423/a/ansible-variables/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-23 17:33:35] INFO root fetch - processPackages [pythonsdk]: Downloading https://files.pythonhosted.org/packages/08/26/0dd9f04f4640bce06304aaf9f26b2f5b6204f78d1c61249f09ae9848b5f6/pythonsdk-0.2.0.tar.gz
+[2023-04-23 17:33:35] INFO root fetch - processPackages [syncedlyrics]: executing diffoscope
+[2023-04-23 17:33:35] INFO root fetch - processPackages [syncedlyrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syncedlyrics-0.4.0.tar.gz tmp/syncedlyrics-0.5.0.tar.gz --markdown 20230423/s/syncedlyrics/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-23 17:33:35] INFO root fetch - processPackages [pythonsdk]: executing diffoscope
+[2023-04-23 17:33:35] INFO root fetch - processPackages [pythonsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythonsdk-0.1.0.tar.gz tmp/pythonsdk-0.2.0.tar.gz --markdown 20230423/p/pythonsdk/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-23 17:33:35] INFO root fetch - main [MainThread]: End processing [quarter-lib]: success
+[2023-04-23 17:33:36] INFO root fetch - main [MainThread]: End processing [bizlogic]: success
+[2023-04-23 17:33:36] INFO root fetch - main [MainThread]: End processing [ansible-variables]: success
+[2023-04-23 17:33:36] INFO root fetch - main [MainThread]: End processing [syncedlyrics]: success
+[2023-04-23 17:33:36] INFO root fetch - main [MainThread]: End processing [pythonsdk]: success
+[2023-04-23 17:33:36] INFO root fetch - main [MainThread]: Store serial: [17823391]
