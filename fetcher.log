@@ -10268,3 +10268,87 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 18:12:08] INFO root fetch - main [MainThread]: End processing [neuralogic]: success
 [2023-04-23 18:12:09] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
 [2023-04-23 18:12:09] INFO root fetch - main [MainThread]: Store serial: [17823625]
+[2023-04-23 18:17:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823625]
+[2023-04-23 18:17:19] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-23 18:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xztrainer
+[2023-04-23 18:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ocp-vscode
+[2023-04-23 18:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: z4d-certified-devices
+[2023-04-23 18:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: naturalspeech2-pytorch
+[2023-04-23 18:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yourspackages
+[2023-04-23 18:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: anylearn
+[2023-04-23 18:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xia-api
+[2023-04-23 18:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: chatsnack
+[2023-04-23 18:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: moto
+[2023-04-23 18:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: NewsArticlesScraper
+[2023-04-23 18:17:19] INFO root fetch - processPackages [xztrainer]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-23 18:17:19] INFO root fetch - processPackages [chatsnack]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 18:17:19] INFO root fetch - processPackages [anylearn]: New version: [0.17.4] Old Version: [0.17.3rc1]
+[2023-04-23 18:17:19] INFO root fetch - processPackages [naturalspeech2-pytorch]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-23 18:17:19] WARNING root fetch - processPackages [yourspackages]: Skipping, unable to determine old version
+[2023-04-23 18:17:19] INFO root fetch - processPackages [yourspackages]: Start processing: aiocache
+[2023-04-23 18:17:19] INFO root fetch - processPackages [ocp-vscode]: New version: [0.91.0] Old Version: [0.90.0]
+[2023-04-23 18:17:19] INFO root fetch - main [MainThread]: End processing [yourspackages] error
+[2023-04-23 18:17:19] INFO root fetch - processPackages [z4d-certified-devices]: New version: [2.54] Old Version: [2.53]
+[2023-04-23 18:17:19] INFO root fetch - processPackages [NewsArticlesScraper]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-23 18:17:19] INFO root fetch - processPackages [xia-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 18:17:19] INFO root fetch - processPackages [moto]: New version: [4.1.8.dev9] Old Version: [4.1.8.dev8]
+[2023-04-23 18:17:19] WARNING root fetch - processPackages [chatsnack]: fallback to get urls: [0.1.0]
+[2023-04-23 18:17:19] INFO root fetch - processPackages [aiocache]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-23 18:17:19] WARNING root fetch - processPackages [chatsnack]: None
+[2023-04-23 18:17:19] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-04-23 18:17:19] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.8.dev8.tar.gz tmp/moto-4.1.8.dev9.tar.gz --markdown 20230423/m/moto/4.1.8.dev8-4.1.8.dev9/diff.md --exclude *.pyd
+[2023-04-23 18:17:19] WARNING root fetch - processPackages [chatsnack]: None
+[2023-04-23 18:17:19] INFO root fetch - processPackages [z4d-certified-devices]: Downloading https://files.pythonhosted.org/packages/f3/c5/dde88af9462bd9833c2c6977477573b245b94536103edade9f2cfe5bd836/z4d-certified-devices-2.53.tar.gz
+[2023-04-23 18:17:19] INFO root fetch - processPackages [naturalspeech2-pytorch]: Downloading https://files.pythonhosted.org/packages/de/e9/278c98fd4fcb02c59e957a7e089d351c7ca0471c5268247ae0fd6b07a466/naturalspeech2-pytorch-0.0.5.tar.gz
+[2023-04-23 18:17:19] INFO root fetch - processPackages [ocp-vscode]: Downloading https://files.pythonhosted.org/packages/90/94/954663ea22828c96ce951652d2578ea8b58c2bd424c770cfc447956499e8/ocp_vscode-0.91.0.tar.gz
+[2023-04-23 18:17:19] WARNING root fetch - processPackages [chatsnack]: unable to get url for both version [0.1.0]
+[2023-04-23 18:17:19] INFO root fetch - processPackages [xztrainer]: Downloading https://files.pythonhosted.org/packages/9d/94/459fd011b1092c415f193c5d4f184f537b49d4b87b8aff732cb5f0a9ce5e/xztrainer-0.9.5.tar.gz
+[2023-04-23 18:17:19] WARNING root fetch - processPackages [chatsnack]: None
+[2023-04-23 18:17:19] INFO root fetch - processPackages [chatsnack]: Start processing: bizlogic
+[2023-04-23 18:17:19] INFO root fetch - main [MainThread]: End processing [chatsnack] error
+[2023-04-23 18:17:19] INFO root fetch - processPackages [aiocache]: Downloading https://files.pythonhosted.org/packages/8e/7a/265328f364c8207ed91cdab7d8f9b4e94fb234cccdb8f6f427ddaebd89d6/aiocache-0.9.0.tar.gz
+[2023-04-23 18:17:19] INFO root fetch - processPackages [bizlogic]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-23 18:17:19] INFO root fetch - processPackages [NewsArticlesScraper]: Downloading https://files.pythonhosted.org/packages/a6/e5/695d684625f3c16a4fcdcf8cad15d55c2bf607a09b780a257b3e1b85630b/NewsArticlesScraper-0.2.2.tar.gz
+[2023-04-23 18:17:19] INFO root fetch - processPackages [anylearn]: Downloading https://files.pythonhosted.org/packages/ef/98/8d5c5e6f574d224bb0ec9d109908a7701e2639dfa848228b86de52752f22/anylearn-0.17.4.tar.gz
+[2023-04-23 18:17:19] INFO root fetch - processPackages [ocp-vscode]: executing diffoscope
+[2023-04-23 18:17:19] INFO root fetch - processPackages [ocp-vscode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ocp_vscode-0.90.0.tar.gz tmp/ocp_vscode-0.91.0.tar.gz --markdown 20230423/o/ocp-vscode/0.90.0-0.91.0/diff.md --exclude *.pyd
+[2023-04-23 18:17:19] INFO root fetch - processPackages [naturalspeech2-pytorch]: executing diffoscope
+[2023-04-23 18:17:19] INFO root fetch - processPackages [naturalspeech2-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naturalspeech2-pytorch-0.0.4.tar.gz tmp/naturalspeech2-pytorch-0.0.5.tar.gz --markdown 20230423/n/naturalspeech2-pytorch/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-23 18:17:19] INFO root fetch - processPackages [xia-api]: executing diffoscope
+[2023-04-23 18:17:19] INFO root fetch - processPackages [xia-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_api-0.1.8-cp39-none-win_amd64.whl.zip tmp/xia_api-0.1.9-cp39-none-win_amd64.whl.zip --markdown 20230423/x/xia-api/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 18:17:19] INFO root fetch - processPackages [xztrainer]: executing diffoscope
+[2023-04-23 18:17:19] INFO root fetch - processPackages [xztrainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xztrainer-0.9.4.tar.gz tmp/xztrainer-0.9.5.tar.gz --markdown 20230423/x/xztrainer/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-23 18:17:19] INFO root fetch - processPackages [NewsArticlesScraper]: executing diffoscope
+[2023-04-23 18:17:19] INFO root fetch - processPackages [NewsArticlesScraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NewsArticlesScraper-0.2.1.tar.gz tmp/NewsArticlesScraper-0.2.2.tar.gz --markdown 20230423/N/NewsArticlesScraper/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-23 18:17:19] INFO root fetch - processPackages [bizlogic]: Downloading https://files.pythonhosted.org/packages/ad/d5/8d0d6e29cbfe3f85c626b78e73568c1fb85c05e7c59ab7780fcea2f14c7a/bizlogic-0.0.7.tar.gz
+[2023-04-23 18:17:19] INFO root fetch - processPackages [anylearn]: executing diffoscope
+[2023-04-23 18:17:19] INFO root fetch - processPackages [anylearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anylearn-0.17.3rc1.tar.gz tmp/anylearn-0.17.4.tar.gz --markdown 20230423/a/anylearn/0.17.3rc1-0.17.4/diff.md --exclude *.pyd
+[2023-04-23 18:17:19] INFO root fetch - processPackages [z4d-certified-devices]: Downloading https://files.pythonhosted.org/packages/15/b4/ab7d448c6a3f70f818b881a56a694dd4429ff5d5cc4abafa91eb9064154b/z4d-certified-devices-2.54.tar.gz
+[2023-04-23 18:17:20] INFO root fetch - processPackages [aiocache]: Downloading https://files.pythonhosted.org/packages/61/8b/fce5855331ea156e78a74669cdc4f28c0607c3be7810c7ecc5d59463c306/aiocache-0.9.1.tar.gz
+[2023-04-23 18:17:20] INFO root fetch - processPackages [bizlogic]: executing diffoscope
+[2023-04-23 18:17:20] INFO root fetch - processPackages [bizlogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bizlogic-0.0.6.tar.gz tmp/bizlogic-0.0.7.tar.gz --markdown 20230423/b/bizlogic/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-23 18:17:20] INFO root fetch - processPackages [z4d-certified-devices]: executing diffoscope
+[2023-04-23 18:17:20] INFO root fetch - processPackages [z4d-certified-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z4d-certified-devices-2.53.tar.gz tmp/z4d-certified-devices-2.54.tar.gz --markdown 20230423/z/z4d-certified-devices/2.53-2.54/diff.md --exclude *.pyd
+[2023-04-23 18:17:20] INFO root fetch - processPackages [aiocache]: executing diffoscope
+[2023-04-23 18:17:20] INFO root fetch - processPackages [aiocache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiocache-0.9.0.tar.gz tmp/aiocache-0.9.1.tar.gz --markdown 20230423/a/aiocache/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-23 18:17:21] INFO root fetch - processPackages [ocp-vscode]: Start processing: ml-botting-core
+[2023-04-23 18:17:21] INFO root fetch - main [MainThread]: End processing [ocp-vscode]: success
+[2023-04-23 18:17:21] INFO root fetch - processPackages [ml-botting-core]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-23 18:17:21] INFO root fetch - processPackages [ml-botting-core]: executing diffoscope
+[2023-04-23 18:17:21] INFO root fetch - processPackages [ml-botting-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_botting_core-1.0.3.tar.gz tmp/ml_botting_core-1.0.4.tar.gz --markdown 20230423/m/ml-botting-core/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-23 18:17:21] INFO root fetch - processPackages [xia-api]: Start processing: FFmpyg-DavidRodriguezSoaresCUI
+[2023-04-23 18:17:21] INFO root fetch - main [MainThread]: End processing [xia-api]: success
+[2023-04-23 18:17:21] INFO root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-23 18:17:21] INFO root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: executing diffoscope
+[2023-04-23 18:17:21] INFO root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FFmpyg_DavidRodriguezSoaresCUI-0.0.3.tar.gz tmp/FFmpyg_DavidRodriguezSoaresCUI-0.0.4.tar.gz --markdown 20230423/F/FFmpyg-DavidRodriguezSoaresCUI/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-23 18:17:21] INFO root fetch - main [MainThread]: End processing [naturalspeech2-pytorch]: success
+[2023-04-23 18:17:21] INFO root fetch - main [MainThread]: End processing [xztrainer]: success
+[2023-04-23 18:17:21] INFO root fetch - main [MainThread]: End processing [NewsArticlesScraper]: success
+[2023-04-23 18:17:22] INFO root fetch - main [MainThread]: End processing [aiocache]: success
+[2023-04-23 18:17:22] INFO root fetch - main [MainThread]: End processing [bizlogic]: success
+[2023-04-23 18:17:22] INFO root fetch - main [MainThread]: End processing [ml-botting-core]: success
+[2023-04-23 18:17:22] INFO root fetch - main [MainThread]: End processing [FFmpyg-DavidRodriguezSoaresCUI]: success
+[2023-04-23 18:17:24] INFO root fetch - main [MainThread]: End processing [anylearn]: success
+[2023-04-23 18:17:26] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
+[2023-04-23 18:17:49] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2023-04-23 18:17:49] INFO root fetch - main [MainThread]: Store serial: [17823681]
