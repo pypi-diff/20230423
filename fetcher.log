@@ -13333,3 +13333,52 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 22:21:23] INFO root fetch - main [MainThread]: End processing [wwpdb.apps.chem-ref-data]: success
 [2023-04-23 22:21:24] INFO root fetch - main [MainThread]: End processing [ponty]: success
 [2023-04-23 22:21:24] INFO root fetch - main [MainThread]: Store serial: [17825547]
+[2023-04-23 22:26:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825547]
+[2023-04-23 22:26:33] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-23 22:26:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2023-04-23 22:26:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pylibacl
+[2023-04-23 22:26:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-04-23 22:26:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aioauthx
+[2023-04-23 22:26:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stubborn
+[2023-04-23 22:26:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: leuci-pol
+[2023-04-23 22:26:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: alacorder
+[2023-04-23 22:26:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dragonfly-core
+[2023-04-23 22:26:33] INFO root fetch - processPackages [stubborn]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-23 22:26:33] INFO root fetch - processPackages [leuci-pol]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 22:26:33] INFO root fetch - processPackages [pylibacl]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-23 22:26:33] INFO root fetch - processPackages [aioauthx]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-23 22:26:33] INFO root fetch - processPackages [dragonfly-core]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-04-23 22:26:33] INFO root fetch - processPackages [alacorder]: New version: [79.7.1] Old Version: [79.7.0]
+[2023-04-23 22:26:33] INFO root fetch - processPackages [stubborn]: Downloading https://files.pythonhosted.org/packages/ee/a1/25f9f6f37a9c3931a27ed32fae9ff78fb81a98da6af47eada236d3a4073c/stubborn-0.0.1.tar.gz
+[2023-04-23 22:26:33] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-23 22:26:33] INFO root fetch - processPackages [leuci-pol]: executing diffoscope
+[2023-04-23 22:26:33] INFO root fetch - processPackages [leuci-pol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leuci-pol-0.0.8.tar.gz tmp/leuci-pol-0.0.9.tar.gz --markdown 20230423/l/leuci-pol/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 22:26:33] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-23 22:26:33] INFO root fetch - processPackages [pylibacl]: Downloading https://files.pythonhosted.org/packages/09/23/ad116ac73a352ef82dba4c0a7b0536ed7b5071bd48227c211b745adcc468/pylibacl-0.6.0.tar.gz
+[2023-04-23 22:26:33] INFO root fetch - processPackages [aioauthx]: Downloading https://files.pythonhosted.org/packages/ae/bc/b5f0d09509004a9b4ae053944c830e223af0573368648b33144d4a0f6ef6/aioauthx-0.1.0.tar.gz
+[2023-04-23 22:26:33] INFO root fetch - processPackages [dragonfly-core]: executing diffoscope
+[2023-04-23 22:26:33] INFO root fetch - processPackages [dragonfly-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-core-1.8.1.tar.gz tmp/dragonfly-core-1.9.0.tar.gz --markdown 20230423/d/dragonfly-core/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-04-23 22:26:33] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-04-23 22:26:33] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-79.7.0.tar.gz tmp/alacorder-79.7.1.tar.gz --markdown 20230423/a/alacorder/79.7.0-79.7.1/diff.md --exclude *.pyd
+[2023-04-23 22:26:33] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-23 22:26:33] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230423/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-23 22:26:33] INFO root fetch - processPackages [aioauthx]: Downloading https://files.pythonhosted.org/packages/70/57/d8a78307614d1bb463bdcffd448d628776ec28c77e8e0ebb6bf618f56878/aioauthx-0.1.1.tar.gz
+[2023-04-23 22:26:33] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-23 22:26:33] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230423/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-23 22:26:33] INFO root fetch - processPackages [stubborn]: Downloading https://files.pythonhosted.org/packages/33/e7/5547873198bc91e1f5f172fc110c1f641adba2d66418cb39d81f977f76ee/stubborn-0.0.2.tar.gz
+[2023-04-23 22:26:33] INFO root fetch - processPackages [pylibacl]: Downloading https://files.pythonhosted.org/packages/20/db/721848001bba52f0494c465ee34e92188da250e753a08e1980d50fd76069/pylibacl-0.7.0.tar.gz
+[2023-04-23 22:26:33] INFO root fetch - processPackages [aioauthx]: executing diffoscope
+[2023-04-23 22:26:33] INFO root fetch - processPackages [aioauthx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioauthx-0.1.0.tar.gz tmp/aioauthx-0.1.1.tar.gz --markdown 20230423/a/aioauthx/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-23 22:26:33] INFO root fetch - processPackages [stubborn]: executing diffoscope
+[2023-04-23 22:26:33] INFO root fetch - processPackages [stubborn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stubborn-0.0.1.tar.gz tmp/stubborn-0.0.2.tar.gz --markdown 20230423/s/stubborn/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-23 22:26:33] INFO root fetch - processPackages [pylibacl]: executing diffoscope
+[2023-04-23 22:26:33] INFO root fetch - processPackages [pylibacl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylibacl-0.6.0.tar.gz tmp/pylibacl-0.7.0.tar.gz --markdown 20230423/p/pylibacl/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-23 22:26:34] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-04-23 22:26:35] INFO root fetch - main [MainThread]: End processing [dragonfly-core]: success
+[2023-04-23 22:26:35] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-23 22:26:35] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-23 22:26:35] INFO root fetch - main [MainThread]: End processing [stubborn]: success
+[2023-04-23 22:26:35] INFO root fetch - main [MainThread]: End processing [aioauthx]: success
+[2023-04-23 22:26:35] INFO root fetch - main [MainThread]: End processing [leuci-pol]: success
+[2023-04-23 22:26:35] INFO root fetch - main [MainThread]: End processing [pylibacl]: success
+[2023-04-23 22:26:35] INFO root fetch - main [MainThread]: Store serial: [17825627]
