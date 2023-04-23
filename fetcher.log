@@ -6704,3 +6704,98 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 12:57:04] INFO root fetch - main [MainThread]: End processing [mia-accounting]: success
 [2023-04-23 12:57:04] INFO root fetch - main [MainThread]: End processing [MeUtils]: success
 [2023-04-23 12:57:04] INFO root fetch - main [MainThread]: Store serial: [17821518]
+[2023-04-23 13:02:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17821518]
+[2023-04-23 13:02:13] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-23 13:02:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MeUtils
+[2023-04-23 13:02:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotPython
+[2023-04-23 13:02:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: common-xmjz
+[2023-04-23 13:02:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stigg-api-client
+[2023-04-23 13:02:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hexee
+[2023-04-23 13:02:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: maxilearn
+[2023-04-23 13:02:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: supersql
+[2023-04-23 13:02:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nserver
+[2023-04-23 13:02:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: Flexponlib
+[2023-04-23 13:02:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: Aciembler
+[2023-04-23 13:02:13] INFO root fetch - processPackages [common-xmjz]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-23 13:02:13] INFO root fetch - processPackages [maxilearn]: New version: [4.4.4] Old Version: [4.2]
+[2023-04-23 13:02:13] INFO root fetch - processPackages [stigg-api-client]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-23 13:02:13] WARNING root fetch - processPackages [hexee]: Skipping, unable to determine old version
+[2023-04-23 13:02:13] INFO root fetch - processPackages [hexee]: Start processing: psyke
+[2023-04-23 13:02:13] INFO root fetch - main [MainThread]: End processing [hexee] error
+[2023-04-23 13:02:13] INFO root fetch - processPackages [nserver]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-23 13:02:13] INFO root fetch - processPackages [spotPython]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 13:02:13] WARNING root fetch - processPackages [Flexponlib]: Skipping, unable to determine old version
+[2023-04-23 13:02:13] INFO root fetch - processPackages [Flexponlib]: Start processing: benimang
+[2023-04-23 13:02:13] INFO root fetch - main [MainThread]: End processing [Flexponlib] error
+[2023-04-23 13:02:13] INFO root fetch - processPackages [Aciembler]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-23 13:02:13] INFO root fetch - processPackages [supersql]: New version: [2023.4.2] Old Version: [2023.4.1]
+[2023-04-23 13:02:13] INFO root fetch - processPackages [benimang]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-23 13:02:13] INFO root fetch - processPackages [MeUtils]: New version: [2023.4.6.14.28.33] Old Version: [2023.4.6.14.19.58]
+[2023-04-23 13:02:13] INFO root fetch - processPackages [psyke]: New version: [0.3.3.dev9] Old Version: [0.3.3.dev8]
+[2023-04-23 13:02:13] INFO root fetch - processPackages [spotPython]: executing diffoscope
+[2023-04-23 13:02:13] INFO root fetch - processPackages [spotPython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotPython-0.0.8.tar.gz tmp/spotPython-0.0.9.tar.gz --markdown 20230423/s/spotPython/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 13:02:13] INFO root fetch - processPackages [Aciembler]: executing diffoscope
+[2023-04-23 13:02:13] INFO root fetch - processPackages [Aciembler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Aciembler-1.0.8-py2.py3-none-any.whl.zip tmp/Aciembler-1.0.9-py2.py3-none-any.whl.zip --markdown 20230423/A/Aciembler/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-23 13:02:13] INFO root fetch - processPackages [common-xmjz]: Downloading https://files.pythonhosted.org/packages/1d/6d/436054bdb7be1afa4e47c1d2435225236064d11dfce5ebe04dd16ed8c141/common-xmjz-0.1.1.tar.gz
+[2023-04-23 13:02:13] INFO root fetch - processPackages [maxilearn]: Downloading https://files.pythonhosted.org/packages/f4/6a/0c5930ea5173ce1a0545b46459f8055aa95b93d6c7471eded9d2a0980b50/maxilearn-4.4.4.tar.gz
+[2023-04-23 13:02:13] INFO root fetch - processPackages [nserver]: Downloading https://files.pythonhosted.org/packages/66/44/59d3bbaf12ae4642ffd4cd4b77a62c8c158fc2486e9ec4974e8664bcc3e2/nserver-0.3.2-py3-none-any.whl
+[2023-04-23 13:02:13] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/ab/17/9737c0e29122d0adeccfa90069c8fadf8d0c7adc784df2f1b471e940c648/stigg-api-client-0.3.0.tar.gz
+[2023-04-23 13:02:13] INFO root fetch - processPackages [benimang]: Downloading https://files.pythonhosted.org/packages/a8/25/eadc76fbba881dcddcdcddf0c992cfb6cfd53349294d408c4d6819ab5e43/benimang-0.2.1.tar.gz
+[2023-04-23 13:02:13] INFO root fetch - processPackages [supersql]: Downloading https://files.pythonhosted.org/packages/3d/83/c07ebcf3d57ac97574efbe5143bba1836ba4819ce5767b4982d7cfc18577/supersql-2023.4.2.tar.gz
+[2023-04-23 13:02:13] INFO root fetch - processPackages [MeUtils]: executing diffoscope
+[2023-04-23 13:02:13] INFO root fetch - processPackages [MeUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MeUtils-2023.4.6.14.19.58.tar.gz tmp/MeUtils-2023.4.6.14.28.33.tar.gz --markdown 20230423/M/MeUtils/2023.4.6.14.19.58-2023.4.6.14.28.33/diff.md --exclude *.pyd
+[2023-04-23 13:02:13] INFO root fetch - processPackages [maxilearn]: executing diffoscope
+[2023-04-23 13:02:13] INFO root fetch - processPackages [maxilearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maxilearn-4.2.tar.gz tmp/maxilearn-4.4.4.tar.gz --markdown 20230423/m/maxilearn/4.2-4.4.4/diff.md --exclude *.pyd
+[2023-04-23 13:02:13] INFO root fetch - processPackages [supersql]: executing diffoscope
+[2023-04-23 13:02:13] INFO root fetch - processPackages [supersql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supersql-2023.4.1.tar.gz tmp/supersql-2023.4.2.tar.gz --markdown 20230423/s/supersql/2023.4.1-2023.4.2/diff.md --exclude *.pyd
+[2023-04-23 13:02:13] INFO root fetch - processPackages [psyke]: executing diffoscope
+[2023-04-23 13:02:13] INFO root fetch - processPackages [psyke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psyke-0.3.3.dev8.tar.gz tmp/psyke-0.3.3.dev9.tar.gz --markdown 20230423/p/psyke/0.3.3.dev8-0.3.3.dev9/diff.md --exclude *.pyd
+[2023-04-23 13:02:13] INFO root fetch - processPackages [common-xmjz]: Downloading https://files.pythonhosted.org/packages/7c/d3/87557e224da3637971586e7c1151012abd8034c485330dddb47a65e974c3/common-xmjz-0.1.2.tar.gz
+[2023-04-23 13:02:13] INFO root fetch - processPackages [nserver]: Downloading https://files.pythonhosted.org/packages/fa/9e/298222cff2e288106036051b2f4013f33dcae3bd771b727fbf68dbfb8d1a/nserver-0.3.3-py3-none-any.whl
+[2023-04-23 13:02:13] INFO root fetch - processPackages [benimang]: Downloading https://files.pythonhosted.org/packages/ba/38/78d6b17c147d51f0f54648a88af9ce6966714214d8ef55a3c13c44702789/benimang-0.2.2.tar.gz
+[2023-04-23 13:02:13] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/f2/a6/77e21119c120e1b8882d864eec25f05031dca8e701ccf6fb5fb46bc40148/stigg_api_client-0.4.0.tar.gz
+[2023-04-23 13:02:14] INFO root fetch - processPackages [common-xmjz]: executing diffoscope
+[2023-04-23 13:02:14] INFO root fetch - processPackages [common-xmjz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/common-xmjz-0.1.1.tar.gz tmp/common-xmjz-0.1.2.tar.gz --markdown 20230423/c/common-xmjz/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-23 13:02:14] INFO root fetch - processPackages [nserver]: executing diffoscope
+[2023-04-23 13:02:14] INFO root fetch - processPackages [nserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nserver-0.3.2-py3-none-any.whl.zip tmp/nserver-0.3.3-py3-none-any.whl.zip --markdown 20230423/n/nserver/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-23 13:02:14] INFO root fetch - processPackages [stigg-api-client]: executing diffoscope
+[2023-04-23 13:02:14] INFO root fetch - processPackages [stigg-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg-api-client-0.3.0.tar.gz tmp/stigg_api_client-0.4.0.tar.gz --markdown 20230423/s/stigg-api-client/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-23 13:02:14] INFO root fetch - processPackages [benimang]: executing diffoscope
+[2023-04-23 13:02:14] INFO root fetch - processPackages [benimang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/benimang-0.2.1.tar.gz tmp/benimang-0.2.2.tar.gz --markdown 20230423/b/benimang/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-23 13:02:14] INFO root fetch - processPackages [Aciembler]: Start processing: vidis-algorithms-api
+[2023-04-23 13:02:14] INFO root fetch - main [MainThread]: End processing [Aciembler]: success
+[2023-04-23 13:02:14] INFO root fetch - processPackages [vidis-algorithms-api]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-23 13:02:15] INFO root fetch - processPackages [vidis-algorithms-api]: Downloading https://files.pythonhosted.org/packages/d5/d0/e6145d4c866db2059b239f75761fab5e3fbc411c26a60b158be89b35438d/vidis_algorithms_api-0.4.4.tar.gz
+[2023-04-23 13:02:15] INFO root fetch - processPackages [supersql]: Start processing: aiolifx
+[2023-04-23 13:02:15] INFO root fetch - main [MainThread]: End processing [supersql]: success
+[2023-04-23 13:02:15] INFO root fetch - processPackages [maxilearn]: Start processing: fortigate-exporter-discovery
+[2023-04-23 13:02:15] INFO root fetch - main [MainThread]: End processing [maxilearn]: success
+[2023-04-23 13:02:15] INFO root fetch - processPackages [aiolifx]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-04-23 13:02:15] INFO root fetch - processPackages [vidis-algorithms-api]: Downloading https://files.pythonhosted.org/packages/d5/8e/37e6205a886868f1257fcde80fbdce90a09f0d3489ba4312994fe95969ff/vidis_algorithms_api-0.4.5.tar.gz
+[2023-04-23 13:02:15] INFO root fetch - processPackages [fortigate-exporter-discovery]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-23 13:02:15] INFO root fetch - processPackages [aiolifx]: Downloading https://files.pythonhosted.org/packages/2f/20/00800ec774732b03c94f07e25165db3bfe8b5c68e07bd1d686e55deebc6c/aiolifx-0.8.9.tar.gz
+[2023-04-23 13:02:15] INFO root fetch - processPackages [fortigate-exporter-discovery]: Downloading https://files.pythonhosted.org/packages/c9/e1/a2680f27e37c77806d8678c8a7085a691d00229095877a89a722ac899cb5/fortigate-exporter-discovery-0.3.2.tar.gz
+[2023-04-23 13:02:15] INFO root fetch - processPackages [vidis-algorithms-api]: executing diffoscope
+[2023-04-23 13:02:15] INFO root fetch - processPackages [vidis-algorithms-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vidis_algorithms_api-0.4.4.tar.gz tmp/vidis_algorithms_api-0.4.5.tar.gz --markdown 20230423/v/vidis-algorithms-api/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-23 13:02:15] INFO root fetch - processPackages [stigg-api-client]: Start processing: django-minio-storage
+[2023-04-23 13:02:15] INFO root fetch - main [MainThread]: End processing [stigg-api-client]: success
+[2023-04-23 13:02:15] INFO root fetch - processPackages [django-minio-storage]: New version: [0.5.0] Old Version: [0.3.8]
+[2023-04-23 13:02:15] INFO root fetch - main [MainThread]: End processing [nserver]: success
+[2023-04-23 13:02:15] INFO root fetch - main [MainThread]: End processing [common-xmjz]: success
+[2023-04-23 13:02:15] INFO root fetch - processPackages [fortigate-exporter-discovery]: executing diffoscope
+[2023-04-23 13:02:15] INFO root fetch - processPackages [fortigate-exporter-discovery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fortigate-exporter-discovery-0.3.1.tar.gz tmp/fortigate-exporter-discovery-0.3.2.tar.gz --markdown 20230423/f/fortigate-exporter-discovery/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-23 13:02:15] INFO root fetch - processPackages [django-minio-storage]: Downloading https://files.pythonhosted.org/packages/a6/71/ee4f8df48013fe5c49be4ece55c88af4f7bccc17539046a057a335955dc6/django-minio-storage-0.5.0.tar.gz
+[2023-04-23 13:02:15] INFO root fetch - main [MainThread]: End processing [benimang]: success
+[2023-04-23 13:02:16] INFO root fetch - processPackages [aiolifx]: Downloading https://files.pythonhosted.org/packages/e9/89/2c0c516f11a0b8b55891402f23e4c2a7f051852ce0f26a553506934e3a0b/aiolifx-0.9.0.tar.gz
+[2023-04-23 13:02:16] INFO root fetch - processPackages [django-minio-storage]: executing diffoscope
+[2023-04-23 13:02:16] INFO root fetch - processPackages [django-minio-storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-minio-storage-0.3.8.tar.gz tmp/django-minio-storage-0.5.0.tar.gz --markdown 20230423/d/django-minio-storage/0.3.8-0.5.0/diff.md --exclude *.pyd
+[2023-04-23 13:02:16] INFO root fetch - processPackages [aiolifx]: executing diffoscope
+[2023-04-23 13:02:16] INFO root fetch - processPackages [aiolifx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiolifx-0.8.9.tar.gz tmp/aiolifx-0.9.0.tar.gz --markdown 20230423/a/aiolifx/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-04-23 13:02:16] INFO root fetch - main [MainThread]: End processing [vidis-algorithms-api]: success
+[2023-04-23 13:02:17] INFO root fetch - main [MainThread]: End processing [fortigate-exporter-discovery]: success
+[2023-04-23 13:02:17] INFO root fetch - main [MainThread]: End processing [psyke]: success
+[2023-04-23 13:02:17] INFO root fetch - main [MainThread]: End processing [django-minio-storage]: success
+[2023-04-23 13:02:18] INFO root fetch - main [MainThread]: End processing [aiolifx]: success
+[2023-04-23 13:02:18] INFO root fetch - main [MainThread]: End processing [spotPython]: success
+[2023-04-23 13:02:19] INFO root fetch - main [MainThread]: End processing [MeUtils]: success
+[2023-04-23 13:02:19] INFO root fetch - main [MainThread]: Store serial: [17821567]
