@@ -10654,3 +10654,55 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 18:44:03] INFO root fetch - main [MainThread]: End processing [ooresults]: success
 [2023-04-23 18:44:12] INFO root fetch - main [MainThread]: End processing [alacorder]: success
 [2023-04-23 18:44:12] INFO root fetch - main [MainThread]: Store serial: [17823914]
+[2023-04-23 18:49:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823914]
+[2023-04-23 18:49:21] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-23 18:49:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: passwordtools-yt
+[2023-04-23 18:49:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: amt-tools
+[2023-04-23 18:49:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: erscipcard
+[2023-04-23 18:49:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: evalAIRR
+[2023-04-23 18:49:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ssb-altinn-python
+[2023-04-23 18:49:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flarespy
+[2023-04-23 18:49:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: EdgeGPT
+[2023-04-23 18:49:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PyQt-Fluent-Widgets
+[2023-04-23 18:49:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: giftmaster
+[2023-04-23 18:49:22] INFO root fetch - processPackages [evalAIRR]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-23 18:49:22] WARNING root fetch - processPackages [passwordtools-yt]: Skipping, unable to determine old version
+[2023-04-23 18:49:22] INFO root fetch - main [MainThread]: End processing [passwordtools-yt] error
+[2023-04-23 18:49:22] INFO root fetch - processPackages [ssb-altinn-python]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-23 18:49:22] INFO root fetch - processPackages [amt-tools]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-23 18:49:22] INFO root fetch - processPackages [erscipcard]: New version: [1.18.5] Old Version: [1.18.4]
+[2023-04-23 18:49:22] INFO root fetch - processPackages [EdgeGPT]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-04-23 18:49:22] INFO root fetch - processPackages [flarespy]: New version: [0.9.0] Old Version: [0.8.4]
+[2023-04-23 18:49:22] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: New version: [0.7.4] Old Version: [0.7.2]
+[2023-04-23 18:49:22] INFO root fetch - processPackages [giftmaster]: New version: [0.1.58] Old Version: [0.1.57]
+[2023-04-23 18:49:22] INFO root fetch - processPackages [giftmaster]: executing diffoscope
+[2023-04-23 18:49:22] INFO root fetch - processPackages [giftmaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/giftmaster-0.1.57.tar.gz tmp/giftmaster-0.1.58.tar.gz --markdown 20230423/g/giftmaster/0.1.57-0.1.58/diff.md --exclude *.pyd
+[2023-04-23 18:49:22] INFO root fetch - processPackages [evalAIRR]: executing diffoscope
+[2023-04-23 18:49:22] INFO root fetch - processPackages [evalAIRR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evalAIRR-0.0.8.tar.gz tmp/evalAIRR-0.0.9.tar.gz --markdown 20230423/e/evalAIRR/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-23 18:49:22] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: executing diffoscope
+[2023-04-23 18:49:22] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt-Fluent-Widgets-0.7.2.tar.gz tmp/PyQt-Fluent-Widgets-0.7.4.tar.gz --markdown 20230423/P/PyQt-Fluent-Widgets/0.7.2-0.7.4/diff.md --exclude *.pyd
+[2023-04-23 18:49:22] INFO root fetch - processPackages [amt-tools]: Downloading https://files.pythonhosted.org/packages/f6/e1/b4ac5bfcebcbffaa06a24578ddcba07e871d27d4d28641e16de17f6a38db/amt-tools-0.3.0.tar.gz
+[2023-04-23 18:49:22] INFO root fetch - processPackages [erscipcard]: Downloading https://files.pythonhosted.org/packages/8c/04/1b92ae70c7da48771be88c49e9889eec08bfb155aec0bab160552491cd5b/erscipcard-1.18.5.tar.gz
+[2023-04-23 18:49:22] INFO root fetch - processPackages [ssb-altinn-python]: Downloading https://files.pythonhosted.org/packages/ba/ad/bb51ef4424945962fc5d4f48d386f8111ea8b0116b8a3683b8439e81a022/ssb_altinn_python-0.0.7.tar.gz
+[2023-04-23 18:49:22] INFO root fetch - processPackages [ssb-altinn-python]: executing diffoscope
+[2023-04-23 18:49:22] INFO root fetch - processPackages [EdgeGPT]: Downloading https://files.pythonhosted.org/packages/a5/23/5fc3fcef8039309ba74e53ac9c01b79908694bd613b34c8612d65b2b9d97/EdgeGPT-0.3.0.tar.gz
+[2023-04-23 18:49:22] INFO root fetch - processPackages [ssb-altinn-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssb_altinn_python-0.0.6.tar.gz tmp/ssb_altinn_python-0.0.7.tar.gz --markdown 20230423/s/ssb-altinn-python/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-23 18:49:22] INFO root fetch - processPackages [erscipcard]: executing diffoscope
+[2023-04-23 18:49:22] INFO root fetch - processPackages [erscipcard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/erscipcard-1.18.4.tar.gz tmp/erscipcard-1.18.5.tar.gz --markdown 20230423/e/erscipcard/1.18.4-1.18.5/diff.md --exclude *.pyd
+[2023-04-23 18:49:22] INFO root fetch - processPackages [flarespy]: Downloading https://files.pythonhosted.org/packages/14/04/37d760de1c6b92fa1f4e645c758ffb3f1d0e34c53af2dd8942a4386b1d13/flarespy-0.9.0.tar.gz
+[2023-04-23 18:49:22] INFO root fetch - processPackages [EdgeGPT]: executing diffoscope
+[2023-04-23 18:49:22] INFO root fetch - processPackages [EdgeGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EdgeGPT-0.2.1.tar.gz tmp/EdgeGPT-0.3.0.tar.gz --markdown 20230423/E/EdgeGPT/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-23 18:49:22] INFO root fetch - processPackages [amt-tools]: Downloading https://files.pythonhosted.org/packages/2f/eb/274102bfd940199cad6372f5a02041544fd05abd1c9058d068ece5319209/amt-tools-0.3.1.tar.gz
+[2023-04-23 18:49:22] INFO root fetch - processPackages [flarespy]: executing diffoscope
+[2023-04-23 18:49:22] INFO root fetch - processPackages [flarespy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flarespy-0.8.4.tar.gz tmp/flarespy-0.9.0.tar.gz --markdown 20230423/f/flarespy/0.8.4-0.9.0/diff.md --exclude *.pyd
+[2023-04-23 18:49:22] INFO root fetch - processPackages [amt-tools]: executing diffoscope
+[2023-04-23 18:49:22] INFO root fetch - processPackages [amt-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amt-tools-0.3.0.tar.gz tmp/amt-tools-0.3.1.tar.gz --markdown 20230423/a/amt-tools/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-23 18:49:23] INFO root fetch - main [MainThread]: End processing [evalAIRR]: success
+[2023-04-23 18:49:23] INFO root fetch - main [MainThread]: End processing [ssb-altinn-python]: success
+[2023-04-23 18:49:24] INFO root fetch - main [MainThread]: End processing [flarespy]: success
+[2023-04-23 18:49:24] INFO root fetch - main [MainThread]: End processing [EdgeGPT]: success
+[2023-04-23 18:49:24] INFO root fetch - main [MainThread]: End processing [giftmaster]: success
+[2023-04-23 18:49:24] INFO root fetch - main [MainThread]: End processing [amt-tools]: success
+[2023-04-23 18:49:24] INFO root fetch - main [MainThread]: End processing [erscipcard]: success
+[2023-04-23 18:49:25] INFO root fetch - main [MainThread]: End processing [PyQt-Fluent-Widgets]: success
+[2023-04-23 18:49:25] INFO root fetch - main [MainThread]: Store serial: [17823948]
