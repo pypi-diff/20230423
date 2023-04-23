@@ -2696,3 +2696,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 05:31:35] INFO root fetch - main [MainThread]: End processing [hookee]: success
 [2023-04-23 05:31:38] INFO root fetch - main [MainThread]: End processing [smartchart]: success
 [2023-04-23 05:31:38] INFO root fetch - main [MainThread]: Store serial: [17819207]
+[2023-04-23 05:36:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17819207]
+[2023-04-23 05:36:49] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 05:36:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CommonlyTools
+[2023-04-23 05:36:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dg-itest
+[2023-04-23 05:36:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: adsb-tools
+[2023-04-23 05:36:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: robotnikmq
+[2023-04-23 05:36:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: legion-utils
+[2023-04-23 05:36:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: legion-cli
+[2023-04-23 05:36:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sj-tool
+[2023-04-23 05:36:49] INFO root fetch - processPackages [CommonlyTools]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-23 05:36:49] INFO root fetch - processPackages [dg-itest]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-23 05:36:49] INFO root fetch - processPackages [adsb-tools]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-23 05:36:49] INFO root fetch - processPackages [robotnikmq]: New version: [0.7.0] Old Version: [0.6.1]
+[2023-04-23 05:36:49] INFO root fetch - processPackages [legion-utils]: New version: [0.3.0] Old Version: [0.2.9]
+[2023-04-23 05:36:49] INFO root fetch - processPackages [legion-cli]: New version: [0.3.0] Old Version: [0.2.7]
+[2023-04-23 05:36:49] INFO root fetch - processPackages [sj-tool]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-23 05:36:50] INFO root fetch - processPackages [dg-itest]: Downloading https://files.pythonhosted.org/packages/2e/16/92285a165c0d8b801c39bc072a0d0c9be6085cebff564412f31244612d2f/dg-itest-0.0.7.tar.gz
+[2023-04-23 05:36:50] INFO root fetch - processPackages [dg-itest]: executing diffoscope
+[2023-04-23 05:36:50] INFO root fetch - processPackages [dg-itest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dg-itest-0.0.6.tar.gz tmp/dg-itest-0.0.7.tar.gz --markdown 20230423/d/dg-itest/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-23 05:36:50] INFO root fetch - processPackages [CommonlyTools]: Downloading https://files.pythonhosted.org/packages/61/ad/e78496d5ea07a44aabab6198506d62ca4e71e75f6a6e400c1b233a799411/CommonlyTools-1.0.2.tar.gz
+[2023-04-23 05:36:50] INFO root fetch - processPackages [legion-utils]: Downloading https://files.pythonhosted.org/packages/05/a1/6a06b5f81d61c49c28b8ba0ee17fc86d6ec9cac32bae08f0f17b947a602e/legion-utils-0.3.0.tar.gz
+[2023-04-23 05:36:50] INFO root fetch - processPackages [robotnikmq]: Downloading https://files.pythonhosted.org/packages/97/70/4da9c99cded6e0ef7acd27ad4422a93870bf6215b3b1e29932a26546fb22/robotnikmq-0.7.0.tar.gz
+[2023-04-23 05:36:50] INFO root fetch - processPackages [legion-cli]: Downloading https://files.pythonhosted.org/packages/5d/c3/b6dace32684e42a7ffec9f05806e932623bfc2218506e602d147819fd472/legion-cli-0.3.0.tar.gz
+[2023-04-23 05:36:50] INFO root fetch - processPackages [legion-utils]: executing diffoscope
+[2023-04-23 05:36:50] INFO root fetch - processPackages [legion-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/legion-utils-0.2.9.tar.gz tmp/legion-utils-0.3.0.tar.gz --markdown 20230423/l/legion-utils/0.2.9-0.3.0/diff.md --exclude *.pyd
+[2023-04-23 05:36:50] INFO root fetch - processPackages [adsb-tools]: executing diffoscope
+[2023-04-23 05:36:50] INFO root fetch - processPackages [adsb-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adsb_tools-0.1.8.tar.gz tmp/adsb_tools-0.1.9.tar.gz --markdown 20230423/a/adsb-tools/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-23 05:36:50] INFO root fetch - processPackages [legion-cli]: executing diffoscope
+[2023-04-23 05:36:50] INFO root fetch - processPackages [legion-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/legion-cli-0.2.7.tar.gz tmp/legion-cli-0.3.0.tar.gz --markdown 20230423/l/legion-cli/0.2.7-0.3.0/diff.md --exclude *.pyd
+[2023-04-23 05:36:50] INFO root fetch - processPackages [robotnikmq]: executing diffoscope
+[2023-04-23 05:36:50] INFO root fetch - processPackages [robotnikmq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotnikmq-0.6.1.tar.gz tmp/robotnikmq-0.7.0.tar.gz --markdown 20230423/r/robotnikmq/0.6.1-0.7.0/diff.md --exclude *.pyd
+[2023-04-23 05:36:50] INFO root fetch - processPackages [CommonlyTools]: executing diffoscope
+[2023-04-23 05:36:50] INFO root fetch - processPackages [CommonlyTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CommonlyTools-1.0.1.tar.gz tmp/CommonlyTools-1.0.2.tar.gz --markdown 20230423/C/CommonlyTools/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-23 05:36:50] INFO root fetch - processPackages [sj-tool]: Downloading https://files.pythonhosted.org/packages/2e/c6/ed941d25e472426116ea2e75bd85fead4f6fad46d6238c6a7bc0c10801f1/sj_tool-1.0.9-py3-none-any.whl
+[2023-04-23 05:36:50] INFO root fetch - processPackages [sj-tool]: executing diffoscope
+[2023-04-23 05:36:50] INFO root fetch - processPackages [sj-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sj_tool-1.0.8-py3-none-any.whl.zip tmp/sj_tool-1.0.9-py3-none-any.whl.zip --markdown 20230423/s/sj-tool/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-23 05:36:51] INFO root fetch - main [MainThread]: End processing [dg-itest]: success
+[2023-04-23 05:36:51] INFO root fetch - main [MainThread]: End processing [adsb-tools]: success
+[2023-04-23 05:36:51] INFO root fetch - main [MainThread]: End processing [CommonlyTools]: success
+[2023-04-23 05:36:51] INFO root fetch - main [MainThread]: End processing [robotnikmq]: success
+[2023-04-23 05:36:51] INFO root fetch - main [MainThread]: End processing [legion-utils]: success
+[2023-04-23 05:36:51] INFO root fetch - main [MainThread]: End processing [sj-tool]: success
+[2023-04-23 05:36:51] INFO root fetch - main [MainThread]: End processing [legion-cli]: success
+[2023-04-23 05:36:51] INFO root fetch - main [MainThread]: Store serial: [17819229]
