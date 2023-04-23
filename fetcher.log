@@ -12605,3 +12605,85 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 20:56:29] INFO root fetch - main [MainThread]: End processing [vnkdj5-utils]: success
 [2023-04-23 20:56:42] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-23 20:56:42] INFO root fetch - main [MainThread]: Store serial: [17825050]
+[2023-04-23 21:01:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17825050]
+[2023-04-23 21:01:51] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-23 21:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vnkdj5-utils
+[2023-04-23 21:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-object-safety
+[2023-04-23 21:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: graph-model-parser
+[2023-04-23 21:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: klldFN
+[2023-04-23 21:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Range-Announcer
+[2023-04-23 21:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: guitk
+[2023-04-23 21:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ForgyPs
+[2023-04-23 21:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Conanmail
+[2023-04-23 21:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: vnkdj5-utils
+[2023-04-23 21:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: git-version-info
+[2023-04-23 21:01:51] INFO root fetch - processPackages [django-object-safety]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-23 21:01:51] INFO root fetch - processPackages [klldFN]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-23 21:01:51] INFO root fetch - processPackages [vnkdj5-utils]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-23 21:01:51] INFO root fetch - processPackages [Range-Announcer]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-23 21:01:51] INFO root fetch - processPackages [Conanmail]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-23 21:01:51] INFO root fetch - processPackages [graph-model-parser]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-23 21:01:51] INFO root fetch - processPackages [ForgyPs]: New version: [2.0.0] Old Version: [1.0.4]
+[2023-04-23 21:01:51] INFO root fetch - processPackages [git-version-info]: New version: [0.6] Old Version: [0.5.3]
+[2023-04-23 21:01:51] INFO root fetch - processPackages [vnkdj5-utils]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-23 21:01:51] INFO root fetch - processPackages [guitk]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-23 21:01:51] INFO root fetch - processPackages [Conanmail]: executing diffoscope
+[2023-04-23 21:01:51] INFO root fetch - processPackages [Conanmail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Conanmail-1.0.7-py3-none-any.whl.zip tmp/Conanmail-1.0.8-py3-none-any.whl.zip --markdown 20230423/C/Conanmail/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-23 21:01:51] INFO root fetch - processPackages [klldFN]: Downloading https://files.pythonhosted.org/packages/ad/e0/22097c0e250f0a9cfacfd7f6c69bd3398188ee291f4f1a18f2ecd910e2b2/klldFN-1.0.4.tar.gz
+[2023-04-23 21:01:51] INFO root fetch - processPackages [graph-model-parser]: Downloading https://files.pythonhosted.org/packages/a5/ef/fdb0d294604cb9e894109d23a86631b7cecfde79706fd8b2106edc7936bd/graph-model-parser-0.1.3.tar.gz
+[2023-04-23 21:01:51] INFO root fetch - processPackages [Range-Announcer]: Downloading https://files.pythonhosted.org/packages/e6/63/0a5a6f116b4d1a5f903f628e1a92ea6cc8de80bf532a947558d207641210/Range_Announcer-1.1.0.tar.gz
+[2023-04-23 21:01:51] INFO root fetch - processPackages [ForgyPs]: Downloading https://files.pythonhosted.org/packages/9d/ee/521fa57bb6562a0d601824b98ba494c1a99de5bd80481a74c9cd1801ced3/ForgyPs-2.0.0.tar.gz
+[2023-04-23 21:01:51] INFO root fetch - processPackages [git-version-info]: Downloading https://files.pythonhosted.org/packages/d3/38/af22de76ff39c25bec94f56882e7d72b23abc74ef8a538dbe1ae38322dfb/git_version_info-0.5.3.tar.gz
+[2023-04-23 21:01:51] INFO root fetch - processPackages [vnkdj5-utils]: Downloading https://files.pythonhosted.org/packages/a4/2e/555339db2d2ca20e93ae027958eca6ae8dd49406992bd6c8112679c12ae1/vnkdj5_utils-0.1.4-py3-none-any.whl
+[2023-04-23 21:01:51] INFO root fetch - processPackages [vnkdj5-utils]: Downloading https://files.pythonhosted.org/packages/a4/2e/555339db2d2ca20e93ae027958eca6ae8dd49406992bd6c8112679c12ae1/vnkdj5_utils-0.1.4-py3-none-any.whl
+[2023-04-23 21:01:51] INFO root fetch - processPackages [django-object-safety]: Downloading https://files.pythonhosted.org/packages/b8/c0/ee34b71a5df140cf38ac92951f4fe905dcd763f9898de6a653352283f2a8/django_object_safety-0.3.1.tar.gz
+[2023-04-23 21:01:51] INFO root fetch - processPackages [guitk]: Downloading https://files.pythonhosted.org/packages/f1/cd/aa6a5c202df910e62efbab210fd301392ab143f15d6d88a12a6a37f5d99d/guitk-0.2.0.tar.gz
+[2023-04-23 21:01:51] INFO root fetch - processPackages [graph-model-parser]: executing diffoscope
+[2023-04-23 21:01:51] INFO root fetch - processPackages [graph-model-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graph-model-parser-0.1.2.tar.gz tmp/graph-model-parser-0.1.3.tar.gz --markdown 20230423/g/graph-model-parser/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-23 21:01:51] INFO root fetch - processPackages [klldFN]: Downloading https://files.pythonhosted.org/packages/a5/e9/fe3ab06460318b0f243960626d87412ea7290ab4bb22eab35a35cc7ebb58/klldFN-1.0.5.tar.gz
+[2023-04-23 21:01:51] INFO root fetch - processPackages [ForgyPs]: executing diffoscope
+[2023-04-23 21:01:51] INFO root fetch - processPackages [ForgyPs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ForgyPs-1.0.4.tar.gz tmp/ForgyPs-2.0.0.tar.gz --markdown 20230423/F/ForgyPs/1.0.4-2.0.0/diff.md --exclude *.pyd
+[2023-04-23 21:01:51] INFO root fetch - processPackages [vnkdj5-utils]: executing diffoscope
+[2023-04-23 21:01:51] INFO root fetch - processPackages [vnkdj5-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnkdj5_utils-0.1.3-py3-none-any.whl.zip tmp/vnkdj5_utils-0.1.4-py3-none-any.whl.zip --markdown 20230423/v/vnkdj5-utils/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-23 21:01:51] INFO root fetch - processPackages [vnkdj5-utils]: executing diffoscope
+[2023-04-23 21:01:51] INFO root fetch - processPackages [vnkdj5-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnkdj5_utils-0.1.3-py3-none-any.whl.zip tmp/vnkdj5_utils-0.1.4-py3-none-any.whl.zip --markdown 20230423/v/vnkdj5-utils/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-23 21:01:51] INFO root fetch - processPackages [django-object-safety]: executing diffoscope
+[2023-04-23 21:01:51] INFO root fetch - processPackages [django-object-safety]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_object_safety-0.3.0.tar.gz tmp/django_object_safety-0.3.1.tar.gz --markdown 20230423/d/django-object-safety/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-23 21:01:52] INFO root fetch - processPackages [git-version-info]: Downloading https://files.pythonhosted.org/packages/41/c9/d8686edfd970d72ecb130fa3e8cf4429bfcfefa0313f30b64d6f1e182e98/git_version_info-0.6.tar.gz
+[2023-04-23 21:01:52] INFO root fetch - processPackages [klldFN]: executing diffoscope
+[2023-04-23 21:01:52] INFO root fetch - processPackages [klldFN]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klldFN-1.0.4.tar.gz tmp/klldFN-1.0.5.tar.gz --markdown 20230423/k/klldFN/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-23 21:01:52] INFO root fetch - processPackages [git-version-info]: executing diffoscope
+[2023-04-23 21:01:52] INFO root fetch - processPackages [git-version-info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git_version_info-0.5.3.tar.gz tmp/git_version_info-0.6.tar.gz --markdown 20230423/g/git-version-info/0.5.3-0.6/diff.md --exclude *.pyd
+[2023-04-23 21:01:52] INFO root fetch - processPackages [guitk]: Downloading https://files.pythonhosted.org/packages/1e/40/bc18ddcbcf326f26892e2b04acd18bb2f4bc4ce80eb10b41c9d2286c0a63/guitk-0.2.1.tar.gz
+[2023-04-23 21:01:52] INFO root fetch - processPackages [guitk]: executing diffoscope
+[2023-04-23 21:01:52] INFO root fetch - processPackages [guitk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/guitk-0.2.0.tar.gz tmp/guitk-0.2.1.tar.gz --markdown 20230423/g/guitk/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-23 21:01:52] INFO root fetch - processPackages [Conanmail]: Start processing: webarchiver
+[2023-04-23 21:01:52] INFO root fetch - main [MainThread]: End processing [Conanmail]: success
+[2023-04-23 21:01:52] INFO root fetch - processPackages [webarchiver]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-23 21:01:52] INFO root fetch - processPackages [webarchiver]: executing diffoscope
+[2023-04-23 21:01:52] INFO root fetch - processPackages [webarchiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webarchiver-0.8.0-py2.py3-none-any.whl.zip tmp/webarchiver-0.9.0-py2.py3-none-any.whl.zip --markdown 20230423/w/webarchiver/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-23 21:01:53] INFO root fetch - processPackages [Range-Announcer]: Downloading https://files.pythonhosted.org/packages/e7/82/8d6cd75ac16ff899a22671899a379e4706d1b9af15248d020fd9bb8fac0e/Range_Announcer-1.2.0.tar.gz
+[2023-04-23 21:01:53] INFO root fetch - processPackages [vnkdj5-utils]: Start processing: Conanmail
+[2023-04-23 21:01:53] INFO root fetch - main [MainThread]: End processing [vnkdj5-utils]: success
+[2023-04-23 21:01:53] INFO root fetch - processPackages [vnkdj5-utils]: Start processing: vnkdj5-utils
+[2023-04-23 21:01:53] INFO root fetch - main [MainThread]: End processing [vnkdj5-utils]: success
+[2023-04-23 21:01:53] INFO root fetch - processPackages [Conanmail]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-23 21:01:53] INFO root fetch - main [MainThread]: End processing [graph-model-parser]: success
+[2023-04-23 21:01:53] INFO root fetch - processPackages [vnkdj5-utils]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-23 21:01:53] INFO root fetch - processPackages [Conanmail]: executing diffoscope
+[2023-04-23 21:01:53] INFO root fetch - processPackages [Conanmail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Conanmail-1.0.7-py3-none-any.whl.zip tmp/Conanmail-1.0.8-py3-none-any.whl.zip --markdown 20230423/C/Conanmail/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-23 21:01:53] INFO root fetch - processPackages [vnkdj5-utils]: Downloading https://files.pythonhosted.org/packages/1e/b9/34180037547f832c10ce4766b3db5e7d0d160a242e358f925ed5c4a63c93/vnkdj5_utils-0.1.5-py3-none-any.whl
+[2023-04-23 21:01:53] INFO root fetch - main [MainThread]: End processing [git-version-info]: success
+[2023-04-23 21:01:53] INFO root fetch - main [MainThread]: End processing [django-object-safety]: success
+[2023-04-23 21:01:53] INFO root fetch - processPackages [vnkdj5-utils]: executing diffoscope
+[2023-04-23 21:01:53] INFO root fetch - processPackages [vnkdj5-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnkdj5_utils-0.1.4-py3-none-any.whl.zip tmp/vnkdj5_utils-0.1.5-py3-none-any.whl.zip --markdown 20230423/v/vnkdj5-utils/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-23 21:01:53] INFO root fetch - main [MainThread]: End processing [ForgyPs]: success
+[2023-04-23 21:01:54] INFO root fetch - main [MainThread]: End processing [klldFN]: success
+[2023-04-23 21:01:54] INFO root fetch - main [MainThread]: End processing [guitk]: success
+[2023-04-23 21:01:54] INFO root fetch - main [MainThread]: End processing [Conanmail]: success
+[2023-04-23 21:01:54] INFO root fetch - main [MainThread]: End processing [vnkdj5-utils]: success
+[2023-04-23 21:01:54] INFO root fetch - processPackages [Range-Announcer]: executing diffoscope
+[2023-04-23 21:01:54] INFO root fetch - processPackages [Range-Announcer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Range_Announcer-1.1.0.tar.gz tmp/Range_Announcer-1.2.0.tar.gz --markdown 20230423/R/Range-Announcer/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-23 21:01:55] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
+[2023-04-23 21:01:56] INFO root fetch - main [MainThread]: End processing [Range-Announcer]: success
+[2023-04-23 21:01:56] INFO root fetch - main [MainThread]: Store serial: [17825085]
