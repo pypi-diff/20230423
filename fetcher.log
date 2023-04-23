@@ -2305,3 +2305,28 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 04:23:24] INFO root fetch - main [MainThread]: End processing [Bgolearn]: success
 [2023-04-23 04:23:24] INFO root fetch - main [MainThread]: End processing [usepy]: success
 [2023-04-23 04:23:24] INFO root fetch - main [MainThread]: Store serial: [17818970]
+[2023-04-23 04:28:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818970]
+[2023-04-23 04:28:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-23 04:28:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sweetrpg-library-objects
+[2023-04-23 04:28:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hadloc
+[2023-04-23 04:28:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: monai-weekly
+[2023-04-23 04:28:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sweetrpg-web-core
+[2023-04-23 04:28:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nest2
+[2023-04-23 04:28:34] INFO root fetch - processPackages [monai-weekly]: New version: [1.2.dev2317] Old Version: [1.2.dev2316]
+[2023-04-23 04:28:34] WARNING root fetch - processPackages [hadloc]: Skipping, unable to determine old version
+[2023-04-23 04:28:34] WARNING root fetch - processPackages [nest2]: Skipping, unable to determine old version
+[2023-04-23 04:28:34] INFO root fetch - main [MainThread]: End processing [hadloc] error
+[2023-04-23 04:28:34] INFO root fetch - main [MainThread]: End processing [nest2] error
+[2023-04-23 04:28:34] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-23 04:28:34] INFO root fetch - processPackages [sweetrpg-library-objects]: New version: [0.0.86] Old Version: [0.0.85]
+[2023-04-23 04:28:34] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2023-04-23 04:28:34] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20230423/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-23 04:28:34] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/b0/03/059dd8834247c2fa1b74da8cda516feb98a16e1c095eba431d874ce7f0ba/monai-weekly-1.2.dev2317.tar.gz
+[2023-04-23 04:28:34] INFO root fetch - processPackages [sweetrpg-library-objects]: executing diffoscope
+[2023-04-23 04:28:34] INFO root fetch - processPackages [sweetrpg-library-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-library-objects-0.0.85.tar.gz tmp/sweetrpg-library-objects-0.0.86.tar.gz --markdown 20230423/s/sweetrpg-library-objects/0.0.85-0.0.86/diff.md --exclude *.pyd
+[2023-04-23 04:28:35] INFO root fetch - processPackages [monai-weekly]: executing diffoscope
+[2023-04-23 04:28:35] INFO root fetch - processPackages [monai-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monai-weekly-1.2.dev2316.tar.gz tmp/monai-weekly-1.2.dev2317.tar.gz --markdown 20230423/m/monai-weekly/1.2.dev2316-1.2.dev2317/diff.md --exclude *.pyd
+[2023-04-23 04:28:35] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2023-04-23 04:28:35] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
+[2023-04-23 04:28:50] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
+[2023-04-23 04:28:50] INFO root fetch - main [MainThread]: Store serial: [17818991]
