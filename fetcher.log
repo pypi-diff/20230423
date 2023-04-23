@@ -9231,3 +9231,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 16:30:27] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
 [2023-04-23 16:30:27] INFO root fetch - main [MainThread]: End processing [omfit-classes]: success
 [2023-04-23 16:30:27] INFO root fetch - main [MainThread]: Store serial: [17823015]
+[2023-04-23 16:35:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17823015]
+[2023-04-23 16:35:35] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-23 16:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: themachinethatgoesping
+[2023-04-23 16:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hmcode
+[2023-04-23 16:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plttbc
+[2023-04-23 16:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyHRM
+[2023-04-23 16:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stac-api-validator
+[2023-04-23 16:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sdbus-networkmanager
+[2023-04-23 16:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: llt-mypackage
+[2023-04-23 16:35:36] INFO root fetch - processPackages [pyHRM]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-23 16:35:36] INFO root fetch - processPackages [stac-api-validator]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-23 16:35:36] INFO root fetch - processPackages [hmcode]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-04-23 16:35:36] INFO root fetch - processPackages [themachinethatgoesping]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-23 16:35:36] ERROR root fetch - processPackages [plttbc]: Unable to get metadata: No such project 'plttbc'
+[2023-04-23 16:35:36] INFO root fetch - main [MainThread]: End processing [plttbc] error
+[2023-04-23 16:35:36] WARNING root fetch - processPackages [llt-mypackage]: Skipping, unable to determine old version
+[2023-04-23 16:35:36] INFO root fetch - main [MainThread]: End processing [llt-mypackage] error
+[2023-04-23 16:35:36] INFO root fetch - processPackages [sdbus-networkmanager]: New version: [2.0rc2] Old Version: [2.0rc1]
+[2023-04-23 16:35:36] INFO root fetch - processPackages [pyHRM]: Downloading https://files.pythonhosted.org/packages/34/c6/bab7720bde32cb53f82aa7516f74fa76ae4b59c4e6124f7732d26356cc51/pyHRM-0.1.8.tar.gz
+[2023-04-23 16:35:36] INFO root fetch - processPackages [stac-api-validator]: Downloading https://files.pythonhosted.org/packages/3a/01/ab2ea7c2f15c03c6b333fadf217baa779284679879bc8ed70a8247c047ee/stac_api_validator-0.5.0.tar.gz
+[2023-04-23 16:35:36] INFO root fetch - processPackages [hmcode]: Downloading https://files.pythonhosted.org/packages/4a/9d/ce765819edfc018f2e339bef55dd5ff8752491fda77c5b05740b24fb27de/hmcode-1.0.1.tar.gz
+[2023-04-23 16:35:36] INFO root fetch - processPackages [themachinethatgoesping]: Downloading https://files.pythonhosted.org/packages/41/86/59fbfb9c94764077e4d5f0a685f969526b626c456da17df7ec9e30b477f9/themachinethatgoesping-0.6.8-cp39-cp39-win_amd64.whl
+[2023-04-23 16:35:36] INFO root fetch - processPackages [pyHRM]: executing diffoscope
+[2023-04-23 16:35:36] INFO root fetch - processPackages [pyHRM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyHRM-0.1.7.tar.gz tmp/pyHRM-0.1.8.tar.gz --markdown 20230423/p/pyHRM/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-23 16:35:36] INFO root fetch - processPackages [sdbus-networkmanager]: Downloading https://files.pythonhosted.org/packages/5b/36/0f35f77d33190e37693cb267e2717629b0d11b6a3af6a9c6cc1bcdde6a2b/sdbus-networkmanager-2.0rc1.tar.gz
+[2023-04-23 16:35:36] INFO root fetch - processPackages [hmcode]: Downloading https://files.pythonhosted.org/packages/22/e3/97cb872ac3d1932e7f9cb492b0c04fa07a3078314fc3b27f7d55246d4daf/hmcode-1.1.0.tar.gz
+[2023-04-23 16:35:36] INFO root fetch - processPackages [stac-api-validator]: Downloading https://files.pythonhosted.org/packages/13/45/005a4cf250a63603ab8c6aeb6d834c1686183eddf7789d8e4f4654b3672d/stac_api_validator-0.6.0.tar.gz
+[2023-04-23 16:35:36] INFO root fetch - processPackages [stac-api-validator]: executing diffoscope
+[2023-04-23 16:35:36] INFO root fetch - processPackages [stac-api-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stac_api_validator-0.5.0.tar.gz tmp/stac_api_validator-0.6.0.tar.gz --markdown 20230423/s/stac-api-validator/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-23 16:35:36] INFO root fetch - processPackages [hmcode]: executing diffoscope
+[2023-04-23 16:35:36] INFO root fetch - processPackages [hmcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hmcode-1.0.1.tar.gz tmp/hmcode-1.1.0.tar.gz --markdown 20230423/h/hmcode/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-04-23 16:35:36] WARNING root fetch - processPackages [themachinethatgoesping]: Skipping package: exceeds size limit 13352847>=10485760
+[2023-04-23 16:35:36] INFO root fetch - main [MainThread]: End processing [themachinethatgoesping] error
+[2023-04-23 16:35:36] INFO root fetch - processPackages [sdbus-networkmanager]: Downloading https://files.pythonhosted.org/packages/19/00/3c8909e842b281598e8bd8edcc7a31ace7f14dd511a9219b475dc49e7e5c/sdbus-networkmanager-2.0rc2.tar.gz
+[2023-04-23 16:35:36] INFO root fetch - processPackages [sdbus-networkmanager]: executing diffoscope
+[2023-04-23 16:35:36] INFO root fetch - processPackages [sdbus-networkmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdbus-networkmanager-2.0rc1.tar.gz tmp/sdbus-networkmanager-2.0rc2.tar.gz --markdown 20230423/s/sdbus-networkmanager/2.0rc1-2.0rc2/diff.md --exclude *.pyd
+[2023-04-23 16:35:37] INFO root fetch - main [MainThread]: End processing [pyHRM]: success
+[2023-04-23 16:35:37] INFO root fetch - main [MainThread]: End processing [stac-api-validator]: success
+[2023-04-23 16:35:37] INFO root fetch - main [MainThread]: End processing [hmcode]: success
+[2023-04-23 16:35:39] INFO root fetch - main [MainThread]: End processing [sdbus-networkmanager]: success
+[2023-04-23 16:35:39] INFO root fetch - main [MainThread]: Store serial: [17823045]
