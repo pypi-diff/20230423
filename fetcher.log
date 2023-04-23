@@ -2235,3 +2235,20 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-23 04:07:50] INFO root fetch - main [MainThread]: End processing [openxlab]: success
 [2023-04-23 04:07:52] INFO root fetch - main [MainThread]: End processing [coredis]: success
 [2023-04-23 04:07:52] INFO root fetch - main [MainThread]: Store serial: [17818898]
+[2023-04-23 04:12:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17818898]
+[2023-04-23 04:13:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-23 04:13:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rogue-tools
+[2023-04-23 04:13:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spatialmath-python
+[2023-04-23 04:13:00] INFO root fetch - processPackages [rogue-tools]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-23 04:13:00] INFO root fetch - processPackages [spatialmath-python]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-04-23 04:13:00] INFO root fetch - processPackages [rogue-tools]: Downloading https://files.pythonhosted.org/packages/0d/e9/d738ce518495b030359511f930ccbd171cded0aaa07283a550280c9f86ea/rogue_tools-1.0.6.tar.gz
+[2023-04-23 04:13:00] INFO root fetch - processPackages [spatialmath-python]: Downloading https://files.pythonhosted.org/packages/2c/9b/a012877cf589fcb46feff595053bd3c716fffe430d1c3935299dda72cba7/spatialmath-python-1.1.6.tar.gz
+[2023-04-23 04:13:01] INFO root fetch - processPackages [rogue-tools]: Downloading https://files.pythonhosted.org/packages/4d/4f/da43ec7dfb986dae5e6843e99cbe03b5f9e86e5b138d4c45106e3c6d8d8b/rogue_tools-1.0.7.tar.gz
+[2023-04-23 04:13:01] INFO root fetch - processPackages [rogue-tools]: executing diffoscope
+[2023-04-23 04:13:01] INFO root fetch - processPackages [rogue-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rogue_tools-1.0.6.tar.gz tmp/rogue_tools-1.0.7.tar.gz --markdown 20230423/r/rogue-tools/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-23 04:13:01] INFO root fetch - processPackages [spatialmath-python]: Downloading https://files.pythonhosted.org/packages/81/2c/f548106a162ea3709ecddef50ef64b855abe6b92f41f04fbb0893d60786b/spatialmath-python-1.1.7.tar.gz
+[2023-04-23 04:13:01] INFO root fetch - processPackages [spatialmath-python]: executing diffoscope
+[2023-04-23 04:13:01] INFO root fetch - processPackages [spatialmath-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230423:/home/abi/fetcher/20230423:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spatialmath-python-1.1.6.tar.gz tmp/spatialmath-python-1.1.7.tar.gz --markdown 20230423/s/spatialmath-python/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-04-23 04:13:02] INFO root fetch - main [MainThread]: End processing [rogue-tools]: success
+[2023-04-23 04:13:02] INFO root fetch - main [MainThread]: End processing [spatialmath-python]: success
+[2023-04-23 04:13:02] INFO root fetch - main [MainThread]: Store serial: [17818904]
